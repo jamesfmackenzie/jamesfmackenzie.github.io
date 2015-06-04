@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Getting Started With the Pocket Developer API</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Tech, Programming, Agile, Software Engineering, Software, Hardware, Science, Video Games">
+    <link rel="canonical" href="http://www.jamesfmackenzie.com/getting-started-with-the-pocket-developer-api">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body id="page-top" class="index">
+       <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">jamesfmackenzie</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<img class="img-responsive" src="../img/projects/" alt="">-->
+                    <div class="intro-text">
+                        <span class="name">Getting Started With the Pocket Developer API</span>
+                        <hr class="star-light">
+                        <span class="skills"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<section id="posts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div>
+					<p>I’m a big fan of <a href="http://getpocket.com/" target="_blank">Pocket</a>. Commuting for 2 hours a day and often with patchy cellular signal, I keep Pocket topped up with plenty of reading material - ready to go at a moment’s notice.</p>
+
+<p>To get the best out of Pocket, you’ll want to extend it via the <a href="http://getpocket.com/developer/" target="_blank">Developer API</a>. Here’s how to get started.</p>
+
+<h3 id="step-1-create-an-app-in-the-pocket-developer-portal-get-your-consumer-key">Step 1. Create an App in the Pocket Developer Portal, Get Your Consumer Key</h3>
+
+<p>Head over to the <a href="http://getpocket.com/developer/" target="_blank">Pocket Developer Portal</a> and create a new App. It doesn’t really matter how you fill out the fields as long as you remember to:</p>
+
+<ul>
+  <li>Give your App the right permissions:
+    <ul>
+      <li>Add - to add new items to Pocket</li>
+      <li>Modify - to modify existing items in Pocket</li>
+      <li>Retrieve - to retrieve items from Pocket</li>
+    </ul>
+  </li>
+  <li>Make a note of the <strong>Consumer Key</strong> (see screenshot below)</li>
+</ul>
+
+<p><img src="/img/posts/2014-12-20-19_05_12-Pocket_-Developer-API.png" alt="" /></p>
+
+<p><img src="/img/posts/2014-12-20-23_39_03-Pocket_-Developer-API.png" alt="" /></p>
+
+<h3 id="step-2-obtain-a-request-token">Step 2. Obtain a Request Token</h3>
+
+<p>Using your new <strong>Consumer Key</strong>, issue a POST request (I prefer <a href="http://curl.haxx.se/" target="_blank">cURL</a>) to get a temporary <strong>Request Token</strong>. This’ll be used to authorize your new App.</p>
+
+<p>Two mandatory parameters which <em>must</em> be included in the POST body:</p>
+
+<ul>
+  <li><strong>consumer_key</strong> - Consumer Key retrieved above</li>
+  <li><strong>redirect_uri</strong> - URL to be called when the authorization process has been completed. Since we’re doing this manually, we can set this to anything we like (e.g. http://www.google.com)</li>
+</ul>
+
+<p><strong>Method URL</strong></p>
+<pre>
+http://getpocket.com/v3/oauth/request
+</pre>
+
+<p><strong>Example Request</strong></p>
+<pre>
+POST /v3/oauth/request HTTP/1.1
+Host: getpocket.com
+Content-Type: application/json
+X-Accept: application/json
+
+{"consumer_key":"1234-abcd1234abcd1234abcd1234",
+"redirect_uri":"http://www.google.com"}
+</pre>
+
+<p><strong>Example Request (cURL)</strong></p>
+<pre>
+curl http://getpocket.com/v3/oauth/request -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"redirect_uri\":\"http://www.google.com\"}"
+</pre>
+
+<p><strong>Example Response</strong></p>
+<pre>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Status: 200 OK
+
+{"code":"dcba4321-dcba-4321-dcba-4321dc"}
+</pre>
+
+<p>Make a note of this Request Token. You’ll need it for the next step.</p>
+
+<h3 id="step-3-visit-the-pocket-website-to-authorize-your-app">Step 3. Visit the Pocket Website to Authorize Your App</h3>
+
+<p>Manufacture the following URL and open it in your Browser:</p>
+
+<pre>
+https://getpocket.com/auth/authorize?request_token=YOUR_REQUEST_TOKEN&amp;redirect_uri=YOUR_REDIRECT_URI
+</pre>
+
+<p>e.g.</p>
+
+<pre>
+https://getpocket.com/auth/authorize?request_token=dcba4321-dcba-4321-dcba-4321dc&amp;redirect_uri=http://www.google.com
+</pre>
+
+<p>You’ll be prompted to login to Pocket (if you aren’t already) and authorize your new App</p>
+
+<p><img src="/img/posts/2014-12-21-00_23_49-Pocket_-Authorize-App.png" alt="" /></p>
+
+<p>Upon clicking Authorize, you’ll be sent back to the redirect URL (in this case http://www.google.com) - authorization done.</p>
+
+<h3 id="step-4-convert-your-request-token-into-a-pocket-access-token">Step 4. Convert your Request Token Into a Pocket Access Token</h3>
+
+<p>Issue the following POST request to obtain a <strong>Pocket Access Token</strong>:</p>
+
+<p><strong>Mandatory Parameters</strong></p>
+
+<ul>
+  <li><strong>consumer_key</strong> - Consumer Key retrieved in Step 1</li>
+  <li><strong>code</strong> - Request Token retrieved in Step 2</li>
+</ul>
+
+<p><strong>Method URL</strong></p>
+<pre>
+http://getpocket.com/v3/oauth/authorize
+</pre>
+
+<p><strong>Example Request</strong></p>
+<pre>
+POST /v3/oauth/authorize HTTP/1.1
+Host: getpocket.com
+Content-Type: application/json
+X-Accept: application/json
+
+{"consumer_key":"1234-abcd1234abcd1234abcd1234",
+"code":"dcba4321-dcba-4321-dcba-4321dc"}
+</pre>
+
+<p><strong>Example Request (cURL)</strong></p>
+<pre>
+curl http://getpocket.com/v3/oauth/authorize -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"code\":\"dcba4321-dcba-4321-dcba-4321dc\"}"
+</pre>
+
+<p><strong>Example Response</strong></p>
+<pre>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Status: 200 OK
+
+{"access_token":"5678defg-5678-defg-5678-defg56",
+"username":"pocketuser"}
+</pre>
+
+<p><strong>Make a note of this Access Token. This is the token you can use to make authenticated requests against the Pocket API on a permanent basis</strong>.</p>
+
+<h3 id="step-5-make-authenticated-requests-against-the-pocket-api">Step 5. Make Authenticated Requests Against the Pocket API</h3>
+
+<p>All done! Now you have an Access Token you can make authenticated requests against the Pocket API.</p>
+
+<p>E.g. to retrieve your Pocketed items:</p>
+
+<p><strong>Mandatory Parameters</strong></p>
+
+<ul>
+  <li><strong>consumer_key</strong> - Consumer Key (retrieved in Step 1)</li>
+  <li><strong>access_token</strong> - Access Token (retrieved in Step 4)</li>
+</ul>
+
+<p><strong>Method URL</strong></p>
+<pre>
+http://getpocket.com/v3/get
+</pre>
+
+<p><strong>Example Request</strong></p>
+<pre>
+POST /v3/get HTTP/1.1
+Host: getpocket.com
+Content-Type: application/json
+
+{"consumer_key":"1234-abcd1234abcd1234abcd1234",
+"access_token":"5678defg-5678-defg-5678-defg56"}
+</pre>
+
+<p><strong>Example Request (cURL)</strong></p>
+<pre>
+curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\", \"access_token\":\"5678defg-5678-defg-5678-defg56\"}"
+</pre>
+
+<p><strong>Example Response</strong></p>
+<pre>
+{
+  "status": 1,
+  "complete": 1,
+  "list": {
+    "786228232": {
+      "item_id": "786228232",
+      "resolved_id": "786228232",
+      "given_url": "http://m.bbc.co.uk/news/entertainment-arts-30392163",
+      "given_title": "Mark Ronson single rush-released after Fleur East's X Factor performance - ",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1418118328",
+      "time_updated": "1418118329",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 0,
+      "resolved_title": "Mark Ronson single rush-released after Fleur East's X Factor performance",
+      "resolved_url": "http://m.bbc.co.uk/news/entertainment-arts-30392163",
+      "excerpt": "The release date of Mark Ronson's single Uptown Funk has been brought forward by five weeks after an X Factor cover topped the iTunes chart.  Fleur East's version of the track was called \"one of the top three performances\" in X Factor history by Simon Cowell.",
+      "is_article": "1",
+      "is_index": "0",
+      "has_video": "0",
+      "has_image": "1",
+      "word_count": "284"
+    },
+    "65587491": {
+      "item_id": "65587491",
+      "resolved_id": "65587491",
+      "given_url": "https://pinboard.in/faq/",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1418107173",
+      "time_updated": "1418107541",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 1,
+      "resolved_title": "Frequently Asked Questions",
+      "resolved_url": "https://pinboard.in/faq/",
+      "excerpt": "What is Pinboard?  Pinboard is a personal archive for links you find online. You save bookmarks to the site and can find and search them later from any computer. The site can automatically import your links and tweets from a number of outside services.",
+      "is_article": "1",
+      "is_index": "1",
+      "has_video": "0",
+      "has_image": "0",
+      "word_count": "4340"
+    },
+    
+... much more JSON
+</pre>
+
+<p>That’s it! I hope to make use of the Pocket API over the next few weeks and post something interesting/useful.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+        <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3></h3>
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Social</h3>
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="http://twitter.com/jamesfmackenzie" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+		                    
+                            <li>
+                                <a href="http://stackoverflow.com/users/4958467/jamesfmackenzie" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                            </li>
+		                    
+                            <li>
+                                <a href="http://github.com/jamesfmackenzie" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+		                    
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; James Mackenzie 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    
+    <script src="/js/contact_me_static.js"></script>
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/freelancer.js"></script>
+
+    </body>
+</html>
