@@ -235,7 +235,7 @@ section.success {
 	}
 	
 	#projects .project-item .project-link .caption .caption-content {
-    font-size: 1em;
+    font-size: 20px;
 	}
 	
 	#projects .project-item .project-link .caption {
@@ -283,6 +283,10 @@ section.success {
     text-align: center;
     font-size: 1.25em;
     color: #fff;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 	padding: 8px;
 }
