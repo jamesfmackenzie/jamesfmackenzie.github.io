@@ -118,7 +118,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -231,7 +231,7 @@ section.success {
 	}
 	
 	p, li, pre {
-		font-size: 1em;
+		font-size: 20px;
 	}
 	
 	#projects .project-item .project-link .caption .caption-content {
