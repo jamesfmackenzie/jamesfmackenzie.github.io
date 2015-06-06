@@ -242,6 +242,10 @@ section.success {
 		opacity: 1 !important;
 	}
 	
+	#projects .project-item .project-link img {
+	height: 100% !important;
+	}
+	
 	header .post-container {
     	padding-bottom: 25px !important;
 	}
@@ -252,10 +256,6 @@ section.success {
 	
 	footer .footer-above {
 		padding-top: 0 !important;
-}
-
-	footer .footer-col {
-		margin-bottom: 0 !important;
 	}
 
 }
@@ -270,10 +270,6 @@ section.success {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-	height: 100%;
-}
-
-#projects .project-item .project-link img {
 	height: 100%;
 }
 
