@@ -118,7 +118,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -231,11 +231,11 @@ section.success {
 	}
 	
 	p, li, pre {
-		font-size: 20px;
+		font-size: 16px;
 	}
 	
 	#projects .project-item .project-link .caption .caption-content {
-    font-size: 20px;
+		font-size: 16px !important;
 	}
 	
 	#projects .project-item .project-link .caption {
@@ -246,6 +246,17 @@ section.success {
     	padding-bottom: 25px !important;
 	}
 	
+	#projects .project-item {
+    height: 80px;
+	}
+	
+	footer .footer-above {
+		padding-top: 0 !important;
+}
+
+	footer .footer-col {
+		margin-bottom: 0 !important;
+	}
 
 }
 
@@ -259,6 +270,11 @@ section.success {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+	height: 100%;
+}
+
+#projects .project-item .project-link img {
+	height: 100%;
 }
 
 #projects .project-item .project-link .caption {
