@@ -25,6 +25,10 @@ pre, img {
 	max-width: 100%;
 }
 
+.project-img-responsive {
+	margin-bottom: 0 !important;
+}
+
 p.small {
     font-size: 16px;
 }

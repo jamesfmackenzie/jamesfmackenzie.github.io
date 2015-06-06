@@ -5,8 +5,8 @@
     <description>Tech, Programming, Agile, Software Engineering, Software, Hardware, Science, Video Games</description>
     <link>http://www.jamesfmackenzie.com/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Jun 2015 00:59:50 +0100</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2015 00:59:50 +0100</lastBuildDate>
+    <pubDate>Sun, 07 Jun 2015 00:30:23 +0100</pubDate>
+    <lastBuildDate>Sun, 07 Jun 2015 00:30:23 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -27,7 +27,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/understanding-the-twitter-api</guid>
         
         
-        <category>twitter</category>
+        <category>learning_twitter_api</category>
         
       </item>
     
@@ -39,7 +39,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/install-windows-10-technical-preview-on-tesco-tablet</guid>
         
         
-        <category>windows_10</category>
+        <category>windows_10_on_a_tablet</category>
         
       </item>
     
@@ -51,7 +51,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/sync-pocket-videos-to-your-phone-watch-them-offline</guid>
         
         
-        <category>pocket</category>
+        <category>syncing_web_video</category>
         
       </item>
     
@@ -63,7 +63,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/download-pocket-videos-to-your-pc</guid>
         
         
-        <category>pocket</category>
+        <category>syncing_web_video</category>
         
       </item>
     
@@ -75,7 +75,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/getting-started-with-the-pocket-developer-api</guid>
         
         
-        <category>pocket</category>
+        <category>syncing_web_video</category>
         
       </item>
     
@@ -87,7 +87,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/things-i-wish-id-known-before-creating-my-ghost-theme</guid>
         
         
-        <category>ghost</category>
+        <category>ghost_theme</category>
         
       </item>
     
@@ -99,7 +99,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/its-done-8-bit-memories-ghost-theme</guid>
         
         
-        <category>ghost</category>
+        <category>ghost_theme</category>
         
       </item>
     
@@ -111,7 +111,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/create-your-own-ghost-theme-in-5-minutes</guid>
         
         
-        <category>ghost</category>
+        <category>ghost_theme</category>
         
       </item>
     
@@ -123,7 +123,7 @@
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/setting-up-a-ghost-dev-environment</guid>
         
         
-        <category>ghost</category>
+        <category>ghost_theme</category>
         
       </item>
     
