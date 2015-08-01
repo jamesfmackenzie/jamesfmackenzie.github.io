@@ -5,9 +5,21 @@
     <description>Tech, Programming, Agile, Software Engineering, Software, Hardware, Science, Video Games</description>
     <link>http://www.jamesfmackenzie.com/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 07 Jun 2015 21:46:29 +0100</pubDate>
-    <lastBuildDate>Sun, 07 Jun 2015 21:46:29 +0100</lastBuildDate>
+    <pubDate>Sat, 01 Aug 2015 10:51:12 +0100</pubDate>
+    <lastBuildDate>Sat, 01 Aug 2015 10:51:12 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Windows 10 Has Launched!</title>
+        <description></description>
+        <pubDate>Sat, 01 Aug 2015 10:47:10 +0100</pubDate>
+        <link>http://www.jamesfmackenzie.com/windows-10-has-launched</link>
+        <guid isPermaLink="true">http://www.jamesfmackenzie.com/windows-10-has-launched</guid>
+        
+        
+        <category>windows_10_on_a_tablet</category>
+        
+      </item>
     
       <item>
         <title>Creative EP-630 Noise Isolating Earphones Are the Best</title>
@@ -109,18 +121,6 @@
         <pubDate>Mon, 23 Jun 2014 20:40:48 +0100</pubDate>
         <link>http://www.jamesfmackenzie.com/things-i-wish-id-known-before-creating-my-ghost-theme</link>
         <guid isPermaLink="true">http://www.jamesfmackenzie.com/things-i-wish-id-known-before-creating-my-ghost-theme</guid>
-        
-        
-        <category>ghost_theme</category>
-        
-      </item>
-    
-      <item>
-        <title>It&#39;s Done! 8-Bit Memories Ghost Theme</title>
-        <description></description>
-        <pubDate>Sat, 21 Jun 2014 03:51:00 +0100</pubDate>
-        <link>http://www.jamesfmackenzie.com/its-done-8-bit-memories-ghost-theme</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/its-done-8-bit-memories-ghost-theme</guid>
         
         
         <category>ghost_theme</category>

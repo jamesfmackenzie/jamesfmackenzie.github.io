@@ -76,7 +76,9 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<p>I spotted <a href="http://www.tesco.com/direct/connect-7-tablet-with-windows-81-office-365-personal-32gb-wifi-black/182-3108.prd" target="_blank">this amazingly cheap Windows 8.1 tablet</a> on a recent Tesco grocery trip. At £99, I’ve no idea how they turn a profit, but with the <a href="http://arstechnica.com/information-technology/2015/01/new-windows-10-preview-comes-to-pc-next-week-to-phones-in-february/" target="_blank">recent launch of the Windows 10 Technical Preview</a>, I thought it’d make a nice experiment.</p>
+					<p><strong>Updated 2015-08-01: to reflect Windows 10 retail launch</strong></p>
+
+<p>I spotted <a href="http://www.tesco.com/direct/connect-7-tablet-with-windows-81-office-365-personal-32gb-wifi-black/182-3108.prd" target="_blank">this amazingly cheap Windows 8.1 tablet</a> on a recent Tesco grocery trip. At £99, I’ve no idea how they turn a profit, but with the recent launch of <del><a href="http://arstechnica.com/information-technology/2015/01/new-windows-10-preview-comes-to-pc-next-week-to-phones-in-february/" target="_blank">Windows 10 Technical Preview</a></del> <a href="http://blogs.windows.com/launch/" target="_blank">Windows 10</a>, I thought it’d make a nice experiment.</p>
 
 <h3 id="what-you-need">What you need</h3>
 
@@ -87,9 +89,9 @@
   <li><a href="http://www.tesco.com/direct/connect-7-tablet-with-windows-81-office-365-personal-32gb-wifi-black/182-3108.prd" target="_blank">Tesco Connect 7” Tablet with Windows 8.1</a> (only £99)</li>
 </ul>
 
-<h3 id="step-1-sign-up-for-windows-insider-download-the-technical-preview-iso">Step 1. Sign up for Windows Insider, download the Technical Preview ISO</h3>
+<h3 id="step-1-download-the-windows-10-iso">Step 1. Download the Windows 10 ISO</h3>
 
-<p>Head on over <a href="http://windows.microsoft.com/en-gb/windows/preview-iso" target="_blank">here</a> to sign up. Make sure you download the 32-bit/x86 ISO - the Tesco tablet doesn’t support 64-bit/x64.</p>
+<p>Head on over to <a href="https://msdn.microsoft.com/en-us/default.aspx" target="_blank">MSDN</a> to download the ISO. Make sure you download the 32-bit/x86 ISO - the Tesco tablet doesn’t support 64-bit/x64.</p>
 
 <h3 id="step-2-prepare-a-windows-10-uefi-bootable-using-rufus">Step 2. Prepare a Windows 10 UEFI bootable using Rufus</h3>
 
@@ -99,11 +101,15 @@
 
 <h3 id="step-3-copy-network-and-touchscreen-drivers-onto-the-usb-stick">Step 3. Copy network and touchscreen drivers onto the USB stick</h3>
 
-<p>The Windows 10 Preview doesn’t ship with the network, sound and touchscreen drivers you’ll need. Before you do anything:</p>
+<p>Windows 10 doesn’t ship with the network, sound and touchscreen drivers you’ll need.</p>
 
-<p>1) Boot the tablet into Windows 8.1
-2) Mount the USB stick 
-3) Copy <code>C:\Windows\System32</code> across. It contains all the drivers you’ll need</p>
+<p><strong style="color: red;">Before you do anything:</strong></p>
+
+<ol>
+  <li>Boot the tablet into Windows 8.1</li>
+  <li>Mount the USB stick</li>
+  <li>Copy <code>C:\Windows\System32\DriverStore</code> across. It contains all the drivers you’ll need</li>
+</ol>
 
 <h3 id="step-4-boot-to-efi-shell">Step 4. Boot to EFI Shell</h3>
 
@@ -205,7 +211,7 @@
 
 <p>Repeat the above process for all the erroring devices. Don’t forget “System devices” - there are a bunch in there too.</p>
 
-<p><strong>That’s it! You now have a fully working Windows 10 tablet! Enjoy the preview!</strong></p>
+<p><strong>That’s it! You now have a fully working Windows 10 tablet! Enjoy!</strong></p>
 
 <p><img src="/img/posts/Untitled.png" alt="" /></p>
 
