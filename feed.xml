@@ -1,129 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>jamesfmackenzie</title>
-    <description>Tech, Programming, Agile, Software Engineering, Software, Hardware, Science, Video Games</description>
-    <link>http://www.jamesfmackenzie.com/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 01 Aug 2015 23:52:58 +0100</pubDate>
-    <lastBuildDate>Sat, 01 Aug 2015 23:52:58 +0100</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}/</link>
+    <atom:link href="{{ "/feed.xml" }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>EmailWatcher - a .NET Library for Email Automation</title>
-        <description></description>
-        <pubDate>Sat, 01 Aug 2015 23:13:05 +0100</pubDate>
-        <link>http://www.jamesfmackenzie.com/email-watcher</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/email-watcher</guid>
-        
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.description | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
-      <item>
-        <title>Windows 10 Has Launched!</title>
-        <description></description>
-        <pubDate>Sat, 01 Aug 2015 10:47:10 +0100</pubDate>
-        <link>http://www.jamesfmackenzie.com/windows-10-has-launched</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/windows-10-has-launched</guid>
-        
-        
-        <category>windows_10_on_a_tablet</category>
-        
-      </item>
-    
-      <item>
-        <title>Creative EP-630 Noise Isolating Earphones Are the Best</title>
-        <description></description>
-        <pubDate>Sun, 15 Mar 2015 12:33:15 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/creative-ep-630-noise-isolating-earphones-are-the-best</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/creative-ep-630-noise-isolating-earphones-are-the-best</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Understanding the Twitter API</title>
-        <description></description>
-        <pubDate>Wed, 25 Feb 2015 17:06:57 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/understanding-the-twitter-api</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/understanding-the-twitter-api</guid>
-        
-        
-        <category>learning_twitter_api</category>
-        
-      </item>
-    
-      <item>
-        <title>Install Windows 10 on a £99 Tesco Tablet</title>
-        <description></description>
-        <pubDate>Wed, 18 Feb 2015 16:53:30 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/install-windows-10-technical-preview-on-tesco-tablet</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/install-windows-10-technical-preview-on-tesco-tablet</guid>
-        
-        
-        <category>windows_10_on_a_tablet</category>
-        
-      </item>
-    
-      <item>
-        <title>Sourcing a Cheap Tablet for Windows 10</title>
-        <description></description>
-        <pubDate>Sun, 15 Feb 2015 12:00:00 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/windows_10_on_a_tablet/2015/02/15/sourcing-a-cheap-tablet-for-windows-10/</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/windows_10_on_a_tablet/2015/02/15/sourcing-a-cheap-tablet-for-windows-10/</guid>
-        
-        
-        <category>windows_10_on_a_tablet</category>
-        
-      </item>
-    
-      <item>
-        <title>Sync Web Videos to Your Tablet or Phone, Watch Them Offline</title>
-        <description></description>
-        <pubDate>Sun, 01 Feb 2015 22:44:56 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/sync-pocket-videos-to-your-phone-watch-them-offline</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/sync-pocket-videos-to-your-phone-watch-them-offline</guid>
-        
-        
-        <category>syncing_web_video</category>
-        
-      </item>
-    
-      <item>
-        <title>Download Pocket Videos to Your PC</title>
-        <description></description>
-        <pubDate>Sat, 03 Jan 2015 00:47:50 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/download-pocket-videos-to-your-pc</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/download-pocket-videos-to-your-pc</guid>
-        
-        
-        <category>syncing_web_video</category>
-        
-      </item>
-    
-      <item>
-        <title>Getting Started With the Pocket Developer API</title>
-        <description></description>
-        <pubDate>Sun, 21 Dec 2014 00:48:10 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/getting-started-with-the-pocket-developer-api</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/getting-started-with-the-pocket-developer-api</guid>
-        
-        
-        <category>syncing_web_video</category>
-        
-      </item>
-    
-      <item>
-        <title>I Can&#39;t Stream Video on the Commute. How Can I Fix It?</title>
-        <description></description>
-        <pubDate>Wed, 17 Dec 2014 00:48:10 +0000</pubDate>
-        <link>http://www.jamesfmackenzie.com/syncing_web_video/2014/12/17/i-cant-stream-video-on-the-commute-how-can-i-fix-it/</link>
-        <guid isPermaLink="true">http://www.jamesfmackenzie.com/syncing_web_video/2014/12/17/i-cant-stream-video-on-the-commute-how-can-i-fix-it/</guid>
-        
-        
-        <category>syncing_web_video</category>
-        
-      </item>
-    
+    {% endfor %}
   </channel>
 </rss>

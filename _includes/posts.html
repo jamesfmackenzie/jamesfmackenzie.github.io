@@ -1,0 +1,18 @@
+<!-- Posts Section -->
+<section id="posts">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Recent Posts</h2>
+				<hr class="star-primary">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				{% for post in site.posts %}
+				<p><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}</p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

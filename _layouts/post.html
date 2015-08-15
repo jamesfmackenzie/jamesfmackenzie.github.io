@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top" class="index">
+    {% include project_nav.html %}
+	{% include post_header.html %}
+	<section id="posts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>{{ page.header }}</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</section>
+    {% include footer.html %}
+    {% include js.html %}
+    </body>
+</html>
