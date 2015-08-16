@@ -20,14 +20,16 @@ Ghost themes take your blog content (the data) and format it for the web (the pr
 
 Handlebars is a templating language, designed to allow separation between HTML and a data source:
 
-<pre>
-<span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">div</span> <span class="MetaTagAll">class</span>=<span class="String"><span class="String">"</span>entry<span class="String">"</span></span><span class="MetaTagAll">&gt;</span></span>
-  <span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">h1</span><span class="MetaTagAll">&gt;</span></span><span class="EmbeddedSourceBright">{% raw %}{{title}}{% endraw %}</span><span class="MetaTagAll"><span class="MetaTagAll">&lt;/</span><span class="MetaTagAll">h1</span><span class="MetaTagAll">&gt;</span></span>
-  <span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">div</span> <span class="MetaTagAll">class</span>=<span class="String"><span class="String">"</span>body<span class="String">"</span></span><span class="MetaTagAll">&gt;</span></span>
-    <span class="EmbeddedSourceBright">{% raw %}{{body}}{% endraw %}</span>
-  <span class="MetaTagAll"><span class="MetaTagAll">&lt;/</span><span class="MetaTagAll">div</span><span class="MetaTagAll">&gt;</span></span>
-<span class="MetaTagAll"><span class="MetaTagAll">&lt;/</span><span class="MetaTagAll">div</span><span class="MetaTagAll">&gt;</span></span>
-</pre>
+{% highlight html %}
+{% raw %}
+<div class="entry">
+  <h1>{{title}}</h1>
+  <div class="body">
+    {{body}}
+  </div>
+</div>
+{% endraw %}
+{% endhighlight %}
 
 Above shows a simple Handlebars template. <code>{% raw %}{{title}}{% endraw %}</code> and <code>{% raw %}{{body}}{% endraw %}</code> are Handlebars expressions which will be swapped out at runtime with actual data. The rest of the snippet is standard HTML which (along with CSS) provides the structure, layout and design.
 
@@ -46,25 +48,29 @@ A Ghost theme *must* contain the following two files. Everything else if optiona
     * Ghost always passes it a <code>post</code> object which is used to render post data to the page.
     * An example <code>post.hbs</code> file:
     
-<pre>
-{% raw %}{{#post}}{% endraw %}
-<span class="MetaTagAll">&lt;</span>h1 class="post-title"<span class="MetaTagAll">&gt;</span>{% raw %}{{title}}{% endraw %}<span class="MetaTagAll">&lt;</span>/h1<span class="MetaTagAll">&gt;</span>
-<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>{% raw %}{{content}}{% endraw %}<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>
-{% raw %}{{/post}}{% endraw %}
-</pre>    
+{% highlight html %}
+{% raw %}
+{{#post}}
+<h1 class="post-title">{{title}}</h1>
+<p>{{content}}<p>
+{{/post}}
+{% endraw %}
+{% endhighlight %}	 
     
 * <code>index.hbs</code>
 	* This is the template for the blog homepage.
     * Ghost always passes it the <code>posts</code> object. This is a collection of all the posts that should be displayed.
     * You can loop through the collection to output all your posts to the page.
     * An example <code>index.hbs</code> file:
-    
-<pre>
-{% raw %}{{#foreach posts}}{% endraw %}
-  <span class="MetaTagAll">&lt;</span>h1 class="post-title"<span class="MetaTagAll">&gt;</span><span class="MetaTagAll">&lt;</span>a href="{% raw %}{{url}}{% endraw %}"<span class="MetaTagAll">&gt;</span>{% raw %}{{title}}{% endraw %}<span class="MetaTagAll">&lt;</span>/a<span class="MetaTagAll">&gt;</span><span class="MetaTagAll">&lt;</span>/h1<span class="MetaTagAll">&gt;</span>
-  <span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>{% raw %}{{content}}{% endraw %}<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>
-{% raw %}{{/foreach}}{% endraw %}
-</pre> 
+   
+{% highlight html %}
+{% raw %}
+{{#foreach posts}}
+  <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+  <p>{{content}}<p>
+{{/foreach}}
+{% endraw %}
+{% endhighlight %}	
 
 **That really is it**. To prove it, try this:
 

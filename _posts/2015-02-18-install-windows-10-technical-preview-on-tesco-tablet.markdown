@@ -6,7 +6,9 @@ categories: windows_10_on_a_tablet
 permalink: /:title
 ---
 
-<strong>Updated 2015-08-01: to reflect Windows 10 retail launch</strong>
+###Article updated 2015-08-01 to reflect Windows 10 retail launch
+
+###Introduction
 
 I spotted <a href="http://www.tesco.com/direct/connect-7-tablet-with-windows-81-office-365-personal-32gb-wifi-black/182-3108.prd" target="_blank">this amazingly cheap Windows 8.1 tablet</a> on a recent Tesco grocery trip. At £99, I've no idea how they turn a profit, but with the recent launch of <del><a href="http://arstechnica.com/information-technology/2015/01/new-windows-10-preview-comes-to-pc-next-week-to-phones-in-february/" target="_blank">Windows 10 Technical Preview</a></del> <a href="http://blogs.windows.com/launch/" target="_blank">Windows 10</a>, I thought it'd make a nice experiment. 
 

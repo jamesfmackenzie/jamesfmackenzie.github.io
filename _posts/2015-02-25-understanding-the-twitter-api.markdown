@@ -34,12 +34,12 @@ If you want your App to make API calls on behalf of *other users*, there's a mor
 
 Before we move on, let's add these keys, tokens and secrets to our shell script as constants:
 
-<pre>
+{% highlight bash %}
 consumer_key="[YOUR CONSUMER TOKEN]"
 consumer_secret="[YOUR CONSUMER TOKEN SECRET]"
 access_token="[YOUR ACCESS TOKEN]"
 access_token_secret="[YOUR ACCESS TOKEN SECRET]"
-</pre>
+{% endhighlight %}
 
 ###Step 3. Establish request options
 
@@ -69,12 +69,14 @@ GET
 
 Now we've estabished the request options, let's set these up as constants in our shell script too:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 method_verb="GET"
 method_url="https://api.twitter.com/1.1/statuses/user_timeline.json"
 screen_name="[YOUR SCREEN NAME]"
 count=5
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 ###Step 5. Make a request
 
@@ -87,16 +89,20 @@ https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=jamesfmacken
 </pre>
 
 **Example Request (cURL)**
-<pre>
+{% highlight bash %}
+{% raw %}
 curl --get 'https://api.twitter.com/1.1/statuses/user_timeline.json' --data 'count=5&screen_name=jamesfmackenzie'
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 Easy right? Well, not quite so easy. Issuing the request above yields the following response:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 $ curl --get 'https://api.twitter.com/1.1/statuses/user_timeline.json' --data 'count=5&screen_name=jamesfmackenzie'
-<span style="background-color: yellow;">{"errors":[{"code":215,"message":"Bad Authentication data."}]}</span>
-</pre>
+{"errors":[{"code":215,"message":"Bad Authentication data."}]}
+{% endraw %}
+{% endhighlight %}
 
 What went wrong? Well, it turns out that Twitter considers the above request invalid, because there's no way of knowing:
 
@@ -111,7 +117,8 @@ For our request to work, we need to provide these details to Twitter in the form
 
 In their <a href="https://dev.twitter.com/oauth/overview/authorizing-requests" target="_blank">documentation</a>, Twitter provide the following Authorization Header as an example:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 Authorization: OAuth
 oauth_consumer_key="xvz1evFS4wEEPTGEFPHBog",
 oauth_nonce="kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg",
@@ -120,7 +127,8 @@ oauth_signature_method="HMAC-SHA1",
 oauth_timestamp="1318622958",
 oauth_token="370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb",
 oauth_version="1.0"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 (Note: line breaks have been added for readability)
 
@@ -139,9 +147,11 @@ For a one-off, you could just hammer away at the keyboard randomly. But a better
 * Use <a href="https://www.openssl.org/" target="_blank">OpenSSL</a>'s rand function to generate a random base64 encoded string
 * Use <a href="http://en.wikipedia.org/wiki/Sed" target="_blank">sed</a> to strip out the non-alphanumeric characters
 
-<pre>
+{% highlight bash %}
+{% raw %}
 nonce=`openssl rand -base64 32 | sed -e s'/[+=/]//g'`
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **oauth_signature**
 
@@ -161,7 +171,8 @@ These parameters are then:
 
 If you want more detail you can find it <a href="https://dev.twitter.com/oauth/overview/creating-signatures" target="_blank">here</a>. My implementation is as follows:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 # Use perl to percent encode the method url
 percent_encoded_method_url=`echo ${method_url} | perl -MURI::Escape -ne 'chomp;print uri_escape($_),"\n"'`
 
@@ -173,15 +184,18 @@ signature_key="${consumer_secret}&${access_token_secret}"
 
 # sign signature base string with signature key to generate signature
 oauth_signature=`echo -n ${signature_base_string} | openssl dgst -sha1 -hmac ${signature_key} -binary | openssl base64 | sed -e s'/+/%2B/' -e s'/\//%2F/' -e s'/=/%3D/'`
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **oauth\_signature\_method**
 
 Easy peasy. This is always hardcoded to "HMAC-SHA1".
 
-<pre>
+{% highlight bash %}
+{% raw %}
 oauth_signature_method="HMAC-SHA1"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 Note: make sure this is declared above the oauth_signature declaration
 
@@ -189,9 +203,11 @@ Note: make sure this is declared above the oauth_signature declaration
 
 The number of seconds since UNIX epoch. You can use timestamp to generate this:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 timestamp=`date +%s` 
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 Note: make sure this is declared above the oauth_signature declaration
 
@@ -203,9 +219,11 @@ This is the access\_token we created in Step 2.
 
 Last one (and an easy one). This is always hardcoded to "1.0".
 
-<pre>
-oauth_version="1.0"
-</pre>
+{% highlight bash %}
+{% raw %}
+oauth_version="1.0" 
+{% endraw %}
+{% endhighlight %}
 
 Note: make sure this is declared above the oauth_signature declaration
 
@@ -213,7 +231,8 @@ Note: make sure this is declared above the oauth_signature declaration
 
 Finally! Now we've got all the parameters together, we can switch them together to create the Authorization Header:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 Authorization: OAuth
 oauth_consumer_key="[YOUR CONSUMER KEY]",
 oauth_nonce="[YOUR GENERATED NONCE]",
@@ -222,13 +241,16 @@ oauth_signature_method="HMAC-SHA1",
 oauth_timestamp="[YOUR GENERATED TIMESTAMP]",
 oauth_token="[YOUR ACCESS TOKEN]",
 oauth_version="1.0"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 My implementation:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 header="Authorization: OAuth oauth_consumer_key=\"${consumer_key}\", oauth_nonce=\"${nonce}\", oauth_signature=\"${oauth_signature}\", oauth_signature_method=\"${oauth_signature_method}\", oauth_timestamp=\"${timestamp}\", oauth_token=\"${access_token}\", oauth_version=\"${oauth_version}\""
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 ###Step 5. Make Authenticated Requests Against the Twitter API
 
@@ -236,13 +258,16 @@ All done! Now you're ready to make authorized requests against the Twitter API.
 
 To retrieve your 5 most recent Tweets using cURL:
 
-<pre>
+{% highlight bash %}
+{% raw %}
 result=`curl --get "${method_url}" --data "screen_name=${screen_name}&count=${count}" --header "${header}"`
 echo "${result}"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Response**
-<pre>
+{% highlight json %}
+{% raw %}
 [
    {
       "created_at":"Tue Feb 24 03:35:14 +0000 2015",
@@ -781,12 +806,14 @@ echo "${result}"
       "lang":"en"
    }
 ]
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 That's it! I hope to make use of the Twitter API over the next few weeks and post something interesting/useful.
 
 ###Full code listing
-<pre>
+{% highlight bash %}
+{% raw %}
 #!/bin/bash
 
 consumer_key="Bg6pHWiVYhmi3y79ZuBMQ"
@@ -827,4 +854,5 @@ echo "${header}"
 
 result=`curl --get "${method_url}" --data "screen_name=${screen_name}&count=${count}" --header "${header}"`
 echo "${result}"
-</pre>
+{% endraw %}
+{% endhighlight %}

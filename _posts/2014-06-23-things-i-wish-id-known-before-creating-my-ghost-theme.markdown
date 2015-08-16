@@ -10,14 +10,16 @@ permalink: /:title
 
 [Handlebars](http://handlebarsjs.com/) is a templating language, designed to allow separation between HTML and a data source:
 
-<pre>
-<span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">div</span> <span class="MetaTagAll">class</span>=<span class="String"><span class="String">"</span>entry<span class="String">"</span></span><span class="MetaTagAll">&gt;</span></span>
-  <span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">h1</span><span class="MetaTagAll">&gt;</span></span><span class="EmbeddedSourceBright">{% raw %}{{title}}{% endraw %}</span><span class="MetaTagAll"><span class="MetaTagAll">&lt;/</span><span class="MetaTagAll">h1</span><span class="MetaTagAll">&gt;</span></span>
-  <span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">div</span> <span class="MetaTagAll">class</span>=<span class="String"><span class="String">"</span>body<span class="String">"</span></span><span class="MetaTagAll">&gt;</span></span>
-    <span class="EmbeddedSourceBright">{% raw %}{{body}}{% endraw %}</span>
-  <span class="MetaTagAll"><span class="MetaTagAll">&lt;/</span><span class="MetaTagAll">div</span><span class="MetaTagAll">&gt;</span></span>
-<span class="MetaTagAll"><span class="MetaTagAll">&lt;/</span><span class="MetaTagAll">div</span><span class="MetaTagAll">&gt;</span></span>
-</pre>
+{% highlight html %}
+{% raw %}
+<div class="entry">
+  <h1>{{title}}</h1>
+  <div class="body">
+    {{body}}
+  </div>
+</div>
+{% endraw %}
+{% endhighlight %}	
 
 Above shows a simple Handlebars template. <code>{% raw %}{{title}}{% endraw %}</code> and <code>{% raw %}{{body}}{% endraw %}</code> are Handlebars expressions which will be swapped out at runtime with actual data. The rest of the snippet is standard HTML which (along with CSS) provides the structure, layout and design.
 
@@ -76,29 +78,34 @@ Everything else is optional.
             * You can use the <code>{% raw %}{{foreach}}{% endraw %}</code> helper to iterate over the tags
 		* Each of these properties can be output using a standard Handlebars expression, e.g. <code>{% raw %}{{title}}{% endraw %}</code>. In addition, you can use just <code>{% raw %}{{author}}{% endraw %}</code> to output the author's name:
 
-<pre>
-{% raw %}{{#post}}{% endraw %}
-<span class="MetaTagAll">&lt;</span>h1 class="post-title"<span class="MetaTagAll">&gt;</span>{% raw %}{{title}}{% endraw %}<span class="MetaTagAll">&lt;</span>/h1<span class="MetaTagAll">&gt;</span>
-<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>Published by {% raw %}{{author}}{% endraw %} on {% raw %}{{published_at}}{% endraw %}<span class="MetaTagAll">&lt;</span>/p<span class="MetaTagAll">&gt;</span>
-<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>Tags:
-    {% raw %}{{#foreach tags}}{% endraw %}
-        <span class="MetaTagAll">&lt;</span>li<span class="MetaTagAll">&gt;</span>{% raw %}{{name}}{% endraw %}<span class="MetaTagAll">&lt;</span>/li<span class="MetaTagAll">&gt;</span>
-    {% raw %}{{/foreach}}{% endraw %}
-<span class="MetaTagAll">&lt;</span>/p<span class="MetaTagAll">&gt;</span>
-<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>{% raw %}{{content}}{% endraw %}<span class="MetaTagAll">&lt;</span>/p<span class="MetaTagAll">&gt;</span>
-{% raw %}{{/post}}{% endraw %}
-</pre>  
+		
+{% highlight html %}
+{% raw %}
+{{#post}}
+<h1 class="post-title">{{title}}</h1>
+<p>Published by {{author}} on {{published_at}}</p>
+<p>Tags:
+    {{#foreach tags}}
+        <li>{{name}}</li>
+    {{/foreach}}
+</p>
+<p>{{content}}</p>
+{{/post}}
+{% endraw %}
+{% endhighlight %}
         
 * <code>index.hbs</code> is always passed the <code>posts</code> object.
 	* This is a collection of all the <code>post</code> objects in your blog.
     * Again you can loop over these using the <code>foreach</code> helper:
     
-<pre>
-{% raw %}{{#foreach posts}}{% endraw %}
-  <span class="MetaTagAll">&lt;</span>h1 class="post-title"<span class="MetaTagAll">&gt;</span><span class="MetaTagAll">&lt;</span>a href="{% raw %}{{url}}{% endraw %}"<span class="MetaTagAll">&gt;</span>{% raw %}{{title}}{% endraw %}<span class="MetaTagAll">&lt;</span>/a<span class="MetaTagAll">&gt;</span><span class="MetaTagAll">&lt;</span>/h1<span class="MetaTagAll">&gt;</span>
-  <span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>{% raw %}{{content}}{% endraw %}<span class="MetaTagAll">&lt;</span>p<span class="MetaTagAll">&gt;</span>
-{% raw %}{{/foreach}}{% endraw %}
-</pre>
+{% highlight html %}
+{% raw %}
+{{#foreach posts}}
+  <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+  <p>{{content}}<p>
+{{/foreach}}
+{% endraw %}
+{% endhighlight %}
 
 * All Handlebars templates are passed global blog properties via the <code>@blog</code> object
 	* <code>{% raw %}{{@blog.url}}{% endraw %}</code> – the blog url specified in config.js

@@ -6,6 +6,12 @@ categories: stream_to_xbone
 permalink: /:title
 ---
 
+###Update 2015-08-15
+
+There is now an <a href="https://plex.tv/xbox" target="_blank">Official Plex client for Xbox One</a>, making the below redundant
+
+###Introduction
+
 Last time, [I suggested we could use Plex Media Server to stream almost any video from PC to Xbox One](/plex-to-the-rescue/). Here's how to actually do it.
 
 ###Install Plex 
@@ -24,148 +30,156 @@ I won't go into great detail on this since it's already [documented on the Plex 
 
 Create a new file called <code>Windows DLNA.xml</code> with the content below. Save it in <code>C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles</code>.
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <Client name="Windows DLNA">
-      <!-- Save as Windows DLNA.xml in C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles -->
-      <Identification>
-          <!-- Uniquely identify Windows 8 DLNA client via User-Agent -->
-          <Header name="User-Agent" substring="Microsoft-DLNA DLNADOC" />
-        </Identification>
-      <TranscodeTargets>
-        <VideoProfile protocol="http" container="mpegts" codec="h264" audioCodec="aac,ac3,eac3" context="streaming">
-          <Setting name="VideoEncodeFlags" value="-x264opts cabac=0" />
-          <Setting name="SubtitleSize" value="100" />
-        </VideoProfile>
-        <VideoProfile protocol="slss" container="mp4" codec="h264" audioCodec="aac" context="streaming">
-          <Setting name="VideoEncodeFlags" value="-x264opts cabac=0:keyint=50:min_keyint=50:scenecut=0" />
-          <Setting name="SubtitleSize" value="100" />
-          <Setting name="AudioSyncFlags" value="3" />
-        </VideoProfile>
-        <VideoProfile protocol="hls" container="mpegts" codec="h264" audioCodec="aac" context="streaming">
-          <Setting name="VideoEncodeFlags" value="-x264opts cabac=1:level=41" />
-          <Setting name="SubtitleSize" value="100" />
-        </VideoProfile>
-        <VideoProfile container="mp4" codec="h264" audioCodec="aac,ac3,eac3" context="static" />
-        <MusicProfile container="mp3" codec="mp3" />
-        <PhotoProfile container="jpeg" />
-      </TranscodeTargets>
-      <DirectPlayProfiles>
-        <!-- Notice no .mkv in here. This means it will always be transcoded instead of being sent to the Windows 8 client directly -->
-        <VideoProfile container="mp4,mov" codec="h264,mpeg4" audioCodec="aac,ac3,eac3,mp3,pcm" />
-        <VideoProfile container="mpegts" codec="h264" audioCodec="aac,ac3,eac3,mp3,mp2,pcm" />
-        <VideoProfile container="asf" codec="wmv2,wmv3,vc1" audioCodec="wmav2,wmapro,wmavoice" />
-        <VideoProfile container="avi" codec="mpeg4,msmpeg4,mjpeg" audioCodec="mp3,ac3,eac3,mp2,pcm" />
-        <MusicProfile container="asf" codec="wmav2,wmapro,wmavoice" />
-        <MusicProfile container="mp4" codec="aac" />
-        <MusicProfile container="mp3" codec="mp3" />
-        <PhotoProfile container="jpeg" />
-      </DirectPlayProfiles>
-      <CodecProfiles>
-        <VideoAudioCodec name="aac,eac3">
-          <Limitations>
-            <UpperBound name="audio.channels" value="8" />
-          </Limitations>
-        </VideoAudioCodec>
-        <VideoAudioCodec name="ac3">
-          <Limitations>
-            <UpperBound name="audio.channels" value="6" />
-          </Limitations>
-        </VideoAudioCodec>
-      </CodecProfiles>
-      <TranscodeTargetProfiles>
-        <VideoTranscodeTarget protocol="*" context="all">
-          <VideoCodec name="*">
-            <Limitations>
-              <!-- Windows doesn't appear to play 10-bit h264 -->
-              <UpperBound name="video.bitDepth" value="8" isRequired="false" />
-            </Limitations>
-          </VideoCodec>
-        </VideoTranscodeTarget>
-      </TranscodeTargetProfiles>
-    </Client>
+{% highlight xml %}
+{% raw %}
+<?xml version="1.0" encoding="utf-8"?>
+<Client name="Windows DLNA">
+  <!-- Save as Windows DLNA.xml in C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles -->
+  <Identification>
+      <!-- Uniquely identify Windows 8 DLNA client via User-Agent -->
+      <Header name="User-Agent" substring="Microsoft-DLNA DLNADOC" />
+    </Identification>
+  <TranscodeTargets>
+    <VideoProfile protocol="http" container="mpegts" codec="h264" audioCodec="aac,ac3,eac3" context="streaming">
+      <Setting name="VideoEncodeFlags" value="-x264opts cabac=0" />
+      <Setting name="SubtitleSize" value="100" />
+    </VideoProfile>
+    <VideoProfile protocol="slss" container="mp4" codec="h264" audioCodec="aac" context="streaming">
+      <Setting name="VideoEncodeFlags" value="-x264opts cabac=0:keyint=50:min_keyint=50:scenecut=0" />
+      <Setting name="SubtitleSize" value="100" />
+      <Setting name="AudioSyncFlags" value="3" />
+    </VideoProfile>
+    <VideoProfile protocol="hls" container="mpegts" codec="h264" audioCodec="aac" context="streaming">
+      <Setting name="VideoEncodeFlags" value="-x264opts cabac=1:level=41" />
+      <Setting name="SubtitleSize" value="100" />
+    </VideoProfile>
+    <VideoProfile container="mp4" codec="h264" audioCodec="aac,ac3,eac3" context="static" />
+    <MusicProfile container="mp3" codec="mp3" />
+    <PhotoProfile container="jpeg" />
+  </TranscodeTargets>
+  <DirectPlayProfiles>
+    <!-- Notice no .mkv in here. This means it will always be transcoded instead of being sent to the Windows 8 client directly -->
+    <VideoProfile container="mp4,mov" codec="h264,mpeg4" audioCodec="aac,ac3,eac3,mp3,pcm" />
+    <VideoProfile container="mpegts" codec="h264" audioCodec="aac,ac3,eac3,mp3,mp2,pcm" />
+    <VideoProfile container="asf" codec="wmv2,wmv3,vc1" audioCodec="wmav2,wmapro,wmavoice" />
+    <VideoProfile container="avi" codec="mpeg4,msmpeg4,mjpeg" audioCodec="mp3,ac3,eac3,mp2,pcm" />
+    <MusicProfile container="asf" codec="wmav2,wmapro,wmavoice" />
+    <MusicProfile container="mp4" codec="aac" />
+    <MusicProfile container="mp3" codec="mp3" />
+    <PhotoProfile container="jpeg" />
+  </DirectPlayProfiles>
+  <CodecProfiles>
+    <VideoAudioCodec name="aac,eac3">
+      <Limitations>
+        <UpperBound name="audio.channels" value="8" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="ac3">
+      <Limitations>
+        <UpperBound name="audio.channels" value="6" />
+      </Limitations>
+    </VideoAudioCodec>
+  </CodecProfiles>
+  <TranscodeTargetProfiles>
+    <VideoTranscodeTarget protocol="*" context="all">
+      <VideoCodec name="*">
+        <Limitations>
+          <!-- Windows doesn't appear to play 10-bit h264 -->
+          <UpperBound name="video.bitDepth" value="8" isRequired="false" />
+        </Limitations>
+      </VideoCodec>
+    </VideoTranscodeTarget>
+  </TranscodeTargetProfiles>
+</Client>
+{% endraw %}
+{% endhighlight %}
 
 ###Create an Xbox One DLNA media profile
 
 Create another new file called <code>Xbox One.xml</code> with the content below. Save it in <code>C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles</code>.
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <Client name="Xbox One">
-      <!-- Save as Xbox One.xml in C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles -->
-      <!-- Note: this profile is heavily based on the Xbox 360 profile. There's likely room for improvement here -->
-      <Identification>
-        <Header name="User-Agent" substring="NSPlayer" />
-      </Identification>
-      <DeviceDescription>
-        <ModelName>Windows Media Player Sharing</ModelName>
-        <ModelNumber>12.0</ModelNumber>
-        <ModelUrl>http://www.microsoft.com/</ModelUrl>
-        <Manufacturer>Microsoft Corporation</Manufacturer>
-        <ManufacturerUrl>http://www.microsoft.com/</ManufacturerUrl>
-        <X-DlnaDoc>DMS-1.50</X-DlnaDoc>
-        <X-DlnaCap />
-      </DeviceDescription>
-      <TranscodeTargets>
-        <VideoProfile container="mpegts" codec="h264" audioCodec="ac3">
-        </VideoProfile>
-        <MusicProfile container="mp3" codec="mp3" />
-        <PhotoProfile container="jpeg" />
-      </TranscodeTargets>
-      <DirectPlayProfiles>
-        <VideoProfile container="mpegts" codec="h264" audioCodec="ac3" />
-        <VideoProfile container="avi" codec="mpeg4" audioCodec="ac3,mp3" />
-        <VideoProfile container="avi" codec="h264" audioCodec="aac" />
-        <VideoProfile container="mp4,mov" codec="h264,mpeg4" audioCodec="aac,ac3" />
-        <VideoProfile container="asf" codec="wmv2,wmv3,vc1" audioCodec="wmav2,wmapro" />
-        <MusicProfile container="asf" codec="wmav2,wmapro,wmavoice" />
-        <MusicProfile container="mp3" codec="mp3" />
-        <PhotoProfile container="jpeg" />
-      </DirectPlayProfiles>
-      <CodecProfiles>
-        <VideoCodec name="mpeg4">
-          <Limitations>
-            <UpperBound name="video.frameRate" value="30" isRequired="false" />
-            <UpperBound name="video.bitrate" value="5120" isRequired="false" />
-          </Limitations>
-        </VideoCodec>
-        <VideoCodec name="h264">
-          <Limitations>
-            <UpperBound name="video.width" value="1920" />
-            <UpperBound name="video.height" value="1080" />
-          </Limitations>
-        </VideoCodec>
-        <VideoCodec name="wmv2,wmv3,vc1">
-          <Limitations>
-            <UpperBound name="video.width" value="1920" />
-            <UpperBound name="video.height" value="1080" />
-            <!-- FPS upper bound takes care of requirement that advanced profile level be <= 3 -->
-            <UpperBound name="video.frameRate" value="30" isRequired="false" />
-            <UpperBound name="video.bitrate" value="15360" isRequired="false" />
-          </Limitations>
-        </VideoCodec>
-        <VideoAudioCodec name="ac3,wmav2,wmapro">
-          <Limitations>
-            <UpperBound name="audio.channels" value="6" isRequired="false" />
-          </Limitations>
-        </VideoAudioCodec>
-        <VideoAudioCodec name="aac">
-          <Limitations>
-            <UpperBound name="audio.channels" value="2" isRequired="false" />
-            <Match name="audio.profile" value="lc" isRequired="false" />
-          </Limitations>
-        </VideoAudioCodec>
-      </CodecProfiles>
-      <ContainerProfiles>
-        <VideoContainer name="mp4,mov">
-          <Limitations>
-            <!-- Microsoft doesn't document this, but it appears to be true -->
-            <Match name="part.has64bitOffsets" value="0" isRequired="false" />
-          </Limitations>
-        </VideoContainer>
-      </ContainerProfiles>
-      <DlnaMediaProfiles>
-        <DlnaVideoProfile container="avi" mimeType="video/avi" />
-      </DlnaMediaProfiles>
-    </Client>
+{% highlight xml %}
+{% raw %}
+<?xml version="1.0" encoding="utf-8"?>
+<Client name="Xbox One">
+  <!-- Save as Xbox One.xml in C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles -->
+  <!-- Note: this profile is heavily based on the Xbox 360 profile. There's likely room for improvement here -->
+  <Identification>
+    <Header name="User-Agent" substring="NSPlayer" />
+  </Identification>
+  <DeviceDescription>
+    <ModelName>Windows Media Player Sharing</ModelName>
+    <ModelNumber>12.0</ModelNumber>
+    <ModelUrl>http://www.microsoft.com/</ModelUrl>
+    <Manufacturer>Microsoft Corporation</Manufacturer>
+    <ManufacturerUrl>http://www.microsoft.com/</ManufacturerUrl>
+    <X-DlnaDoc>DMS-1.50</X-DlnaDoc>
+    <X-DlnaCap />
+  </DeviceDescription>
+  <TranscodeTargets>
+    <VideoProfile container="mpegts" codec="h264" audioCodec="ac3">
+    </VideoProfile>
+    <MusicProfile container="mp3" codec="mp3" />
+    <PhotoProfile container="jpeg" />
+  </TranscodeTargets>
+  <DirectPlayProfiles>
+    <VideoProfile container="mpegts" codec="h264" audioCodec="ac3" />
+    <VideoProfile container="avi" codec="mpeg4" audioCodec="ac3,mp3" />
+    <VideoProfile container="avi" codec="h264" audioCodec="aac" />
+    <VideoProfile container="mp4,mov" codec="h264,mpeg4" audioCodec="aac,ac3" />
+    <VideoProfile container="asf" codec="wmv2,wmv3,vc1" audioCodec="wmav2,wmapro" />
+    <MusicProfile container="asf" codec="wmav2,wmapro,wmavoice" />
+    <MusicProfile container="mp3" codec="mp3" />
+    <PhotoProfile container="jpeg" />
+  </DirectPlayProfiles>
+  <CodecProfiles>
+    <VideoCodec name="mpeg4">
+      <Limitations>
+        <UpperBound name="video.frameRate" value="30" isRequired="false" />
+        <UpperBound name="video.bitrate" value="5120" isRequired="false" />
+      </Limitations>
+    </VideoCodec>
+    <VideoCodec name="h264">
+      <Limitations>
+        <UpperBound name="video.width" value="1920" />
+        <UpperBound name="video.height" value="1080" />
+      </Limitations>
+    </VideoCodec>
+    <VideoCodec name="wmv2,wmv3,vc1">
+      <Limitations>
+        <UpperBound name="video.width" value="1920" />
+        <UpperBound name="video.height" value="1080" />
+        <!-- FPS upper bound takes care of requirement that advanced profile level be <= 3 -->
+        <UpperBound name="video.frameRate" value="30" isRequired="false" />
+        <UpperBound name="video.bitrate" value="15360" isRequired="false" />
+      </Limitations>
+    </VideoCodec>
+    <VideoAudioCodec name="ac3,wmav2,wmapro">
+      <Limitations>
+        <UpperBound name="audio.channels" value="6" isRequired="false" />
+      </Limitations>
+    </VideoAudioCodec>
+    <VideoAudioCodec name="aac">
+      <Limitations>
+        <UpperBound name="audio.channels" value="2" isRequired="false" />
+        <Match name="audio.profile" value="lc" isRequired="false" />
+      </Limitations>
+    </VideoAudioCodec>
+  </CodecProfiles>
+  <ContainerProfiles>
+    <VideoContainer name="mp4,mov">
+      <Limitations>
+        <!-- Microsoft doesn't document this, but it appears to be true -->
+        <Match name="part.has64bitOffsets" value="0" isRequired="false" />
+      </Limitations>
+    </VideoContainer>
+  </ContainerProfiles>
+  <DlnaMediaProfiles>
+    <DlnaVideoProfile container="avi" mimeType="video/avi" />
+  </DlnaMediaProfiles>
+</Client>
+{% endraw %}
+{% endhighlight %}
 
 ###Restart Plex
 

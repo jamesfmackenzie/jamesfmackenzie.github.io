@@ -37,7 +37,8 @@ http://getpocket.com/v3/oauth/request
 </pre>
 
 **Example Request**
-<pre>
+{% highlight http %}
+{% raw %}
 POST /v3/oauth/request HTTP/1.1
 Host: getpocket.com
 Content-Type: application/json
@@ -45,21 +46,26 @@ X-Accept: application/json
 
 {"consumer_key":"1234-abcd1234abcd1234abcd1234",
 "redirect_uri":"http://www.google.com"}
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Request (cURL)**
-<pre>
+{% highlight bash %}
+{% raw %}
 curl http://getpocket.com/v3/oauth/request -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"redirect_uri\":\"http://www.google.com\"}"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Response**
-<pre>
+{% highlight http %}
+{% raw %}
 HTTP/1.1 200 OK
 Content-Type: application/json
 Status: 200 OK
 
 {"code":"dcba4321-dcba-4321-dcba-4321dc"}
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 Make a note of this Request Token. You'll need it for the next step.
 
@@ -98,7 +104,8 @@ http://getpocket.com/v3/oauth/authorize
 </pre>
 
 **Example Request**
-<pre>
+{% highlight http %}
+{% raw %}
 POST /v3/oauth/authorize HTTP/1.1
 Host: getpocket.com
 Content-Type: application/json
@@ -106,22 +113,27 @@ X-Accept: application/json
 
 {"consumer_key":"1234-abcd1234abcd1234abcd1234",
 "code":"dcba4321-dcba-4321-dcba-4321dc"}
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Request (cURL)**
-<pre>
+{% highlight bash %}
+{% raw %}
 curl http://getpocket.com/v3/oauth/authorize -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"code\":\"dcba4321-dcba-4321-dcba-4321dc\"}"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Response**
-<pre>
+{% highlight http %}
+{% raw %}
 HTTP/1.1 200 OK
 Content-Type: application/json
 Status: 200 OK
 
 {"access_token":"5678defg-5678-defg-5678-defg56",
 "username":"pocketuser"}
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Make a note of this Access Token. This is the token you can use to make authenticated requests against the Pocket API on a permanent basis**.
 
@@ -142,22 +154,27 @@ http://getpocket.com/v3/get
 </pre>
 
 **Example Request**
-<pre>
+{% highlight http %}
+{% raw %}
 POST /v3/get HTTP/1.1
 Host: getpocket.com
 Content-Type: application/json
 
 {"consumer_key":"1234-abcd1234abcd1234abcd1234",
 "access_token":"5678defg-5678-defg-5678-defg56"}
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Request (cURL)**
-<pre>
+{% highlight bash %}
+{% raw %}
 curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\", \"access_token\":\"5678defg-5678-defg-5678-defg56\"}"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example Response**
-<pre>
+{% highlight json %}
+{% raw %}
 {
   "status": 1,
   "complete": 1,
@@ -206,6 +223,7 @@ curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H 
     },
     
 ... much more JSON
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 That's it!

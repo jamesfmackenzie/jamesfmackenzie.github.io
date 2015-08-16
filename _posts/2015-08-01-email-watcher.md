@@ -8,7 +8,9 @@ permalink: /:title
 Jobs to [download videos for me](/download-pocket-videos-to-your-pc/). Jobs to [Tweet messages](/understanding-the-twitter-api/). I love automation. And outside of the enterprise, most of it hinges on email. So I created a .NET library to do some of the email heavy lifting more me. Please <a href="https://github.com/jamesfmackenzie/EmailWatcher" target="_blank">check it out</a>!
 
 ###Usage
-<pre>
+
+{% highlight csharp %}
+{% raw %}
 // setup some options
 var options = new EmailWatcherOptions {
   Host = "[POP host]",
@@ -24,6 +26,7 @@ watcher.EmailReceivedEvent += (sender, args)
 
 // start watching
 watcher.StartWatching();
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 * <a href="https://github.com/jamesfmackenzie/EmailWatcher" target="_blank">EmailWatcher on GitHub</a>

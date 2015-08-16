@@ -35,7 +35,8 @@ https://getpocket.com/v3/get
 </pre>
 
 **Example HTTP Request**
-<pre>
+{% highlight http %}
+{% raw %}
 POST /v3/get HTTP/1.1
 Host: getpocket.com
 Content-Type: application/json
@@ -44,15 +45,18 @@ Content-Type: application/json
 "access_token":"5678defg-5678-defg-5678-defg56",
 "detailType":"complete",
 "contentType":"video"}
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example HTTP Request (cURL)**
-<pre>
+{% highlight bash %}
+{% raw %}
 curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\", \"access_token\":\"5678defg-5678-defg-5678-defg56\", \"detailType\":\"complete\", \"contentType\":\"video\"}"
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **Example HTTP Response**
-<pre>
+{% highlight json %}
 {
   "status": 1,
   "complete": 1,
@@ -104,7 +108,7 @@ curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H 
         "1": {
           "item_id": "796410494",
           "video_id": "1",
-          <span style="background-color:yellow">"src": "http://www.youtube.com/v/vXr-2hwTk58",</span>
+          "src": "http://www.youtube.com/v/vXr-2hwTk58"
           "width": "0",
           "height": "0",
           "type": "1",
@@ -167,7 +171,7 @@ curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H 
         "1": {
           "item_id": "766276760",
           "video_id": "1",
-          <span style="background-color:yellow">"src": "http://vimeo.com/play_redirect?clip_id=49367318&quality=hd",</span>
+          "src": "http://vimeo.com/play_redirect?clip_id=49367318&quality=hd"
           "width": "0",
           "height": "0",
           "type": "2",
@@ -177,18 +181,20 @@ curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H 
     },
    
 ... Lots more JSON
-</pre>
+{% endhighlight %}
 
-See the <span style="background-color:yellow">highlighted lines</span> above? We want to download the video from each one of those URLs. But first we need to parse them out somehow.
+See the video URLs above? We want to download from each one of those. But first we need to parse them out somehow.
 
 ###Step 4. Parse out video URLs using jq
 
 jq is a command line JSON processor. We can use it to separate out our previous video URLs from all that other JSON data - and dump the results into a file. Here's how:
 
 **This command line call ...**
-<pre>
+{% highlight bash %}
+{% raw %}
 curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"35939-55223ffc2c3e123d25dc67e4\", \"access_token\":\"b59ef60e-a7fe-76a8-750b-87edfc\", \"detailType\":\"complete\", \"contentType\":\"video\"}" | jq -r .list[].videos[]?.src > output.txt
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **... dumps all the video URLs in the response body to output.txt**
 <pre>
@@ -220,9 +226,11 @@ If you're interested in jq, you can find out more <a href="http://stedolan.githu
 Youtube-dl is an open source video downloader. It was initially built for YouTube only, but it's expanded over time to support many online video sites and formats.
 
 **This command line call ...**
-<pre>
+{% highlight bat %}
+{% raw %}
 youtube-dl.exe --ignore-errors --batch-file ./video-downloader/urls.txt --continue --no-part --no-overwrites -f 135+140/0 1>> ./video-downloader/log.txt 2>&1
-</pre>
+{% endraw %}
+{% endhighlight %}
 
 **... downloads all the videos referenced in output.txt to the current directory**
 
@@ -234,7 +242,8 @@ To find out more about the youtube-dl configuration options, head over <a href="
 
 That's it! Pretty easy right? To make things even easier, copy and paste the lines below into a new cmd script (I called mine <code>video-downloader.cmd</code>) and leave it minimized and running on your PC. Any videos you add to Pocket will be automatically downloaded to your PC - ace!
 
-<pre>
+{% highlight bat %}
+{% raw %}
 :beginloop
 
 :: download, parse video URLs from Pocket and flush into a text file
@@ -248,5 +257,6 @@ timeout /t 1200 /nobreak
 
 :: start again
 goto beginloop
-</pre>
+{% endraw %}
+{% endhighlight %}
 
