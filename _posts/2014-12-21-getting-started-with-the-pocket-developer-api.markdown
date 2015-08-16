@@ -3,7 +3,6 @@ layout: post
 title: Getting Started With the Pocket Developer API
 date: '2014-12-21 00:48:10'
 categories: syncing_web_video
-permalink: /:title
 ---
 
 I want to [automatically extract the video from my Pocketed content and sync it to my phone](/syncing_web_video/2014/12/17/i-cant-stream-video-on-the-commute-how-can-i-fix-it/). To do this, I'll need to extend Pocket via the <a href="http://getpocket.com/developer/" target="_blank">Developer API</a>. Here's how to get started.

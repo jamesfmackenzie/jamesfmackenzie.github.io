@@ -3,7 +3,6 @@ layout: post
 title: Setting Up a Ghost Dev Environment
 date: '2014-05-17 19:34:26'
 categories: ghost_theme
-permalink: /:title
 ---
 
 Before I get started [on my bespoke Ghost theme](/getting-to-grips-with-ghost-themes/), I need to setup a dev environment - it's not a good practice to experiment with your live site after all.

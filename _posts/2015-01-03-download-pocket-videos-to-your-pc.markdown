@@ -3,7 +3,6 @@ layout: post
 title: Download Pocket Videos to Your PC
 date: '2015-01-03 00:47:50'
 categories: syncing_web_video
-permalink: /:title
 ---
 
 As [mentioned before](/syncing_web_video/2014/12/17/i-cant-stream-video-on-the-commute-how-can-i-fix-it/), I want to automatically extract the video from my Pocketed content and sync it to my phone. To achieve this, I'm going to:

@@ -3,7 +3,6 @@ layout: post
 title: It's Done! 8-Bit Memories Ghost Theme
 date: '2014-06-21 03:51:00'
 categories: ghost_theme
-permalink: /:title
 ---
 
 ![](/img/posts/8-bit-Memories.png)

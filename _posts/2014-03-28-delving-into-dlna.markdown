@@ -3,7 +3,6 @@ layout: post
 title: Delving Into DLNA
 date: '2014-03-28 17:58:00'
 categories: stream_to_xbone
-permalink: /:title
 ---
 
 Last time, [Play To allowed me to stream some (but crucially not all) of my media collection from PC to Xbox One](/using-play-to-streaming-with-xbox-one/).

@@ -3,7 +3,6 @@ layout: post
 title: Atari in the Attic
 date: '2015-08-15 21:19:00'
 categories: atari_st_games
-permalink: /:title
 ---
 
 Graphics glitches. Timing issues. Emulators suck. The best way to enjoy retro games is on real hardware.
