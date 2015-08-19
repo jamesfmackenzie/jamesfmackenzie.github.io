@@ -3,6 +3,7 @@ layout: post
 title: Install Windows 10 on a £99 Tesco Tablet
 date: '2015-02-18 16:53:30'
 categories: windows_10_on_a_tablet
+permalink: /install-windows-10-technical-preview-on-tesco-tablet/
 ---
 
 ###Article updated 2015-08-01 to reflect Windows 10 retail launch

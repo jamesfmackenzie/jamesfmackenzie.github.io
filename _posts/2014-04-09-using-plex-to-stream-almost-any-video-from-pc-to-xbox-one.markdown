@@ -3,6 +3,7 @@ layout: post
 title: Use Plex to Stream Almost Any Video From PC to Xbox One
 date: '2014-04-09 18:29:00'
 categories: stream_to_xbone
+permalink: /using-plex-to-stream-almost-any-video-from-pc-to-xbox-one/
 ---
 
 ###Update 2015-08-15
