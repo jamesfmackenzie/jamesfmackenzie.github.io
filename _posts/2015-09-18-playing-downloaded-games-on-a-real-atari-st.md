@@ -2,14 +2,12 @@
 layout: post
 title: Playing Downloaded Games on a Real Atari ST
 date: '2015-09-18 22:33:00'
-categories: 
+categories: atari_st_games
 ---
 
 As discussed before, I want to [play some downloaded games on my Atari ST]({% post_url 2015-08-15-atari-in-the-attic %}).
 
-But first we need to get them there.
-
-Here are the high level options:
+But first we need to get them there. Here are the high level options:
 
 ###Option 1. Use Disk Images
 
@@ -50,6 +48,4 @@ I can think of several ways to do this:
 
 The <a href="http://www.atari-wiki.com/?title=Transferring_Files" target="_blank">Atari Forum Wiki has more information</a>.
 
-Phew! Quite a lot to be getting on with!
-
-Time to try some of these out.
+Phew! Quite a lot to be getting on with! Time to try some of these out.
