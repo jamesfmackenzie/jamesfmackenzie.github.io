@@ -48,4 +48,4 @@ I can think of several ways to do this:
 
 The <a href="http://www.atari-wiki.com/?title=Transferring_Files" target="_blank">Atari Forum Wiki has more information</a>.
 
-Phew! Quite a lot to be getting on with! 	Time to try some of these out.
+Phew! Quite a lot to be getting on with! Time to try some of these out. I'll update this post as I investigate the various options.
