@@ -7,13 +7,16 @@
 	<section id="posts">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2>{{ page.header }}</h2>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-lg-12">
 					{{ content }}
+					<h3>Related Posts</h3>
+					<ul>
+					{% for post in site.posts %}
+						{% if page.categories[0] == post.categories[0] %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}</li>
+						{% endif %}
+					{% endfor %}
+					</ul>
 				</div>
 			</div>
 		</div>
