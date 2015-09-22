@@ -12,7 +12,19 @@ p, li, pre {
     font-size: 20px;
 }
 
-pre, img {
+.post-list p {
+	margin-bottom: 11px;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+ul, ol {
+	margin-bottom: 18px;
+}
+
+pre, img, iframe {
 	margin: 1.25em auto 1.25em auto;
 	display: block;
 	max-width: 100%;
@@ -45,6 +57,7 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 	margin-top: 1.5em;
+	margin-bottom: 18px;
 }
 
 hr.star-light,
