@@ -77,13 +77,13 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
 * PlayStation 2 multitap
 * PlayStation 2 Eye Toy
 * PS2 USB converters
-** JS-909A play.com
-** PSXTOUSB RadioShack
+  * JS-909A play.com
+  * PSXTOUSB RadioShack
 * PS2 games
-** Final Fantasy X
-** Gran Turismo 3
-** Gran Turismo Concept
-** Metal Gear Solid 2
+  * Final Fantasy X
+  * Gran Turismo 3
+  * Gran Turismo Concept
+  * Metal Gear Solid 2
 * V2 Action Replay
 * Redant R2-6000 VGA Box
 * Blaze VGA Adapter
