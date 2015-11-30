@@ -6,16 +6,21 @@ date: '2015-11-24 21:43:30'
 
 After a weekend spent rummaging in the parents' attic, I came away with some solid gold gaming artefacts from my past.
 
-These (re)discoveries chart all of my video gaming childhood and most of my adulthood too. The memories!!
+These (re)discoveries chart my video gaming education from childhood to adulthood. The memories!!
 
-* ZX Spectrum
-  * Prism VTX 5000 modem
+
+###ZX Spectrum (1982)
+* Prism VTX 5000 modem
+
+###Amstrad PC1640 (1986)
 * PC games on 5.25" floppy disk
   * The Amstrad PC Collection
   * TV Sport Football
   * Microprose Soccer
   * 4D Sports Driving
   * Lex Spelling Fun 1
+
+###Atari 1040STFM (1986)
 * Atari ST Quickshot QS-131 Joystick
 * Atari ST Nine Tiles Network Adapter AT-194
 * Atari ST boxed games
@@ -28,6 +33,8 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
   * Knight Force
   * The Munsters
 * Atari ST Format Magazines
+
+###Nintendo Entertainment System (1986)
 * NES
 * NES Advantage
 * NES Controllers
@@ -36,6 +43,8 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
   * Super Mario Bros 2
   * Super Mario Bros
   * Kirby's Adventure
+
+###Sega Game Gear (1991)
 * SEGA Game Gear
 * SEGA Game Gear games
   * Sonic the Hedgehog
@@ -43,6 +52,8 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
   * ECCO the Dolphin
   * Ariel the Little Mermaid
   * Donald Duck The Lucky Dime Caper
+
+###PlayStation (1995)
 * SONY PlayStation 
 * SONY PlayStation controllers
 * Guncon
@@ -58,6 +69,8 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
   * Tekken 2
   * Time Crisis
   * Ridge Racer
+
+### AST Advantage! Adventure 575 Plus (1997)
 * Old PC Games
   * Destruction Derby
   * Unreal
@@ -70,9 +83,8 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
   * Civilization II
   * Microsoft Golf 98
   * Command & Conquer
-* Nokia NGage QD and games
-  * Virtual Tennis
-  * Moto GP
+
+###PlayStation 2 (2000)
 * PlayStation 2 controllers
 * PlayStation 2 multitap
 * PlayStation 2 Eye Toy
@@ -89,4 +101,9 @@ These (re)discoveries chart all of my video gaming childhood and most of my adul
 * Blaze VGA Adapter
 * XRGB-2 Upscan Converter
 * Official PlayStation 2 VGA cables
+
+###Nokia NGage QD (2004)
+* Nokia NGage QD and games
+  * Virtual Tennis
+  * Moto GP
 
