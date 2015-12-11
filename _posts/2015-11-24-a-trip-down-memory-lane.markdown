@@ -8,19 +8,26 @@ After a weekend spent rummaging in the parents' attic, I came away with some sol
 
 These (re)discoveries chart my video gaming education from childhood to adulthood. The memories!!
 
-
 ###ZX Spectrum (1982)
-* Prism VTX 5000 modem
+
+My old ZX Spectrum! I've fond memories of Horace Goes Skiing, Chuckie Egg and Manic Miner. Not such a big fan of the 20 (or so) attempts it took to load a game in the first place. I also came across a Prism VTX 5000 modem. Wonder if any bulletin boards still operate?
 
 ###Amstrad PC1640 (1986)
-* PC games on 5.25" floppy disk
-  * The Amstrad PC Collection
-  * TV Sport Football
-  * Microprose Soccer
-  * 4D Sports Driving
-  * Lex Spelling Fun 1
+
+Back in the late 80s, I used to play PC games on an Amstrad PC1640. Although the hardware is long gone, I did find some old games: 
+
+* The Amstrad PC Collection
+* TV Sport Football
+* Microprose Soccer
+* 4D Sports Driving
+* Lex Spelling Fun 1
+
+Now, I wonder if there's any way to read 5.25" floppies nowadays?
 
 ###Atari 1040STFM (1986)
+
+My "proper" games machine growing up was an Atari 1040STFM. I even broke the case open to add composite video support. Although my ST was pressed back into service some time ago, I did make the following rediscoveries:
+
 * Atari ST Quickshot QS-131 Joystick
 * Atari ST Nine Tiles Network Adapter AT-194
 * Atari ST boxed games
@@ -35,7 +42,9 @@ These (re)discoveries chart my video gaming education from childhood to adulthoo
 * Atari ST Format Magazines
 
 ###Nintendo Entertainment System (1986)
-* NES
+
+Mostly intrigued by what all the console fuss was about, I bought a NES very late in the cycle. I didn't regret it! As well as the NES itself, I also unearthed the following gems:
+
 * NES Advantage
 * NES Controllers
 * NES games
@@ -45,6 +54,9 @@ These (re)discoveries chart my video gaming education from childhood to adulthoo
   * Kirby's Adventure
 
 ###Sega Game Gear (1991)
+
+Game Gear! This beast could chomp through 6 AA batteries in only a few minutes. 
+
 * SEGA Game Gear
 * SEGA Game Gear games
   * Sonic the Hedgehog
