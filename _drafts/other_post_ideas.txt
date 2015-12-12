@@ -1,0 +1,66 @@
+	• Getting the best image quality out of the Atari ST
+		? RF
+		? Composite
+		? Sync strike + RGB scart
+		? Best ST cable
+		? Other?
+	• Video capture via cool Micomsoft cap card
+	• PS2 refurb with OPL, instructables controller clean and component cable
+	• Xbox One as a Freeview tuner
+	• Xbox One as a satellite tuner
+	• Raspberry Pi as an Acorn machine
+	• VSTO to schedule/snooze email "Mailbox-style"
+	• remind me app (with API)
+	• Try out the reactive programming course on Coursera: https://www.coursera.org/course/reactive
+	• Try writing an emulator http://emulator101.com/
+	• Try out running Chrome apps in Windows http://www.reddit.com/r/programming/comments/314p6l/googles_arc_now_runs_android_apps_on_chrome_os
+	• Learn AngularJS on codecademy http://www.codecademy.com/en/learn/learn-angularjs
+	• Try out project maelstrom decentralised browser http://blog.bittorrent.com/2015/04/10/project-maelstrom-enters-beta/
+	• set up RDP VPN http://www.hanselman.com/blog/SettingUpAVPNAndRemoteDesktopBackIntoYourHomeWithASynologyFromAnIPhone.aspx
+	• get started with hardware hacking http://www.marchisformakers.com/
+	• Getting old Atari ST games running with Steem
+	• Getting Archimedes games running with Arculator. Inspired by http://www.theregister.co.uk/2012/06/01/acorn_archimedes_is_25_years_old/
+	• Installing AppleTV in your house - the pictures are on iCloud
+	• Turn the old Mac mini into an OpenEmu station complete with wireless controller support http://openemu.org/
+	• Get AtariST surfing the web. Check out links in Pocket tagged atariinternetproject
+	• Windows 10 rasp pi 2
+	• Play around with Docker
+	• Jekyll
+		? What is it?
+		? Why are static sites great?
+		? Creating a custom theme
+		? Using Github pages
+		? Project pages
+		? Comments
+		? Code highlighting
+		? Site map
+		? RSS
+	• Get the old Mac Mini working as a Steam machine, with wireless controller support
+	• Hacking the Xbox Achievements API - https://xboxapi.com/documentation
+	• Apache redirector / reverse proxy - host multiple apps on your home PC on port 80
+	• Give your old Wii, GameCube, PS2 games a 1080p upgrade
+	• Experiences with GTD and personal kanban http://zenhabits.net/the-getting-things-done-gtd-faq/
+	• Automation and async: too many things rely on synchronous - posting to Twitter, reading something. What about when I'm offline? Or just want to do things async? Buffer 
+	• Using RDP from iPhone / iPad - it's really good!
+	• Blog about "Zero Notifications" lifestyle. http://joel.is/post/39927202947/zero-notifications
+	• Design patterns and their benefit to team communication. The code might not be improved, but it helps the team communicate
+	• A system for disorganised people. Background: tasks and gtd. Notes: Tasks alone aren't enough, projects and importance are also important
+	• Amazing neverwet treatment for dripping taps.
+	• Post cover images. Pretty awesome. http://blog.ghost.org/post-cover-images/
+	• "Open Command Window Here" and "Explorer ."
+	• Does Agile require org change? How do traditional IT roles need to change to support Agile?
+	• Put together and publish a techie book list e.g. GOOS, Refactoring Legacy code, Clean Code, Clean Code 2
+	• Using text-to-speech with iPhone, Kindle app and accessibility / text to speech
+	• Try making JS games with Coquette.js http://superbigtree.tumblr.com/post/57993562778/introduction-to-making-html5-javascript-games-with
+	• How to host a LAN party
+	• Ran out of disk space! What to do? try TreeSize Free
+	• Make your own Cloud on the cheap. Turn USB disk into a NAS + sync node for Bittorrent sync
+	• Do something will scrolling LED board (check out instructibles)
+	• Take the "one game per week" programming challenge 
+	• Take the "one language per week" programming challenge
+	• Mess about with Protractor
+	• mine craft cellular automata. Particularly for wave simulation.
+	• mturk.com can any tasks be automated through programming?
+	• iOS car accelerometer - how fast do you accelerate/brake compared to the average?
+	• Raspberry Pi ambilight
+	• Setting up an Archie emulator (Arculator, ArcEm?)
