@@ -55,7 +55,7 @@ Mostly intrigued by what all the console fuss was about, I bought a NES very lat
 
 ###Sega Game Gear (1991)
 
-Game Gear! This beast could chomp through 6 AA batteries in only a few minutes. 
+Game Gear! This beast could chomp through 6 AA batteries in only a few minutes. Taken on many a car journey, it usually died before we got too far; but it had colour!
 
 * SEGA Game Gear
 * SEGA Game Gear games
@@ -66,6 +66,9 @@ Game Gear! This beast could chomp through 6 AA batteries in only a few minutes.
   * Donald Duck The Lucky Dime Caper
 
 ###PlayStation (1995)
+
+I excitedly unwrapped the PlayStation as a Christmas present back in 1995. It felt like the future. Stellar graphics, great games; I probably played more hours on this console than any other.
+
 * SONY PlayStation 
 * SONY PlayStation controllers
 * Guncon
@@ -83,6 +86,9 @@ Game Gear! This beast could chomp through 6 AA batteries in only a few minutes.
   * Ridge Racer
 
 ### AST Advantage! Adventure 575 Plus (1997)
+
+The Mackenzie family got Internet-connected in the late 90s with the purchase of an AMD-powered 80486 clone. The machine was dumped years ago, but I did find some of the old games:
+
 * Old PC Games
   * Destruction Derby
   * Unreal
@@ -97,6 +103,9 @@ Game Gear! This beast could chomp through 6 AA batteries in only a few minutes.
   * Command & Conquer
 
 ###PlayStation 2 (2000)
+
+A birthday present in the early noughties, I took the PS2 off to Uni. Many beer-fuelled hours of multiplayer gaming ensued - Gran Turismo 3 and Pro Evolution Soccer being big favourites. I also accumulated a stack of peripherals over time - and invested in VGA converters so I could squeeze PS2 gaming into my limited student space.
+
 * PlayStation 2 controllers
 * PlayStation 2 multitap
 * PlayStation 2 Eye Toy
@@ -112,9 +121,12 @@ Game Gear! This beast could chomp through 6 AA batteries in only a few minutes.
 * Redant R2-6000 VGA Box
 * Blaze VGA Adapter
 * XRGB-2 Upscan Converter
-* Official PlayStation 2 VGA cables
+* Official PlayStation 2 VGA cable
 
 ###Nokia NGage QD (2004)
+
+Nokia's weird phone/gaming hybrid, I picked this up for cheap just as it was being discontinued. The games were bad, but I did hear of good emulator support - a consequence of the (relatively) open Symbian ecosystem. Might spend some time on this!
+
 * Nokia NGage QD and games
   * Virtual Tennis
   * Moto GP
