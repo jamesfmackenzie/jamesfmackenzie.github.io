@@ -412,6 +412,7 @@ footer .footer-below {
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
+    margin-bottom: 18px;
 }
 
 .youtube-video {
