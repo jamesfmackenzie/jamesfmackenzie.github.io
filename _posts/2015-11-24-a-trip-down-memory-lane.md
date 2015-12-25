@@ -4,7 +4,10 @@ title: A Trip Down Memory Lane (There's Treasure in That There Attic)
 date: '2015-11-24 21:43:30'
 ---
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/exIyLQFhbD4?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/exIyLQFhbD4?rel=0" 
+frameborder="0" allowfullscreen class="youtube-video"></iframe>
+</div>
 
 After a weekend spent rummaging in the parents' attic, I came away with some solid gold gaming artefacts from my past.
 
