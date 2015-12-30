@@ -1,5 +1,11 @@
+---
+layout: post
+title: Using Floppy Disk to Transfer Files from PC to ST
+date: '2015-12-26 10:13:00'
+categories: playing_downloaded_atari_st_games
+---
 
-###1. Find the right floppy disks
+###1. Choosing the right floppy disks
 
 The ST and PC have shared compatibility with 3.5" Double Density ("DD") disks, so in the vast majority of cases, this is what you'll need.
 
@@ -7,7 +13,7 @@ Manufacturing stopped years ago, so your best option is eBay or specialist ST pr
 
 If you can't find any at all, it is possible to repurpose modern High Density ("HD") disks, albeit at a cost to reliability.
 
-Compared to DD disks, HD disks have an extra hole on the right side, across from the write-protect slider. Put some opaque sticky tape over the extra hole on the right (both front and back) to fool the detector into thinking the HD disk is an ST-compatible DD floppy.
+When compared to DD disks, HD disks have an extra hole on the right side, across from the write-protect slider. Put some opaque sticky tape over the extra hole on the right (both front and back) to fool the detector into thinking the HD disk is an ST-compatible DD floppy.
 
 INSERT PIC OF REPURPOSED HD DISK HERE
 
@@ -15,7 +21,7 @@ In very rare cases, your ST drive unit may have been upgraded to support 3.5" HD
 
 INSERT PICTURE OF HD MODIFIED ST HERE 
 
-###2. Find the right drive
+###2. Choosing the right PC floppy drive
 
 Most modern PC's don't ship with a floppy drive, so you'll need to buy one.
 
@@ -27,7 +33,7 @@ If you use a laptop or your PC motherboard doesn't have an ATA connector, you're
 
 INSERT PICTURE OF USB FLOPPY DRIVE HERE
 
-###3. Format Floppy Disk
+###3. Format floppy disk
 
 You need to prepare a floppy disk that is readable by both PC and ST.
 
@@ -45,7 +51,7 @@ If you're lucky enough to have a ST with the aforementioned upgraded HD drive, y
 
 INSERT PICTURE OF STANDARD WINDOWS FORMAT UTILITY
 
-Some very early STs (specifically older 520STF and SF354 units) only feature a 3.5" *Single Sided*, Double Density ("SS/DD") drive, with a standard formatted capacity of 360KB. If you have one of these, it's not good news! Modern PC's can no longer read or write these - so you should consider swapping the drive out for a newer model.
+Some very early STs (specifically older 520STF and SF354 units) only feature a 3.5" *Single Sided*, Double Density ("SS/DD") drive, with a standard formatted capacity of 360KB. If you have one of these, it's not good news! Modern PC's can no longer read or write these - so you should consider swapping your ST drive out for a newer model.
 
 Lastly, if you want to prepare the disk on your ST (I'm not sure why you'd want to do this), you can. But there are some restrictions:
 
@@ -55,17 +61,19 @@ Lastly, if you want to prepare the disk on your ST (I'm not sure why you'd want 
 
 ###4. Copy files onto floppy disk
 
-Use Windows explorer or the command line to copy files onto the disk
+This should be pretty easy! Use Windows Explorer or the Command prompt to copy files onto the disk.
+
+INSERT ANIMATED GIF OF COPYING FILES TO THE ST
 
 ###5. Load files on ST
 
 Pop the disk into your ST, power on and browse to the files. You're all done!
 
-INSERT PICTURE OF FILES LOADING ON ST
+INSERT ANIMATED GIF OF FILES LOADING ON ST
 
 ###Splitting large files
 
-If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy.
+If you have a hard drive attached to your ST, you might want to transfer files bigger than those you can fit on a single floppy.
 
 You can achieve this using the ARJ utility.
 
