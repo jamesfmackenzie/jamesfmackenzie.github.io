@@ -45,7 +45,7 @@ Humiliated and with no remaining capability to counter attack, the Empire is for
 
 ###The First Order emerges
 
-An radicalised Imperial remnant, displeased with the treaty, disappears to the edge of the Galaxy. Under the shroud of darkness, they plan to bide their time and strike back when the New Republic least suspect it. Over time, a new government is formed and the First Order emerges.
+A radicalised Imperial remnant, displeased with the treaty, disappears to the edge of the Galaxy. Under the shroud of darkness, they plan to bide their time and strike back when the New Republic least suspect it. Over time, a new government is formed and the First Order emerges.
 
 ###The Resistance rises
 
