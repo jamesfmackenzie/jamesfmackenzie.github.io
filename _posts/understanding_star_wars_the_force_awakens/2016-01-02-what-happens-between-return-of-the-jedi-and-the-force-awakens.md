@@ -23,13 +23,13 @@ With many worlds freed from Imperial control, the Rebel Alliance declares itself
 
 She quickly rescinds the emergency powers enacted by Palpatine, restores a democratically elected senate and outlines a plan for disarmament.
 
-Her aim is to introduce small, autonomous armies focused on planetary defence, resourced by reductions in the New  the Republic military.
+Her aim is to introduce small, autonomous armies focused on planetary defence, resourced by reductions in the New Republic military.
 
 ###An Empire on the edge
 
 Despite the blockades, planets continue to secede to the New Republic. In addition, several Moffs and Generals defect, relinquishing their Star Destroyers to the New Republic fleet.
 
-Emboldened by the defections and bolstered by the reinforcements, the New Republic wins a series of military victories, a landslide of planets rallying to their cause.
+Emboldened by the defections and bolstered by the reinforcements, the New Republic wins a string of military victories, a landslide of planets rallying to their cause.
 
 Now one year after Endor, and in an effort to stop the rot, the remaining Imperials plan a do-or-die battle at the strategically unimportant planet of Jakku.
 
@@ -41,7 +41,7 @@ Jakku effectively ends the Empire.
 
 Outfoxed and outmanoeuvred, most of the remaining Imperial fleet is destroyed or scuttled onto the surface of Jakku to avoid capture. We see many of these wrecks in The Force Awakens.
 
-Humiliated and with no fleet large enough to mount a counter attack, the Empire is forced to accept a peace treaty, with strict disarmament rules and reparations for the remaining Imperial territories.
+Humiliated and with no remaining capability to counter attack, the Empire is forced to accept a peace treaty, with strict disarmament rules and reparations for the remaining Imperial territories.
 
 ###The First Order emerges
 
@@ -51,7 +51,7 @@ An radicalised Imperial remnant, displeased with the treaty, disappears to the e
 
 Following Jakku and the fall of the Empire, the New Republic quickly ratifies its own disarmament act - achieving the early goals set out by Mon Mothma.
 
-Leia, believing that the sidelined Imperials still pose a threat, she campaigns against hasty disarmament. As a result, she becomes sidelined herself, unable to participate in the political process.
+Leia, believing that the sidelined Imperials still pose a threat, campaigns against hasty disarmament. As a result, she becomes sidelined herself, unable to participate in the political process.
 
 Along with Admiral Ackbar, she founds the Resistance, a private military with the express purpose of monitoring the First Order.
 
@@ -59,7 +59,7 @@ Along with Admiral Ackbar, she founds the Resistance, a private military with th
 
 With the galactic civil war over, our heroes part ways.
 
-Leia remains with The Resistance as a General, Han returns to a smuggler's life and Luke departs for Devoran to found a Jedi temple and academy.
+Leia remains with the Resistance as a General, Han returns to a smuggler's life and Luke departs for Devoran to found a Jedi temple and academy.
 
 30 years pass, and despite persistent campaigning by Leia, the First Order are largely seen to operate within the terms of the peace treaty. They are left alone in the Unknown Regions to self govern.
 
