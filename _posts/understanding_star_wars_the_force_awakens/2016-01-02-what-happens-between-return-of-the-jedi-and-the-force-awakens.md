@@ -27,9 +27,9 @@ Now one year after Endor, and in an effort to stop the rot, the remaining Imperi
 
 ###The Battle of Jakku
 
-Jakku effectively ends the Empire. Outfoxed and outmanoeuvred, most of the remaining Imperial fleet is destroyed or scuttled onto the surface of Jakku to avoid capture (we see many of these wrecks in The Force Awakens).
+Jakku effectively ends the Empire. Outfoxed and outmanoeuvred, most of the remaining Imperial fleet is destroyed or scuttled onto the surface of Jakku to avoid capture (we see many of these wrecks in The Force Awakens trailer).
 
-Humiliated and with no little remaining potency, the Empire is forced to accept a peace treaty, with strict disarmament rules and reparations for the remaining Imperial territories.
+Humiliated and with little remaining potency, the Empire is forced to accept a peace treaty, with strict disarmament rules and reparations for the remaining Imperial territories.
 
 ###The First Order emerges
 
