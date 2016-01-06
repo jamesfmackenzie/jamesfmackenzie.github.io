@@ -11,7 +11,7 @@ Confused about the larger context within which The Force Awakens sits? I was too
 
 ###What happens immediately after Return of the Jedi?
 
-Despite the mass celebrations at the end of Return of the Jedi, it's not all sunshine and rainbows. The deaths of the Emperor, Darth Vader and the destruction of the second Death Star have dealt the Empire a significant blow, but not a crushing one. Much of the Imperial fleet remains intact, including at least one Super Star Destoryer - the Ravager. Many sectors remain under Imperial control, including the Wookie home world of Kashyyk.
+Despite the mass celebrations at the end of Return of the Jedi, it's not all sunshine and rainbows. The deaths of the Emperor, Darth Vader and the destruction of the second Death Star have dealt the Empire a significant blow, but not a crushing one. Much of the Imperial fleet remains intact, including at least one Super Star Destroyer - the Ravager. Many sectors remain under Imperial control, including the Wookie home world of Kashyyyk.
 
 To control information flow and prevent mass defection to the Rebel Alliance, several Imperial-controlled sectors erect blockades, effectively holing up until they can stabilise.
 

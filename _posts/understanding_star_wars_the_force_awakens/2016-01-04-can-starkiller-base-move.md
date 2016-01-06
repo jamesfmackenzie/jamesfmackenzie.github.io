@@ -5,12 +5,14 @@ date: '2016-01-04 08:54:10'
 categories: understanding_the_force_awakens
 ---
 
+![](/img/posts/starkiller_base.jpg)
+
 According to Pablo Hidalgo (Creative Executive at LucasFilm Story Group and author of the Star Wars visual dictionary), Starkiller base could indeed move:
 
-"The Starkiller is mobile. Able to travel distances in hyperspace amid a very populous star cluster."
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/SteeleWars">@SteeleWars</a> The Starkiller is mobile. Able to travel distances in hyperspace amid a very populous star cluster.</p>&mdash; Pablo Hidalgo (@pablohidalgo) <a href="https://twitter.com/pablohidalgo/status/683418491802664960">January 2, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-So, it wasn't a oneshot. Had the Resistance not destroyed it, it would have been able to continue its path of planetary destruction.
+So it wasn't a oneshot. Had the Resistance not destroyed it, it would've continued its path of planetary destruction.
 
 ###References
-
-http://steelewars.com/lucasfilms-pablo-hidalgo-confirms-starkiller-could-move/
+* <a href="http://steelewars.com/lucasfilms-pablo-hidalgo-confirms-starkiller-could-move/" target="_blank">Lucasfilm’s Pablo Hidalgo confirms Starkiller could move!</a>
