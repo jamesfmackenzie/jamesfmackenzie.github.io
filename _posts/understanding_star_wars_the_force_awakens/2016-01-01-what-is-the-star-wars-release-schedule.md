@@ -50,6 +50,6 @@ Find the announced release schedule below.
 
 ###References
 
-* <a href="http://bgr.com/2015/12/31/star-wars-episode-viii-ix/" target="_blank">The complete Star Wars movie schedule through 2020</a>
 * <a href="https://en.m.wikipedia.org/wiki/Star_Wars" target="_blank">Star Wars (Wikipedia)</a>
 * <a href="http://www.standard.co.uk/showbiz/celebrity-news/star-wars-producer-kathleen-kennedy-confirms-that-entire-cast-will-return-for-eighth-film-a3139911.html" target="_blank">Star Wars producer Kathleen Kennedy confirms that entire cast will return for eighth film</a>
+* <a href="http://bgr.com/2015/12/31/star-wars-episode-viii-ix/" target="_blank">The complete Star Wars movie schedule through 2020</a>
