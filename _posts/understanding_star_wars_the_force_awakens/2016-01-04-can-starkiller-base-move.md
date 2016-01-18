@@ -15,4 +15,6 @@ According to Pablo Hidalgo (Creative Executive at LucasFilm Story Group and auth
 So it wasn't a oneshot. Had the Resistance not destroyed it, it would've continued its path of planetary destruction.
 
 ###References
+
 * <a href="http://steelewars.com/lucasfilms-pablo-hidalgo-confirms-starkiller-could-move/" target="_blank">Lucasfilm’s Pablo Hidalgo confirms Starkiller could move!</a>
+* <a href="http://nerdist.com/the-physics-of-starkiller-base-how-powerful-is-the-force-awakens-superweapon/" target="_blank">Image Credit - The Physics of Starkiller Base</a>

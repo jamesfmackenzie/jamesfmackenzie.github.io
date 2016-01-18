@@ -49,8 +49,9 @@ This brings us to the beginning of The Force Awakens.
 
 ###References
 
-* <a href="http://io9.gizmodo.com/everything-we-know-about-star-wars-post-return-of-the-j-1729549100" target="_blank">Everything We Know About Star Wars' Post-Return of the Jedi Future</a>
 * <a href="http://www.theverge.com/2015/12/16/10215194/star-wars-the-force-awakens-guide-canon" target="_blank">A complete guide to the new Star Wars canon before The Force Awakens</a>
-* <a href="http://starwars.wikia.com/wiki/New_Republic" target="_blank">New Republic</a>
-* <a href="http://starwars.wikia.com/wiki/Resistance" target="_blank">Resistance</a>
-* <a href="http://starwars.wikia.com/wiki/First_Order" target="_blank">First Order</a>
+* <a href="http://io9.gizmodo.com/everything-we-know-about-star-wars-post-return-of-the-j-1729549100" target="_blank">Everything We Know About Star Wars' Post-Return of the Jedi Future</a>
+* <a href="http://starwars.wikia.com/wiki/First_Order" target="_blank">The First Order</a>
+* <a href="http://starwars.wikia.com/wiki/New_Republic" target="_blank">The New Republic</a>
+* <a href="http://starwars.wikia.com/wiki/Resistance" target="_blank">The Resistance</a>
+* <a href="http://starwars.wikia.com/wiki/Battle_of_Jakku" target="_blank">Image Credit - Star Wars Wiki</a>
