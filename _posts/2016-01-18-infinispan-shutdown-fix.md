@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tomcat Shutdown Issues Caused by Embedded Infinispan Cache
+title: Tomcat Shutdown Issues Caused by an Embedded Infinispan Cache
 date: '2016-01-18 21:06:17'
 ---
 
