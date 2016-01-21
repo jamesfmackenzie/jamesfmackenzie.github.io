@@ -5,6 +5,8 @@ date: '2016-01-01 19:34:30'
 categories: understanding_the_force_awakens
 ---
 
+*Updated 2016-01-21 to reflect new Episode VIII release date*
+
 ![](/img/posts/star_wars_rogue_one.jpg)
 
 The Force Awakens is out, and we've officially entered the new Star Wars era.
@@ -20,7 +22,7 @@ Find the announced release schedule below.
 * **Who's the director?** - Gareth Edwards (known for the 2014 Godzilla reboot)
 * **Who's in it?** - Felicity Jones, Diego Luna, Riz Ahmed, Ben Mendelsohn, Donnie Yen, Jiang Wen, Forest Whitaker, Mads Mikkelsen, and Alan Tudyk
 
-###26th May 2017 - Star Wars Episode VIII
+###<strike>26th May</strike> December 2017 - Star Wars Episode VIII
 
 * **Plot Summary** - Unknown
 * **When does it take place?** - After Episode VII: The Force Awakens
