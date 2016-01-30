@@ -68,10 +68,6 @@ Take your bootable DOS USB drive and copy the following onto it:
 
 Restart your machine and boot from your DOS USB drive. You might have to hit F12 to access the boot menu and then select "USB Drive".
 
-![](/img/posts/boot_menu.png)
-
-![](/img/posts/usb_storage_device.png)
-
 ####3. Use Makedisk to prepare game disk
 
 Once you're at the DOS prompt, invoke Makedisk with the following params to write your disk image:
