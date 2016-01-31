@@ -43,7 +43,7 @@ Lastly, if you want to prepare the disk on your ST (I'm not sure why you'd want 
 
 * TOS <= 1.02 will not create a PC-readable floppy disk
 * TOS >= 1.04 should work OK
-* If you're not sure, you can use a special formatting program like <a href="http://milan.kovac.cc/atari/software/index.php?search_word=kobold" target="_blank">Kobold</a> or <a href="https://sites.google.com/site/stessential/disks-tools" target="_blank">FastCopy</a>.
+* If you're not sure, you can use a special formatting program like <a href="http://milan.kovac.cc/atari/software/index.php?search_word=kobold" target="_blank">Kobold</a> or <a href="https://sites.google.com/site/stessential/disks-tools" target="_blank">FastCopy</a>
 
 ####A note on (very) old ST units
 
@@ -61,3 +61,6 @@ Pop the disk into your ST, power on and browse to the files. You're all done!
 
 ![](/img/posts/atari_st_open_a_drive.gif)
 
+###Splitting large files
+
+If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software. Find more details * [here]({% post_url transferring_files_from_pc_to_st/2016-01-31-using-arj-to-split-and-copy-large-files-to-your-atari-st-in-chunks %}).
