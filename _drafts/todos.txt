@@ -1,0 +1,26 @@
+Content strategy
+---
+
+Focus on Atari ST content for the next few months with the following themes:
+
+1. Transferring files
+2. Playing downloaded games
+3. Game reviews
+4. Getting an Atari ST on the Web
+5. ?
+
+
+Technical todos
+---
+
+* RSS feed - https://github.com/jekyll/jekyll-feed
+* Site map - https://help.github.com/articles/sitemaps-for-github-pages/
+* Picture gallery
+* Recent Tweets
+* Google rich snippets - https://support.google.com/webmasters/answer/99170. Also do the same for Twitter
+* Structured data - http://www.bigthinkingapplied.com/sharing-on-the-web-with-structured-data/
+* Pocketed items
+* Xbox achievements
+* Playstation trophies
+* YouTube videos posted
+* Stack overflow posts
