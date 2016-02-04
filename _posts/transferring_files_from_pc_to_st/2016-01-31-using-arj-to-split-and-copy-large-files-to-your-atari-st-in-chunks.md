@@ -10,6 +10,7 @@ categories: transferring_files_from_pc_to_st
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
+
 If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software, available for PC <a href="http://www.arjsoftware.com/arj32.htm" target="_blank">here</a> and ST <a href="https://sites.google.com/site/stessential/archiver-tools" target="_blank">here</a>.
 
 Once you have the software downloaded and extracted, use your PC split the large file into 720KB (or, if your drive supports it, 1440KB) chunks:
