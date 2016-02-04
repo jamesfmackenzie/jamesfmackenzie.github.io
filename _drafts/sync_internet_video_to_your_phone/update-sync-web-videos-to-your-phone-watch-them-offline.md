@@ -18,7 +18,7 @@ The implementation:
 3. Any URLs found are handed off to (<a href="https://rg3.github.io/youtube-dl/" target="_blank">youtube-dl</a>) for downloading
 4. Once downloaded, videos are synced to the phone using the free (and excellent) <a href="https://getsync.com/" target="_blank">BitTorrent Sync</a>
 
-###To Get It Working
+### To Get It Working
 
 1. Download video downloader from GitHub here
 <!--

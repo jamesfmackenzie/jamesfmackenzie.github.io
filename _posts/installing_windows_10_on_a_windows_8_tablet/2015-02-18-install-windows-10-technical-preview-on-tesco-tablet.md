@@ -6,30 +6,30 @@ categories: installing_windows_10_on_a_windows_8_tablet
 permalink: /install-windows-10-technical-preview-on-tesco-tablet/
 ---
 
-###Article updated 2015-08-01 to reflect Windows 10 retail launch
+### Article updated 2015-08-01 to reflect Windows 10 retail launch
 
-###Introduction
+### Introduction
 
 I spotted <a href="http://www.tesco.com/direct/connect-7-tablet-with-windows-81-office-365-personal-32gb-wifi-black/182-3108.prd" target="_blank">this amazingly cheap Windows 8.1 tablet</a> on a recent Tesco grocery trip. At £99, I've no idea how they turn a profit, but with the recent launch of <del><a href="http://arstechnica.com/information-technology/2015/01/new-windows-10-preview-comes-to-pc-next-week-to-phones-in-february/" target="_blank">Windows 10 Technical Preview</a></del> <a href="http://blogs.windows.com/launch/" target="_blank">Windows 10</a>, I thought it'd make a nice experiment. 
 
-###What you need
+### What you need
 
 * USB keyboard
 * USB memory stick (at least 8GB)
 * USB splitter cable or hub (you'll need to plug in the memory stick and keyboard simultaneously)
 * <a href="http://www.tesco.com/direct/connect-7-tablet-with-windows-81-office-365-personal-32gb-wifi-black/182-3108.prd" target="_blank">Tesco Connect 7" Tablet with Windows 8.1</a> (only £99)
 
-###Step 1. Download the Windows 10 ISO
+### Step 1. Download the Windows 10 ISO
 
 Head on over to the <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank">Windows 10 Download Page</a> or <a href="https://msdn.microsoft.com/en-us/default.aspx" target="_blank">MSDN</a> to download the ISO. Make sure you download the 32-bit/x86 flavour - the Tesco tablet doesn't support 64-bit/x64.
 
-###Step 2. Prepare a Windows 10 UEFI bootable using Rufus
+### Step 2. Prepare a Windows 10 UEFI bootable using Rufus
 
 To install Windows 10, you'll need to prepare a bootable USB stick. There's already a nice guide over <a href="http://www.intowindows.com/create-uefi-bootable-usb-of-windows-10/" target="_blank">here</a>. Make sure to create the UEFI bootable - it's the only method that'll work on the Tesco device.
 
 ![](/img/posts/2015-01-24-12_22_20-Mail.png)
 
-###Step 3. Copy network and touchscreen drivers onto the USB stick
+### Step 3. Copy network and touchscreen drivers onto the USB stick
 
 Windows 10 doesn't ship with the network, sound and touchscreen drivers you'll need.
 
@@ -39,7 +39,7 @@ Windows 10 doesn't ship with the network, sound and touchscreen drivers you'll n
 2. Mount the USB stick 
 3. Copy <code>C:\Windows\System32\DriverStore</code> across. It contains all the drivers you'll need
 
-###Step 4. Boot to EFI Shell
+### Step 4. Boot to EFI Shell
 
 Before you start, make sure both the USB memory stick and USB keyboard are connected.
 
@@ -59,7 +59,7 @@ Under "Advanced start-up" hit "Restart now":
 
 ![](/img/posts/2015-01-24-13_01_29-Greenshot.png)
 
-###Step 5. Start Windows 10 install
+### Step 5. Start Windows 10 install
 
 Once inside the EFI Shell, select "Use a device":
 
@@ -69,7 +69,7 @@ Choose "UEFI: Removable Device". After a short delay, the Windows 10 installatio
 
 ![](/img/posts/File-18-02-2015-21-05-11.jpeg)
 
-###Step 6. Follow Windows 10 installation steps
+### Step 6. Follow Windows 10 installation steps
 
 From here on in, the touchscreen won't work. You'll need to use your attached keyboard (and optionally, a mouse) for all input.
 
@@ -103,7 +103,7 @@ Not long after, the installer will deliver you to the Windows 10 Start screen. N
 
 ![](/img/posts/Untitled.png)
 
-###Step 7. Install drivers
+### Step 7. Install drivers
 
 You'll notice pretty quickly that sound, networking and the touchscreen don't work. To fix this, head inside the Control Panel. Find "System and Security" and click the "Device Manager" icon:
 
