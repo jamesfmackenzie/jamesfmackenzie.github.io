@@ -5,7 +5,7 @@ date: '2015-12-26 10:13:00'
 categories: transferring_files_from_pc_to_st
 ---
 
-###What is ZMODEM?
+### What is ZMODEM?
 
 From Wikipedia:
 
@@ -15,7 +15,7 @@ Luckily for us, there are ZMODEM implementations available for both ST and Windo
 
 If we connect the machines together via a serial or null modem cable, we'll be able to push files back and forth.
 
-###1. Choosing the right cable
+### 1. Choosing the right cable
 
 The Atari ST serial port uses a 25-pin D-SUB male connector. The serial ports traditionally found on PCs use a 9-pin D-SUB male connector (if there's one there at all).
 
@@ -29,26 +29,26 @@ If your PC doesn't have a serial port at all (many modern PCs don't), you can ge
 
 INSERT PICTURE OF USB TO SERIAL ADAPTER CABLE 
 
-###2. Download ZMODEM software for PC
+### 2. Download ZMODEM software for PC
 
 The easiest software I've found is Teraterm. You can download it here:
 https://en.osdn.jp/projects/ttssh2/
 
 INSTRUCTIONS ON HOW TO DOWNLOAD TERATERM.
 
-###3. Download ZMODEM software for ST
+### 3. Download ZMODEM software for ST
 
 On the ST, I'd recommend Flash 1.60. Find it over here:
 http://www.chebucto.ns.ca/Services/PDA/AtariSTComm.shtml
 
-###4. Connect the machines together
+### 4. Connect the machines together
 
 Should be pretty obvious!
 
-###5. Transfer files!
+### 5. Transfer files!
 
 Initiate a new transfer on the PC side and watch it zip across. Easy!
 
-###6. Crank up the speed
+### 6. Crank up the speed
 
 How fast can you go??

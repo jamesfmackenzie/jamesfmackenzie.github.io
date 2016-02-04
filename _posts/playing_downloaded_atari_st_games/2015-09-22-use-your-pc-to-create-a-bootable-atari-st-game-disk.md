@@ -13,9 +13,9 @@ One way is to use your Windows PC to prepare a bootable game disk. Once it's don
 
 Here's how.
 
-###What you need
+### What you need
 
-####Internal 3.5" floppy drive
+#### Internal 3.5" floppy drive
 
 ![](/img/posts/floppy2.png)
 
@@ -32,7 +32,7 @@ A few notes to help with your search:
 
 ![](/img/posts/dell_laptop.jpg)
 
-####Makedisk
+#### Makedisk
 
 For writing the images to disk, we'll use a tool called Makedisk. Written by Darren Birks back in 1997, it's still the most reliable tool I've found. A few facts:
 
@@ -41,7 +41,7 @@ For writing the images to disk, we'll use a tool called Makedisk. Written by Dar
 * You can download Makedisk <a href="http://emulatari.free.fr/zip/makedisk_v15.zip" target="_blank">here</a>
 * More information at the <a href="http://www.atari-wiki.com/?title=Make_disk_Tutorial" target="_blank">Makedisk wiki</a>
 
-####Some 3.5" floppy disks
+#### Some 3.5" floppy disks
 
 Clearly, you need some 3.5" floppy disks to write the images onto.
 
@@ -49,13 +49,13 @@ The ST takes 3.5" Double-Sided, Double-Density floppies, with a regular capacity
 
 If you're interested in the official floppy specs, you can <a href="https://en.wikipedia.org/wiki/List_of_floppy_disk_formats#Known_disk_logical_formats" target="_blank">find them over on Wikipedia</a>.
 
-####A bootable DOS USB drive
+#### A bootable DOS USB drive
 
 As I mentioned earlier, Makedisk works best in <a href="https://en.wikipedia.org/wiki/DOS" target="_blank">DOS</a>. By far-and-away the easiest way to get a DOS environment is via bootable USB media. How-To Geek <a href="http://www.howtogeek.com/136987/how-to-create-a-bootable-dos-usb-drive/" target="_blank">has an excellent guide you can follow</a>.
 
-###How to create the bootable game disk
+### How to create the bootable game disk
 
-####1. Copy data onto USB media
+#### 1. Copy data onto USB media
 
 Take your bootable DOS USB drive and copy the following onto it:
 
@@ -64,11 +64,11 @@ Take your bootable DOS USB drive and copy the following onto it:
 
 ![](/img/posts/copy_files.gif)
 
-####2. Boot from your USB media
+#### 2. Boot from your USB media
 
 Restart your machine and boot from your DOS USB drive. You might have to hit F12 to access the boot menu and then select "USB Drive".
 
-####3. Use Makedisk to prepare game disk
+#### 3. Use Makedisk to prepare game disk
 
 Once you're at the DOS prompt, invoke Makedisk with the following params to write your disk image:
 
@@ -84,13 +84,13 @@ After a couple of prompts (for which the answers are suggested and you should al
 
 ![](/img/posts/makedisk.gif)
 
-####4. Play the game
+#### 4. Play the game
 
 That's it! You should now have a working game disk. Put it in your ST and play!
 
 ![](/img/posts/rick_dangerous.png)
 
-###On YouTube
+### On YouTube
 
 I've put together a video copy of this guide too. Find it embedded below.
 

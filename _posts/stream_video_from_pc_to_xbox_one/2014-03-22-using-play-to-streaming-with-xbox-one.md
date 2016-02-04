@@ -19,7 +19,7 @@ So what is "Play To streaming"? Here's what Microsoft [has to say about it](http
 
 Promising indeed! Time for a bit of background reading.
 
-###Windows Play To streaming
+### Windows Play To streaming
 
 So, it turns out both Windows 7 and Windows 8 allow you right click on media files and "Play To" another device on your home network.
 
@@ -33,7 +33,7 @@ You [wouldn't know it](http://windows.microsoft.com/en-GB/windows7/using-the-pla
 
 So I gave it a try.
 
-###Testing out Play To
+### Testing out Play To
 
 First, the good news. Most of the <code>.mp4</code>, <code>.avi</code> and <code>.wmv</code> files I threw at the Xbox One worked great. I was able to push them directly to the Xbox One without many hiccups.
 

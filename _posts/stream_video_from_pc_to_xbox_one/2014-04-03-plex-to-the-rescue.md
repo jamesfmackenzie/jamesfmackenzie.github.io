@@ -15,19 +15,19 @@ So the only solution is to use supported formats - i.e. convert your entire medi
 
 It turns out there's already software that does this.
 
-###Switching Media Server
+### Switching Media Server
 
 * Up til now, I've been using Windows' built-in media sharing capability, but there's [plenty of other Digital Media Server software out there](http://en.wikipedia.org/wiki/Comparison_of_UPnP_AV_MediaServers): Mezzmo, Plex Media Server, PS3 Media Server, Serviio, TVersity to name just a few.
 * Even better, some of these Media Servers support real time [transcoding](http://en.wikipedia.org/wiki/Transcoding). *If I can convince the Media Server to convert our unsupported files to supported ones on-the-fly,* ***we'll be all set!***
 
-###Plex to the rescue
+### Plex to the rescue
 
 I probably could've chosen any of the Media Servers mentioned above, but I chose to investigate Plex for two reasons:
 
 1. I have some familiarity with it.
 2. I know it supports [DLNA media profiles](https://forums.plex.tv/index.php/topic/42523-writing-profiles-for-dlna-devices/). These are essential for what we want to achieve.
 
-###What are DLNA media profiles?
+### What are DLNA media profiles?
 
 From Plex's website:
 
