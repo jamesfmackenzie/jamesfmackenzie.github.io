@@ -9,13 +9,13 @@ I spent some time reading about [Ghost themes](http://marketplace.ghost.org/) to
 
 The folks over at Ghost are smart cookies, and they've made the theming process remarkably simple. So simple, in fact, that you can create your own theme (from scratch) in 5 minutes. Here's how to do it.
 
-###Wait! What are Ghost themes?
+### Wait! What are Ghost themes?
 
 Ghost themes take your blog content (the data) and format it for the web (the presentation). By separating these two, you're always free to change the look and feel of your blog without adjusting the content. At a high level, they work like this:
 
 ![](/img/posts/g.png)
 
-###Handlebars expressions? What are they?
+### Handlebars expressions? What are they?
 
 Handlebars is a templating language, designed to allow separation between HTML and a data source:
 
@@ -32,7 +32,7 @@ Handlebars is a templating language, designed to allow separation between HTML a
 
 Above shows a simple Handlebars template. <code>{% raw %}{{title}}{% endraw %}</code> and <code>{% raw %}{{body}}{% endraw %}</code> are Handlebars expressions which will be swapped out at runtime with actual data. The rest of the snippet is standard HTML which (along with CSS) provides the structure, layout and design.
 
-###OK. What does a Ghost theme look like? And how does it use these Handlebars templates?
+### OK. What does a Ghost theme look like? And how does it use these Handlebars templates?
 
 A Ghost theme is:
 
@@ -73,7 +73,7 @@ A Ghost theme *must* contain the following two files. Everything else if optiona
 
 **That really is it**. To prove it, try this:
 
-###Create your own theme in 5 minutes
+### Create your own theme in 5 minutes
 
 1. Create and configure a [Ghost development instance]({% post_url building_a_theme_for_ghost/2014-05-17-setting-up-a-ghost-dev-environment %}) (if you haven't already).
 2. Navigate to the <code>themes</code> directory (mine's at <code>/ghost-0.4.2/content/themes</code>).

@@ -5,7 +5,7 @@ date: '2014-06-23 20:40:48'
 categories: building_a_theme_for_ghost
 ---
 
-###Ghost themes make extensive use of Handlebars.js
+### Ghost themes make extensive use of Handlebars.js
 
 [Handlebars](http://handlebarsjs.com/) is a templating language, designed to allow separation between HTML and a data source:
 
@@ -24,7 +24,7 @@ Above shows a simple Handlebars template. <code>{% raw %}{{title}}{% endraw %}</
 
 For more detail head over to the [Handlebars website](http://handlebarsjs.com/) and do some reading!
 
-###A Ghost theme is just a directory
+### A Ghost theme is just a directory
 
 As [mentioned previously]({% post_url building_a_theme_for_ghost/2014-06-10-create-your-own-ghost-theme-in-5-minutes %}), a Ghost theme is simply:
 
@@ -32,7 +32,7 @@ As [mentioned previously]({% post_url building_a_theme_for_ghost/2014-06-10-crea
 * This directory contains multiple Handlebars templates, each with the .hbs file extension.
 * The templates work collaboratively to render your blog content.
 
-###There's a recommended file structure for a Ghost theme
+### There's a recommended file structure for a Ghost theme
 
 Stick to this for great benefit:
 
@@ -45,7 +45,7 @@ Stick to this for great benefit:
 └── package.json [contains template details e.g. name, version, description]
 </pre>
 
-###There are only two mandatory files in a Ghost theme.
+### There are only two mandatory files in a Ghost theme.
 
 A Ghost theme <em>must</em> contain the following two files:
 
@@ -56,7 +56,7 @@ A Ghost theme <em>must</em> contain the following two files:
 
 Everything else is optional.
 
-###Ghost makes data available to your Handlebars templates by magic
+### Ghost makes data available to your Handlebars templates by magic
 
 * <code>post.hbs</code> is always passed a <code>post</code> object
 	* The <code>post</code> object consists of:
@@ -113,13 +113,13 @@ Everything else is optional.
 	* <code>{% raw %}{{@blog.logo}}{% endraw %}</code> – the blog logo from the settings page
  
     
-###There are many Handlebars helpers available
+### There are many Handlebars helpers available
 
 * You've already seen <code>foreach</code>, but Ghost has many other built in helpers to help you build or customize your theme.
 * They're accessed via a Handlebars expression e.g. <code>{% raw %}{{foreach}}{% endraw %}</code> or <code>{% raw %}{{content}}{% endraw %}</code>.
 * You can find the complete list [here](http://docs.ghost.org/themes/#helpers).
 
-###You should use Handlebars inheritance to minimize waste
+### You should use Handlebars inheritance to minimize waste
 
 Handlebars templates can inherit from each other. This really helps to cut down on code duplication/waste:
 
@@ -128,6 +128,6 @@ Handlebars templates can inherit from each other. This really helps to cut down 
 * <code>{% raw %}{{!> templatename}}{% endraw %}</code> indicates injection.
 	* The entire output of <code>templatename.hbs</code> will be rendered in situe.
 
-###You should read the official Ghost Themes documentation
+### You should read the official Ghost Themes documentation
 
 It's really good. Go and check it our [here](http://docs.ghost.org/themes/).
