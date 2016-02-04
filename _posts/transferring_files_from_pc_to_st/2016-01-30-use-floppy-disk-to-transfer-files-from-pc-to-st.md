@@ -10,7 +10,7 @@ categories: transferring_files_from_pc_to_st
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
-###1. Choosing the right floppy disks
+###Choosing the right floppy disks
 
 For the vast majority of cases, you'll want 3.5" Double-Sided, Double-Density ("DD") floppy disks - they're the only variety supported by both PC and ST drives. They're also known as "720KB" floppy disks due to their standard formatted capacity. Unfortunately, manufacturing stopped years ago, so your best option is <a href="http://www.ebay.co.uk/itm/3-5-in-DSDD-720k-DS-formatted-floppy-disks-Double-sided-double-density-2DD-new-/291572499546?hash=item43e313445a:g:tHUAAOSwWnFWA6lR" target="_blank">eBay</a> or <a href="http://www.st-freakz.co.uk/page8.html" target="_blank">specialist ST providers</a>.
 
@@ -22,7 +22,7 @@ If you can't find any DD disks, it is *possible* to repurpose modern 1.44MB High
 
 In very rare cases, your ST drive unit <a href="http://www.atari-wiki.com/index.php/Replace_internal_720k_DD_Floppy_Drive_with_1.44MB_HD_Floppy_Drive" target="_blank">may have been upgraded to support 3.5" HD disks natively</a>. If this is the case, congratulations! You can forget about DD disks and purchase higher capacity HD disks instead.
 
-###2. Choosing the right PC floppy drive
+###Choosing the right PC floppy drive
 
 Most modern PC's don't ship with a floppy drive, so you'll need to buy one. Your best bet is an internal "ATA" model as they have the greatest compatibility with the various Atari ST disk formats:
 
@@ -30,7 +30,7 @@ Most modern PC's don't ship with a floppy drive, so you'll need to buy one. Your
 
 If you use a laptop or your PC motherboard doesn't have a floppy connector, you're stuck with a (less compatible) USB drive. Many don't support DD floppies, so be sure to pick one that specifically mentions "720KB" compatibility (like <a href="http://www.floppydisk.com/usb.htm" target="_blank">this one</a>).
 
-###3. Format floppy disk
+###Format floppy disk
 
 You have disks and a drive - now it's time to prepare the floppy. You need use a disk format compatible with both PC and ST - and luckily the standard MS-DOS/Windows floppy formats are suitable. So the recommended (and easiest) approach is to prepare the floppy disk on your PC. In any modern version of Windows:
 
@@ -54,13 +54,13 @@ Lastly, if you want to prepare the disk on your ST (I'm not sure why you'd want 
 
 Some very early STs (specifically older 520STF models) only feature a 3.5" *Single Sided*, Double Density ("SS/DD") drive, supporting disks with a standard formatted capacity of 360KB. If you have one of these, it's not good news! Modern PC's can no longer read or write these - so you should consider swapping your ST drive out for a newer model. Find more info <a href="http://www.atari-forum.com/viewtopic.php?t=11250" target="_blank">here</a>.
 
-###4. Copy files onto floppy disk
+###Copy files onto floppy disk
 
 Pop your formatted disk into the PC drive and use Windows Explorer (or Command prompt) to copy files. Easy peasy!
 
 ![](/img/posts/copy_atari_st_files.gif)
 
-###5. Load files on ST
+###Load files on ST
 
 Pop the disk into your ST, power on and browse to the files. You're all done!
 
