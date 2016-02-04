@@ -10,7 +10,7 @@ categories: transferring_files_from_pc_to_st
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
-###1 Choosing the right floppy disks
+###1. Choosing the right floppy disks
 
 For the vast majority of cases, you'll want 3.5" Double-Sided, Double-Density ("DD") floppy disks - they're the only variety supported by both PC and ST drives. They're also known as "720KB" floppy disks due to their standard formatted capacity. Unfortunately, manufacturing stopped years ago, so your best option is <a href="http://www.ebay.co.uk/itm/3-5-in-DSDD-720k-DS-formatted-floppy-disks-Double-sided-double-density-2DD-new-/291572499546?hash=item43e313445a:g:tHUAAOSwWnFWA6lR" target="_blank">eBay</a> or <a href="http://www.st-freakz.co.uk/page8.html" target="_blank">specialist ST providers</a>.
 
