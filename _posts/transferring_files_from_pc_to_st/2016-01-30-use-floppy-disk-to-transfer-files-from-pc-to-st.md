@@ -66,6 +66,6 @@ Pop the disk into your ST, power on and browse to the files. You're all done!
 
 ![](/img/posts/atari_st_open_a_drive.gif)
 
-###Splitting large files
+### Splitting large files
 
 If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software. Find more details [here]({% post_url transferring_files_from_pc_to_st/2016-01-31-using-arj-to-split-and-copy-large-files-to-your-atari-st-in-chunks %}).
