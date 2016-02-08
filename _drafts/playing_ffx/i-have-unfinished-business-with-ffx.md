@@ -25,7 +25,7 @@ So the challenge is set! I need to correct a past wrong by obtaining every troph
 
 Let's do this!
 
-###Final Fantasy X HD Remaster Trophies
+### Final Fantasy X HD Remaster Trophies
 
 * Speaking in Tongues - Find 1 Al Bhed Primer
 * Teamwork! - Win a blitzball match

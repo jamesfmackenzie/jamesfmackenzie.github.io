@@ -24,7 +24,7 @@ In my case, I have:
 * A **Digital Media Server** (my Windows 8 PC) which stores media and makes it available on the home network.
 * A **Digital Media Controller** (also the PC) which finds the content and pushes it to a **Digital Media Renderer** (the Xbox One) via Play To.
 
-###So what's the problem? Why doesn't Play To just work?
+### So what's the problem? Why doesn't Play To just work?
 
 For reasons unknown, Microsoft Windows 8, in it's capacity as a Digital Media Controller:
 
@@ -33,7 +33,7 @@ For reasons unknown, Microsoft Windows 8, in it's capacity as a Digital Media Co
 
 None of this seems to be changeable, so we're left with a streaming solution which works in some cases but not others.
 
-###What next? How do we fix it?
+### What next? How do we fix it?
 
 One solution is to use a tool like [Handbrake](http://handbrake.fr/) to convert your TV/movie collection to a supported format. Handbrake even allows you to burn-in the subtitles if you need.
 

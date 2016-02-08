@@ -13,7 +13,7 @@ So the [challenge is set]()! I need to correct a past wrong by obtaining every t
 
 But I shouldn't be reckless. Are there any missable trophies? Can an unintentional bad choice rule out any of the trophies for good? I need to be aware of these before I start!
 
-###Final Fantasy X Missable Trophies
+### Final Fantasy X Missable Trophies
 
 After a bit of research, only two trophies are missable:
 
@@ -22,7 +22,7 @@ After a bit of research, only two trophies are missable:
 * Completion - Obtain all available trophies
 ** Missable because it requires the above 
 
-###So What Should I Watch Out For?
+### So What Should I Watch Out For?
 
 The missable Primers are found in two locations: Al Bhed Home and Bevelle Temple. When I reach these locations, I should save often and be extra vigilant. I don't want to miss out!
 

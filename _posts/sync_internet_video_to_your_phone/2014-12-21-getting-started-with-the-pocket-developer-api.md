@@ -8,7 +8,7 @@ permalink: /getting-started-with-the-pocket-developer-api/
 
 I want to [automatically extract the video from my Pocketed content and sync it to my phone]({% post_url sync_internet_video_to_your_phone/2014-12-17-i-cant-stream-video-on-the-commute-how-can-i-fix-it %}). To do this, I'll need to extend Pocket via the <a href="http://getpocket.com/developer/" target="_blank">Developer API</a>. Here's how to get started.
 
-###Step 1. Create an App in the Pocket Developer Portal, Get Your Consumer Key
+### Step 1. Create an App in the Pocket Developer Portal, Get Your Consumer Key
 
 Head over to the <a href="http://getpocket.com/developer/" target="_blank">Pocket Developer Portal</a> and create a new App. It doesn't really matter how you fill out the fields as long as you remember to:
 
@@ -22,7 +22,7 @@ Head over to the <a href="http://getpocket.com/developer/" target="_blank">Pocke
 
 ![](/img/posts/2014-12-20-23_39_03-Pocket_-Developer-API.png)
 
-###Step 2. Obtain a Request Token
+### Step 2. Obtain a Request Token
 
 Using your new **Consumer Key**, issue a POST request (I prefer <a href="http://curl.haxx.se/" target="_blank">cURL</a>) to get a temporary **Request Token**. This'll be used to authorize your new App.
 
@@ -69,7 +69,7 @@ Status: 200 OK
 
 Make a note of this Request Token. You'll need it for the next step.
 
-###Step 3. Visit the Pocket Website to Authorize Your App
+### Step 3. Visit the Pocket Website to Authorize Your App
 
 Manufacture the following URL and open it in your Browser:
 
@@ -89,7 +89,7 @@ You'll be prompted to login to Pocket (if you aren't already) and authorize your
 
 Upon clicking Authorize, you'll be sent back to the redirect URL (in this case http://www.google.com) - authorization done.
 
-###Step 4. Convert your Request Token Into a Pocket Access Token
+### Step 4. Convert your Request Token Into a Pocket Access Token
 
 Issue the following POST request to obtain a **Pocket Access Token**:
 
@@ -137,7 +137,7 @@ Status: 200 OK
 
 **Make a note of this Access Token. This is the token you can use to make authenticated requests against the Pocket API on a permanent basis**.
 
-###Step 5. Make Authenticated Requests Against the Pocket API
+### Step 5. Make Authenticated Requests Against the Pocket API
 
 All done! Now you have an Access Token you can make authenticated requests against the Pocket API.
 

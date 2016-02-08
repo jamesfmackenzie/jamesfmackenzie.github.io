@@ -12,7 +12,7 @@ As [mentioned before](), I want to automatically extract the video from my Pocke
 
 Here's how to do the former.
 
-###Step 1. Download required tooling
+### Step 1. Download required tooling
 
 Download and install the following tools on your machine. You'll need to make sure they're in your <a href="http://en.wikipedia.org/wiki/PATH_%28variable%29" target="_blank">PATH</a> too (<a href="http://www.computerhope.com/issues/ch000549.htm" target="_blank">this</a> might help).
 
@@ -20,11 +20,11 @@ Download and install the following tools on your machine. You'll need to make su
 * <a href="http://stedolan.github.io/jq/" target="_blank">jq</a> - "a lightweight and flexible command-line JSON processor"
 * <a href="http://rg3.github.io/youtube-dl/" target="_blank">youtube-dl</a> - "a small command-line program to download videos from YouTube.com and a few more sites"
 
-###Step 2. Get a Pocket Access token
+### Step 2. Get a Pocket Access token
 
 You'll need a Pocket Access token before you can make authenticated requests against the Pocket API. Follow my guide <a href="/getting-started-with-the-pocket-developer-api/">here</a> to get one.
 
-###Step 3. Ask the Pocket API which of your items have embedded videos
+### Step 3. Ask the Pocket API which of your items have embedded videos
 
 Using cURL, make an authenticated request against the Pocket API and download all the items which have a contentType of "video". You'll need to swap out the consumer key and access token below for your own.
 
@@ -184,7 +184,7 @@ curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H 
 
 See the video URLs above? We want to download from each one of those. But first we need to parse them out somehow.
 
-###Step 4. Parse out video URLs using jq
+### Step 4. Parse out video URLs using jq
 
 jq is a command line JSON processor. We can use it to separate out our previous video URLs from all that other JSON data - and dump the results into a file. Here's how:
 
@@ -220,7 +220,7 @@ http://www.youtube.com/v/u0tSlCt33ac&hl=ru_RU&fs=1&autoplay=1
 
 If you're interested in jq, you can find out more <a href="http://stedolan.github.io/jq/" target="_blank">here</a>. But back to the task at hand. We have a bunch of video URLs. How do we download them?
 
-###Step 5. Download videos using youtube-dl
+### Step 5. Download videos using youtube-dl
 
 Youtube-dl is an open source video downloader. It was initially built for YouTube only, but it's expanded over time to support many online video sites and formats.
 
@@ -237,7 +237,7 @@ youtube-dl.exe --ignore-errors --batch-file ./video-downloader/urls.txt --contin
 
 To find out more about the youtube-dl configuration options, head over <a href="http://rg3.github.io/youtube-dl/documentation.html" target="_blank">here</a>. You should also read up on <a href="http://en.wikipedia.org/wiki/YouTube#Quality_and_formats" target="_blank">YouTube's Media and Encoding Options</a>.
 
-###Step 6. Putting it all together
+### Step 6. Putting it all together
 
 That's it! Pretty easy right? To make things even easier, copy and paste the lines below into a new cmd script (I called mine <code>video-downloader.cmd</code>) and leave it minimized and running on your PC. Any videos you add to Pocket will be automatically downloaded to your PC - ace!
 

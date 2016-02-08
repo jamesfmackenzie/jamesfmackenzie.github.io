@@ -9,7 +9,7 @@ Want to schedule a Twitter post for later? Or re-post a message at the same time
 
 In the real world, I'd always recommend that you <a href="http://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants" target="_blank">stand on the shoulders of giants</a> and find a <a href="https://dev.twitter.com/overview/api/twitter-libraries" target="_blank">Twitter Library</a> for your programming language of choice. But since this a learning exercise, we're going to build everything from scratch in <a href="http://en.wikipedia.org/wiki/Shell_script" target="_blank">UNIX shell script</a>.
 
-###Step 1. Create an App in the Twitter Application Management Portal
+### Step 1. Create an App in the Twitter Application Management Portal
 
 Head over to <a href="https://apps.twitter.com/" target="_blank">https://apps.twitter.com/</a>, login and click "Create New App".
 
@@ -17,7 +17,7 @@ Choose a Name, Description, Website and Callback URL. Choose anything you like -
 
 ![](/img/posts/Create_an_application___Twitter_Application_Management_1.png)
 
-###Step 2. Get your Consumer Keys and Access Tokens
+### Step 2. Get your Consumer Keys and Access Tokens
 
 On your application management page, navigate to the "Keys and Access Tokens" tab. Make a note of the "Consumer Key" and "Consumer Secret". You're going to need these.
 
@@ -40,7 +40,7 @@ access_token="[YOUR ACCESS TOKEN]"
 access_token_secret="[YOUR ACCESS TOKEN SECRET]"
 {% endhighlight %}
 
-###Step 3. Establish request options
+### Step 3. Establish request options
 
 We've got all the tokens we need, but before making a request we need to choose a request method and the corresponding parameters.
 
@@ -64,7 +64,7 @@ https://api.twitter.com/1.1/statuses/user_timeline.json
 GET
 </pre>
 
-###Step 4. Add request options to shell script
+### Step 4. Add request options to shell script
 
 Now we've estabished the request options, let's set these up as constants in our shell script too:
 
@@ -77,7 +77,7 @@ count=5
 {% endraw %}
 {% endhighlight %}
 
-###Step 5. Make a request
+### Step 5. Make a request
 
 OK, so we've got all the options, let's make a request!
 
@@ -112,7 +112,7 @@ What went wrong? Well, it turns out that Twitter considers the above request inv
 
 For our request to work, we need to provide these details to Twitter in the form of an *Authorization Header*.
 
-###Step 6. Collect parameters for Authorization Header
+### Step 6. Collect parameters for Authorization Header
 
 In their <a href="https://dev.twitter.com/oauth/overview/authorizing-requests" target="_blank">documentation</a>, Twitter provide the following Authorization Header as an example:
 
@@ -226,7 +226,7 @@ oauth_version="1.0"
 
 Note: make sure this is declared above the oauth_signature declaration
 
-###Step 4. Create Authorization Header
+### Step 7. Create Authorization Header
 
 Finally! Now we've got all the parameters together, we can switch them together to create the Authorization Header:
 
@@ -251,7 +251,7 @@ header="Authorization: OAuth oauth_consumer_key=\"${consumer_key}\", oauth_nonce
 {% endraw %}
 {% endhighlight %}
 
-###Step 5. Make Authenticated Requests Against the Twitter API
+### Step 8. Make Authenticated Requests Against the Twitter API
 
 All done! Now you're ready to make authorized requests against the Twitter API.
 
@@ -810,7 +810,7 @@ echo "${result}"
 
 That's it! I hope to make use of the Twitter API over the next few weeks and post something interesting/useful.
 
-###Full code listing
+### Full code listing
 {% highlight bash %}
 {% raw %}
 #!/bin/bash

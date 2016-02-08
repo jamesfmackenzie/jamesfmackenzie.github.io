@@ -6,15 +6,15 @@ categories: stream_video_from_pc_to_xbox_one
 permalink: /using-plex-to-stream-almost-any-video-from-pc-to-xbox-one/
 ---
 
-###Update 2015-08-15
+### Update 2015-08-15
 
 There is now an <a href="https://plex.tv/xbox" target="_blank">Official Plex client for Xbox One</a>, making the below redundant
 
-###Introduction
+### Introduction
 
 Last time, [I suggested we could use Plex Media Server to stream almost any video from PC to Xbox One]({% post_url stream_video_from_pc_to_xbox_one/2014-04-03-plex-to-the-rescue %}). Here's how to actually do it.
 
-###Install Plex 
+### Install Plex 
 
 I won't go into great detail on this since it's already [documented on the Plex website](https://plexapp.zendesk.com/hc/en-us/articles/200380843-Overview), but here's how to setup Plex Media Server:
 
@@ -26,7 +26,7 @@ I won't go into great detail on this since it's already [documented on the Plex 
 
 ![Turning on Plex DLNA](/img/posts/2014_03_17_21_01_27_Plex_Web.png)
 
-###Create a Windows DLNA media profile
+### Create a Windows DLNA media profile
 
 Create a new file called <code>Windows DLNA.xml</code> with the content below. Save it in <code>C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles</code>.
 
@@ -94,7 +94,7 @@ Create a new file called <code>Windows DLNA.xml</code> with the content below. S
 {% endraw %}
 {% endhighlight %}
 
-###Create an Xbox One DLNA media profile
+### Create an Xbox One DLNA media profile
 
 Create another new file called <code>Xbox One.xml</code> with the content below. Save it in <code>C:\Program Files (x86)\Plex\Plex Media Server\Resources\Profiles</code>.
 
@@ -181,12 +181,12 @@ Create another new file called <code>Xbox One.xml</code> with the content below.
 {% endraw %}
 {% endhighlight %}
 
-###Restart Plex
+### Restart Plex
 
 1. Shut down Plex Media Server (you can find the icon in your Task Tray).
 2. Restart Plex Media Server from your Start Menu / Start Screen.
 
-###Stream your content! 
+### Stream your content! 
 
 After restarting Plex, you should see a "Plex Media Server" icon in Windows Explorer:
 
@@ -208,7 +208,7 @@ One the icon appears, find your content and stream it to your One:
 
 Easy!
 
-###What about subtitles?
+### What about subtitles?
 
 Enabling subtitles is pretty easy. Whilst on the PC:
 
@@ -219,7 +219,7 @@ Enabling subtitles is pretty easy. Whilst on the PC:
 
 That's it! The subtitles will be rendered next time you Play To.
 
-###How does it work?
+### How does it work?
 
 If you're interested, here's how it works.
 

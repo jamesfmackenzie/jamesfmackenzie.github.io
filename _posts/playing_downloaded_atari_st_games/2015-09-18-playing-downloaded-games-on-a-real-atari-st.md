@@ -9,7 +9,7 @@ As discussed before, I want to [play some downloaded games on my Atari ST]({% po
 
 But first we need to get them there. Here are the high level options:
 
-###Option 1. Use Disk Images
+### Option 1. Use Disk Images
 
 <a href="https://en.wikipedia.org/wiki/Disk_image" target="_blank">Disk Images</a> are a software representation of the physical Atari ST game disk. Think the floppy equivalent of the .ISO files you use for CDs/DVDs. Common image formats are .ST, .MSA and .STX (aka Pasti). For our use case we prefer the first two as .STX is for emulators only and cannot be used on a physical Atari.
 
@@ -22,7 +22,7 @@ Once you have a disk image, you need to make it physically playable on the Atari
 3. Transfer the disk image to your ST. Then mount it as a <a href="https://en.wikipedia.org/wiki/RAM_drive" target="_blank">RAM disk</a> and run the game directly.
 4. Purchase and use a <a href="https://en.wikipedia.org/wiki/Floppy_disk_hardware_emulator" target="_blank">floppy emulator</a>. Floppy emulators are a hardware solution that trick the ST into thinking a disk image is a real game disk
 
-###Option 2. Use Hard Disk Adaptations
+### Option 2. Use Hard Disk Adaptations
 
 Most original ST games were designed to boot directly from floppy disk, bypassing the Desktop OS. This approach frees up more memory, allowing the game to be bigger and better.
 
@@ -36,7 +36,7 @@ To play a hard disk adaptation, all you need to do is:
 2. Transfer it to your ST
 3. Launch the file from within the Desktop UI
 
-###How Do I Transfer Files From PC to ST?
+### How Do I Transfer Files From PC to ST?
 
 Several of the solutions above rely on transferring files from PC to ST.
 

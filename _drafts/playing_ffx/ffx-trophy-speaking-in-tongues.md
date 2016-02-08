@@ -10,7 +10,7 @@ todo:
 Create post stubs for all the other trophies too
 -->
 
-###Speaking in Tongues - Find 1 Al Bhed Primer
+### Speaking in Tongues - Find 1 Al Bhed Primer
 
 It's almost impossible NOT to earn this trophy on a full play through.
 

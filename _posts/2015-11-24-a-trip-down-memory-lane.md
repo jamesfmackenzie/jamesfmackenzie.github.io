@@ -13,7 +13,7 @@ After a weekend spent rummaging in the parents' attic, I came away with some sol
 
 These (re)discoveries chart my video gaming education from child to adulthood. The memories!!
 
-###ZX Spectrum (1982)
+### ZX Spectrum (1982)
 
 ![](/img/posts/zx_spectrum_48k.jpg)
 
@@ -21,7 +21,7 @@ My old <a href="https://en.wikipedia.org/wiki/ZX_Spectrum" target="_blank">ZX Sp
 
 ![](/img/posts/prism_vtx_5000.jpg)
 
-###Amstrad PC1640 (1986)
+### Amstrad PC1640 (1986)
 
 Back in the late 80s, I used to play PC games on an <a href="http://www.computinghistory.org.uk/det/733/amstrad-pc1640-hd20/" target="_blank">Amstrad PC1640</a>. Although the hardware is long gone, I did find some old games: 
 
@@ -35,7 +35,7 @@ Now, I wonder if there's any way to read 5.25" floppies nowadays?
 
 ![](/img/posts/the_amstrad_pc_collection.jpg)
 
-###Atari 1040STFM (1986)
+### Atari 1040STFM (1986)
 
 ![](/img/posts/atari_st_1040stfm.jpg)
 
@@ -74,7 +74,7 @@ My "proper" games machine growing up was an <a href="https://en.wikipedia.org/wi
 
 ![](/img/posts/st_format_magazine.jpg)
 
-###Nintendo Entertainment System (1986)
+### Nintendo Entertainment System (1986)
 
 ![](/img/posts/nintendo_entertainment_system_nes_famicom.jpg)
 
@@ -94,7 +94,7 @@ Mostly intrigued by what all the console fuss was about, I bought a <a href="htt
 
 ![](/img/posts/nes_smb3_smb2_kirby_mario_cartridges.jpg)
 
-###Sega Game Gear (1991)
+### Sega Game Gear (1991)
 
 ![](/img/posts/sega_game_gear.jpg)
 
@@ -110,7 +110,7 @@ Mostly intrigued by what all the console fuss was about, I bought a <a href="htt
   
 ![](/img/posts/sonic_sonic2_ecco_game_gear_cartridges.jpg)  
 
-###PlayStation (1995)
+### PlayStation (1995)
 
 ![](/img/posts/sony_playstation_1_psx_console.jpg)  
 
@@ -158,7 +158,7 @@ The Internet arrived in the Mackenzie household via this AMD-powered 80486 clone
 
 ![](/img/posts/command_and_conquer_box.jpg)
 
-###PlayStation 2 (2000)
+### PlayStation 2 (2000)
 
 ![](/img/posts/sony_playstation_2_ps2_silver_console.jpg)
 
@@ -192,7 +192,7 @@ A birthday present in the early noughties, the <a href="https://en.wikipedia.org
 
 ![](/img/posts/playstation_2_ps2_offical_vga_cable.jpg)
 
-###Nokia NGage QD (2004)
+### Nokia NGage QD (2004)
 
 ![](/img/posts/nokia_ngage_qd.jpg)
 

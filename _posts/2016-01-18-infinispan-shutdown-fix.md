@@ -8,7 +8,7 @@ I was recently stumped by some shutdown issues in a Tomcat-hosted Java webservic
 
 I'm writing the solution up here in the hopes someone might find it useful.
 
-###Background
+### Background
 
 To ensure a proper resource cleanup during JVM shutdown, Infinispan has built in <a href="https://docs.jboss.org/infinispan/7.1/apidocs/org/infinispan/configuration/global/ShutdownHookBehavior.html" target="_blank">shutdown hooks</a>. Tomcat (and most other Application Servers) have their own shutdown hooks, so it's desirable to turn off Infinispan's built-in shutdown hooks to prevent any contention issues. Via <code>infinispan.xml</code>:
 
@@ -27,7 +27,7 @@ To ensure a proper resource cleanup during JVM shutdown, Infinispan has built in
 </infinispan>
 {% endhighlight %}
 
-###The Issue
+### The Issue
 
 When Infinispan running in a <a href="http://infinispan.org/docs/7.0.x/user_guide/user_guide.html#_clustered_configuration" target="_blank">clustered configuration</a>, it uses <a href="http://jgroups.org/" target="_blank">JGroups</a> for network communications.
 
@@ -41,7 +41,7 @@ By unregistering the shutdown hooks (as above), non-daemon JGroups threads are l
 
 The question: how do we stop these runaway threads and allow the Application Server to shutdown gracefully?
 
-###The Fix
+### The Fix
 
 The fix is fairly simple.
 
@@ -63,11 +63,11 @@ public class ContextFinalizer implements ServletContextListener {
 
 That's all there is to it!
 
-###Moral of the Story
+### Moral of the Story
 
 When you unregister Infinispan shutdown hooks via <code>DONT_REGISTER</code>, **always make sure to manually stop the Infinispan caches via <code>CacheManager.stop()</code>**.
 
-###References
+### References
 
 * <a href="http://infinispan.org/docs/7.0.x/getting_started/getting_started.html" target="_blank">Getting Started with Infinispan</a>
 * <a href="https://developer.jboss.org/thread/200640?db=5" target="_blank">how to use shutdownHookBehaviour</a>
