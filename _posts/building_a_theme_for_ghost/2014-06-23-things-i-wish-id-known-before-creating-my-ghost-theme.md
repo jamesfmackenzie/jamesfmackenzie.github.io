@@ -26,7 +26,7 @@ For more detail head over to the [Handlebars website](http://handlebarsjs.com/) 
 
 ### A Ghost theme is just a directory
 
-As [mentioned previously]({% post_url building_a_theme_for_ghost/2014-06-10-create-your-own-ghost-theme-in-5-minutes %}), a Ghost theme is simply:
+As [mentioned previously]({% post_url 2014-06-10-create-your-own-ghost-theme-in-5-minutes %}), a Ghost theme is simply:
 
 * A directory on the file system
 * This directory contains multiple Handlebars templates, each with the .hbs file extension.

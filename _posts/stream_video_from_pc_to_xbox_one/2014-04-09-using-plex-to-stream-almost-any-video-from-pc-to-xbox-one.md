@@ -12,7 +12,7 @@ There is now an <a href="https://plex.tv/xbox" target="_blank">Official Plex cli
 
 ### Introduction
 
-Last time, [I suggested we could use Plex Media Server to stream almost any video from PC to Xbox One]({% post_url stream_video_from_pc_to_xbox_one/2014-04-03-plex-to-the-rescue %}). Here's how to actually do it.
+Last time, [I suggested we could use Plex Media Server to stream almost any video from PC to Xbox One]({% post_url 2014-04-03-plex-to-the-rescue %}). Here's how to actually do it.
 
 ### Install Plex 
 

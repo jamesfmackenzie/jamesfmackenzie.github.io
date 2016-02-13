@@ -6,7 +6,7 @@ categories: sync_internet_video_to_your_phone
 permalink: /getting-started-with-the-pocket-developer-api/
 ---
 
-I want to [automatically extract the video from my Pocketed content and sync it to my phone]({% post_url sync_internet_video_to_your_phone/2014-12-17-i-cant-stream-video-on-the-commute-how-can-i-fix-it %}). To do this, I'll need to extend Pocket via the <a href="http://getpocket.com/developer/" target="_blank">Developer API</a>. Here's how to get started.
+I want to [automatically extract the video from my Pocketed content and sync it to my phone]({% post_url 2014-12-17-i-cant-stream-video-on-the-commute-how-can-i-fix-it %}). To do this, I'll need to extend Pocket via the <a href="http://getpocket.com/developer/" target="_blank">Developer API</a>. Here's how to get started.
 
 ### Step 1. Create an App in the Pocket Developer Portal, Get Your Consumer Key
 

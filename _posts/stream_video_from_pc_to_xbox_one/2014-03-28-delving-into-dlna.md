@@ -5,7 +5,7 @@ date: '2014-03-28 17:58:00'
 categories: stream_video_from_pc_to_xbox_one
 ---
 
-Last time, [Play To allowed me to stream some (but crucially not all) of my media collection from PC to Xbox One]({% post_url stream_video_from_pc_to_xbox_one/2014-03-22-using-play-to-streaming-with-xbox-one %}).
+Last time, [Play To allowed me to stream some (but crucially not all) of my media collection from PC to Xbox One]({% post_url 2014-03-22-using-play-to-streaming-with-xbox-one %}).
 
 In the hopes of a more comprehensive solution, I did some background reading on the underlying [DLNA technology](http://www.dlna.org/).
 

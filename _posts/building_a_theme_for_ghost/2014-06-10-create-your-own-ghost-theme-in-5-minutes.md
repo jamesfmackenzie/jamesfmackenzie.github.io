@@ -5,7 +5,7 @@ date: '2014-06-10 14:18:00'
 categories: building_a_theme_for_ghost
 ---
 
-I spent some time reading about [Ghost themes](http://marketplace.ghost.org/) today, with a view to [creating my own]({% post_url building_a_theme_for_ghost/2014-04-24-getting-to-grips-with-ghost-themes %}).
+I spent some time reading about [Ghost themes](http://marketplace.ghost.org/) today, with a view to [creating my own]({% post_url 2014-04-24-getting-to-grips-with-ghost-themes %}).
 
 The folks over at Ghost are smart cookies, and they've made the theming process remarkably simple. So simple, in fact, that you can create your own theme (from scratch) in 5 minutes. Here's how to do it.
 
@@ -75,7 +75,7 @@ A Ghost theme *must* contain the following two files. Everything else if optiona
 
 ### Create your own theme in 5 minutes
 
-1. Create and configure a [Ghost development instance]({% post_url building_a_theme_for_ghost/2014-05-17-setting-up-a-ghost-dev-environment %}) (if you haven't already).
+1. Create and configure a [Ghost development instance]({% post_url 2014-05-17-setting-up-a-ghost-dev-environment %}) (if you haven't already).
 2. Navigate to the <code>themes</code> directory (mine's at <code>/ghost-0.4.2/content/themes</code>).
 3. Create a new folder for your theme. Call it whatever you like (I chose the rather boring "mytheme").
 4. Use the code snippets above to create the two new files: <code>post.hbs</code> and <code>index.hbs</code>.

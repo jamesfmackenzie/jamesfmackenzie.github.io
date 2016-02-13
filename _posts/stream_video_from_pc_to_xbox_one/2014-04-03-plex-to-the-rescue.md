@@ -5,7 +5,7 @@ date: '2014-04-03 17:49:00'
 categories: stream_video_from_pc_to_xbox_one
 ---
 
-Last time, I did some background research on the [DLNA Technology underlying Windows Play To]({% post_url stream_video_from_pc_to_xbox_one/2014-03-28-delving-into-dlna %}), with the hopes of finding a general solution for Windows 7/8 to Xbox One streaming.
+Last time, I did some background research on the [DLNA Technology underlying Windows Play To]({% post_url 2014-03-28-delving-into-dlna %}), with the hopes of finding a general solution for Windows 7/8 to Xbox One streaming.
 
 Unfortunately I hit a problem. Windows supports Play To streaming of some file formats (<code>.avi</code>, <code>.mp4</code>, <code>.wmv</code>) but not others (<code>.mkv</code>, <code>.vob</code>, <code>.divx</code>). **And it can't be changed**.
 

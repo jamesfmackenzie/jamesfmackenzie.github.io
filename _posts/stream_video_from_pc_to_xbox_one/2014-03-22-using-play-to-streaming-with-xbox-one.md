@@ -5,7 +5,7 @@ date: '2014-03-22 17:36:00'
 categories: stream_video_from_pc_to_xbox_one
 ---
 
-Earlier this week, I asked myself the question [Can I stream video from PC to Xbox One?]({% post_url stream_video_from_pc_to_xbox_one/2014-03-19-can-i-stream-video-from-pc-to-the-xbox-one %})
+Earlier this week, I asked myself the question [Can I stream video from PC to Xbox One?]({% post_url 2014-03-19-can-i-stream-video-from-pc-to-the-xbox-one %})
 
 After a fruitless 10 minutes hunting around the Xbox One UI for a System Video Player (or something like it), I took to the Internet. It turns out such a thing [doesn't exist](http://o.canada.com/technology/gaming/major-nelson-says-dlna-streaming-support-is-coming-to-the-xbox-one-eventually/). Oops.
 

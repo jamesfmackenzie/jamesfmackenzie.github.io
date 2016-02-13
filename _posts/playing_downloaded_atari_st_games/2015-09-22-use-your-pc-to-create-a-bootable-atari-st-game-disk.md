@@ -5,7 +5,7 @@ date: '2015-09-22 11:37:00'
 categories: playing_downloaded_atari_st_games
 ---
 
-As [discussed before]({% post_url playing_downloaded_atari_st_games/2015-09-18-playing-downloaded-games-on-a-real-atari-st %}), Atari ST disk images are freely available on the web, <a href="http://www.emuparadise.me/Atari_ST_ROMs/63" target="_blank">Emuparadise</a> probably being the best resource.
+As [discussed before]({% post_url 2015-09-18-playing-downloaded-games-on-a-real-atari-st %}), Atari ST disk images are freely available on the web, <a href="http://www.emuparadise.me/Atari_ST_ROMs/63" target="_blank">Emuparadise</a> probably being the best resource.
 
 But how can you play these games on physical Atari ST hardware?
 

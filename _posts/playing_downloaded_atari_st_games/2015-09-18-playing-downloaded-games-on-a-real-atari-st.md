@@ -5,7 +5,7 @@ date: '2015-09-18 22:33:00'
 categories: playing_downloaded_atari_st_games
 ---
 
-As discussed before, I want to [play some downloaded games on my Atari ST]({% post_url playing_downloaded_atari_st_games/2015-08-15-atari-in-the-attic %}).
+As discussed before, I want to [play some downloaded games on my Atari ST]({% post_url 2015-08-15-atari-in-the-attic %}).
 
 But first we need to get them there. Here are the high level options:
 
