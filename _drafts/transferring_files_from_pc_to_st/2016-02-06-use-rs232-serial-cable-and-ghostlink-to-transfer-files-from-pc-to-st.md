@@ -51,11 +51,9 @@ Head to the Windows Device Manager, expand "Ports (COM & LPT)" and identity what
 
 ![](/img/posts/device_manager_com_ports.png)
 
-In addition, open the COM port Properties dialog (right click, Properties) and select the Port Settings tab. Configure settings as per the below:
+Once you've done this, use Windows Explorer to navigate to <code>%localappdata%\DOSBox</code>. Locate a file named <code>DOSBox.conf</code> (or similar). You may need to start DOSBox just the once to make this file appear. 
 
-![](/img/posts/device_manager_com_port_settings.png)
-
-Once you've done this, use Windows Explorer to navigate to <code>%localappdata%\DOSBox</code>. Find and open a file named <code>DOSBox.conf</code> (or similar). Once you've done that, navigate down to the <code>[serial]</code> section and add the following line:
+When you've found the file, open it in your favourite text editor, navigate down to the <code>[serial]</code> section and add the following line:
 
 {% highlight bash %}
 serial1=directserial realport:<MY REAL COM PORT>
@@ -68,25 +66,49 @@ serial1=directserial realport:com3
 
 This instructs DOSBox to configure a virtual port (COM1) and map it to the real/physical interface COM3.
 
-### 5. Download XControl
+### 5. Transfer Ghostlink to the ST
 
-XControl is a replacement Control Panel for the ST. Most importantly for us, it allows us to configure the ST's serial port. You can download it <a href="https://sites.google.com/site/stessential/control-panel-replacements/xcontrol" target="_blank">here</a>.
+Before we can transfer any files down the serial cable, we need to copy the Ghostlink program across to the ST via conventional means. On your PC, prepare an [ST-compatible floppy disk]({% post_url transferring_files_from_pc_to_st/2016-01-30-use-floppy-disk-to-transfer-files-from-pc-to-st %}) and copy <code>STMASTER.PRG</code> (from the downloaded Ghostlink archive) onto it.
 
-### 6. Transfer Ghostlink and XControl to the ST
+### 6. Launch STMASTER.PRG
 
-Before we can transfer any files down the serial cable, we need to copy a few files across to the ST. On your PC, prepare an [ST-compatible floppy disk]({% post_url transferring_files_from_pc_to_st/2016-01-30-use-floppy-disk-to-transfer-files-from-pc-to-st %}) and copy the following onto it:
+Switch your ST to medium resolution, then launch <code>STMASTER.PRG</code>. When it loads up, configure it as follows:
 
-* <code>STMASTER.PRG</code> (from the downloaded Ghostlink archive)
-* <code>XCONT_UK.ACC</code> (from the downloaded XControl archive)
-* <code>MODEM.CPX</code> (from the downloaded XControl archive)
+INSERT GHOSTLINK SCREENSHOT HERE
 
-This is the bare minimum you need on the ST to get Ghostlink file transfer working.
+This means: "map the Z: drive on your ST to the C: drive on your PC". Once you're done, hit Install. Ghostlink appears to quit with nothing happening - but don't worry, it's now memory resident and ready for use.
+
+### 8. Prepare files for transfer
+
+Back on the PC, create a new directory and copy the following files into it:
+
+* <code>PCSLAVE.EXE</code> (this is part of the downloaded Ghostlink archive - see above)
+* Any files you want to transfer to the ST
+
+INSERT SCREENSHOT OF DIRECTORY HERE
+
+### 9. Launch DOSBox, mount file share
+
+Launch DOSBox and type the following to mount your file share as the C: drive:
+
+{% highlight bash %}
+mount C: <MY REAL >
+{% endhighlight %}
+
+For this example:
+{% highlight bash %}
+serial1=directserial realport:com3
+{% endhighlight %}
+
+Pop the newly created floppy disk in your ST and reboot. This'll load the custom Control Panel, giving you access to modify the serial port settings.
+
+
 
 ### 6. Launch STMaster.prg
 
 Back on the ST, launch STMaster.prg and configure as follows:
 
-INSERT SCREENSHOT AND CONFIG OPTIONS HERE
+INSERT SCREENSHOT AND CONFIG OPTIONS HERE ... 
 
 TRY 19200 FIRST, BUT WHAT IS THE HIGHEST BAUD RATE?
 
@@ -132,3 +154,16 @@ BITZ Atari BBS: (02) 361 14 08 (message to PIRRE KING)
 So, enjoy this program...
 
 (c)Bitz 1994 Pierrot Van Malderen.
+
+
+In addition, open the COM port Properties dialog (right click, Properties) and select the Port Settings tab. Configure settings as per the below:
+
+![](/img/posts/device_manager_com_port_settings.png)
+
+### 5. Download XControl
+
+XControl is a replacement Control Panel for the ST. Most importantly for us, it allows us to configure the ST's serial port. You can download it <a href="https://sites.google.com/site/stessential/control-panel-replacements/xcontrol" target="_blank">here</a>.
+
+### 8. Launch XControl
+
+Once the ST reboots, navigate to 
