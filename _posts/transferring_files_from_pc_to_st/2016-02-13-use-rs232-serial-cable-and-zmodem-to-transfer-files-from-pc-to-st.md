@@ -46,11 +46,11 @@ For the ST, I'd recommend X Y Z V2.02. It's a small program that (amongst a few 
 
 ### 4. Transfer XYZ to the ST
 
-Before we can transfer any files down the serial cable, we need to copy <code>XYZ.TTP</code> across to the ST via conventional means. On your PC, prepare an [ST-compatible floppy disk]({% post_url 2016-01-30-use-floppy-disk-to-transfer-files-from-pc-to-st %}) and copy <code>XYZ.TTP</code> (from the downloaded Ghostlink archive) onto it.
+Before we can transfer any files down the serial cable, we need to copy XYZ across to the ST via conventional means. On your PC, prepare an [ST-compatible floppy disk]({% post_url 2016-01-30-use-floppy-disk-to-transfer-files-from-pc-to-st %}) and copy <code>XYZ.TTP</code> onto it.
 
 ### 5. Run XYZ.TTP
 
-Pop your newly-created floppy into the ST drive and launch <code>XYZ.TTP</code>. No parameters are required, just press OK and let the application start:
+Pop your newly-created floppy into the ST drive and launch <code>XYZ.TTP</code>. No parameters required, just press "OK" and let the application start:
 
 ![](/img/posts/atari_st_launch_xyz_zmodem.gif "Launching X Y Z V2.02")
 
