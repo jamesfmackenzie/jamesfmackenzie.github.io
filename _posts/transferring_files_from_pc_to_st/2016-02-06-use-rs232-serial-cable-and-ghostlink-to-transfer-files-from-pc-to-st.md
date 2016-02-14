@@ -30,7 +30,7 @@ If your PC doesn't have a serial port at all (many modern PCs don't), you can ge
 
 ![](/img/posts/atari_st_rs232_serial_to_usb_adapter.jpg "Serial/RS232 to USB adapter cable")
 
-Once you've gotten the right cable, connect your PC and ST together!
+Get the right cable, then connect your PC and ST together.
 
 ### 2. Download the Ghostlink software
 
@@ -72,11 +72,11 @@ Before we can transfer any files down the serial cable, we need to copy the Ghos
 
 ### 6. Launch STMASTER.PRG
 
-Switch your ST to medium resolution and launch <code>STMASTER.PRG</code>. When it loads up, select any/all of the existing configured partitions and hit "Remove":
+Switch your ST to medium resolution and launch <code>STMASTER.PRG</code>. When it loads up, select any/all of the preconfigured partitions and hit "Remove":
 
 ![](/img/posts/configuring_ghostlink_1.png "Remove existing Ghostlink partitions")
 
-Once you've removed al the existing/default partitions, hit "Add" and select the following:
+Once you've removed all the preconfigured partitions, hit "Add" and select the following:
 
 ![](/img/posts/configuring_ghostlink_2.png "Configuring Ghostlink")
 
@@ -84,7 +84,7 @@ This means "I want to map drive Z: on my Atari ST to drive C: on my PC". Once yo
 
 ![](/img/posts/configuring_ghostlink_3.png "Installing Ghostlink")
 
-Ghostlink appears to quit without doing anything useful - but don't worry, it's now memory resident and ready to talk with your PC.
+Ghostlink appears to quit without doing anything useful - but don't worry, it's now memory resident and ready to talk to your PC.
 
 ### 8. Prepare files for transfer
 
@@ -134,4 +134,27 @@ If file transfer is working as expected, you'll see telemetry in the DOSBox wind
 
 ![](/img/posts/ghostlink_pc_slave_telemetry.png)
 
-That's pretty much it! Enjoy!
+That's pretty much it! Happy file transferring!
+
+###Crank up the speed
+
+9600 bits per second is a little slow. If you want to speed things up a little, try the following:
+
+Download <a href="https://sites.google.com/site/stessential/control-panel-replacements/xcontrol" target="_blank">XControl</a> and copy it to your ST.
+
+* To install, put <code>XCONT_UK.ACC</code> or <code>XCONTROL.ACC</code> into the main/root directory of your ST's startup disk (usually A: or C:).
+* Launch XControl via "Desk" -> "Control Panel"
+
+Once you've loaded XControl, head to "Modem Settings" and increase your ST's Baud Rate to 19200:
+
+![](/img/posts/atari_st_xcontrol_19200_baud.png)
+
+On your PC, navigate to "Control Panel" -> "Device Manager" -> "Ports (COM & LPT)" -> "Serial Port" -> "Port Settings". Increase the bits per second to 19200 and press "OK":
+
+![](/img/posts/device_manager_com_port_settings.png)
+ 
+Whilst running <code>PCSLAVE.EXE</code> in DOSBox, press F4 to set the Baud rate to 19200:
+ 
+![](/img/posts/ghostlink_19200_baud.png)
+
+With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800 bits per second or higher, but 19200 was the fastest that worked reliably for me.

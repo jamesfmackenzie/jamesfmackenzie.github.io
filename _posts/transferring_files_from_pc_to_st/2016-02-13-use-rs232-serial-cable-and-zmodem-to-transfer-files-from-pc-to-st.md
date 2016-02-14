@@ -84,3 +84,25 @@ Once the file transfer finishes, <code>XYZ.TTP</code> will automatically termina
 
 ![](/img/posts/atari_st_zmodem_transferred_file.png "DEMO.PRG successfully transferred via ZMODEM")
 
+###Crank up the speed
+
+9600 bits per second is a little slow. If you want to speed things up a little, try the following:
+
+Download <a href="https://sites.google.com/site/stessential/control-panel-replacements/xcontrol" target="_blank">XControl</a> and copy it to your ST.
+
+* To install, put <code>XCONT_UK.ACC</code> or <code>XCONTROL.ACC</code> into the main/root directory of your ST's startup disk (usually A: or C:).
+* Launch XControl via "Desk" -> "Control Panel"
+
+Once you've loaded XControl, head to "Modem Settings" and increase your ST's Baud Rate to 19200:
+
+![](/img/posts/atari_st_xcontrol_19200_baud.png)
+
+On your PC, navigate to "Control Panel" -> "Device Manager" -> "Ports (COM & LPT)" -> "Serial Port" -> "Port Settings". Increase the bits per second to 19200 and press "OK":
+
+![](/img/posts/device_manager_com_port_settings.png)
+ 
+In Teraterm, navigate to "Setup", "Serial port..." and increase the Baud rate to 19200:
+ 
+![](/img/posts/teraterm_serial_port_19200.png)
+
+With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800bps, 38400bps or even higher! But 19200bps was the fastest that worked reliably for me.
