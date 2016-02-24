@@ -10,7 +10,7 @@ At some point, you'll most likely want to transfer files from PC to ST. Some com
 * [Use floppy disks to shuffle files back and forth between PC and ST]({% post_url 2016-01-30-use-floppy-disk-to-transfer-files-from-pc-to-st %})
 * [Use a serial cable (and Ghostlink) to transfer files from PC to ST]({% post_url 2016-02-06-use-rs232-serial-cable-and-ghostlink-to-transfer-files-from-pc-to-st %})
 * [Use a serial cable (and ZMODEM) to transfer files from PC to ST]({% post_url 2016-02-13-use-rs232-serial-cable-and-zmodem-to-transfer-files-from-pc-to-st %})
-* Use a parallel cable (and accompanying software) to transfer files
+* [Use the ST parallel port and a PARCP-USB adapter to transfer files]({% post_url 2016-02-24-use-parcp-usb-to-transfer-files-from-pc-to-atari-st %})
 * Use an Ethernet adapter (there are various adapters out there)
 
 I'll explore these in the coming weeks and fill out the links above.
