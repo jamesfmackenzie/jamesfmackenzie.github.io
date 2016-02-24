@@ -38,13 +38,13 @@ From the <a href="http://joy.sophics.cz/parcp/parcpusb.html" target="_blank">off
 
 ### Step 2. Start a PARCP server on your Atari ST
 
-Take the disk with your Atari ST PARCP binaries on it, pop it in the ST and power on. Open the floppy drive and fire up <code>PARSERVE.TOS</code>.
+Take the disk with your Atari ST PARCP binaries on it, pop it in the ST and power on. Open the floppy drive and fire up <code>PARSERVE.TOS</code>
 
 ![](/img/posts/parcp_parserve_tos.png "Launch PARSERVE.TOS")
 
 ### Step 3. Start PARCP client on your PC
 
-Back on your PC, navigate to your downloaded copy of the <a href="http://joy.sophics.cz/parcp/download.htm" target="_blank">PARCP binaries</a>. Find the appropriate folder for your OS (in my case <code>PC -> Windows</code>) and launch <code>PARCP.exe</code>.
+Back on your PC, navigate to your downloaded copy of the <a href="http://joy.sophics.cz/parcp/download.htm" target="_blank">PARCP binaries</a>. Find the appropriate folder for your OS (in my case <code>PC -> Windows</code>) and launch <code>PARCP.exe</code>
 
 ![](/img/posts/parcp_exe.png "Launch parcp.exe")
 
@@ -56,7 +56,7 @@ With any luck, the PARCP server running on your ST will pick up the connection. 
 
 ### Step 4. Copy Files
 
-Within the PARCP shell, use the arrow keys and enter to navigate the system and find the file you want to transfer. Once you've found it, hit space bar to select, and F5 to initiate the transfer.
+Within the PARCP shell, use the arrow keys and enter to navigate the system and find the file you want to transfer. Once you've found it, hit space bar to select, and use F5 to initiate the transfer.
 
 ![](/img/posts/parcp_client_file_selected.png "PARCP client - press spacebar to select a file")
 
