@@ -16,7 +16,7 @@ If you want to quickly transfer files between your PC and ST, PARCP-USB is a gre
 
 From the <a href="http://joy.sophics.cz/parcp/parcpusb.html" target="_blank">official site</a>:
 
-> <a href="http://joy.sophics.cz/parcp/index.html" target="_blank">PARCP</a> (a short name for PARallel CoPy) has been used widely and successfully since 1996 for copying files between two computers connected via their parallel ports. However, nowadays PC computers do not have parallel ports anymore. Instead, USB is everywhere. That's why I have developed an unique hardware adapter that basically converts the PARCP data stream from parallel port to USB port and vice-versa. Since it's developed specifically for PARCP it is called PARCP-USB. This allows you to connect two computers, one having old parallel port and the other one with USB, using a plain USB cable. And you can continue using the PARCP software for copying/moving files and folders from one computer to another.
+> *<a href="http://joy.sophics.cz/parcp/index.html" target="_blank">PARCP</a> (a short name for PARallel CoPy) has been used widely and successfully since 1996 for copying files between two computers connected via their parallel ports. However, nowadays PC computers do not have parallel ports anymore. Instead, USB is everywhere. That's why I have developed an unique hardware adapter that basically converts the PARCP data stream from parallel port to USB port and vice-versa. Since it's developed specifically for PARCP it is called PARCP-USB. This allows you to connect two computers, one having old parallel port and the other one with USB, using a plain USB cable. And you can continue using the PARCP software for copying/moving files and folders from one computer to another*
 
 ![](/img/posts/parcp-usb_adapter_dongle.jpg "The PARCP-USB adapter")
 
@@ -36,7 +36,7 @@ From the <a href="http://joy.sophics.cz/parcp/parcpusb.html" target="_blank">off
 
 ![](/img/posts/parcp-usb_mini_usb_port.jpg "PARCP-USB mini USB connector")
 
-### Step 2. Start a PARCP server on your Atari ST
+### Step 2. Start PARCP server on your Atari ST
 
 Take the disk with your Atari ST PARCP binaries on it, pop it in the ST and power on. Open the floppy drive and fire up <code>PARSERVE.TOS</code>
 
