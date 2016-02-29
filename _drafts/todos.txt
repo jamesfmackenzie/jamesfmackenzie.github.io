@@ -14,6 +14,7 @@ Focus on Atari ST content for the next few months with the following themes:
 Technical todos
 ---
 
+* Put interests page in front of my other content (programming, retro computing, video games, a/v)
 * RSS feed - https://github.com/jekyll/jekyll-feed
 * Site map - https://help.github.com/articles/sitemaps-for-github-pages/
 * Picture gallery
