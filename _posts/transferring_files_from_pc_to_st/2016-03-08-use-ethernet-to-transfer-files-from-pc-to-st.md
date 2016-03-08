@@ -42,12 +42,8 @@ Make a note of the IP address (in this case <code>192.168.1.168</code>). You'll 
 
 ### Step 4. Use your browser to connect to your ST
 
-Back on the PC, launch a Web browser (any will do) and navigate to <code>http://[your.ip.address]</code>, or in our example case <code>http://192.168.1.168</code>.
-
-All going well, you'll see the uip-tool web interface:
+Back on the PC, launch a Web browser (any will do) and navigate to <code>http://[your.ip.address]</code> - for our example case it's <code>http://192.168.1.168</code>. All going well, you'll see the uip-tool web interface:
 
 ![](/img/posts/atari_st_uip_tool_file_copy.png "uip-tool File Copy")
 
-Use the leftmost column to navigate through drives and folders in the ST's file system. Files are displayed in the main column. To upload a file, simply drag-and-drop (shown above).
-
-That's it! Easy peasy.
+Use the leftmost column to navigate through drives and folders in the ST's file system. Files are displayed in the main column. To upload a file, simply drag-and-drop (shown above). That's it! Easy peasy.
