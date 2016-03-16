@@ -37,17 +37,17 @@ The Ultrasatan is a hard disk replacement for your Atari ST - and it uses SD car
 
 Included in the <a href="http://atari.8bitchip.info/pphdr.php" target="_blank">PP driver distribution</a> is a "quick start" SD card image (<code>15MB.img</code>). You need to write this to your SD card.
 
-1) Open Win32DiskImager, hit "Select disk image" and pick the quick start image (<code>15MB.img</code>)
+* Open Win32DiskImager, hit "Select disk image" and pick the quick start image (<code>15MB.img</code>)
 
 ![](/img/posts/atari_st_win32diskimager_a.png "Select a disk image")
 
-2) Once you've selected the disk image, hit "Write". **Be very sure that you've selected the right volume to write to. Writing to the wrong volume can corrupt your data and/or Operating System**
+* Once you've selected the disk image, hit "Write". **Be very sure that you've selected the right volume to write to. Writing to the wrong volume can corrupt your data and/or Operating System**
 
 ![](/img/posts/atari_st_win32diskimager_b.png "Click 'Write'")
 
 ![](/img/posts/atari_st_win32diskimager_c.png "Ensure you have the correct volume")
 
-3) All things going well, your image is written to the SD card successfully and you'll be able to browse the new volume from Windows Explorer:
+* All things going well, your image is written to the SD card successfully and you'll be able to browse the new volume from Windows Explorer:
 
 ![](/img/posts/atari_st_win32diskimager_d.png "Write successful")
 
@@ -92,18 +92,29 @@ Still on your ST, launch <code>D:/PPP13U.PRG</code>. This is the partitioning so
 
 ### Step 4. Install drivers
 
-The last remaining thing to do is install hard disk drivers.
+The next step is to install hard disk drivers.
 
-![](/img/posts/atari_st_ultrasatan_pp_driver_install.png "Installing PP drivers")
+* Launch <code>D:\USAB101.TOS</code>
 
-1. Launch <code>D:\USAB101.TOS</code>
-2. When prompted with <code>Select target 0-7</code>, press "0"
-3. Press "I" to install hard disk drivers
-4. Wait for the confirmation message: <code>Installed</code>
-5. Press any key to exit the installer
-5. Reboot your ST
+![](/img/posts/atari_st_ultrasatan_install_pp_drivers_1.png "Launch USAB101.TOS")
 
-Take a look at the boot screen - you should see your new drives letters available:
+* You'll now be prompted with <code>Select target 0-7</code>. Press "0"
+
+![](/img/posts/atari_st_ultrasatan_install_pp_drivers_2.png "Select target device")
+
+* You'll now be asked to confirm the driver installation: <code>I installs, Space exits without install</code>. Press "I"
+
+![](/img/posts/atari_st_ultrasatan_install_pp_drivers_3.png "Install PP driver")
+
+* Once the drivers are installed succesfully (it should be very quick), you'll see a confirmation message: <code>Installed</code>
+
+![](/img/posts/atari_st_ultrasatan_install_pp_drivers_4.png "PP drivers installed successfully")
+
+* Press any key to exit the installer
+
+* Reboot your ST
+
+Take a look at the boot screen - you should now see your new drives letters available:
 
 ![](/img/posts/atari_st_ultrasatan_partitioning_drives.png "Partitioning drives")
 
