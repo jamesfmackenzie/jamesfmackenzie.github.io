@@ -55,7 +55,7 @@ Included in the <a href="http://atari.8bitchip.info/pphdr.php" target="_blank">P
 
 ### Step 2. Boot your ST from SD card
 
-Pop your newly prepared SD card into the Ultrasatan and reboot your ST. All going well, the ST will boot from the SD card and you'll see something like this:
+Pop your newly prepared SD card into the Ultrasatan and reboot your ST. The ST should boot from the SD card and you'll see something like this:
 
 ![](/img/posts/atari_st_ultrasatan_boot.png "Ultrasatan boot")
 
@@ -132,7 +132,7 @@ Once your ST reaches the GEM desktop, you'll notice that you only have the <code
 
 ![](/img/posts/atari_st_ultrasatan_install_disk_drive_2.png "Setting the new drive letter")
 
-* Repeat the process for all your new drives as you have
+* Repeat the process for any other new drives you have
 
 * Save the Desktop via <code>Options -> Save Desktop</code>
 
@@ -146,7 +146,7 @@ Now that you have a working SD card, it's time to copy some files!
 
 * Pull the SD card from your Ultrasatan and mount it on your PC
 
-* You'll see a single volume of 511MB. This corresponds to the <code>C:</code> drive on your ST
+* You'll see a single volume of 510MB. This corresponds to the <code>C:</code> drive on your ST
 
 ![](/img/posts/atari_st_ultrasatan_sd_card_properties.png "Ultrasatan SD card")
 
