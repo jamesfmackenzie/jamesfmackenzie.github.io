@@ -7,13 +7,14 @@
                     <div class="intro-text">
                         <h1 class="name">{{ page.title }}</h1>
                         <hr class="star-light">
-						<span class="skills">{{ page.date | date: "%b %-d, %Y" }}</span>
 						{% for project in site.projects %}
 							{% if page.categories[0] == project.category_key %}
-								<br /><br /><span class="skills">Project: <a href="{{ project.url }}">{{ project.title }}</a></span>
+								<span class="skills"><strong>Parent Project: <a href="{{ project.url }}">{{ project.title }}</a></strong></span>
 							{% endif %}
 						{% endfor %}
-                        
+						<br />
+						<br />
+						<span class="skills">{{ page.date | date: "%b %-d, %Y" }}</span>
                     </div>
                 </div>
             </div>

@@ -5,4 +5,5 @@ collection: projects
 description: In their own words, "Ghost is a simple, powerful publishing platform that allows you to share your stories with the world". I'm a big fan, but don't like the out-of-the-box themes. Think I'll create my own.
 img: ghost.png
 category_key: building_a_theme_for_ghost
+Status: Complete
 ---
