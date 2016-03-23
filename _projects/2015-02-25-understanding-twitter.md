@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Understanding the Twitter API
+title: Understanding Twitter
 collection: projects
 img: twitter.png
 category_key: understanding_twitter
