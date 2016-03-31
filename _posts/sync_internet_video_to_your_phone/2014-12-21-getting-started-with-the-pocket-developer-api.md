@@ -6,6 +6,8 @@ categories: sync_internet_video_to_your_phone
 permalink: /getting-started-with-the-pocket-developer-api/
 ---
 
+### Updated 2016-03-31 to use the Pocket HTTPS API
+
 I want to [automatically extract the video from my Pocketed content and sync it to my phone]({% post_url 2014-12-17-i-cant-stream-video-on-the-commute-how-can-i-fix-it %}). To do this, I'll need to extend Pocket via the <a href="http://getpocket.com/developer/" target="_blank">Developer API</a>. Here's how to get started.
 
 ### Step 1. Create an App in the Pocket Developer Portal, Get Your Consumer Key
@@ -33,7 +35,7 @@ Two mandatory parameters which *must* be included in the POST body:
 
 **Method URL**
 <pre>
-http://getpocket.com/v3/oauth/request
+https://getpocket.com/v3/oauth/request
 </pre>
 
 **Example Request**
@@ -52,7 +54,7 @@ X-Accept: application/json
 **Example Request (cURL)**
 {% highlight bash %}
 {% raw %}
-curl http://getpocket.com/v3/oauth/request -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"redirect_uri\":\"http://www.google.com\"}"
+curl https://getpocket.com/v3/oauth/request --insecure -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"redirect_uri\":\"http://www.google.com\"}"
 {% endraw %}
 {% endhighlight %}
 
@@ -100,7 +102,7 @@ Issue the following POST request to obtain a **Pocket Access Token**:
 
 **Method URL**
 <pre>
-http://getpocket.com/v3/oauth/authorize
+https://getpocket.com/v3/oauth/authorize
 </pre>
 
 **Example Request**
@@ -119,7 +121,7 @@ X-Accept: application/json
 **Example Request (cURL)**
 {% highlight bash %}
 {% raw %}
-curl http://getpocket.com/v3/oauth/authorize -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"code\":\"dcba4321-dcba-4321-dcba-4321dc\"}"
+curl https://getpocket.com/v3/oauth/authorize --insecure -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\",\"code\":\"dcba4321-dcba-4321-dcba-4321dc\"}"
 {% endraw %}
 {% endhighlight %}
 
@@ -150,7 +152,7 @@ E.g. to retrieve your Pocketed items:
 
 **Method URL**
 <pre>
-http://getpocket.com/v3/get
+https://getpocket.com/v3/get
 </pre>
 
 **Example Request**
@@ -168,7 +170,7 @@ Content-Type: application/json
 **Example Request (cURL)**
 {% highlight bash %}
 {% raw %}
-curl http://getpocket.com/v3/get -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\", \"access_token\":\"5678defg-5678-defg-5678-defg56\"}"
+curl https://getpocket.com/v3/get --insecure -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"1234-abcd1234abcd1234abcd1234\", \"access_token\":\"5678defg-5678-defg-5678-defg56\"}"
 {% endraw %}
 {% endhighlight %}
 
