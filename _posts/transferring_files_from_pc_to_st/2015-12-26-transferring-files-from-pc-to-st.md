@@ -11,8 +11,7 @@ At some point, you'll most likely want to transfer files from PC to ST. Some com
 * [Use a serial cable (and Ghostlink) to transfer files from PC to ST]({% post_url 2016-02-06-use-rs232-serial-cable-and-ghostlink-to-transfer-files-from-pc-to-st %})
 * [Use a serial cable (and ZMODEM) to transfer files from PC to ST]({% post_url 2016-02-13-use-rs232-serial-cable-and-zmodem-to-transfer-files-from-pc-to-st %})
 * [Use the ST parallel port and a PARCP-USB adapter to transfer files]({% post_url 2016-02-24-use-parcp-usb-to-transfer-files-from-pc-to-atari-st %})
-* Use an Ethernet adapter (there are various adapters out there)
+* [Use an Ethernet adapter such as the NetUSBee]({% post_url 2016-03-08-use-ethernet-to-transfer-files-from-pc-to-st %})
+* [Use SD card]({% post_url 2016-03-08-use-ultrasatan-sd-card-to-transfer-files-from-pc-to-st %})
 
-I'll explore these in the coming weeks and fill out the links above.
-
-In addition, you mind want to split large files up to facilitate easier transfer. You can find more about that [here]({% post_url 2016-01-31-using-arj-to-split-and-copy-large-files-to-your-atari-st-in-chunks %}).
+In addition, you might want to split large files up to facilitate easier transfer. You can find more about that [here]({% post_url 2016-01-31-using-arj-to-split-and-copy-large-files-to-your-atari-st-in-chunks %}).
