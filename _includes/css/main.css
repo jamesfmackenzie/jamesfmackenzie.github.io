@@ -255,15 +255,23 @@ section.success {
 	}
 	
 	#projects .project-item .project-link img {
-	height: 100% !important;
+		height: 100% !important;
 	}
 	
 	#projects .project-item {
-    height: 80px;
+		height: 128px;
+		float: left;
+		width: 50%;
+		padding-left: 7px !important;
+		padding-right: 7px !important;
 	}
 	
 	footer .footer-above {
 		padding-top: 0 !important;
+	}
+	
+	.projectsgrid {
+		padding: 0 8px 0 8px;
 	}
 
 }
@@ -286,7 +294,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(24,188,156,.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
