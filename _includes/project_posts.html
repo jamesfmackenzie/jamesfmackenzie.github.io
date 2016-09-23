@@ -9,7 +9,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 post-list">
-				{% for post in site.categories[page.category_key] %}
+				{% for post in site.categories[page.category_key] reversed %}
 				<p><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}</p>
 				{% endfor %}
 			</div>
