@@ -1,15 +1,6 @@
 Content strategy
 ---
-
-Focus on Atari ST content for the next few months with the following themes:
-
-1. Transferring files
-2. Playing downloaded games
-3. Game reviews
-4. Getting an Atari ST on the Web
-5. Getting the best picture quality out of your ST
-6. ?
-
+* ? Take a look and come up with some ideas
 
 Technical todos
 ---
