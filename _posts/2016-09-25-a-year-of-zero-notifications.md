@@ -59,7 +59,7 @@ A year on, I'd like to share my thoughts on the Zero Notifications experiment. T
 
 * **I spend a lot more time creating, reading and learning** - where before I churned through notifications. I also do a lot more "deep" work - challenging tasks that can take a few hours to get into
 * **I'm a lot calmer**. The pressure/anxiety to address notifications is gone
-* **I still do procrastinate**. I check my phone all too frequently - BBC News being a major demon. However ***I*** open the app and refresh the news. It's ***my*** choice and ***my*** fault
+* **I still do procrastinate**. I check my phone all too frequently - BBC News being a major demon. However ***I*** open the app and refresh the news. It's ***my*** choice and ***my*** fault. There's choice and freedom I didn't have before
 * **I take a longer term view with my time**. My planning focus is at the week/month scale, rather than the hour/day.
 * **I've disinvested from some social platforms entirely** - notably Facebook. Without the constant pull of notifications I just stopped going back. And I don't miss it.
 
