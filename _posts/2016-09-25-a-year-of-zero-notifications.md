@@ -23,7 +23,7 @@ Need more convincing? There's a growing body of research to suggest that distrac
 * After being interrupted, <a href="http://lifehacker.com/how-long-it-takes-to-get-back-on-track-after-a-distract-1720708353" target="_blank">it takes an average of 23 minutes and 15 seconds to get back to the [original] task</a>
 * According to the New York Times, <a href="http://nyti.ms/1089Qwn" target="_blank">multitasking makes you dumber</a>
 
-In other words, <a href="http://dictionary.cambridge.org/dictionary/english/brown-green-etc-is-the-new-black" target="_blank">monotasking is the new black</a>.
+In other words, multitasking is out. <a href="http://dictionary.cambridge.org/dictionary/english/brown-green-etc-is-the-new-black" target="_blank">Monotasking is the new black</a>.
 
 ### Working effectively
 
