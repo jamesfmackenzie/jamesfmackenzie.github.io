@@ -69,4 +69,4 @@ Definitely! There's no going back.
 
 For me personally, Zero Notifications is truly a change for the better - something I can recommend to everyone - even if only for a 1 week trial.
 
-I'm interested to hear your thoughts below.
+I'm interested to hear your thoughts below. 
