@@ -7,19 +7,16 @@ Technical todos
 
 CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIORITISED BETTER
 
-* Get infinite scroll working - DONE but uncommitted
-
-* Update post header to use the full green header style - DONE but uncommitted
+* Fix header line and letter spacing issues (especially apparant on mobile devices)
 
 * Create tag page - IN PROGRESS
+** Why does it render as /tags rather than tags.html?
 
-* Update index post header to have date and tags
+* Update index and post headers to have tags
 
 * Refactor duplicate content into includes
 
 * Refactor CSS for a general tidy up and to use config placeholders (e.g. for theme colours)
-
-* Put Google Analytics and Disqus comments in
 
 * Sign up for Medium, Mailchimp etc and get those links working
 
@@ -27,10 +24,10 @@ CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIO
 
 * Create about me page with links to GitHub, Stack Overflow etc
 
-* Commit the new blog, make sure everything works ok
-
 * Try out Google's keywords suggestion tool
 https://adwords.google.com/select/KeywordToolExternal
+
+* Run the site through W3C validators
 
 * Address all the items suggested in Cal's SEO report 
 
