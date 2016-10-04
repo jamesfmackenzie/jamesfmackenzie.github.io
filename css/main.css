@@ -36,14 +36,18 @@ figure {
   margin: 0;
 }
 
-code {
+/*code {
   font-size: 1.25em;
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-}
+}*/
 
 pre {
+  font-size: 1.25em;
+  oveflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   border-radius: 0.5em;
   color: #7b8a8b;
   max-width: 100%;  
