@@ -22,22 +22,30 @@
 	    </nav>
 	  </div>
 	</header>
-	<main class="single-post">
-	  <header>
-	    <div class="row">
-	      <h1>{{ page.title }}</h1>
-		  <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+    <aside>
+		<div class="row">
+			<p>Follow and subscribe!</p>
+			<ul class="social-buttons">
+				<li><a href="/feed.xml"><i class="fa fa-fw fa-rss"></i></a></li>
+				<li><a href="#"><i class="fa fa-fw fa-medium"></i></a></li>	
+				<li><a href="#"><i class="fa fa-fw fa-envelope"></i></a></li>
+				<li><a href="http://twitter.com/jamesfmackenzie"><i class="fa fa-fw fa-twitter"></i></a></li>			                    
+			</ul>
 		</div>
-	  </header>
-      <article class="post">
+	</aside>
+	<main class="post-list">	
+    {% for post in site.posts limit: 3 %}
+	  <article class="post">
 	    <div class="row">
-          <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
-		  <date><p>{{ page.date | date: "%b %-d, %Y" }}</p></date>
-          {{ content }}
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		  <date><p>{{ post.date | date: "%b %-d, %Y" }}</p></date>
+          {{ post.content }}
 	    </div>
       </article>  
+    {% endfor %}
 	</main>
 	<footer>
+	  <div class="infinite-spinner"></div>
 	  <!--
 	  A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
 	  -->
