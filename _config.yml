@@ -1,40 +1,40 @@
 # Site settings
-title: jamesfmackenzie
+name: jamesfmackenzie
 email: me@jamesfmackenzie.com
 url: http://www.jamesfmackenzie.com
 description: "Tech, Programming, Agile, Software Engineering, Software, Hardware, Science, Video Games"
 
 # Collections
-collections:
-  projects:
-    output: true
+#collections:
+#  projects:
+#    output: true
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
-contact: static
+# contact: static
 
 # Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 18bc9c #80B3FF
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+#color:
+#  primary: 18bc9c #80B3FF
+#  secondary: 2c3e50 #FD6E8A
+#  secondary-dark: 233140 #A2122F
 
 # Footer settings
-footer:
-  copyright: James Mackenzie
+#footer:
+#  copyright: James Mackenzie
   #location: Location
-  social: Social
-  #credits: Credits
+#  social: Social
+#  #credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jamesfmackenzie
-  - title: stack-overflow
+#social:
+#  - title: twitter
+#    url: http://twitter.com/jamesfmackenzie
+#  - title: stack-overflow
     url: http://stackoverflow.com/users/4958467/jamesfmackenzie
-  - title: github
-    url: http://github.com/jamesfmackenzie
-  - title: youtube
-    url: http://youtube.com/jamesfmackenzie
+#  - title: github
+#    url: http://github.com/jamesfmackenzie
+#  - title: youtube
+#    url: http://youtube.com/jamesfmackenzie
 
 # Postal address (add as many lines as necessary)
 #address:
@@ -45,5 +45,5 @@ social:
 #credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 permalink: pretty
