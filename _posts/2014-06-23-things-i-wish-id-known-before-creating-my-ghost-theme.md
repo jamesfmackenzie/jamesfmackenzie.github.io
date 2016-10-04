@@ -2,7 +2,7 @@
 layout: post
 title: Things I Wish I'd Known Before Creating My Own Ghost Theme
 date: '2014-06-23 20:40:48'
-categories: building_a_theme_for_ghost
+tags: [building_a_theme_for_ghost]
 ---
 
 ### Ghost themes make extensive use of Handlebars.js

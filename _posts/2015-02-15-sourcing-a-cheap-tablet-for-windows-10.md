@@ -2,7 +2,7 @@
 layout: post
 title: Sourcing a Cheap Tablet for Windows 10
 date: '2015-02-15 12:00:00'
-categories: installing_windows_10_on_a_windows_8_tablet
+tags: [installing_windows_10_on_a_windows_8_tablet]
 ---
 
 As [mentioned recently](/projects/2015-02-18-installing_windows_10_on_a_windows_8_tablet.html), I want to find a cheap tablet to try the Windows 10 Technical Preview on. Which one to choose?

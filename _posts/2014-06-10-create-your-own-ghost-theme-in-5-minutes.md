@@ -2,7 +2,7 @@
 layout: post
 title: Create Your Own Ghost Theme in 5 Minutes
 date: '2014-06-10 14:18:00'
-categories: building_a_theme_for_ghost
+tags: [building_a_theme_for_ghost]
 ---
 
 I spent some time reading about [Ghost themes](http://marketplace.ghost.org/) today, with a view to [creating my own]({% post_url 2014-04-24-getting-to-grips-with-ghost-themes %}).

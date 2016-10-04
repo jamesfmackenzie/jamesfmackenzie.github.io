@@ -2,7 +2,7 @@
 layout: post
 title: Using Play to Streaming With Xbox One
 date: '2014-03-22 17:36:00'
-categories: stream_video_from_pc_to_xbox_one
+tags: [stream_video_from_pc_to_xbox_one]
 ---
 
 Earlier this week, I asked myself the question [Can I stream video from PC to Xbox One?]({% post_url 2014-03-19-can-i-stream-video-from-pc-to-the-xbox-one %})

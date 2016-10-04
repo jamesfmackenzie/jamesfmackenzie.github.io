@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started With the Pocket Developer API
 date: '2014-12-21 00:48:10'
-categories: sync_internet_video_to_your_phone
+tags: [sync_internet_video_to_your_phone]
 permalink: /getting-started-with-the-pocket-developer-api/
 ---
 
