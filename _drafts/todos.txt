@@ -1,18 +1,51 @@
 Content strategy
 ---
-* ? Take a look and come up with some ideas
+* Pick one draft per week and write an article
 
 Technical todos
 ---
 
-* RSS feed - https://github.com/jekyll/jekyll-feed
-* Site map - https://help.github.com/articles/sitemaps-for-github-pages/
-* Picture gallery
-* Recent Tweets
+CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIORITISED BETTER
+
+* Get infinite scroll working - DONE but uncommitted
+
+* Update post header to use the full green header style - DONE but uncommitted
+
+* Create tag page - IN PROGRESS
+
+* Update index post header to have date and tags
+
+* Refactor duplicate content into includes
+
+* Refactor CSS for a general tidy up and to use config placeholders (e.g. for theme colours)
+
+* Put Google Analytics and Disqus comments in
+
+* Sign up for Medium, Mailchimp etc and get those links working
+
+* Refactor config.yaml, remove junk
+
+* Create about me page with links to GitHub, Stack Overflow etc
+
+* Commit the new blog, make sure everything works ok
+
+* Try out Google's keywords suggestion tool
+https://adwords.google.com/select/KeywordToolExternal
+
+* Address all the items suggested in Cal's SEO report 
+
+* Start syndicating content to Medium.com (see my other email on this)
+
+* Setup a feedburner
+
+* Setup a mailing list and send blog articles out to those guys (feedburner have a solution for this too?)
+
+* Try some of these content hacks to drive growth - http://unbounce.com/content-marketing/9-content-marketing-growth-hacks-drive-traffic-conversions/
+
+* Cleanup YouTube (one for jamesfmackenzie, one for retro rabble)
+
 * Google rich snippets - https://support.google.com/webmasters/answer/99170. Also do the same for Twitter
+
 * Structured data - http://www.bigthinkingapplied.com/sharing-on-the-web-with-structured-data/
-* Pocketed items
-* Xbox achievements
-* Playstation trophies
-* YouTube videos posted
-* Stack overflow posts
+
+* Move blog to a subfolder or subdomain and create a dashboard or about me page on the front, including: GitHub commits, Tweets, Stack Overflow / Stack Exchange etc
