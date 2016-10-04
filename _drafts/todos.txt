@@ -7,6 +7,9 @@ Technical todos
 
 CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIORITISED BETTER
 
+* Import the following story to Medium, then update the social media follow links
+http://www.jamesfmackenzie.com/2016/09/25/a-year-of-zero-notifications/
+
 * Fix header line and letter spacing issues (especially apparant on mobile devices)
 
 * Create tag page - IN PROGRESS
