@@ -1,0 +1,202 @@
+/* TODO:
+- use primary and secondary colour placeholders
+- scale down for mobile devices
+- possibly move nav out of header
+*/
+
+
+/* whole page styles */
+body {
+  margin: 0;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2c3e50;
+  font-size: 1.25em;
+  line-height: 1.45em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  color: #18bc9c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 a {
+  color: #2c3e50;
+}
+
+figure {
+  margin: 0;
+}
+
+code {
+  font-size: 1.25em;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+pre {
+  border-radius: 0.5em;
+  color: #7b8a8b;
+  max-width: 100%;  
+  padding: 1em;
+  background-color: #ecf0f1;
+  border: 1px solid #ccc;
+}
+
+.row {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* end whole page styles */
+
+/* header styles */
+header {
+  padding: 1.5em 0;
+  overflow: auto;
+  color: #fff;
+  background-color: #2c3e50;
+}
+
+header h3 {
+  margin: 0;
+}
+
+header a {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #18bc9c;
+  text-decoration: none;
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-right: 0.5em;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header span {
+  margin-left: 0.5em;
+}
+/* end header styles */
+
+/* aside styles */
+aside {
+  padding: 1.5em 0;
+  overflow: auto;
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+aside .row {
+  text-align: center;
+}
+
+aside p {
+  margin-top: 0.25em;
+  padding-bottom: 0.5em;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  display: inline-block;
+  margin: 0.25em;
+  line-height: 1.5em;
+}
+
+aside a {
+  font-size: 1.15em;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  padding: 0.5em;
+}
+
+aside a:hover {
+  background-color: #fff;
+  color: #18bc9c;
+}
+
+/* end aside styles */
+
+/* article styles */
+article {
+  padding: 2em 0;
+  border-bottom: 1em solid #18bc9c;
+}
+
+article img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* end article styles */
+
+/* individual post page styles */
+.single-post header {
+  background-color: #18bc9c;
+  padding: 1.5em 0;
+}
+
+.single-post header .row {
+  display: block;
+  text-align: center;
+}
+
+.single-post article h2 {
+  display: none;
+}
+
+.single-post article date {
+  display: none;
+}
+/* end individual post page styles */
+
+/* optimize for small screens */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  header {
+    padding: 1em 0;
+  }
+  
+  header .row {
+    justify-content: center;
+  }
+}
+
+
+
