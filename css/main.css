@@ -115,35 +115,35 @@ header span {
 }
 /* end header styles */
 
-/* footer and aside styles */
-footer, aside {
+/* aside styles */
+aside {
   padding: 1.5em 0;
   overflow: auto;
   color: #fff;
   background-color: #18bc9c;
 }
 
-footer .row, aside .row {
+aside .row {
   text-align: center;
 }
 
-footer p, aside p {
+aside p {
   margin-top: 0.25em;
   padding-bottom: 0.5em;
 }
 
-footer ul, aside ul {
+aside ul {
   list-style: none;
   padding: 0;
 }
 
-footer li, aside li {
+aside li {
   display: inline-block;
   margin: 0.25em;
   line-height: 1.5em;
 }
 
-footer a, aside a {
+aside a {
   font-size: 1.15em;
   color: #fff;
   text-decoration: none;
@@ -152,11 +152,11 @@ footer a, aside a {
   padding: 0.5em;
 }
 
-footer a:hover, aside a:hover {
+aside a:hover {
   background-color: #fff;
   color: #18bc9c;
 }
-/* end footer and aside styles */
+/* end aside styles */
 
 /* article styles */
 article {
@@ -198,6 +198,51 @@ article img {
 /* end comments styles */
 
 /* end individual post page styles */
+
+
+/* footer styles */
+footer {
+  margin-top: 2em;
+  padding: 1.5em 0;
+  overflow: auto;
+  color: #fff;
+  background-color: #233140;
+}
+
+footer .row {
+  text-align: center;
+}
+
+footer p {
+  margin-top: 0.25em;
+  padding-bottom: 0.5em;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0.25em;
+  line-height: 1.5em;
+}
+
+footer a {
+  font-size: 1.15em;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  padding: 0.5em;
+}
+
+footer a:hover {
+  background-color: #fff;
+  color: #18bc9c;
+}
+/* end footer styles */
 
 /* optimize for small screens */
 @media only screen and (max-width: 768px) {
