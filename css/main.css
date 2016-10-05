@@ -182,6 +182,14 @@ article img {
 .single-post article date {
   display: none;
 }
+
+/* comments styles */
+.comments {
+  padding: 2em 0;
+}
+
+/* end comments styles */
+
 /* end individual post page styles */
 
 /* optimize for small screens */
