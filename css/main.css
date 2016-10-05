@@ -115,35 +115,35 @@ header span {
 }
 /* end header styles */
 
-/* aside styles */
-aside {
+/* footer and aside styles */
+footer, aside {
   padding: 1.5em 0;
   overflow: auto;
   color: #fff;
   background-color: #18bc9c;
 }
 
-aside .row {
+footer .row, aside .row {
   text-align: center;
 }
 
-aside p {
+footer p, aside p {
   margin-top: 0.25em;
   padding-bottom: 0.5em;
 }
 
-aside ul {
+footer ul, aside ul {
   list-style: none;
   padding: 0;
 }
 
-aside li {
+footer li, aside li {
   display: inline-block;
   margin: 0.25em;
   line-height: 1.5em;
 }
 
-aside a {
+footer a, aside a {
   font-size: 1.15em;
   color: #fff;
   text-decoration: none;
@@ -152,12 +152,11 @@ aside a {
   padding: 0.5em;
 }
 
-aside a:hover {
+footer a:hover, aside a:hover {
   background-color: #fff;
   color: #18bc9c;
 }
-
-/* end aside styles */
+/* end footer and aside styles */
 
 /* article styles */
 article {
