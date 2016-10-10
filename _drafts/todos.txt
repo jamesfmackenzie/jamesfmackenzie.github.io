@@ -7,10 +7,9 @@ Technical todos
 
 CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIORITISED BETTER
 
-* Import the following story to Medium, then update the social media follow links
-http://www.jamesfmackenzie.com/2016/09/25/a-year-of-zero-notifications/
+* Publish old stories to Medium.com one by one
 
-* Fix header line and letter spacing issues (especially apparant on mobile devices)
+* Check Medium.com and Google Analytics statistics
 
 * Create tag page - IN PROGRESS
 ** Why does it render as /tags rather than tags.html?
@@ -20,8 +19,6 @@ http://www.jamesfmackenzie.com/2016/09/25/a-year-of-zero-notifications/
 * Refactor duplicate content into includes
 
 * Refactor CSS for a general tidy up and to use config placeholders (e.g. for theme colours)
-
-* Sign up for Medium, Mailchimp etc and get those links working
 
 * Refactor config.yaml, remove junk
 
@@ -38,7 +35,7 @@ https://adwords.google.com/select/KeywordToolExternal
 
 * Setup a feedburner
 
-* Setup a mailing list and send blog articles out to those guys (feedburner have a solution for this too?)
+* Setup a mailing list and send blog articles out to those guys (feedburner have a solution for this too?), add the link to my content header
 
 * Try some of these content hacks to drive growth - http://unbounce.com/content-marketing/9-content-marketing-growth-hacks-drive-traffic-conversions/
 
