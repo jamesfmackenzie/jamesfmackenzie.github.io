@@ -1,0 +1,1 @@
+Publish equirectangular jpeg to Photosynth. Download pano.
