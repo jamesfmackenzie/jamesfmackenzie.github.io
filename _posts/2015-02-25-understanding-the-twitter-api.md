@@ -66,7 +66,7 @@ GET
 
 ### Step 4. Add request options to shell script
 
-Now we've estabished the request options, let's set these up as constants in our shell script too:
+Now we've established the request options, let's set these up as constants in our shell script too:
 
 {% highlight bash %}
 {% raw %}
@@ -107,7 +107,7 @@ What went wrong? Well, it turns out that Twitter considers the above request inv
 
 * Which application is making the request
 * Which user the request is posting on behalf of
-* Whether the user has granted the application authorization to post on the userÔÇÖs behalf
+* Whether the user has granted the application authorization to post on the user's behalf
 * Whether the request has been tampered by a third party while in transit
 
 For our request to work, we need to provide these details to Twitter in the form of an *Authorization Header*.
