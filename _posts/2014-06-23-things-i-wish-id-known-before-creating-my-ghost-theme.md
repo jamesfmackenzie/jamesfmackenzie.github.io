@@ -41,7 +41,7 @@ Stick to this for great benefit:
 ├── /assets [contains all your static content, e.g. css, fonts, images, javascript]
 ├── default.hbs [contains common content for every page e.g. header, footer etc]
 ├── index.hbs [**required** the template for your blog home page]
-└── post.hbs [**required** the template for each post]
+├── post.hbs [**required** the template for each post]
 └── package.json [contains template details e.g. name, version, description]
 </pre>
 
@@ -66,14 +66,14 @@ Everything else is optional.
 		* <code>content</code> – the post content
 		* <code>published_at</code> – date the post was published
 		* <code>author</code> – an object representing the post author
-        	* <code>author.name</code> – the name of the author
+		    * <code>author.name</code> – the name of the author
 			* <code>author.email</code> – the author's email address
 			* <code>author.bio</code> – the author's bio
 			* <code>author.website</code> – the author's website
 			* <code>author.image</code> – the author's profile image
 			* <code>author.cover</code> – the author's cover image
 		* <code>tags</code> – an object representing the post's tags
-        	* <code>tag.name</code> – the name of the tag
+            * <code>tag.name</code> – the name of the tag
             * You can use the <code>{% raw %}{{foreach}}{% endraw %}</code> helper to iterate over the tags
 		* Each of these properties can be output using a standard Handlebars expression, e.g. <code>{% raw %}{{title}}{% endraw %}</code>. In addition, you can use just <code>{% raw %}{{author}}{% endraw %}</code> to output the author's name:
 
@@ -95,13 +95,13 @@ Everything else is optional.
         
 * <code>index.hbs</code> is always passed the <code>posts</code> object.
 	* This is a collection of all the <code>post</code> objects in your blog.
-    * Again you can loop over these using the <code>foreach</code> helper:
+    * Again you can loop over these using the <code>{% raw %}{{foreach}}{% endraw %}</code> helper:
     
 {% highlight html %}
 {% raw %}
 {{#foreach posts}}
   <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-  <p>{{content}}<p>
+  <p>{{content}}</p>
 {{/foreach}}
 {% endraw %}
 {% endhighlight %}
@@ -115,7 +115,7 @@ Everything else is optional.
     
 ### There are many Handlebars helpers available
 
-* You've already seen <code>foreach</code>, but Ghost has many other built in helpers to help you build or customize your theme.
+* You've already seen <code>{% raw %}{{foreach}}{% endraw %}</code>, but Ghost has many other built in helpers to help you build or customize your theme.
 * They're accessed via a Handlebars expression e.g. <code>{% raw %}{{foreach}}{% endraw %}</code> or <code>{% raw %}{{content}}{% endraw %}</code>.
 * You can find the complete list [here](http://docs.ghost.org/themes/#helpers).
 
