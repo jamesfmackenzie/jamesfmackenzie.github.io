@@ -1,3 +1,12 @@
+---
+layout: post
+title: Publishing VR Panoramas to Photosynth
+date: '2016-10-12 07:54:00'
+tags: [photography, vr panorama, facebook]
+---
+
+You've shot a 360 photo or VR panorama, and now you'd like to share it with your friends using Photosynth's excellent shading features. How do you do that?
+
 Pano notes
 ====
  
