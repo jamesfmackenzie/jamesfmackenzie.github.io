@@ -31,11 +31,11 @@ Here we generate all the tags.
 {% endfor %}
 
 <h2>Tags</h2>
-<ul>
 {% for tag in tags %}
-  <li><a href="#{{ tag | slugify }}"> {{ tag }} </a></li>
+  <a href="#{{ tag | slugify }}"> {{ tag }} </a> | 
 {% endfor %}
-</ul>
+<br />
+<br />
 
 <h2>Pages</h2>
 {% for tag in tags %}
