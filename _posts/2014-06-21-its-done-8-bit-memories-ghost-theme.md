@@ -2,7 +2,7 @@
 layout: post
 title: It's Done! 8-Bit Memories Ghost Theme
 date: '2014-06-21 03:51:00'
-tags: [building_a_theme_for_ghost]
+tags: [Ghost, Themes, Branding, Web Design]
 ---
 
 ![](/img/posts/8-bit-Memories.png)

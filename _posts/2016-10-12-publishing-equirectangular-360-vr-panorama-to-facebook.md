@@ -2,7 +2,7 @@
 layout: post
 title: Publishing VR Panoramas to Facebook
 date: '2016-10-12 07:54:00'
-tags: [photography, vr panorama, facebook]
+tags: [Photography, 360 Photo, VR Panorama, Facebook]
 ---
 
 A little-known but extremely cool feature: Facebook has built-in support for <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">VR panoramas</a> (or, in their own terms, <a href="https://facebook360.fb.com/360-photos/" target="_blank">"360° photos"</a>). These interactive images allow you to tilt and pan around a scene, creating the fully immersive experience of "really being there".
