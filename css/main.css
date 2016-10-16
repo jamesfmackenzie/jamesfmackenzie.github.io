@@ -199,20 +199,26 @@ article img {
 
 /* end individual post page styles */
 
+/* sitemap styles */
+.sitemap header {
   background-color: #18bc9c;
   padding: 1.5em 0;
 }
 
+.sitemap header .row {
   display: block;
   text-align: center;
 }
 
+.sitemap article {
   border-bottom: none;
 }
 
+.sitemap h3 a {
   text-decoration: none;
   color: #2c3e50;
 }
+/* end sitemap styles */
 
 
 /* footer styles */
