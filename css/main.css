@@ -199,6 +199,21 @@ article img {
 
 /* end individual post page styles */
 
+  background-color: #18bc9c;
+  padding: 1.5em 0;
+}
+
+  display: block;
+  text-align: center;
+}
+
+  border-bottom: none;
+}
+
+  text-decoration: none;
+  color: #2c3e50;
+}
+
 
 /* footer styles */
 footer {
