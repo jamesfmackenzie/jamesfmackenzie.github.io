@@ -84,16 +84,11 @@ header h3 {
 }
 
 header a {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 header a:hover {
-  color: #18bc9c;
   text-decoration: none;
 }
 
@@ -157,6 +152,21 @@ aside a:hover {
   color: #18bc9c;
 }
 /* end aside styles */
+
+/* main header style */
+body > header a {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body > header a:hover {
+  color: #18bc9c;
+  text-decoration: none;
+}
+/* end main header styles */
 
 /* article styles */
 article {
