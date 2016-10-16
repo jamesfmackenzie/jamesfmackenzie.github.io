@@ -13,11 +13,13 @@ CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIO
 
 * Create tag page - DONE
 
-* Update index and post headers to have tags - IN PROGRESS
+* Update index and post headers to have tags - DONE
+
+* Why should people care about my articles? Put some kind of strapline at the top that gives me more credibility
+
+* Refactor CSS for a general tidy up and to use config placeholders (e.g. for theme colours). Might be worth splitting CSS into individual pages first, so I can figure out what's common and what's not.
 
 * Refactor duplicate content into includes
-
-* Refactor CSS for a general tidy up and to use config placeholders (e.g. for theme colours)
 
 * Refactor config.yaml, remove junk
 
