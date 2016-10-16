@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/code.css" />
+	<link rel="stylesheet" type="text/css" href="/css/spinner.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/js/infinite-jekyll.js"></script>
+	<title>{{ site.name }} - {{ site.description }}</title>
+  </head>
+  <body>
+    <header>
+	  <div class="row">
+	    <img src="/img/layout/logo.png" />
+        <h2><a href="/">{{ site.name }}</a></h2>
+	    <nav>
+	      <span><a href="/">Blog</a></span>
+	      <span><a href="#">About</a></span>
+	    </nav>
+	  </div>
+	</header>
+	<main class="single-post">
+	  <header>
+	    <div class="row">
+	      <h1>{{ page.title }}</h1>
+		</div>
+	  </header>
+      <article class="post">
+	    <div class="row">
+          {{ content }}
+	    </div>
+      </article>  
+	</main>
+	<footer>
+	  <div class="row">
+			<p>Follow and subscribe!</p>
+			<ul class="social-buttons">
+				<li><a href="/feed.xml"><i class="fa fa-fw fa-rss"></i></a></li>
+				<li><a href="https://medium.com/@jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-medium"></i></a></li>	
+				<!--<li><a href="#"><i class="fa fa-fw fa-envelope"></i></a></li>-->
+				<li><a href="http://twitter.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>			                    
+			</ul>
+		</div>
+	</footer>
+		<!-- Google Analytics Tracking Code -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');		
+		ga('create', 'UA-65863388-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+  </body>
+</html>
