@@ -200,6 +200,10 @@ article img {
   display: none;
 }
 
+.single-post .tags {
+  display: none;
+}
+
 /* comments styles */
 .comments {
   padding-top: 2em;
