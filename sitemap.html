@@ -32,7 +32,7 @@ Here we generate all the tags.
 
 <h2>Tags</h2>
 {% for tag in tags %}
-  <a href="#{{ tag | slugify }}"> {{ tag }} </a> | 
+  <a href="#{{ tag | slugify }}"> {{ tag }} </a>{% unless forloop.last %} | {% endunless %} 
 {% endfor %}
 <br />
 <br />
