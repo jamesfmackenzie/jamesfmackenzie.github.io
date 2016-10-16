@@ -7,14 +7,13 @@ Technical todos
 
 CONSIDER MOVING ALL OF THESE TO GITHUB ISSUES WHERE THEY CAN BE TRACKED AND PRIORITISED BETTER
 
-* Publish old stories to Medium.com one by one
+* Publish old stories to Medium.com one by one - DONE
 
-* Check Medium.com and Google Analytics statistics
+* Check Medium.com and Google Analytics statistics - DONE
 
-* Create tag page - IN PROGRESS
-** Why does it render as /tags rather than tags.html?
+* Create tag page - DONE
 
-* Update index and post headers to have tags
+* Update index and post headers to have tags - IN PROGRESS
 
 * Refactor duplicate content into includes
 
