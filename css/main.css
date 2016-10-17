@@ -51,6 +51,11 @@ figure {
   word-wrap: break-word;
 }*/
 
+code {
+  font-size: 1.25em;
+  color: #7b8a8b;
+}
+
 pre {
   font-size: 1.25em;
   oveflow: auto;
