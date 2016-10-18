@@ -57,7 +57,7 @@ code {
 }
 
 pre {
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
   oveflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
