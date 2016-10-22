@@ -1,0 +1,203 @@
+Write about Atari STE enhanced games and screenshot them side by side with regular ST games
+
+Capabilities
+---
+The main hardware differences to the normal ST were:  
+
+4096 colour palette
+DMA 8 bit Stereo-Sound with up to 50 khz digisound replay
+two additional Joypadports (for Jagpad)
+graphic coprocessor chip Blitter.
+easy to upgrade SIMM based memory (up to 4 MB)
+Genlock support
+
+Next step: find some games that exploit these capabilities and compare them!
+
+Games
+---
+
+Xenon 2
+http://atariage.com/forums/topic/233961-xenon-2-megablast-with-mega-music/
+http://www.atari-forum.com/viewtopic.php?t=27444
+
+Pac-mania
+
+Chaos Engine (hardware scrolling) do a comparison
+
+Rock and Roll Clams, Zero 5, Substation, and Reservoir Gods
+'Stefan_L', on 04 Aug 2012 - 7:28 PM, said:
+"Stone Age" is not STE only... it works fine on ST also :-)
+
+What I tested not. Updated list:
+
+
+Atari STE and games, overview, game lists
+
+
+Games using STE enhancements :
+
+Abrevs. :
+ADMA - audio DMA
+EPAL - extended palette (4096 col.)
+HWS - hardware scrolling
+BLIT - blitter (not strictly STE feature)
+AJ - analogue joysticks
+****************
+
+Alien Busters IV - ADMA
+Alien Thing - ADMA, EPAL
+Alien Thing - Expert Edition - ADMA, EPAL
+Alien Thing - The Directors Cut (Demo) - ADMA, EPAL
+Ancient Art of War in the Skies, The - EPAL
+Another World - ADMA
+Asteroidia - ? Should use blitter but I don't see it, and scrolling is pathetic.
+Astro Panic 94 - ADMA, BLIT, EPAL
+
+B Squad (Demo) - EPAL, BLIT
+Battletris - ADMA
+Battletris+ - ADMA
+Beastlord - EPAL
+
+Cannon Fodder II (preview) - EPAL-only title pic. Pih.
+Captive - EPAL
+Carlos - ADMA
+Chambers of Shaolin - ADMA
+Chaos Engine - HWS
+Chronicles of Omega, The - HWS, ADMA
+Chu Chu Rocket - ADMA, BLIT, AJ
+CoCoCoPo -ADMA
+Creatures - ADMA
+
+Destruction Imminent - ADMA, BLIT, EPAL
+Diamond Ice - ADMA, EPAL
+Dragon's Lair - EPAL
+Dragon's Lair II - EPAL
+Dragon's Lair III - EPAL
+Dragon's Lair Escape from the Singe's Castle - EPAL
+
+Elvira the Arcade Game - BLIT
+Esprit - ADMA (Strange that later games - Oxyd, are not STE enhanced)
+
+Final Fight - EPAL
+Fire and Ice - EPAL
+First Samurai - EPAL, intro only
+Frantick - EPAL - only title
+
+Ghost Battle - BLIT
+GodPey - BLIT
+
+Heartland - ADMA, EPAL
+
+International Rugby Challenge - EPAL
+
+James Pond - EPAL
+James Pond II (Robocod) - EPAL (1c only)
+
+Leavin' Teramis - EPAL, intro only
+Lethal Xcess - ADMA, BLIT
+
+Magic Boy - ADMA
+Magic Fly - EPAL - only title pic.
+
+Nicky Boom - ADMA
+Nicky 2 - ADMA
+No Limit 2 - ADMA, EPAL
+
+Oh No! Not More Radioactive Mineshafts - BLIT, EPAL
+
+Operation Garfield - EPAL, ADMA, BLIT
+
+Pooz - ADMA
+Pouif Ouf - ADMA, BLIT
+Power Up plus - ADMA, BLIT - despite it, scrolling is awful
+
+Robocop 3 - ADMA, EPAL
+Rock 'n' Roll Clams - ADMA, EPAL, BLIT
+Rubicon - ADMA by intro
+
+Sheer Agony - EPAL
+Space Ace - EPAL
+Space Ace II - EPAL
+Starball - ADMA
+Stone Age (rev2.1, 1993) - ADMA
+Superfly - ADMA
+
+Ultimate Arena, The - ADMA, EPAL, BLIT
+Ultimate 'tris Game, The - ADMA, EPAL, BLIT
+
+Vaxine - ADMA, EPAL
+Winglord - ADMA, EPAL, BLIT
+Wings of Death - ADMA, BLIT
+Wrath of the Demon - EPAL
+
+Zool - HWS, BLIT
+
+****************
+
+
+STE only :
+
+Alien Blast
+Crackman
+Dynabusters+ - I guess that + means for STE
+H Mec
+H Mec 2
+Manga Puzzle
+Obsession
+Pacman OE - OE= On STE
+Revenge of Mutant Camels STE v. (for STE v.)
+Roger - ADMA, EPAL, BLIT
+Sleepwalker
+Square Off (1995) + TT, Falcon
+Stardust	+ Falcon
+Street Fighter II (B/W, Demo)
+Stone Age (rev.2, 1992) + Falcon
+Substation 
+Team
+Tomtar
+Utopos
+Whitewater Madness
+Zero 5
+
+
+Some others can work on Falcon beside where is marked. Talking about unmodded games.
+
+
+*********
+
+Not working on STE:
+This includes not TOS version caused problems, only
+games writing to bad locations.
+
+Note: some games may fail on 4MB machines because lame code.
+
+Many of cracks fail on higher TOS versions, so please test with
+original or Pasti images if possible.
+
+Really not working:
+Hyperforce - overshot in palette writing loop
+Grand Monster Slam - overshot in palette writing loop
+Nightdown - writing to Screen pointer does nothing on ST, on STE bus error.
+
+Total 3 games found so far - not solveable by changing TOS vers., RAM setting or similar.
+
+I made fixed versions of them, and it means changing only couple bytes. In case of Grand Monster Slam it is done even with STX img.
+
+
+As TOS version caused problem good example is Defender of the Crown: code is not ready for enhanced palette of STE, handled via XBIOS calls. If run under TOS 1.04 on STE it works fine.
+How to use TOS 1.04 on STE ? See on Floppy Image Runner site.
+
+Making complete list of originals not working on regular STE with TOS 1.06/1.62 would take too much time. I guess that over 90% works.
+TOS 2.05/2.06 (Mega STE) : I guess that success rate is under 80%.
+
+What helps in case of problem: Try another crack. Try running from AUTO folder. Use specialised SW for setting machine to act as having only 512KB (or 1MB) RAM. Install TOS 1.04 in RAM. 
+
+
+
+
+
+
+
+
+
+

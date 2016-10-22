@@ -49,3 +49,20 @@
 	• iOS car accelerometer - how fast do you accelerate/brake compared to the average?
 	• Raspberry Pi ambilight
 	• Setting up an Archie emulator (Arculator, ArcEm?)
+* Getting emulator games running with one click
+	• Getting the best image quality out of the Atari ST
+		? RF
+		? Composite
+		? Sync strike + RGB scart
+		? Best ST cable
+		? Other?
+	• Video capture via cool Micomsoft cap card
+	• PS2 refurb with OPL, instructables controller clean and component cable
+	• Raspberry Pi as an Acorn machine
+	• Getting old Atari ST games running with Steem
+	• Getting Archimedes games running with Arculator. Inspired by http://www.theregister.co.uk/2012/06/01/acorn_archimedes_is_25_years_old/
+	• Turn the old Mac mini into an OpenEmu station complete with wireless controller support http://openemu.org/
+	• Get AtariST surfing the web. Check out links in Pocket tagged atariinternetproject
+	• Get the old Mac Mini working as a Steam machine, with wireless controller support
+	• Give your old Wii, GameCube, PS2 games a 1080p upgrade
+	
