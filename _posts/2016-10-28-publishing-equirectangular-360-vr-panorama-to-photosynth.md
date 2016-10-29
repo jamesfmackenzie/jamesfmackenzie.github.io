@@ -5,7 +5,7 @@ date: '2016-10-28 07:54:00'
 tags: [Photography, 360 Photo, VR Panorama, How To, Photosynth]
 ---
 
-You've shot a 360 photo or VR panorama, and now you'd like to share it with your friends using Photosynth's excellent sharing features. Here's how.
+You've shot a 360 photo or <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">VR panorama</a>, and now you'd like to share it with your friends using <a href="https://photosynth.net/" target="_blank">Photosynth</a>'s excellent sharing features. Here's how.
 
 ### If you have Photoshop or Photoshop Elements
 
@@ -17,6 +17,8 @@ If you have Photoshop or Photoshop Elements, there's a really easy way to do thi
 4. Select a projection. VR panoramas typically use <i><a href="https://en.wikipedia.org/wiki/Equirectangular_projection" target="_blank">Equirectangular</a> (Horizontal)</i>
 5. Click <i>Publish</i>
 
+![Export to PhotoSynth](/img/posts/photosynth-export.png)
+
 ### If you don't
 
 If you don't have Photoshop or Photoshop Elements, get ready for hard mode! You can do this, but the process is a little convoluted.
@@ -25,7 +27,7 @@ If you don't have Photoshop or Photoshop Elements, get ready for hard mode! You 
 
 You'll need some panorama processing software. Hugin and Panotools are your best free options. You can [find my setup guide over here]({% post_url 2016-10-17-installing-hugin-and-panotools-on-windows %})
 
-You'll also need something to upload to Photosynth. <a href="http://research.microsoft.com/en-us/um/redmond/projects/ice/" target="_blank">Grab and install copy of Microsoft ICE</a>.
+You'll also need software to do the Photosynth upload. <a href="http://research.microsoft.com/en-us/um/redmond/projects/ice/" target="_blank">Grab and install copy of Microsoft ICE</a>.
 
 ### Step 2. Convert your image to cube faces
 
@@ -44,7 +46,7 @@ If you're unsure which cube face is which, check my visual guide below:
 
 ### Step 3. Create ICE project file
 
-In the same directory as your cube faces, create a new file called <code>pano.spj</code>. Copy and paste the following XML into it:
+In the same directory as your cube faces, create a new file called <code>pano.spj</code>. Copy and paste the following XML into it, then save and exit.
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,4 +92,4 @@ The very first time, you'll need to (possibly register and) login to Photosynth.
 That's all there is to it! Pan around the image to your heart's content, then share the link with your friends!
 
 ### References
-<a href="http://www.reallyslick.com/blog/2015/09/making-cubemaps-from-overlapping-photos/" target="_blank">http://www.reallyslick.com/blog/2015/09/making-cubemaps-from-overlapping-photos/</a>
+* <a href="http://www.reallyslick.com/blog/2015/09/making-cubemaps-from-overlapping-photos/" target="_blank">Making Cubemaps from Overlapping Photos</a>
