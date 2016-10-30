@@ -2,6 +2,7 @@
 layout: post
 title: Creative EP-630 Noise Isolating Earphones Are the Best
 date: '2015-03-15 12:33:15'
+permalink: /creative-ep-630-noise-isolating-earphones-are-the-best/
 ---
 ![](/img/posts/ep630.jpg)
 

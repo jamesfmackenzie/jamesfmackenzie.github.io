@@ -2,6 +2,7 @@
 layout: post
 title: Using PARCP-USB to Transfer Files from PC to ST
 date: '2016-02-24 21:19:00'
+permalink: /transferring_files_from_pc_to_st/2016/02/24/use-parcp-usb-to-transfer-files-from-pc-to-atari-st/
 tags: [Atari, Atari ST, How To, Retrocomputing]
 ---
 
