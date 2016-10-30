@@ -31,7 +31,7 @@ You'll also need software to do the Photosynth upload. <a href="http://research.
 
 ### Step 2. Convert your image to cube faces
 
-Before you can upload your VR panorama to Photosynth, you'll need to convert it to <a href="http://wiki.panotools.org/Cubic_Projection" target="_blank">cubic projection</a>. [Follow my guide]({% post_url 2016-10-18-convert-equirectangular-projection-to-cube-faces %}) and you'll end up with 6 cube faces. Name them as follows:
+Before you can upload your VR panorama to Photosynth, you'll need to convert it to <a href="https://en.wikipedia.org/wiki/Cube_mapping" target="_blank">cubic projection</a>. [Follow my guide]({% post_url 2016-10-18-convert-equirectangular-projection-to-cube-faces %}) and you'll end up with 6 cube faces. Name them as follows:
 
 * left.tif
 * front.tif
