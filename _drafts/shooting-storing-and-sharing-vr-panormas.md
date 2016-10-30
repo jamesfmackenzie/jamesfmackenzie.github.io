@@ -45,3 +45,5 @@ With the lack of native OS support out there, your best option is to share panor
 With this in mind, Photosynth or Facebook are your best options. Both feature slick viewers in the browser and allow easy sharing with your friends.
 
 INSERT IMPORTING TO PHOTOSYNTH AND IMPORTING TO FACEBOOK ARTICLES
+
+https://blog.visualpathy.com/360-photography/
