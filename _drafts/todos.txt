@@ -1,6 +1,19 @@
 Content strategy
 ---
-* Pick one draft per week and write an article - NEXT PAGE: Publishing 360 VR panorama to Photosynth
+* Pick one draft per week and write an article
+
+* Next up:
+
+Article:
+* shooting-storing-and-sharing-vr-panormas.md
+
+Then socialize it in the following places:
+* Reddit panoramic photography - https://www.reddit.com/r/PanoramicPhotography/
+* Publish to Medium, and then submit to the following publications:
+**  Click the Shutter - https://medium.com/click-the-shutter/about
+** Thoughts on Photography - https://medium.com/thoughts-on-photography-1
+** Vantage - https://medium.com/vantage
+
 
 Technical todos
 ---
