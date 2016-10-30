@@ -30,6 +30,8 @@ If you spend lots of time in the Windows ecosystem, also consider the .pano file
 
 INSERT NOTES ABOUT CONVERTING BETWEEN FILE FORMATS
 
+[.pano files]({% post_url 2016-10-29-what-are-pano-files %})
+
 Viewing 
 
 Aside from the Windows support mentioned above, there's no other native OS support out there. You'll need custom apps to tilt and pan through your 360 VR photos.
