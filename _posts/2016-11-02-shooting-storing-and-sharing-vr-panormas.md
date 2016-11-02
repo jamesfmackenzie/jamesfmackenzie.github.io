@@ -1,10 +1,19 @@
+---
+layout: post
+title: Shooting, Storing and Sharing 360 VR Panoramas
+date: '2016-11-02 08:25:00'
+tags: [Photography, 360 Photo, VR Panorama, How To]
+---
+
+<!--
 ### Preamble
 
 WHY SHOULD PEOPLE READ THIS? I've spent my last several months fully immersed in the world of VR panoramas (LINK TO some awesome examples I've shot). BUILD UP MY CREDIBILITY. I'm ready to share what I've learned.
+-->
 
 ### Shooting, Storing and Sharing 360 VR Panoramas
 
-INSERT PICTURE OF 360 VR PANO
+![Eiffel Tower pano - credit: Markus Matern](/img/posts/360_vr_eiffel_tower.jpg)
 
 Whether it's a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a 360 VR panorama. Pan left, right, up, down, or even swivel right around to take in the whole view.
 
@@ -16,7 +25,7 @@ The best camera is the one you already have - and for most of us that's our smar
 
 After some trial and error I settled on <a href="https://www.google.co.uk/streetview/apps/">Google Street View</a>. Intended as a data entry point for Google Maps, it also renders beautiful panoramas to your phone's Camera Roll in JPEG format.
 
-INSERT SCREENSHOT OF GOOGLE STREET VIEW
+![Google Street View](/img/posts/google_street_view.png)
 
 If you need better results, Street View is also compatible with the following 360 degree cameras:
 
@@ -33,7 +42,7 @@ Stay away from the proprietary "walled garden" services out there. You want to s
 
 My recommendation: stick with what you have. Google's Street View panoramas export as JPEG images in <a href="https://en.wikipedia.org/wiki/Equirectangular_projection" target="_blank">equirectangular projection</a>. The same format is accepted as input by most panorama-sharing sites and apps too. Take these and store them with your preferred photo backup service. 
 
-INSERT SCREENSHOT OF AN EQUIRECTANGULAR PANO
+![pano](/img/posts/equirectangular-pano.png)
 
 If you spend lots of time in the Windows ecosystem, also consider the [.pano file format]({% post_url 2016-10-29-what-are-pano-files %}). The Desktop, Tablet, Phone and OneDrive have built in support for it. Just double click to get panning.
 
@@ -46,7 +55,7 @@ It's relatively easy to convert from one to the other:
 * Converting from .pano to equirectangular projection
 -->
 
-INSERT SCREENSHOT OF THE .PANO EXPERIENCE
+![.pano file](/img/posts/pan-and-tilit-the-microsoft-photos-panorama-experience.png)
 
 ### Viewing 
 
@@ -69,11 +78,15 @@ If you shoot (or [convert to]({% post_url 2016-10-30-convert-equirectangular-360
 
 ![The OneDrive pano experience](/img/posts/pan-and-tilt-the-onedrive-panorama-experience.png)
 
+<!-- check this out later
 https://blog.visualpathy.com/360-photography/
+-->
 
+<!-- link these
 ### Related
 
 Photosynth "Tech Preview"
 Google cardboard camera
 
 ### References
+-->
