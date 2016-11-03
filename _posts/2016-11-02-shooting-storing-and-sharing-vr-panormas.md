@@ -5,13 +5,9 @@ date: '2016-11-02 08:25:00'
 tags: [Photography, 360 Photo, VR Panorama, How To]
 ---
 
-<!--
-### Preamble
+I've spent the last several months fully committed to the shooting of 360 VR panoramas. Here's what I've learned.
 
-WHY SHOULD PEOPLE READ THIS? I've spent my last several months fully immersed in the world of VR panoramas (LINK TO some awesome examples I've shot). BUILD UP MY CREDIBILITY. I'm ready to share what I've learned.
--->
-
-### Shooting, Storing and Sharing 360 VR Panoramas
+### Introduction
 
 ![Eiffel Tower pano - credit: Markus Matern](/img/posts/360_vr_eiffel_tower.jpg)
 
@@ -23,7 +19,7 @@ With loads of choices out there, what are your best options for shooting, storin
 
 The best camera is the one you already have - and for most of us that's our smartphone. Modern smartphones are already equipped with all everything they need to take VR panoramas - namely accelerometer, gyroscope and CCD. The only remaining question is what software to use.
 
-After some trial and error I settled on <a href="https://www.google.co.uk/streetview/apps/">Google Street View</a>. Intended as a data entry point for Google Maps, it also renders beautiful panoramas to your phone's Camera Roll in JPEG format.
+After some trial and error I settled on <a href="https://www.google.co.uk/streetview/apps/">Google Street View</a>. Intended as a data entry point for Google Maps, it also renders beautiful panoramas to your phone's Camera Roll in JPEG format. The experience is super simple. Simply point your phone at a series of orange dots and Street View will snap the panorama for you: 
 
 ![Google Street View](/img/posts/google_street_view.png)
 
