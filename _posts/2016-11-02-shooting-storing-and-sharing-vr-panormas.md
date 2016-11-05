@@ -5,12 +5,6 @@ date: '2016-11-02 08:25:00'
 tags: [Photography, 360 Photo, VR Panorama, How To]
 ---
 
-I've spent the last several months fully committed to the shooting of 360 VR panoramas. Here's what I've learned.
-
-### Introduction
-
-![Eiffel Tower pano - credit: Markus Matern](/img/posts/360_vr_eiffel_tower.jpg)
-
 Whether it's a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a 360 VR panorama. Pan left, right, up, down, or even swivel right around to take in the whole view.
 
 With loads of choices out there, what are your best options for shooting, storing and sharing your inspiring pano's?
@@ -21,26 +15,35 @@ The best camera is the one you already have - and for most of us that's our smar
 
 After some trial and error I settled on <a href="https://www.google.co.uk/streetview/apps/">Google Street View</a>. Intended as a data entry point for Google Maps, it also renders beautiful panoramas to your phone's Camera Roll in JPEG format. The experience is super simple. Simply point your phone at a series of orange dots and Street View will snap the panorama for you: 
 
-![Google Street View](/img/posts/google_street_view.png)
+![Google Street View](/img/posts/google_street_view.jpg)
 
-If you need better results, Street View is also compatible with the following 360 degree cameras:
+If you need better results, Street View is also <a href="https://support.google.com/maps/answer/6281877?hl=en" target="_blank">compatible with the following 360 degree cameras</a>.:
 
 * Ricoh Theta S
 * Samsung Gear 360
 * NCTech iris360
 * LG 360 CAM
 
-Find out more detail <a href="https://support.google.com/maps/answer/6281877?hl=en" target="_blank">here</a>.
+If you want more control, you can shoot panoramas the old way:
+
+1. Use your camera or DSLR to shoot lots of overlapping photos. Make sure you always shoot from the same point. A tripod helps here.
+2. Stitch them in post-processing. Some good free options are <a href="http://hugin.sourceforge.net/" target="_blank">Hugin</a> and <a href="http://research.microsoft.com/en-us/um/redmond/projects/ice/" target="_blank">Microsoft ICE</a>.
 
 ### Storing
 
 Stay away from the proprietary "walled garden" services out there. You want to store your panoramas in a plain, portable, future-proofed format.
 
-My recommendation: stick with what you have. Google's Street View panoramas export as JPEG images in <a href="https://en.wikipedia.org/wiki/Equirectangular_projection" target="_blank">equirectangular projection</a>. The same format is accepted as input by most panorama-sharing sites and apps too. Take these and store them with your preferred photo backup service. 
+My recommendation: stick with JPEG images in <a href="https://en.wikipedia.org/wiki/Equirectangular_projection" target="_blank">equirectangular</a> (or sometimes, "spherical") projection:
 
-![pano](/img/posts/equirectangular-pano.png)
+* Google's Street View panoramas already export in this format
+* Supported by most photo-stitching software
+* Accepted as input by most panorama-sharing sites and apps too 
 
-If you spend lots of time in the Windows ecosystem, also consider the [.pano file format]({% post_url 2016-10-29-what-are-pano-files %}). The Desktop, Tablet, Phone and OneDrive have built in support for it. Just double click to get panning.
+Take these and store them with your preferred photo backup service. 
+
+![Church pano](/img/posts/church-pano-equirectangular.jpg)
+
+If you spend lots of time in the Windows ecosystem, also consider the [.pano file format]({% post_url 2016-10-29-what-are-pano-files %}). The Desktop, Tablet, Phone and OneDrive have built in support for it. Just double click to get panning:
 
 <!-- 
 
@@ -51,13 +54,13 @@ It's relatively easy to convert from one to the other:
 * Converting from .pano to equirectangular projection
 -->
 
-![.pano file](/img/posts/pan-and-tilit-the-microsoft-photos-panorama-experience.png)
+![.pano file](/img/posts/church-pano.jpg)
 
 ### Viewing 
 
 Aside from the Windows support mentioned above, there's no native OS capability out there. You'll need custom apps (or "Players") to tilt and pan through your 360 VR photos.
 
-In addition to the Google Street View app, the free <a href="https://appsto.re/gb/2CTBbb.i" target="_blank">VR Camera app</a> for iOS is also worth a look. Most of the other iOS options are either paid, walled gardens or total junk.
+In addition to the Google Street View app, the free <a href="https://appsto.re/gb/2CTBbb.i" target="_blank">VR Camera app</a> for iOS is worth a look. Most of the other iOS options are either paid, walled gardens or total junk.
 
 For other platforms, checkout <a href="http://wiki.panotools.org/Panorama_Viewers" target="_blank">this comprehensive list</a>.
 
@@ -72,17 +75,6 @@ With this in mind, <a href="https://photosynth.net/" target="_blank">Photosynth<
 
 If you shoot (or [convert to]({% post_url 2016-10-30-convert-equirectangular-360-vr-panorama-to-pano-file %})) [.pano files]({% post_url 2016-10-29-what-are-pano-files %}), your best option is definitely <a href="https://onedrive.live.com/about/en-gb/" target="_blank">OneDrive</a>. Simply upload the .pano and the share the link:
 
-![The OneDrive pano experience](/img/posts/pan-and-tilt-the-onedrive-panorama-experience.png)
+![The OneDrive pano experience](/img/posts/church-pano-onedrive.jpg)
 
-<!-- check this out later
-https://blog.visualpathy.com/360-photography/
--->
-
-<!-- link these
-### Related
-
-Photosynth "Tech Preview"
-Google cardboard camera
-
-### References
--->
+Happy shooting!
