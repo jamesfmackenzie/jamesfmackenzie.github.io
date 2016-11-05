@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Shooting, Storing and Sharing 360 VR Panoramas
+title: All You Need to Know about 360 VR Photos
 date: '2016-11-02 08:25:00'
 tags: [Photography, 360 Photo, VR Panorama, How To]
 ---
 
-Whether it's a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a 360 VR panorama. Pan left, right, up, down, or even swivel right around to take in the whole view.
+Whether it's a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">360 VR panorama</a>. Pan left, right, up, down, or even swivel right around to take in the whole view.
 
 With loads of choices out there, what are your best options for shooting, storing and sharing your inspiring pano's?
 
@@ -35,7 +35,7 @@ Stay away from the proprietary "walled garden" services out there. You want to s
 
 My recommendation: stick with JPEG images in <a href="https://en.wikipedia.org/wiki/Equirectangular_projection" target="_blank">equirectangular</a> (or sometimes, "spherical") projection:
 
-* Google's Street View panoramas already export in this format
+* Google's Street View already exports in this format
 * Supported by most photo-stitching software
 * Accepted as input by most panorama-sharing sites and apps too 
 
@@ -62,13 +62,13 @@ Aside from the Windows support mentioned above, there's no native OS capability 
 
 In addition to the Google Street View app, the free <a href="https://appsto.re/gb/2CTBbb.i" target="_blank">VR Camera app</a> for iOS is worth a look. Most of the other iOS options are either paid, walled gardens or total junk.
 
-For other platforms, checkout <a href="http://wiki.panotools.org/Panorama_Viewers" target="_blank">this comprehensive list</a>.
+For other platforms, check out <a href="http://wiki.panotools.org/Panorama_Viewers" target="_blank">this comprehensive list</a>.
 
 ### Sharing
 
 With no convergence around a popular, cross-platform Player, your best option is to share panoramas via the web. 
 
-With this in mind, <a href="https://photosynth.net/" target="_blank">Photosynth</a> and <a href="http://www.facebook.com" target="_blank">Facebook</a> are great options. Both feature slick viewers in the browser and allow easy sharing with your friends. To get started with these, see:
+With this in mind, <a href="https://photosynth.net/" target="_blank">Photosynth</a> and <a href="http://www.facebook.com" target="_blank">Facebook</a> are great options. Both feature slick viewers in the browser and allow easy sharing with your friends. To get started, see:
 
 * [Publishing VR Panoramas to Facebook]({% post_url 2016-10-12-publishing-equirectangular-360-vr-panorama-to-facebook %})
 * [Publishing VR Panoramas to Photosynth]({% post_url 2016-10-28-publishing-equirectangular-360-vr-panorama-to-photosynth %})
