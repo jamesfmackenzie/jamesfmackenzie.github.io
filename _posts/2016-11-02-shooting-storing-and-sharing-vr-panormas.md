@@ -15,7 +15,7 @@ The best camera is the one you already have - and for most of us that's our smar
 
 After some trial and error I settled on <a href="https://www.google.co.uk/streetview/apps/">Google Street View</a>. Intended as a data entry point for Google Maps, it also renders beautiful panoramas to your phone's Camera Roll in JPEG format. The experience is super simple. Simply point your phone at a series of orange dots and Street View will snap the panorama for you: 
 
-![Google Street View](/img/posts/google_street_view.jpg)
+![VR shooting via Google Street View app (iOS and Android)](/img/posts/google_street_view.jpg)
 
 If you need better results, Street View is also <a href="https://support.google.com/maps/answer/6281877?hl=en" target="_blank">compatible with the following 360 degree cameras</a>.:
 
@@ -41,7 +41,7 @@ My recommendation: stick with JPEG images in <a href="https://en.wikipedia.org/w
 
 Take these and store them with your preferred photo backup service. 
 
-![Church pano](/img/posts/church-pano-equirectangular.jpg)
+![A 360 VR photo in Equirectangular projection](/img/posts/church-pano-equirectangular.jpg)
 
 If you spend lots of time in the Windows ecosystem, also consider the [.pano file format]({% post_url 2016-10-29-what-are-pano-files %}). The Desktop, Tablet, Phone and OneDrive have built in support for it. Just double click to get panning:
 
@@ -54,7 +54,7 @@ It's relatively easy to convert from one to the other:
 * Converting from .pano to equirectangular projection
 -->
 
-![.pano file](/img/posts/church-pano.jpg)
+![The 360 VR experience - check out the ceiling!](/img/posts/church-pano.jpg)
 
 ### Viewing 
 
@@ -75,6 +75,6 @@ With this in mind, <a href="https://photosynth.net/" target="_blank">Photosynth<
 
 If you shoot (or [convert to]({% post_url 2016-10-30-convert-equirectangular-360-vr-panorama-to-pano-file %})) [.pano files]({% post_url 2016-10-29-what-are-pano-files %}), your best option is definitely <a href="https://onedrive.live.com/about/en-gb/" target="_blank">OneDrive</a>. Simply upload the .pano and the share the link:
 
-![The OneDrive pano experience](/img/posts/church-pano-onedrive.jpg)
+![OneDrive 360 VR viewer. Click and drag to pan around the scene](/img/posts/church-pano-onedrive.jpg)
 
 Happy shooting!
