@@ -9,7 +9,7 @@ Don't have an extra keyboard or HDMI cable? Here's how to do a headless <a href=
 
 ### Step 1. Download Raspbian image
 
-Head on over <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">here</a> to grab a copy of the Rasbian image. The "Lite" version will do.
+Head on over <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">here</a> to grab a copy of the Raspbian image. The "Lite" version will do.
 
 ![Download Rasbian](/img/posts/2017-01-02 17_28_22-Download Raspbian for Raspberry Pi.png)
 
@@ -21,7 +21,7 @@ Write the image to SD card. You can find detailed instructions <a href="https://
 
 ### Step 3. Add "ssh" file to the SD card root
 
-Enable <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> by placing a file named "ssh" (without any extension) onto the boot partition of the SD card. You can find more details <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/" target="_blank">here</a>.
+Enable <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> by placing a file named "ssh" (without any extension) onto the boot partition of the SD card.
 
 ![ssh file](/img/posts/2017-01-02 14_27_37-ssh-file.png)
 
@@ -33,7 +33,7 @@ Pop your prepared SD card, power and a network cable into the Pi.
 
 ### Step 5. Find your Pi's IP address
 
-To configure your Pi, you need the IP address. You can find this in your Router's DHCP lease allocation table.
+To configure your Pi, you need the IP address. You can find this in your Router's DHCP lease allocation table:
 
 ![DHCP lease allocation table](/img/posts/2017-01-02 14_40_16-raspberry-pi-ip-address.png)
 
