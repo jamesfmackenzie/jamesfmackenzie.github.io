@@ -2,48 +2,5 @@
 name: James Mackenzie
 email: me@jamesfmackenzie.com
 url: http://www.jamesfmackenzie.com
-description: "London-based Tech Lead and Software Architect. 10+ years in the Investment Banking industry. Passionate about #agile #cleancode #java #javascript #angularjs"
-
-# Collections
-#collections:
-#  projects:
-#    output: true
-
-# Contact form: comment the line below if you want to stick with the default PHP contact form
-# contact: static
-
-# Color settings (hex-codes without the leading hash-tag)
-#color:
-#  primary: 18bc9c #80B3FF
-#  secondary: 2c3e50 #FD6E8A
-#  secondary-dark: 233140 #A2122F
-
-# Footer settings
-#footer:
-#  copyright: James Mackenzie
-  #location: Location
-#  social: Social
-#  #credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-#social:
-#  - title: twitter
-#    url: http://twitter.com/jamesfmackenzie
-#  - title: stack-overflow
-#    url: http://stackoverflow.com/users/4958467/jamesfmackenzie
-#  - title: github
-#    url: http://github.com/jamesfmackenzie
-#  - title: youtube
-#    url: http://youtube.com/jamesfmackenzie
-
-# Postal address (add as many lines as necessary)
-#address:
-#  - line: 3481 Melrose Place
-#  - line: Beverly Hills, CA 90210
-
-# Credits content
-#credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
-
-# Build settings
-#markdown: kramdown
+description: "Husband, Father, Tech Lead <a href="https://twitter.com/GoldmanSachs" target="_blank">@GoldmanSachs</a>. Passionate about Tech, Programming, Web, CleanCode, Agile, VideoGames, Productivity. The opinions on this blog are my own"
 permalink: pretty
