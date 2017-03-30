@@ -1,1 +1,0 @@
-A quick primer on how to use the buffer.com API. Commit code to GitHub
