@@ -9,7 +9,6 @@ Want the benefits of private, <a href="https://en.wikipedia.org/wiki/Distributed
 
 You can fashion yourself a quick and dirty solution using Git and Dropbox.
 
-
 ### What you need
 
 * <a href="https://git-scm.com/downloads" target="_blank">Git</a>
@@ -27,7 +26,7 @@ You can fashion yourself a quick and dirty solution using Git and Dropbox.
 ### Step 2. Write Some Code!
 
 * Get busy, write some code! Save it to your new local repo.
-* Or if you’re feeling lazy, just copy-paste the code from somewhere else.
+* Or if you're feeling lazy, just copy-paste the code from somewhere else.
 
 ![](/img/posts/git-dropbox-step-2.png)
 
@@ -41,7 +40,7 @@ You can fashion yourself a quick and dirty solution using Git and Dropbox.
 
 ### Step 4. Share and Collaborate
 
-* Want to collaborate with someone? Just use Dropbox’s built in Share feature.
+* Want to collaborate with someone? Just use Dropbox's built in Share feature.
 * Anyone you add can clone, add, commit and push too. Easy as!
 
 ![](/img/posts/git-dropbox-step-4.png)
