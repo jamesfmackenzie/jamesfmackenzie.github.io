@@ -18,7 +18,7 @@ You can fashion yourself a quick and dirty solution using Git and Dropbox.
 ### Step 1. Clone an Empty Repository
 
 * Decide on a folder name for your new repo
-* Clone it via <code>git clone dropbox://<reponame></code>
+* Clone it via <code>git clone dropbox://[reponame]</code>
 * This will create a new, empty directory in your local with all the necessary .git gubbins
 
 ![](/img/posts/git-dropbox-step-1.png)
