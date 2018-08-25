@@ -15,14 +15,14 @@ Some more staggering around the Settings menus yielded the following find under 
 
 Toggle this on to have the Apple TV detect the frame rate of your video content and match the screen sync accordingly. No more stutter! It even supports 24p for movies, and works with iTunes, Netflix, Amazon Prime Video, iPlayer and Plex. YouTube is (as far as I can tell) not working, so for best results set your default resolution to 1080p 60Hz - which is the best match for most YouTube content. Examples below
 
-###24p Movie Content from iTunes
+### 24p Movie Content from iTunes
 
 ![](/img/posts/apple-tv-24hz-content.jpeg)
 
-###50Hz European Television Content from iTunes
+### 50Hz European Television Content from iTunes
 
 ![](/img/posts/apple-tv-50hz-content.jpeg)
 
-###60Hz Content from Netflix
+### 60Hz Content from Netflix
 
 ![](/img/posts/apple-tv-60hz-content.jpeg)
