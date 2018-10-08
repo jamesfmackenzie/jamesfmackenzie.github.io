@@ -2,7 +2,7 @@
 layout: post
 title: Use Your PC to Create a Bootable Atari ST Game Disk
 date: '2015-09-22 11:37:00'
-tags: [Atari, Atari ST, How To, Retrocomputing]
+tags: [Atari, Atari ST, How To, Retrocomputing, Retrogaming, Videogames]
 ---
 
 As [discussed before]({% post_url 2015-09-18-playing-downloaded-games-on-a-real-atari-st %}), Atari ST disk images are freely available on the web, <a href="http://www.emuparadise.me/Atari_ST_ROMs/63" target="_blank">Emuparadise</a> probably being the best resource.

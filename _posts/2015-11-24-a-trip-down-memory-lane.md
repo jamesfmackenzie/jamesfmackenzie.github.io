@@ -2,7 +2,7 @@
 layout: post
 title: A Trip Down Memory Lane (There's Treasure in That There Attic)
 date: '2015-11-24 21:43:30'
-tags: [Retrocomputing]
+tags: [Retrocomputing, Retrogaming, Videogames]
 ---
 
 <div class="youtube-container">

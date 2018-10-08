@@ -2,7 +2,7 @@
 layout: post
 title: RetroPie Ultimate Setup Guide
 date: '2018-10-08 11:54:00'
-tags: [RaspberryPi, VideoGames, Streaming]
+tags: [How To, Videogames, Raspberry Pi, Retrogaming, Streaming]
 ---
 
 Interested in RetroPie and want to get started? Here's the ultimate setup guide!

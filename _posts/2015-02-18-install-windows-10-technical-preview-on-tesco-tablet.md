@@ -2,7 +2,7 @@
 layout: post
 title: Install Windows 10 on a £99 Tesco Tablet
 date: '2015-02-18 16:53:30'
-tags: [Windows 10, How To, Tech]
+tags: [Windows 10, How To, Consumer Tech]
 permalink: /install-windows-10-technical-preview-on-tesco-tablet/
 ---
 

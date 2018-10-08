@@ -2,7 +2,7 @@
 layout: post
 title: Playing Downloaded Games on a Real Atari ST
 date: '2015-09-18 22:33:00'
-tags: [Atari, Atari ST, How To, Retrocomputing]
+tags: [Atari, Atari ST, How To, Retrocomputing, Retrogaming, Videogames]
 ---
 
 As discussed before, I want to [play some downloaded games on my Atari ST]({% post_url 2015-08-15-atari-in-the-attic %}).
