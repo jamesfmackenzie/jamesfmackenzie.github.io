@@ -152,13 +152,14 @@ Once EmulationStation reloads, you should now see pretty metadata for your ROMs!
 
 TODO - this needs to be improved
 
-The scraper won’t pick up everything. For the items that aren’t picked up, you can upload box art and correct the metadata manually. See https://www.reddit.com/r/RetroPie/comments/3n032p/how_can_i_manually_add_cover_art_to_my_games/?st=JMZ6CWQ2&sh=e4020b34
-gamelist.xml edits
-If you use the built in ES Scraper your gamelist.xml and images folder will be in
-	• ~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml
-	If you use Sselph's Scraper you can choose whether your scraped data goes in
-		? [SYSTEM_PATH]/gamelist.xml (the rom folder) or
-		? ~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml
+The scraper won't pick up everything. For the items that are't picked up, you can upload box art and correct the metadata manually. See https://www.reddit.com/r/RetroPie/comments/3n032p/how_can_i_manually_add_cover_art_to_my_games/?st=JMZ6CWQ2&sh=e4020b34
+
+If you use the built in ES Scraper your gamelist.xml and images folder will be in ~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml
+
+If you use Sselph's Scraper you can choose whether your scraped data goes in:
+
+* [SYSTEM_PATH]/gamelist.xml (the rom folder) or
+* ~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml
 
 ### Adjust screen border
 
