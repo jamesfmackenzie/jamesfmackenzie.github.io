@@ -186,5 +186,4 @@ Reboot the pi with the following command:
 
 sudo reboot
 
-
 Once the Pi restarts, the border should be gone! There are a bunch of controls to optimize overscan and borders in a more granular way. Add a link here
