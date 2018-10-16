@@ -28,21 +28,25 @@ Some fairly simple first steps. Follow the official instructions <a href="https:
 
 ### 2. Enable SSH on your Pi
  
-Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC - no USB keyboard required. Find more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
+Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC - no keyboard required. Learn more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
 
 ![](/img/posts/create_ssh_file_on_sd_card.png)
 
-#### 3. Pair your controller
+#### 3. Pair your Wireless Xbox 360 controller
 
-(if you have a wireless one). Find some existing instructions for this online and link here
+If you have a Wireless Xbox 360 controller, you'll need to pair it with your Wireless Gaming Receiver before continuing. Find the instructions <a href="https://support.xbox.com/en-GB/xbox-on-windows/accessories/xbox-360-wireless-gaming-receiver-windows" target="_blank">here</a>
 
-#### 4. Turn on your RetroPie and configure your controller
+#### 4. Boot up your Pi and configure your controller
 
-On first boot, you'll be asked to configure your controller. RetroPie will automatically recognize wireless and wired Xbox 360 controllers and a few other varieties.
+Switch on the power to your Raspberry Pi. After a minute or so, EmulationStation will launch and ask you to configure your controller
 
-When setting up the controller, SNES layout is used. For the 360 controller, this means you should reverse around X and Y, A and B!
+![](/img/posts/gamepad_detected.png)
 
-(insert screenshots from RetroPie wiki here)
+Go ahead and configure your controller as per the diagram below
+
+<strong>An important note!</strong> EmulationStation follows the SNES button layout. So when configuring your Xbox 360 controller, you'll need to switch X with Y, and A with B. Yes, this is confusing - but don't worry there is a fix for it later 
+
+![](/img/posts/xbox_360_controller_layout.png)
 
 #### 5. Make a note of the RetroPie hotkeys
 
