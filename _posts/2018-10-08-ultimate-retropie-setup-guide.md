@@ -5,21 +5,19 @@ date: '2018-10-08 11:54:00'
 tags: [How To, Videogames, Raspberry Pi, Retrogaming, Streaming]
 ---
 
-Interested in RetroPie and want to get started? Here's the ultimate setup guide!
+With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES and even PlayStation all run great - and (with a little extra work) you can even stream more taxing games from your home PC
+
+Interested and want to get started? Read on
 
 ### What you need 
 
-* Raspberry Pi (A, A+, B, B+, 2, Zero, or 3). For best performance use a Raspberry Pi 3 Model B+
-* Raspberry Pi Case (optional but recommended. I use this one)
-* MicroSD Card (At least 8GB. Find compatible SD card list here)
-* MicroSD Card Reader (So you can install RetroPie on your MicroSD card)
-* HDMI cable and Television/Monitor
-* Wi-Fi dongle or (for best performance) Ethernet Cable 
-* 5V 2A Micro USB Power Supply (2.5A for pi 3)
-* USB game controller (wired Xbox 360 or Xbox 360 wireless receiver recommended)
-
-(change this a little since it's copied from https://retropie.org.uk/docs/First-Installation/)
-
+* <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> and a compatible power supply. For best performance use a Raspberry Pi 3 Model B+
+* Raspberry Pi Case. Optional but recommended. I use this one
+* MicroSD card. At least 8GB recommended. Find compatible cards listed here
+* MicroSD card reader. To write the downloaded RetroPie image to your SD card
+* Television/monitor and HDMI cable
+* Wi-Fi dongle or (for best performance) Ethernet cable 
+* Wired Xbox 360 controller, or a wireless Xbox 360 controller paired with a wireless receiver. Many other controllers are supported, but the Xbox 360 controllers work best
 
 ### Install RetroPie
 
