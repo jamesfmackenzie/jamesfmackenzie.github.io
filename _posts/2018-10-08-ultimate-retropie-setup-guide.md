@@ -25,12 +25,13 @@ Interested in RetroPie and want to get started? Here's the ultimate setup guide!
 
 #### 1. Download RetroPie image and write to SD card
 
-Fairly obvious one this. You can find official instructions here:  https://retropie.org.uk/docs/First-Installation/
+Fairly obvious one this. You can find official instructions [here](https://retropie.org.uk/docs/First-Installation/)
 
 ### 2. Enable SSH on your Pi
  
 Add "ssh" File to the root directory of your SD Card. This way you can configure RetroPie  from another PC - no USB keyboard required
-https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0
+
+Find more information <a href="https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0" target="_blank">here</a>
 
 #### 3. Pair your controller
 
@@ -48,14 +49,15 @@ When setting up the controller, SNES layout is used. For the 360 controller, thi
 
 These will enable you quickly access emulator features from your joypad:
 
-Hotkeys	Action
-Select+Start	Exit
-Select+Right Shoulder	Save
-Select+Left Shoulder	Load
-Select+Right	Input State Slot Increase
-Select+Left	Input State Slot Decrease
-Select+X	RGUI Menu
-Select+B	Reset
+Hotkeys | Action
+--- | ---
+Select+Start | Exit
+Select+Right Shoulder | Save
+Select+Left Shoulder | Load
+Select+Right | Input State Slot Increase
+Select+Left |Input State Slot Decrease
+Select+X | RGUI Menu
+Select+B | Reset
 
 ### Optimize controller settings
 
@@ -100,8 +102,7 @@ On Windows, I use FileZilla, but any SFTP client is good. Go to "Site", "Add new
 
 [screenshot of SFTP config in FileZilla)
 
-Then connect and navigate to the following directory:
-/home/pi/RetroPie/roms
+Then connect and navigate to the following directory: `/home/pi/RetroPie/roms`
 
 You'll see lots of folders for each platform. Copy the ROMs into the corresponding folder for their platform. I recommend you copy zips (the file size adds up!) and to use the No Intro naming convention (which EmulationStation and any metadata scrapers understand and will present to you appropriately)
 
@@ -130,7 +131,9 @@ Start -> Quit -> Quit Emulation Station
 
 Either via SSH or a USB keyboard attached to your pi, enter the following
 
+```bash
 sudo ~/RetroPie-Setup/retropie_setup.sh
+```
 
 Once this launches, navigate to:
 Manage Packages -> Manage Optional Packages -> scraper (right at the bottom for me)
