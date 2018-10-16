@@ -11,25 +11,24 @@ Interested and want to get started? Read on
 
 ### What you need 
 
-* <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> and a compatible power supply. For best performance use a Raspberry Pi 3 Model B+
-* Raspberry Pi Case. Optional but recommended. I use this one
-* MicroSD card. At least 8GB recommended. Find compatible cards listed here
+* <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> and a <a href="https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md" target="_blank">compatible power supply</a>. For best performance use a Raspberry Pi 3 Model B+
+* Raspberry Pi case. Optional but recommended. I use <a href="http://amzn.eu/d/7mWFf5S" target="_blank">this one</a>
+* MicroSD card. At least 8GB recommended. Find compatible cards listed <a href="https://www.raspberrypi.org/documentation/installation/sd-cards.md" target="_blank">here</a>
 * MicroSD card reader. To write the downloaded RetroPie image to your SD card
 * Television/monitor and HDMI cable
-* Wi-Fi dongle or (for best performance) Ethernet cable 
-* Wired Xbox 360 controller, or a wireless Xbox 360 controller paired with a wireless receiver. Many other controllers are supported, but the Xbox 360 controllers work best
+* Wi-Fi dongle or (for best streaming performance) Ethernet cable 
+* <a href="http://amzn.eu/d/dagIzPm" target="_blank">Wired Xbox 360 controller</a>, or a <a href="http://amzn.eu/d/j070KCH" target="_blank">Wireless Xbox 360 controller</a> paired with a <a href="http://amzn.eu/d/dnOt76e" target="_blank">Wireless Gaming Receiver</a>. Many other controllers are supported, but the Xbox 360 controllers work best
+* USB keyboard. To edit config files on your Raspberry Pi. Alternatively you can do this from your networked PC via SSH. More details below
 
 ### Install RetroPie
 
 #### 1. Download RetroPie image and write to SD card
 
-Fairly obvious one this. You can find official instructions [here](https://retropie.org.uk/docs/First-Installation/)
+You can find official instructions <a href="https://retropie.org.uk/docs/First-Installation/" target="_blank">here</a>
 
 ### 2. Enable SSH on your Pi
  
-Add "ssh" File to the root directory of your SD Card. This way you can configure RetroPie  from another PC - no USB keyboard required
-
-Find more information <a href="https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0" target="_blank">here</a>
+Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC - no USB keyboard required. Find more information [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
 
 #### 3. Pair your controller
 
