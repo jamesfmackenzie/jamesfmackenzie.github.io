@@ -24,11 +24,13 @@ Interested and want to get started? Read on
 
 #### 1. Download RetroPie image and write to SD card
 
-You can find official instructions <a href="https://retropie.org.uk/docs/First-Installation/" target="_blank">here</a>
+Some fairly simple first steps. Follow the official instructions <a href="https://retropie.org.uk/docs/First-Installation/" target="_blank">here</a>
 
 ### 2. Enable SSH on your Pi
  
-Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC - no USB keyboard required. Find more information [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
+Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC - no USB keyboard required. Find more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
+
+![](/img/posts/create_ssh_file_on_sd_card.png)
 
 #### 3. Pair your controller
 
