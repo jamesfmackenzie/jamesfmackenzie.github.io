@@ -5,7 +5,7 @@ date: '2018-10-08 11:54:00'
 tags: [How To, Videogames, Raspberry Pi, Retrogaming, Streaming]
 ---
 
-With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES and even PlayStation all run great - and (with a little extra work) you can even stream more taxing games from your home PC
+With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES, even PlayStation all run great and with a little extra work you can stream more taxing games from your home PC
 
 Interested and want to get started? Read on
 
@@ -22,33 +22,41 @@ Interested and want to get started? Read on
 
 ### Install RetroPie
 
-#### 1. Download RetroPie image and write to SD card
+#### Step 1. Download RetroPie image and write to SD card
 
 Some fairly simple first steps. Follow the official instructions <a href="https://retropie.org.uk/docs/First-Installation/" target="_blank">here</a>
 
-### 2. Enable SSH on your Pi
+#### Step 2. Enable SSH on your Pi
  
-Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC - no keyboard required. Learn more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
+Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC, no keyboard required. Learn more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
 
 ![](/img/posts/create_ssh_file_on_sd_card.png)
 
-#### 3. Pair your Wireless Xbox 360 controller
+With this feature enabled, you can use any <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> client (I like <a href="https://www.putty.org/" target="_blank">PuTTY</a>) to remotely connect to your Pi. The default connection details are:
+
+* Hostname: `retropie`
+* Username: `pi`
+* Password: `raspberry`
+
+Alternatively, you can use a USB keyboard to configure Retropie directly
+
+#### Step 3. Pair your Wireless Xbox 360 controller
 
 If you have a Wireless Xbox 360 controller, you'll need to pair it with your Wireless Gaming Receiver before continuing. Find the instructions <a href="https://support.xbox.com/en-GB/xbox-on-windows/accessories/xbox-360-wireless-gaming-receiver-windows" target="_blank">here</a>
 
-#### 4. Boot up your Pi and configure your controller
+#### Step 4. Boot up your Pi and configure your controller
 
-Switch on the power to your Raspberry Pi. After a minute or so, EmulationStation will launch and ask you to configure your controller
+Switch on the power to your Raspberry Pi. After a minute or so, EmulationStation will launch and ask you to configure your controller:
 
 ![](/img/posts/gamepad_detected.png)
 
 Go ahead and configure your controller as per the diagram below
 
-<strong>An important note!</strong> EmulationStation follows the SNES button layout. So when configuring your Xbox 360 controller, you'll need to switch X with Y, and A with B. Yes, this is confusing - but don't worry there is a fix for it later 
+<strong>An important note!</strong> EmulationStation follows the SNES button layout. So when configuring your Xbox 360 controller, you'll need to switch X with Y, and A with B. Yes, this is confusing - but don't worry there is a fix for this later 
 
 ![](/img/posts/xbox_360_controller_layout.png)
 
-#### 5. Make a note of the RetroPie hotkeys
+#### Step 5. Make a note of the RetroPie hotkeys
 
 These will enable you quickly access emulator features from your joypad:
 
@@ -64,58 +72,60 @@ Select+B | Reset
 
 ### Optimize controller settings
 
-#### 1. Fix the "A and B" controller issue 
+Now you're done with the initial RetroPie install, it's time to optimize the controller settings 
 
-Since the 360 controller has A and B reversed vs a SNES controller, the Emulation Station will be extra confusing! Prompting you to press A when it means B and vice versa.
+#### Step 1. Switch A and B buttons in EmulationStation
 
-You can fix this via the following config:
+As mentioned above, the Xbox 360 controller differs from the SNES controller layout preferred by EmulationStation: notably the A and B buttons are reversed. The good news: EmulationStation has a setting to fix this:
 
-Configuration -> RetroPie Setup -> Manage packages > Manage core packages > emulationstation > Configurations/Options > Swap A/B Buttons in ES
+1. In EmulationStation, head to `RetroPie > Configuration > RetroPie Setup`. This will launch a separate settings program
+2. Navigate to `Manage packages > Manage core packages > emulationstation > Configurations/Options`, then enable `Swap A/B Buttons in ES`
+3. Save changes and exit the settings program
 
-#### 2. Enable analog sticks
+#### Step 2. Enable analog sticks
 
-Wouldn't it be great to use the 360 controller's analog sticks instead of that mushy d-pad? Well you can!
+Wouldn't it be great to use the 360 controller's analog sticks instead of that mushy d-pad? Here's how:
 
-In the EmulationStation menu:
+1. From the EmulationStation menu, navigate to `RetroPie > Configuration > Configuration Editor`. This will launch a separate settings program
+2. Navigate to `Advanced Configuration > Configure Libretro options`
+3. Select `all/retroarch.cfg`
+4. Change the setting for `input_player1_analog_dpad_mode` to `1`. This will enable the left analog stick on your Xbox 360 controller
+5. Navigate back to the main screen with `Cancel`. Save changes and exit the settings program
 
-RetroPie -> Configuration -> Configuration Editor
-Advanced Configuration
-Configure Libretro options
-all/retroarch.cfg
-input_player1_analog_dpad_mode = 1
-Cancel -> Cancel -> Cancel -> Cancel
+#### Step 3. (Re)configure input to enable your changes
 
-#### 3. (Re)configure input to enable your changes
-
-You'll need to reconfigure input before EmulationStation and your emulators will pick up the changes above. Go to:
-
-Start -> Configure Input
-
-As before, don't forget to reverse around A and B, X and Y
+You'll need to reconfigure input before EmulationStation and your emulators will pick up the changes above. In EmulationStation, press `Start` and choose `Configure Input`. This will take you through the same controller configuration wizard from earlier. As before, don't forget to switch X with Y, and A with B.
 
 ### Copy ROMs
 
-#### 1. Copy some ROMs via SFTP
+#### Step 1. Copy some ROMs via SFTP
 
-You've probably noticed nothing shows up, right? EmulationStation is smart. It won't show you any emulators or platforms unless you have ROMs to play on them.
+You've probably noticed the EmulationStation home screen is a little blank. Where are the NES, SNES and Mega Drive emulators? EmulationStation is smart: it won't show you any emulators or platforms unless you have ROMs to play on them. You need to transfer them first
 
-I recommend SFTP to transfer files. 
+I recommend <a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol" target="_blank">SFTP</a> to transfer files. On Windows, I use FileZilla, but any SFTP client is good. Go to `File > Site Manager > New Site` and add the below:
 
-On Windows, I use FileZilla, but any SFTP client is good. Go to "Site", "Add new Site" and add the following:
+* Host: `retropie`
+* Protocol: `SFTP - SSH File Transfer Protocol`
+* Logon Type: `Normal`
+* User: `pi`
+* Password: `raspberry`
 
-[screenshot of SFTP config in FileZilla)
+The Site Manager should look like this:
 
-Then connect and navigate to the following directory: `/home/pi/RetroPie/roms`
+![](/img/posts/filezilla-site-settings.png)
 
-You'll see lots of folders for each platform. Copy the ROMs into the corresponding folder for their platform. I recommend you copy zips (the file size adds up!) and to use the No Intro naming convention (which EmulationStation and any metadata scrapers understand and will present to you appropriately)
+Hit `Connect` and navigate to the following directory: `/home/pi/RetroPie/roms`
 
-#### 2. Restart Emulation Station to make ROMs appear
+You'll see lots of folders for each platform. Copy the ROMs into the corresponding folder for their platform. I recommend you copy zips (the file size adds up!) and to use the <a href="https://datomatic.no-intro.org/stuff/The%20Official%20No-Intro%20Convention%20(20071030).pdf" target="_blank">No Intro ROM naming convention</a> (if you use a naming convention, EmulationStation and any metadata scrapers can easily find and surface game metadata like descriptions, release dates, screenshots etc for your games)
 
-How do you make the ROMs and emulators show up? Start -> Quit -> Restart Emulation Station
+![](/img/posts/filezilla-retropie-roms-folder.png)
 
-Now you should see the following:
 
-[insert screenshot of EmulationStation with emulators)
+#### Step 2. Restart Emulation Station to make ROMs appear
+
+How do you make the ROMs and emulators show up? Hit the Start Button on your controller and navigate to `Quit > Restart Emulation Station`. After a brief moment you should see the following:
+
+![](/img/posts/emulationstation.jpg)
 
 Time to get playing!
 
@@ -124,73 +134,80 @@ Time to get playing!
 
 So everything works, but EmulationStation looks a bit plain. You want metadata and screenshots, right? Here's how
 
-#### 1. Exit EmulationStation
+#### Step 1. Exit EmulationStation
 
-We need to close Emulation Station down before we update the metadata as EmulationStation holds on to the metadata files. The scraper we're going to use won't even open if EmulationStation is running. So:
+We need to close Emulation Station down before we update the metadata as EmulationStation holds onto the metadata files. The scraper we're going to use won't even open if EmulationStation is running. So hit the Start button and navigate to `Quit > Quit Emulation Station`
 
-Start -> Quit -> Quit Emulation Station
+#### Step 2. Install and Run Steven Selph's scraper
 
-#### 2. Install Steven Selph's scraper
+Either via SSH or with a USB keyboard attached to your pi, enter the following
 
-Either via SSH or a USB keyboard attached to your pi, enter the following
-
-```bash
+{% highlight bash %}
+{% raw %}
 sudo ~/RetroPie-Setup/retropie_setup.sh
-```
+{% endraw %}
+{% endhighlight %}
 
-Once this launches, navigate to:
-Manage Packages -> Manage Optional Packages -> scraper (right at the bottom for me)
-Install from source
-Back -> Back -> Back -> Exit
+This will launch the RetroPie Setup script. Once it launches, navigate to `Manage Packages > Manage Optional Packages` and select `scraper` (right at the bottom for me)
 
-This will install Steven Selph's metadta scraper - one of the better ones out there
+Select `Install from source` to install the scraper. This will install Steven Selph's metadata scraper - one of the better ones out there. The install may take some time as it has to install various software libraries. 
 
-Once that's installed, select "Scrape all systems" (under 
-Manage Packages -> Manage Optional Packages -> scraper
-Configuration / Options)
+Once the install completes, select `Scrape all systems`. Again, this will take some time as the scraper downloads game metadata and images from the web
 
-Once this completes successfully, select 
-Cancel -> Back -> Back -> Back -> Perform Reboot
+Once the scrape completes, select `Cancel`, `Back` multiple times and eventually `Perform Reboot`. When EmulationStation reloads, you should now see pretty metadata for your ROMs!
 
-Once EmulationStation reloads, you should now see pretty metadata for your ROMs!
+![](/img/posts/emulationstation-scraped-data.png)
 
-### Fix broken metadata
+#### Step 3. Fix broken metadata
 
-TODO - this needs to be improved
+The scraper won't pick up everything. Especially for obscure Japanese titles and ROM hacks, you'll need to add your own metadata and artwork
 
-The scraper won't pick up everything. For the items that are't picked up, you can upload box art and correct the metadata manually. See https://www.reddit.com/r/RetroPie/comments/3n032p/how_can_i_manually_add_cover_art_to_my_games/?st=JMZ6CWQ2&sh=e4020b34
+You can do this by editing the `gamelist.xml` file located in `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`. In the XML file, each game has an entry like so:
 
-If you use the built in ES Scraper your gamelist.xml and images folder will be in ~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml
+{% highlight xml %}
+{% raw %}
+<game>
+  <path>./10-Yard Fight (USA, Europe).nes</path>
+    <name>10-Yard Fight</name>
+    <desc>You're the quarterback in this amazingly real football game! Enjoy realistic gridiron action as you move your team up and down the field to victory! Run, pass, kick, punt... you call the plays in this true-to-life football game. Play against the computer or against a friend for hours of real football action. The sights, the sounds and the plays are so real you'll think you're right on the fifty yard line!</desc>
+    <image>~/.emulationstation/downloaded_images/nes/10-Yard Fight (USA, Europe)-image.jpg</image>
+    <releasedate>19851001T000000</releasedate>
+    <publisher>Nintendo</publisher>
+    <genre>Sports</genre>
+    <developer>Irem</developer>
+    <players>2</players>
+</game>
+{% endraw %}
+{% endhighlight %}
 
-If you use Sselph's Scraper you can choose whether your scraped data goes in:
-
-* [SYSTEM_PATH]/gamelist.xml (the rom folder) or
-* ~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml
+Just edit the XML file as needed. Use SFTP to upload images to your Pi which you can then reference in the XML. The default (and best) location is `~/.emulationstation/downloaded_images/[SYSTEM_NAME]/`
 
 ### Adjust screen border
 
 Perhaps you're using a monitor or TV in "Just Scan" or "Pixel Perfect" mode and see black borders around the EmulationStation menu and all your games? You can fix this with some Pi settings
 
-#### 1. Update boot config to disable overscan
+#### Step 1. Update boot config to disable overscan
 
 Exit EmulationStation and enter the following from the command line:
 
+{% highlight bash %}
+{% raw %}
 sudo nano /boot/config.txt
+{% endraw %}
+{% endhighlight %}
 
-This will load the nano text editor. 
-
-uncomment the line 
-#disable_overscan=1
-
-So that it becomes
-disable_overscan=1
+This will load the nano text editor. Uncomment the line `#disable_overscan=1` so that it becomes `disable_overscan=1`
 
 Press Ctrl+X to Exit and Y to save (this is a common pattern for RetroPie)
 
-#### 2. Reboot Pi to see the new settings
+#### Step 2. Reboot Pi to see the new settings
 
 Reboot the pi with the following command:
 
+{% highlight bash %}
+{% raw %}
 sudo reboot
+{% endraw %}
+{% endhighlight %}
 
-Once the Pi restarts, the border should be gone! There are a bunch of controls to optimize overscan and borders in a more granular way. Add a link here
+Once the Pi restarts, the border should be gone! There are a bunch of controls to optimize overscan and borders in a more granular way. For more info see the <a href="https://www.raspberrypi.org/documentation/configuration/config-txt/video.md" target="_blank">official Raspberry Pi Video Options documentation</a>
