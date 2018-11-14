@@ -60,11 +60,11 @@ figure {
 code {
   font-size: 1.25em;
   color: #7b8a8b;
+  background-color: #ecf0f1;
 }
 
 pre {
-  /*font-size: 1.25em;*/
-  oveflow: auto;
+  overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
   border-radius: 0.5em;
