@@ -4,22 +4,28 @@
 - possibly move nav out of header
 */
 
-
 /* whole page styles */
+
 body {
   margin: 0;
-  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
   font-size: 1.25em;
   line-height: 1.45em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
-h1, h2 {
+h1,
+h2 {
   letter-spacing: -1px;
 }
 
@@ -63,7 +69,7 @@ pre {
   word-wrap: break-word;
   border-radius: 0.5em;
   color: #7b8a8b;
-  max-width: 100%;  
+  max-width: 100%;
   padding: 1em;
   background-color: #ecf0f1;
   border: 1px solid #ccc;
@@ -74,9 +80,11 @@ pre {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 /* end whole page styles */
 
 /* header styles */
+
 header {
   padding: 1.5em 0;
   overflow: auto;
@@ -113,9 +121,11 @@ header nav {
 header span {
   margin-left: 0.5em;
 }
+
 /* end header styles */
 
 /* aside styles */
+
 aside {
   padding: 1.5em 0;
   overflow: auto;
@@ -156,24 +166,28 @@ aside a:hover {
   background-color: #fff;
   color: #18bc9c;
 }
+
 /* end aside styles */
 
 /* main header style */
-body > header a {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+body>header a {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
 }
 
-body > header a:hover {
+body>header a:hover {
   color: #18bc9c;
   text-decoration: none;
 }
+
 /* end main header styles */
 
 /* article styles */
+
 article {
   padding: 2em 0;
   border-bottom: 1em solid #18bc9c;
@@ -185,25 +199,28 @@ article img {
   margin: 0 auto;
 }
 
-article .youtube-container  {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-	max-width: 95%;
-	margin: 0 auto;
+article .youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
-article .youtube-container  iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+article .youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 /* end article styles */
 
 /* individual post page styles */
+
 .single-post header {
   background-color: #18bc9c;
   padding: 1.5em 0;
@@ -227,6 +244,7 @@ article .youtube-container  iframe {
 }
 
 /* comments styles */
+
 .comments {
   padding-top: 2em;
 }
@@ -236,6 +254,7 @@ article .youtube-container  iframe {
 /* end individual post page styles */
 
 /* sitemap styles */
+
 .sitemap header {
   background-color: #18bc9c;
   padding: 1.5em 0;
@@ -254,10 +273,11 @@ article .youtube-container  iframe {
   text-decoration: none;
   color: #2c3e50;
 }
+
 /* end sitemap styles */
 
-
 /* footer styles */
+
 footer {
   margin-top: 2em;
   padding: 1.5em 0;
@@ -299,26 +319,33 @@ footer a:hover {
   background-color: #fff;
   color: #18bc9c;
 }
+
 /* end footer styles */
 
 /* optimize for small screens */
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 1em;
   }
-  
   nav {
     display: none;
   }
-  
   header {
     padding: 1em 0;
   }
-  
   header .row {
     justify-content: center;
   }
 }
 
+table {
+  border-collapse: collapse;
+}
 
-
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 0.3em;
+}
