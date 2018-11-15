@@ -121,9 +121,9 @@ You'll see lots of folders for each platform. Copy the ROMs into the correspondi
 ![](/img/posts/filezilla-retropie-roms-folder.png)
 
 
-#### Step 2. Restart Emulation Station to make ROMs appear
+#### Step 2. Restart EmulationStation to make ROMs appear
 
-How do you make the ROMs and emulators show up? Hit the Start Button on your controller and navigate to `Quit > Restart Emulation Station`. After a brief moment you should see the following:
+How do you make the ROMs and emulators show up? Hit the Start Button on your controller and navigate to `Quit > Restart EmulationStation`. After a brief moment you should see the following:
 
 ![](/img/posts/emulationstation.jpg)
 
@@ -136,7 +136,7 @@ So everything works, but EmulationStation looks a bit plain. You want metadata a
 
 #### Step 1. Exit EmulationStation
 
-We need to close Emulation Station down before we update the metadata as EmulationStation holds onto the metadata files. The scraper we're going to use won't even open if EmulationStation is running. So hit the Start button and navigate to `Quit > Quit Emulation Station`
+We need to close EmulationStation down before we update the metadata as EmulationStation holds onto the metadata files. The scraper we're going to use won't even open if EmulationStation is running. So hit the Start button and navigate to `Quit > Quit EmulationStation`
 
 #### Step 2. Install and Run Steven Selph's scraper
 
