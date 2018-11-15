@@ -58,17 +58,17 @@ Go ahead and configure your controller as per the diagram below
 
 #### Step 5. Make a note of the RetroPie hotkeys
 
-These will enable you quickly access emulator features from your joypad:
+During controller configuration, you'll be asked to specify a "Hotkey". I recommend "Select" or the Xbox Guide button. Pressing this Hotkey in combination with other buttons  enables fast access to emulator features directly from your joypad. Make a note of these below:
 
-Hotkeys | Action
+Button Combo | Action
 --- | ---
-Select+Start | Exit
-Select+Right Shoulder | Save
-Select+Left Shoulder | Load
-Select+Right | Input State Slot Increase
-Select+Left |Input State Slot Decrease
-Select+X | RGUI Menu
-Select+B | Reset
+Hotkey+Start | Exit
+Hotkey+Right Shoulder | Save
+Hotkey+Left Shoulder | Load
+Hotkey+Right | Input State Slot Increase
+Hotkey+Left |Input State Slot Decrease
+Hotkey+X | RGUI Menu
+Hotkey+B | Reset
 
 ### Optimize controller settings
 
@@ -162,7 +162,7 @@ Once the scrape completes, select `Cancel`, `Back` multiple times and eventually
 
 The scraper won't pick up everything. Especially for obscure Japanese titles and ROM hacks, you'll need to add your own metadata and artwork
 
-You can do this by editing the `gamelist.xml` file located in `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`. In the XML file, each game has an entry like so:
+You can do this by editing the `gamelist.xml` file located in `~/​.emulationstation/​gamelists/​[SYSTEM_NAME]/​gamelist.xml`. In the XML file, each game has an entry like so:
 
 {% highlight xml %}
 {% raw %}
@@ -180,7 +180,7 @@ You can do this by editing the `gamelist.xml` file located in `~/.emulationstati
 {% endraw %}
 {% endhighlight %}
 
-Just edit the XML file as needed. Use SFTP to upload images to your Pi which you can then reference in the XML. The default (and best) location is `~/.emulationstation/downloaded_images/[SYSTEM_NAME]/`
+Just edit the XML file as needed. Use SFTP to upload images to your Pi which you can then reference in the XML. The default (and best) location is `~/​.emulationstation/​downloaded_images/​[SYSTEM_NAME]/`
 
 ### Adjust screen border
 
