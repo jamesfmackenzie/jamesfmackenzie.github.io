@@ -4,7 +4,8 @@ $(function() {
       isFetchingPosts = false,
       shouldFetchPosts = true,
       postsToLoad = $(".post-list").children().length,
-      loadNewPostsThreshold = 3000;
+      loadNewPostsThreshold = 3000,
+      postToAppend;
   
   // Load the JSON file containing all URLs
   $.getJSON('/all-posts.json', function(data) {
@@ -65,12 +66,33 @@ $(function() {
   }
 	
   function fetchPostWithIndex(index, callback) {
-    var postURL = postURLs[index];
+    var postToAppend = postURLs[index];
+    if (postToAppend.tags) {
+      var tagsHtml = "<p class=\"tags\">";
+      postToAppend.tags.forEach(function (item, index) {
+        tagsHtml += "<a href=\"/sitemap/#" + item.urlSafeName + "\">"+ item.name + "</a>, "
+      });
+      tagsHtml.slice(0, -2);
+      tagsHtml += "</p>";
+    }
+    
+
+    var htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\" + postToAppend.url + \">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";  
+
+    $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");
+    callback();
+    
+    
+    // var postURL = postURLs[index];
 		
-    $.get(postURL, function(data) {
-      $(data).find(".post").appendTo(".post-list");
-      callback();
-    });
+    // $.get(postURL, function(data) {
+
+    //   postToAppend = $(data).find(".post").find("p:first");
+    //   console.log(postToAppen[0].innerHTML);
+    //   postToAppend.appendTo(".post-list");
+
+    //   callback();
+    // });
   }
   
   function disableFetching() {
