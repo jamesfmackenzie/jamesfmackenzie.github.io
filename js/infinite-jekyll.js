@@ -72,13 +72,18 @@ $(function() {
       postToAppend.tags.forEach(function (item, index) {
         tagsHtml += "<a href=\"/sitemap/#" + item.urlSafeName + "\">"+ item.name + "</a>, "
       });
-      tagsHtml.slice(0, -2);
+      tagsHtml = tagsHtml.slice(0, -2);
       tagsHtml += "</p>";
     }
     
-
-    var htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";  
-
+    var htmlFragment = "";
+    if (postToAppend.layout == "tweet") {
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 style=\"text-transform: none; font-size: 2em; line-height:0.9em;\"><a target=\"_blank\" href=\"" + postToAppend.tweetUrl + "\">“" + postToAppend.title + "”</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";
+    }
+    else {
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + " ...<p><date>" + postToAppend.date + "</date></p></div>";
+    }
+    
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");
     callback();
     
