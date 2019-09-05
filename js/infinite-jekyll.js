@@ -77,7 +77,7 @@ $(function() {
     }
     
 
-    var htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\" + postToAppend.url + \">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";  
+    var htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";  
 
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");
     callback();
