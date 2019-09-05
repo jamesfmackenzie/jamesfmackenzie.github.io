@@ -74,6 +74,12 @@ pre {
   margin: 0 auto;
 }
 
+.quote {
+  text-transform: none;
+  font-size: 1.8em;
+  line-height:0.9em;
+}
+
 /* end whole page styles */
 
 /* header styles */

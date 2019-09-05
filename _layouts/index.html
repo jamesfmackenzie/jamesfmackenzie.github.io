@@ -45,8 +45,8 @@
 					{% endfor %}
 				</p>
 				{% endif %}
-				{% if post.layout == "tweet" %}
-				<h2 style="text-transform: none; font-size: 2em; line-height:0.9em;"><a target="_blank" href="{{ post.tweetUrl }}">“{{ post.title }}”</a></h2>
+				{% if post.layout == "quote" %}
+				<h2 class="quote"><a target="_blank" href="{{ post.quoteUrl }}">“{{ post.title }}”</a></h2>
 				{{ post.content }}
 				{% else %}
 				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

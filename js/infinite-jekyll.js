@@ -77,27 +77,16 @@ $(function() {
     }
     
     var htmlFragment = "";
-    if (postToAppend.layout == "tweet") {
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 style=\"text-transform: none; font-size: 2em; line-height:0.9em;\"><a target=\"_blank\" href=\"" + postToAppend.tweetUrl + "\">“" + postToAppend.title + "”</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";
+    if (postToAppend.layout == "quote") {
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\"><a target=\"_blank\" href=\"" + postToAppend.quoteUrl + "\">“" + postToAppend.title + "”</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";
     }
     else {
       htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + " ...<p><date>" + postToAppend.date + "</date></p></div>";
     }
     
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");
+    
     callback();
-    
-    
-    // var postURL = postURLs[index];
-		
-    // $.get(postURL, function(data) {
-
-    //   postToAppend = $(data).find(".post").find("p:first");
-    //   console.log(postToAppen[0].innerHTML);
-    //   postToAppend.appendTo(".post-list");
-
-    //   callback();
-    // });
   }
   
   function disableFetching() {
