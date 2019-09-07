@@ -211,3 +211,5 @@ sudo reboot
 {% endhighlight %}
 
 Once the Pi restarts, the border should be gone! There are a bunch of controls to optimize overscan and borders in a more granular way. For more info see the <a href="https://www.raspberrypi.org/documentation/configuration/config-txt/video.md" target="_blank">official Raspberry Pi Video Options documentation</a>
+
+That's it! Enjoy your RetroPie!
