@@ -20,7 +20,7 @@ Sounds great, no? By comparison the built-in ST sound chip <a href="https://www.
 
 But what magic is this!? Well it's a little-known fact that some Atari ST games - like Space Quest III above - pump out MIDI messages through the ST's built-in MIDI ports. Just hook up a MIDI synth for an audio treat
 
-Space Quest III (and many other Sierra games) support both Casio CZ (good) and Roland MT-32 (great) synths. Just use the built-in MUSIC.PRG utility to set your Music Device:
+Space Quest III (and many other Sierra games) support both Casio CZ (good) and Roland MT-32 (great) synths. Use the built-in MUSIC.PRG utility to set your Music Device:
 
 ![](/img/posts/atari-st-sierra-midi-utility.png) 
 
