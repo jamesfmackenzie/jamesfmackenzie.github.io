@@ -76,12 +76,17 @@ $(function() {
       tagsHtml += "</p>";
     }
     
+    var url = "<a href=\"" + postToAppend.url + "\">";
+    if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
+      url = "<a target=\"_blank\" href=\"" + postToAppend.overrideUrl + "\">";
+    }
+
     var htmlFragment = "";
     if (postToAppend.layout == "quote") {
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\"><a target=\"_blank\" href=\"" + postToAppend.quoteUrl + "\">“" + postToAppend.title + "”</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + url +"“" + postToAppend.title + "”</a></h2>" + postToAppend.excerpt + "<p><date>" + postToAppend.date + "</date></p></div>";
     }
     else {
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" + postToAppend.excerpt + " ...<p><date>" + postToAppend.date + "</date></p></div>";
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + url + postToAppend.title + "</a></h2>" + postToAppend.excerpt + " ...<p><date>" + postToAppend.date + "</date></p></div>";
     }
     
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");

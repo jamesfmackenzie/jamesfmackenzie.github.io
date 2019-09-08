@@ -3,6 +3,7 @@ layout: post
 title: Raspberry Pi Headless Install
 date: '2017-01-02 17:23:00'
 tags: [Raspberry Pi, How To, IoT]
+overrideUrl: https://medium.com/hackernoon/raspberry-pi-headless-install-462ccabd75d0
 --- 
 
 Don't have an extra keyboard or HDMI cable? Here's how to do a headless <a href="https://www.raspbian.org/" target="_blank">Raspbian</a> install on your Pi.
