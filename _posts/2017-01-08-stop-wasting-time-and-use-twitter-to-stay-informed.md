@@ -3,6 +3,7 @@ layout: post
 title: Stop Wasting Time and Use Twitter to Stay Informed
 date: '2017-01-08 16:25:00'
 tags: [Twitter, Productivity]
+overrideUrl: https://medium.com/hackernoon/stop-wasting-time-and-use-twitter-to-stay-informed-d7e7363b58d3
 ---
 
 Perhaps, like me, you spend far too much time reading news, blogs, journals. And you don’t like it.
@@ -15,10 +16,10 @@ It turned out the answer had been staring me in the face all along. Hiding in pl
 
 No, I don’t mean Twitter the endless time sink, the bottomless scrolling list of doom. I mean Twitter the bountiful source of curated, low-noise news. This is what I mean:
 
-* <a href="https://twitter.com/bbcnewsmostread" target="_blank">@bbcnewsmostread</a> — "Most Read" articles from <a href="http://www.bbc.co.uk/news" targer="_blank">BBC News</a>
+* <a href="https://twitter.com/bbcnews" target="_blank">@bbcnews</a> — News, features and analysis from <a href="http://www.bbc.co.uk/news" targer="_blank">BBC News</a>
 * <a href="https://twitter.com/HNTweets" target="_blank">@HNTweets</a> — Stories from the front page of <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a>
-* <a href="https://twitter.com/redditprogtop" target="_blank">@redditprogtop</a> — Weekly Top Stories from <a href="https://www.reddit.com/r/programming/" target="_blank">Reddit Programming</a>
-* <a href="https://twitter.com/vergefeatured" target="_blank">@vergefeatured</a> — Featured articles from <a href="http://www.theverge.com/" target="_blank">The Verge home page</a>
+* <a href="https://twitter.com/polygon" target="_blank">@polygon</a> — Videogame coverage from Polygon
+* <a href="https://twitter.com/verge" target="_blank">@verge</a> — Tech, Science and Entertainment content from <a href="http://www.theverge.com/" target="_blank">The Verge</a>
 * <a href="https://twitter.com/xkcdComic" target="_blank">@xkcdComic</a> — Feed from the <a href="http://xkcd.com/" target="_blank">xkcd webcomic</a>
 
 Combining these into a <a href="https://twitter.com/jamesfmackenzie/lists/news-feed" target="_blank">Twitter List</a> gives me my own personalized news feed. My cost of staying informed has shrunk to 5–10 minutes, twice per day — freeing up the rest of my time for deeper pursuits. I’m much happier with the new balance.
