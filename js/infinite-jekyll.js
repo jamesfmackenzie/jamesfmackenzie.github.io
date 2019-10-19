@@ -82,8 +82,10 @@ $(function() {
     }
 
     var htmlFragment = "";
+    
+    // quotes do not include content or excerpt. This is different to the initially loaded posts but we are ok for this content to drop as you scroll down the page
     if (postToAppend.layout == "quote") {
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + url +"“" + postToAppend.title + "”</a></h2>" + postToAppend.content + "<p><date>" + postToAppend.date + "</date></p></div>";
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + url +"“" + postToAppend.title + "”</a></h2><p><date>" + postToAppend.date + "</date></p></div>";
     }
     else {
       htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + url + postToAppend.title + "</a></h2>" + postToAppend.excerpt + " ...<p><date>" + postToAppend.date + "</date></p></div>";

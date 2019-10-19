@@ -8,7 +8,6 @@ layout: none
       "title": "{{ post.title }}",
       "url": "{{ post.url }}",
       "date": "{{ post.date | date: "%b %-d, %Y" }}",
-      "content": "{{ post.content }}",
       "excerpt": "{{ post.excerpt | strip_html | strip_newlines }}"{% if post.tags.size > 0 %},
       "layout": "{{ post.layout }}",
       "overrideUrl": "{{ post.overrideUrl }}",
