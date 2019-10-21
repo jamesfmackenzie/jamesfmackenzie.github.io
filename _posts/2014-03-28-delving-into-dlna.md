@@ -2,6 +2,7 @@
 layout: post
 title: Delving Into DLNA
 date: '2014-03-28 17:58:00'
+summary: Last time, Play To allowed me to stream some (but crucially not all) of my media collection from PC to Xbox One ...
 tags: [Media, Streaming, DLNA]
 ---
 

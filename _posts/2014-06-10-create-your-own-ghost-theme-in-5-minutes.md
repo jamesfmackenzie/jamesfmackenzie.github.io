@@ -2,6 +2,7 @@
 layout: post
 title: Create Your Own Ghost Theme in 5 Minutes
 date: '2014-06-10 14:18:00'
+summary: I spent some time reading about Ghost themes today, with a view to creating my own ...
 tags: [Ghost Blogging Platform, Web Design, Web Development, Programming]
 ---
 

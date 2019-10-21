@@ -2,6 +2,7 @@
 layout: post
 title: Windows 10 Has Launched!
 date: '2015-08-01 10:47:10'
+summary: With Windows 10 now out in the wild, I’ve updated the tablet install guide tablet install guide with steps to install and configure the full retail version ...
 tags: [Windows 10, Consumer Tech]
 ---
 

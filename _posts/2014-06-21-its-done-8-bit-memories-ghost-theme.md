@@ -2,6 +2,7 @@
 layout: post
 title: It's Done! 8-Bit Memories Ghost Theme
 date: '2014-06-21 03:51:00'
+summary: My first free Ghost Theme “8-bit Memories” is complete ...
 tags: [Ghost Blogging Platform, Web Design]
 ---
 

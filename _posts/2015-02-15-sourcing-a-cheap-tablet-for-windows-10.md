@@ -2,6 +2,7 @@
 layout: post
 title: Sourcing a Cheap Tablet for Windows 10
 date: '2015-02-15 12:00:00'
+summary: As mentioned recently, I want to find a cheap tablet to try the Windows 10 Technical Preview on. Which one to choose?
 tags: [Windows 10, Consumer Tech]
 ---
 

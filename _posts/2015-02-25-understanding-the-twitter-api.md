@@ -2,6 +2,7 @@
 layout: post
 title: Understanding the Twitter API
 date: '2015-02-25 17:06:57'
+summary: Want to schedule a Twitter post for later? Or re-post a message at the same time every day? To get the most out of Twitter, you’ll want to extend it via the Developer API ...
 tags: [Programming, API, How To, Twitter]
 ---
 

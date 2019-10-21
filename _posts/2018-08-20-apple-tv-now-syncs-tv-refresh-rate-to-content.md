@@ -2,6 +2,7 @@
 layout: post
 title: Apple TV Now Syncs TV Refresh Rate to Content
 date: '2018-08-20 09:57:21'
+summary: I’m a die-hard Apple TV fan, using a 4th-gen device for regular big-screen Netflix, YouTube or Plex binges. However during a recent viewing, something struck me as not-quite-right ...
 tags: [Media, Lifehacks, Streaming]
 ---
 

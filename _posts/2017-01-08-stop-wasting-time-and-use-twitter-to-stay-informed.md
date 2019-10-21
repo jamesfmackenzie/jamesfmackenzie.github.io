@@ -2,6 +2,7 @@
 layout: post
 title: Stop Wasting Time and Use Twitter to Stay Informed
 date: '2017-01-08 16:25:00'
+summary: Perhaps, like me, you spend far too much time reading news, blogs, journals. And you don’t like it ...
 tags: [Twitter, Productivity]
 overrideUrl: https://medium.com/hackernoon/stop-wasting-time-and-use-twitter-to-stay-informed-d7e7363b58d3
 ---

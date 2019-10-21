@@ -2,6 +2,7 @@
 layout: post
 title: Sync Web Videos to Your Tablet or Phone, Watch Them Offline
 date: '2015-02-01 22:44:56'
+summary: There’s so much good web content out there - hard hitting news, educational articles and insightful blogs. And services like Pocket sync this content to your mobile device, making it available wherever (and whenever) you like - even without cellular data ...
 tags: [Automation, Productivity, Lifehacks]
 ---
 

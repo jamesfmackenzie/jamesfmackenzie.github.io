@@ -2,6 +2,7 @@
 layout: post
 title: EmailWatcher - a .NET Library for Email Automation
 date: '2015-08-01 23:13:05'
+summary: Jobs to download videos for me. Jobs to Tweet messages. I love automation. And outside of the enterprise, most of it hinges on email. So I created a .NET library to do some of the email heavy lifting more me ...
 tags: [Programming, Automation]
 ---
 

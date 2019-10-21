@@ -2,6 +2,7 @@
 layout: post
 title: Convert Equirectangular Projection to Cube Faces
 date: '2016-10-18 10:13:00'
+summary: Equirectangular and cube face projections are commonly used in 360 photo / VR panorama processing. Here’s how to convert from one to the other ...
 tags: [Photography, 360 Photo, VR Panorama, How To]
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Tomcat Shutdown Issues Caused by an Embedded Infinispan Cache
 date: '2016-01-18 21:06:17'
+summary: I was recently stumped by some shutdown issues in a Tomcat-hosted Java webservice. The server just wouldn’t shut down cleanly. After (most of) a day running round in circles, I tracked the issue down to embedded Infinispan - and specifically JGroups ...
 tags: [Programming, Web Development]
 ---
 

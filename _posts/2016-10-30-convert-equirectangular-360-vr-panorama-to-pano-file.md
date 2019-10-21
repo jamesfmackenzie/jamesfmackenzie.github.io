@@ -2,6 +2,7 @@
 layout: post
 title: Convert Equirectangular Projection to .Pano File
 date: '2016-10-30 13:17:00'
+summary: With native support in the form of .pano files, the VR Photography experience in Windows is great ...
 tags: [Photography, 360 Photo, VR Panorama, How To]
 ---
 
