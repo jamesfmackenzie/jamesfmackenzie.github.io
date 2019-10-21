@@ -2,7 +2,7 @@
 layout: post
 title: RetroPie Ultimate Setup Guide
 date: '2018-10-08 11:54:00'
-tags: [How To, Videogames, Raspberry Pi, Retrogaming, Streaming]
+tags: [How To, Videogames, Raspberry Pi, Retrogaming]
 ---
 
 With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES, even PlayStation all run great and with a little extra work you can stream more taxing games from your home PC
