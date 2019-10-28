@@ -15,3 +15,10 @@ An old school PC platformer, Keen took on legendary status after developer <a hr
 Thanks to original authors <a href="https://pckf.com/viewtopic.php?f=4&t=2536" target="_blank">NY00123, QuantumG and Lemm</a>. The vast majority of the work is theirs
 
 You can learn more about the project <a href="https://github.com/jamesfmackenzie/chocolatekeen" target="_blank">over on GitHub</a>
+
+### Controls
+
+* Arrows - Move Keen around
+* Ctrl - Jump
+* Alt - Use Pogo/Stop Pogo (if you have one)
+* Ctrl AND Alt - Fire raygun (if it has charges)
