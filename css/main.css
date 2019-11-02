@@ -22,6 +22,7 @@ h5,
 h6 {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  line-break: loose;
 }
 
 h1,
