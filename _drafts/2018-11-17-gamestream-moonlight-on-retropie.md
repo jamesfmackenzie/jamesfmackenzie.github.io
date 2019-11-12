@@ -18,6 +18,22 @@ Here's how to get it setup!
 * USB keyboard. To edit config files on your Raspberry Pi. Alternatively you can do this from your networked PC via SSH. Find more details in [this RetroPie guide]({% post_url 2018-10-08-ultimate-retropie-setup-guide %})
 * A gaming PC with NVIDIA GeForce GTX/RTX 600+ series GPU (GT-series and AMD GPUs aren't supported by NVIDIA GameStream) and <a href="https://www.nvidia.com/en-us/geforce/geforce-experience/" target="_blank">NVIDIA GeForce Experience (GFE)</a> 2.1.1 or higher installed
 
+### Connecting to your Pi
+
+Many of the steps in this guide involve tinkering with RetroPie settings at the command line.
+ 
+Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC, no keyboard required. Learn more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
+
+![](/img/posts/create_ssh_file_on_sd_card.png)
+
+With this feature enabled, you can use any <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> client (I like <a href="https://www.putty.org/" target="_blank">PuTTY</a>) to remotely connect to your Pi. The default connection details:
+
+* Hostname: `retropie`
+* Username: `pi`
+* Password: `raspberry`
+
+Alternatively, you can use a USB keyboard to configure Retropie directly
+
 ### Install Moonlight on your Pi
 
 On your Pi:
@@ -62,7 +78,7 @@ This should install Moonlight globally. In case anything goes wrong, you can fin
 
 ### Connect Moonlight to your PC 
 
-1. Run the following command to pair Moonlight with your PC
+Run the following command to pair Moonlight with your PC
 
 {% highlight bash %}
 {% raw %}
@@ -80,7 +96,7 @@ moonlight pair homePC
 
 You'll be asked to enter key on your host PC. Enter that once and the RetroPie is paired forever
 
-2. Optimize controller settings
+### Optimize controller settings
 
 If you're using an Xbox 360 controller on the Pi, we need to manually change some controller settings. The xpad driver that RetroPie uses leads to weird effects in moonlight
 
@@ -95,9 +111,9 @@ sudo modprobe xpad triggers_to_buttons=0
 
 This (temporarily) unloads the xpad driver and disables the "triggers to buttons" feature - allowing you to use triggers properly when you stream games via Moonlight. We'll need to revert this setting or reboot before we use Emulation Station again, since this setting will break retro gaming. Later on we'll create a script to help here. Find more info on this issue <a href="https://www.reddit.com/r/RetroPie/comments/7m10x8/disabling_trigger_to_button/" target="_blank">here</a>
 
-3. Run a test stream
+### Run a test stream
 
-Enter the following:
+Enter the following at the command prompt:
 
 {% highlight bash %}
 {% raw %}
@@ -114,6 +130,8 @@ moonlight stream -1080 -fps 60 -app "Forza Motorsport 6 Apex" homePC
 {% endhighlight %}
 
 All going well, the game should launch at 1080p, 60fps and be playable on your Pi! Great success!
+
+### Power up your Pi
 
 If you have a slower Pi model, you may experience some lag when streaming at 1080p, 60fps. You can either lower the resolution or overclock your Pi:
 
@@ -145,19 +163,25 @@ Your streaming experience should now be lag free
 
 ### Integrate with EmulationStation
 
-We've proved the Moonlight works well on the Pi, but we'd much prefer to launch and stream games directly through the RetroPie EmulationStation interface. Luckily EmulationStation is very configurable. We can do this without too much hassle.
+We can launch Moonlight from the command line, but we'd much prefer to launch and stream games directly through the RetroPie EmulationStation interface. Luckily EmulationStation is very configurable. We can do this without too much hassle.
 
 1. Quit EmulationStation if it is open (hit the Start button and navigate to `Quit > Quit EmulationStation`)
 
--------------- this is where I got to
+2. Create a copy of the ES config (the default one gets overwritten during ES updates and you don't want that)
 
-1. Create a copy of the ES config (the default one gets overwritten during ES updates and you don't want that)
-
+{% highlight bash %}
+{% raw %}
 sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
+{% endraw %}
+{% endhighlight %}
 
-2. Add a system to the custom config:
+3. Add a system to the custom config:
 
+{% highlight bash %}
+{% raw %}
 sudo nano /opt/retropie/configs/all/emulationstation/es_systems.cfg
+{% endraw %}
+{% endhighlight %}
 
 Add this at the bottom, but before </systemList>:
 
