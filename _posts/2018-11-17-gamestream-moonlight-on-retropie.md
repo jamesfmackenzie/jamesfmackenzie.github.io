@@ -303,7 +303,7 @@ Happy streaming!
 
 <br />
 
-#### Optional: create a custom theme for Moonlight
+### Optional: create a custom theme for Moonlight
 
 Want to show custom box art or metadata for your GameStream games? You'll need to modify the EmulationStation them
 
