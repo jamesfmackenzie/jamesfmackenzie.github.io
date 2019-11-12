@@ -39,6 +39,8 @@ Alternatively, you can use a USB keyboard to configure Retropie directly
 
 ### Install Moonlight on your Pi
 
+#### Step 1. Update Sources
+
 On your Pi:
 
 * Quit Emulation Station (hit the Start button and navigate to `Quit > Quit EmulationStation`)
@@ -55,7 +57,7 @@ deb http://archive.itimmer.nl/raspbian/moonlight stretch main
 
 Make sure there is a carriage return below at the bottom of the file. Then hit Ctrl+X then Y to save and exit
 
-* Install GPG key
+#### Step 2. Install GPG key
 
 Still at the bash prompt, enter the following to fetch and install the GPG key for Moonlight:
 
@@ -66,7 +68,7 @@ sudo apt-key add itimmer.gpg
 {% endraw %}
 {% endhighlight %}
 
-* Install Moonlight
+#### Step 3. Install Moonlight
 
 We'll use apt-get to install Moonlight. Enter the following:
 
@@ -190,7 +192,7 @@ sudo nano /opt/retropie/configs/all/emulationstation/es_systems.cfg
 {% endraw %}
 {% endhighlight %}
 
-Add this at the bottom, but before `</systemList>`:
+* Add this at the bottom, but before `</systemList>`:
 
 {% highlight xml %}
 {% raw %}
@@ -219,7 +221,7 @@ touch MYGAMENAME.txt
 
 Where `MYGAMENAME` is the exact game name defined in GeForce Experience / Gamestream on your PC. Repeat this for each game you wish to stream via Moonlight
 
-#### Step 3. Add Moonlight config and startup scripts
+#### Step 3. Add Moonlight config and startup/shutdown scripts
 
 * Create a config directory for Moonlight:
 
@@ -239,7 +241,7 @@ sudo nano emulators.cfg
 {% endraw %}
 {% endhighlight %}
 
-Put two lines in the file:
+* Put these two lines in the file:
 
 {% highlight bash %}
 {% raw %}
@@ -257,7 +259,7 @@ sudo nano runcommand-onstart.sh
 {% endraw %}
 {% endhighlight %}
 
-Add the following content to the file:
+ * Add the following content to the file:
 
 {% highlight bash %}
 {% raw %}
@@ -277,6 +279,8 @@ cd /opt/retropie/configs/all
 sudo nano runcommand-onend.sh
 {% endraw %}
 {% endhighlight %}
+
+* Add the following content to the file:
 
 {% highlight bash %}
 {% raw %}
@@ -312,10 +316,9 @@ sudo cp -r carbon carbon-updated
 
 #### Can I stream Windows Store aka UWP games?
 
-* Some apps are already “onboarded” and will magically appear in GeForce Experience
-* Others must be added via the GameStream UI. It now has native support for UWP
+Some UWP are already “GameStream onboarded” by NVIDIA and will magically appear in GeForce Experience. Others must be added via the GameStream UI (it has native support for UWP)
 
-#### Cam I stream the Xbox Companion app from my Windows 10 PC to Play Xbox One games on my Pi?
+#### Can I stream the Xbox Companion app from my Windows 10 PC to Play Xbox One games on my Pi?
 
 Yes you can and it works surprisingly well. Although it’s better to do this via a single hop (i.e. direct to a Windows 10 machine or a Mac/iOS device via OneCast)
 
