@@ -280,7 +280,7 @@ sudo nano runcommand-onend.sh
 {% endraw %}
 {% endhighlight %}
 
-* Add the following content to the file:
+* Add the following content to the file. Again, replace `homePC` with the hostname or IP address you paired earlier:
 
 {% highlight bash %}
 {% raw %}
@@ -288,12 +288,20 @@ sudo nano runcommand-onend.sh
 if [ $1 = "moonlight" ]; then
    sudo rmmod xpad
    sudo modprobe xpad triggers_to_buttons=1
-   moonlight quit YOURPCNAME
+   moonlight quit homePC
 fi
 {% endraw %}
 {% endhighlight %}
 
-Now you're good to go!
+### Get streaming!
+
+You're good to go! Reboot your Pi via `sudo reboot` and launch your streams direct from EmulationStation
+
+To end a stream hit `Select + Start + L1 + R1`. You'll be returned to the EmulationStatio menu
+
+Happy streaming!
+
+<br />
 
 #### Optional: create a custom theme for Moonlight
 
@@ -312,6 +320,8 @@ sudo cp -r carbon carbon-updated
 
 * Follow <a href="https://github.com/retropie/retropie-setup/wiki/Creating-Your-Own-EmulationStation-Theme" target="_blank">this guide</a> to modify the theme to your liking 
 
+<br />
+
 ### FAQ
 
 #### Can I stream Windows Store aka UWP games?
@@ -321,6 +331,8 @@ Some UWP are already “GameStream onboarded” by NVIDIA and will magically app
 #### Can I stream the Xbox Companion app from my Windows 10 PC to Play Xbox One games on my Pi?
 
 Yes you can and it works surprisingly well. Although it’s better to do this via a single hop (i.e. direct to a Windows 10 machine or a Mac/iOS device via OneCast)
+
+<br />
 
 ### Troubleshooting
 
