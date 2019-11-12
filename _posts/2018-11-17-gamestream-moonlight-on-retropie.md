@@ -6,13 +6,13 @@ summary: RetroPie is the perfect retrogaming experience for your living room, bu
 tags: [How To, Videogames, Raspberry Pi, Retrogaming, Streaming, Moonlight]
 ---
 
+![](/img/posts/moonlight.png)
+
 You already have [RetroPie running nicely on your Raspberry Pi]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). It's the perfect retrogaming experience for your living room TV, but there's one thing missing. The Pi doesn't have the horsepower for more recent games. How can you play the latest PC releases? Or perhaps you fancy some PlayStation 2, Gamecube or Dreamcast emulation on the big screen?
 
 <a href="https://moonlight-stream.com/" target="_blank">Moonlight</a> fits the bill. It streams gameplay from your almighty PC to the RetroPie, allowing you to sit back on the couch and play games that need a bit more grunt
 
 Here's how to get it setup!
-
-![](/img/posts/moonlight.png)
 
 ### What you need 
 
