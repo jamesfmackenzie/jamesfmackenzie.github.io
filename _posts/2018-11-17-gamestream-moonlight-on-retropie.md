@@ -241,11 +241,11 @@ sudo nano emulators.cfg
 {% endraw %}
 {% endhighlight %}
 
-* Put these two lines in the file:
+* Add these two lines to the file. Replace `homePC` with the hostname or IP address you paired earlier:
 
 {% highlight bash %}
 {% raw %}
-moonlight = "moonlight stream -1080 -fps 60 -app %BASENAME% desktop"
+moonlight = "moonlight stream -1080 -fps 60 -app %BASENAME% homePC"
 default = "moonlight"
 {% endraw %}
 {% endhighlight %}
