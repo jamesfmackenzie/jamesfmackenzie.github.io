@@ -219,7 +219,7 @@ touch MYGAMENAME.txt
 {% endraw %}
 {% endhighlight %}
 
-Where `MYGAMENAME` is the exact game name defined in GeForce Experience / Gamestream on your PC. Repeat this for each game you wish to stream via Moonlight
+Where `MYGAMENAME` is the exact game name defined in GeForce Experience / Gamestream on your PC (e.g `Forza Motorsport 6 Apex.txt`). Repeat this for each game you wish to stream via Moonlight
 
 #### Step 3. Add Moonlight config and startup/shutdown scripts
 
