@@ -69,7 +69,7 @@ You'll see three new files once the build completes:
 
 * `hello.wasm` - the WebAssembly output
 * `hello.js` - the asm.js output
-* `hello.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser:
+* `hello.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser
 
 ![](/img/posts/emscripten_hello_world_build.png)
 
