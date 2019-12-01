@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WebAssembly
-date: '2019-11-30 18:25:00:00'
+title: Getting Started With WebAssembly
+date: '2019-11-30 19:18:00:00'
 summary: I recently finished work on my first WebAssembly project. Here are the things I learned ...
-tags: [GameDev, Programming, Retrogaming, Videogames, Web Development, Emscripten, WebAssembly]
+tags: [Programming, Web Development, Emscripten, WebAssembly]
 ---
 
 I recently undertook my first WebAssembly project: porting a C video game to the web browser. Learnings written up below
