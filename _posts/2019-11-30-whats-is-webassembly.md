@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started With WebAssembly
+title: "WebAssembly Lesson 0: What is WebAssembly?"
 date: '2019-11-30 19:18:00:00'
-summary: I recently finished work on my first WebAssembly project. Here are the things I learned ...
+summary: What is WebAssembly and how can you get started with it?
 tags: [Programming, Web Development, Emscripten, WebAssembly]
 ---
 
