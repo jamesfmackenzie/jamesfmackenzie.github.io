@@ -43,27 +43,33 @@ WebAssembly offers all the benefits of asm.js with even faster performance
 With more browsers implementing direct support for WebAssembly, asm.js investment is dwindling
 
 
-### WebAssembly Hello World
+### Hello World
 
 First, install and configure the Emscripten SDK. Find instructions <a href="https://emscripten.org/docs/getting_started/downloads.html" target="_blank">here</a> 
 
 Next, copy-paste the following C code and save it on your local machine as `hello.c`:
 
-```
+{% highlight c %}
+{% raw %}
 #include <stdio.h>
 
 int main() {
   printf("hello, world!\n");
   return 0;
 }
-```
+{% endraw %}
+{% endhighlight %}
+
+### Build
 
 At the same folder location, open a shell / command prompt. Invoke the following Emscripten build commands:
 
-```
+{% highlight bash %}
+{% raw %}
 emcc -c hello.c -o hello.o
 emcc hello.o -o hello.html
-```
+{% endraw %}
+{% endhighlight %}
 
 You'll see three new files once the build completes:
 
@@ -73,14 +79,13 @@ You'll see three new files once the build completes:
 
 ![](/img/posts/emscripten_hello_world_build.png)
 
+### Run
 
-#### Testing
-
-For a quick and simple test, run `hello.js` with Node JS. It should output "hello, world!"
+For a quick and simple test, run `hello.js` with Node JS. It should output "hello, world!":
 
 ![](/img/posts/emscripten_node_js_test.png)
 
-Alternatively use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `hello.html` and open it in a Web Browser. It should output "hello, world!" to the Browser window and console:
+Alternatively use lightweight Web Server software such as <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `hello.html` and open it in a Web Browser. It should output "hello, world!" to the Browser window and console:
 
 ![](/img/posts/emscripten_browser_test.png)
 
