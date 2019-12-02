@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebAssembly Lesson 1: Graphics with SDL
+title: "WebAssembly Lesson 1: Graphics with SDL"
 date: '2019-12-01 19:18:00:00'
 summary: Using Simple DirectMedia Layer (SDL) to render graphics in the browser
 tags: [Programming, Web Development, Emscripten, WebAssembly, GameDev]
