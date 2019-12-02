@@ -38,46 +38,193 @@ We'll explore both
 
 First, install and configure the Emscripten SDK. Find instructions <a href="https://emscripten.org/docs/getting_started/downloads.html" target="_blank">here</a> 
 
-Next, copy-paste the following C code and save it on your local machine as `hello.c`:
+Next, copy-paste the C code below and save it on your local machine as `sdl_1_2_sample.c`. It's a tiny SDL program that will output random pixels to the screen
 
 ```
-#include <stdio.h>
+#include <SDL.h>
+#include <emscripten.h>
+#include <stdlib.h>
 
-int main() {
-  printf("hello, world!\n");
-  return 0;
+SDL_Surface *screen;
+
+void drawRandomPixels() {
+    if (SDL_MUSTLOCK(screen)) SDL_LockSurface(screen);
+
+    Uint8 * pixels = screen->pixels;
+    
+    for (int i=0; i < 1048576; i++) {
+        char randomByte = rand() % 255;
+        pixels[i] = randomByte;
+    }
+
+    if (SDL_MUSTLOCK(screen)) SDL_UnlockSurface(screen);
+
+    SDL_Flip(screen);
+}
+
+int main(int argc, char* argv[]) {
+    SDL_Init(SDL_INIT_VIDEO);
+    screen = SDL_SetVideoMode(512, 512, 32, SDL_SWSURFACE);
+    
+    emscripten_set_main_loop(drawRandomPixels, 0, 1);
 }
 ```
+
+Some things of note:
+
+* emscripten_set_main_loop(drawRandomPixels, 0, 1);
+
+#### Testing
 
 At the same folder location, open a shell / command prompt. Invoke the following Emscripten build commands:
 
 ```
-emcc -c hello.c -o hello.o
-emcc hello.o -o hello.html
+emcc -c sdl_1_2_sample.c -o sdl_1_2_sample.o
+emcc sdl_1_2_sample.o -o sdl_1_2_sample.html
 ```
 
 You'll see three new files once the build completes:
 
-* `hello.wasm` - the WebAssembly output
-* `hello.js` - the asm.js output
-* `hello.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser
+* `sdl_1_2_sample.wasm` - the WebAssembly output
+* `sdl_1_2_sample.js` - the asm.js output
+* `sdl_1_2_sample.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser
 
-![](/img/posts/emscripten_hello_world_build.png)
+Use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `sdl_1_2_sample.html` and open it in a Web Browser. You should see an animation - looks like white noise: 
 
+![](/img/posts/emscripten_sdl_1_2_sample.png)
+
+### SDL 2.0
+
+Next, let's try the sample example, but this time with SDL 2.0.
+
+Copy-paste the modified C code below and save it on your local machine as `sdl_2_0_sample.c`. It's a modified version of the above code for SDL 2.0
+
+```
+#include <SDL.h>
+#include <emscripten.h>
+#include <stdlib.h>
+
+SDL_Window *window;
+SDL_Renderer *renderer;
+SDL_Surface *surface;
+
+void drawRandomPixels() {
+    if (SDL_MUSTLOCK(surface)) SDL_LockSurface(surface);
+
+    Uint8 * pixels = surface->pixels;
+    
+    for (int i=0; i < 1048576; i++) {
+        char randomByte = rand() % 255;
+        pixels[i] = randomByte;
+    }
+
+    if (SDL_MUSTLOCK(surface)) SDL_UnlockSurface(surface);
+
+    SDL_Texture *screenTexture = SDL_CreateTextureFromSurface(renderer, surface);
+
+    SDL_RenderClear(renderer);
+    SDL_RenderCopy(renderer, screenTexture, NULL, NULL);
+    SDL_RenderPresent(renderer);
+
+    SDL_DestroyTexture(screenTexture);
+}
+
+int main(int argc, char* argv[]) {
+    SDL_Init(SDL_INIT_VIDEO);
+    SDL_CreateWindowAndRenderer(512, 512, 0, &window, &renderer);
+    surface = SDL_CreateRGBSurface(0, 512, 512, 32, 0, 0, 0, 0);
+    
+    emscripten_set_main_loop(drawRandomPixels, 0, 1);
+}
+```
+
+Some things of note:
+
+* You can't blit directly to the screen surface in SDL 2.0 (+ some expansion on this)
 
 #### Testing
 
-For a quick and simple test, run `hello.js` with Node JS. It should output "hello, world!"
+At the same folder location, open a shell / command prompt. Invoke the following Emscripten build commands:
 
-![](/img/posts/emscripten_node_js_test.png)
+```
+emcc -c sdl_2_0_sample.c -o sdl_2_0_sample.o -s USE_SDL=2
+emcc sdl_2_0_sample.o -o sdl_2_0_sample.html -s USE_SDL=2
+```
 
-Alternatively use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `hello.html` and open it in a Web Browser. It should output "hello, world!" to the Browser window and console:
+Note that this time we're passing in `-s USE_SDL=2`. This instructs Emscripten to switch of the built-in SDL 1.2 implementation and instead use the SDL 2.0 port.
 
-![](/img/posts/emscripten_browser_test.png)
+You'll see three new files once the build completes:
 
-![](/img/posts/emscripten_browser_test_console.png)
+* `sdl_2_0_sample.wasm` - the WebAssembly output
+* `sdl_2_0_sample.js` - the asm.js output
+* `sdl_2_0_sample.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser
 
-Congratulations! You're up and running with WebAssembly!
+Again, use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `sdl_2_0_sample.html` and open it in a Web Browser. You'll see the same white noise animation:
+
+![](/img/posts/emscripten_sdl_2_0_sample.png)
+
+
+### Cross-platform capability
+
+We mentioned cross-platform capability above. But these examples have hardcodings for Emscripten/WebAssembly alone. How could we make this compatible cross platform?
+
+```
+#include <SDL.h>
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+#include <stdlib.h>
+
+SDL_Window *window;
+SDL_Renderer *renderer;
+SDL_Surface *surface;
+
+void drawRandomPixels() {
+    if (SDL_MUSTLOCK(surface)) SDL_LockSurface(surface);
+
+    Uint8 * pixels = surface->pixels;
+    
+    for (int i=0; i < 1048576; i++) {
+        char randomByte = rand() % 255;
+        pixels[i] = randomByte;
+    }
+
+    if (SDL_MUSTLOCK(surface)) SDL_UnlockSurface(surface);
+
+    SDL_Texture *screenTexture = SDL_CreateTextureFromSurface(renderer, surface);
+
+    SDL_RenderClear(renderer);
+    SDL_RenderCopy(renderer, screenTexture, NULL, NULL);
+    SDL_RenderPresent(renderer);
+
+    SDL_DestroyTexture(screenTexture);
+}
+
+int main(int argc, char* argv[]) {
+    SDL_Init(SDL_INIT_VIDEO);
+    SDL_CreateWindowAndRenderer(512, 512, 0, &window, &renderer);
+    surface = SDL_CreateRGBSurface(0, 512, 512, 32, 0, 0, 0, 0);
+    
+    #ifdef __EMSCRIPTEN__
+    emscripten_set_main_loop(drawRandomPixels, 0, 1);
+    #else
+    while(1) {        
+        drawRandomPixels();
+        SDL_Delay(16);
+    }
+    #endif 
+}
+```
+
+Notes:
+* IFDEF around include statements
+* IFDEF around render loop
+
+The above code can now be built both with Emscripten/emcc *and* regular gcc. Here's what it looks like for Windows:
+
+![](/img/posts/emscripten_sdl_2_0_mingw_sample.png)
+
+
 
 
 
