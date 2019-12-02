@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First SDL app in WebAssembly
+title: SDL and WebAssembly
 date: '2019-12-01 19:18:00:00'
 summary: I recently finished work on my first WebAssembly project. Here are the things I learned ...
 tags: [Programming, Web Development, Emscripten, WebAssembly, GameDev]
@@ -27,20 +27,21 @@ There are two flavours of SDL:
 
 ### Does SDL have WebAssembly support?
 
-Yes! Emscripten (which we'll use to compile for WebAssembly) has a simple implementation of SDL 1.2's API built in. This is written by hand in JavaScript and unrelated to the SDL codebase - but compatibility is high enough for simple use cases
+Yes! Emscripten (which we'll use to compile for WebAssembly) has a simple implementation of SDL 1.2's API built in. This is written by hand in JavaScript and unrelated to the SDL codebase - but with compatibility high enough for most simple use cases
 
-SDL 2.0 support is also included via Emscripten Ports - a collection of useful libraries, ported to Emscripten and integrated with the Emscripten compiler (emcc)
+SDL 2.0 support is also included via <a href="https://github.com/emscripten-ports" target="_blank">Emscripten Ports</a> - a collection of useful libraries, ported to Emscripten and integrated with the Emscripten compiler (emcc)
 
-We'll explore both 
+We'll take a look at both of these in this article
 
 
-### SDL + WebAssembly Hello World
+### Running SDL 1.2 code in the browser
 
-First, install and configure the Emscripten SDK. Find instructions <a href="https://emscripten.org/docs/getting_started/downloads.html" target="_blank">here</a> 
+First, install and configure the Emscripten SDK (instructions <a href="https://emscripten.org/docs/getting_started/downloads.html" target="_blank">here</a>) 
 
-Next, copy-paste the C code below and save it on your local machine as `sdl_1_2_sample.c`. It's a tiny SDL program that will output random pixels to the screen
+Next, copy-paste the C code below and save it on your local machine as `sdl_1_2_sample.c`. It's a tiny SDL program that renders random pixels data to the screen - it'll look like white noise
 
-```
+{% highlight c %}
+{% raw %}
 #include <SDL.h>
 #include <emscripten.h>
 #include <stdlib.h>
@@ -68,7 +69,8 @@ int main(int argc, char* argv[]) {
     
     emscripten_set_main_loop(drawRandomPixels, 0, 1);
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 Some things of note:
 
@@ -78,10 +80,12 @@ Some things of note:
 
 At the same folder location, open a shell / command prompt. Invoke the following Emscripten build commands:
 
-```
+{% highlight bash %}
+{% raw %}
 emcc -c sdl_1_2_sample.c -o sdl_1_2_sample.o
 emcc sdl_1_2_sample.o -o sdl_1_2_sample.html
-```
+{% endraw %}
+{% endhighlight %}
 
 You'll see three new files once the build completes:
 
@@ -99,7 +103,8 @@ Next, let's try the sample example, but this time with SDL 2.0.
 
 Copy-paste the modified C code below and save it on your local machine as `sdl_2_0_sample.c`. It's a modified version of the above code for SDL 2.0
 
-```
+{% highlight c %}
+{% raw %}
 #include <SDL.h>
 #include <emscripten.h>
 #include <stdlib.h>
@@ -136,7 +141,8 @@ int main(int argc, char* argv[]) {
     
     emscripten_set_main_loop(drawRandomPixels, 0, 1);
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 Some things of note:
 
@@ -146,10 +152,12 @@ Some things of note:
 
 At the same folder location, open a shell / command prompt. Invoke the following Emscripten build commands:
 
-```
+{% highlight bash %}
+{% raw %}
 emcc -c sdl_2_0_sample.c -o sdl_2_0_sample.o -s USE_SDL=2
 emcc sdl_2_0_sample.o -o sdl_2_0_sample.html -s USE_SDL=2
-```
+{% endraw %}
+{% endhighlight %}
 
 Note that this time we're passing in `-s USE_SDL=2`. This instructs Emscripten to switch of the built-in SDL 1.2 implementation and instead use the SDL 2.0 port.
 
@@ -168,7 +176,8 @@ Again, use lightweight Web Server software like <a href="https://www.npmjs.com/p
 
 We mentioned cross-platform capability above. But these examples have hardcodings for Emscripten/WebAssembly alone. How could we make this compatible cross platform?
 
-```
+{% highlight c %}
+{% raw %}
 #include <SDL.h>
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>
@@ -214,7 +223,8 @@ int main(int argc, char* argv[]) {
     }
     #endif 
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 Notes:
 * IFDEF around include statements
