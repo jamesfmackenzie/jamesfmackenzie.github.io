@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WebAssembly Lesson 1: Graphics with SDL"
+title: "WebAssembly Lesson 2: Graphics with SDL"
 date: '2019-12-01 19:18:00:00'
 summary: Using Simple DirectMedia Layer (SDL) to render graphics in the browser
 tags: [Programming, Web Development, Emscripten, WebAssembly, GameDev]
@@ -78,9 +78,7 @@ Games and other graphical apps often contain infinite loops to sequentially rend
 
 This infinite loop is a problem in the browser environment because control is never returned to the browser to render graphics. The app will appear to hang - and after some time the browser will notify the user that the page is stuck and offer to halt or close it
 
-Emscripten's solution is `emscripten_set_main_loop`. This *simulates* an infinite loop, but in actuality just calls the loop function (in our case `drawRandomPixels()`
-
-The JavaScript environment will call that function at a specified number of frames per second. After each call completes, control is returned to the browser for rendering and other housekeeping
+Emscripten's solution is `emscripten_set_main_loop`. This *simulates* an infinite loop, but in actuality just calls the loop function - in our case `drawRandomPixels()` - at a specified number of frames per second. After each call completes, control is returned to the browser for rendering
 
 Find more info <a href="https://emscripten.org/docs/porting/emscripten-runtime-environment.html#browser-main-loop" target="_blank">here</a>. We'll explore this more in the next Lesson
 
