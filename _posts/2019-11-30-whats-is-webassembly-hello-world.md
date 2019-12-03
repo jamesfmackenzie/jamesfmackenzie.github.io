@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WebAssembly Lesson 0: Hello World"
+title: "WebAssembly Lesson 1: Hello World"
 date: '2019-11-30 19:18:00:00'
 summary: What is WebAssembly and how can you get started with it?
 tags: [Programming, Web Development, Emscripten, WebAssembly]
