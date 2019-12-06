@@ -2,11 +2,11 @@
 layout: post
 title: "WebAssembly Lesson 1: Hello World"
 date: '2019-11-30 19:18:00:00'
-summary: What is WebAssembly and how can you get started with it?
+summary: What is WebAssembly? Emscripten? asm.js? Find out how to get started with WebAssembly and run some Hello World examples
 tags: [Programming, Web Development, Emscripten, WebAssembly]
 ---
 
-I recently undertook my first WebAssembly project: porting a C video game to the web browser. Learnings written up below
+I recently undertook my first WebAssembly project: [porting a C video game to the web browser]({% post_url 2019-10-28-commander-keen-ported-to-webassembly %}). I plan to record my learnings as a series of Lessons - each covering a major WebAssembly topic. Find Lesson 1 below
 
 
 ### What is WebAssembly?
@@ -25,22 +25,20 @@ Emscripten is a toolchain for compiling to asm.js and WebAssembly. With Emscript
 - Compile C and C++ code into asm.js or WebAssembly
 - Do the same for any any other code that can be translated into LLVM bitcode (e.g. D or Rust)
 
-To get started you need the Emscripten SDK
+To get started you need the <a href="https://emscripten.org/docs/getting_started/downloads.html" target="_blank">Emscripten SDK</a>
 
 Emscripten is accessed using the Emscripten Compiler Frontend (emcc). This invokes all the other tools needed to build your code. Think of this as a drop-in replacement for a standard compiler like gcc or clang. It is called on the command line using `./emcc` or `./em++`
 
 
 ### What is asm.js?
 
-asm.js is a strict subset of JavaScript, to which code written in statically-typed languages with manual memory management (such as C) can be translated by e.g. Emscripten
+asm.js is a strict subset of JavaScript, to which code written in statically-typed languages with manual memory management (such as C) can be translated by special asm.js compiler - e.g. Emscripten
 
 Emscripten takes in C/C++ code, passes it through LLVM, and converts the LLVM-generated bitcode into asm.js
 
 Since asm.js is just JavaScript, it can run in any browser. Performance can also be heavily optimised vs standard JavaScript. Today, most browsers can execute asm.js within a factor of ~2 slowdown vs native compilation (this is very fast!!)
 
-WebAssembly offers all the benefits of asm.js with even faster performance
-
-With more browsers implementing direct support for WebAssembly, asm.js investment is dwindling
+WebAssembly offers all the benefits of asm.js with even faster performance. With more browsers implementing direct support for WebAssembly - and with Emscripten able to output both - asm.js investment is dwindling
 
 
 ### Hello World
@@ -92,3 +90,5 @@ Alternatively use lightweight Web Server software such as <a href="https://www.n
 ![](/img/posts/emscripten_browser_test_console.png)
 
 Congratulations! You're up and running with WebAssembly!
+
+Next time we'll look at [WebAssembly graphics with SDL]({% post_url 2019-12-01-webassembly-graphics-with-sdl %})

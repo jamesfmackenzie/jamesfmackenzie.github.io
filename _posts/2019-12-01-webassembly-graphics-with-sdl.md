@@ -2,7 +2,7 @@
 layout: post
 title: "WebAssembly Lesson 2: Graphics with SDL"
 date: '2019-12-01 19:18:00:00'
-summary: Using Simple DirectMedia Layer (SDL) to render graphics in the browser
+summary: Learn how to use WebAssembly and Simple DirectMedia Layer (SDL) to render graphics to the Web Browser
 tags: [Programming, Web Development, Emscripten, WebAssembly, GameDev]
 ---
 
@@ -12,7 +12,7 @@ SDL (Simple DirectMedia Layer) is a cross-platform, Open Source development libr
 
 Written in C, it is used by video playback software, emulators, and many popular games
 
-It is not full game engine, but rather a wrapper around OS-specific functions that software might need to access. It's purpose is to add abstraction and help developers target multiple platforms with one code base
+It is not a full game engine, but rather a wrapper around OS-specific functions that software might need to access. It's purpose is to add abstraction and help developers target multiple platforms from one code base
 
 SDL officially supports Windows, Mac OS X, Linux, iOS, and Android - with unofficial support for many other platforms
 
@@ -22,16 +22,16 @@ SDL officially supports Windows, Mac OS X, Linux, iOS, and Android - with unoffi
 There are two flavours of SDL:
 
 - v1.2 - original version licensed under <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html" target="_blank">GNU LGPL</a>. Deprecated but still in popular use
-- v2.0 - major update with a different, not backwards-compatible API. Improved support for hardware-accelerated 2D graphics
+- v2.0 - major update with a different, not backwards-compatible API. Licensed under zLib. Improved support for hardware-accelerated 2D graphics
 
 
 ### Does SDL have WebAssembly support?
 
 Yes! Emscripten (which we'll use to compile for WebAssembly) has a simple implementation of SDL 1.2's API built in. This is hand-written in JavaScript and unrelated to the SDL codebase - but with compatibility high enough for most simple use cases
 
-SDL 2.0 support is also included via <a href="https://github.com/emscripten-ports" target="_blank">Emscripten Ports</a> - a collection of useful libraries, ported to Emscripten and integrated with the Emscripten compiler (emcc)
+SDL 2.0 support is also included via <a href="https://github.com/emscripten-ports" target="_blank">Emscripten Ports</a> - a collection of useful libraries, ported to Emscripten and integrated with the Emscripten compiler (emcc). This is an official, full release of SDL 2.0 - compatibility should be near 100%
 
-We'll take a look at both of these below 
+We'll take a look at both below 
 
 
 ### Running SDL 1.2 code in the browser
@@ -80,7 +80,8 @@ This infinite loop is a problem in the browser environment because control is ne
 
 Emscripten's solution is `emscripten_set_main_loop`. This *simulates* an infinite loop, but in actuality just calls the loop function - in our case `drawRandomPixels()` - at a specified number of frames per second. After each call completes, control is returned to the browser for rendering
 
-Find more info <a href="https://emscripten.org/docs/porting/emscripten-runtime-environment.html#browser-main-loop" target="_blank">here</a>. We'll explore this more in the next Lesson
+This is explored further in the [next lesson]({% post_url 2019-12-03-webassembly-emscripten-loops %})
+
 
 #### Build and Run
 
@@ -99,7 +100,7 @@ You'll see three new files once the build completes:
 * `sdl_1_2_sample.js` - the asm.js output
 * `sdl_1_2_sample.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser
 
-Use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `sdl_1_2_sample.html` and open it in a Web Browser. You should see an animation - looks like white noise: 
+Use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `sdl_1_2_sample.html` and open it in a Web Browser. You should see a "white noise" animation: 
 
 ![](/img/posts/emscripten_sdl_1_2_sample.png)
 
@@ -151,7 +152,7 @@ int main(int argc, char* argv[]) {
 {% endraw %}
 {% endhighlight %}
 
-The main change here is that you can no longer Flip pixels directly to the screen. You need to push pixels into a texture (in GPU RAM) and issue rendering calls to update the screen. More info <a href="https://wiki.libsdl.org/MigrationGuide#Video" target="_blank">here</a>
+The main change here is that you can no longer Flip pixels directly to the screen. You need to push pixels into a texture (which resides in GPU RAM) and issue rendering calls to update the screen. More info <a href="https://wiki.libsdl.org/MigrationGuide#Video" target="_blank">here</a>
 
 
 #### Build and Run
@@ -165,9 +166,9 @@ emcc sdl_2_0_sample.o -o sdl_2_0_sample.html -s USE_SDL=2
 {% endraw %}
 {% endhighlight %}
 
-This time we're passing in the `USE_SDL=2` codegen option. This instructs Emscripten to switch off the built-in SDL 1.2 implementation and compile with the SDL 2.0 port
+This time we're passing in the `USE_SDL=2` codegen option - which instructs Emscripten to switch off the built-in SDL 1.2 implementation and compile with the SDL 2.0 port instead
 
-Similar to before, `emcc` will generate three files: `sdl_2_0_sample.wasm`, `sdl_2_0_sample.js` and `sdl_2_0_sample.html`
+Similar to before, emcc will generate three files: `sdl_2_0_sample.wasm`, `sdl_2_0_sample.js` and `sdl_2_0_sample.html`
 
 Serve `sdl_2_0_sample.html` and open it in a Web Browser. You'll see the same white noise animation, but this time powered by SDL 2.0:
 
@@ -176,7 +177,7 @@ Serve `sdl_2_0_sample.html` and open it in a Web Browser. You'll see the same wh
 
 ### Cross-platform capability
 
-Our examples have hardcodings for Emscripten/WebAssembly - hardcodings that will break a traditional C compilation with gcc. With some adjustments we can use the same source code to target multiple platforms:
+Our code samples have hardcodings for Emscripten/WebAssembly - hardcodings that break traditional C compilation with gcc. However with some adjustments we can use the same source code to target both native and WebAssembly platforms:
 
 {% highlight c %}
 {% raw %}
@@ -233,9 +234,10 @@ Here we've used `#ifdef` statements to change compilation behaviour under native
 * Avoid loading the `emscripten.h` headers
 * Replace `emscripten_set_main_loop` with a traditional infinite loop
 
-We can now compile the above code into WebAssembly with Emscripten/emcc *and* native executables with regular gcc. Here's what it looks like running as a Windows app:
+With these changes, we can compile the above code into WebAssembly with Emscripten/emcc **and** native executables with gcc. Here's what it looks like running as a Windows app:
 
 ![](/img/posts/emscripten_sdl_2_0_mingw_sample.png)
 
+That's the end of Lesson 2! Next time we'll look at [Emscripten Loops]({% post_url 2019-12-03-webassembly-emscripten-loops %})
 
  

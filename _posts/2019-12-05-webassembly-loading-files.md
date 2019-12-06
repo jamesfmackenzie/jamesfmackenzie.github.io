@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "WebAssembly Lesson 5: JavaScript Interop"
-date: '2019-12-02 19:18:00:00'
+title: "WebAssembly Lesson 4: File System Access"
+date: '2020-12-05 19:18:00:00'
 summary: Understanding Emscripten Loops and Emterpreter
 tags: [Programming, Web Development, Emscripten, WebAssembly, GameDev]
 ---
