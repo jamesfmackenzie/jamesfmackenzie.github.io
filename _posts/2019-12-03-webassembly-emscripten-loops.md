@@ -60,9 +60,7 @@ Where:
 
 At any point we can cancel the Emscripten main loop by issuing `emscripten_cancel_main_loop()`. This will stop execution of the main loop function and prevent any further iterations
 
-If you need to pass arguments to the loop function there is <a href="https://emscripten.org/docs/api_reference/emscripten.h.html#c.emscripten_set_main_loop_arg" target="_blank">emscripten_set_main_loop_arg</a>
-
-You can find more info in the <a href="https://emscripten.org/docs/porting/emscripten-runtime-environment.html#browser-main-loop" target="_blank">official Emscripten documentation</a>
+If you need to pass arguments to the loop function there is <a href="https://emscripten.org/docs/api_reference/emscripten.h.html#c.emscripten_set_main_loop_arg" target="_blank">emscripten_set_main_loop_arg</a>. You can find more info in the <a href="https://emscripten.org/docs/porting/emscripten-runtime-environment.html#browser-main-loop" target="_blank">official Emscripten documentation</a>
 
 
 ### Emscripten loops are not real loops
@@ -111,9 +109,9 @@ Neither scenario works like a traditional loop, which means that code often requ
 
 #### Emterpreter to the rescue?
  
-Because of the high effort required to rewrite traditional apps towards Emscripten loops, Emscripten provides the Emterpreter feature
+Because of the high effort required to rewrite traditional apps towards Emscripten loops, Emscripten provides <a href="https://github.com/emscripten-core/emscripten/wiki/Emterpreter" target="_blank">Emterpreter</a>
 
-In this mode, you can keep traditional infinite loops. You just need to replace your existing sleep/delay calls with `emscripten_sleep` calls: 
+Emterpreter allows you to keep traditional infinite loops. You just need to replace your existing sleep/delay calls with `emscripten_sleep` calls: 
 
 {% highlight c %}
 {% raw %}
@@ -170,6 +168,6 @@ emcc <filename>.o -o <filename>.html -s EMTERPRETIFY=1 -s EMTERPRETIFY_ASYNC=1
 
 If the build fails, try downloading and activating the "fastcomp" version of the Emscripten SDK. There are plans to drop Emterpreter support from the default version of the SDK 
 
-When you run this sample, you'll immediately see the issues with Emterpreter - it's incredibly slow. The stack has to be unwound and reassembled for every `emscripten_sleep()` call - an expensive operation. The recommendation is to use Emterpreter sparingly and refactor towards Emscripten loops wherever you can
+When you run this sample, you'll immediately see the main issue with Emterpreter - it's incredibly slow. The stack has to be unwound and reassembled for every `emscripten_sleep()` call - an expensive operation. The recommendation is to use Emterpreter sparingly and refactor towards Emscripten loops wherever you can
 
 That's the end of Lesson 3! Next time we'll look at FileIO
