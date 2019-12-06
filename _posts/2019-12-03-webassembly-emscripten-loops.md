@@ -60,7 +60,7 @@ Where:
 
 At any point we can cancel the Emscripten main loop by issuing `emscripten_cancel_main_loop()`. This will stop execution of the main loop function and prevent any further iterations
 
-If you need to pass arguments to the loop function there is `emscripten_set_main_loop_with_arg()`
+If you need to pass arguments to the loop function there is <a href="https://emscripten.org/docs/api_reference/emscripten.h.html#c.emscripten_set_main_loop_arg" target="_blank">emscripten_set_main_loop_arg</a>
 
 You can find more info in the <a href="https://emscripten.org/docs/porting/emscripten-runtime-environment.html#browser-main-loop" target="_blank">official Emscripten documentation</a>
 
