@@ -3,7 +3,7 @@ layout: nocomments
 title: About Me
 ---
 
-<p style="text-align: center;">Husband, Father, Coder. Polyglot Programmer, Lifelong Learner. Collector of Retro Computers. I've been perpetually programming for 20+ years and love taking on new <a href="/projects">projects</a>.</p>
+<p style="text-align: center;">Husband, Father, Coder, Lifelong Learner. Collector of Retro Computers. I've been perpetually programming for 20+ years and love taking on new <a href="/projects">projects</a>.</p>
 
 ![James Mackenzie](/img/about/james-mackenzie.jpg)
 
