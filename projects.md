@@ -7,7 +7,9 @@ title: Projects
 
 Status: *In Progress*
 
-Bringing the DOS classic <a href="https://en.wikipedia.org/wiki/Commander_Keen">Commander Keen</a> to <a href="https://en.wikipedia.org/wiki/PlayStation_Vita">PlayStation Vita</a>, courtesy of <a href="https://vitasdk.org/">Vita SDK</a>. Will require a hacked Vita to run
+Goal: Bring the DOS classic <a href="https://en.wikipedia.org/wiki/Commander_Keen">Commander Keen</a> to <a href="https://en.wikipedia.org/wiki/PlayStation_Vita">PlayStation Vita</a>
+
+Approach: Will use the <a href="https://vitasdk.org/">Vita SDK</a> homebrew framework. Will require a hacked Vita to run
 
 Updates:
 - <a href="https://twitter.com/jamesfmackenzie/status/1193643306850369536">Game engine successfully running on a real Vita</a> - 10 Nov 2019
@@ -17,12 +19,25 @@ Updates:
 
 Status: *Completed November 2019*
 
-Porting <a href="https://en.wikipedia.org/wiki/Commander_Keen">Commander Keen</a> to <a href="https://en.wikipedia.org/wiki/WebAssembly">WebAssembly</a>, making it playable in the Browser. You can play it <a href="http://jamesfmackenzie.com/chocolatekeen">right here</a>, and learn more <a href="http://www.jamesfmackenzie.com/2019/10/28/commander-keen-ported-to-webassembly/">here</a>. Source code is also available <a href="https://github.com/jamesfmackenzie/chocolatekeen">on GitHub</a>
+Goal: Port <a href="https://en.wikipedia.org/wiki/Commander_Keen">Commander Keen</a> to <a href="https://en.wikipedia.org/wiki/WebAssembly">WebAssembly</a>, making it playable in the Browser
+
+Summary:
+- Play Commander Keen in the browser right <a href="http://jamesfmackenzie.com/chocolatekeen">here</a>!
+- Find instructions <a href="http://www.jamesfmackenzie.com/2019/10/28/commander-keen-ported-to-webassembly/">here</a>
+- Source code is also available <a href="https://github.com/jamesfmackenzie/chocolatekeen">on GitHub</a>
 
 
 ### Learning about WebAssembly
 
-Project completed November 2019
+Status: *Completed November 2019*
+
+Goal: Learn about <a href="https://en.wikipedia.org/wiki/WebAssembly">WebAssembly</a>. Understand how to make C/C++ code run in the Browser. Code some "Hello World" examples and document my findings
+
+Findings:
+- <a href="http://www.jamesfmackenzie.com/2019/11/30/whats-is-webassembly-hello-world/">Lesson 1: WebAssembly Hello World</a>
+- <a href="http://www.jamesfmackenzie.com/2019/12/01/webassembly-graphics-with-sdl/">Lesson 2: Graphics with SDL</a>
+- <a href="http://www.jamesfmackenzie.com/2019/12/03/webassembly-emscripten-loops/">Lesson 3: Emscripten Loops</a>
+- <a href="http://www.jamesfmackenzie.com/2019/12/08/webassembly-loading-files/">Lesson 4: File System Access</a>
 
 
 ### RetroPie and Moonlight setup
