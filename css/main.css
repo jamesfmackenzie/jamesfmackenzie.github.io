@@ -124,6 +124,16 @@ header span {
 
 /* end header styles */
 
+.navRow {
+  text-align: center;
+}
+
+.navRow a {
+  text-transform: none;
+  font-weight: unset;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* aside styles */
 
 aside {
@@ -336,6 +346,12 @@ footer a:hover {
   }
   header .row {
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navRow {
+    display: none;
   }
 }
 
