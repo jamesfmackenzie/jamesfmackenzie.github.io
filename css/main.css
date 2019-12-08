@@ -132,6 +132,7 @@ header span {
   text-transform: none;
   font-weight: unset;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
 }
 
 /* aside styles */
