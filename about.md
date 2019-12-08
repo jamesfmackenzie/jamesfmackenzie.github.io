@@ -3,7 +3,7 @@ layout: nocomments
 title: About Me
 ---
 
-<p style="text-align: center;">Husband, Father, Engineering Lead <a href="https://twitter.com/GoldmanSachs" target="_blank">@GoldmanSachs</a>. Passionate about Tech, Programming, Clean Code, Agile, Retro Computing, Video Games, Productivity.</p>
+<p style="text-align: center;">Husband, Father, Coder. Polyglot Programmer, Lifelong Learner. I've been programming for the last 20+ years and love to take on new coding challenges.</p>
 
 ![James Mackenzie](/img/about/james-mackenzie.jpg)
 
