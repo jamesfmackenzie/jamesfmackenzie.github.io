@@ -7,6 +7,6 @@ title: About Me
 
 ![James Mackenzie](/img/about/james-mackenzie.jpg)
 
-<p>Find project updates here and on <a href="https://youtube.com/jamesfmackenzie" target="_blank">YouTube</a>. For discussion head to <a href="https://twitter.com/jamesfmackenzie" target="_blank">Twitter</a>. Code commits on <a href="https://github.com/jamesfmackenzie" target="_blank">GitHub</a> and professional bio on <a href="https://www.linkedin.com/in/jamesfmackenzie" target="_blank">LinkedIn</a>.</p>
+<p style="text-align: center;">Find project updates here and on <a href="https://youtube.com/jamesfmackenzie" target="_blank">YouTube</a>. For discussion head to <a href="https://twitter.com/jamesfmackenzie" target="_blank">Twitter</a>. Code commits on <a href="https://github.com/jamesfmackenzie" target="_blank">GitHub</a> and professional bio on <a href="https://www.linkedin.com/in/jamesfmackenzie" target="_blank">LinkedIn</a>.</p>
 
 <p style="text-align: center;">The opinions on this blog are my own</p>
