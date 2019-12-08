@@ -24,7 +24,7 @@ emcc myfile.c -o myfile.html --preload-file asset_dir
 
 This will generate `myfile.html`, `myfile.js` and `myfile.data`. The .data file contains all the files in `asset_dir/`, and is loaded by `myfile.js`
 
-Any file API calls made in `myfile.c` will work as if they had native access to the files stored under `asset_dir` - except they will operate on the preloaded copies of those files and not touch the original source files on the local files system 
+Any file API calls made in `myfile.c` will work as if they had native access to the files stored under `asset_dir` - except they will operate on the preloaded copies of those files and not touch the original source files on the local file system 
 
 To package using embedding:
 
