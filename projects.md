@@ -36,68 +36,78 @@ Posts:
 
 ## Learning about WebAssembly
 
-Status: *Completed November 2019*
-
-Goal: Learn about <a href="https://en.wikipedia.org/wiki/WebAssembly">WebAssembly</a>. Understand how to make C/C++ code run in the Browser. Code some "Hello World" examples and document my findings
+Status | Completed November 2019
+Goal | Learn about <a href="https://en.wikipedia.org/wiki/WebAssembly">WebAssembly</a>. Understand how to make C/C++ code run in the Browser. Code some "Hello World" examples and document my findings
 
 Findings:
-- <a href="http://www.jamesfmackenzie.com/2019/11/30/whats-is-webassembly-hello-world/">Lesson 1: WebAssembly Hello World</a>
-- <a href="http://www.jamesfmackenzie.com/2019/12/01/webassembly-graphics-with-sdl/">Lesson 2: Graphics with SDL</a>
-- <a href="http://www.jamesfmackenzie.com/2019/12/03/webassembly-emscripten-loops/">Lesson 3: Emscripten Loops</a>
-- <a href="http://www.jamesfmackenzie.com/2019/12/08/webassembly-loading-files/">Lesson 4: File System Access</a>
+- [Lesson 1: WebAssembly Hello World]({% post_url 2019-11-30-whats-is-webassembly-hello-world %}) - 30 Nov 2019
+- [Lesson 2: Graphics with SDL]({% post_url 2019-12-01-webassembly-graphics-with-sdl %}) - 01 Dec 2019
+- [Lesson 3: Emscripten Loops]({% post_url 2019-12-03-webassembly-emscripten-loops %}) - 03 Dec 2019
+- [Lesson 4: File System Access]({% post_url 2019-12-08-webassembly-loading-files %}) - 08 Dec 2019
 
+<br />
 
-## RetroPie and Moonlight setup
+## Ultimate Retrogaming Machine
 
-Project completed October 2018
+Status | Completed October 2018
+Goal | Build a cheap, small and light device to retrogame on the big screen
 
+I selected the <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> and <a href="https://retropie.org.uk/" target="_blank">RetroPie</a> as the base for my build. After a week-or-so of on/off tweaking, I found optimal settings and documented the full setup [here]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). For Phase 2, I [configured Moonlight Game Streaming]({% post_url 2018-11-17-gamestream-moonlight-on-retropie %}) to allow low latency streaming of more demanding titles from my gaming PC
 
-## Atari ST on the web (June 2018)
+Posts:
+- [RetroPie Ultimate Setup Guide]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}) - 08 Oct 2018
+- [Stream PC Games to your RetroPie with GameStream and Moonlight]({% post_url 2018-11-17-gamestream-moonlight-on-retropie %}) - 08 Oct 2018
 
-Project completed June 2018
+<br />
 
+## Atari ST on the Web
+
+Status | Completed June 2018
+Goal | Connect my venerable [Atari ST]({% post_url 2015-08-15-atari-in-the-attic %}) to the World Wide Web. Browse some sites!
+
+Starting with a <a href="https://lotharek.pl/productdetail.php?id=46" target="_blank">NetUSBee</a> Ethernet adapter, I <a href="http://hardware.atari.org/manuals/netsting.htm" target="_blank">installed TOS drivers and the STinG TCP/IP stack</a>. With those (and succesful TCP/IP ping) in place, I <a href="https://breakintochat.com/blog/2017/09/05/web-browsing-on-the-atari-st-with-a-cosmosex/" target="_blank">downloaded and configured Crystal Atari Browser (CAB)</a>. <a href="https://twitter.com/jamesfmackenzie/status/1004495104885886978" target="_blank">Hey presto!</a>
+
+<br />
 
 ## VR panoramas
 
-Project completed November 2016
+Status | Completed November 2016
+Goal | Learn how to shoot, display and share VR panoramas
 
+Pending
+
+<br />
 
 ## Transferring files from PC to ST and vice versa
 
-Project completed March 2016
+Status | Completed March 2016
+Goal | Can my Atari ST interoperate with modern PCs? What are the best ways to send files back and forth?
 
+Pending
 
-March 2016)
+<br />
 
 ## Playing downloaded games on real ST hardware (Sep 2015)
 
-Project completed September 2015
+Status | Completed September 2015
+Goal | My old ST disks are dead! Can I download a replacement image from the web and play on my physical ST?
+
+Pending
+
+<br />
 
 ## Watch mobile content on the go
 
-Project completed December 2014
+Status | Completed December 2014
+Goal | Download video content to my mobile device so I can watch it on the go
+
+Pending
+
+<br />
 
 ## Ghost blogging
 
-Project completed June 2014
+Status | Completed June 2014
+Goal | Learn how to use the Ghost blogging platform
 
-
-
-<p style="text-align: center;">Placeholder for Projects</p>
-
-List:
-- Ghost blogging (~June 2014)
-- Watch mobile content on the go (Dec 2014)
-- Playing downloaded games on real ST hardware (Sep 2015)
-- Transferring files from PC to ST and vice versa (March 2016)
-- VR panoramas (Nov 2016)
-- Atari ST on the web (June 2018)
-- RetroPie and Moonlight setup (Oct 2018)
-- Porting Commander Keen to WebAssembly (Oct 2019)
-- Learning about WebAssembly (Nov 2019)
-- Porting Commander Keen to PS Vita (ongoing)
-
-Perhaps I can generalise some of the above into "bringing old games to new platforms"
-
-Don't forget to link in YouTube videos and GitHub code where appropriate
-
+Pending
