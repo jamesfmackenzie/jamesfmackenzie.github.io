@@ -69,30 +69,63 @@ Starting with a <a href="https://lotharek.pl/productdetail.php?id=46" target="_b
 
 <br />
 
-## VR panoramas
+## Shooting and Sharing VR Photos
 
 Status | Completed November 2016
-Goal | Learn how to shoot, display and share VR panoramas
+Goal | Learn how to shoot, interactively view and share VR photos
 
-Pending
+Ever seen one of those photos you can zoon and pan around?
+
+VR photography (after Virtual Reality photography) is the art of capturing or creating a complete scene as a single image, as viewed when rotating about a single central position
+
+I want to know how to shoot, interactively view and share my own photos
+
+I learned that the Google Street View app is a cheap and easy way to shoot images as equirectangar format. I then learned how to convert these imagss into to various formats other including cube-face and .pano files. Finally I learned how to share to Photosyth, Facebook and YouTube
+
+Posts:
+- Publishing VR Panoramas to YouTube - 08 Sep 2019
+- All You Need to Know about 360 VR Photos - 02 Nov 2016
+- Convert Equirectangular Projection to .Pano File - 30 Oct 2016
+- What are .pano files? - 29 Oct 2016
+- Publishing VR Panoramas to Photosynth - 28 Oct 2016
+- Convert Equirectangular Projection to Cube Faces - 18 Oct 2016
+- Publishing VR Panoramas to Facebook - 12 Oct 2016
 
 <br />
 
-## Transferring files from PC to ST and vice versa
+## Transferring files between PC and ST
 
 Status | Completed March 2016
-Goal | Can my Atari ST interoperate with modern PCs? What are the best ways to send files back and forth?
+Goal | Explore the various ways to share files between PC and Atari ST
 
-Pending
+Can my Atari ST interoperate with modern PCs? What are the best ways to send files back and forth?
+
+I explored several ways to transfer files between PC and Atari ST, including:
+
+- Using an SD card and Ultrasatan to Transfer Files from PC to ST - 08 Mar 2016
+- Using Ethernet to Transfer Files from PC to ST - 07 Mar 2016
+- Using PARCP-USB to Transfer Files from PC to ST - 24 Feb 2016
+- Using Serial Cable and ZMODEM to Transfer Files from PC to ST - 13 Feb 2016
+- Using Serial Cable and Ghostlink to Transfer Files from PC to ST - 06 Feb 2016
+- Using Floppy Disk to Transfer Files from PC to ST - 30 Jan 2016
+
+I also took a detour into file compression, and learned how to split large files into chunks that can be individually copied using (for example) floppy disks:
+
+- How to Split and Copy Large Files to Your Atari ST in Chunks - 31 Jan 2016
 
 <br />
 
 ## Playing downloaded games on real ST hardware (Sep 2015)
 
 Status | Completed September 2015
-Goal | My old ST disks are dead! Can I download a replacement image from the web and play on my physical ST?
+Goal | Download an Atari ST game image from the web and play it on my real ST
 
-Pending
+My old ST disks are dead! Can I download a replacement image from the web and play on my physical ST?
+
+I explored several options, including floppy disk images and hard disk adaptations:
+
+- Use Your PC to Create a Bootable Atari ST Game Disk - 22 Sep 2015
+- Playing Downloaded Games on a Real Atari ST - 18 Sep 2015
 
 <br />
 
@@ -101,7 +134,13 @@ Pending
 Status | Completed December 2014
 Goal | Download video content to my mobile device so I can watch it on the go
 
-Pending
+The work commute is a great time to catch up on news, vlogs and other web videos. But cellphone signal is way too patchy for reliable streaming - especially in the subway.
+
+I explored use of the Pocket API and PlexSync to download and push web videos to my phone:
+
+- Sync Web Videos to Your Tablet or Phone, Watch Them Offline - 01 Feb 2015
+- Download Pocket Videos to Your PC - 03 Jan 2015
+- I Can't Stream Video on the Commute. How Can I Fix It? - 17 Dec 2014
 
 <br />
 
@@ -110,4 +149,13 @@ Pending
 Status | Completed June 2014
 Goal | Learn how to use the Ghost blogging platform
 
-Pending
+Note: today I use the Jekyll blog engine
+
+I'm always interested in crisp, lightweight blogging platforms. I took some to learn about the Ghost blogging platform, setup my own developmemt environment and even write my own theme
+
+Posts:
+- Things I Wish I'd Known Before Creating My Own Ghost Theme - 23 Jun 2014
+- It's Done! 8-Bit Memories Ghost Theme - 21 Jun 2014
+- Create Your Own Ghost Theme in 5 Minutes - 10 Jun 2014
+- Setting Up a Ghost Dev Environment - 17 May 2014
+- Getting to Grips With Ghost Themes - 24 Apr 2014
