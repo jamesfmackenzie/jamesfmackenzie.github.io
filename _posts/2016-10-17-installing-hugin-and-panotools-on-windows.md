@@ -3,7 +3,7 @@ layout: post
 title: Installing Hugin and Panotools on Windows
 date: '2016-10-17 20:36:00'
 summary: Hugin and Panotools are two hugely useful tools for image stitching and panorama processing in general ...
-tags: [Photography, Panorama, How To]
+tags: [Photography, VR Photography, How To]
 ---
 
 <a href="http://hugin.sourceforge.net/" target="_blank">Hugin</a> and <a href="http://panotools.sourceforge.net/" target="_blank">Panotools</a> are two hugely useful tools for image stitching and panorama processing in general.
