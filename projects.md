@@ -16,6 +16,24 @@ title: Projects
 * <a href="#Watch Mobile Content on the Go">Watch Mobile Content on the Go</a> - Dec 2014
 * <a href="#Ghost Blogging">Ghost Blogging</a> - Jun 2014
 
+<a name="Quest for the Perfect Emulation Station">
+## Quest for the Perfect Emulation Station
+
+Status | In Progress
+Goal | Find the perfect device to retrogame on the big screen
+
+For the last decade I've been on quest to find the perfect emulation station. The dream is to have something hidden away behind the TV, with a wireless controller so I can get that retro gaming fix on-demand.
+
+Two years ago I [built and custom-configured a Raspberry Pi with RetroPie]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). A great device, but not really powerful enough for the 32-bit console generation upwards. I need something with a bit more grunt, reasonable price (~$100) and good Wife-Acceptance-Factor (no tower PC!)
+
+Options to explore:
+
+- Powerful Single Board Computers e.g. ODROID-XU4
+- Small and light PCs
+- Nvidia Shield TV
+- Jailbroken consoles e.g. Wii, Xbox 360, PlayStation TV
+- FPGA devices e.g. MiSTer
+
 <br />
 
 <a name="Porting Commander Keen to PlayStation Vita">
