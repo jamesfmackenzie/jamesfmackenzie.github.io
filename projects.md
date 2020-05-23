@@ -5,6 +5,7 @@ title: Projects
 
 ## Projects
 
+* <a href="#Quest for the Perfect Emulation Station">Quest for the Perfect Emulation Station</a> - In Progress
 * <a href="#Porting Commander Keen to PlayStation Vita">Porting Commander Keen to PlayStation Vita</a> - In Progress
 * <a href="#Porting Commander Keen to WebAssembly">Porting Commander Keen to WebAssembly</a> - Nov 2019
 * <a href="#Learning about Webassembly">Learning About Webassembly</a> - Nov 2019
