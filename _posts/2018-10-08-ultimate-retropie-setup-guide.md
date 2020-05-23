@@ -215,4 +215,4 @@ sudo reboot
 
 Once the Pi restarts, the border should be gone! There are a bunch of controls to optimize overscan and borders in a more granular way. For more info see the <a href="https://www.raspberrypi.org/documentation/configuration/config-txt/video.md" target="_blank">official Raspberry Pi Video Options documentation</a>
 
-That's it! Enjoy your RetroPie!
+That's it! If you want to play some more demanding games you can [setup Game Streaming]({% post_url 2018-11-17-gamestream-moonlight-on-retropie %}). Otherwise enjoy your RetroPie!
