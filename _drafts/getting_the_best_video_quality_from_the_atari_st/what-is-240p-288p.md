@@ -1,7 +1,6 @@
 ---
 layout: post
 title: What is 240/288p?
-date:
 categories:
 ---
 

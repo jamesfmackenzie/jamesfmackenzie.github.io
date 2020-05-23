@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Running Emulators on a Hacked Wii
-date:
 categories: 
 ---
 

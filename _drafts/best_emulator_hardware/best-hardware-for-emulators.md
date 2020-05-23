@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Best Hardware for Emulators
-date:
 categories: 
 ---
 

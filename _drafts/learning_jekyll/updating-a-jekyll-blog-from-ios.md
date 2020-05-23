@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Updating a GitHub-hosted Jekyll Blog from iOS
-date:
 categories: 
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: What cables should i use?
-date:
 categories: ps2_video_capture
 ---
 
