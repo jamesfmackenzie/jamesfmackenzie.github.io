@@ -19,7 +19,7 @@ The on-board graphics do hold it back a little vs a dedicated GPU, but there are
 
 4K resolution is supported, but only at 30Hz. Move a touch lower to 1440p and you get full 60Hz. The recommended gaming resolution for this device is 1080p.
 
-## Performance Summary
+### Performance Summary
 
 SNES, Genesis | Perfect | Runs perfectly, even with filters and upscaling. Expect anything older than this to run perfectly too
 PlayStation | Perfect | Full speed at PlayStation native and 2x native resolution
@@ -28,7 +28,7 @@ Dreamcast | Perfect | Full speed even with 720p upscale
 Gamecube/Wii | Perfect | Expect full speed at native GC resolution. Pushing to 2x native works well on some games but others struggle
 Saturn | Good | 2D games run perfectly at full speed. 3D games like Sega Rally or Panzer Dragoon struggle a little
 
-## Upgrade Options
+### Upgrade Options
 
 There's space inside for one 2.5" SATA HDD. My unit arrived with a 500GB, 7200rpm drive - but you could easily upgrade to SSD
 
@@ -38,16 +38,3 @@ You can upgrade the CPU. Standard upgrade options are the Core i7-4765T (4 cores
 
 If you want to go off-road in pursuit of max performance, you can get <a href="https://www.ebay.com/itm/293555594492" target="_blank">this beast</a>. It's a laptop Core i7-4750HQ CPU rehoused to fit a Desktop CPU socket. You'll need an upgraded 90W power brick, but the result is a much faster 4-core CPU and (as a bonus) a GPU upgrade to Intel Iris Pro Graphics 5200 - which roughly doubles the 3D graphics capability. The stock cooling seems to be sufficient - learn more <a href="https://forum.kodi.tv/showthread.php?tid=346041" target="_blank">here</a>.
 
-<!---
-## Dreamcast Performance
-
-Notes on ReDream vs Reicast/Flycast
-
-## Gamecube Performance
-
-Native OK, 720p nearly OK but some slowdown
-
-## PlayStation 2 Performance
-
-TBD
---->
