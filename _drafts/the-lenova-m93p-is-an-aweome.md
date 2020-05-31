@@ -7,34 +7,34 @@ tags: [How To, Videogames, Retrogaming]
 
 ![](/img/posts/lenovo-m93p.jpg)
 
-In search of a thin-and-light retrogaming device, I recently purchased a <a href="https://www.lenovo.com/us/en/desktops/thinkcentre/m-series-tiny/m93-m93p/" target="_blank">Lenovo ThinkCenter M93p Tiny Desktop</a> from eBay for ~$100. The form factor look great under a TV and the spec handily beats most Single Board Computers:
+In search of a thin-and-light retrogaming device, I recently purchased a <a href="https://www.lenovo.com/us/en/desktops/thinkcentre/m-series-tiny/m93-m93p/" target="_blank">Lenovo ThinkCenter M93p Tiny Desktop</a> from eBay for ~$100. The form factor looks great under a TV and the spec handily beats most Single Board Computers out there:
 
 - Intel Core i5-4570T (2 cores @2.9GHz)
 - 8GB DDR3 1600MHz RAM
 - 500GB HDD
 - Intel HD Graphics 4600
 
-The on-board graphics do hold it back a little vs a dedicated GPU, but there are always trade-offs in a form factor like this. The good news: emulators usually lean heavily on CPU and light on GPU. There's more than enough grunt here a great emulation experience and even some light PC gaming.
+The on-board graphics do hold it back a little vs a dedicated GPU, but there are always trade-offs in a form factor like this. The good news: emulators usually lean heavily on CPU and light on GPU. There's more than enough grunt here for a great emulation experience and even some light PC gaming.
 
-4K resolution is supported, but only at 30Hz. Move a touch lower to 1440p and you get full 60Hz. The recommended gaming resolution is 1080p.
+4K resolution is supported, but only at 30Hz. Move a touch lower to 1440p and you get full 60Hz. The recommended gaming resolution for this device is 1080p.
 
 ## Performance Summary
 
 SNES, Genesis | Perfect | Runs perfectly, even with filters and upscaling. Expect anything older than this to run perfectly too
-Neo Geo | Perfect | TBD
-PlayStation | TBD | TBD
-Nintendo 64 | TBD | TBD
-Saturn | TBD | TBD
-Atomiswave | TBD | TBD
-Naomi | TBD | TBD
-PSP | TBD | TBD
-Dreamcast | TBD | TBD
-Gamecube/Wii | TBD | TBD
-PlayStation 2 | TBD | TBD
+<!--- Neo Geo | Perfect | TBD -->
+PlayStation | Perfect | Using Beetle PSX, all games run full speed at PlayStation native and 2x native resolution. You may have luck at 3x native too.
+<!--- Nintendo 64 | TBD | TBD -->
+Saturn | Good | Using Beetle Saturn. 2D games run perfectly at full speed. 3D games like Sega Rally or Panzer Dragoon struggle a little
+<!--- Atomiswave | TBD | TBD -->
+<!--- Naomi | TBD | TBD -->
+PSP | Perfect | Using PPSSPP, all games run full speed at native and 2x native resolution. Some games struggle above that
+Dreamcast | Perfect | All games run full speed in ReDream, even with 720p upscale. Reicast and Flycast are too slow
+Gamecube/Wii | Perfect | Expect full speed at native GC resolution. Pushing to 2x native works well on some games but others struggle
+<!--- PlayStation 2 | TBD | TBD
 Nintendo 3DS | TBD | TBD
 Wii U | TBD | TBD
 PlayStation 3 | TBD | TBD
-Switch | TBD | TBD
+Switch | TBD | TBD --->
 
 ## Upgrade Options
 
@@ -46,6 +46,7 @@ You can upgrade the CPU. Standard upgrade options are the Core i7-4765T (4 cores
 
 If you want to go off-road in pursuit of max performance, you can get <a href="https://www.ebay.com/itm/293555594492" target="_blank">this beast</a>. It's a laptop Core i7-4750HQ CPU rehoused to fit a Desktop CPU socket. You'll need an upgraded 90W power brick, but the result is a much faster 4-core CPU and (as a bonus) a GPU upgrade to Intel Iris Pro Graphics 5200 - which roughly doubles the 3D graphics capability. The stock cooling seems to be sufficient - learn more <a href="https://forum.kodi.tv/showthread.php?tid=346041" target="_blank">here</a>.
 
+<!---
 ## Dreamcast Performance
 
 Notes on ReDream vs Reicast/Flycast
@@ -57,3 +58,4 @@ Native OK, 720p nearly OK but some slowdown
 ## PlayStation 2 Performance
 
 TBD
+--->
