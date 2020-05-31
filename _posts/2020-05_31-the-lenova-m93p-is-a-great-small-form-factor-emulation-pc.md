@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Lenovo M93p is an awesome mini emulation PC
+date: '2020-05-31 00:00:02:00'
 summary: Thoughts on the Lenovo M93p Tiny as a small form factor emulation machine
 tags: [How To, Videogames, Retrogaming]
 ---
