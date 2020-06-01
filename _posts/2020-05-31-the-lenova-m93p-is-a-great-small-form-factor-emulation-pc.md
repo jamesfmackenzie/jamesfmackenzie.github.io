@@ -34,8 +34,8 @@ PlayStation | Perfect | Full speed, even with enhanced features like 2x native r
 PSP | Perfect | Full speed at native and 2x native resolution
 Dreamcast | Perfect | The Redream emulator will give you full speed gameplay even with a 720p upscale. Other Dreamcast emulators do not run full speed on this hardware
 Gamecube/Wii | Perfect | Full speed  emulation at native resolution. Higher resolution settings will cause slowdown in some games
-Saturn | Good | 2D games run perfectly at full speed. 3D games like Sega Rally or Panzer Dragoon struggle a little
-
+Saturn | Good | 2D games run perfectly at full speed. 3D games like Sega Rally or Panzer Dragoon can stutter
+PlayStation 2 | OK | Some games run full speed, but graphically intensive games like God of War or Gran Turismo 4 only manage 70-80% which makes gameplay feel sluggish
 
 ### Upgrade Options
 
@@ -50,4 +50,4 @@ If you want to go off-road in pursuit of max performance, you can get <a href="h
 
 ### Conclusion
 
-Given the tiny form factor, the M93p is a really great machine for emulation. It looks great under the TV and will handle most consoles up to Dreamcast and Gamecube perfectly. It's difficult to find better performance for ~$100 unless you go with a much larger tower PC.
+Given the tiny form factor, the M93p is a really great machine for emulation. It looks great under the TV and will handle most consoles up to Dreamcast and Gamecube perfectly. PlayStation 2 is a touch too much for this little machine, but it's difficult to find better performance for ~$100 unless you go with a much larger tower PC.
