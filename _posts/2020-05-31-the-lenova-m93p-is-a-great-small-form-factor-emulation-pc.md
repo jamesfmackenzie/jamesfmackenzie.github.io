@@ -1,8 +1,8 @@
 ---
 layout: post
-title: The Lenovo M93p is an awesome mini emulation PC
+title: Lenovo M93p Tiny – The Best Mini PC for Emulation?
 date: '2020-05-31 00:02:30:00'
-summary: Thoughts on the Lenovo M93p Tiny as a small form factor emulation machine
+summary: Quick thoughts on the Lenovo M93p as a small form factor retrogaming machine
 tags: [How To, Videogames, Retrogaming]
 ---
 
@@ -15,18 +15,27 @@ In search of a thin-and-light retrogaming device, I recently purchased a <a href
 - 500GB HDD
 - Intel HD Graphics 4600
 
+
+### Graphics Capabilities
+
 The on-board graphics do hold it back a little vs a dedicated GPU, but there are always trade-offs in a form factor like this. The good news: emulators usually lean heavily on CPU and light on GPU. There's more than enough grunt here for a great emulation experience and even some light PC gaming.
 
 4K resolution is supported, but only at 30Hz. Move a touch lower to 1440p and you get full 60Hz. The recommended gaming resolution for this device is 1080p.
 
-### Performance Summary
 
-SNES, Genesis | Perfect | Runs perfectly, even with filters and upscaling. Expect anything older than this to run perfectly too
-PlayStation | Perfect | Full speed at PlayStation native and 2x native resolution
+### Emulation Performance
+
+I hope to deep dive on emulation performance in a future post. But broadly it's good news. 16-bit and most 32-bit consoles will run perfectly. Some newer consoles like the Dreamcast, Gamecube and PSP also run great. Find the summary below
+
+Platform | Experience | What to Expect
+--- | --- | ---
+SNES, Genesis | Perfect | Full speed, even with filters and upscaling. Expect anything older than this to run perfectly too
+PlayStation | Perfect | Full speed, even with enhanced features like 2x native resolution
 PSP | Perfect | Full speed at native and 2x native resolution
-Dreamcast | Perfect | Full speed even with 720p upscale
-Gamecube/Wii | Perfect | Expect full speed at native GC resolution. Pushing to 2x native works well on some games but others struggle
+Dreamcast | Perfect | The Redream emulator will give you full speed gameplay even with a 720p upscale. Other Dreamcast emulators do not run full speed on this hardware
+Gamecube/Wii | Perfect | Full speed  emulation at native resolution. Higher resolution settings will cause slowdown in some games
 Saturn | Good | 2D games run perfectly at full speed. 3D games like Sega Rally or Panzer Dragoon struggle a little
+
 
 ### Upgrade Options
 
@@ -38,3 +47,7 @@ You can upgrade the CPU. Standard upgrade options are the Core i7-4765T (4 cores
 
 If you want to go off-road in pursuit of max performance, you can get <a href="https://www.ebay.com/itm/293555594492" target="_blank">this beast</a>. It's a laptop Core i7-4750HQ CPU rehoused to fit a Desktop CPU socket. You'll need an upgraded 90W power brick, but the result is a much faster 4-core CPU and (as a bonus) a GPU upgrade to Intel Iris Pro Graphics 5200 - which roughly doubles the 3D graphics capability. The stock cooling seems to be sufficient - learn more <a href="https://forum.kodi.tv/showthread.php?tid=346041" target="_blank">here</a>.
 
+
+### Conclusion
+
+Given the tiny form factor, the M93p is a really great machine for emulation. It looks great under the TV and will handle most consoles up to Dreamcast and Gamecube perfectly. It's difficult to find better performance for ~$100 unless you go with a much larger tower PC.
