@@ -40,7 +40,9 @@ PlayStation 2 | OK | Some games run full speed, but graphically intensive games 
 
 ### Upgrade Options
 
-There's space inside for one 2.5" SATA HDD. My unit arrived with a 500GB, 7200rpm drive - but you could easily upgrade to SSD. Max memory is 16GB (2x 8GB PC3-12800 DDR3 SODIMMs). My unit arrived with 8GB which is more than enough for retrogaming.
+There's space inside for one 2.5" SATA HDD. My unit arrived with a 500GB, 7200rpm drive - but you could easily upgrade to SSD.
+
+Max memory is 16GB (2x 8GB PC3-12800 DDR3 SODIMMs). My unit arrived with 8GB which is more than enough for retrogaming.
 
 You can upgrade the CPU. Standard upgrade options are the Core i7-4765T (4 cores @2.0GHz) and the Core i7-4785T (4 cores @2.2GHz). Some Xeon CPUs are compatible too. Find the full parts list <a href="https://download.lenovo.com/parts/ThinkCentre/m93_m93p_tiny_07012016.pdf" target="_blank">here</a>.
 
