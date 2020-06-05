@@ -35,6 +35,9 @@ Options to explore:
 - Jailbroken consoles e.g. Wii, Xbox 360, PlayStation TV
 - FPGA devices e.g. MiSTer
 
+Posts:
+- [Lenovo M93p Tiny – The Best Mini PC for Emulation?]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}) - 31 May 2020
+
 <br />
 
 <a name="Porting Commander Keen to PlayStation Vita">
