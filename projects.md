@@ -32,11 +32,11 @@ Options to explore:
 - Powerful Single Board Computers e.g. ODROID-XU4
 - Small and light PCs
 - Nvidia Shield TV
-- Jailbroken consoles e.g. Wii, Xbox 360, PlayStation TV
+- Jailbroken consoles e.g. Wii, Wii U, Xbox 360, PlayStation TV
 - FPGA devices e.g. MiSTer
 
 Posts:
-- [Lenovo M93p Tiny – The Best Mini PC for Emulation?]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}) - 31 May 2020
+- [Lenovo M93p Tiny Review – The Best Mini PC for Emulation?]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}) - 31 May 2020
 
 <br />
 
