@@ -5,7 +5,13 @@ title: Projects
 
 ## Projects
 
+<!--
+
+Note: commenting out until I have more content here. Right now it's just a one off review of the Lenovo M93P. It may morph into an M93P build project
+
 * <a href="#Quest for the Perfect Emulation Station">Quest for the Perfect Emulation Station</a> - In Progress
+
+-->
 * <a href="#Porting Commander Keen to PlayStation Vita">Porting Commander Keen to PlayStation Vita</a> - In Progress
 * <a href="#Porting Commander Keen to WebAssembly">Porting Commander Keen to WebAssembly</a> - Nov 2019
 * <a href="#Learning about Webassembly">Learning About Webassembly</a> - Nov 2019
@@ -16,6 +22,10 @@ title: Projects
 * <a href="#Playing Downloaded Games on Real ST Hardware">Playing Downloaded Games on Real ST Hardware</a> - Sep 2015
 * <a href="#Watch Mobile Content on the Go">Watch Mobile Content on the Go</a> - Dec 2014
 * <a href="#Ghost Blogging">Ghost Blogging</a> - Jun 2014
+
+<!-- 
+
+Note: commenting out until I have more content here. Right now it's just a one off review of the Lenovo M93P. It may morph into an M93P build project
 
 <a name="Quest for the Perfect Emulation Station">
 ## Quest for the Perfect Emulation Station
@@ -36,6 +46,8 @@ Options to explore:
 - FPGA devices e.g. MiSTer
 
 <br />
+
+-->
 
 <a name="Porting Commander Keen to PlayStation Vita">
 ## Porting Commander Keen to PlayStation Vita 
