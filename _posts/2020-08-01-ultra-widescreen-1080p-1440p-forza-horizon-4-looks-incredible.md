@@ -6,6 +6,6 @@ overrideUrl: "https://twitter.com/jamesfmackenzie/status/1289605153121882114?s=2
 tags: [Tweets, Videogames]
 ---
 
-![](/img/posts/forza-horizon-4.png)
+![](/img/posts/forza-horizon-4.jpg)
 
 
