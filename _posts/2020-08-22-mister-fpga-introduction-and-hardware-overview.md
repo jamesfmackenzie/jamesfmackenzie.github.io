@@ -6,6 +6,11 @@ summary: MiSTer is an open project that aims to recreate various classic compute
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/qBDSzpBh_oY?rel=0" 
+frameborder="0" allowfullscreen class="youtube-video"></iframe>
+</div> 
+
 MiSTer is an open project that aims to recreate various classic computers, game consoles and arcade machines using modern FPGA hardware. I plan to deep-dive on some of the retro computing cores – but first a project introduction and hardware overview.
 
 ![](/img/posts/mister-fpga.jpg)
@@ -60,4 +65,4 @@ In terms of <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Addons_Ove
 
 <hr />
 
-That's it for the hardware overview. I hope to deep-dive MiSTer setup and share my experience with some of the retro computing cores soon. In the meantime learn more on the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer wiki</a>.
+That's it for the hardware overview. I hope to deep-dive on MiSTer setup and share my experience with some of the retro computing cores soon. In the meantime learn more on the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer wiki</a>.
