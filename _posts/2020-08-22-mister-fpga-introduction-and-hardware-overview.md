@@ -13,8 +13,6 @@ frameborder="0" allowfullscreen class="youtube-video"></iframe>
 
 MiSTer is an open project that aims to recreate various classic computers, game consoles and arcade machines using modern FPGA hardware. I plan to deep-dive on some of the retro computing cores – but first a project introduction and hardware overview.
 
-![](/img/posts/mister-fpga.jpg)
-
 
 ### Introduction
 
@@ -29,6 +27,8 @@ Most importantly for retro-enthusiats, it's possible to author HDL to replicate 
 
 
 ### What is MiSTer?
+
+![](/img/posts/mister-fpga.jpg)
 
 Realising the potential of the DE10-Nano for retro computing, a developer known as Sorgelig started the <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer project</a> with the specific intent of recreating retro computers, consoles and arcade machines on modern FPGA hardware. "MiSTer" is:
 
