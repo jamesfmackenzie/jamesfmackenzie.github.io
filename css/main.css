@@ -246,6 +246,14 @@ article .youtube-container iframe {
   display: none;
 }
 
+.single-post article h3 {
+  margin-top: 2em;
+}
+
+.single-post article hr {
+  margin: 2em;
+}
+
 .single-post article date {
   display: none;
 }
