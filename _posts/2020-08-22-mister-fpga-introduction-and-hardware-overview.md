@@ -6,6 +6,7 @@ summary: MiSTer is an open project that aims to recreate various classic compute
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
+
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/qBDSzpBh_oY?rel=0" 
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
@@ -27,8 +28,6 @@ Most importantly for retro-enthusiats, it's possible to author HDL to replicate 
 
 
 ### What is MiSTer?
-
-![](/img/posts/mister-fpga.jpg)
 
 Realising the potential of the DE10-Nano for retro computing, a developer known as Sorgelig started the <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer project</a> with the specific intent of recreating retro computers, consoles and arcade machines on modern FPGA hardware. "MiSTer" is:
 
