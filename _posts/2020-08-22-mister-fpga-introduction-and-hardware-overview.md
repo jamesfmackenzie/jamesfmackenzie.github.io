@@ -13,7 +13,7 @@ MiSTer is an open project that aims to recreate various classic computers, game 
 
 ### Introduction
 
-The base hardware is the <a href="https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=1046" target="_blank">Terasic DE10-Nano</a>, which is built as a learning and development platform for FPGA. FPGA stands for <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array" target="_blank">Field-Programmable Gate Array</a> – the key concept here is that FPGA circuits are designed to configured by the developer *after* manufacturing (hence "Field-Programmable").
+The base hardware is the <a href="https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=1046" target="_blank">Terasic DE10-Nano</a>, which is built as a learning and development platform for FPGA. FPGA stands for <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array" target="_blank">Field-Programmable Gate Array</a> – the key concept here is that FPGA circuits are designed to be configured by the developer *after* manufacturing (hence "Field-Programmable").
 
 
 #### How does FPGA work?
@@ -51,7 +51,7 @@ Around the outside we have:
 * An RJ45 socket for Ethernet 
 * A Micro-USB socket to connect your peripherals: mouse, keyboard and gamepad
 
-Underneath the device we have a microSD card slot. The microSD contains the OS and also any cores/software you want to load. The DE10-Nano kit ships with 8GB which is plenty. 
+Underneath the device we have a microSD card slot. The microSD card contains the OS and also any cores/software you want to load. The DE10-Nano kit ships with an 8GB card which is plenty for MiSTer use.
 
 
 #### Add-Ons
@@ -60,4 +60,4 @@ In terms of <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Addons_Ove
 
 <hr />
 
-That's it for the hardware overview. I hope to deep-dive on some of the MiSTer cores and share more content soon. In the meantime learn more on the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer wiki</a>.
+That's it for the hardware overview. I hope to deep-dive MiSTer setup and share my experience with some of the retro computing cores soon. In the meantime learn more on the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer wiki</a>.
