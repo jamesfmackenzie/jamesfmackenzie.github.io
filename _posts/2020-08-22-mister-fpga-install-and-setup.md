@@ -7,7 +7,7 @@ tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
 <div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/G2Lr8q6vFO4?rel=0" 
+<iframe src="https://www.youtube.com/embed/X77hmWYz9VM?rel=0" 
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
@@ -67,6 +67,6 @@ Once complete the DE10-Nano will reboot. When it loads again, you'll see a fully
 
 ### Further reading
 
-For more information, take a look at the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Setup-Guide" target="_blank">Setup Guide</a> on the MiSTer wiki. Enjoy!
+To learn more, read the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Setup-Guide" target="_blank">Setup Guide</a> on the MiSTer wiki. Enjoy!
 
 
