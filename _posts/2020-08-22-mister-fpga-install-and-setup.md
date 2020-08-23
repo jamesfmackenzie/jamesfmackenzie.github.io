@@ -7,7 +7,7 @@ tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
 <div class="youtube-container">
-<iframe src="https://www.youtube.com/watch?v=G2Lr8q6vFO4?rel=0" 
+<iframe src="https://www.youtube.com/embed/G2Lr8q6vFO4?rel=0" 
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
