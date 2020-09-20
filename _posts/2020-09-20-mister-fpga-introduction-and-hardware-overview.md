@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MiSTer FPGA – Intro and Hardware Overview"
-date: '2020-08-22 15:02:00:00'
+date: '2020-09-20 21:19:00:00'
 summary: MiSTer is an open project that aims to recreate various classic computers, game consoles and arcade machines using modern FPGA hardware. I plan to deep-dive on some of the retro computing cores – but first a project introduction and hardware overview ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
