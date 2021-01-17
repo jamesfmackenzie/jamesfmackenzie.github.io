@@ -118,7 +118,7 @@ header nav {
   margin-left: auto;
 }
 
-header span {
+header nav span {
   margin-left: 0.5em;
 }
 
@@ -133,6 +133,14 @@ header span {
   font-weight: unset;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: underline;
+}
+
+.bio span {
+  font-size: 0.88em;
+}
+
+.bio h2 {
+  margin-bottom: 0.3em;
 }
 
 /* aside styles */
@@ -343,11 +351,11 @@ footer a:hover {
 
 /* optimize for small screens */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 859px) {
   body {
     font-size: 1em;
   }
-  nav {
+  .desktopOnly {
     display: none;
   }
   header {
@@ -356,10 +364,13 @@ footer a:hover {
   header .row {
     justify-content: center;
   }
+  .bio {
+	text-align: center;
+  }
 }
 
-@media only screen and (min-width: 769px) {
-  .navRow {
+@media only screen and (min-width: 860px) {
+  .mobileOnly {
     display: none;
   }
 }

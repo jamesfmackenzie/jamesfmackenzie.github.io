@@ -17,15 +17,21 @@
 <body>
 	<header>
 		<div class="row">
-			<h2><a href="/">{{ site.name }}</a></h2>
-			<nav>
+			<img class="desktopOnly" src="/img/layout/logo.png" />
+			<img class="mobileOnly" src="/img/layout/logo-small.png" />
+			<div class="bio">
+				<h2><a href="/">{{ site.name }}</a></h2>
+				<span>{{ site.shortDescription }}</span>
+				<br /><br />
+			</div>
+			<nav class="desktopOnly">
 				<span><a href="/">Blog</a></span>
 				<span><a href="/projects">Projects</a></span>
 				<span><a href="/about">About</a></span>
 				<span><a href="/sitemap">Sitemap</a></span>
 			</nav>
 		</div>
-		<div class="navRow">
+		<div class="navRow mobileOnly">
 			<span><a href="/">Blog</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/sitemap">Sitemap</a></span>
 			<br /><br />
 		</div>
