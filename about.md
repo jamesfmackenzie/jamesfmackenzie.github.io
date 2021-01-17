@@ -7,4 +7,4 @@ title: About Me
 
 Husband, Father, Coder. Lifelong Learner. Retro Gamer and Collector of Retro Computers. Perpetually Programming for 20+ Years.
 
-Starter of <a href="/projects">many hobbytime rojects</a> and finisher of none. Occasional <a href="https://youtube.com/jamesfmackenzie" target="_blank">YouTuber</a> and compulsive <a href="https://twitter.com/jamesfmackenzie" target="_blank">Tweeter</a>. Code commits on <a href="https://github.com/jamesfmackenzie" target="_blank">GitHub</a>. The opinions on this blog are my own.
+Starter of <a href="/projects">many hobbytime projects</a> and finisher of none. Occasional <a href="https://youtube.com/jamesfmackenzie" target="_blank">YouTuber</a> and compulsive <a href="https://twitter.com/jamesfmackenzie" target="_blank">Tweeter</a>. Code commits on <a href="https://github.com/jamesfmackenzie" target="_blank">GitHub</a>. The opinions on this blog are my own.
