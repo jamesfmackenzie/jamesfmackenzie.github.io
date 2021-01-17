@@ -367,6 +367,9 @@ footer a:hover {
   .bio {
 	text-align: center;
   }
+  .bio span {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (min-width: 860px) {
