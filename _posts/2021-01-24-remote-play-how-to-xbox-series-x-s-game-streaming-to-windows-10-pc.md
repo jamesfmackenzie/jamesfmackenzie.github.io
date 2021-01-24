@@ -6,7 +6,7 @@ summary: How to stream Xbox Series X/S gameplay to your Windows 10 PC ...
 tags: [Xbox, Streaming, Videogames]
 ---
 
-Ever used the Xbox Console Companion app to <a href="https://support.xbox.com/en-US/help/games-apps/apps-help/how-to-use-game-streaming-in-xbox-console-companion-app" target="_blank">remote play Xbox One games from your PC</a>? Frustratingly, this feature was silently dropped for Xbox Series S/X - it just doesn't work for these new consoles
+Ever used the Xbox Console Companion app to <a href="https://support.xbox.com/en-US/help/games-apps/apps-help/how-to-use-game-streaming-in-xbox-console-companion-app" target="_blank">remote play Xbox One games from your PC</a>? Frustratingly, this feature was silently dropped for Xbox Series S/X – it just doesn't work for these new consoles
 
 However all is not lost. By installing the hidden "Xbox Game Streaming (Test App)" from the Windows 10 Store, you can start streaming again. Here's how:
 
@@ -20,5 +20,6 @@ However all is not lost. By installing the hidden "Xbox Game Streaming (Test App
 
 5. Play games!
 
-Game Streaming is a great option when the main TV is occupied. I shared some more thoughts <a href="https://twitter.com/jamesfmackenzie/status/1353344939472654336?s=21" target="_blank">on Twitter</a>
+Game Streaming is a great option when the main TV is occupied. I've shared some more thoughts <a href="https://twitter.com/jamesfmackenzie/status/1353344939472654336?s=21" target="_blank">on Twitter</a>
 
+![](/img/posts/xbox-series-s-x-game-streaming-windows-pc.png)
