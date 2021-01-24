@@ -3,7 +3,7 @@ layout: post
 title: Using Play to Streaming With Xbox One
 date: '2014-03-22 17:36:00'
 summary: Earlier this week, I asked myself the question Can I stream video from PC to Xbox One? ...
-tags: [Xbox One, Media, Streaming, DLNA, Play To]
+tags: [Xbox, Media, Streaming, DLNA, Play To]
 ---
 
 Earlier this week, I asked myself the question [Can I stream video from PC to Xbox One?]({% post_url 2014-03-19-can-i-stream-video-from-pc-to-the-xbox-one %})
