@@ -14,7 +14,7 @@ However all is not lost. By installing the hidden "Xbox Game Streaming (Test App
 
 2. Copy and paste this this URL: <code>https://www.microsoft.com/es-es/p/xbox-game-streaming-test-app/9nzbpvpnldgm?activetab=pivot:overviewtab</code>. Hit Enter
 
-3. Download the following file: <code>Microsoft.XboxGameStreaming-ContentTest_1.2011.301.0_neutral<wbr>_~_8wekyb3d8bbwe<wbr>.appxbundle</code>. It should be ~300MB
+3. Download the following file: <code>Microsoft.XboxGameStreaming-ContentTest_1.2011.301.0_neutral_<w r>~_8wekyb3d8bbwe.appxbundle</code>. It should be ~300MB
 
 4. Double click to install the app. If you run into a security error you may need to <a href="https://www.windowscentral.com/how-enable-windows-10-sideload-apps-outside-store" target="_blank">enable Sideloading</a>
 
