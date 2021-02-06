@@ -33,7 +33,9 @@ For advanced MiSTer configuration, you’ll need remote console access. We'll us
 
 1. Download <a href="https://www.putty.org/" target="_blank">PuTTY</a>, a popular and multiplatform SSH client
 
-2. Setup an SSH connection with the following details: <br /><br />![](/img/posts/mister_putty_connection_details.png)
+2. Setup an SSH connection with the following details:
+
+    ![](/img/posts/mister_putty_connection_details.png)
 
 3. Hit *Open*. When prompted for a username enter <code>root</code> and for the password enter <code>1</code>
 
