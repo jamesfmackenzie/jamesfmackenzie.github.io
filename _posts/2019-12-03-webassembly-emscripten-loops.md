@@ -170,4 +170,9 @@ If the build fails, try downloading and activating the "fastcomp" version of the
 
 When you run this sample, you'll immediately see the main issue with Emterpreter - it's incredibly slow. The stack has to be unwound and reassembled for every `emscripten_sleep()` call - an expensive operation. The recommendation is to use Emterpreter sparingly and refactor towards Emscripten loops wherever you can
 
-That's the end of Lesson 3! Next time we'll look at FileIO
+That's the end of Lesson 3! Next up: [FileIO]({% post_url 2019-12-08-webassembly-loading-files %})
+
+
+### Other Posts in this Series
+
+{% include webassembly-learning-series.md %}

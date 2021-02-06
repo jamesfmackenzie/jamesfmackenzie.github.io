@@ -240,4 +240,10 @@ With these changes, we can compile the above code into WebAssembly with Emscript
 
 That's the end of Lesson 2! Next time we'll look at [Emscripten Loops]({% post_url 2019-12-03-webassembly-emscripten-loops %})
 
+
+### Other Posts in this Series
+
+{% include webassembly-learning-series.md %}
+
+
  

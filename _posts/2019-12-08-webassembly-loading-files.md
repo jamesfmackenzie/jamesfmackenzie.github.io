@@ -35,3 +35,8 @@ emcc myfile.c -o myfile.html --embed-file asset_dir
 This will work the same as preloading, except the files under `asset_dir/` will be serialised and included inside `myfile.js`. As mentioned above, this is less efficient than preloading and should only be used for simple cases with few files
 
 Find more detail on packaging files and the Emscripten virtual file system <a href="https://emscripten.org/docs/porting/files/packaging_files.html#packaging-files" target="_blank">here</a>
+
+
+### Other Posts in this Series
+
+{% include webassembly-learning-series.md %}

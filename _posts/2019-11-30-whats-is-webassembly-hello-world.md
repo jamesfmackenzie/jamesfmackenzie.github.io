@@ -92,3 +92,8 @@ Alternatively use lightweight Web Server software such as <a href="https://www.n
 Congratulations! You're up and running with WebAssembly!
 
 Next time we'll look at [WebAssembly graphics with SDL]({% post_url 2019-12-01-webassembly-graphics-with-sdl %})
+
+
+### Other Posts in this Series
+
+{% include webassembly-learning-series.md %}
