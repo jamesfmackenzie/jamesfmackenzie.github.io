@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MiSTer FPGA – Intro and Hardware Overview"
+title: "MiSTer FPGA Part 1 – Intro and Hardware Overview"
 date: '2020-08-22 15:02:00:00'
 summary: MiSTer is an open project that aims to recreate various classic computers, game consoles and arcade machines using modern FPGA hardware. I plan to deep-dive on some of the retro computing cores – but first a project introduction and hardware overview ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
@@ -64,4 +64,9 @@ In terms of <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Addons_Ove
 
 <hr />
 
-That's it for the hardware overview. I hope to deep-dive on MiSTer setup and share my experience with some of the retro computing cores soon. In the meantime learn more on the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer wiki</a>.
+That's it for the hardware overview. Next up: [Install and Setup]({% post_url 2020-09-20-mister-fpga-install-and-setup %}).
+
+
+### Other Posts in this Series
+
+{% include mister-fpga-series.md %}

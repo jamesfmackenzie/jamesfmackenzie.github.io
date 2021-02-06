@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MiSTer FPGA – Network Access and Copying Files"
+title: "MiSTer FPGA Part 3 – Network Access and Copying Files"
 date: '2021-01-31 13:54:00:00'
 summary: How to copy files to your MiSTer over the network ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
@@ -68,8 +68,10 @@ You can use <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" targe
 
 4. Close FileZilla once done
 
-That’s the basics! Now you're ready to use some cores
+That’s the basics! Now you're ready to use some cores. I hope to publish some deep-dives soon. In the meantime find the list of cores on the excellent <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" target="_blank">MiSTer wiki</a>.
 
 
+### Other Posts in this Series
 
+{% include mister-fpga-series.md %}
 
