@@ -35,8 +35,9 @@ For advanced MiSTer configuration, you’ll need remote console access. We'll us
 
 2. Setup an SSH connection with the following details:
 
-    ![](/img/posts/mister_putty_connection_details.png)
+![](/img/posts/mister_putty_connection_details.png)
 
+{:start="3"}
 3. Hit *Open*. When prompted for a username enter <code>root</code> and for the password enter <code>1</code>
 
 Now you're succesfully logged in, you can navigate the MiSTer file system. Some useful locations:
@@ -56,8 +57,13 @@ You can use <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" targe
 
 1. Download and install <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>, a free and popular file transfer client
 
-2. Choose *File -> Site Manager*. Hit *New site* and setup a connection with the following details: <br /><br /> ![](/img/posts/mister_filezilla_connection_details.png)<br />As before, the username is <code>root</code> and the password is <code>1</code>
+2. Choose *File -> Site Manager*. Hit *New site* and setup a connection with the following details:
 
+![](/img/posts/mister_filezilla_connection_details.png)
+
+*As before, the username is <code>root</code> and the password is <code>1</code>*
+
+{:start="3"}
 3. Navigate to <code>/media/fat/games</code>. This is where MiSTer stores all games/ROMs/imags for each core. Drag and drop files to copy
 
 4. Close FileZilla once done
