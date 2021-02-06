@@ -48,8 +48,7 @@ Here we generate all the tags.
       <a target="_blank" href="{{ post.overrideUrl }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
     {% else %}
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-		{% endif %}
-    </h3>
+	{% endif %}
   </li>
   {% endif %}
   {% endfor %}
