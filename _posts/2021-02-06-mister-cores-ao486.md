@@ -98,7 +98,7 @@ Time to install the Operating System. On the MiSTer:
 ![](/img/posts/mister-ao486-dos-622-install-switch-disk-2.png)
 
 {:start="5"}
-5. At the final stage, you'll be asked to "Remove disks for all floppy disk drives". Follow the same steps to switch disk, but this time hit *Backspace* to unmount the floppy:
+5. At the final stage, you'll be asked to "Remove disks for all floppy disk drives". Follow the same disk switch steps as above, but this time hit *Backspace* to unmount the floppy:
 
 ![](/img/posts/mister-ao486-dos-622-install-remove-disk.png)
 
@@ -108,6 +108,45 @@ Time to install the Operating System. On the MiSTer:
 
 ![](/img/posts/mister-ao486-boot-from-dos-622.png)
 
+
+#### Step 5 – Install Doom
+
+Let's install and play Doom. From the DOS prompt:
+
+1. *Windows Key* + *F12* for ao486 core options, set *Floppy A:* to the Doom <code>disk1.img</code>
+
+2. Change to the floppy drive by typing <code>A:</code>. Type <code>INSTALL.BAT</code> to begin the Doom install
+
+![](/img/posts/mister-ao486-install-doom-1.png)
+
+3. Follow the default install options. You'll be asked to switch disk a few times. You know what to do.
+
+![](/img/posts/mister-ao486-install-doom-2.png)
+
+![](/img/posts/mister-ao486-install-doom-3.png)
+
+
+
+#### Step 6 – Doom Sound Setup
+
+After the install completes, Doom Setup will automatically launch. You'll need to configure sound hardware
+
+1. When prompted to select a *Music Playback Device* or *Sound FX Device*, select <code>Sound Blaster</code>
+
+![](/img/posts/mister-ao486-doom-setup-1.png)
+
+2. When prompted to select *PORTs*, *IRQs* or *DMA Channels*, take the pre-selected options (PORT = <code>220</code>, IRQ = <code>5</code>, DMA = <code>1</code>)
+
+3. Once you're done, hit *Save Settings & Run Doom*
+
+![](/img/posts/mister-ao486-doom-setup-2.png)
+
+
+#### Step 7 – Play Doom!
+
+![](/img/posts/mister-ao486-doom-1.png)
+
+![](/img/posts/mister-ao486-doom-2.png)
 
 
 ### Other Posts in this Series
