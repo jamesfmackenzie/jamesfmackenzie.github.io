@@ -91,14 +91,14 @@ Time to install the Operating System. On the MiSTer:
 ![](/img/posts/mister-ao486-dos-622-install-setup.png)
 
 {:start="4"}
-4. You'll be be asked to switch disk a few times. Hit *Windows Key* + *F12* for ao486 core options, set *Floppy A:* to <code>disk2.img</code> or <code>disk3.img</code> as prompted, then bit *Esc*:
+4. You'll be be asked to switch disk a few times. Hit *Windows Key* + *F12* for ao486 core options, set *Floppy A:* to <code>disk2.img</code> or <code>disk3.img</code> as prompted, then hit *Esc*:
 
 ![](/img/posts/mister-ao486-dos-622-install-switch-disk.png)
 
 ![](/img/posts/mister-ao486-dos-622-install-switch-disk-2.png)
 
 {:start="5"}
-5. At the final stage, you'll be asked to "Remove disks for all floppy disk drives". Follow the same disk switch steps as above, but this time hit *Backspace* to unmount the floppy:
+5. At the final stage, you'll be asked to "Remove disks from all floppy disk drives". Follow the same disk switch steps as above, but this time hit *Backspace* to unmount the floppy:
 
 ![](/img/posts/mister-ao486-dos-622-install-remove-disk.png)
 
@@ -121,15 +121,14 @@ Time to install Doom! From the DOS prompt:
 ![](/img/posts/mister-ao486-install-doom-1.png)
 
 {:start="3"}
-3. Follow the default install options. You'll be asked to switch disk a few times. Follow the same steps outlined above:
+3. Follow the default install options. You'll be asked to switch disk a few times. Follow the same disk switch steps outlined above:
 
 ![](/img/posts/mister-ao486-install-doom-2.png)
 
 
-
 #### Step 6 – Doom Sound Setup
 
-After the install completes, Doom Setup will automatically launch. You'll need to configure sound hardware
+After the install completes, Doom Setup will automatically launch. You'll need to configure sound hardware:
 
 1. When prompted to select *Music Playback Device* or *Sound FX Device*, choose <code>Sound Blaster</code>:
 
@@ -145,7 +144,7 @@ After the install completes, Doom Setup will automatically launch. You'll need t
 
 #### Step 7 – Play Doom!
 
-You're good to go! Doom runs relatively well, but is pushing the limits of what plays well on the ao486 core. Look for more deep dives in future!
+You're good to go! Doom runs relatively well but is pushing the limits of what plays well on the ao486 core. Look for more deep dives in future!
 
 ![](/img/posts/mister-ao486-doom-1.png)
 
