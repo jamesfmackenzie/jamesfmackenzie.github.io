@@ -123,7 +123,7 @@ Time to install Doom! From the DOS prompt:
 {:start="3"}
 3. Follow the default install options. You'll be asked to switch disk a few times. Follow the same steps outlined above:
 
-![](/img/posts/mister-ao486-install-doom-3.png)
+![](/img/posts/mister-ao486-install-doom-2.png)
 
 
 
