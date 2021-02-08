@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MiSTer Cores – ao486 DOS Quick Start"
+title: "MiSTer AO486 Core – DOS Quick Start"
 date: '2021-02-06 18:21:00:00'
 summary: Deep dive on the MiSTer AO486 Core ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
@@ -30,7 +30,7 @@ In addition to the CPU, the ao486 core also includes:
 
 ### DOS Quick Start
 
-Some quick steps to get up and running with DOS and a copy of <a href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)" target="_blank">Doom</a>.
+These are some quick and lean steps to get up and running with DOS and a copy of <a href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)" target="_blank">Doom</a>. "Extras" like CD-ROM support, memory management etc will wait for future posts.
 
 
 #### Step 1 – Download and Copy Install Media
@@ -144,7 +144,7 @@ After the install completes, Doom Setup will automatically launch. You'll need t
 
 #### Step 7 – Play Doom!
 
-You're good to go! Doom runs relatively well but is pushing the limits of what plays well on the ao486 core. Look for more deep dives in future!
+You're good to go! Doom runs relatively well but is pushing the performance limits of this ao486 core. Look for more deep dives in future!
 
 ![](/img/posts/mister-ao486-doom-1.png)
 
