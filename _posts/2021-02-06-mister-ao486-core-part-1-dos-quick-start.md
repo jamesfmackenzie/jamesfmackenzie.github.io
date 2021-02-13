@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MiSTer AO486 Core – DOS Quick Start"
+title: "MiSTer AO486 Core Part 1 – DOS Quick Start"
 date: '2021-02-06 18:21:00:00'
 summary: Deep dive on the MiSTer AO486 Core ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
