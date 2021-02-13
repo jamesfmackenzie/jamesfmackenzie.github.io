@@ -1,32 +1,59 @@
 ---
 layout: post
-title: "MiSTer AO486 Core Part 2 – Transferring Files With MiSTerFS"
+title: "MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS"
 date: '2021-02-13 06:41:00:00'
 summary: Sharing files with MiSTerFS ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
-You have the ao486 core setup with DOS. What’s next?
+You have the [ao486 core setup and DOS installed]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}). What’s next?
 
-A super convenient feature of the ao486 core is to share files between ao486 and the DOS operating system - so you can copy files directly and then access them in Dos as a mounted drive. Here’s how
+One super-convenient ao486 feature is MiSTerFS – a file transfer solution that allows you to share files directly into ao486's DOS file system. Traditionally you'd use <a href="https://en.wikipedia.org/wiki/Disk_image" target="_blank">mounted disk images</a> to transfer files, but with MiSTerFS it's just drag and drop! Way easier. Here's how to get started.
 
-### Installing MiSTerFS
+### Step 1 – Download and Install MiSTerFS
 
-	1. Download misters floppy image
+To install MiSTerFS:
 
-	1. Mount floppy image on ao486
+1. Download <a href="https://misterfpga.org/download/file.php?id=676" target="_blank">this MiSTerFS floppy image</a> (hosted on <a href="https://misterfpga.org/" target="_blank">MiSTer Forum</a>) and extract it
 
-	2. Copy misterfs to the hard disk
+2. Use a file transfer tool like FileZilla to copy the floppy image to <code>/media/fat/games/AO486</code> on your MiSTer (reminder on how to do that [here]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %})). You should have a single file name <code>misterfs.img</code>:
 
-	3. Update autoexec.bat
+![](/img/posts/mister-ao486-misterfs-floppy-image.png)
 
-Add the following line to autoexec.bat:
+{:start="3"}
+3. Still in FileZilla, create a new folder: <code>/media/fat/games/AO486/shared</code> (if it doesn't exist already). This is the "drop" folder you'll use to transfer files to ao486:
 
-LH C:\MISTERFS.EXE E /Q
+![](/img/posts/mister-ao486-misterfs-create-shared-folder-using-filezilla.png)
 
-This quiet-loads MiSTerFS into upper memory with drive letter E:
+{:start="4"}
+4. Power up the ao486 core and mount the MiSTerFS floppy image (*Windows Key* + *F12* for ao486 core options, set *Floppy A:* to <code>misterfs.img</code>)
 
-### Using MiSTerFS
+![](/img/posts/mister-ao486-mount-misterfs-floppy-image-in-ao486.png)
+
+{:start="5"}
+5. Run the following commands to copy the MiSTerFS executable to your hard disk:
+
+```
+md c:\misterfs
+copy a:\misterfs.exe c:\misterfs
+```
+
+![](/img/posts/mister-ao486-copy-misterfs-files-to-ao486-dos.png)
+
+{:start="5"}
+6. Still on your MiSTer, type <code>edit c:\autoexec.bat</code>. An editor application will open. Add the following line:
+
+```
+LH C:\MISTERFS\MISTERFS.EXE E /Q
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This quiet-loads MiSTerFS into upper memory with drive letter <code>E:</code>. Hit *Alt+F,S* to save the file and then *Alt+F,X* to exit
+
+
+That's the setup done. Unmount <code>misterfs.img</code>, reboot the ao486 core and get ready to transfer files! 
+
+
+### Step 2 – Using MiSTerFS
 
 	1. Open FileZilla
 
@@ -42,6 +69,8 @@ PICTURR
 
 
 
+
+https://misterfpga.org/download/file.php?id=676
 
 
 

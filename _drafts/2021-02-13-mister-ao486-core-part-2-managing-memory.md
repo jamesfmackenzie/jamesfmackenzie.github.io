@@ -31,6 +31,76 @@ Ultima VII is a game that uses its own memory manager and won't run with either 
 
 
 
+CONFIG.SYS
+
+[menu]
+menuitem=EMC, Expanded memory + Mouse + CD-ROM
+menuitem=XMC, Extended memory + Mouse + CD-ROM
+menuitem=CMC, Conventional Memory only + Mouse + CD-ROM
+menuitem=EM, Expanded memory + Mouse
+menuitem=XM, Extended memory + Mouse
+menuitem=CM, Conventional memory only + Mouse
+menuitem=E, Expanded memory
+menuitem=X, Extended memory
+menuitem=C, Conventional memory only
+
+
+menudefault=EMC,10
+
+[EMC]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+DEVICE=C:\DOS\EMM386.EXE RAM
+DEVICEHIGH=C:\DRIVERS\VIDECDD.SYS /D:OPTICAL
+
+[XMC]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+DEVICEHIGH=C:\DRIVERS\VIDECDD.SYS /D:OPTICAL
+
+[CMC]
+DEVICEHIGH=C:\DRIVERS\VIDECDD.SYS /D:OPTICAL
+
+[EM]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+DEVICE=C:\DOS\EMM386.EXE RAM
+
+[XM]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+
+[CM]
+
+[E]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+DEVICE=C:\DOS\EMM386.EXE RAM
+
+[X]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+
+[C]
+
+
+
+
+
+AUTOEXEC.BAT
+
+SET TEMP=C:\DOS
+GoTo %config%
+:EMC
+:XMC
+:CMC
+LH C:\DOS\MSCDEX.EXE /D:OPTICAL
+:EM
+:XM
+:CM
+LH C:\DRIVERS\CTMOUSE.EXE /R2
+:E
+:X
+:C
+
+
+
+
+
 
 
 
