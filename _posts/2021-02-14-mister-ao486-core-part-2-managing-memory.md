@@ -6,7 +6,7 @@ summary: Decoding XMS/EMS etc ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
-You've [installed DOS]({% post_url mister-ao486-core-part-1-dos-quick-start %}). Next we need to look at memory management.
+You've [installed DOS]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}). Next we need to look at memory management.
 
 Some DOS games require <a href="https://en.wikipedia.org/wiki/Extended_memory" target="_blank">Extended Memory</a> to be configured. Some take advantage of <a href="https://en.m.wikipedia.org/wiki/Expanded_memory" target="_blank">Expanded Memory (EMS)</a> and some only need the original 640kB of DOS <a href="https://en.wikipedia.org/wiki/Conventional_memory" target="_blank">Conventional Memory</a>. Others still do their own memory management.
 
