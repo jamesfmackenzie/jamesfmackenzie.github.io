@@ -18,7 +18,11 @@ There's no "one size fits all" – DOS needs to be configured differently for di
 Type <code>edit c:\config.sys</code>. An editor application will open. Update <code>config.sys</code> to the following:
 
 ````
-[menu]
+[COMMON]
+FILES=30
+LASTDRIVE=Z
+
+[menu]  
 menuitem=X, Extended memory (default)
 menuitem=E, Extended + Expanded memory
 menuitem=C, Conventional memory only
@@ -29,19 +33,13 @@ menudefault=X,10
 DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
 DOS=HIGH,UMB
 DEVICE=C:\DOS\EMM386.EXE NOEMS I=C800-CDFF X=CE00-CFFF I=D000-EFFF
-FILES=30
-LASTDRIVE=Z
 
 [E]
 DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
 DOS=HIGH,UMB
 DEVICE=C:\DOS\EMM386.EXE RAM 8192 FRAME=D000 D=256 I=C800-CDFF X=CE00-CFFF I=D000-EFFF
-FILES=30
-LASTDRIVE=Z
 
 [C]
-FILES=30
-LASTDRIVE=Z
 ````
 
 Hit *Alt+F,S* to save the file, then *Alt+F,X* to exit the editor. Reboot ao486.
