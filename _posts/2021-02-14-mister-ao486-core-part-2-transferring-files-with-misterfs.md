@@ -6,7 +6,7 @@ summary: Sharing files with MiSTerFS ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
-You have the [ao486 core setup and DOS installed]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}). What’s next?
+You have the [ao486 core setup and DOS installed]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}), but what’s next?
 
 One super-convenient ao486 feature is MiSTerFS – a file transfer solution that allows you to share files directly into ao486's DOS file system. Traditionally you'd use <a href="https://en.wikipedia.org/wiki/Disk_image" target="_blank">mounted disk images</a> to transfer files, but with MiSTerFS it's just drag and drop! Way easier. Here's how to get started.
 
@@ -56,23 +56,18 @@ That's the setup done. Unmount <code>misterfs.img</code>, reboot the ao486 core 
 
 ### Step 2 – Using MiSTerFS
 
-File transfer between PC and ao486 works in both directions. To copy files from your PC to ao486:
+File transfer between PC and ao486 works in both directions. To copy files from PC to ao486:
 
-1. Open a file tranfer tool (e.g. FileZilla) on your PC
+1. Open a file transfer tool (e.g. FileZilla) on your PC
 
 2. Navigate to <code>/media/fat/games/AO486</code>
 
-3. Create a folder named <code>shared</code> (if it doesn’t exist already):
-
-![](/img/posts/mister-ao486-misterfs-create-shared-folder-using-filezilla.png)
-
-{:start="4"}
-4. Drag-and-drop files into the <code>shared</code> folder:
+3. Drag-and-drop files into the <code>shared</code> folder:
 
 ![](/img/posts/mister-ao486-misterfs-copy-files-to-shared-folder-using-filezilla.png)
 
-{:start="5"}
-5. In ao486, verify that the files appear under the <code>E:</code> drive:
+{:start="4"}
+4. In ao486, verify that the files appear under the <code>E:</code> drive:
 
 ![](/img/posts/mister-ao486-misterfs-files-copied-to-dos-using-filezilla.png)
 
