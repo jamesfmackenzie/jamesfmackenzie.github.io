@@ -15,6 +15,12 @@ There's no "one size fits all" – DOS needs to be configured differently for di
 
 ### Update CONFIG.SYS
 
+**Quick version with MiSTerFS:**
+
+Copy/Paste the code below and save it as <code>CONFIG.SYS</code>. Use [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}) to transfer it to AO486 and copy to <code>C:\CONFIG.SYS</code> (overwrite the existing file with this new one). Reboot AO486.
+
+**Without MiSTerFS**:
+
 Type <code>edit c:\config.sys</code>. An editor application will open. Update <code>config.sys</code> to the following:
 
 ````
@@ -42,19 +48,21 @@ DEVICE=C:\DOS\EMM386.EXE RAM 8192 FRAME=D000 D=256 I=C800-CDFF X=CE00-CFFF I=D00
 [C]
 ````
 
-Hit *Alt+F,S* to save the file, then *Alt+F,X* to exit the editor. Reboot ao486.
-
-When DOS starts again, you'll have a choice of memory configurations.
+Hit *Alt+F,S* to save the file, then *Alt+F,X* to exit the editor. Reboot AO486.
 
 
-#### Note: Included/Excluded Memory Ranges
+### A Note on Included/Excluded Memory Ranges
 
 You might have noticed the <code>I=</code> ("Include") and <code>X=</code> ("Exclude") parameters above. These are used tell EMM386 which memory segements it can/can't use for Extended/Expanded memory.
 
-The AO486 core uses memory segments between <code>CE00</code> and <code>CFFF</code> for system features (including [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %})). The code above prevents EMM386 from using segments in this range – otherwise the system may hang/crash.
+The AO486 core reserves memory segments between <code>CE00</code> and <code>CFFF</code> for system features (including [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %})). The code above prevents EMM386 from using segments in this range – otherwise the system may hang/crash.
 
 
 ### Making a Memory Choice
+
+When DOS starts again, you'll have a choice of memory configurations:
+
+![](/img/posts/mister-ao486-misterfs-emm386-expanded-extended-conventional-memory-choice.png)
 
 For most software and games, the default option 1 (<code>Extended memory</code>) will work. This is also a good choice for booting windows.
 
