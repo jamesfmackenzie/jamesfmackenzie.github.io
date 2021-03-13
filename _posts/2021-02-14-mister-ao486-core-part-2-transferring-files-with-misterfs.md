@@ -54,6 +54,15 @@ LH C:\UTILS\MISTERFS\MISTERFS.EXE E /Q
 That's the setup done. Unmount <code>misterfs.img</code>, reboot the ao486 core and get ready to transfer files! 
 
 
+### A Note on Memory Managers
+
+If you're using a DOS Memory Manager like <a href="https://en.wikipedia.org/wiki/EMM386" target="_blank">EMM386</a> or <a href="https://en.wikipedia.org/wiki/QEMM" target="_blank">QEMM</a>, there are some extra steps you need to take.
+
+AO486 core reserves memory segments between <code>CE00</code> and <code>CFFF</code> for MiSTerFS and other system features. If you don't protect this memory range, the system may hang or crash. 
+
+See [MiSTer AO486 Core Part 3 – Managing Memory]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %}) to learn more.
+
+
 ### Step 2 – Using MiSTerFS
 
 File transfer between PC and ao486 works in both directions. To copy files from PC to ao486:
