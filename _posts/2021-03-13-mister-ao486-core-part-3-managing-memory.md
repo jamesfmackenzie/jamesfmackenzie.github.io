@@ -15,7 +15,7 @@ There's no "one size fits all" – DOS needs to be configured differently for di
 
 ### Update CONFIG.SYS
 
-**Quick version with MiSTerFS:**
+**Quick version with [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %})**
 
 Copy/Paste the code below and save it as <code>CONFIG.SYS</code>. Use [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}) to transfer it to ao486 and copy to <code>C:\CONFIG.SYS</code> (overwrite the existing file with this new one). Reboot ao486.
 
