@@ -71,6 +71,13 @@ Some games (e.g. Wing Commander 1 and 2) make use of Expanded memory. Use option
 Lastly, some games (e.g. Ultima VII) use their own memory manager and won't work with either Expanded or Extended memory. For these use option 3.
 
 
+### Next Posts
+
+* [MiSTer AO486 Core Part 4 – Sound and Music Setup]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %})
+* [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %})
+* [MiSTer AO486 Core Part 6 – Mouse Support]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %})
+
+
 ### Other Posts in this Series
 
 {% include mister-fpga-series.md %}
