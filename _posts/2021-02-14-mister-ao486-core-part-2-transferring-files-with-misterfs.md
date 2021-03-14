@@ -49,7 +49,7 @@ copy a:\misterfs.exe c:\utils\misterfs
 LH C:\UTILS\MISTERFS\MISTERFS.EXE E /Q
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This quiet-loads MiSTerFS into upper memory with drive letter <code>E:</code>. Hit *Alt+F,S* to save the file and then *Alt+F,X* to exit
+<blockquote>This quiet-loads MiSTerFS into upper memory with drive letter <code>E:</code>. Hit <i>Alt+F,S</i> to save the file and then <i>Alt+F,X</i> to exit</blockquote>
 
 That's the setup done. Unmount <code>misterfs.img</code>, reboot the ao486 core and get ready to transfer files! 
 
@@ -58,7 +58,7 @@ That's the setup done. Unmount <code>misterfs.img</code>, reboot the ao486 core 
 
 If you're using a DOS Memory Manager like <a href="https://en.wikipedia.org/wiki/EMM386" target="_blank">EMM386</a> or <a href="https://en.wikipedia.org/wiki/QEMM" target="_blank">QEMM</a>, there are some extra steps you need to take.
 
-AO486 core reserves memory segments between <code>CE00</code> and <code>CFFF</code> for MiSTerFS and other system features. If you don't protect this memory range, the system may hang or crash. 
+The ao486 core reserves memory segments between <code>CE00</code> and <code>CFFF</code> for MiSTerFS and other system features. If you don't protect this memory range, the system may hang or crash. 
 
 See [MiSTer AO486 Core Part 3 – Managing Memory]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %}) to learn more.
 
@@ -71,7 +71,7 @@ File transfer between PC and ao486 works in both directions. To copy files from 
 
 2. Navigate to <code>/media/fat/games/AO486</code>
 
-3. Drag-and-drop files into the <code>shared</code> folder:
+3. Drag-and-drop files into the <code>shared</code> folder. Filenames must fit the <a href="https://en.wikipedia.org/wiki/8.3_filename" target="_blank">8.3 filename standard</a>
 
 ![](/img/posts/mister-ao486-misterfs-copy-files-to-shared-folder-using-filezilla.png)
 
@@ -83,6 +83,11 @@ File transfer between PC and ao486 works in both directions. To copy files from 
 To transfer files from ao486 to PC, simply do the reverse.
 
 That's it for MiSTerFS. You'll come to rely on this a lot for file transfer.
+
+
+### Next Post
+
+* [MiSTer AO486 Core Part 3 – Managing Memory]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %})
 
 
 ### Other Posts in this Series
