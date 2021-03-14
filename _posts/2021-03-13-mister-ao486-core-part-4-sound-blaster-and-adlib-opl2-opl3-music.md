@@ -20,7 +20,7 @@ IRQ | 5
 DMA (Low/8-bit) | 1
 DMA (High/16-bit) | 5
 
-Many games can auto-detect these settings, but others read resource information from the BLASTER environment variable. To get this configured:
+Many games can auto-detect these settings, but others read resource information from the <a href="https://retronn.de/imports/soundblaster_config_guide.html" target="_blank">BLASTER environment variable</a>. To get this configured:
 
 1. From the DOS command prompt, type <code>edit C:\AUTOEXEC.BAT</code>. An editor application will open. Add the following line to your <code>AUTOEXEC.BAT</code>:
 
