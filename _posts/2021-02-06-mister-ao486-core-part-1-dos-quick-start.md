@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "MiSTer AO486 Core Part 1 – DOS Quick Start"
+title: "MiSTer AO486 Core Part 1 – Getting Started"
 date: '2021-02-06 18:21:00:00'
-summary: Deep dive on the MiSTer AO486 Core ...
+summary: Getting started with MS-DOS and the MiSTer AO486 core ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
@@ -28,7 +28,7 @@ In addition to the CPU, the ao486 core also includes:
 - 2 virtual CD-ROM drives
 
 
-### DOS Quick Start
+### Getting Started
 
 These are some quick and lean steps to get up and running with DOS and a copy of <a href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)" target="_blank">Doom</a>. "Extras" like CD-ROM support, memory management etc will wait for future posts.
 
@@ -149,6 +149,11 @@ You're good to go! Doom runs relatively well but is pushing the performance limi
 ![](/img/posts/mister-ao486-doom-1.png)
 
 ![](/img/posts/mister-ao486-doom-2.png)
+
+
+### Next Post
+
+* [MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %})
 
 
 ### Other Posts in this Series
