@@ -6,6 +6,25 @@ summary: Installing CD-ROM drivers for the MiSTer ao486 core ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
+Notes:
+
+1. MUNT install
+   soundfonts
+
+2. ao486 serial config
+
+3. UDPMIDI - to listen on UDP. Have to update IP address
+
+4. firewall setup. UDP 1999 incoming
+
+5. Fluidsynth in WSL
+
+6. VirtualMIDISynth + SC-55 SoundFonts
+
+sudo apt-get install -y fluidsynth
+
+
+
 You have the ao486 core setup with DOS. You have file sharing enabled via MiSTerFS. What’s next?
 
 Did you know that ao486 has built-in CD-ROM support? You can mount CD-ROM drive via ISO or BIN/CUE files. Here's how
