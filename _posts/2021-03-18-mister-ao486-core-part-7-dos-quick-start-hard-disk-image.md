@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MiSTer AO486 Core Part 7 – \"Quick Start\" Hard Disk Image"
-date: '2021-03-17 06:44:00:00'
+date: '2021-03-18 00:59:00:00'
 summary: To get gaming fast, download this "quick start" hard disk image ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
@@ -71,7 +71,7 @@ You can copy games files/executables directly into the DOS partition via MiSTerF
 
 If you want to build and customize your own hard disk image (and learn along the way), here's how:
 
-1. [Create a blank hard disk image and install DOS 6.22]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-getting-started %})
+1. [Create a blank hard disk image and install DOS 6.22]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %})
 2. [Configure MiSTerFS for easy file transfer]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %})
 3. [Install EMM386 memory manager]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %}) (required for games that require Expanded/Extended memory)
 4. [Set the BLASTER environment variable]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %}). Some games use this for sound/music setup
