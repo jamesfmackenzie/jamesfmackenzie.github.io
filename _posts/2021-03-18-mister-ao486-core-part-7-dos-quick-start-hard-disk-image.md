@@ -11,7 +11,7 @@ tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 To get gaming fast, use this "quick start" hard disk image, complete with:
 
 * DOS 6.22 pre-installed
-* Memory manager (EMM386) with boot configurations for Extended/Expanded memory
+* Memory manager (<a href="https://en.wikipedia.org/wiki/EMM386" target="_blank">EMM386</a>) with boot configurations for Extended/Expanded memory
 * Sound Blaster, CD-ROM and mouse drivers
 * MiSTerFS sharing (allows easy file-sharing between PC and ao486)
 
