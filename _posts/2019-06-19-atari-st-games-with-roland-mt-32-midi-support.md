@@ -3,7 +3,7 @@ layout: post
 title: Games With MIDI. The Atari ST Never Sounded So Good! 
 date: '2019-06-19 23:11:00'
 summary: We all love to hate the Atari ST’s integated Yamaha YM2149F sound chip. It’s 3 bloopy voices gave a decidedly 8-bit feel that suffered in comparison to the 16-bit competition ...
-tags: [Atari, Atari ST, Retrogaming, Retrocomputing, Videogames]
+tags: [Atari, Atari ST, Retrogaming, Retrocomputing, Videogames, MIDI]
 ---
 
 We all love to hate the Atari ST's integated Yamaha YM2149F sound chip. It's 3 bloopy voices gave a decidedly 8-bit feel that suffered in comparison to the 16-bit competition
