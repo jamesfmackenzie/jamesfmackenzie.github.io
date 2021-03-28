@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "MiSTer AO486 Core Part 7 – \"Quick Start\" Hard Disk Image"
+title: "MiSTer AO486 Core Part 7 – Quick Start Hard Disk Image"
 date: '2021-03-18 00:59:00:00'
-summary: To get gaming fast, download this "quick start" hard disk image ...
+summary: To get gaming fast, download this quick start hard disk image ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
