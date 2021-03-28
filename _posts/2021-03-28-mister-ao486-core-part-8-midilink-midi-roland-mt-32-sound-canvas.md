@@ -135,14 +135,24 @@ In this mode, MidiLink will transmit MIDI data onto the network as <a href="http
 
 ![](/img/posts/mister-ao486-midilink-udp-udpmidi.png)
 
+
+#### UDP Troubleshooting 
+
 If you have trouble receiving packets, check your personal firewall. I use <a href="https://en.wikipedia.org/wiki/Windows_Firewall" target="_blank">Windows Defender Firewall</a> and had to add an incoming rule to allow private network traffic on UDP port 1999:
 
 ![](/img/posts/mister-ao486-midilink-udp-udpmidi-incoming-firewall-rule.png)
 
+As an alternative to UDPMIDI, it's also possible to build MidiLink <a href="https://github.com/bbond007/MiSTer_MidiLink" target="_blank">from source</a> and run in "listen" mode. The command line args are:
+
+* <code>UDPMUNT</code> – to listen and forward to Munt 
+* <code>UDPFSYNTH</code> – to listen and forward to FluidSynth
+
+You can even run MidiLink on <a href="https://github.com/dwhinham/mt32-pi" target="_blank">mt32-pi</a> for an "appliance-like" solution. More details <a href="https://misterfpga.org/viewtopic.php?f=27&t=375" target="_blank">here</a>.
+
 
 ### Wrap Up
 
-That’s it! Hope you find this information useful for your own MIDI adventures!
+That’s it! We've explored all facets of MidiLink and MIDI playback options in ao486. Good luck with your own MIDI adventures!
  
  
 ### Other Posts in this Series
