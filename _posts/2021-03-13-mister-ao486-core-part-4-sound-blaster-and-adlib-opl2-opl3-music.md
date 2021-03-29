@@ -50,8 +50,11 @@ For game setup:
 * OPL2/3 *can* be accessed on the Sound Blaster ports (220-223 and 228-229 for OPL2 only), but it's recommended to use the AdLib ports 388-38B instead
 * If CM/S audio is enabled, it *prevents* OPL2/3 access on ports 220-223. However 388-38B still work
 
-That's it for sound setup. Next:
+That's it for sound setup.
 
+Next:
+
+* [MiSTer AO486 – Roland MT-32, Sound Canvas Audio via MidiLink]({% post_url 2021-03-28-mister-ao486-core-part-8-midilink-midi-roland-mt-32-sound-canvas %})
 * [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %})
 * [MiSTer AO486 Core Part 6 – Mouse Support]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %})
 
