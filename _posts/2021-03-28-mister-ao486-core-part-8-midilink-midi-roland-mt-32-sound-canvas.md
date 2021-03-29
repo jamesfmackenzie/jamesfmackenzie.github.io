@@ -72,6 +72,8 @@ Connection: MIDI
 
 We'll explore each of these below.
 
+Whichever option you pick, the MIDI port is always <code>330</code> (for use during game setup).
+
 
 ### Roland MT-32 Playback via MUNT
 
