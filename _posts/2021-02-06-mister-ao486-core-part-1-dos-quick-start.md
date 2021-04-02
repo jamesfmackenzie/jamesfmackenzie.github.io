@@ -54,14 +54,14 @@ Next you need to install the ao486 <a href="https://en.wikipedia.org/wiki/BIOS" 
 
 1. Visit <a href="https://github.com/MiSTer-devel/ao486_MiSTer/tree/master/releases/bios" target="_blank">this Releases page</a> on GitHub
 
-2. Download, extract and [copy]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) boot0.rom and boot1.rom to <code>/media/fat/games/AO486</code> on your MiSTer:
+2. Download and [copy]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) boot0.rom and boot1.rom to <code>/media/fat/games/AO486</code> on your MiSTer:
 
 ![](/img/posts/mister-ao486-bios-boot-roms.png)
 
 
 #### Step 3 – Create a Hard Disk
 
-1. SSH into your MiSTer and navigate to <code>/media/fat/games/AO486</code>
+1. <a href="https://en.wikipedia.org/wiki/Secure_Shell_Protocol" target="_blank">SSH</a> into your MiSTer and navigate to <code>/media/fat/games/AO486</code> (see "Shell Access" on [this page]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) to learn how)
 
 2. Invoke the following command to create a 2GB file (*DOS.vhd*) filled with zeros. We'll use this for our primary hard disk:
 
