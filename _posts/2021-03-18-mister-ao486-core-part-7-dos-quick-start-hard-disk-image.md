@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "MiSTer AO486 Core Part 7 – Quick Start Hard Disk Image"
+title: "MiSTer AO486 Core Part 7 – Quick Start DOS Image"
 date: '2021-03-18 00:59:00:00'
-summary: To get gaming fast, download this quick start hard disk image ...
+summary: To get gaming fast, download this quick start DOS image ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
@@ -22,17 +22,22 @@ Setup takes ~10 minutes. Here's how to get started.
 
 1. Download <a href="https://1drv.ms/u/s!AhPM2FpzJ_ovgSdQMvoD_BlPvMJe?e=VVoRq5" target="_blank">this hard disk image</a> and extract it. It'll expand to ~2GB in size
 
-2. Use a file transfer tool like FileZilla to copy the floppy image to <code>/media/fat/games/AO486</code> on your MiSTer (learn how to do that [here]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %})). You should have a single file named <code>DOS622.vhd</code>:
+2. Use a file transfer tool like FileZilla to copy the image to <code>/media/fat/games/AO486</code> on your MiSTer (learn how to do that [here]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %})). You should have a single file named <code>DOS622.vhd</code>:
 
 ![](/img/posts/mister-ao486-dos-quick-start-dos622-copy-vhd-hard-disk-drive-image.png)
 
 {:start="3"}
-3. Power up the ao486 core and mount the hard drive  (*Windows Key* + *F12* for ao486 core options, set *IDE 0-0* to <code>DOS622.vhd</code>):
+3. Download boot0.rom and boot1.rom from <a href="https://github.com/MiSTer-devel/ao486_MiSTer/tree/master/releases/bios" target="_blank">this Releases page</a>. [Copy]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) them to <code>/media/fat/games/AO486</code> on your MiSTer:
+
+![](/img/posts/mister-ao486-dos-quick-start-dos622-copy-boot-roms.png)
+
+{:start="4"}
+4. Power up the ao486 core and mount the hard drive  (*Windows Key* + *F12* for ao486 core options, set *IDE 0-0* to <code>DOS622.vhd</code>):
 
 ![](/img/posts/mister-ao486-dos-quick-start-dos622-mount-vhd-hard-disk-drive-image.png)
 
-{:start="4"}
-4. Still in the core options menu, select *Reset and apply HDD*. The core will reboot and load DOS.  The following indicates a succesful load:
+{:start="5"}
+5. Still in the core options menu, select *Reset and apply HDD*. The core will reboot and load DOS.  The following indicates a succesful load:
 
 ![](/img/posts/mister-ao486-dos-quick-start-first-boot.png)
 
