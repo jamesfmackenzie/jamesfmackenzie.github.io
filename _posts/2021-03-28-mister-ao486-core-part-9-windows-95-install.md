@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "MiSTer AO486 Core Part 9 – Windows 95 Install"
+title: "MiSTer AO486 Core Part 9 – Installing Windows 95"
 date: '2021-03-28 15:12:00:00'
-summary: How to install Windows 95 on ao486 ...
+summary: You've installed DOS on ao486, but what about Windows 95? Find out how ...
 tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
 ---
 
