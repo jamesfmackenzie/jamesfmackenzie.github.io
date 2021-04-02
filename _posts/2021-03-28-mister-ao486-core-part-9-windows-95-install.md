@@ -162,7 +162,7 @@ To re-enable the Hard Disk Driver:
 ![](/img/posts/mister-ao486-windows-95-control-panel-device-manager-remove-hard-disk-controller.png)
 
 {:start="2"}
-2. Click *Close*, then navigate to <code>My Computer → C: → Windows → System → Iosubsys</code>. Rename <code>Esdi_506.bak</code> to <code>Esdi_506.pdr</code>:
+2. Click *OK*, then navigate to <code>My Computer → C: → Windows → System → Iosubsys</code>. Rename <code>Esdi_506.bak</code> to <code>Esdi_506.pdr</code>:
 
 ![](/img/posts/mister-ao486-windows-95-rename-esdi-506-pdr-hard-disk-driver-windows.png)
 
