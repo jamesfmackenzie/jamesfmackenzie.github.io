@@ -76,21 +76,6 @@ Next we need to partition the hard disk. On the MiSTer:
 * <code>Esc</code> to go back to the FDISK options menu
 * <code>Esc</code> twice again to exit FDISK
 
-<!--
-{:start="5"}
-5. Now we need to partition the storage disk. Still in FDISK, choose the following options:
-
-* <code>5</code> to *Change current fixed disk drive*
-* <code>2</code> to select the storage disk
-* <code>1</code> to *Create DOS Partition or Logical Drive*
-* <code>2</code> to *Create Extended DOS Partition*
-* <code>Enter</code> to use *Maximum space available*
-* <code>Esc</code> to *Create Logical DOS Drive*
-* <code>Enter</code> to use *Maximum space available for logical drive*
-* <code>Esc</code> to go back to the FDISK options menu
-* <code>Esc</code> twice again to exit FDISK
--->
-
 <blockquote>Now reboot AO486 (<i>Windows Key</i> + <i>F12</i>, <i>Reset and apply HDD</i>).</blockquote>
 
 ![](/img/posts/mister-ao486-fdisk-partition-windows-95-hard-disk.png)
@@ -160,7 +145,7 @@ ren ESDI_506.PDR ESDI_506.BAK
 
 Windows 95 will start for the first time. Follow the last few setup steps to set your username, password, timezone etc.
 
-Once those are done, the Windows 95 desktop will load:
+Once those are done, the Windows 95 desktop will load!
 
 ![](/img/posts/mister-ao486-welcome-to-windows-95.png)
 
