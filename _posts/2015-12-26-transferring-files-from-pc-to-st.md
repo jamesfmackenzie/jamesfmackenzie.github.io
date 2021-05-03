@@ -16,3 +16,8 @@ At some point, you'll most likely want to transfer files from PC to ST. Some com
 * [Use SD card]({% post_url 2016-03-08-use-ultrasatan-sd-card-to-transfer-files-from-pc-to-st %})
 
 In addition, you might want to split large files up to facilitate easier transfer. You can find more about that [here]({% post_url 2016-01-31-using-arj-to-split-and-copy-large-files-to-your-atari-st-in-chunks %}).
+
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

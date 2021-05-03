@@ -51,3 +51,7 @@ Open a command prompt and type <code>nona</code>. You should see the following h
 ![Hugin bin directory is in the Path](/img/posts/nona-test.png)
 
 That's it!
+
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}

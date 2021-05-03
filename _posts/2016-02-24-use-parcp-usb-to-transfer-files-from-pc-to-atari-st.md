@@ -75,3 +75,7 @@ Owing to the (relative) high bandwidth of your ST's parallel port, the file tran
 Back on the ST, hit <code>Ctrl+Alt+Shift</code> to shut down the PARCP server. You'll drop back to the GEM desktop and (all things going well) your transferred file should be staring you in the face. Easy peasy!
 
 ![](/img/posts/parcp_transferred_file.png "File Transfer Success!")
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

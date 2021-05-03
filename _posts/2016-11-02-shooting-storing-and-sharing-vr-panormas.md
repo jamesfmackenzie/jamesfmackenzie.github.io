@@ -80,3 +80,7 @@ If you shoot (or [convert to]({% post_url 2016-10-30-convert-equirectangular-360
 ![OneDrive 360 VR viewer. Click and drag to pan around the scene](/img/posts/church-pano-onedrive.jpg)
 
 Happy shooting!
+
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}

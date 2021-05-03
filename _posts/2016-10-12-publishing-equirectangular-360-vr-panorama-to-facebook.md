@@ -31,3 +31,7 @@ Pan around until you find the sweet spot and then hit "Post".
 ### 3. Enjoy!
 
 That's it! Your 360 photo is published for all your friends to see.
+
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}

@@ -53,3 +53,7 @@ This will produce 6 images, one for each cube face:
 ![Output cubefaces](/img/posts/cubefaces.png)
 
 Job done!
+
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}

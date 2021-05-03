@@ -159,3 +159,7 @@ Whilst running <code>PCSLAVE.EXE</code> in DOSBox, press F4 to set the Baud rate
 ![](/img/posts/ghostlink_19200_baud.png)
 
 With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800 bits per second or higher, but 19200 was the fastest that worked reliably for me.
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

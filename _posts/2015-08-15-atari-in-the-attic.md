@@ -19,3 +19,8 @@ After some time lost in memory, I fired her up. Fingers crossed, I waited for th
 What about some old games? I rummaged through the disk box and pulled out an old favourite - Magic Pockets. Pop the disk in, hit the reset button and ... boot to the desktop!? That wasn't supposed to happen. The game was supposed to load! After a few more tries and a few more games ... mixed results. Looks like the years haven't been kind to my magnetic media.
 
 But it's no problem, right? The internet is full of old Atari ST disk images. How can I get them running on the old hardware? Time for some research ...
+
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

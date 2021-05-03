@@ -99,3 +99,7 @@ I've put together a video copy of this guide too. Find it embedded below.
 <iframe src="https://www.youtube.com/embed/Tu52dALu6lQ" 
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

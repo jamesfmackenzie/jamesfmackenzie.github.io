@@ -179,6 +179,10 @@ C:\Temp\pano_example>copy new_pano.zip new_pano.pano
 
 That's it!
 
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}
+
 ### References
 
 <a href="https://bdhurkett.wordpress.com/2013/11/06/windows-8-1-panorama-files/" target="_blank">Windows 8.1 Panorama Files</a>.

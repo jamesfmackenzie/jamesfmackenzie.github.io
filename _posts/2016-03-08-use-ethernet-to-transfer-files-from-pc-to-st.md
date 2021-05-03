@@ -48,3 +48,7 @@ Back on the PC, launch a Web browser (any will do) and navigate to <code>http://
 ![](/img/posts/atari_st_uip_tool_file_copy.png "uip-tool File Copy")
 
 Use the leftmost column to navigate through drives and folders in the ST's file system. Files are displayed in the main column. To upload a file, simply drag-and-drop (shown above). That's it! Easy peasy.
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

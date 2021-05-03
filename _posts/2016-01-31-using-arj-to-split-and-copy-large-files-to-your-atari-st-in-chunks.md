@@ -35,3 +35,7 @@ In older versions of TOS, drag-and-drop won't work - you'll need to double click
 ![](/img/posts/atari_st_unarj.png)
 
 That's all there is to it! Easy when you know how.
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}

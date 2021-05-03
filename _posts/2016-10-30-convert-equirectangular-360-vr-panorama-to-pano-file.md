@@ -33,6 +33,10 @@ Don't trust Photosynth with your data? Or just intellectually curious? If you'd 
 * You can generate these tiles using <a href="https://github.com/bdhurkett/PanoConverter" target="_blank">Ben Hurkett's PanoConverter</a>
 * Once you're done, you can <a href="{% post_url 2016-10-29-what-are-pano-files %}#cubezip">use 7-zip to reassemble your work back into a .pano file</a>
 
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}
+
 ### References
 
 * <a href="https://bdhurkett.wordpress.com/2015/02/12/making-pano-files-the-hard-way/" target="_blank">Making .pano files the hard way</a>

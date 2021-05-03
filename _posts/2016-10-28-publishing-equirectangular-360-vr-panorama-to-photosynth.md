@@ -92,5 +92,10 @@ The very first time, you'll need to (possibly register and) login to Photosynth.
 
 That's all there is to it! Pan around the image to your heart's content, then share the link with your friends!
 
+### Other Posts in this Series
+ 
+{% include vr-photography-series.md %}
+
 ### References
+
 * <a href="http://www.reallyslick.com/blog/2015/09/making-cubemaps-from-overlapping-photos/" target="_blank">Making Cubemaps from Overlapping Photos</a>

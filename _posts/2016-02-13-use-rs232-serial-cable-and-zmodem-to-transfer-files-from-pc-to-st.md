@@ -107,3 +107,7 @@ In Teraterm, navigate to "Setup", "Serial port..." and increase the Baud rate to
 ![](/img/posts/teraterm_serial_port_19200.png)
 
 With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800bps, 38400bps or even higher! But 19200bps was the fastest that worked reliably for me.
+
+### More Atari ST Posts
+ 
+{% include atari-st.md %}
