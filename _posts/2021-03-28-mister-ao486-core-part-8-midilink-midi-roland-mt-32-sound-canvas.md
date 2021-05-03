@@ -162,6 +162,11 @@ That’s it! We've explored all facets of MidiLink and MIDI playback options in 
 {% include mister-fpga-series.md %}
 
 
+### More MIDI articles
+
+{% include midi.md %}
+
+
 
 
 

@@ -26,3 +26,8 @@ Space Quest III (and many other Sierra games) support both Casio CZ (good) and R
 ![](/img/posts/atari-st-sierra-midi-utility.png) 
 
 Find a full list of MT-32 compatible games <a href="https://en.wikipedia.org/wiki/List_of_MT-32-compatible_computer_games#Atari_ST" target="_blank">here</a>. Happy listening!
+
+
+### More MIDI articles
+
+{% include midi.md %}
