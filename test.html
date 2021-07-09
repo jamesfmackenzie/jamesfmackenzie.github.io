@@ -1,0 +1,19 @@
+---
+layout:   nocomments
+title:    Test Page
+---
+
+<script>
+$.getJSON( "https://raw.githubusercontent.com/jamesfmackenzie/apple-arcade-games-with-controller-support/main/apple-arcade-games-with-controller-support.json", function( data ) {
+  var items = [];
+  $.each( data, function( index, value ) {
+	items.push( "<li id='" + index + "'><a href='" + value.url + "' target='_blank'>" + value.title + "</a></li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "article" );
+});
+</script>
+
