@@ -1,21 +1,24 @@
 ---
 layout: post
-title: "How To Install Windows 98 on HP Compaq t5710"
+title: "HP Compaq t5710 – How To Install Windows 98 from USB Flash Drive with Easy2Boot"
 date: '2021-07-11 12:22:00:00'
 summary: The HP Compaq t5710 makes a great DOS and Windows 98 retro gaming machine. But how can you install Windows 98 with no CD drive? Here's how ...
 tags: [How To, Retrocomputing, Retrogaming, t5710]
 ---
 
-The HP Compaq t5710 [makes a great DOS and Windows 98 retro gaming machine]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}). But how can you install Windows 98 with no CD drive? Can you install from USB? Here's how.
+The HP Compaq t5710 [makes a great DOS and Windows 98 retro gaming machine]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}). But how can you install Windows 98 on a system with no CD drive? Can you install from USB? Here's how to do it.
 
 
 ### What you need
 
 * 32GB (or larger) USB stick
+* HP Compaq t5710 thin client
 * <a href="https://easy2boot.xyz/download/" target="_blank">Easy2Boot</a>
 * Windows 98 SE install media – <a href="https://winworldpc.com/product/windows-98/98-second-edition" target="_blank">ISO</a> and <a href="https://winworldpc.com/product/microsoft-windows-boot-disk/98-se" target="_blank">boot floppy</a>
 * Windows 98 <a href="https://mega.nz/file/LgYDhKDA#7upam9AIguSzKWAvV_ENg7_SnWvWNCpYYwAnF94eUpU" target="_blank">driver package</a>
 * Recommended utilities – <a href="https://www.7-zip.org/download.html" target="_blank">7-zip 9.20</a>, <a href="http://falconfly.3dfx.pl/directx.htm" target="_blank">DirectX 7.0a</a>, <a href="https://sourceforge.net/projects/winscp/files/WinSCP/4.3.9/" target="_blank">WinSCP 4.39</a> 
+
+These instructions will also work for other driveless PCs (e.g. HP t5000 Series thin clients) with some minor adjustments.
 
 
 ### Step 1 - Download and install Easy2Boot
@@ -49,7 +52,7 @@ With the USB stick prepared, you should have two partitions:
 
 ### Step 3 - Copy Windows install files
 
-We'll plan to install Windows 98 from hard drive instead of CD. This will make the install much faster and it's also super useful to have the install files on our hard drive so we don't have to keep mounting the Windows 98 CD in future.
+We'll plan to install Windows 98 from hard drive. This will make the install much faster and it's also super useful to have the install files on our hard drive so we don't have to keep mounting the Windows 98 CD in future.
 
 First, download the <a href="https://winworldpc.com/product/windows-98/98-second-edition" target="_blank">Windows 98 SE ISO</a>. Double-click to mount it as a new drive.
 
@@ -76,7 +79,7 @@ You'll also need a zip utility to extract the drivers. I recommend <a href="http
 
 ![](/img/posts/easy2boot-copy-utils-utilities.png)
 
-That's our USB setup done. Remove the USB stick and switch over to the thin client machine.
+That's our USB setup done. Remove the USB stick and switch over to the thin client.
 
 
 ### Step 5 - Partition thin client internal hard disk
