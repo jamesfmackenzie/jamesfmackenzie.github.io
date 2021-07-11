@@ -96,10 +96,10 @@ SoftMPU will detect your PC serial port and create a "Soft" MIDI interface that 
 
 mt32-pi has two synth modes:
 
-1. MT-32 mode (for games that support <a href="https://en.wikipedia.org/wiki/Roland_MT-32" target="_blank">Roland MT-32 audio</a>)
+1. MT-32 mode (for games that support <a href="https://en.wikipedia.org/wiki/Roland_MT-32" target="_blank">Roland MT-32</a> audio)
 2. <a href="https://en.wikipedia.org/wiki/SoundFont" target="_blank">Soundfont</a> mode (for games that support <a href="https://en.wikipedia.org/wiki/General_MIDI" target="_blank">General MIDI</a> or <a href="https://en.wikipedia.org/wiki/Roland_Sound_Canvas" target="_blank">Roland Sound Canvas</a> audio)
 
-MT-32 support was most common in the early 90s, but was gradually superseded by General MIDI. With both together the mt32-pi supports a very wide range of games.
+MT-32 support was common in the early 90s, but was gradually superseded by General MIDI. With both together the mt32-pi supports a very wide range of games.
 
 Which mode your Pi boots into is controlled via the <a href="https://github.com/dwhinham/mt32-pi/wiki/Configuration-file" target="_blank">mt32-pi configration file</a> (<code>mt32-pi.cfg</code>). Amend the following line:
 
@@ -124,7 +124,7 @@ For beautiful music, configure your games to use Roland MT-32, Roland Sound Canv
 ### Notes
 
 * Games that use <a href="https://en.wikipedia.org/wiki/DOS_extender" target="_blank">DOS extenders</a> (e.g. <a href="https://en.wikipedia.org/wiki/DOS/4G" target="_blank">DOS/4GW</a>) *will not work* with this "Serial MIDI" approach. <a href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)" target="_blank">Doom</a> is a notable example. This is a limitation of <a href="http://bjt42.github.io/softmpu/" target="_blank">SoftMPU</a>. 
-* To increase compatibility you'll need a hardware <a href="https://en.wikipedia.org/wiki/MPU-401" target="_blank">MPU-401 interface</a>, usually provided by your PC Sound Card or dedicated hardware like <a href="http://pcmidi.eu/" targt="_blank">PCMIDI</a>. You'll also need a MIDI interface for your Pi – learn more <a href="https://github.com/dwhinham/mt32-pi/wiki/MIDI-connectivity" target="_blank">here</a>.
+* To increase compatibility you'll need a hardware <a href="https://en.wikipedia.org/wiki/MPU-401" target="_blank">MPU-401 interface</a>, usually provided by your PC Sound Card or dedicated hardware like <a href="http://pcmidi.eu/" target="_blank">PCMIDI</a>. You'll also need a MIDI interface for your Pi – learn more <a href="https://github.com/dwhinham/mt32-pi/wiki/MIDI-connectivity" target="_blank">here</a>.
 * The Raspberry Pi audio jack is not designed for high quality. If you want better quality audio output, consider <a href="https://github.com/dwhinham/mt32-pi/wiki/I%C2%B2S-DACs" target="_blank">adding your own DAC</a>.
 
 
