@@ -2,17 +2,16 @@
 layout: post
 title: "How To Install Windows 98 on HP Compaq t5710"
 date: '2021-07-11 12:22:00:00'
-summary: With the right setup, the HP Compaq t5710 thin client can make a great DOS / Windows 98 retro gaming machine. Here's how ...
+summary: The HP Compaq t5710 makes a great DOS and Windows 98 retro gaming machine. But how can you install Windows 98 with no CD drive? Here's how ...
 tags: [How To, Retrocomputing, Retrogaming, t5710]
 ---
 
-With the right setup, the HP Compaq t5710 (or other t5000 Series thin clients) can make a great DOS / Windows 98 retro gaming machine. Here's how.
+The HP Compaq t5710 [makes a great DOS and Windows 98 retro gaming machine]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}). But how can you install Windows 98 with no CD drive? Can you install from USB? Here's how.
 
 
 ### What you need
 
 * 32GB (or larger) USB stick
-* HP Compay 5000 Series thin client (I have the T5710)
 * <a href="https://easy2boot.xyz/download/" target="_blank">Easy2Boot</a>
 * Windows 98 SE install media – <a href="https://winworldpc.com/product/windows-98/98-second-edition" target="_blank">ISO</a> and <a href="https://winworldpc.com/product/microsoft-windows-boot-disk/98-se" target="_blank">boot floppy</a>
 * Windows 98 <a href="https://mega.nz/file/LgYDhKDA#7upam9AIguSzKWAvV_ENg7_SnWvWNCpYYwAnF94eUpU" target="_blank">driver package</a>
