@@ -23,29 +23,29 @@ With the right setup, the HP Compaq t5710 (or other t5000 Series thin clients) c
 
 First download and install <a href="https://easy2boot.xyz/download/" target="_blank">Easy2Boot</a>. This is a super useful tool that can prepare a USB flash drive to boot almost any floppy or CD image - even when you don't actually have a physical floppy or CD drive on your system. Perfect for our thin client build.
 
-Easy2Boot likes to work with contigious (not fragmented) files - this is why we want a 32GB or larger USB drive. With smaller drives, our images might get fragamented and we might run into weird install or boot issues.
+Easy2Boot likes to work with contigious (not fragmented) files - this is why we want a 32GB or larger USB drive. With smaller drives, our images might get fragmented and we might run into weird install or boot issues.
 
-When the install completes, the <code>Make_E2B</code> utility will launch. Just ignore and close this. Instead, open the install folder and find <code>MAKE_E2B_USB_DRIVE.cmd</code>. Run this batch script as Administrator
+When the install completes, the <code>Make_E2B</code> utility will launch. Just ignore and close this. Instead, open the install folder and find <code>MAKE_E2B_USB_DRIVE.cmd</code>. Run this batch script as Administrator:
 
 ![](/img/posts/easy2boot-make_e2b_usb_drive.png)
 
 
 ### Step 2 - Prepare USB install media
 
-In the command window, select your target USB drive (in my case this is <code>5</code> - ADATA USB Flash Drive). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You'll get one last warning. Hit <code>OK to start the partition and format process.
+In the command window, select your target USB drive (in my case this is <code>5</code> - ADATA USB Flash Drive). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You'll get one last warning. Hit <code>OK</code> to start the partition and format process.
 
 ![](/img/posts/easy2boot-make-usb-drive-selection.png)
 
-Once the format is done, repeatedly hit Enter to accept all the default options (we don't need to do anything special here). When the process is complete the command window will turn green. Just hit Enter to close.
+Once the format is done, repeatedly hit Enter to accept the default options (we don't need to do anything special here). When the process is complete the command window will turn green. Just hit Enter to close:
 
 ![](/img/posts/easy2boot-usb-preparation-complete.png)
 
 With the USB stick prepared, you should have two partitions:
 
+![](/img/posts/easy2boot-usb-e2b-e2b_ptn2-partitions.png)
+
 1. <code>E2B</code> aka "Easy2Boot" partition. Any ISOs or images you copy in here will be bootable via the Easy2Boot menu system
 2. <code>E2B_PTN2</code> aka "Easy2Boot data partition". Any files you copy here will be mounted on the host operating system when we launch via Easy2Boot
-
-![](/img/posts/easy2boot-usb-e2b-e2b_ptn2-partitions.png)
 
 
 ### Step 3 - Copy Windows install files
@@ -69,11 +69,11 @@ Once the copy is done, we need to change the file extension. Rename the file, an
 
 ### Step 4 - Copy drivers and utilities
 
-Lastly, download and copy the <a href="https://mega.nz/file/LgYDhKDA#7upam9AIguSzKWAvV_ENg7_SnWvWNCpYYwAnF94eUpU" target="_blank">Windows 98 driver package</a> to Easy2Boot data partition (<code>E2B_PTN2</code>). This contains the chipset, graphics and audio drivers for our thin client hardware:
+Lastly, download and copy the <a href="https://mega.nz/file/LgYDhKDA#7upam9AIguSzKWAvV_ENg7_SnWvWNCpYYwAnF94eUpU" target="_blank">Windows 98 driver package</a> to the Easy2Boot data partition (<code>E2B_PTN2</code>). This contains the chipset, graphics and audio drivers for our thin client hardware:
 
 ![](/img/posts/easy2boot-copy-drivers.png)
 
-You'll also need a zip utility to extract the drivers. I recommend <a href="https://www.7-zip.org/download.html" target="_blank">7-zip 9.20</a>. <a href="http://falconfly.3dfx.pl/directx.htm" target="_blank">DirectX 7.0a</a> and <a href="https://sourceforge.net/projects/winscp/files/WinSCP/4.3.9/" target="_blank">WinSCP 4.39</a> (an FTP client) and also useful. Copy them all to the Easy2Boot data partition:
+You'll also need a zip utility to extract the drivers. I recommend <a href="https://www.7-zip.org/download.html" target="_blank">7-zip 9.20</a>. <a href="http://falconfly.3dfx.pl/directx.htm" target="_blank">DirectX 7.0a</a> and <a href="https://sourceforge.net/projects/winscp/files/WinSCP/4.3.9/" target="_blank">WinSCP 4.39</a> (an FTP client) are also useful. Copy them all to the Easy2Boot data partition:
 
 ![](/img/posts/easy2boot-copy-utils-utilities.png)
 
@@ -82,7 +82,7 @@ That's our USB setup done. Remove the USB stick and switch over to the thin clie
 
 ### Step 5 - Partition thin client internal hard disk
 
-Next we need to prepare the thin client internal hard drive for Windows 98 install. Insert the Easy2Boot USB stick and power on the thin client. The system will recognoize the USB drive and load the Easy2Boot menu system.
+Next we need to prepare the thin client internal hard drive for Windows 98 install. Insert the Easy2Boot USB stick and power on the thin client. The system will recognize the USB drive and load the Easy2Boot menu system.
 
 From the menu, select <code>Windows Boot</code> - this will load the Windows boot menu - and then select <code>Windows 98 Second Edition Boot</code>. This will boot from our Windows 98 floppy image:
 
@@ -98,7 +98,7 @@ This is not a guide on how to use FDISK (there are plenty of others out there). 
 2. <code>3</code> to delete partitions and then <code>1</code> to delete the Primary DOS partition
 3. <code>1</code> to create a new partition, and then <code>1</code> again to create a Primary DOS partition
 4. <code>Y</code> to use the maximum available parition size
-5. <code>2 to activate our new partition</code>
+5. <code>2</code> to activate our new partition</code>
 6. Hit <code>Esc</code> a few times to exit
 
 Once you've made partition changes, restart the system and boot from the Windows 98 floppy again:
@@ -106,7 +106,7 @@ Once you've made partition changes, restart the system and boot from the Windows
 ![](/img/posts/t5000-t5710-windows-98-install-fdisk-restart.png)
 
 
-### Step 6 - Forman thin client internal hard disk
+### Step 6 - Format thin client internal hard disk
 
 Back at the DOS prompt. Before we install Windows 98, we need to format the internal hard disk. Type <code>format c:</code> and then <code>Y</code> to start the format process:
 
@@ -115,9 +115,7 @@ Back at the DOS prompt. Before we install Windows 98, we need to format the inte
 
 ### Step 7 - Copy Windows install files, drivers and utilities to hard disk
 
-With the format complete, it's time to copy the Windows 98 install files (from Step 3 above) and drivers (from Step 4) to the thin client internal hard disk.
-
-In the DOS environment, they will be mounted and available on drive <code>D:</code>:
+With the format complete, it's time to copy the Windows 98 install files (from Step 3 above) and drivers/utilities (from Step 4) to the thin client internal hard disk. You'll find them mounted and available on drive <code>D:</code>:
 
 ![](/img/posts/t5000-t5710-windows-98-install-show-easy2boot-mounted-file-system.png)
 
