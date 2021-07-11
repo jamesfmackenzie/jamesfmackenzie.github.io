@@ -8,6 +8,11 @@ tags: [How To, Retrocomputing, Retrogaming, t5710]
 
 The HP Compaq t5710 [makes a great DOS and Windows 98 retro gaming machine]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}). But how can you install Windows 98 on a system with no CD drive? Can you install from USB? Here's how to do it.
 
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/GioiRupslkU?rel=0" 
+frameborder="0" allowfullscreen class="youtube-video"></iframe>
+</div> 
+
 
 ### What you need
 
