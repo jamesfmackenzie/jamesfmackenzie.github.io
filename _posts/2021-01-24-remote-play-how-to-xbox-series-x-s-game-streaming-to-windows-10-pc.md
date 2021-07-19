@@ -8,9 +8,17 @@ tags: [Xbox, Streaming, Videogames, How To]
 
 **Updated Jul 9, 2021**
 
-Ever used the Xbox Console Companion app to <a href="https://support.xbox.com/en-US/help/games-apps/apps-help/how-to-use-game-streaming-in-xbox-console-companion-app" target="_blank">remote play Xbox One games from your PC</a>? Frustratingly, this feature was silently dropped for Xbox Series S/X – it just doesn't work for these new consoles
+Ever used the Xbox Console Companion app to <a href="https://support.xbox.com/en-US/help/games-apps/apps-help/how-to-use-game-streaming-in-xbox-console-companion-app" target="_blank">remote play Xbox One games from your PC</a>? Frustratingly, this feature was silently dropped for Xbox Series S/X – it just doesn't work for these new consoles.
 
-However all is not lost. By installing the hidden "Xbox Game Streaming (Test App)" from the Windows 10 Store, you can start streaming again. Here's how:
+However all is not lost. By installing the hidden "Xbox Game Streaming (Test App)" from the Windows 10 Store, you can start streaming again. Here's how.
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/m44x4aRlx5I?rel=0" 
+frameborder="0" allowfullscreen class="youtube-video"></iframe>
+</div> 
+
+
+### How to Remote Play
 
 1. Go to the <a href="https://store.rg-adguard.net/" target="_blank">Online Link Generator for Windows Store</a>
 
