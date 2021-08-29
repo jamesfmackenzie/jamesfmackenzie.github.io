@@ -19,8 +19,8 @@ A TPM chip communicates with other security systems in your PC, handling securit
 
 Broadly there are two types of TPM:
 
-- Discrete TPMs are dedicated chips that sit on your motherboard, either soldered-on or connected via special "TPM header" pins
-- Firmware TPMs ("fTPMs") are part of your CPU
+* Discrete TPMs are dedicated chips that sit on your motherboard, either soldered-on or connected via special "TPM header" pins
+* Firmware TPMs ("fTPMs") are part of your CPU
 
 There are also two TPM specifications: TPM 1.2 and the newer TPM 2.0. TPM 2.0 targets many of the same use cases and features but is not backward compatible with TPM 1.2.
 
@@ -52,7 +52,7 @@ There are many different Discrete TPM pinout standards and you'll need to find t
 - TPM-L R2.0 (20-1 pins) - TPM 2.0
 - TPM-M R2.0 (14-1 pins) - TPM 2.0
 
-I have an Asus Z87-PRO motherboard. After some research I bought this one for $7: 
+I have an Asus Z87-PRO motherboard. After some research I bought this module for $7: 
 
 ![](/img/posts/supermicro-tpm-module.jpg)
 
@@ -61,7 +61,7 @@ I have an Asus Z87-PRO motherboard. After some research I bought this one for $7
 
 ![](/img/posts/secureboot-legacy-mode.png)
 
-Before you install/enable the TPM, check the <code>System Information</code> app in Windows. If you have "BIOS Mode" = *Legacy* and "Secure Boot State" = *Unsupported*, you need to fix that first
+Before you install/enable the TPM, check the System Information app in Windows (<code>Start</code> -> <code>msinfo32</code>). If you have "BIOS Mode" = *Legacy* and "Secure Boot State" = *Unsupported*, you need to fix that first:
 
 1. In Windows, go to <code>Settings</code> → <code>Recovery Pane</code> → <code>Advanced Startup</code> → <code>Restart Now</code>
 2. Choose <code>Troubleshoot</code> → <code>Advanced Options</code> → <code>Command Prompt</code>
@@ -75,7 +75,7 @@ Before you install/enable the TPM, check the <code>System Information</code> app
 
 ### Install and enable the TPM
 
-With UEFI and Secure Boot finally enabled, you're ready to install/enable the TPM:
+With UEFI and Secure Boot fully enabled, you're ready to install/enable the TPM:
 
 1. (For Discrete TPM only) Shut down your PC and fit the TPM to your motherboard
 2. Power-on your machine and re-enter the BIOS. Find the "TPM" feature and enable it
@@ -84,15 +84,17 @@ With UEFI and Secure Boot finally enabled, you're ready to install/enable the TP
 
 Congratulations, you've successfully installed a TPM!
 
+![](/img/posts/the-tpm-is-ready-for-use.png)
+
 
 ### I've installed a TPM! Can I use Windows 11?
 
-Unfortunately Windows 11 compatibility is more complicated than just TPM. Microsoft has amended the minimum System Requirements a few times already since the initial announcement.
+Unfortunately Windows 11 compatibility is more complicated than just TPM - and Microsoft has already amended the minimum System Requirements a few times since the initial announcement.
 
 * Currently, TPM Version 2.0 is required. Some older motherboards (like mine) only support TPM 1.2 modules 
 * Even if you have TPM 2.0, the Windows 11 CPU requirements have also been confirmed as *minimum* Intel 8th-gen or Ryzen 2000 architecture. My old machine is out of luck!
 
-To check your own machine, download and run the Windows 11 PC Health Check app. It will give you a 
+To check your own machine, download and run the Windows 11 PC Health Check app. It will run a diagnostic and provide a compatibility summary for you:
 
 ![](/img/posts/windows-11-pc-health-check-app-tool.png)
 
