@@ -89,10 +89,10 @@ Congratulations, you've successfully installed a TPM!
 
 ### I've installed a TPM! Can I use Windows 11?
 
-Unfortunately Windows 11 compatibility is more complicated than just TPM - and Microsoft has already amended the minimum System Requirements a few times since the initial announcement.
+Unfortunately Windows 11 compatibility is more complicated than just TPM – and Microsoft has already amended the minimum System Requirements a few times since their initial announcement.
 
-* Currently, TPM Version 2.0 is required. Some older motherboards (like mine) only support TPM 1.2 modules 
-* Even if you have TPM 2.0, the Windows 11 CPU requirements have also been confirmed as *minimum* Intel 8th-gen or Ryzen 2000 architecture. My old machine is out of luck!
+* Currently, TPM Version 2.0 is required. Some older motherboards (like mine) only support TPM 1.2 
+* Even if you have TPM 2.0, the Windows 11 CPU requirements have also been confirmed as *minimum* Intel 8th-gen or Ryzen 2000 architecture. My old machine is plain out of luck!
 
 To check your own machine, download and run the Windows 11 PC Health Check app. It will run a diagnostic and provide a compatibility summary for you:
 
