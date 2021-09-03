@@ -31,7 +31,7 @@ More details on Wikipedia <a href="https://en.wikipedia.org/wiki/Trusted_Platfor
 
 Microsoft is looking to improve security and reliability in Windows 11, and TPM is part of this push. In their own words:
 
-<blockquote>Windows 11 raises the bar for security by requiring hardware that can enable protections like Windows Hello, Device Encryption, virtualization-based security (VBS), hypervisor-protected code integrity (HVCI) and Secure Boot. The combination of these features has been shown to reduce malware by 60% on tested devices. To meet the principle, all Windows 11 supported CPUs have an embedded TPM, support secure boot, and support VBS and specific VBS capabilities.</blockquote>
+<blockquote>"Windows 11 raises the bar for security by requiring hardware that can enable protections like Windows Hello, Device Encryption, virtualization-based security (VBS), hypervisor-protected code integrity (HVCI) and Secure Boot. The combination of these features has been shown to reduce malware by 60% on tested devices. To meet the principle, all Windows 11 supported CPUs have an embedded TPM, support secure boot, and support VBS and specific VBS capabilities."</blockquote>
 
 
 ### Do I have a TPM already?
