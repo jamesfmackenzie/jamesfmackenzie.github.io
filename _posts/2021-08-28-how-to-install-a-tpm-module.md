@@ -43,7 +43,7 @@ From Windows, navigate to <code>Start</code> → <code>tpm.msc</code>
 * If you see "The TPM is ready for use", you're good to go – no further action required
 * If you see "Compatible TPM cannot be found", you either don't have a TPM, or don't have your TPM *enabled*
 
-If your CPU is Intel Skylake (2015), Ryzen Zen+ (2000 Series) or newer, you likely have a Firmware TPM and just need to enable it in your BIOS - look for Look for Intel PTT or AMD PSP fTPM.
+If your CPU is Intel Skylake (2015), Ryzen Zen+ (2000 Series) or newer, you likely have a Firmware TPM and just need to enable it in your BIOS - look for Intel PTT or AMD PSP fTPM.
 
 If your CPU is older (like my i7-4770K), you'll have to buy a Discrete TPM for your motherboard.
 
