@@ -27,6 +27,13 @@ There are also two TPM specifications: TPM 1.2 and the newer TPM 2.0. TPM 2.0 ta
 More details on Wikipedia <a href="https://en.wikipedia.org/wiki/Trusted_Platform_Module#TPM_1.2_vs_TPM_2.0" target="_blank">here</a>.
 
 
+### Why do I need a TPM for Windows 11?
+
+Microsoft is looking to improve security and reliability in Windows 11, and TPM is part of this push. In their own words:
+
+<blockquote>Windows 11 raises the bar for security by requiring hardware that can enable protections like Windows Hello, Device Encryption, virtualization-based security (VBS), hypervisor-protected code integrity (HVCI) and Secure Boot. The combination of these features has been shown to reduce malware by 60% on tested devices. To meet the principle, all Windows 11 supported CPUs have an embedded TPM, support secure boot, and support VBS and specific VBS capabilities.</blockquote>
+
+
 ### Do I have a TPM already?
 
 To check if you have a TPM:
@@ -36,7 +43,9 @@ From Windows, navigate to <code>Start</code> → <code>tpm.msc</code>
 * If you see "The TPM is ready for use", you're good to go – no further action required
 * If you see "Compatible TPM cannot be found", you either don't have a TPM, or don't have your TPM *enabled*
 
-If your Intel CPU is Skylake (2015) or newer, you likely have a Firmware TPM and just need to enable it in your BIOS. If your CPU is older (like my i7-4770K), you'll have to buy a Discrete TPM for your motherboard.
+If your CPU is Intel Skylake (2015), Ryzen Zen+ (2000 Series) or newer, you likely have a Firmware TPM and just need to enable it in your BIOS - look for Look for Intel PTT or AMD PSP fTPM.
+
+If your CPU is older (like my i7-4770K), you'll have to buy a Discrete TPM for your motherboard.
 
 
 ### Can I install a Discrete TPM?
