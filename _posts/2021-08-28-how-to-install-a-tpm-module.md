@@ -52,10 +52,10 @@ If your CPU is older (like my i7-4770K), you'll have to buy a Discrete TPM for y
 
 To check if you have a compliant motherboard:
 
-1. Go to your BIOS. 
-2. Look for *Secure Boot* and *UEFI* options. If you have these, you're good to go
+1. Check your motherboard documentation. Look for TPM or Trusted Platform Module
+2. Locate the TPM header on your motherboard and count the pins
 
-There are many different Discrete TPM pinout standards and you'll need to find the correct one for your motherboard. Check your documentation or look for the TPM header on your motherboard and count the pins. The common standards are:
+There are many different Discrete TPM pinout standards and you'll need to find the correct one. The common standards are:
 
 - TPM/FW3.19 (20-1 pins) - TPM 1.2
 - TPM-L R2.0 (20-1 pins) - TPM 2.0
@@ -64,6 +64,13 @@ There are many different Discrete TPM pinout standards and you'll need to find t
 I have an Asus Z87-PRO motherboard. After some research I bought this module for $7: 
 
 ![](/img/posts/supermicro-tpm-module.jpg)
+
+You also need to verify Secure Boot and UEFI support:
+
+1. Go to your BIOS. 
+2. Look for *Secure Boot* and *UEFI* options
+
+If you have all the above, you're good to go
 
 
 ### Preparing your system for a TPM
