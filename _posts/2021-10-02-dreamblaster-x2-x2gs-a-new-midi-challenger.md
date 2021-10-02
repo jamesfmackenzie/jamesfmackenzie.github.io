@@ -10,13 +10,13 @@ tags: [Retrocomputing, Retrogaming, MIDI, How To]
 
 Looking to give your system a MIDI boost? The DreamBlaster X2GS is a <a href="https://en.wikipedia.org/wiki/Creative_Wave_Blaster" target="_blank">wavetable daughterboard</a> that fits the Wave Blaster header present on many DOS-era sound cards.
 
-The board itself is loaded with high quality instrument samples which it uses for MIDI playback, and it also has an officially licensed <a href="https://en.wikipedia.org/wiki/Roland_GS" target="_blank">Roland GS</a> soundbank – perfect for retro gaming and should sound very authentic versus <a href="https://en.wikipedia.org/wiki/Roland_Sound_Canvas" target="_blank">90s Roland synths</a> like the <a href="https://en.wikipedia.org/wiki/Roland_SC-55" target="_blank">SC-55</a>, SC-88 etc.
+The board itself is loaded with high quality instrument samples which it uses for MIDI playback, and it also has an officially licensed <a href="https://en.wikipedia.org/wiki/Roland_GS" target="_blank">Roland GS</a> soundbank – perfect for retro gaming and sounds very authentic versus <a href="https://en.wikipedia.org/wiki/Roland_Sound_Canvas" target="_blank">90s Roland synths</a> like the <a href="https://en.wikipedia.org/wiki/Roland_SC-55" target="_blank">SC-55</a>, SC-88 etc.
 
-Lastly it has an updatable soundbank – you can connect via USB and <a href="https://serdaco.com/downloads/X2/X2_Documentation/DreamBlaster%20X2%20User%20Manual.pdf" target="_blank">upload your own samples</a> for custom MIDI playback.
+Lastly it has an updatable soundbank – connect via USB and <a href="https://serdaco.com/downloads/X2/X2_Documentation/DreamBlaster%20X2%20User%20Manual.pdf" target="_blank">upload your own samples</a> for custom MIDI playback.
 
 Once it's fitted, just configure your games to <a href="https://en.wikipedia.org/wiki/Roland_Sound_Canvas" target="_blank">Sound Canvas</a>, <a href="https://en.wikipedia.org/wiki/General_MIDI" target="_blank">General MIDI</a> or <a href="https://en.wikipedia.org/wiki/MPU-401" target="_blank">MPU-401</a> – the X2GS will spring to life and pipe beautiful MIDI music to your sound card's audio output jack.
 
-Specs from the website:
+Specs from the <a href="https://www.serdashop.com/X2GS" target="_blank">official website</a>:
 
 DreamBlaster X2GS:
 * Wave Bkaster compatible soundcard featuring dual soundbank support
@@ -37,7 +37,7 @@ Overall I'm really impressed with the X2GS. To my ear it sounds very close to or
 To listen for yourself, find my full review on YouTube. Enjoy!
 
 <div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/SxMjDsT9rEo?rel=0" 
+<iframe src="https://www.youtube.com/embed/5Zht_r96ulk?rel=0" 
 frameborder="0" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
