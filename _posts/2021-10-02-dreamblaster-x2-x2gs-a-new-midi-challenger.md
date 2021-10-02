@@ -6,10 +6,7 @@ summary: Looking to give your system a MIDI boost? The DreamBlaster X2GS fits th
 tags: [Retrocomputing, Retrogaming, MIDI, How To]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/5Zht_r96ulk?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
-</div> 
+![](/img/posts/dreamblaster-x2-x2gs-wavetable-daughterboard.jpg)
 
 Looking to give your system a MIDI boost? The DreamBlaster X2GS is a <a href="https://en.wikipedia.org/wiki/Creative_Wave_Blaster" target="_blank">wavetable daughterboard</a> that fits the Wave Blaster header present on many DOS-era sound cards.
 
@@ -37,7 +34,12 @@ Roland GS bank:
 
 Overall I'm really impressed with the X2GS. To my ear it sounds very close to original Roland Sound Canvas hardware – which means great audio for your DOS games!
 
-To listen for yourself, find my full review <a href="https://www.youtube.com/watch?v=5Zht_r96ulk" target="_blank">on YouTube</a>. Enjoy!
+To listen for yourself, find my full review on YouTube. Enjoy!
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/5Zht_r96ulk?rel=0" 
+frameborder="0" allowfullscreen class="youtube-video"></iframe>
+</div> 
 
 
 ### More MIDI articles
