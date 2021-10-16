@@ -32,6 +32,8 @@ If you acknowledge and understand the risks, here's how to upgrade your unsuppor
 
 4. Once the install completes, you're running Windows 11. Enjoy!
 
+![](/img/posts/welcome-to-windows-11.png)
+
 
 ### Windows 11 Updates
 
