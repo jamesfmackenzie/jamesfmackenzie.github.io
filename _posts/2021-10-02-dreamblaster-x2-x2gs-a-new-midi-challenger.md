@@ -19,7 +19,7 @@ Once it's fitted, just configure your games to <a href="https://en.wikipedia.org
 Specs from the <a href="https://www.serdashop.com/X2GS" target="_blank">official website</a>:
 
 DreamBlaster X2GS:
-* Wave Bkaster compatible soundcard featuring dual soundbank support
+* Wave Blaster compatible soundcard featuring dual soundbank support
 * Officially licensed, read-only 16MB Roland GS bank
 * Updatable user bank (up to 48MB)
 * Switch between X2GS bank and user bank using NRPN messages
