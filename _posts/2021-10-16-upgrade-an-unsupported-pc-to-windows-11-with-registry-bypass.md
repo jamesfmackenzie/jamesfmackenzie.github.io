@@ -35,8 +35,8 @@ If you acknowledge and understand the risks, here's how to upgrade your unsuppor
 
 ### Windows 11 Updates
 
-As mentioned above, unsupported PCs "won't be entitled to receive updates". However, updates on my PC seem to be working fine:
+As mentioned above, unsupported PCs "won't be entitled to receive updates". However, at least for now, updates seem to be working fine:
 
-![](/img/posts/windows-11-media-creation-tool-create-media.png)
+![](/img/posts/windows-11-security-updates-cropped.png)
 
-Of course this may stop in future, but it's encouraging that (at least for now) updates for unsupported PCs are working.
+Of course this may stop in future, but it's encouraging that security and other updates for unsupported PCs are working.
