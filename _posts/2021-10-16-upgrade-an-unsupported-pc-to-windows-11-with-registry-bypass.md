@@ -3,13 +3,8 @@ layout: post
 title: "How To Install Windows 11 on an Unsupported PC With Registry Bypass"
 date: '2021-10-16 10:21:00:00'
 summary: Did your PC fail the Windows 11 health check? All is not lost – you may still be able to upgrade ...
-tags: [Retrocomputing, Retrogaming, MIDI, How To]
+tags: [How To, Windows 11]
 ---
-
-[Lesson 1: WebAssembly Hello World]({% post_url 2019-11-30-whats-is-webassembly-hello-world %})
-
-
-[Lesson 1: WebAssembly Hello World]({% post_url 2019-11-30-whats-is-webassembly-hello-world %})
 
 Chasing <a href="https://docs.microsoft.com/en-us/windows/whats-new/windows-11-requirements" target="_blank">Windows 11 compatibility</a>, I recently [added a TPM 1.2 module to my desktop PC]({% post_url 2021-08-28-how-to-install-a-tpm-module %}). Unfortunately even after installing the module, my PC still failed the Windows 11 system requiremnet check:
 
@@ -29,6 +24,7 @@ Here's how to upgrade your unsupported PC.
 
 ![](/img/posts/windows-11-media-creation-tool-create-media.png)
 
+{:start="3"}
 3. Once the media is ready, click *Setup.exe* to start the Windows 11 install process. Your PC will reboot a few times whilst Windows 11 installs - it's very familiar if you've upgraded a Windows install before.
 
 4. Once the install completes, you're running Windows 11. Enjoy!
