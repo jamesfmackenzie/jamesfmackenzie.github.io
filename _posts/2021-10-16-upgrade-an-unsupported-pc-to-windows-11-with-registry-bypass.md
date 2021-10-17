@@ -14,9 +14,9 @@ But this isn't the end of the story. Microsoft <a href="https://support.microsof
 
 ![](/img/posts/windows-11-bypass-check-for-tpm-20-and-cpu-family-model.png)
 
-There are some <a href="https://support.microsoft.com/en-us/windows/installing-windows-11-on-devices-that-don-t-meet-minimum-system-requirements-0b2dc4a2-5933-4ad4-9c09-ef0a331518f1" target="_blank">risks</a> – notably your PC "won't be entitled to receive updates" (more on that below).
+My unsupported PC is back in play!
 
-If you acknowledge and understand the risks, here's how to upgrade your unsupported PC.
+There are some <a href="https://support.microsoft.com/en-us/windows/installing-windows-11-on-devices-that-don-t-meet-minimum-system-requirements-0b2dc4a2-5933-4ad4-9c09-ef0a331518f1" target="_blank">risks</a> – notably your PC "won't be entitled to receive updates" (more on that below). If you acknowledge and understand the risks, here's how to upgrade your unsupported PC.
 
 
 ### Installing Windows 11 on an unsupported PC
@@ -32,7 +32,7 @@ If you acknowledge and understand the risks, here's how to upgrade your unsuppor
 
 4. Once the install completes, you're running Windows 11. Enjoy!
 
-![](/img/posts/welcome-to-windows-11.png)
+![](/img/posts/welcome-to-windows-11.jpg)
 
 
 ### Windows 11 Updates
