@@ -6,11 +6,13 @@ summary: A quick post on Trusted Platform Modules (TPMs). I recently rushed to b
 tags: [How To, Windows 11]
 ---
 
+**Update 2021-10-16: Thanks to <a href="https://support.microsoft.com/en-us/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e" target="_blank">recently published upgrade instructions</a>, it's now possible to upgrade previously unsupported TPM 1.2 PCs to Windows 11. Learn more [here]({% post_url 2021-10-16-upgrade-an-unsupported-pc-to-windows-11-with-registry-bypass %}).**
+
 ![](/img/posts/tpm-module.png)
 
 A quick post on Trusted Platform Modules (TPMs).
  
-I recently rushed to buy and install one after learning that Windows 11 requires a TPM to run. I learned a lot in my (ultimately failed) quest to make my PC Windows 11 compliant. Details below.
+I recently rushed to buy and install one after learning that Windows 11 requires a TPM to run. I learned a lot in my <span class="strikethrough">(ultimately failed)</span> quest to make my PC Windows 11 compliant. Details below.
 
 
 ### What is a TPM?

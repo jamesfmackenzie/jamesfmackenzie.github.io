@@ -236,6 +236,10 @@ article .youtube-container iframe {
   height: 100%;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 /* end article styles */
 
 /* individual post page styles */
