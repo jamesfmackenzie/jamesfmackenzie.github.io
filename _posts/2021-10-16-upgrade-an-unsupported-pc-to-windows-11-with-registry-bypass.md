@@ -21,16 +21,28 @@ There are some <a href="https://support.microsoft.com/en-us/windows/installing-w
 
 ### Installing Windows 11 on an unsupported PC
 
-1. First you need to download the Windows 11 Media Creation Tool. Navigate to the <a href="https://www.microsoft.com/en-us/software-download/windows11" target="_blank">Windows 11 download page</a>, find *Create Windows 11 Installation Media* and click *Download Now* 
+1. Open <a href="https://support.microsoft.com/en-us/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11" target="_blank">Registry Editor</a> and add the following key:
 
-2. Launch the tool and follow the instructions to create bootable Windows 11 installation media:
+```
+Registry Key: HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup
+Name: AllowUpgradesWithUnsupportedTPMOrCPU
+Type: REG_DWORD
+Value: 1
+```
+
+![](/img/posts/windows-11-upgrade-registry-key-allowupgradeswithunsupportedtpmorcpu.png)
+
+{:start="2"}
+2. Download the Windows 11 Media Creation Tool. Navigate to the <a href="https://www.microsoft.com/en-us/software-download/windows11" target="_blank">Windows 11 download page</a>, find *Create Windows 11 Installation Media* and click *Download Now* 
+
+3. Launch the tool and follow the instructions to create bootable Windows 11 installation media:
 
 ![](/img/posts/windows-11-media-creation-tool-create-media.png)
 
-{:start="3"}
-3. With the media ready, run *Setup.exe* to start the Windows 11 install process. Your PC will reboot a few times whilst Windows 11 installs - it's very familiar if you've upgraded Windows before.
+{:start="4"}
+4. With the media ready, run *Setup.exe* to start the Windows 11 install process. Your PC will reboot a few times whilst Windows 11 installs - it's very familiar if you've upgraded Windows before.
 
-4. Once the install completes, you're running Windows 11. Enjoy!
+5. Once the install completes, you're running Windows 11. Enjoy!
 
 ![](/img/posts/welcome-to-windows-11.jpg)
 
