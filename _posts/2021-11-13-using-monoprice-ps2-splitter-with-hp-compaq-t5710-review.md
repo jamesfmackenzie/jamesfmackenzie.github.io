@@ -2,7 +2,7 @@
 layout: post
 title: "HP Compaq t5710 – Using a PS/2 Splitter Cable"
 date: '2021-11-13 23:30:00:00'
-summary: The PS/2 port on the "HP Compaq t5710 supports a Y splitter cable, so you can connect keyboard and mouse simultaneously.
+summary: The PS/2 port on the HP Compaq t5710 supports a Y splitter cable, so you can connect keyboard and mouse simultaneously.
 tags: [Retrocomputing, Retrogaming, t5710]
 ---
 
