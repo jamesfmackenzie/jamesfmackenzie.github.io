@@ -3,7 +3,7 @@ layout: post
 title: "How To Remote Play Xbox Series S/X Games On Your PC"
 date: '2021-01-24 09:17:00:00'
 summary: How to stream Xbox Series X/S gameplay to your Windows 10 PC ...
-tags: [Xbox, Streaming, Videogames, How To]
+tags: [How To, Streaming, Videogames, Xbox]
 ---
 
 **Updated Aug 14, 2021**

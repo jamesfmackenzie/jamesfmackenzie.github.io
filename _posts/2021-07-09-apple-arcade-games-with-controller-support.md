@@ -3,7 +3,7 @@ layout: post
 title: "Apple Arcade Games with Wireless Controller Support"
 date: '2021-07-09 18:03:00:00'
 summary: I love Apple Arcade. But touchscreen game controls? Nothing beats a real gamepad. Here's a list of Apple Arcade games with wireless controller support ...
-tags: []
+tags: [Consumer Tech, Videogames]
 permalink: /apple-arcade-games-with-controller-support/
 ---
 

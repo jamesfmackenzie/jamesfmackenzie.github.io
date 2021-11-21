@@ -3,7 +3,7 @@ layout: post
 title: All You Need to Know about 360 VR Photos
 date: '2016-11-02 08:25:00'
 summary: Whether it’s a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a 360 VR panorama. Pan left, right, up, down, or even swivel right around to take in the whole view ...
-tags: [Photography, VR Photography, How To]
+tags: [How To, Photography, VR Photography]
 overrideUrl: https://medium.com/vantage/all-you-need-to-know-about-360-vr-photos-d180aa25d8de
 ---
 

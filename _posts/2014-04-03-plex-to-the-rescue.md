@@ -3,7 +3,7 @@ layout: post
 title: Plex to the Rescue
 date: '2014-04-03 17:49:00'
 summary: Last time, I did some background research on the DLNA Technology underlying Windows Play To, with the hopes of finding a general solution for Windows 7/8 to Xbox One streaming ...
-tags: [Plex, Xbox, Media, Streaming, DLNA]
+tags: [DLNA, Media, Plex, Streaming, Xbox]
 ---
 
 Last time, I did some background research on the [DLNA Technology underlying Windows Play To]({% post_url 2014-03-28-delving-into-dlna %}), with the hopes of finding a general solution for Windows 7/8 to Xbox One streaming.

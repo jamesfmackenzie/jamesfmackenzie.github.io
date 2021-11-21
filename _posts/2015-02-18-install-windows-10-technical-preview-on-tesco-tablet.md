@@ -3,7 +3,7 @@ layout: post
 title: Install Windows 10 on a £99 Tesco Tablet
 date: '2015-02-18 16:53:30'
 summary: I spotted this amazingly cheap Windows 8.1 tablet on a recent Tesco grocery trip. At £99, I’ve no idea how they turn a profit, but with the recent launch of Windows 10 Technical Preview Windows 10, I thought it’d make a nice experiment ...
-tags: [Windows 10, How To, Consumer Tech]
+tags: [Consumer Tech, How To, Windows 10]
 permalink: /install-windows-10-technical-preview-on-tesco-tablet/
 ---
 

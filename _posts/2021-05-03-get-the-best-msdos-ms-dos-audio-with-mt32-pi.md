@@ -3,7 +3,7 @@ layout: post
 title: "Get the Best MS-DOS Audio With mt32-pi"
 date: '2021-05-03 18:24:00:00'
 summary: A huge upgrade vs AdLib audio, mt32-pi is a cheap way to upgrade the gaming audio on your MS-DOS PC ...
-tags: [Retrocomputing, Retrogaming, MIDI, How To]
+tags: [DOS, How To, MIDI, Retrocomputing, Retrogaming]
 ---
 
 <div class="youtube-container">

@@ -3,7 +3,7 @@ layout: post
 title: Things I Wish I'd Known Before Creating My Own Ghost Theme
 date: '2014-06-23 20:40:48'
 summary: Ghost themes make extensive use of Handlebars.js ... 
-tags: [Ghost Blogging Platform, Web Design, Web Development, Programming]
+tags: [Ghost Blogging Platform, Programming, Web Design, Web Development]
 ---
 
 ### Ghost themes make extensive use of Handlebars.js
