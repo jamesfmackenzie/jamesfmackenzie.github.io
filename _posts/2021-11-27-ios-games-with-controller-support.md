@@ -9,7 +9,7 @@ permalink: /ios-games-with-controller-support/
 
 
 <script>
-$.getJSON( "https://raw.githubusercontent.com/jamesfmackenzie/ios-games-with-controller-support/main/ios-games-with-controller-support.json", function( data ) {
+$.getJSON( "https://raw.githubusercontent.com/jamesfmackenzie/ios-games-with-controller-support/master/ios-games-with-controller-support.json", function( data ) {
   var items = [];
   $.each( data, function( index, value ) {
 	items.push( "<li id='" + index + "'><a href='" + value.url + "' target='_blank'>" + value.title + "</a></li>" );
