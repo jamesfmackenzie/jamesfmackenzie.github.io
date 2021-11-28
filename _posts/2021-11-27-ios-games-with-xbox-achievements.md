@@ -12,7 +12,7 @@ permalink: /ios-games-with-xbox-achievements/
 $.getJSON( "https://raw.githubusercontent.com/jamesfmackenzie/ios-games-with-xbox-achievements/master/ios-games-with-xbox-achievements.json", function( data ) {
   var items = [];
   $.each( data, function( index, value ) {
-	items.push( "<li id='" + index + "'><a href='" + value.url + "' target='_blank'>" + value.title + "(" + value.gamerscore + ")</a></li>" );
+	items.push( "<li id='" + index + "'><a href='" + value.url + "' target='_blank'>" + value.title + " (" + value.gamerscore + ")</a></li>" );
   });
  
   $( "<ul/>", {
