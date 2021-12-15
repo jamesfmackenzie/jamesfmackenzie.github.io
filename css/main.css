@@ -222,10 +222,10 @@ article .youtube-container {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
-  padding-top: 25px;
+  margin-top: 25px;
   height: 0;
-  max-width: 95%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 article .youtube-container iframe {
