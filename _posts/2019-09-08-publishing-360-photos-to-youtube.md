@@ -58,6 +58,7 @@ Upload the 360° video to YouTube as your would any other video. After some exte
 
 On my PC, I found that Firefox and Edge and offered better performance than Chrome. But only Chrome supported full 8K video. Your mileage may vary
 
-<a href="https://www.youtube.com/watch?v=W1rKkSokIXU&feature=youtu.be" target="_blank">Enjoy!</a>
-
-![](/img/posts/mars_rover_selfie.png)
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/W1rKkSokIXU?rel=0" 
+frameborder="0" allowfullscreen class="youtube-video"></iframe>
+</div> 
