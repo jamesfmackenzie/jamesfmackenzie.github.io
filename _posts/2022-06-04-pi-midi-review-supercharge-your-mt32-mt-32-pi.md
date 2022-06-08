@@ -16,27 +16,44 @@ frameborder="0" allowfullscreen class="youtube-video"></iframe>
 
 ### Hardware Overview
 
-The PI-MIDI attaches to the Raspberry Pi's GPIO pins and allows you to connect MIDI input devices, for sending MIDI data to the Pi. In terms of connectivity we have:
+The PI-MIDI attaches to the Raspberry Pi's GPIO pins and allows you to connect MIDI input devices, for sending MIDI data to the Pi.
 
-* MIDI DIN – input connector. Connect MIDI devices
-* RCA audio out – two jacks for stereo audio output. The PI-MIDI provides much improved audio quality vs native Pi audio
-* 2.5mm stereo jack – for audio input. This will be mixed with MIDI audio to create combined output
-* User port – looks like a USB port, but this is actually an IO port specifically for connection to the MiSTer FPGA
+Once you’ve got MIDI messages flowing to the Pi, you can do a lot with it. For example, run a software synthesizer like Munt or Fluidsynth to generate high quality digital audio.
 
-For controls and buttons you've got a couple of wheels and buttons so you've got some buttons to change various features. you've got a rotary dial on top here this is for volume and you've got another jog wheel here
+In terms of connectivity we have:
 
-Lastly we've got a display do you can view equalizers and you can view some selection options as you're using it
+* MIDI DIN – input connector; to connect MIDI devices
+* RCA audio out – two jacks for stereo audio output. The PI-MIDI provides much improved audio quality vs native Pi output
+* 2.5mm stereo jack – for audio input. Can be mixed with synthesized MIDI audio for combined output
+* User port – looks like a USB port, but  is actually an IO port specifically for MIDI connection to the MiSTer FPGA
+
+For physical controls, we have a rotary dial, jog wheel and two push buttons. Useful for changing e.g. volume, synth selection or other MIDI options without the need for a keyboard or additional input device.
+
+Lastly we have a 1.3” OLED screen to display selection options and visualise  playback levels/equalisers.
+
+
+### Enter mt32-pi
+
+mt32-pi is a baremetal kernel that turns your Raspberry Pi 3 or later into a Roland MT-32 emulator and SoundFont synthesizer. Behind the scenes it uses Circle (A C++ baremetal environment for Pi) and Munt/FluidSynth for MIDI synthesis.
+
+It natively supports GPIO MIDI interfaces like the PI-MIDI, a perfect match to create a DIY MIDI synthesiser with similar sound and features to classic synths like this Roland MT-32 or SC-88.
 
 
 ### MIDI Connectivity
 
 ![](/img/posts/windows-11-pc-health-check-app-tool.png)
 
-let's get this hooked up and try it out
+The typical PI-MIDI setup is to:
 
-okay so we're connected we've got a dos gaming pc hooked up by the midi Input
+1. Connect DOS PC MIDI output to the MIDI input DIN (you’ll need a gameport MIDI cable)
 
-we've got our audio output running off to our audio capture. we're not using the audio input here, this is useful if you want to mix in say the sound coming out of your your gaming pc (I.e. the sound blaster sound) then you can get midi and your regular sound mixed together 
+2. Connect DOS PC audio output to the 2.5mm stereo input jack. Sound Blaster sound effects from your PC will be automatically mixed with MIDI audio generate on the Pi to create combined audio
+
+3. Connect RCA output audio to your speakers
+ 
+4. Configure your DOS games to use Roland MT-32, Roland Sound Canvas or General MIDI audio on Port 330
+
+With setup out the way, we’re ready to explore some features!
 
 
 ### Feature Exploration 
@@ -57,6 +74,7 @@ mt-32 mode:
 this is the primary feature of the mt-32 pi. this will playback roland mt-32 compatible midi and it's really good. i've tried it on a few games and the sound quality is very good
 
 we can use the rotary dial to adjust the volume up and down
+
 
 ### Conclusion
 
