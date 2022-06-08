@@ -16,6 +16,8 @@ frameborder="0" allowfullscreen class="youtube-video"></iframe>
 
 ### Hardware Overview
 
+![](/img/posts/pi-midi-mt32-connectivity.jpg)
+
 The PI-MIDI attaches to the Raspberry Pi's GPIO pins and allows you to connect MIDI input devices, for sending MIDI data to the Pi.
 
 Once you’ve got MIDI messages flowing to the Pi, you can do a lot with it. For example, run a software synthesizer like Munt or Fluidsynth to generate high quality digital audio.
@@ -34,14 +36,16 @@ Lastly we have a 1.3” OLED screen to display selection options and visualise  
 
 ### Enter mt32-pi
 
-mt32-pi is a baremetal kernel that turns your Raspberry Pi 3 or later into a Roland MT-32 emulator and SoundFont synthesizer. Behind the scenes it uses Circle (A C++ baremetal environment for Pi) and Munt/FluidSynth for MIDI synthesis.
+![](/img/posts/mt32-pi-logo.jpg)
 
-It natively supports GPIO MIDI interfaces like the PI-MIDI, a perfect match to create a DIY MIDI synthesiser with similar sound and features to classic synths like this Roland MT-32 or SC-88.
+mt32-pi is a baremetal kernel that turns your Raspberry Pi 3 or later into a Roland MT-32 emulator and SoundFont synthesizer. Behind the scenes it uses Circle (a C++ baremetal environment for Pi) and Munt/FluidSynth for MIDI synthesis.
+
+It natively supports GPIO MIDI interfaces like the PI-MIDI, together a perfect match to create a DIY MIDI synthesiser with similar sounds and features to classic synths like the Roland MT-32 or SC-88. A great combo for DOS gaming!
 
 
 ### MIDI Connectivity
 
-![](/img/posts/windows-11-pc-health-check-app-tool.png)
+![](/img/posts/pi-midi-connected.jpg)
 
 The typical PI-MIDI setup is to:
 
@@ -58,29 +62,18 @@ With setup out the way, we’re ready to explore some features!
 
 ### Feature Exploration 
 
-powering up, we see the mt-32 pi logo. This is the midi synthesizer software that we've got installed on the raspberry pi. this is what we're going to use to play back the midi data that's pumped in through the midi port 
+Powering on the Pi and PI-MIDI, you’ll see the mt32-pi logo. As mentioned above, this software will receive MIDI messages and route them to the configured software synth (either Munt or FluidSynth) to generate digital audio. 
 
-okay let's try out some of the features:
+The rotary dial adjusts volume, and the push buttons toggle between MT-32 operating mode and SoundFont mode.
 
-first i'm going to go for this button on the left. i'll click that and you can see that instructs the mt-32
-to switch between MT-32 and sound font mode. 
+MT-32 mode is the primary feature of mt32-pi. It will use Munt soft synth to playback Roland MT-32 compatible MIDI. Many early DOS games support MT-32 MIDI and the sound quality is great.
 
-Sound font mode:
-
-in this mode it can play back!sound font compatible general midi!using the fluid synth software so this is useful for some of the newer dos games that use general midi or maybe even have dedicated sound canvas support
-
-mt-32 mode:
-
-this is the primary feature of the mt-32 pi. this will playback roland mt-32 compatible midi and it's really good. i've tried it on a few games and the sound quality is very good
-
-we can use the rotary dial to adjust the volume up and down
+In SoundFont mode, the Pi will use FluidSynth to synthesise SoundFont-compatible General MIDI into digital audio.  This is useful for later DOS games with General MIDI or native Sound Canvas support.
 
 
 ### Conclusion
 
-i love this little thing look forward to trying it out with some more games i'll do a full showcase
-
-insert showcase link
+If you can’t get your hands on a real Roland MT-32 or Sound Canvas synth, I’d strongly recommend a Pi + PI-MIDI as a great DIY option. It’s plug-and-play, simple to use, and (at least to my ear) produces very authentic sound. Look forward to trying it with more DOS games!
 
 
 ### Useful Links
