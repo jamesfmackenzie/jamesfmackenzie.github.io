@@ -7,15 +7,22 @@ title: Projects
 
 <!--
 
-Note: commenting out until I have more content here. Right now it's just a one off review of the Lenovo M93P. It may morph into an M93P build project
+Projects to add:
 
-* <a href="#Quest for the Perfect Emulation Station">Quest for the Perfect Emulation Station</a> - In Progress
+* FPS Frame capture project
+* Building the ultimate Windows 98 machine
+* HP Thin Client as a DOS Gaming PC? (including Voodoo 2 on here)
+* DOS Gaming on FPGA 
+* Remote Play Xbox Series X on PC 
 
 -->
+
+
+* <a href="#Lenovo Tiny Series Emulation Station">Lenovo Tiny Series Emulation Station</a> - May 2020 
 * <a href="#Porting Commander Keen to PlayStation Vita">Porting Commander Keen to PlayStation Vita</a> - In Progress
 * <a href="#Porting Commander Keen to WebAssembly">Porting Commander Keen to WebAssembly</a> - Nov 2019
 * <a href="#Learning about Webassembly">Learning About Webassembly</a> - Nov 2019
-* <a href="#Ultimate Retrogaming Machine">Ultimate Retrogaming Machine</a> - Oct 2018
+* <a href="#Raspberry Pi Retrogaming">Raspberry Pi Retrogaming</a> - Oct 2018
 * <a href="#Atari ST on the Web">Atari ST on the Web</a> - Jun 2018
 * <a href="#Shooting and Sharing VR Photos">Shooting and Sharing VR Photos</a> - Nov 2016
 * <a href="#Transferring Files Between PC and ST">Transferring Files Between PC and ST</a> - Mar 2016
@@ -23,34 +30,32 @@ Note: commenting out until I have more content here. Right now it's just a one o
 * <a href="#Watch Mobile Content on the Go">Watch Mobile Content on the Go</a> - Dec 2014
 * <a href="#Ghost Blogging">Ghost Blogging</a> - Jun 2014
 
-<!-- 
+<br />
 
-Note: commenting out until I have more content here. Right now it's just a one off review of the Lenovo M93P. It may morph into an M93P build project
 
-<a name="Quest for the Perfect Emulation Station">
-## Quest for the Perfect Emulation Station
+<a name="Lenovo Tiny Series Emulation Station">
+## Lenovo Tiny Series Emulation Station
 
-Status | In Progress
-Goal | Find the perfect device to retrogame on the big screen
+Status | Completed May 2020
+Goal | Repurpose a Lenovo Tiny Series business desktop as a small and quiet retrogaming PC 
 
-For the last decade I've been on quest to find the perfect emulation station. The dream is to have something hidden away behind the TV, with a wireless controller so I can get that retro gaming fix on-demand.
+For many years I've been on quest to find the perfect emulation station. Something small and quiet, hidden under the TV, with a wireless controller and enough horsepower for high quality retrogaming.
 
-Two years ago I [built and custom-configured a Raspberry Pi with RetroPie]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). A great device, but not really powerful enough for the 32-bit console generation upwards. I need something with a bit more grunt, reasonable price (~$100) and good Wife-Acceptance-Factor (no tower PC!)
+Two years ago I [built and custom-configured a Raspberry Pi with RetroPie]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). A great device, but not really powerful enough for 32-bit consoles like PlayStation or Saturn. I need something with a bit more grunt, reasonable price (~$100) and good Wife-Acceptance-Factor (no tower PC!)
 
-Options to explore:
+After some investigation, I purchased a <a href="https://www.lenovo.com/us/en/desktops/thinkcentre/m-series-tiny/m93-m93p/" target="_blank">Lenovo ThinkCenter M93p Tiny Desktop</a> from eBay for ~$100.
 
-- Powerful Single Board Computers e.g. ODROID-XU4
-- Small and light PCs
-- Nvidia Shield TV
-- Jailbroken consoles e.g. Wii, Wii U, Xbox 360, PlayStation TV
-- FPGA devices e.g. MiSTer
+The form factor looks great under a TV and the spec handily beats most Single Board Computers out there:
 
-Posts:
-- [Lenovo M93p Tiny Review – The Best Mini PC for Emulation?]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}) - 31 May 2020
+* Intel Core i5-4570T (2 cores @2.9GHz)
+* 8GB DDR3 1600MHz RAM
+* 500GB HDD
+* Intel HD Graphics 4600
+
+Emulation performance is great. Even Dreamcast and Gamecube run well, a significant step up from the Raspberry Pi. Full write up [here]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}).
 
 <br />
 
--->
 
 <a name="Porting Commander Keen to PlayStation Vita">
 ## Porting Commander Keen to PlayStation Vita 
@@ -107,8 +112,8 @@ I've wanted to explore the <a href="https://en.wikipedia.org/wiki/WebAssembly">W
 
 <br />
 
-<a name="Ultimate Retrogaming Machine">
-## Ultimate Retrogaming Machine
+<a name="Raspberry Pi Retrogaming">
+## Raspberry Pi Retrogaming
 
 Status | Completed October 2018
 Goal | Build a cheap, small and light device to retrogame on the big screen
