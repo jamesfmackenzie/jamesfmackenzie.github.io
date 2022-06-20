@@ -14,8 +14,9 @@ Project summaries for completed and in-progress projects below. Enjoy!
 
 Projects to add:
 
-* Face and Body tracking
 * Building the ultimate Windows 98 machine
+* Dedicated Wi-Fi network for Oculus Quest 2
+* Face and Body tracking
 
 -->
 
@@ -108,11 +109,11 @@ After <a href="#DOS Gaming on MiSTer FPGA">DOS gaming on MiSTer</a>, I was left 
 
 In search of a retro PC (but short on apartment space), [I purchased a HP Compaq t5710 thin client]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}).
 
-Despite the 2004 build, the hardware is very well suited to DOS and Windows 98 gaming. Sound Blaster and Ad-Lib audio even works in DOS mode, making this a great all-in-one unit.
+Despite the 2004 build, the hardware is very well suited to DOS and Windows 98 gaming. Sound Blaster and Ad-Lib audio works even in DOS mode, making this a great all-in-one unit.
 
-After some trial and error, I was able to <a href="https://youtu.be/V4DIPffO-sI" target="_blank">succesfully install and game on Windows 98</a>. I was [even able to find a working PS/2 splitter]({% post_url 2021-11-13-using-monoprice-ps2-splitter-with-hp-compaq-t5710-review %}).
+After some trial and error, I was able to <a href="https://youtu.be/V4DIPffO-sI" target="_blank">succesfully install and game on Windows 98</a>. I was [also able to find a working PS/2 splitter]({% post_url 2021-11-13-using-monoprice-ps2-splitter-with-hp-compaq-t5710-review %}).
 
-Next, I experimented with the PCI expansion slot. After some success with PCI sound hardware, I installed a <a href="https://en.wikipedia.org/wiki/Voodoo2" target="_blank">3dfx Voodoo2</a>. It <a href="https://twitter.com/jamesfmackenzie/status/1492922391223283714" target="_blank">worked fantastically!</a>
+Next, I experimented with the PCI expansion slot. After some success with PCI sound hardware, I installed a <a href="https://en.wikipedia.org/wiki/Voodoo2" target="_blank">3dfx Voodoo2</a>. It <a href="https://twitter.com/jamesfmackenzie/status/1492922391223283714" target="_blank">worked fantastically too!</a>
 
 I'm super happy with this build. The t5710 is now my go to retro PC – I don't need anything more!
 
@@ -181,7 +182,7 @@ Two years ago I [built and custom-configured a Raspberry Pi with RetroPie]({% po
 
 After some investigation, I purchased a <a href="https://www.lenovo.com/us/en/desktops/thinkcentre/m-series-tiny/m93-m93p/" target="_blank">Lenovo ThinkCenter M93p Tiny Desktop</a> from eBay for ~$100.
 
-The form factor looks great under a TV and emulation performance is great. Even Dreamcast and Gamecube run well, a significant step up from the Raspberry Pi. Full write up [here]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}).
+The form factor looks great under a TV and emulation performance is also great. Even Dreamcast and Gamecube run well, a significant step up from the Raspberry Pi. Full write up [here]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %}).
 
 Posts:
 
@@ -227,9 +228,9 @@ In future, I could refactor towards Emscripten Loops to improve performance and 
 
 Posts:
 
-- <a href="https://twitter.com/jamesfmackenzie/status/1190604121717592064?s=21" target="_blank">The Commander Keen WebAssembly port is done!</a> - 02 Nov 2019
-- [Commander Keen in a Web Browser?]({% post_url 2019-10-28-commander-keen-ported-to-webassembly %}) - 28 Oct 2019
 - <a href="https://twitter.com/jamesfmackenzie/status/1186034903294644224?s=21" target="_blank">Porting Commander Keen / CloneKeen to the web browser with #Emscripten. Great progress so far!</a> - 20 Oct 2019
+- [Commander Keen in a Web Browser?]({% post_url 2019-10-28-commander-keen-ported-to-webassembly %}) - 28 Oct 2019
+- <a href="https://twitter.com/jamesfmackenzie/status/1190604121717592064?s=21" target="_blank">The Commander Keen WebAssembly port is done!</a> - 02 Nov 2019
 
 <br />
 
@@ -309,14 +310,14 @@ I want to learn how to shoot, interactively view and share my own VR photos. Her
 
 Posts:
 
-- [Publishing VR Panoramas to YouTube]({% post_url 2019-09-08-publishing-360-photos-to-youtube %}) - 08 Sep 2019
-- <a href="https://medium.com/vantage/all-you-need-to-know-about-360-vr-photos-d180aa25d8de" target="_blank">All You Need to Know about 360 VR Photos</a>  - 02 Nov 2016
-- [Convert Equirectangular Projection to .Pano File]({% post_url 2016-10-30-convert-equirectangular-360-vr-panorama-to-pano-file %}) - 30 Oct 2016
-- [What are .pano files?]({% post_url 2016-10-29-what-are-pano-files %}) - 29 Oct 2016
-- [Publishing VR Panoramas to Photosynth]({% post_url 2016-10-28-publishing-equirectangular-360-vr-panorama-to-photosynth %}) - 28 Oct 2016
-- [Convert Equirectangular Projection to Cube Faces]({% post_url 2016-10-18-convert-equirectangular-projection-to-cube-faces %}) - 18 Oct 2016
-- [Installing Hugin and Panotools on Windows]({% post_url 2016-10-17-installing-hugin-and-panotools-on-windows %}) - 17 Oct 2016
 - [Publishing VR Panoramas to Facebook]({% post_url 2016-10-12-publishing-equirectangular-360-vr-panorama-to-facebook %}) - 12 Oct 2016
+- [Installing Hugin and Panotools on Windows]({% post_url 2016-10-17-installing-hugin-and-panotools-on-windows %}) - 17 Oct 2016
+- [Convert Equirectangular Projection to Cube Faces]({% post_url 2016-10-18-convert-equirectangular-projection-to-cube-faces %}) - 18 Oct 2016
+- [Publishing VR Panoramas to Photosynth]({% post_url 2016-10-28-publishing-equirectangular-360-vr-panorama-to-photosynth %}) - 28 Oct 2016
+- [What are .pano files?]({% post_url 2016-10-29-what-are-pano-files %}) - 29 Oct 2016
+- [Convert Equirectangular Projection to .Pano File]({% post_url 2016-10-30-convert-equirectangular-360-vr-panorama-to-pano-file %}) - 30 Oct 2016
+- <a href="https://medium.com/vantage/all-you-need-to-know-about-360-vr-photos-d180aa25d8de" target="_blank">All You Need to Know about 360 VR Photos</a>  - 02 Nov 2016
+- [Publishing VR Panoramas to YouTube]({% post_url 2019-09-08-publishing-360-photos-to-youtube %}) - 08 Sep 2019
 
 <br />
 
@@ -355,8 +356,8 @@ My old ST disks are dead! Can I download replacement disk images from the web an
 
 I explored several options, including floppy disk images and hard disk adaptations:
 
-- [Use Your PC to Create a Bootable Atari ST Game Disk]({% post_url 2015-09-22-use-your-pc-to-create-a-bootable-atari-st-game-disk %}) - 22 Sep 2015
 - [Playing Downloaded Games on a Real Atari ST]({% post_url 2015-09-18-playing-downloaded-games-on-a-real-atari-st %}) - 18 Sep 2015
+- [Use Your PC to Create a Bootable Atari ST Game Disk]({% post_url 2015-09-22-use-your-pc-to-create-a-bootable-atari-st-game-disk %}) - 22 Sep 2015
 
 <br />
 
@@ -373,9 +374,9 @@ The work commute is a great time to catch up on news, vlogs and other Web videos
 
 I explored use of the Pocket API and PlexSync to download and push web videos to my phone:
 
-- [Sync Web Videos to Your Tablet or Phone, Watch Them Offline]({% post_url 2015-02-01-sync-pocket-videos-to-your-phone-watch-them-offline %}) - 01 Feb 2015
-- [Download Pocket Videos to Your PC]({% post_url 2015-01-03-download-pocket-videos-to-your-pc %}) - 03 Jan 2015
 - [I Can't Stream Video on the Commute. How Can I Fix It?]({% post_url 2014-12-17-i-cant-stream-video-on-the-commute-how-can-i-fix-it %}) - 17 Dec 2014
+- [Download Pocket Videos to Your PC]({% post_url 2015-01-03-download-pocket-videos-to-your-pc %}) - 03 Jan 2015
+- [Sync Web Videos to Your Tablet or Phone, Watch Them Offline]({% post_url 2015-02-01-sync-pocket-videos-to-your-phone-watch-them-offline %}) - 01 Feb 2015
 
 <br />
 
@@ -392,8 +393,8 @@ I'm interested in <a href="https://ghost.org/" target="_blank">Ghost</a> as a cr
 
 Posts:
 
-- [Things I Wish I'd Known Before Creating My Own Ghost Theme]({% post_url 2014-06-23-things-i-wish-id-known-before-creating-my-ghost-theme %}) - 23 Jun 2014
-- [It's Done! 8-Bit Memories Ghost Theme]({% post_url 2014-06-21-its-done-8-bit-memories-ghost-theme %}) - 21 Jun 2014
-- [Create Your Own Ghost Theme in 5 Minutes]({% post_url 2014-06-10-create-your-own-ghost-theme-in-5-minutes %}) - 10 Jun 2014
-- [Setting Up a Ghost Dev Environment]({% post_url 2014-05-17-setting-up-a-ghost-dev-environment %}) - 17 May 2014
 - [Getting to Grips With Ghost Themes]({% post_url 2014-04-24-getting-to-grips-with-ghost-themes %}) - 24 Apr 2014
+- [Setting Up a Ghost Dev Environment]({% post_url 2014-05-17-setting-up-a-ghost-dev-environment %}) - 17 May 2014
+- [Create Your Own Ghost Theme in 5 Minutes]({% post_url 2014-06-10-create-your-own-ghost-theme-in-5-minutes %}) - 10 Jun 2014
+- [It's Done! 8-Bit Memories Ghost Theme]({% post_url 2014-06-21-its-done-8-bit-memories-ghost-theme %}) - 21 Jun 2014
+- [Things I Wish I'd Known Before Creating My Own Ghost Theme]({% post_url 2014-06-23-things-i-wish-id-known-before-creating-my-ghost-theme %}) - 23 Jun 2014
