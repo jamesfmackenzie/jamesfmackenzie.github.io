@@ -11,13 +11,12 @@ Projects to add:
 
 * FPS Frame capture project
 * Building the ultimate Windows 98 machine
-* HP Thin Client as a DOS Gaming PC? (including Voodoo 2 on here)
-* DOS Gaming on FPGA 
-* Remote Play Xbox Series X on PC 
 
 -->
 
-
+* <a href="#HP Thin Client DOS Gaming PC">HP Thin Client DOS Gaming PC</a> - Feb 2021 
+* <a href="#DOS Gaming on MiSTer FPGA">DOS Gaming on MiSTer FPGA</a> - Feb 2021 
+* <a href="#Remote Play Xbox Series S/X Games on PC">Remote Play Xbox Series S/X Games on PC</a> - Jan 2021 
 * <a href="#Lenovo Tiny Series Emulation Station">Lenovo Tiny Series Emulation Station</a> - May 2020 
 * <a href="#Porting Commander Keen to PlayStation Vita">Porting Commander Keen to PlayStation Vita</a> - In Progress
 * <a href="#Porting Commander Keen to WebAssembly">Porting Commander Keen to WebAssembly</a> - Nov 2019
@@ -29,6 +28,90 @@ Projects to add:
 * <a href="#Playing Downloaded Games on Real ST Hardware">Playing Downloaded Games on Real ST Hardware</a> - Sep 2015
 * <a href="#Watch Mobile Content on the Go">Watch Mobile Content on the Go</a> - Dec 2014
 * <a href="#Ghost Blogging">Ghost Blogging</a> - Jun 2014
+
+<br />
+
+
+<a name="HP Thin Client DOS Gaming PC">
+## HP Thin Client DOS Gaming PC
+
+Status | Completed July 2021
+Goal | Build a small and light gaming PC for DOS and Windows 98 gaming
+
+After <a href="#DOS Gaming on MiSTer FPGA">DOS gaming on MiSTer</a>, I was left wanting for more. This MiSTer felt underpowered, I wanted something a little faster to play Half-Life, Unreal and other Windows 98 classics.
+
+In search of a retro PC (but short on apartment space), I purchased a HP Compaq t5710 thin client. The hardware features:
+
+* 800MHz <a href="https://en.wikipedia.org/wiki/Transmeta_Crusoe" target="_blank">Transmeta Crusoe processor</a> (x86 compatible)
+* 256MB PC2700 DDR RAM (plenty for DOS and Windows 98)
+* <a href="https://en.wikipedia.org/wiki/Radeon_R100_series" target="_blank">ATI Radeon 7000M</a> graphics (first-generation Radeon, surprisingly good DirectX/OpenGL 3D performance)
+* VIA VT8231 chipset (featuring built-in Sound Blaster audio) 
+* 1 PCI expansion slot 
+* Wired Ethernet, 4 USB 2.0 ports, microphone and headphone jacks, PS/2, VGA, Serial, and Parallel ports
+
+Despite the 2004 build, the hardware is very well suited to DOS and Windows 98 gaming. The Sound Blaster and Ad-Lib audio even works in DOS, making this a great all-in-one unit.
+
+After some trial and error, I was able to [succesfully install and game on Windows 98]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}). I was [even able to find a working PS/2 splitter]({% post_url 2021-11-13-using-monoprice-ps2-splitter-with-hp-compaq-t5710-review %}).
+
+Next, I experimented with the PCI expansion slot. After some success with PCI sound hardware, I installed a <a href="https://en.wikipedia.org/wiki/Voodoo2" target="_blank">3dfx Voodoo2</a>. It <a href="https://twitter.com/jamesfmackenzie/status/1492922391223283714" target="_blank">worked fantastically!</a>
+
+I'm super happy with this build. The t5710 is now my go to retro PC - I don't need anything more!
+
+Posts:
+- [HP Compaq t5710 Review – Great for DOS and Windows 98 Gaming?]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}) - 11 Jul 2021
+- [HP Compaq t5710 – How To Install Windows 98 from USB Flash Drive with Easy2Boot]({% post_url 2021-07-11-install-windows-98-from-usb-stick-flash-drive-with-easy2boot-hp-compaq-t5710 %}) - 11 Jul 2021
+- [HP Compaq t5710 – Using a PS/2 Splitter Cable]({% post_url 2021-11-13-using-monoprice-ps2-splitter-with-hp-compaq-t5710-review %}) - 13 Nov 2021
+
+<br />
+
+
+<a name="DOS Gaming on MiSTer FPGA">
+## DOS Gaming on MiSTer FPGA
+
+Status | Completed March 2021
+Goal | Play DOS and Windows 95 games on the MiSTer FPGA platform
+
+Having recently acquired a <a href="https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=1046" target="_blank">Terasic DE10-Nano FGPA Development Kit</a>, I was very keen to install the [MiSTer software distribution]({% post_url  2020-08-22-mister-fpga-introduction-and-hardware-overview %}) and try some retro computing cores.
+
+First on the list: the 80486 PC. I've many fond memories of DOS and Windows 95 gaming, messing with IRQ settings, tuning <code>config.sys</code> and <code>autoexec.bat</code> to get things working "just so".
+
+Luckily for me, DOS gaming is very well served on MiSTer via the <a href="https://github.com/MiSTer-devel/ao486_MiSTer" target="_blank">ao486 core</a>. It provides:
+
+- An 80486SX CPU
+- 256MB RAM
+- <a href="https://en.wikipedia.org/wiki/Super_VGA" target="_blank">SVGA</a> graphics (1280x1024 at 256 colours, 1024x768 at ~65,000 colours, 640x480 at ~16 million colours)
+- <a href="https://en.wikipedia.org/wiki/Sound_Blaster">Sound Blaster</a> Pro and Sound Blaster 16 support. Choice of <a href="https://en.wikipedia.org/wiki/Yamaha_YM3812" target="_blank">OPL2</a>, <a href="https://en.wikipedia.org/wiki/Yamaha_YMF262" target="_blank">OPL3</a> and <a href="https://en.wikipedia.org/wiki/Sound_Blaster#Creative_Music_System" target="_blank">CM/S</a> synth
+- High speed <a href="https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter" target="_blank">Serial/UART</a> (3Mbps)
+- <a href="https://en.wikipedia.org/wiki/MIDI" target="_blank">MIDI</a> device support, built-in <a href="https://github.com/dwhinham/mt32-pi" target="_blank">Roland MT-32 emulation</a>
+- 4 virtual HDDs, up to 137GB each
+- 2 virtual CD-ROM drives
+
+After a lot of tinkering, I was able to [setup file sharing]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}), [install a Memory Manager]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %}), [configure the Sound Blaster]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %}), add [CD-ROM]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %}) and [Mouse]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %}) support, [configure Roland MIDI]({% post_url 2021-03-28-mister-ao486-core-part-8-midilink-midi-roland-mt-32-sound-canvas %}) and [install Windows 95]({% post_url 2021-03-28-mister-ao486-core-part-9-windows-95-install %}). A great result!
+
+Full details below:
+
+- [MiSTer AO486 Core Part 1 – Getting Started]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}) - 06 Feb 2021
+- [MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}) - 14 Feb 2021
+- [MiSTer AO486 Core Part 3 – Managing Memory]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %}) - 13 Mar 2021
+- [MiSTer AO486 Core Part 4 – Sound and Music Setup]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %}) - 13 Mar 2021
+- [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %}) - 13 Mar 2021
+- [MiSTer AO486 Core Part 6 – Mouse Support]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %}) - 13 Mar 2021
+- [MiSTer AO486 Core Part 7 – Quick Start DOS Image]({% post_url 2021-03-18-mister-ao486-core-part-7-dos-quick-start-hard-disk-image %}) - 18 Mar 2021
+- [MiSTer AO486 Core Part 8 – Roland MT-32, Sound Canvas Audio via MidiLink]({% post_url 2021-03-28-mister-ao486-core-part-8-midilink-midi-roland-mt-32-sound-canvas %}) - 28 Mar 2021
+- [MiSTer AO486 Core Part 9 – Installing Windows 95]({% post_url 2021-03-28-mister-ao486-core-part-9-windows-95-install %}) - 28 Mar 2021
+
+<br />
+
+
+<a name="Remote Play Xbox Series S/X Games on PC">
+## Remote Play Xbox Series S/X Games on PC
+
+Status | Completed January 2021
+Goal | Stream / Remote Play Xbox Series S/X games from my Windows PC
+
+With the Xbox One, I often used the Xbox Console Companion app to <a href="https://support.xbox.com/en-US/help/games-apps/apps-help/how-to-use-game-streaming-in-xbox-console-companion-app" target="_blank">remote play games on PC</a>. Frustratingly, this feature was silently dropped for Xbox Series S/X – the Console Companion app just doesn’t work for the new consoles.
+
+Looking for a solution, I was able to install a hidden “Xbox Game Streaming (Test App)” from the Windows 10 Store, and start streaming again. Full details [here]({% post_url 2021-01-24-remote-play-how-to-xbox-series-x-s-game-streaming-to-windows-10-pc %}). Case closed!
 
 <br />
 
@@ -76,6 +159,7 @@ Posts:
 
 <br />
 
+
 <a name="Porting Commander Keen to WebAssembly">
 ## Porting Commander Keen to WebAssembly 
 
@@ -97,6 +181,7 @@ Posts:
 
 <br />
 
+
 <a name="Learning about Webassembly">
 ## Learning About WebAssembly
 
@@ -111,6 +196,7 @@ I've wanted to explore the <a href="https://en.wikipedia.org/wiki/WebAssembly">W
 - [Lesson 4: File System Access]({% post_url 2019-12-08-webassembly-loading-files %}) - 08 Dec 2019
 
 <br />
+
 
 <a name="Raspberry Pi Retrogaming">
 ## Raspberry Pi Retrogaming
@@ -130,6 +216,7 @@ Posts:
 
 <br />
 
+
 <a name="Atari ST on the Web">
 ## Atari ST on the Web
 
@@ -147,6 +234,7 @@ The Web experience is slow and doesn't support CSS - which rules out a lot of co
 In search of a better experience: it might be possible to use a <a href="https://en.wikipedia.org/wiki/Proxy_server" target="_blank">proxy server</a> to strip CSS and shrink images. Or use a text-based browser like <a href="http://lynx.browser.org/" target="_blank">Lynx</a>. <a href="https://www.brow.sh/" target="_blank">Browsh</a> also looks interesting. Lots of avenues for future investigation!
 
 <br />
+
 
 <a name="Shooting and Sharing VR Photos">
 ## Shooting and Sharing VR Photos
@@ -178,6 +266,7 @@ Posts:
 
 <br />
 
+
 <a name="Transferring Files Between PC and ST">
 ## Transferring Files Between PC and ST
 
@@ -201,6 +290,7 @@ I also took a detour into file compression, and learned how to split large files
 
 <br />
 
+
 <a name="Playing Downloaded Games on Real ST Hardware">
 ## Playing Downloaded Games on Real ST Hardware
 
@@ -215,6 +305,7 @@ I explored several options, including floppy disk images and hard disk adaptatio
 - [Playing Downloaded Games on a Real Atari ST]({% post_url 2015-09-18-playing-downloaded-games-on-a-real-atari-st %}) - 18 Sep 2015
 
 <br />
+
 
 <a name="Watch Mobile Content on the Go">
 ## Watch Mobile Content on the Go
@@ -233,6 +324,7 @@ I explored use of the Pocket API and PlexSync to download and push web videos to
 - [I Can't Stream Video on the Commute. How Can I Fix It?]({% post_url 2014-12-17-i-cant-stream-video-on-the-commute-how-can-i-fix-it %}) - 17 Dec 2014
 
 <br />
+
 
 <a name="Ghost Blogging">
 ## Ghost Blogging
