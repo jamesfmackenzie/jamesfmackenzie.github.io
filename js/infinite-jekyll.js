@@ -84,8 +84,9 @@ $(function () {
     var htmlFragment = "";
 
     // quotes do not include content or summary. This is different to the initially loaded posts but we are ok for this content to drop as you scroll down the page
-    if (postToAppend.layout == "quote") {
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + url + "“" + postToAppend.title + "”</a></h2><p><date>" + postToAppend.date + "</date></p></div>";
+    if (postToAppend.layout == "tweet") {			
+		
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">“" + postToAppend.title + "”</a></h2><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>";
     } else {
       htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + url + postToAppend.title + "</a></h2>" + postToAppend.summary + "<p><date>" + postToAppend.date + "</date></p></div>";
     }

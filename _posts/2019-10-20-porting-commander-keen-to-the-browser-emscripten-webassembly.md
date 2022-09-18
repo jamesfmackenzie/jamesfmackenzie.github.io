@@ -1,11 +1,8 @@
 ---
-layout: quote
+layout: tweet
 title: "Porting Commander Keen / CloneKeen to the web browser with #Emscripten. Great progress so far! #retrogaming #retrocomputing"
 date: '2019-10-20 14:42:00:00'
-overrideUrl: "https://twitter.com/jamesfmackenzie/status/1186034903294644224?s=21"
+tweetId: 1186034903294644224
 tags: [Emscripten, GameDev, Programming, Retrogaming, Tweets, Videogames, WebAssembly, Web Development]
 ---
-
-![](/img/posts/commander-keen-emscripten.jpg)
-
 
