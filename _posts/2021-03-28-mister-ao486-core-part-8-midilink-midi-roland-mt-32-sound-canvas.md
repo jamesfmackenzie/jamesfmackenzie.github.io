@@ -3,6 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 8 – Roland MT-32, Sound Canvas Audio via MidiLink"
 date: '2021-03-28 15:12:00:00'
 summary: Thanks to fantastic work in the MiSTer community, you can get Roland MT-32 and Sound Canvas audio working in ao486. Here's how ...
+image: roland-um-one_mk2_usb-midi-interface-adapter.jpg
 tags: [DOS, FPGA, How To, MIDI, MiSTer, Retrocomputing, Retrogaming, Single-Board Computing]
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: Atari in the Attic
 date: '2015-08-15 21:19:00'
 summary: Graphics glitches. Timing issues. Emulators suck. The best way to enjoy retro games is on real hardware ...
+image: mega_st_4.jpg
 tags: [Atari, Atari ST, Retrocomputing]
 ---
 

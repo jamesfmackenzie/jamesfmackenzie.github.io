@@ -3,6 +3,7 @@ layout: post
 title: "Namco NeGcon Review – The Best Controller for Racers?"
 date: '2021-12-28 12:41:00:00'
 summary: I recently acquired the unique Namco NeGcon (“neh-gee-con”) controller ...
+image: namco-negcon-controller-for-playstation-ps1.jpg
 tags: [Retrogaming, Videogames]
 ---
 

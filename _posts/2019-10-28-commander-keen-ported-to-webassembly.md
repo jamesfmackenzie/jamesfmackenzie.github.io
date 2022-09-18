@@ -3,6 +3,7 @@ layout: post
 title: Commander Keen in a Web Browser?
 date: '2019-10-28 11:00:00:00'
 summary: After a few weeks on/off work with Emscripten, I’ve successfully ported Commander Keen to the Web Browser. Play it right here ...
+image: commander-keen-invasion-of-the-vorticons-screenshot.png
 tags: [Emscripten, GameDev, Programming, Retrogaming, Videogames, WebAssembly, Web Development]
 ---
 

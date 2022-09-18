@@ -3,6 +3,7 @@ layout: post
 title: "Lotus Esprit Turbo Challenge Enhanced for Atari STE"
 date: '2021-04-17 22:36:00:00'
 summary: 31 years after the original release, the Atari STE finally has the upgraded port it always deserved ...
+image: lotus-ste-atari-ste-comparison.jpg
 tags: [Atari, Atari ST, Retrocomputing, Retrogaming]
 ---
 

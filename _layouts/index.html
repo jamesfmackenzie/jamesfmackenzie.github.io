@@ -78,7 +78,13 @@
 				<p>
 					<date>{{ post.date | date: "%b %-d, %Y" }}</date>
 				</p>
+				{% if post.image %}
+				<p>
+					<img src="/img/posts/{{ post.image }}" />
+				</p>
 				{% endif %}
+				{% endif %}
+				
 			</div>
 		</article>
 		{% endfor %}
