@@ -3,7 +3,7 @@ layout: post
 title: Can I Stream Video From PC to Xbox One?
 date: '2014-03-19 17:17:00'
 summary: Since I bought an Xbox One a few months ago, I’ve had a nagging question on my mind. Can the One replace my Apple TV, Now TV and PlayStation 3 to become the only box I need for media streaming? ...
-tags: [Media, Streaming, Xbox]
+tags: [Media, Posts, Streaming, Xbox]
 ---
 
 Since I bought an Xbox One a few months ago, I've had a nagging question on my mind. Can the One replace my Apple TV, Now TV and PlayStation 3 to become the only box I need for media streaming?

@@ -3,7 +3,7 @@ layout: post
 title: A Year of Zero Notifications
 date: '2016-09-25 12:01:43'
 summary: Inspired by @joelgascoigne’s Zero Notifications blog post, I took the plunge and purged my iPhone of all (but the most essential) notifications ...
-tags: [Lifehacks, Productivity, Time Management]
+tags: [Lifehacks, Posts, Productivity, Time Management]
 overrideUrl: https://medium.com/@jamesfmackenzie/a-year-of-zero-notifications-d69209288ea4
 ---
 

@@ -4,7 +4,7 @@ title: "mt32-pi – Testing out New USB Serial Support"
 date: '2021-07-25 12:47:00:00'
 summary: mt32-pi recently added support for USB serial devices. How does it work?
 image: mt32-pi-serial-midi-hardware-connection.jpg
-tags: [DOS, How To, MIDI, Retrocomputing, Retrogaming]
+tags: [DOS, How To, MIDI, Posts, Retrocomputing, Retrogaming]
 ---
 
 <div class="youtube-container">

@@ -3,7 +3,7 @@ layout: post
 title: Getting to Grips With Ghost Themes
 date: '2014-04-24 21:24:39'
 summary: I’ve been blogging on the Ghost platform for a month-or-so, and it’s high time to ditch the default Casper theme for something a little more bespoke ...
-tags: [Ghost Blogging Platform, Web Design]
+tags: [Ghost Blogging Platform, Posts, Web Design]
 ---
 
 I've been blogging on the Ghost platform for a month-or-so, and it's high time to ditch the [default Casper theme](https://github.com/TryGhost/Casper) for something a little more bespoke.

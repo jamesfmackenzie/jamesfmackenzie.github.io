@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 6 – Mouse Support"
 date: '2021-03-13 22:57:00:00'
 summary: Adding mouse support to the MiSTer ao486 core ...
-tags: [DOS, FPGA, How To, MiSTer, Retrocomputing, Retrogaming, Single-Board Computing]
+tags: [DOS, FPGA, How To, MiSTer, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
 ---
 
 Many DOS games and applications need mouse support. Here's how to get up and running.

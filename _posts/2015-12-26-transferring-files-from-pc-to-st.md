@@ -3,7 +3,7 @@ layout: post
 title: Transferring Files from PC to ST
 date: '2015-12-26 10:13:00'
 summary: At some point, you’ll most likely want to transfer files from PC to ST. Some common approaches are ...
-tags: [Atari, Atari ST, How To, Retrocomputing]
+tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 ---
 
 At some point, you'll most likely want to transfer files from PC to ST. Some common approaches are:

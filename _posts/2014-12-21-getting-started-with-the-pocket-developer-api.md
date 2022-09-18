@@ -4,7 +4,7 @@ title: Getting Started With the Pocket Developer API
 date: '2014-12-21 00:48:10'
 summary: I want to automatically extract the video from my Pocketed content and sync it to my phone. To do this, I’ll need to extend Pocket via the Developer API. Here’s how to get started ...
 image: 2014-12-20-19_05_12-Pocket_-Developer-API.png
-tags: [API, How To, Programming, Web Development]
+tags: [API, How To, Posts, Programming, Web Development]
 permalink: /getting-started-with-the-pocket-developer-api/
 ---
 

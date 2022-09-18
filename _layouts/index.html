@@ -66,6 +66,19 @@
 				</h2>
 				<blockquote class="twitter-tweet twitter-tweet-blockquote"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				{% elsif post.layout == "youtube" %}
+				<h2>
+					<a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a>
+				</h2>
+				<p class="post-summary">
+					{{ post.summary }}
+				</p>
+				<p>
+					<date>{{ post.date | date: "%b %-d, %Y" }}</date>
+				</p>
+				<div class="youtube-container">
+				<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" frameborder="0" allowfullscreen class="youtube-video"></iframe>
+				</div> 
 				{% else %}
 				<h2>
 					{% if post.overrideUrl %}

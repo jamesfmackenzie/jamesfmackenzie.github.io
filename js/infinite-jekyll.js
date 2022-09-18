@@ -76,24 +76,39 @@ $(function () {
       tagsHtml += "</p>";
     }
 
-    var url = "<a href=\"" + postToAppend.url + "\">";
-    if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
-      url = "<a target=\"_blank\" href=\"" + postToAppend.overrideUrl + "\">";
+
+    var hyperlink = "<a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a>";
+    
+	if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
+		hyperlink = "<a target=\"_blank\" href=\"" + postToAppend.overrideUrl + "\">";
     }
-	
-	var imageFragment = "";
-	if (postToAppend.image && postToAppend.image != "") {
-		imageFragment = "<p><img src=\"/img/posts/" + postToAppend.image + "\" /></p>";
+	else if (postToAppend.layout == "tweet") {
+		hyperlink = "<a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">“" + postToAppend.title + "”</a>";
 	}
+	else if (postToAppend.layout == "youtube") {
+		hyperlink = "<a target=\"_blank\" href=\"https://youtu.be/" + postToAppend.videoId + "\">" + postToAppend.title + "</a>";
+	}
+	
+	
+	var mediaFragment = "";
+	
+	if (postToAppend.image && postToAppend.image != "") {
+		mediaFragment = "<p><img src=\"/img/posts/" + postToAppend.image + "\" /></p>";
+	}
+	else if (postToAppend.layout == "youtube") {
+		mediaFragment = "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>"
+	}
+
 
     var htmlFragment = "";
 
-    // quotes do not include content or summary. This is different to the initially loaded posts but we are ok for this content to drop as you scroll down the page
     if (postToAppend.layout == "tweet") {			
 		
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">“" + postToAppend.title + "”</a></h2><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>";
-    } else {
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + url + postToAppend.title + "</a></h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><date>" + postToAppend.date + "</date></p>" + imageFragment + "</div>";
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + hyperlink + "</h2><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>";
+    } 
+	else {
+      
+	  htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + hyperlink + "</h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><date>" + postToAppend.date + "</date></p>" + mediaFragment + "</div>";
     }
 
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");

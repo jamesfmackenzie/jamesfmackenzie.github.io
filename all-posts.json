@@ -12,6 +12,8 @@ layout: none
       "layout": "{{ post.layout }}",
 	  {% if post.layout == "tweet" %}
 	  "tweetId": "{{ post.tweetId }}",	
+	  {% elsif post.layout == "youtube" %}
+	  "videoId": "{{ post.videoId }}",
 	  {% endif %}
 	  {% if post.image %}
 	  "image": "{{ post.image }}",

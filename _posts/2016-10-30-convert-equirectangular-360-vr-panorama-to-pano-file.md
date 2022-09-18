@@ -3,7 +3,7 @@ layout: post
 title: Convert Equirectangular Projection to .Pano File
 date: '2016-10-30 13:17:00'
 summary: With native support in the form of .pano files, the VR Photography experience in Windows is great ...
-tags: [How To, Photography, VR Photography]
+tags: [How To, Photography, Posts, VR Photography]
 ---
 
 With native support in the form of [.pano files]({% post_url 2016-10-29-what-are-pano-files %}), the <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">VR Photography</a> experience in Windows is great. 

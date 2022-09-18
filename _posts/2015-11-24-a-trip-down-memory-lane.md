@@ -4,7 +4,7 @@ title: A Trip Down Memory Lane (There's Treasure in That There Attic)
 date: '2015-11-24 21:43:30'
 summary: After a weekend spent rummaging in the parents’ attic, I came away with some solid gold gaming artefacts from my past ...
 image: zx_spectrum_48k.jpg
-tags: [Retrocomputing, Retrogaming, Videogames]
+tags: [Posts, Retrocomputing, Retrogaming, Videogames]
 ---
 
 After a weekend spent rummaging in the parents' attic, I came away with some solid gold gaming artefacts from my past.

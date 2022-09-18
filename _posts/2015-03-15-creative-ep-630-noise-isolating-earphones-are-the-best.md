@@ -4,7 +4,7 @@ title: Creative EP-630 Noise Isolating Earphones Are the Best
 date: '2015-03-15 12:33:15'
 summary: I hate headphones. Too much bass. Too tinny. Break too easily. Too expensive. Too much noise leakage. But after many years of searching, I’ve found a perfect compromise ...
 image: ep630.jpg
-tags: [Consumer Tech]
+tags: [Consumer Tech, Posts]
 permalink: /creative-ep-630-noise-isolating-earphones-are-the-best/
 ---
 ![](/img/posts/ep630.jpg)
