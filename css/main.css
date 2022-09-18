@@ -75,6 +75,10 @@ pre {
   margin: 0 auto;
 }
 
+.post-summary {
+  line-height: 24px;
+}
+
 .quote {
   text-transform: none;
   font-size: 1.6em;
@@ -399,6 +403,10 @@ td {
 	border: 1px solid #CFD9DE;
 	border-radius: 12px;
 	margin: 0;
+}
+
+.twitter-tweet-blockquote p {
+	line-height: 24px;
 }
 
 .twitter-tweet-rendered {
