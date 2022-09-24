@@ -2,7 +2,7 @@
 layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
   <channel>
     <title>{{ site.name | xml_escape }}</title>
     <link>{{ site.url }}/</link>
@@ -16,19 +16,39 @@ layout: null
 	<category>Retrogaming</category>
 	<generator>Jekyll v{{ jekyll.version }}</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+	<webfeeds:icon>{{ site.url }}/img/layout/logo-square.png</webfeeds:icon>
 	<image>
-	  <url>{{ site.url }}/img/layout/logo-cropped.png</url>
+	  <url>{{ site.url }}/img/layout/logo-square.png</url>
 	  <title>{{ site.name | xml_escape }}</title>
 	  <link>{{ site.url }}/</link>
 	</image>
     {% for post in site.posts limit:20 %}
-	  {% if post.layout == "tweet" %}
 	    <item>
           <title>{{ post.title | xml_escape }}</title>
-          <link>https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</link>
-		  <description>{{ post.title | xml_escape }}</description>
+		  {% if post.image %}
+		    <description>
+			  <![CDATA[
+			  <img src="{{ site.url }}/img/posts/{{ post.image }}" alt="featured image" />
+			  <p>{{ post.summary }}</p>
+			  ]]>
+            </description>
+		  {% else %}
+		    <description>{{ post.summary | xml_escape }}</description>
+		  {% endif %}
           <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-          <guid isPermaLink="true">https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</guid>
+          {% if post.layout == "tweet" %}
+		    <link>https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</link>
+		    <guid isPermaLink="true">https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</guid>
+		  {% elsif post.layout == "youtube" %}
+		    <link>https://youtu.be/{{ post.videoId }}</link>
+		    <guid isPermaLink="true">https://youtu.be/{{ post.videoId }}</guid>
+		  {% else %}
+		    <link>{{ post.url | prepend: site.url }}</link>
+		    <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+		  {% endif %}
+		  {% if post.image %}
+		    <webfeeds:featuredImage url="{{ site.url }}/img/posts/{{ post.image }}" />
+		  {% endif %}
 		  {% for tag in post.tags %}
             <category>{{ tag | xml_escape }}</category>
           {% endfor %}
@@ -36,35 +56,6 @@ layout: null
             <category>{{ cat | xml_escape }}</category>
           {% endfor %}
         </item>
-	  {% elsif post.layout == "youtube" %}
-	  	<item>
-          <title>{{ post.title | xml_escape }}</title>
-          <link>https://youtu.be/{{ post.videoId }}</link>
-		  <description>{{ post.title | xml_escape }}</description>
-          <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-          <guid isPermaLink="true">https://youtu.be/{{ post.videoId }}</guid>
-		  {% for tag in post.tags %}
-            <category>{{ tag | xml_escape }}</category>
-          {% endfor %}
-          {% for cat in post.categories %}
-            <category>{{ cat | xml_escape }}</category>
-          {% endfor %}
-        </item>
-	  {% else %}
-        <item>
-          <title>{{ post.title | xml_escape }}</title>
-          <link>{{ post.url | prepend: site.url }}</link>
-		  <description>{{ post.summary | xml_escape }}</description>
-          <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-          <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-		  {% for tag in post.tags %}
-            <category>{{ tag | xml_escape }}</category>
-          {% endfor %}
-          {% for cat in post.categories %}
-            <category>{{ cat | xml_escape }}</category>
-          {% endfor %}
-        </item>
-      {% endif %}
     {% endfor %}
   </channel>
 </rss>
