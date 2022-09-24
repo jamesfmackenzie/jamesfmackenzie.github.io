@@ -9,7 +9,7 @@ tags: [DOS, How To, MIDI, Posts, Retrocomputing, Retrogaming]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/SxMjDsT9rEo?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 The <a href="https://github.com/dwhinham/mt32-pi/releases/tag/v0.10.0" target="_blank">latest mt32-pi release</a> has added support for USB serial devices - making it much easier to connect retro gaming PCs via serial cable. [Previously we had to use a clunky RS232 to TTL converter module]({% post_url 2021-05-03-get-the-best-msdos-ms-dos-audio-with-mt32-pi %}). The new setup is much cleaner.

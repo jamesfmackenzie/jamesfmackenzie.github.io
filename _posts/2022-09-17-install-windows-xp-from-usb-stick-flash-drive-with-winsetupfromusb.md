@@ -13,7 +13,7 @@ WinSetupFromUSB is a super useful tool that can prepare a USB flash drive to ins
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/bMq0KfjOCpc?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

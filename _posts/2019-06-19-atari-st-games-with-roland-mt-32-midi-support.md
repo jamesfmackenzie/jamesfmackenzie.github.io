@@ -15,7 +15,7 @@ We all love to hate the Atari ST's integated Yamaha YM2149F sound chip. It's 3 b
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/ny5ONMX-R2I?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 Sounds great, no? By comparison the built-in ST sound chip <a href="https://www.youtube.com/watch?v=ohNUWvGHRPk&feature=youtu.be" target="_blank">sounds utterly terrible</a>

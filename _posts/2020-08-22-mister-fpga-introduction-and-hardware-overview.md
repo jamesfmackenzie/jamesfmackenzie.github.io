@@ -9,7 +9,7 @@ tags: [FPGA, MiSTer, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/qBDSzpBh_oY?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 MiSTer is an open project that aims to recreate various classic computers, game consoles and arcade machines using modern FPGA hardware. I plan to deep-dive on some of the retro computing cores – but first a project introduction and hardware overview.

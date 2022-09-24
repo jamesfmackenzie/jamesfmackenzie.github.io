@@ -13,7 +13,7 @@ It also has analog buttons designed for fine control over accelerate or break, m
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/2lC_dfZenH0?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

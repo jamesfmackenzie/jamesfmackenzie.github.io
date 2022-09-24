@@ -8,7 +8,7 @@ tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/ofhKCXVbu-0?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 At some point, you'll most likely want to transfer files from PC to ST. One approach is to use a serial cable (or null modem) connection and ZMODEM.

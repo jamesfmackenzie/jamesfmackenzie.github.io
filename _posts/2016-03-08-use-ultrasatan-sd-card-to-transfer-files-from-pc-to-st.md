@@ -8,7 +8,7 @@ tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/ddwDJn8CV8I?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 If you want to make a large number of files available on your ST, <a href="http://www.lotharek.pl/product.php?pid=94" target="_blank">Ultrasatan</a> is the way to go.

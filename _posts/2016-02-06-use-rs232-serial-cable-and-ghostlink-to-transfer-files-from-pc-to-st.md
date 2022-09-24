@@ -8,7 +8,7 @@ tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/N_l7VXHF9m0?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 At some point, you'll most likely want to transfer files from PC to ST. One common approach is to use the Ghostlink software along with the correct cabling.

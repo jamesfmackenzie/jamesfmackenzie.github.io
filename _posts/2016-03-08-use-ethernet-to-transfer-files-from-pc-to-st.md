@@ -8,7 +8,7 @@ tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/m3Lk96knpI0?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 <a href="https://en.wikipedia.org/wiki/Ethernet" target="_blank">Ethernet</a> - probably the quickest and most convenient way to transfer files between your PC and ST.

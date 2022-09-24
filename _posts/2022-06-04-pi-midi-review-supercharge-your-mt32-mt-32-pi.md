@@ -11,7 +11,7 @@ The PI-MIDI is a MIDI hat for Raspberry Pi, granting your Pi extended MIDI capab
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/vnVbw3OV3N4?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

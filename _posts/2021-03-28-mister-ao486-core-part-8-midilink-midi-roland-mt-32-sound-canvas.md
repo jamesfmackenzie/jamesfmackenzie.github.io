@@ -13,7 +13,7 @@ But true DOS gamers can do better. Games from the late 80s onwards often feature
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/PMYKSwTa2cY?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 Sounds glorious, no? Especially when compared to the (rather drab) <a href="https://www.youtube.com/watch?v=U4R_--__fjE" target="_blank">AdLib audio version</a>.
@@ -86,7 +86,7 @@ In this mode, MiSTer runs the <a href="https://sourceforge.net/projects/munt/" t
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/H9dU5CjoCDw?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 Unfortunately, MiSTer's onboard ARM CPU isn't *quite* powerful enough to run MUNT at full speed. You might hear some smooshed, delayed or off-pitch notes compared to <a href="https://youtu.be/PMYKSwTa2cY" target="_blank">authentic playback</a>. If this is an issue for you, don't worry – there are other options.
@@ -102,7 +102,7 @@ In this mode, MiSTer runs the <a href="https://www.fluidsynth.org/" target="_bla
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/tvr3GdtlhcI?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

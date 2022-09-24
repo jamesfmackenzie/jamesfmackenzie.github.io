@@ -9,7 +9,7 @@ tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/-xNCRaiEHG0?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 If you want to quickly transfer files between your PC and ST, PARCP-USB is a great option.

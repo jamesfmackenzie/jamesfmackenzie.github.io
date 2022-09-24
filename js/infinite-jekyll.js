@@ -104,11 +104,11 @@ $(function () {
 
     if (postToAppend.layout == "tweet") {			
 		
-      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + hyperlink + "</h2><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>";
+      htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2 class=\"quote\">" + hyperlink + "</h2><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\"></script>";
     } 
 	else {
       
-	  htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + hyperlink + "</h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><date>" + postToAppend.date + "</date></p>" + mediaFragment + "</div>";
+	  htmlFragment = "<div class=\"row\">" + tagsHtml + "<h2>" + hyperlink + "</h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><time>" + postToAppend.date + "</time></p>" + mediaFragment + "</div>";
     }
 
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");

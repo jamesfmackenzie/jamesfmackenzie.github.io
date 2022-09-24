@@ -9,7 +9,7 @@ tags: [DOS, How To, MIDI, Posts, Retrocomputing, Retrogaming]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/9TI6cYEtwLE?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 Although <a href="https://www.youtube.com/watch?v=U4R_--__fjE" target="_blank">AdLib audio</a> is the synth standard for DOS-gaming, many games include support for vastly superior <a href="https://www.youtube.com/watch?v=PMYKSwTa2cY" target="_blank">MIDI audio</a>.

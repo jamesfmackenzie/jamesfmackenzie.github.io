@@ -97,8 +97,7 @@ That's it! You should now have a working game disk. Put it in your ST and play!
 I've put together a video copy of this guide too. Find it embedded below.
 
 <div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/Tu52dALu6lQ" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+<iframe src="https://www.youtube.com/embed/Tu52dALu6lQ" allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 ### More Atari ST Posts

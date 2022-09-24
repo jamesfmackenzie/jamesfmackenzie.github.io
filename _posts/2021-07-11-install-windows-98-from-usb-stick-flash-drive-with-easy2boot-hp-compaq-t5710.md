@@ -11,7 +11,7 @@ The HP Compaq t5710 [makes a great DOS and Windows 98 retro gaming machine]({% p
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/GioiRupslkU?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

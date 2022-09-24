@@ -9,7 +9,7 @@ tags: [FPGA, How To, MiSTer, Posts, Retrocomputing, Retrogaming, Single-Board Co
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/X77hmWYz9VM?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 Following on from the [hardware overview]({% post_url 2020-08-22-mister-fpga-introduction-and-hardware-overview %}), here's how to install and configure your MiSTer to play the latest arcade, computer and game console cores.

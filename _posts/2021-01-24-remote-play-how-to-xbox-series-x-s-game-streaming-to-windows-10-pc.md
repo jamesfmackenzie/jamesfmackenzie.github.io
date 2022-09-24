@@ -15,7 +15,7 @@ However all is not lost. By installing the hidden "Xbox Game Streaming (Test App
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/m44x4aRlx5I?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

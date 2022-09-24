@@ -60,5 +60,5 @@ On my PC, I found that Firefox and Edge and offered better performance than Chro
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/W1rKkSokIXU?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 

@@ -39,7 +39,7 @@ To listen for yourself, find my full review on YouTube. Enjoy!
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/5Zht_r96ulk?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

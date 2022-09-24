@@ -31,7 +31,7 @@ Find a more detailed hardware overview on my YouTube channel:
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/V4DIPffO-sI?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

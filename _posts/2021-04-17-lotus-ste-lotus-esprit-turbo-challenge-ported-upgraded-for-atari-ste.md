@@ -28,7 +28,7 @@ Find a full *new versus old* comparison video below:
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/-gqdpt5siYk?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 

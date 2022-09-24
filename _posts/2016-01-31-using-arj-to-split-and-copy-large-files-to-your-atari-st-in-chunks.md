@@ -9,7 +9,7 @@ tags: [Atari, Atari ST, How To, Posts, Retrocomputing]
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/UNkJJKaKd2w?rel=0" 
-frameborder="0" allowfullscreen class="youtube-video"></iframe>
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software, available for PC <a href="http://www.arjsoftware.com/arj32.htm" target="_blank">here</a> and ST <a href="https://sites.google.com/site/stessential/archiver-tools" target="_blank">here</a>.
