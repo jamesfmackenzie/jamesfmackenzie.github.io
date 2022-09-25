@@ -43,7 +43,7 @@ layout: null
 	  {% if post.layout == "tweet" %}
 		  <link type="text/html" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" rel="alternate" />
 		  <id>https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</id>
-		  <content type="text/html">
+		  <content type="html">
 			<![CDATA[
 			  <p><strong>“{{ post.title }}”</strong></p>
 			  <p>Read on Twitter <a href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" target="_blank">here</a>.</p>
@@ -52,7 +52,7 @@ layout: null
 	  {% elsif post.layout == "youtube" %}
 		  <link type="text/html" href="https://youtu.be/{{ post.videoId }}" rel="alternate" />
 		  <id>https://youtu.be/{{ post.videoId }}</id>
-	      <content type="text/html">
+	      <content type="html">
 			<![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
 			  <p>{{ post.summary }}</p>
@@ -63,7 +63,7 @@ layout: null
 	  {% else %}
 		  <link type="text/html" href="{{ post.url | prepend: site.url }}" rel="alternate" />
 		  <id>{{ post.url | prepend: site.url }}</id>
-	      <content type="text/html">
+	      <content type="html">
 		    <![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
 			  <p>{{ post.summary }}</p>
