@@ -5,12 +5,12 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>{{ site.url }}/</id>
   <title>{{ site.name | xml_escape }}</title>
-  <updated>{{ site.time | date_to_rfc822 }}</updated>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
   <author>
     <name>James Mackenzie</name>
   </author>
   <link href="{{ site.url }}/feed.xml" rel="self" />
-  <link type="html" href="{{ site.url }}/" rel="alternate" />
+  <link type="text/html" href="{{ site.url }}/" rel="alternate" />
   <category term="Programming" />
   <category term="Tech" />
   <category term="Retrogaming" />
@@ -22,7 +22,7 @@ layout: null
   {% for post in site.posts limit:20 %}
 	<entry>
 	  <title>{{ post.title | xml_escape }}</title>
-	  <updated>{{ post.date | date_to_rfc822 }}</updated>
+	  <updated>{{ post.date | date_to_xmlschema }}</updated>
 	  <author>
         <name>James Mackenzie</name>
       </author>
@@ -41,18 +41,18 @@ layout: null
 	  {% endfor %}
 	  
 	  {% if post.layout == "tweet" %}
-		  <link type="html" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" rel="alternate" />
+		  <link type="text/html" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" rel="alternate" />
 		  <id>https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</id>
-		  <content type="html">
+		  <content type="text/html">
 			<![CDATA[
 			  <p><strong>“{{ post.title }}”</strong></p>
 			  <p>Read on Twitter <a href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" target="_blank">here</a>.</p>
 			]]>
 		  </content>
 	  {% elsif post.layout == "youtube" %}
-		  <link type="html" href="https://youtu.be/{{ post.videoId }}" rel="alternate" />
+		  <link type="text/html" href="https://youtu.be/{{ post.videoId }}" rel="alternate" />
 		  <id>https://youtu.be/{{ post.videoId }}</id>
-	      <content type="html">
+	      <content type="text/html">
 			<![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
 			  <p>{{ post.summary }}</p>
@@ -61,9 +61,9 @@ layout: null
 			]]>
 		  </content>
 	  {% else %}
-		  <link type="html" href="{{ post.url | prepend: site.url }}" rel="alternate" />
+		  <link type="text/html" href="{{ post.url | prepend: site.url }}" rel="alternate" />
 		  <id>{{ post.url | prepend: site.url }}</id>
-	      <content type="html">
+	      <content type="text/html">
 		    <![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
 			  <p>{{ post.summary }}</p>
