@@ -3,18 +3,23 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
   <id>{{ site.url }}/</id>
   <title>{{ site.name | xml_escape }}</title>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
+  
   <author>
     <name>James Mackenzie</name>
   </author>
+  
   <link href="{{ site.url }}/feed.xml" rel="self" />
   <link type="text/html" href="{{ site.url }}/" rel="alternate" />
+  
   <category term="Programming" />
   <category term="Tech" />
   <category term="Retrogaming" />
   <category term="Retrocomputing" />
+  
   <generator>Jekyll v{{ jekyll.version }}</generator>
   <icon>{{ site.url }}/img/layout/logo-square.png</icon>
   <subtitle>{{ site.description | xml_escape }}</subtitle>
@@ -22,7 +27,9 @@ layout: null
   {% for post in site.posts limit:20 %}
 	<entry>
 	  <title>{{ post.title | xml_escape }}</title>
+	  <published>{{ post.date | date_to_xmlschema }}</published>
 	  <updated>{{ post.date | date_to_xmlschema }}</updated>
+	  
 	  <author>
         <name>James Mackenzie</name>
       </author>
@@ -49,6 +56,7 @@ layout: null
 			  <p>Read on Twitter <a href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" target="_blank">here</a>.</p>
 			]]>
 		  </content>
+		  
 	  {% elsif post.layout == "youtube" %}
 		  <link type="text/html" href="https://youtu.be/{{ post.videoId }}" rel="alternate" />
 		  <id>https://youtu.be/{{ post.videoId }}</id>
@@ -60,6 +68,7 @@ layout: null
 			  <img src="https://img.youtube.com/vi/{{ post.videoId }}/hqdefault.jpg" alt="YouTube thumbnail" />
 			]]>
 		  </content>
+		  
 	  {% else %}
 		  <link type="text/html" href="{{ post.url | prepend: site.url }}" rel="alternate" />
 		  <id>{{ post.url | prepend: site.url }}</id>
@@ -74,6 +83,7 @@ layout: null
 			]]>
 		  </content>  
 	  {% endif %}
+	  
 	</entry>
   {% endfor %}
 	
