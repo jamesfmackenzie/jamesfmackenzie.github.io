@@ -31,9 +31,24 @@ On real PCs, the Sound Blaster and other audio cards often include a MIDI interf
 
 3. After the forced reboot, hit *F12* once again to open the System Settings menu
 
-4. This time, run `Scripts → Yes → soundfont_install`. This will download the <a href="https://en.wikipedia.org/wiki/SoundFont" target="_blank">SoundFonts</a> necessary for MIDI playback.
+4. This time, run `Scripts → Yes → soundfont_install`. This will download the <a href="https://en.wikipedia.org/wiki/SoundFont" target="_blank">SoundFonts</a> and ROMs necessary for MIDI playback.
 
 ![](/img/posts/mister-ao486-midilink-updater.png)
+
+For reference, the downloaded ROMs are stored in <code>/media/fat/linux</code> in the following file structure:
+
+````
+/media/fat/linux
+│
+├── mt32-rom-data
+│   ├── CM32L_CONTROL.ROM
+│   └── CM32L_PCM.ROM
+│
+└── soundfonts
+    └── SC-55.sf2
+````
+
+These paths can also be adjusted in <code>/media/fat/linux/MidiLink.INI</code>.
 
 
 ### Step 2 – Enable MIDI Connection
