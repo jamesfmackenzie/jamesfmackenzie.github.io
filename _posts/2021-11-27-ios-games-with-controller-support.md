@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "iOS Games with Wireless Controller Support"
-date: '2021-11-27 19:04:00:00'
+title: "iOS Games with Controller Support"
+date: '2021-01-03 06:15:00:00'
 summary: I love iOS games. But touchscreen game controls? Nothing beats a real gamepad. Here's a list of iOS games with wireless controller support ...
 tags: [Consumer Tech, iOS, Posts, Videogames]
 permalink: /ios-games-with-controller-support/
