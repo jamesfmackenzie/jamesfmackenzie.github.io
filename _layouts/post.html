@@ -12,6 +12,12 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/js/infinite-jekyll.js"></script>
 	<title>{{ page.title }}</title>
+	<script>
+	  var host = "www.jamesfmackenzie.com";
+	  if ((host == window.location.host) && (window.location.protocol != "https:")) {
+	    window.location.protocol = "https:";
+	  }
+    </script>
 </head>
 
 <body>
