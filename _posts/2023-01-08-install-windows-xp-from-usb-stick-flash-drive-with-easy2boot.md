@@ -20,13 +20,13 @@ allowfullscreen class="youtube-video"></iframe>
 ### What you need
 
 * 16GB (or larger) USB stick
-* <a href=“https://easy2boot.xyz/download/“ target=“_blank”>Easy2Boot</a>
+* <a href="https://easy2boot.xyz/download/" target="_blank">Easy2Boot</a>
 * Windows XP SP3 ISO
  
 
 ### Step 1 - Download and extract Easy2Boot
 
-First download and extract <a href=“https://www.fosshub.com/Easy2Boot.html“ target=“_blank”>Easy2Boot+DPMS</a>. This version contains the mass storage drivers required for a Windows XP install.
+First download and extract <a href="https://www.fosshub.com/Easy2Boot.html" target="_blank">Easy2Boot+DPMS</a>. This version contains the mass storage drivers required for Windows XP install.
 
 Once the install completes, run <code>MAKE_E2B_USB_DRIVE.cmd</code> as Administrator:
 
@@ -54,11 +54,7 @@ With the USB stick prepared, you should have two partitions:
 
 ### Step 3 - Copy Windows XP install files
 
-Copy your Windows XP ISO
-
-First, download the <a href=“https://winworldpc.com/product/windows-98/98-second-edition” target=“_blank”>Windows 98 SE ISO</a>. Double-click to mount it as a new drive.
-
-Copy the win98 folder over to the <code>\_ISO\WINDOWS\XP</code> folder on your Easy2Boot (<code>E2B</code>) partition:
+Copy your Windows XP ISO over to the <code>\_ISO\WINDOWS\XP</code> folder on your Easy2Boot (<code>E2B</code>) partition:
 
 ![](/img/posts/easy2boot-copy-windows98-boot-floppy-disk-image.png)
 
@@ -69,7 +65,7 @@ Insert the Easy2Boot USB stick and power on your retro PC. The system will recog
 
 From the menu, select *WINDOWS INSTALL Menu*:
 
-<insert pic>
+INSERT PIC
 
 The Windows XP install has two phases:
 
@@ -78,7 +74,7 @@ The Windows XP install has two phases:
  
 Select *Install XP - Step 1* to start the first phase.
 
-<insert pic>
+INSERT PIC
 
 
 ### Step 4 - Prepare disks, copy install files
