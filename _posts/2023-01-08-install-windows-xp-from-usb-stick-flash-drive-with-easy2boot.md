@@ -26,23 +26,24 @@ allowfullscreen class="youtube-video"></iframe>
 
 ### Step 1 - Download and extract Easy2Boot
 
-First download and extract <a href="https://www.fosshub.com/Easy2Boot.html" target="_blank">Easy2Boot+DPMS</a>. This version contains the mass storage drivers required for Windows XP install.
+First download and extract <a href="https://www.fosshub.com/Easy2Boot.html" target="_blank">Easy2Boot+DPMS</a>. This version contains the mass storage drivers required for Windows XP install:
 
-Once the install completes, run <code>MAKE_E2B_USB_DRIVE.cmd</code> as Administrator:
+![](/img/posts/download-easy2boot-dpms-for-windows-xp-install.jpg)
 
-![](/img/posts/easy2boot-make_e2b_usb_drive.png)
+With the files extracted, run <code>MAKE_E2B_USB_DRIVE.cmd</code> as Administrator:
 
+![](/img/posts/create-easy2boot-usb-stick.jpg)
 
 
 ### Step 2 - Prepare USB install media
 
-In the command window, select your target USB drive (in my case this is <code>3</code> - 119.0GiB Generic STORAGE DEVICE). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You’ll get one last warning. Hit <code>OK</code> to start the partition and format process.
+In the command window, select your target USB drive (in my case this is <code>3 - 119.0GiB Generic STORAGE DEVICE</code>). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You’ll get one last warning. Hit <code>OK</code> to start the partition and format process.
 
-![](/img/posts/easy2boot-make-usb-drive-selection.png)
+![](/img/posts/windows-xp-easy2boot-usb-stick.jpg)
 
 Once the format is done, repeatedly hit Enter to accept the default options (we don’t need to do anything special here). When the process is complete the command window will turn green. Just hit Enter to close:
 
-![](/img/posts/easy2boot-usb-preparation-complete.png)
+![](/img/posts/windows-xp-easy2boot-usb-stick-ready.jpg)
 
 With the USB stick prepared, you should have two partitions:
 
@@ -56,7 +57,7 @@ With the USB stick prepared, you should have two partitions:
 
 Copy your Windows XP ISO over to the <code>\_ISO\WINDOWS\XP</code> folder on your Easy2Boot (<code>E2B</code>) partition:
 
-![](/img/posts/easy2boot-copy-windows98-boot-floppy-disk-image.png)
+![](/img/posts/copy-windows-xp-install-files-iso-easy2boot-usb-stick.jpg)
 
 
 ### Step 4 - Boot from USB stick, install Windows XP
@@ -65,7 +66,7 @@ Insert the Easy2Boot USB stick and power on your retro PC. The system will recog
 
 From the menu, select *WINDOWS INSTALL Menu*:
 
-INSERT PIC
+![](/img/posts/install-windows-xp-from-usb-stick-easy2boot.jpg)
 
 The Windows XP install has two phases:
 
@@ -74,7 +75,7 @@ The Windows XP install has two phases:
  
 Select *Install XP - Step 1* to start the first phase.
 
-INSERT PIC
+![](/img/posts/install-windows-xp-from-usb-stick-easy2boot-step-1.jpg)
 
 
 ### Step 4 - Prepare disks, copy install files
@@ -90,7 +91,9 @@ Follow the on-screen prompts to partition/format your hard disk and copy Windows
 
 After some time, your PC will reboot to the Easy2Boot menu. This time, select *Install XP - Step 2* to start the graphics mode setup:
 
-![](/img/posts/windows-xp-graphics-mode-install.png)
+![](/img/posts/install-windows-xp-from-usb-stick-easy2boot-step-2.jpg)
+
+
 
 Follow the on-screen prompts to configure Windows. The default options are suitable for most installations.
 
