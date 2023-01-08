@@ -36,7 +36,7 @@ Once the install completes, run <code>MAKE_E2B_USB_DRIVE.cmd</code> as Administr
 
 ### Step 2 - Prepare USB install media
 
-In the command window, select your target USB drive (in my case this is <code>5</code> - ADATA USB Flash Drive). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You’ll get one last warning. Hit <code>OK</code> to start the partition and format process.
+In the command window, select your target USB drive (in my case this is <code>3</code> - 119.0GiB Generic STORAGE DEVICE). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You’ll get one last warning. Hit <code>OK</code> to start the partition and format process.
 
 ![](/img/posts/easy2boot-make-usb-drive-selection.png)
 
