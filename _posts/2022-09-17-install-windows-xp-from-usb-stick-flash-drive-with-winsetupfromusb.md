@@ -58,7 +58,7 @@ Accept the Microsoft EULA and click *GO* to create the bootable USB stick.
 ![](/img/posts/create-bootable-windows-xp-install-media-with-winsetupfromusb-win-setup-from-usb.png)
 
 
-### Step 4 - Verify files
+### Step 5 - Verify files
 
 Once the install completes, verify the USB stick is readable with the following files in place:
 
@@ -69,7 +69,7 @@ Also copy any *extra* files you want onto the USB stick (drivers/utilities/games
 Now you're ready to install Windows XP! Eject the USB stick and move to your retro PC.
 
 
-### Step 5 - Boot from USB stick, install Windows XP
+### Step 6 - Boot from USB stick, install Windows XP
 
 Insert the WinSetupFromUSB stick and power on your retro PC. The system will recognize the USB drive and load the WinSetupFromUSB menu system.
 
@@ -87,7 +87,7 @@ Select *First part of Windows XP Professional SP3 setup* to start the first phas
 ![](/img/posts/windows-xp-text-mode-install-1.png)
 
 
-### Step 6 - Prepare disks, copy install files
+### Step 7 - Prepare disks, copy install files
 
 Windows will boot into the text mode installation menu.
 
@@ -96,7 +96,7 @@ Follow the on-screen prompts to partition/format your hard disk and copy Windows
 ![](/img/posts/windows-xp-text-mode-install-2.png)
 
 
-### Step 7 - Configure Windows XP
+### Step 8 - Configure Windows XP
 
 After some time, your PC will reboot to the WinSetupFromUSB menu. This time, select *Second part of Windows XP Professional setup* to start the graphics mode setup:
 
@@ -107,7 +107,7 @@ Follow the on-screen prompts to configure Windows. The default options are suita
 ![](/img/posts/windows-xp-graphics-mode-setup-and-configuration.png)
 
 
-### Setup 8 - Boot Windows XP
+### Setup 9 - Boot Windows XP
 
 After one last reboot, Windows XP will load for the first time. This is your opportunity to install any necessary drivers and start using Windows XP.
 
