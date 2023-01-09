@@ -26,7 +26,7 @@ allowfullscreen class="youtube-video"></iframe>
 
 ### Step 1 - Download and extract Easy2Boot
 
-First download and extract <a href="https://www.fosshub.com/Easy2Boot.html" target="_blank">Easy2Boot+DPMS</a>. This version contains the mass storage drivers required for Windows XP install:
+First download and extract <a href="https://www.fosshub.com/Easy2Boot.html" target="_blank">Easy2Boot+DPMS</a>. This is a special version of Easy2Boot with the mass storage drivers required for Windows XP install:
 
 ![](/img/posts/download-easy2boot-dpms-for-windows-xp-install.jpg)
 
@@ -35,9 +35,9 @@ With the files extracted, run <code>MAKE_E2B_USB_DRIVE.cmd</code> as Administrat
 ![](/img/posts/create-easy2boot-usb-stick.jpg)
 
 
-### Step 2 - Prepare USB install media
+### Step 2 - Prepare USB drive
 
-In the command window, select your target USB drive (in my case this is <code>3 - 119.0GiB Generic STORAGE DEVICE</code>). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You’ll get one last warning. Hit <code>OK</code> to start the partition and format process.
+In the command window, select your target USB drive (in this case it's <code>3 - 119.0GiB Generic STORAGE DEVICE</code>). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You’ll get one last warning. Hit <code>OK</code> to start the partition and format process:
 
 ![](/img/posts/windows-xp-easy2boot-usb-stick.jpg)
 
@@ -53,7 +53,7 @@ With the USB stick prepared, you should have two partitions:
 2. <code>E2B_PTN2</code> aka “Easy2Boot Data” partition. A simple FAT partition, any files you copy here will be mounted on the host operating system when you boot via Easy2Boot
 
 
-### Step 3 - Copy Windows XP install files
+### Step 3 - Copy Windows XP ISO
 
 Copy your Windows XP ISO over to the <code>\_ISO\WINDOWS\XP</code> folder on your Easy2Boot (<code>E2B</code>) partition:
 
@@ -69,12 +69,12 @@ The Windows XP install has two phases:
 * Text mode install (for disk preparation, copying installation files etc)
 * Graphics mode setup (for OS install, configuration etc)
  
-Select *WINDOWS INSTALL Menu*, *Install XP - Step 1* to start the first phase.
+Select *WINDOWS INSTALL Menu*, then *Install XP - Step 1* to start the first phase:
 
 ![](/img/posts/install-windows-xp-from-usb-stick-easy2boot-step-1.jpg)
 
 
-### Step 4 - Prepare disks, copy install files
+### Step 5 - Prepare disks, copy install files
 
 Windows will boot into the text mode installation menu.
 
@@ -83,24 +83,20 @@ Follow the on-screen prompts to partition/format your hard disk and copy Windows
 ![](/img/posts/windows-xp-text-mode-install-2.png)
 
 
-### Step 5 - Configure Windows XP
+### Step 6 - Configure Windows XP
 
 After some time, your PC will reboot to the Easy2Boot menu. This time, select *Install XP - Step 2* to start the graphics mode setup:
 
 ![](/img/posts/install-windows-xp-from-usb-stick-easy2boot-step-2.jpg)
-
-
 
 Follow the on-screen prompts to configure Windows. The default options are suitable for most installations.
 
 ![](/img/posts/windows-xp-graphics-mode-setup-and-configuration.png)
 
 
-### Setup 8 - Boot Windows XP
+### Setup 7 - Boot Windows XP
 
-After one last reboot, Windows XP will load for the first time. This is your opportunity to install any necessary drivers and start using Windows XP.
-
-Enjoy!
+After one last reboot, Windows XP will load for the first time. Enjoy!
 
 ![](/img/posts/windows-xp-wallpaper-bliss.png)
 
