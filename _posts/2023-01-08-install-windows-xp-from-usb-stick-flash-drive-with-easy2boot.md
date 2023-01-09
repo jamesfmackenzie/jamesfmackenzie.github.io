@@ -64,16 +64,12 @@ Copy your Windows XP ISO over to the <code>\_ISO\WINDOWS\XP</code> folder on you
 
 Insert the Easy2Boot USB stick and power on your retro PC. The system will recognize the USB drive and load the Easy2Boot menu system.
 
-From the menu, select *WINDOWS INSTALL Menu*:
-
-![](/img/posts/install-windows-xp-from-usb-stick-easy2boot.jpg)
-
 The Windows XP install has two phases:
 
 * Text mode install (for disk preparation, copying installation files etc)
 * Graphics mode setup (for OS install, configuration etc)
  
-Select *Install XP - Step 1* to start the first phase.
+Select *WINDOWS INSTALL Menu*, *Install XP - Step 1* to start the first phase.
 
 ![](/img/posts/install-windows-xp-from-usb-stick-easy2boot-step-1.jpg)
 
