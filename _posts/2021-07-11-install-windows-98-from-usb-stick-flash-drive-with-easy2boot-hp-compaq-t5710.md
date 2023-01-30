@@ -174,7 +174,7 @@ With these two installed, you can install the following in any order:
 
 * GPU drivers (<code>GPU - 6-2_wme_dd_cp_30314.exe</code>)
 * Audio drivers (<code>Audio - vinyl_v700b\SETUP.EXE</code>)
-* Network drivers (<code>Network - via_rhine_ndis5_v384a\WinSetup.exe</code>)
+* Network drivers (<code>Network - via_rhine_ndis5_v384a\​WinSetup.exe</code>)
 
 You'll need to reboot after each driver install - it'll take a while. But once complete you'll have a fully working Windows 98 install. Enjoy!
 
