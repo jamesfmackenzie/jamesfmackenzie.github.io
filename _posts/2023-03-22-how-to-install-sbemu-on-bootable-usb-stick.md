@@ -61,7 +61,7 @@ Extract and copy the files to your bootable USB stick:
 
 ### Step 3 – Create CONFIG.SYS
 
-Next, we need to create CONFIG.SYS. Create a new text file and add the following 2 lines:
+Create a new text file and add the following 2 lines:
 
 {% highlight bash %}
 {% raw %}
@@ -70,10 +70,12 @@ DEVICE=jemmex.exe
 {% endraw %}
 {% endhighlight %}
 
+Save it in the root of your USB stick as CONFIG.SYS. 
+
 
 ### Step 4 – Edit AUTOEXEC.BAT
 
-Next, open AUTOEXEC.BAT in your text editor. Add the following lines:
+Next, find AUTOEXEC.BAT in the root of your USB stick. Open in a text editor and add the following lines:
 
 {% highlight bash %}
 {% raw %}
