@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nostalgia for 3DMark"
-date: '2023-04-02 01:22:00:00'
+date: '2024-04-02 01:22:00:00'
 summary: Exploring the evolution of the iconic 3DMark benchmark software and its role in pushing the limits of graphics technology
 tags: [Posts]
 ---
