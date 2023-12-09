@@ -20,7 +20,7 @@ allowfullscreen class="youtube-video"></iframe>
 ### What you need
 
 * 8GB (or larger) USB stick
-* <a href="https://1drv.ms/u/s!AhPM2FpzJ_ovgSytgB0ZuKMQl_I6?e=MxnCk3" target="_blank">WinSetupFromUSB</a>
+* <a href="https://1drv.ms/f/s!Aqzdh9DilDnHhotsH2VDY5A9ZqwmrA?e=xLDkJu" target="_blank">WinSetupFromUSB</a>
 * Windows XP ISO 
 
 
