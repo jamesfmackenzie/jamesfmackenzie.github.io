@@ -129,6 +129,15 @@ For beautiful music, configure your games to use Roland MT-32, Roland Sound Canv
 * The Raspberry Pi audio jack is not designed for high quality. If you want better quality audio output, consider <a href="https://github.com/dwhinham/mt32-pi/wiki/I%C2%B2S-DACs" target="_blank">adding your own DAC</a>.
 
 
+### Moving Beyond Serial MIDI
+
+To move beyond the limitations of Serial MIDI, you can purchase a MIDI "hat" for the Pi. These attach to the Pi’s GPIO pins and provide a traditional MIDI input/output interface.
+
+Together with mt32-pi, this allows you to  create a DIY MIDI synthesiser with similar sound and features to classic synths like the Roland MT-32 or SC-88. A great combo for DOS gaming!
+
+For more details see my [PI-MIDI review]({% post_url 2022-06-04-pi-midi-review-supercharge-your-mt32-mt-32-pi %}).
+
+
 ### More MIDI articles
 
 {% include midi.md %}
