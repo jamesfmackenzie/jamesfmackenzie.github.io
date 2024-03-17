@@ -93,7 +93,7 @@ SoftMPU will detect your PC serial port and create a "Soft" MIDI interface that 
 ![](/img/posts/mt32-pi-softmpu-serial-mode-rs232-mpu-401.png)
 
 
-#### Step 5 – Switching Modes
+### Step 5 – Switching Modes
 
 mt32-pi has two synth modes:
 
@@ -115,7 +115,7 @@ default_synth = soundfont (for General MIDI / Roland Sound Canvas)
 To change modes "on the fly", use <a href="https://github.com/gmcn42/mt32-pi-control" target="_blank">mt32-pi control</a>.
 
 
-### Step 5 – Play games!
+### Step 6 – Play games!
 
 You're ready to play!
 
