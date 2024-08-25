@@ -1,9 +1,8 @@
 # Site settings
 name: James Mackenzie's Blog
 shortName: James' Blog
-email: me@jamesfmackenzie.com
+host: 0.0.0.0
 url: https://www.jamesfmackenzie.com
-shortDescription: "Hardware / Software Tinkerer"
-description: "Hardware / Software Tinkerer. Collector of Retro Computers"
+description: "Rediscovering retro tech, classic software and cherished memories!"
 permalink: pretty
 future: false
