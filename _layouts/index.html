@@ -23,7 +23,7 @@
 				{% if post.layout == "tweet" %}
 				{% if post.summary %}
 				<p class="twitter-tweet-summary-quote">
-					{{ post.summary }}
+					<a href="{{ post.url }}">{{ post.summary }}</a>
 				</p>
 				{% endif %}
 				<p>
@@ -31,7 +31,7 @@
 				</p>
 				{% elsif post.layout == "youtube" %}
 				<p class="youtube-summary-quote">
-					{{ post.summary }}
+					<a href="{{ post.url }}">{{ post.summary }}</a>
 				</p>
 				<div class="youtube-container">
 					<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>

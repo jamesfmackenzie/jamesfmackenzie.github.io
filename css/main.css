@@ -232,6 +232,11 @@ article img {
   padding-left: 1em;
 }
 
+.youtube-summary-quote a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
 article .youtube-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -411,6 +416,11 @@ td {
   border-left: 0.5em solid #1DA1F2;
   border-right: 0;
   padding-left: 1em;
+}
+
+.twitter-tweet-summary-quote a {
+  text-decoration: none;
+  color: #2c3e50;
 }
 
 .twitter-tweet-blockquote {

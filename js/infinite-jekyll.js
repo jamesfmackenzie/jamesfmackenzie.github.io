@@ -82,7 +82,7 @@ $(function () {
     if (postToAppend.layout == "tweet") {			
 		
       if (postToAppend.summary) {
-        htmlFragment = "<div class=\"row\"><p class=\"twitter-tweet-summary-quote\">" + postToAppend.summary + "</p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>" + mediaFragment + "</div>";
+        htmlFragment = "<div class=\"row\"><p class=\"twitter-tweet-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>" + mediaFragment + "</div>";
 
       }
       else {
@@ -92,7 +92,7 @@ $(function () {
     } 
     else if (postToAppend.layout == "youtube") {			
 		
-      htmlFragment = "<div class=\"row\"><p class=\"youtube-summary-quote\">" + postToAppend.summary + "</p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
+      htmlFragment = "<div class=\"row\"><p class=\"youtube-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
     } 
 	else {
       
