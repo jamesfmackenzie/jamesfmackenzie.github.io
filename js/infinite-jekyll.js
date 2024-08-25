@@ -96,16 +96,32 @@ var iconFragment = "";
 if (postToAppend.layout == "tweet") {
   iconFragment = "<img src=\"/img/layout/twitter-icon.png\" style=\"display: inline-block; vertical-align:middle;\" />\n";
 }
+/*
 else if (postToAppend.layout == "youtube") {
   iconFragment = "<img src=\"/img/layout/youtube-icon.png\" style=\"display: inline-block; vertical-align:middle;\" />\n";
 }
+*/
 
 
     var htmlFragment = "";
 
-    if (postToAppend.layout == "tweet" || postToAppend.layout == "youtube") {			
+    if (postToAppend.layout == "tweet") {			
 		
-      htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p>" + iconFragment + hyperlink + "</p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
+      if (postToAppend.summary) {
+        htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p><img src=\"/img/layout/twitter-icon.png\" style=\"display: inline-block; vertical-align:middle;\" /> <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
+
+      }
+      else {
+        htmlFragment = "<div class=\"row\"><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p><img src=\"/img/layout/twitter-icon.png\" style=\"display: inline-block; vertical-align:middle;\" /> <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
+
+      }
+
+      
+      //htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p>" + iconFragment + hyperlink + "</p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
+    } 
+    else if (postToAppend.layout == "youtube") {			
+		
+      htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
     } 
 	else {
       

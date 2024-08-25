@@ -65,24 +65,24 @@
 				{% endif %}
 			    -->
 				{% if post.layout == "tweet" %}
+				{% if post.summary %}
 				<p>
 					{{ post.summary }}
 				</p>
+				{% endif %}
 				<p>
-	  				<img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
-					<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.title }}</a>
-				</p>
-				<p>
-					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
+					<blockquote class="twitter-tweet twitter-tweet-blockquote"><p lang="en" dir="ltr">{{ post.title }}</p><img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" /> James Mackenzie (@jamesfmackenzie) <a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
 				</p>
 				{% elsif post.layout == "youtube" %}
 				<p>
 					{{ post.summary }}
 				</p>
+				<!--
 				<p>
 					<img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
 					<a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a>
 				</p>
+			    -->
 			<div class="youtube-container">
 				<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
 			</div> 
