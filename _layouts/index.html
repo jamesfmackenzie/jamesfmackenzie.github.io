@@ -24,21 +24,19 @@
 <body>
 	<header>
 		<div class="row desktopOnly">
-			<img src="/img/layout/logo.png" alt="logo" />
 			<h2><a href="/">{{ site.name }}</a></h2>
 			<nav>
-				<span><a href="/">Blog</a></span>
-				<span><a href="/projects">Projects</a></span>
+				<span><a href="/">Home</a></span>
 				<span><a href="/about">About</a></span>
-				<span><a href="/sitemap">Sitemap</a></span>
+				<span><a href="/projects">Projects</a></span>
+				<span><a href="/sitemap">Posts</a></span>
 			</nav>
 		</div>
 		<div class="row mobileOnly">
-			<img src="/img/layout/logo-small.png" alt="logo" />
 			<h2><a href="/">{{ site.shortName }}</a></h2>
 		</div>
 		<div class="navRow mobileOnly">
-			<span><a href="/">Blog</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/sitemap">Sitemap</a></span>
+			<span><a href="/">Home</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/sitemap">Posts</a></span>
 			<br /><br />
 		</div>
 	</header>
@@ -46,13 +44,10 @@
 		<div class="row">
 			<p>Find me on the Internet here:</p>
 			<ul class="social-buttons">
-				<li><a href="/feed.xml"><i class="fa fa-fw fa-rss"></i></a></li>
-				<li><a href="https://github.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
-				<!--<li><a href="#"><i class="fa fa-fw fa-envelope"></i></a></li>-->
+				<li><a href="https://youtube.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-youtube"></i></a></li>
 				<li><a href="http://twitter.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-				</li>
-				<li><a href="https://youtube.com/jamesfmackenzie" target="_blank"><i
-							class="fa fa-fw fa-youtube"></i></a></li>
+				<li><a href="https://github.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+				<li><a href="/feed.xml"><i class="fa fa-fw fa-rss"></i></a></li>
 			</ul>
 		</div>
 	</aside>
@@ -60,6 +55,7 @@
 		{% for post in site.posts limit:9 %}
 		<article class="post">
 			<div class="row">
+				<!--
 				{% if post.tags.size > 0 %}
 				<p class="tags">
 					{% for tag in post.tags %}
@@ -67,25 +63,32 @@
 					{% endfor %}
 				</p>
 				{% endif %}
+			    -->
 				{% if post.layout == "tweet" %}
-				<h2 class="quote">
-					<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">“{{ post.title }}”</a>
-				</h2>
-				<blockquote class="twitter-tweet twitter-tweet-blockquote"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; James Mackenzie (@jamesfmackenzie) <a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
-				<script async src="https://platform.twitter.com/widgets.js"></script>
-				{% elsif post.layout == "youtube" %}
-				<h2>
-					<a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a>
-				</h2>
-				<p class="post-summary">
+				<p>
 					{{ post.summary }}
+				</p>
+				<p>
+	  				<img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
+					<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.title }}</a>
 				</p>
 				<p>
 					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 				</p>
-				<div class="youtube-container">
+				{% elsif post.layout == "youtube" %}
+				<p>
+					{{ post.summary }}
+				</p>
+				<p>
+					<img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+					<a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a>
+				</p>
+			<div class="youtube-container">
 				<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
-				</div> 
+			</div> 
+				<p>
+					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
+				</p>
 				{% else %}
 				<h2>
 					{% if post.overrideUrl %}

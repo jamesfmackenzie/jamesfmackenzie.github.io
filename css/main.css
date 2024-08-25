@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   line-break: loose;
 }
 
@@ -79,11 +79,13 @@ pre {
   line-height: 24px;
 }
 
+/*
 .quote {
   text-transform: none;
   font-size: 1.6em;
   line-height:0.9em;
 }
+*/
 
 /* end whole page styles */
 
@@ -197,7 +199,7 @@ aside a:hover {
 body>header a {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-decoration: none;
   font-weight: bold;
 }
