@@ -3,8 +3,12 @@ layout: nocomments
 title: About Me
 ---
 
-![James Mackenzie](/img/about/james-mackenzie-pixel.png)
+![James Mackenzie](/img/about/james-mackenzie-pixel-cropped.png)
 
-Hardware / software tinkerer. Retro gamer and collector of retro computers.
+<p style="text-align:center;">I'm a hardware/software tinkerer and avid collector of classic computers.</p>
 
-Starter of <a href="/projects">many hobbytime projects</a> and finisher of many fewer. Occasional <a href="https://youtube.com/jamesfmackenzie" target="_blank">YouTuber</a> and compulsive <a href="https://twitter.com/jamesfmackenzie" target="_blank">Tweeter</a>. Code commits on <a href="https://github.com/jamesfmackenzie" target="_blank">GitHub</a>. The opinions on this blog are my own.
+<p style="text-align:center;">I'm a starter of many <a href="/projects">hobbytime projects</a> and a finisher of fewer.</p>
+
+<p style="text-align:center;">You'll find my retro ramblings on <a href="https://youtube.com/jamesfmackenzie" target="_blank">YouTube</a>, <a href="https://twitter.com/jamesfmackenzie" target="_blank">Twitter</a> and this blog.</p>
+
+<p style="text-align:center;">Enjoy!</p>
