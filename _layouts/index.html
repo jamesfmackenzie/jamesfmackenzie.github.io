@@ -53,12 +53,12 @@
 				<p>
 					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 				</p>
+				{% endif %}	
 				{% if post.image %}
 				<p>
 					<img src="/img/posts/{{ post.image }}" alt="{{ post.title }}" />
 				</p>
 				{% endif %}
-				{% endif %}		
 			</div>
 		</article>
 		{% endfor %}

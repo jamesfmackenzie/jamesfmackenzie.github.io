@@ -82,11 +82,11 @@ $(function () {
     if (postToAppend.layout == "tweet") {			
 		
       if (postToAppend.summary) {
-        htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
+        htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>" + mediaFragment + "</div>";
 
       }
       else {
-        htmlFragment = "<div class=\"row\"><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
+        htmlFragment = "<div class=\"row\"><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>" + mediaFragment + "</div>";
 
       }
     } 
