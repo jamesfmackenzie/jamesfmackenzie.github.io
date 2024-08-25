@@ -1,45 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/favicon.ico?v=1" />
-	<link rel="stylesheet" type="text/css" href="/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="/css/code.css" />
-	<link rel="stylesheet" type="text/css" href="/css/spinner.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato%7CMontserrat">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/js/infinite-jekyll.js"></script>
-	<title>{{ site.name }} - {{ site.description }}</title>
-	<script>
-	  var host = "www.jamesfmackenzie.com";
-	  if ((host == window.location.host) && (window.location.protocol != "https:")) {
-	    window.location.protocol = "https:";
-	  }
-    </script>
+	{% include head-includes.md %}
+	<title>{{ page.title }}</title>
 </head>
 
 <body>
 	<header>
-		<div class="row desktopOnly">
-			<h2><a href="/">{{ site.name }}</a></h2>
-			<nav>
-				<span><a href="/">Home</a></span>
-				<span><a href="/about">About</a></span>
-				<span><a href="/projects">Projects</a></span>
-				<span><a href="/sitemap">Posts</a></span>
-			</nav>
-		</div>
-		<div class="row mobileOnly">
-			<h2><a href="/">{{ site.shortName }}</a></h2>
-		</div>
-		<div class="navRow mobileOnly">
-			<span><a href="/">Home</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/sitemap">Posts</a></span>
-			<br /><br />
-		</div>
+		{% include nav-header.md %}
 	</header>
-	<main class="sitemap">
+	<main class="nocomments-page">
 		<header>
 			<div class="row">
 				<h1>{{ page.title }}</h1>
@@ -52,15 +23,7 @@
 		</article>
 	</main>
 	<footer>
-		<div class="row">
-			<p>Find me on the Internet here:</p>
-			<ul class="social-buttons">
-				<li><a href="https://youtube.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-youtube"></i></a></li>
-				<li><a href="http://twitter.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-				<li><a href="https://github.com/jamesfmackenzie" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
-				<li><a href="/feed.xml"><i class="fa fa-fw fa-rss"></i></a></li>
-			</ul>
-		</div>
+		{% include social-buttons.md %}
 	</footer>
 	<!-- Google Analytics Tracking Code -->
 	<script>

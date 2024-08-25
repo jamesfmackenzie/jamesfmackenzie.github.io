@@ -67,57 +67,28 @@ $(function () {
 
   function fetchPostWithIndex(index, callback) {
     var postToAppend = postURLs[index];
-
-    var hyperlink = "<a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a>";
-    
-	if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
-		hyperlink = "<a target=\"_blank\" href=\"" + postToAppend.overrideUrl + "\">";
-    }
-	else if (postToAppend.layout == "tweet") {
-		hyperlink = "<a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.title + "</a>";
-	}
-	else if (postToAppend.layout == "youtube") {
-		hyperlink = "<a target=\"_blank\" href=\"https://youtu.be/" + postToAppend.videoId + "\">" + postToAppend.title + "</a>";
-	}
 	
+	  var mediaFragment = "";
 	
-	var mediaFragment = "";
-	
-	if (postToAppend.image && postToAppend.image != "") {
-		mediaFragment = "<p><img src=\"/img/posts/" + postToAppend.image + "\" /></p>";
-	}
-	else if (postToAppend.layout == "youtube") {
-		mediaFragment = "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>"
-	}
-
-
-var iconFragment = "";
-
-if (postToAppend.layout == "tweet") {
-  iconFragment = "<img src=\"/img/layout/twitter-icon.png\" style=\"display: inline-block; vertical-align:middle;\" />\n";
-}
-/*
-else if (postToAppend.layout == "youtube") {
-  iconFragment = "<img src=\"/img/layout/youtube-icon.png\" style=\"display: inline-block; vertical-align:middle;\" />\n";
-}
-*/
-
+	  if (postToAppend.image && postToAppend.image != "") {
+		  mediaFragment = "<p><img src=\"/img/posts/" + postToAppend.image + "\" /></p>";
+	  }
+	  else if (postToAppend.layout == "youtube") {
+		  mediaFragment = "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>"
+	  }
 
     var htmlFragment = "";
 
     if (postToAppend.layout == "tweet") {			
 		
       if (postToAppend.summary) {
-        htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p><img src=\"/img/layout/twitter-icon.png\" style=\"display: inline-block; vertical-align:middle;\" /> <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
+        htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
 
       }
       else {
-        htmlFragment = "<div class=\"row\"><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p><img src=\"/img/layout/twitter-icon.png\" style=\"display: inline-block; vertical-align:middle;\" /> <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
+        htmlFragment = "<div class=\"row\"><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; <a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\">" + postToAppend.date + "</a></blockquote></p>";
 
       }
-
-      
-      //htmlFragment = "<div class=\"row\"><p>" + postToAppend.summary + "</p><p>" + iconFragment + hyperlink + "</p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
     } 
     else if (postToAppend.layout == "youtube") {			
 		
@@ -125,6 +96,12 @@ else if (postToAppend.layout == "youtube") {
     } 
 	else {
       
+    var hyperlink = "<a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a>";
+    
+	  if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
+		  hyperlink = "<a target=\"_blank\" href=\"" + postToAppend.overrideUrl + "\">";
+    }
+
 	  htmlFragment = "<div class=\"row\"><h2>" + hyperlink + "</h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><time>" + postToAppend.date + "</time></p>" + mediaFragment + "</div>";
     }
 

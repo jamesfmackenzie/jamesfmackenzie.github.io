@@ -224,6 +224,14 @@ article img {
   margin: 0 auto;
 }
 
+/* youtube */
+
+.youtube-summary-quote {
+  border-left: 0.5em solid red;
+  border-right: 0;
+  padding-left: 1em;
+}
+
 article .youtube-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -291,23 +299,23 @@ article .youtube-container iframe {
 
 /* end individual post page styles */
 
-/* sitemap styles */
+/* nocomments page styles */
 
-.sitemap header {
+.nocomments-page header {
   background-color: #18bc9c;
   padding: 1.5em 0;
 }
 
-.sitemap header .row {
+.nocomments-page header .row {
   display: block;
   text-align: center;
 }
 
-.sitemap article {
+.nocomments-page article {
   border-bottom: none;
 }
 
-.sitemap h3 a {
+.nocomments-page h3 a {
   text-decoration: none;
   color: #2c3e50;
 }
@@ -398,6 +406,12 @@ td {
 }
 
 /* tweets */
+
+.twitter-tweet-summary-quote {
+  border-left: 0.5em solid #1DA1F2;
+  border-right: 0;
+  padding-left: 1em;
+}
 
 .twitter-tweet-blockquote {
 	padding-left: 20px;
