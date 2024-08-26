@@ -52,7 +52,7 @@ layout: null
 		  <id>https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}</id>
 		  <content type="html">
 			<![CDATA[
-			  <p><strong>“{{ post.title }}”</strong></p>
+			  <p><strong>{{ post.title }}</strong></p>
       {% if post.summary %}
 	          <p>{{ post.summary }}</p>
 	  {% endif %}
