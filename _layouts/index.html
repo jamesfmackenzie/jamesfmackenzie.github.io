@@ -27,7 +27,7 @@
 				</p>
 				{% endif %}
 				<p>
-					<blockquote class="twitter-tweet twitter-tweet-blockquote"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; <a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
+					<blockquote class="twitter-tweet twitter-tweet-blockquote"><a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; {{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
 				</p>
 				{% elsif post.layout == "youtube" %}
 				<p class="youtube-summary-quote">

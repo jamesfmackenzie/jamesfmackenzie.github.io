@@ -436,6 +436,11 @@ td {
 	line-height: 24px;
 }
 
+.twitter-tweet-blockquote a {
+	text-decoration: none;
+  	color: #2c3e50;
+} 	
+
 .twitter-tweet-rendered {
 	margin-left: auto;
 	margin-right: auto;
