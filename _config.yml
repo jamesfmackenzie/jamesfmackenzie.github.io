@@ -6,3 +6,9 @@ url: https://www.jamesfmackenzie.com
 description: "I'm a hardware/software tinkerer and avid collector of classic computers. This site is about rediscovering retro tech, finding reviews/tutorials/guides and most importantly celebrating those cherished memories!"
 permalink: pretty
 future: false
+
+# collections (i.e. not posts)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
