@@ -179,9 +179,12 @@ aside li {
 }
 
 aside a {
-  font-size: 1.15em;
   color: #fff;
   text-decoration: none;
+}
+
+aside .social-buttons a {
+  font-size: 1.15em;
   border: 2px solid #fff;
   border-radius: 100%;
   padding: 0.5em;

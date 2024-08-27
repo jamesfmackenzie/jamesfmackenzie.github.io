@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+	<meta name="description" content="{{ page.summary | strip_html }}">
+    <meta property="og:description" content="{{ page.summary | strip_html }}"/>
 	{% include head-includes.md %}
 	<title>{{ page.title }}</title>
 </head>
@@ -60,6 +62,9 @@
 		</div>
 	</main>
 	<footer>
+		<div class="row">
+			<p>Find me on the Internet here:</p>
+		</div>
 		{% include social-buttons.md %}
 	</footer>
 	<!-- Google Analytics Tracking Code -->

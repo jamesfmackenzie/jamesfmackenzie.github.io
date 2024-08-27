@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+	<meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}"/>
 	{% include head-includes.md %}
-	<title>{{ site.name }} - {{ site.description }}</title>
+	<title>{{ site.name }}</title>
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name | xml_escape }}" href="{{ site.url }}/feed.xml" />
 	<script src="/js/infinite-jekyll.js"></script>
 </head>
@@ -13,6 +15,9 @@
 		{% include nav-header.md %}
 	</header>
 	<aside>
+		<div class="row">
+			<p>{{ site.description }}</p>
+		</div>
 		{% include social-buttons.md %}
 	</aside>
 	<main class="post-list">
@@ -64,6 +69,9 @@
 	</main>
 	<div class="infinite-spinner"></div>
 	<footer>
+		<div class="row">
+			<p>Find me on the Internet here:</p>
+		</div>
 		{% include social-buttons.md %}
 	</footer>
 	<!-- Google Analytics Tracking Code -->
