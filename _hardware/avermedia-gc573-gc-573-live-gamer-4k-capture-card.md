@@ -3,5 +3,6 @@ layout: post
 title: AVerMedia GC573 Live Gamer 4K
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [Capture Cards, PC]
+#tags: [Capture Cards, PC]
+tags: [Video Capture]
 ---
