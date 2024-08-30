@@ -9,6 +9,9 @@ future: false
 
 # collections (i.e. not posts)
 collections:
+  hardware:
+    output: true
+    permalink: /:collection/:path/
   projects:
     output: true
     permalink: /:collection/:path/
