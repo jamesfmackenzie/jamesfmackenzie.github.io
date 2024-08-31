@@ -7,6 +7,27 @@ image: emulationstation.jpg
 tags: [How To, Posts, Raspberry Pi, Retrogaming, Single-Board Computing, Videogames]
 ---
 
+
+<a name="Raspberry Pi Retrogaming">
+## Raspberry Pi Retrogaming
+
+Status | Completed October 2018
+Goal | Build a cheap, small and light device to retrogame on the big screen
+
+I'm a big fan of retro games, with many fond memories of the <a href="https://en.wikipedia.org/wiki/Third_generation_of_video_game_consoles" target="_blank">8-bit</a> and <a href="https://en.wikipedia.org/wiki/Fourth_generation_of_video_game_consoles" target="_blank">16-bit</a> years. Looking for a way to relive those memories on the big screen.
+
+I selected the <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> and <a href="https://retropie.org.uk/" target="_blank">RetroPie</a> as the base for my build. After a week of on/off tweaking, I found optimal settings and documented the full setup [here]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). For Phase 2, I [configured Moonlight Game Streaming]({% post_url 2018-11-17-gamestream-moonlight-on-retropie %}) to allow low latency streaming of more demanding titles from my gaming PC.
+
+Overall very pleased with the result, and pleasantly surprised by how well Moonlight Game Streaming works.
+
+Posts:
+
+- [RetroPie Ultimate Setup Guide]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}) - 08 Oct 2018
+- [Stream PC Games to your RetroPie with GameStream and Moonlight]({% post_url 2018-11-17-gamestream-moonlight-on-retropie %}) - 08 Oct 2018
+
+<br />
+
+
 ![](/img/posts/retropie_logo.png)
 
 With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES, even PlayStation all run great and with a little extra work you can stream more taxing games from your home PC
