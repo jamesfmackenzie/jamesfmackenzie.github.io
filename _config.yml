@@ -14,7 +14,10 @@ collections:
     permalink: /:collection/:path/
   software:
     output: true
-    permalink: /:collection/:path/ 
+    permalink: /:collection/:path/
+  howto:
+    output: true
+    permalink: /:collection/:path/
   projects:
     output: true
     permalink: /:collection/:path/
