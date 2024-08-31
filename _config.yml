@@ -12,6 +12,9 @@ collections:
   hardware:
     output: true
     permalink: /:collection/:path/
+  software:
+    output: true
+    permalink: /:collection/:path/ 
   projects:
     output: true
     permalink: /:collection/:path/
