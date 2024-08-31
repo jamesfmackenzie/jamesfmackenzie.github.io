@@ -46,10 +46,12 @@ Here we generate all the tags.
   <li>
     {% if post.layout == "tweet" %}
 	  <img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
-	  <a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-	{% elsif post.layout == "youtube" %}
+	  <!--<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.title }}</a> - {{ post.date | date_to_string }} -->
+	  <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+    {% elsif post.layout == "youtube" %}
 	  <img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
-	  <a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+	  <!-- <a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a> - {{ post.date | date_to_string }} -->
+    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
 	{% elsif post.overrideUrl %} 
       <a target="_blank" href="{{ post.overrideUrl }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
     {% else %}
