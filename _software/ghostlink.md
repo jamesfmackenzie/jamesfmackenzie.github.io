@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Futuremark 3DMark
+title: Ghostlink
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [Benchmarks]
+tags: [Tools]
 ---
