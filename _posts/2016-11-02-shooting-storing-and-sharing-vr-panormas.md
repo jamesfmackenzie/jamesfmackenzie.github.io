@@ -5,12 +5,9 @@ date: '2016-11-02 08:25:00'
 summary: Whether it’s a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a 360 VR panorama. Pan left, right, up, down, or even swivel right around to take in the whole view ...
 image: church-pano-equirectangular.jpg
 tags: [How To, Photography, Posts, VR Photography]
-overrideUrl: https://medium.com/vantage/all-you-need-to-know-about-360-vr-photos-d180aa25d8de
 ---
 
-Whether it's a view from the highest holiday vista or showing off your new bathroom, no photo recreates the feeling of actually being there like a <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">360 VR panorama</a>. Pan left, right, up, down, or even swivel right around to take in the whole view.
-
-With loads of choices out there, what are your best options for shooting, storing and sharing your inspiring pano's?
+I’ve spent the last several months fully committed to the shooting of <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">360 VR photos</a>. There’s nothing quite like them. Here’s what you need to know.
 
 ### Shooting
 

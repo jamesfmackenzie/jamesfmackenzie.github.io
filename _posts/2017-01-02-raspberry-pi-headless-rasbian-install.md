@@ -5,7 +5,6 @@ date: '2017-01-02 17:23:00'
 summary: Don’t have an extra keyboard or HDMI cable? Here’s how to do a headless Raspbian install on your Pi ...
 image: raspberry-pi.jpg
 tags: [How To, IoT, Posts, Raspberry Pi, Single-Board Computing]
-overrideUrl: https://medium.com/hackernoon/raspberry-pi-headless-install-462ccabd75d0
 --- 
 
 Don't have an extra keyboard or HDMI cable? Here's how to do a headless <a href="https://www.raspbian.org/" target="_blank">Raspbian</a> install on your Pi.

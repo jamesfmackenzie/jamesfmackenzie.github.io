@@ -316,7 +316,7 @@ Posts:
 - [Publishing VR Panoramas to Photosynth]({% post_url 2016-10-28-publishing-equirectangular-360-vr-panorama-to-photosynth %}) - 28 Oct 2016
 - [What are .pano files?]({% post_url 2016-10-29-what-are-pano-files %}) - 29 Oct 2016
 - [Convert Equirectangular Projection to .Pano File]({% post_url 2016-10-30-convert-equirectangular-360-vr-panorama-to-pano-file %}) - 30 Oct 2016
-- <a href="https://medium.com/vantage/all-you-need-to-know-about-360-vr-photos-d180aa25d8de" target="_blank">All You Need to Know about 360 VR Photos</a>  - 02 Nov 2016
+- [All You Need to Know about 360 VR Photos]({% post_url 2016-11-02-shooting-storing-and-sharing-vr-panormas %}) - 02 Nov 2016
 - [Publishing VR Panoramas to YouTube]({% post_url 2019-09-08-publishing-360-photos-to-youtube %}) - 08 Sep 2019
 
 <br />
