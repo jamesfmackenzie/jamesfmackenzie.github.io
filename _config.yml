@@ -18,6 +18,9 @@ collections:
   howto:
     output: true
     permalink: /:collection/:path/
+  reference:
+    output: true
+    permalink: /:collection/:path/
   projects:
     output: true
     permalink: /:collection/:path/

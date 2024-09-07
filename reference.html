@@ -1,0 +1,14 @@
+---
+layout:   nocomments
+title:    Reference Pages
+---
+
+<h2>Pages</h2>
+<ul>
+  {% for page in site.reference %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
