@@ -6,4 +6,3 @@ summary: '<strong>The ITX Llama</strong> is a brand new PC, purpose built for pl
 videoId: ogHqmjn6sY4
 tags: [DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
-
