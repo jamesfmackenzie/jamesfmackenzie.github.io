@@ -6,4 +6,3 @@ summary: '<strong>It’s 2024, and physical PS Vita games are getting more and m
 videoId: dbyfbcgyzCk
 tags: [Retrogaming, Videogames, Videos]
 ---
-
