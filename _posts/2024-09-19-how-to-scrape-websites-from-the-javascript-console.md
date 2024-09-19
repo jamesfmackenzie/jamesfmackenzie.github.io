@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Scrape Websites from the JavaScript Console"
+title: "How To Scrape Website Data from the JavaScript Console"
 date: '2024-09-19 10:59:00:00'
 summary: Want to grab some structured data from the Web? It's easy via the JavaScript console.
 image: browser-dom-query.png
@@ -11,7 +11,7 @@ Want to grab some data from the Web? It's easy via the JavaScript console.
 
 ### Step 1. Navigate to your target page
 
-Open your browser and navigate to the page you want to extract data from. In this case its [Metacritic](https://www.metacritic.com).
+Open your browser and navigate to the page you want to extract data from. In this case its <a href="https://www.metacritic.com" target="_blank">Metacritic</a>.
 
 ### Step 2. Open the JavaScript console
 
