@@ -98,6 +98,7 @@ set SSTH3_SLIDETECT=0
 set SSTh3_OVERLAYMODE=0
 </code>
 
+Full list here: https://www.mdgx.com/3dfx.htm
 
 ### Running a Voodoo 1/2 and 3/4/5 in the same machine
 
@@ -144,3 +145,9 @@ https://www.descentbb.net/viewtopic.php?t=1650
 https://www.3dfxzone.it/enboard/index.php?topic=16480
 
 https://www.3dfxzone.it/enboard/index.php?action=profile;area=showposts;sa=messages;u=2687
+
+https://www.mdgx.com/3dfx.htm
+
+http://www.vogonswiki.com/index.php/3dfx
+
+https://www.vogons.org/viewtopic.php?t=35721
