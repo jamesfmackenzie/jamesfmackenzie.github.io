@@ -4,7 +4,7 @@ title: "Do Not Buy a GeForce 6200 for Windows 98"
 date: '2024-09-20 17:54:00:00'
 summary: I recently bought this GeForce 6200 PCI as a passively cooled GPU for Windows 98. It was a bad idea!
 image: nvidia-geforce-6200-pci.jpg
-tags: [How To, Posts, Programming, Web Development]
+tags: [GeForce, Posts]
 ---
 
 ![nvidia GeForce 6200 PCI](/img/posts/nvidia-geforce-6200-pci.jpg)
