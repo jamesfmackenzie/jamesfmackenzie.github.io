@@ -6,4 +6,3 @@ summary: 'Using the humble Raspberry Pi to add Roland MT-32 synth support to the
 videoId: ZCnQOgArgMk
 tags: [DOS, MIDI, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
-
