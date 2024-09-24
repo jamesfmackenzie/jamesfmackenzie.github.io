@@ -328,12 +328,24 @@ article .youtube-container iframe {
   color: #2c3e50;
 }
 
+.category-page h2 a, .category-page h3 a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.category-page {
+  margin-bottom: 0;
+}
+
 /* end sitemap styles */
 
 /* footer styles */
 
+main {
+  margin-bottom: 2em;
+}
+
 footer {
-  margin-top: 2em;
   padding: 1.5em 0;
   overflow: auto;
   color: #fff;
