@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Nvidia GeForce
+title: ATi Radeon
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [Graphics Cards, Nvidia, Nvidia GeForce, PC]
+tags: [ATi, ATi Radeon, Graphics Cards, PC]
+permalink: /hardware/ati-radeon
 ---
 
 Placeholder for ATi Radeon overview.
