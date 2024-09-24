@@ -3,8 +3,7 @@ layout: post
 title: Atari ST
 summary: 
 date: '2024-08-29 11:33:00'
-#tags: [Atari, Atari ST, Computers]
-tags: [Computers]
+tags: [Atari, Atari ST, Computers]
 ---
 
 What do I want to say about the ST?
