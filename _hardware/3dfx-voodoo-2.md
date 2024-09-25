@@ -3,7 +3,7 @@ layout: post
 title: 3Dfx Voodoo 2
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [3Dfx, 3Dfx Voodoo, 3Dfx Voodoo Models,  Graphics Cards, PC]
+tags: [3Dfx, 3Dfx Voodoo, 3Dfx Voodoo Models, Graphics Cards, PC]
 ---
 
 ![3Dfx Voodoo2](/img/hardware/3dfx-voodoo-2-board.jpg)
