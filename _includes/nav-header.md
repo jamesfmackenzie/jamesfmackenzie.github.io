@@ -20,7 +20,7 @@
 <div class="navRow mobileOnly">
 	<span><a href="/">Home</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/sitemap">Posts</a></span>
 	<br /><br />
-    <!-->
+    <!--
 	<span><a href="/hardware">Hardware</a> &nbsp; <a href="/software">Software</a> &nbsp; <a href="/howto">Guides</a> &nbsp; <a href="/all-pages">Sitemap</a></span>
 	<br /><br />
 	-->
