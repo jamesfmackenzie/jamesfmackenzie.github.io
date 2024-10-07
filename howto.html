@@ -3,18 +3,11 @@ layout:   nocomments
 title:    How To Guides
 ---
 
-Welcome to the How To and Guides section, your resource for step-by-step tutorials and practical tips on retro computing. Whether you're restoring vintage hardware, setting up classic operating systems, or troubleshooting old software, these guides will help you every step of the way. Explore the collection and master the skills you need to bring retro tech back to life!
+<p>Welcome to the How To and Guides section, your resource for step-by-step tutorials and practical tips on retro computing. Whether you're restoring vintage hardware, setting up classic operating systems, or troubleshooting old software, these guides will help you every step of the way. Explore the collection and master the skills you need to bring retro tech back to life!</p>
+<br />
 
-Atari ST
-DOS
-MiSTer FPGA
-Programming
-MIDI
-Photography
-Raspberry Pi
-Videogames
-Windows
-
+<hr />
+<br />
 
 
 <h3>Atari ST</h3>
@@ -141,57 +134,6 @@ Windows
   {% endif %}
   {% endfor %}
 </ul>
-
-
-<hr />
-
-{% comment%}
-Here we generate all the tags.
-{% endcomment%}
-
-{% assign rawtags = "" %}
-{% for page in site.howto %}
-{% assign ttags = page.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:ttags %}
-{% endfor %}
-
-{% assign rawtags = rawtags | split:'|' | sort_natural %}
-
-{% assign tags = "" %}
-
-{% for tag in rawtags %}
-{% if tag != "" %}
-
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
-{% endif %}
-
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-<h2>Categories</h2>
-{% for tag in tags %}
-  <a href="#{{ tag | slugify }}"> {{ tag }} </a>{% unless forloop.last %} | {% endunless %} 
-{% endfor %}
-<br />
-<br />
-
-<h2>Pages</h2>
-{% for tag in tags %}
-<h3><a name="{{ tag | slugify }}">{{ tag }}</a></h3>
-<ul>
-  {% for page in site.howto %}
-  {% if page.tags contains tag %}
-  <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-{% endfor %}
 
 <br />
 Didn't find what you're looking for? You can find a listing of all the how to pages <a href="/all-howto-pages">here</a>.
