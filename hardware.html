@@ -13,7 +13,7 @@ title:    Hardware
 <h3>Computers</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Computers" %}
   <li>
@@ -26,7 +26,7 @@ title:    Hardware
 <h3>Consoles</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Consoles" %}
   <li>
@@ -39,7 +39,7 @@ title:    Hardware
 <h3>Controllers</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Consoles" %}
   <li>
@@ -52,7 +52,7 @@ title:    Hardware
 <h3>Graphics Cards</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Graphics Cards" %}
   <li>
@@ -65,7 +65,7 @@ title:    Hardware
 <h3>MIDI</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "MIDI" %}
   <li>
@@ -78,7 +78,7 @@ title:    Hardware
 <h3>MiSTer FPGA</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "MiSTer FPGA" %}
   <li>
@@ -91,7 +91,7 @@ title:    Hardware
 <h3>Monitors</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Monitors" %}
   <li>
@@ -104,7 +104,7 @@ title:    Hardware
 <h3>Network Devices</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Network Devices" %}
   <li>
@@ -117,7 +117,7 @@ title:    Hardware
 <h3>Sound Cards</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Sound Cards" %}
   <li>
@@ -130,7 +130,7 @@ title:    Hardware
 <h3>Storage Devices</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Storage Devices" %}
   <li>
@@ -143,7 +143,7 @@ title:    Hardware
 <h3>Video Capture</h3>
 
 <ul>
-  {% assign list = site.hardware | sort_natural %}
+  {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Video Capture" %}
   <li>

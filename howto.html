@@ -13,7 +13,7 @@ title:    How To Guides
 <h3>Atari ST</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Atari ST" %}
   <li>
@@ -27,7 +27,7 @@ title:    How To Guides
 <h3>DOS</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "DOS" %}
   <li>
@@ -41,7 +41,7 @@ title:    How To Guides
 <h3>MiSTer FPGA</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "MiSTer FPGA" %}
   <li>
@@ -55,7 +55,7 @@ title:    How To Guides
 <h3>MIDI</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "MIDI" %}
   <li>
@@ -69,7 +69,7 @@ title:    How To Guides
 <h3>Photography</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Photography" %}
   <li>
@@ -83,7 +83,7 @@ title:    How To Guides
 <h3>Programming</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Programming" %}
   <li>
@@ -97,7 +97,7 @@ title:    How To Guides
 <h3>Rasperry Pi</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Raspberry Pi" %}
   <li>
@@ -111,7 +111,7 @@ title:    How To Guides
 <h3>Videogames</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Videogames" %}
   <li>
@@ -125,7 +125,7 @@ title:    How To Guides
 <h3>Windows</h3>
 
 <ul>
-  {% assign list = site.howto | sort_natural %}
+  {% assign list = site.howto | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Windows" %}
   <li>

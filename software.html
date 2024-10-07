@@ -13,7 +13,7 @@ title:    Software
 <h3>3D Benchmarks</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "3D Benchmarks" %}
   <li>
@@ -27,7 +27,7 @@ title:    Software
 <h3>MIDI Synthesizers</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "MIDI Synthesizers" %}
   <li>
@@ -41,7 +41,7 @@ title:    Software
 <h3>MiSTer FPGA Cores</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "MiSTer FPGA Cores" %}
   <li>
@@ -55,7 +55,7 @@ title:    Software
 <h3>Operating Systems</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Operating Systems" %}
   <li>
@@ -69,7 +69,7 @@ title:    Software
 <h3>Programming</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Programming" %}
   <li>
@@ -83,7 +83,7 @@ title:    Software
 <h3>Tools</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Tools" %}
   <li>
@@ -97,7 +97,7 @@ title:    Software
 <h3>Videogames</h3>
 
 <ul>
-  {% assign list = site.software | sort_natural %}
+  {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "Videogames" %}
   <li>
