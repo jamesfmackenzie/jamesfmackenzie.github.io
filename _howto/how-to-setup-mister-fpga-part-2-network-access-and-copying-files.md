@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MiSTer FPGA Part 3 – Network Access and Copying Files"
+title: "MiSTer FPGA – Network Access and Copying Files"
 date: '2021-01-31 13:54:00:00'
 summary: How to copy files to your MiSTer over the network ...
 tags: [Emulation, MiSTer FPGA]

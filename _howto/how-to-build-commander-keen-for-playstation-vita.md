@@ -3,7 +3,7 @@ layout: post
 title: "How to Build Commander Keen for PlayStation Vita"
 summary: "<strong>A deep dive follow-up to last week's video on porting Commander Keen to WebAssembly</strong>. I'll go step by step on how to setup your dev environment and port Keen to run in the web browser."
 date: '2024-06-07 08:00:00:00'
-tags: [Commander Keen, Programming, Sony PlayStation, Sony PlayStation Vita, Videogames]
+tags: [Commander Keen, Programming, Sony PlayStation, Sony PlayStation Vita]
 ---
 
 CONSIDER TURNING THIS AND ALSO THE WEBASSEMBLY ARTICLE INTO GENERAL ARTICLES:

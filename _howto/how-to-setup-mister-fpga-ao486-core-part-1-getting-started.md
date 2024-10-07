@@ -4,7 +4,7 @@ title: "MiSTer AO486 Core Part 1 – Getting Started"
 date: '2021-02-06 18:21:00:00'
 summary: Getting started with MS-DOS and the MiSTer ao486 core ...
 image: mister-ao486-doom-2.png
-tags: [DOS, Emulation, MiSTer FPGA, MiSTer FPGA Cores]
+tags: [Emulation, MiSTer FPGA, MiSTer FPGA Cores]
 ---
 
 You’ve followed the [setup guide]({% post_url 2020-09-20-mister-fpga-install-and-setup %}) and know how to [copy files to your MiSTer]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}). Now you're ready to try out some cores. Let's start with ao486.

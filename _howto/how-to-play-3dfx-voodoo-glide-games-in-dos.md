@@ -3,7 +3,7 @@ layout: post
 title: How To Play 3Dfx Glide Games in DOS
 date: '2024-09-18 22:47:00'
 summary: How to play 3Dfx Glide games in the DOS environment
-tags: [3Dfx, 3Dfx Voodoo, DOS, PC, Videogames]
+tags: [3Dfx, 3Dfx Voodoo, DOS, PC]
 ---
 
 We all know that many Windows 98 games take advantage of the 3Dfx Glide API - in fact the widespread support for Glide was a big reason to buy a Voodoo card back in the 90s.
