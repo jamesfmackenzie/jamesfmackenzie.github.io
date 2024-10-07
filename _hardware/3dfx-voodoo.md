@@ -4,7 +4,6 @@ title: 3Dfx Voodoo
 summary: 
 date: '2024-08-29 11:33:00'
 tags: [3Dfx, 3Dfx Voodoo, Graphics Cards, PC]
-permalink: /hardware/3dfx-voodoo
 ---
 
 ![3Dfx Original Logo](/img/hardware/3dfx-original-logo-design.png)
