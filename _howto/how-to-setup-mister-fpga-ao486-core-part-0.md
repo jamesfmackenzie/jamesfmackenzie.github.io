@@ -4,7 +4,7 @@ title: "MiSTer AO486 Core Part 0"
 date: '2021-02-06 18:21:00:00'
 summary: Getting started with MS-DOS and the MiSTer ao486 core ...
 image: mister-ao486-doom-2.png
-tags: [DOS, FPGA, How To, MiSTer, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
+tags: [DOS, Emulation, MiSTer FPGA, MiSTer FPGA Cores]
 ---
 
 <a name="DOS Gaming on MiSTer FPGA">

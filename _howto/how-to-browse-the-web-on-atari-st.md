@@ -3,7 +3,7 @@ layout: post
 title: "How to Browse the Web on Atari ST"
 date: '2019-12-08 00:00:02:00'
 summary: 
-tags: 
+tags: [Atari ST]
 ---
 
 <a name="Atari ST on the Web">

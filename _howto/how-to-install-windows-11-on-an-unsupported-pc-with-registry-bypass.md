@@ -4,7 +4,7 @@ title: "How To Install Windows 11 on an Unsupported PC With Registry Bypass"
 date: '2021-10-16 10:21:00:00'
 summary: Did your PC fail the Windows 11 health check? All is not lost – you may still be able to upgrade ...
 image: welcome-to-windows-11.jpg
-tags: [How To, Posts, TPM, Windows 11]
+tags: [PC, Windows, Windows 11]
 ---
 
 Chasing <a href="https://docs.microsoft.com/en-us/windows/whats-new/windows-11-requirements" target="_blank">Windows 11 compatibility</a>, I recently [added a TPM 1.2 module to my desktop PC]({% post_url 2021-08-28-how-to-install-a-tpm-module %}). Unfortunately even after installing the module, my PC still failed the Windows 11 system requirement check:

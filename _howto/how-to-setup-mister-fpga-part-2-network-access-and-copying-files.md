@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer FPGA Part 3 – Network Access and Copying Files"
 date: '2021-01-31 13:54:00:00'
 summary: How to copy files to your MiSTer over the network ...
-tags: [FPGA, How To, MiSTer, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
+tags: [Emulation, MiSTer FPGA]
 ---
 
 You’ve just followed the [setup guide]({% post_url 2020-09-20-mister-fpga-install-and-setup %}) and have a freshly updated MiSTer. Next, you'll want to enable network access so can copy games/files and remotely configure your MiSTer. Here's how.

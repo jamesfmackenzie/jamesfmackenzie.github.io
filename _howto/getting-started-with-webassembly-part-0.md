@@ -3,7 +3,7 @@ layout: post
 title: "WebAssembly Lesson 1: Hello World"
 date: '2019-11-30 19:18:00:00'
 summary: What is WebAssembly? Emscripten? asm.js? Find out how to get started with WebAssembly and run some Hello World examples
-tags: [Emscripten, How To, Programming, Posts, WebAssembly, Web Development]
+tags: [Emscripten, Programming, WebAssembly]
 ---
 
 Maybe consoldate the existing WebAssembly articles as per the below?
