@@ -6,13 +6,9 @@ date: '2024-08-29 11:33:00'
 tags: [Computers, HP Compaq t5710, PC, PC Models]
 ---
 
-<a name="HP Thin Client DOS Gaming PC">
-## HP Thin Client DOS Gaming PC
+![](/img/posts/hp-compaq-t5710-back.jpg)
 
-Status | Completed July 2021
-Goal | Build a small and light gaming PC for DOS and Windows 98 gaming
-
-After <a href="#DOS Gaming on MiSTer FPGA">DOS gaming on MiSTer</a>, I was left wanting for more. The MiSTer felt underpowered, I wanted something a little faster to play Half-Life, Unreal and other Windows 98 classics.
+In 2019, I relocated from London to New York, leaving all my vintage computers behind.
 
 In search of a retro PC (but short on apartment space), [I purchased a HP Compaq t5710 thin client]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}).
 
