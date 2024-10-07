@@ -3,7 +3,147 @@ layout:   nocomments
 title:    How To Guides
 ---
 
-Welcome to the How To and Guides section, your resource for step-by-step tutorials and practical tips on retro computing. Whether you're restoring vintage hardware, setting up classic operating systems, or troubleshooting old software, our guides will help you every step of the way. Explore the collection and master the skills you need to bring retro tech back to life!
+Welcome to the How To and Guides section, your resource for step-by-step tutorials and practical tips on retro computing. Whether you're restoring vintage hardware, setting up classic operating systems, or troubleshooting old software, these guides will help you every step of the way. Explore the collection and master the skills you need to bring retro tech back to life!
+
+Atari ST
+DOS
+MiSTer FPGA
+Programming
+MIDI
+Photography
+Raspberry Pi
+Videogames
+Windows
+
+
+
+<h3>Atari ST</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "Atari ST" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>DOS</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "DOS" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>MiSTer FPGA</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "MiSTer FPGA" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>MIDI</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "MIDI" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>Photography</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "Photography" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>Programming</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "Programming" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>Rasperry Pi</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "Raspberry Pi" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>Videogames</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "Videogames" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h3>Windows</h3>
+
+<ul>
+  {% assign list = site.howto | sort_natural %}
+  {% for page in list %}
+  {% if page.tags contains "Windows" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<hr />
 
 {% comment%}
 Here we generate all the tags.

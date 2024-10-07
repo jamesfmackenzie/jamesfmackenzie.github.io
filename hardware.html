@@ -3,12 +3,13 @@ layout:   nocomments
 title:    Hardware
 ---
 
-Welcome to the retro hardware hub, your destination to see all the posts, reviews, and in-depth hardware coverage on this site. Whether you're looking for insights on old computers, consoles, or graphics cards, it's all covered here. Explore our extensive library of articles to dive into retro hardware!
+Welcome to the retro hardware hub, your destination to see all the posts, reviews, and in-depth hardware coverage on this site. Whether you're looking for insights on old computers, consoles, or graphics cards, it's all covered here. Explore the extensive library of articles to dive into retro hardware. Enjoy!
 
 <h3>Computers</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Computers" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -20,7 +21,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Consoles</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Consoles" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -32,7 +34,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Controllers</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Consoles" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -44,7 +47,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Graphics Cards</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Graphics Cards" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -56,7 +60,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>MIDI</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "MIDI" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -68,7 +73,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>MiSTer FPGA</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "MiSTer FPGA" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -80,7 +86,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Monitors</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Monitors" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -92,7 +99,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Network Devices</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Network Devices" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -104,7 +112,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Sound Cards</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Sound Cards" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -116,7 +125,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Storage Devices</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Storage Devices" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
@@ -128,7 +138,8 @@ Welcome to the retro hardware hub, your destination to see all the posts, review
 <h3>Video Capture</h3>
 
 <ul>
-  {% for page in site.hardware %}
+  {% assign list = site.hardware | sort_natural %}
+  {% for page in list %}
   {% if page.tags contains "Video Capture" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
