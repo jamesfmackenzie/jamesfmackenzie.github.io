@@ -36,18 +36,6 @@ title:    Hardware
   {% endfor %}
 </ul>
 
-<h3>Controllers</h3>
-
-<ul>
-  {% assign list = site.hardware | sort_natural: "title" %}
-  {% for page in list %}
-  {% if page.tags contains "Consoles" %}
-  <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
 
 <h3>Graphics Cards</h3>
 
@@ -113,6 +101,21 @@ title:    Hardware
   {% endif %}
   {% endfor %}
 </ul>
+
+
+<h3>Peripherals</h3>
+
+<ul>
+  {% assign list = site.hardware | sort_natural: "title" %}
+  {% for page in list %}
+  {% if page.tags contains "Peripherals" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
 
 <h3>Sound Cards</h3>
 
