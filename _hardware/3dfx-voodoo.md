@@ -53,7 +53,7 @@ For retro gaming enthusiasts, the 3dfx Voodoo series remains iconic. It represen
         <!-- <a target="_blank" href="https://youtu.be/{{ page.videoId }}">{{ page.title }}</a> - {{ page.date | date_to_string }} -->
       <a href="{{ page.url }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
       {% elsif page.overrideUrl %} 
-        <a target="_blank" href="{{ page.overrideUrl }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
+        <a href="{{ page.overrideUrl }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
       {% else %}
         <a href="{{ page.url }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
       {% endif %}

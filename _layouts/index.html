@@ -46,7 +46,7 @@
 				{% else %}
 				<h2>
 					{% if post.overrideUrl %}
-					<a target="_blank" href="{{ post.overrideUrl }}">{{ post.title }}</a>
+					<a href="{{ post.overrideUrl }}">{{ post.title }}</a>
 					{% else %}
 					<a href="{{ post.url }}">{{ post.title }}</a>
 					{% endif %}

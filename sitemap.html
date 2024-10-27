@@ -53,7 +53,7 @@ Here we generate all the tags.
 	  <!-- <a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a> - {{ post.date | date_to_string }} -->
     <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
 	{% elsif post.overrideUrl %} 
-      <a target="_blank" href="{{ post.overrideUrl }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+      <a href="{{ post.overrideUrl }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
     {% else %}
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
 	{% endif %}

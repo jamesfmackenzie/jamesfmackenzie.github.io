@@ -99,7 +99,7 @@ $(function () {
     var hyperlink = "<a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a>";
     
 	  if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
-		  hyperlink = "<a target=\"_blank\" href=\"" + postToAppend.overrideUrl + "\">";
+		  hyperlink = "<a href=\"" + postToAppend.overrideUrl + "\">";
     }
 
 	  htmlFragment = "<div class=\"row\"><h2>" + hyperlink + "</h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><time>" + postToAppend.date + "</time></p>" + mediaFragment + "</div>";
