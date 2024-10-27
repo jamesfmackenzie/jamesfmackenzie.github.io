@@ -7,16 +7,16 @@ image:
 tags: [How To, Posts, Raspberry Pi, Retrogaming, Videogames]
 ---
 
-I recently installed Half Life 2 on the Raspberry Pi and the response was super great.
+I recently installed Half Life 2 on the Raspberry Pi and the response was super great!
 
-More than 25,000 of you tuned in and you can find the video here:
+More than 25,000 of you tuned in and you can find that video here:
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/-S_J-3CJsPU?rel=0" 
 allowfullscreen class="youtube-video"></iframe>
 </div> 
 
-Today, I’ll show you how to install Half-Life 2 on your own Pi, with step-by-step instructions and a deep-dive on the graphics settings you need to boost performance.
+In this how to guide, we’ll explore how to install Half-Life 2 on your own Pi, with step-by-step instructions and a deep-dive on the graphics settings you need to boost performance.
 
 
 ### What You Need
@@ -24,7 +24,7 @@ Today, I’ll show you how to install Half-Life 2 on your own Pi, with step-by-s
 To get started you need:
 
 * A Raspberry Pi (Pi 5 is best) with Ubuntu installed
-* A purchased copy of Half-Life 2 (e.g. from Steam)
+* A copy of Half-Life 2 (e.g. from Steam)
 
 
 ### Step 1. Install Build Tools
@@ -73,7 +73,7 @@ python3 ./waf configure -T release -prefix=hl2 —build-games=hl2 —disable-war
 {% endraw %}
 {% endhighlight %}
 
-As a side note, we can also configure with different parameters to build other Source Engine games (see “Other Source Engine Games”) below.
+As a side note, we can also configure with different parameters to build other Source Engine games (see “Other Source Engine Games” below).
 
 
 ### Step 5. Build Half-Life 2
@@ -113,18 +113,18 @@ ls
 
 Last but not least, we need to copy the Half-Life 2 assets to the Pi.
 
-From your Steam PC, download Half-Life 2 and locate the files. Right click on Half-Life 2 and select <em>Manage</em>, <em>Browse local files</em> to find them.
+From your Steam PC, download Half-Life 2. In your Steam library, right click on the Half-Life 2 entry and select <em>Manage</em>, <em>Browse local files</em>.
 
-(They’re normally located in <code>/Users/USERNAME/Library/Application Support/Steam/steamapps/common/Half-Life 2</code>).
+This will show us the location of the Half-Life 2 assets. They’re normally located in <code>/Users/USERNAME/Library/Application Support/Steam/steamapps/common/Half-Life 2</code>).
 
 Use a USB stick or network file transfer to copy the <code>hl2</code> and <code>platform</code> folders to the newly created <code>hl2</code> directory on your Pi.
 
-You might be prompted to merge files. Press <em>Yes</em> and once you’re done, it should look like this:
+You might be prompted to merge files. Press <em>Yes</em> and once you’re done, the <code>hl2</code> directory should look like this:
 
 
 ### Run Half-Life 2
 
-You’re ready to play! Back in the Raspberry terminal, type the following to launch Half-Life 2:
+You’re ready to play! Back in the Raspberry Pi terminal, type the following to launch Half-Life 2:
 
 {% highlight bash %}
 {% raw %}
