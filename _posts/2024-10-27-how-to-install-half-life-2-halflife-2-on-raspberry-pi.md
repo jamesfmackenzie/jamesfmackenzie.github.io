@@ -7,19 +7,16 @@ image:
 tags: [How To, Posts, Raspberry Pi, Retrogaming, Videogames]
 ---
 
-![nvidia GeForce 6200 PCI](/img/posts/nvidia-geforce-6200-pci.jpg)
-
 I recently installed Half Life 2 on the Raspberry Pi and the response was super great.
 
 More than 25,000 of you tuned in and you can find the video here:
 
-<div class=“youtube-container”>
-<iframe src=“https://www.youtube.com/embed/-S_J-3CJsPU?rel=0” 
-allowfullscreen class=“youtube-video”></iframe>
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/-S_J-3CJsPU?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 Today, I’ll show you how to install Half-Life 2 on your own Pi, with step-by-step instructions and a deep-dive on the graphics settings you need to boost performance.
-
 
 
 ### What You Need
@@ -55,7 +52,7 @@ sudo apt-get install libsdl2-dev libfontconfig1-dev libopenal-dev libjpeg-dev li
 
 ### Step 3. Download Source Engine Code
 
-Run the following command to download the Source Engine source code in the <code>source-engine</code> directory:
+Run the following command to download the Source Engine source code to the <code>source-engine</code> directory:
 
 {% highlight bash %}
 {% raw %}
@@ -76,7 +73,7 @@ python3 ./waf configure -T release -prefix=hl2 —build-games=hl2 —disable-war
 {% endraw %}
 {% endhighlight %}
 
-As a side note, we can also configure with different parameters to build other Source Engine games (see “Other Games”) below.
+As a side note, we can also configure with different parameters to build other Source Engine games (see “Other Source Engine Games”) below.
 
 
 ### Step 5. Build Half-Life 2
@@ -102,7 +99,7 @@ python3 ./waf install
 {% endraw %}
 {% endhighlight %}
 
-You should now have an <code>hl2</code> folder with the <code>hl2-launcher</code> execute inside. Navigate and check this with:
+You should now have an <code>hl2</code> folder with the <code>hl2-launcher</code> executable inside. Navigate and check this with:
 
 {% highlight bash %}
 {% raw %}
@@ -114,9 +111,11 @@ ls
 
 ### Copy Game Assets
 
-Last but not least, we need to copy the Half-Life 2 assets across the Pi.
+Last but not least, we need to copy the Half-Life 2 assets to the Pi.
 
-From your Steam PC, download Half-Life 2 and locate the files. Right click on Half-Life 2 and select <em>Manage</em>, <em>Browse local files</em> to find them. They’re normally located in <code>/Users/<username>/Library/Application Support/Steam/steamapps/common/Half-Life 2</code>.
+From your Steam PC, download Half-Life 2 and locate the files. Right click on Half-Life 2 and select <em>Manage</em>, <em>Browse local files</em> to find them.
+
+(They’re normally located in <code>/Users/USERNAME/Library/Application Support/Steam/steamapps/common/Half-Life 2</code>).
 
 Use a USB stick or network file transfer to copy the <code>hl2</code> and <code>platform</code> folders to the newly created <code>hl2</code> directory on your Pi.
 
@@ -125,7 +124,7 @@ You might be prompted to merge files. Press <em>Yes</em> and once you’re done,
 
 ### Run Half-Life 2
 
-You’re ready to play. Back in the Raspberry terminal, type the following to launch Half-Life 2:
+You’re ready to play! Back in the Raspberry terminal, type the following to launch Half-Life 2:
 
 {% highlight bash %}
 {% raw %}
