@@ -31,7 +31,6 @@ To get started you need:
 
 Open up the Ubuntu terminal and type the following to install the necessary build tools:
 
-
 {% highlight bash %}
 {% raw %}
 sudo apt-get install build-essential gcc-multilib g++-multilib pkg-config ccache
@@ -56,7 +55,7 @@ Run the following command to download the Source Engine source code to the <code
 
 {% highlight bash %}
 {% raw %}
-git clone https://github.com/nillerusr/source-engine.git —-recursive
+git clone https://github.com/nillerusr/source-engine.git --recursive
 {% endraw %}
 {% endhighlight %}
 
@@ -69,7 +68,7 @@ Type the following to configure your Source Engine build for Half-Life 2:
 
 {% highlight bash %}
 {% raw %}
-python3 ./waf configure -T release -prefix=hl2 —build-games=hl2 —disable-warns
+python3 ./waf configure -T release --prefix=hl2 --build-games=hl2 --disable-warns
 {% endraw %}
 {% endhighlight %}
 
@@ -146,4 +145,3 @@ These instructions are for building Half-Life 2, but you can also build other So
 * dod = Day of Defeat
 * cstrike = Counter-Strike: Source
 * portal = Portal
-
