@@ -7,16 +7,7 @@ image:
 tags: [Raspberry Pi]
 ---
 
-I recently installed Half Life 2 on the Raspberry Pi and the response was super great!
-
-More than 25,000 of you tuned in and you can find that video here:
-
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/-S_J-3CJsPU?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
-In this how to guide, we’ll explore how to install Half-Life 2 on your own Pi, with step-by-step instructions and a deep-dive on the graphics settings you need to boost performance.
+In this how to guide, we’ll explore how to install and run Half-Life 2 on the Raspberry Pi. This is an ARM64 native version of the game, giving us the best possible performance with zero emulation overhead.
 
 
 ### What You Need
@@ -51,10 +42,11 @@ sudo apt-get install libsdl2-dev libfontconfig1-dev libopenal-dev libjpeg-dev li
 
 ### Step 3. Download Source Engine Code
 
-Run the following command to download the Source Engine source code to the <code>source-engine</code> directory:
+Run the following command to download the Source Engine source code:
 
 {% highlight bash %}
 {% raw %}
+cd ~/Downloads
 git clone https://github.com/nillerusr/source-engine.git --recursive
 {% endraw %}
 {% endhighlight %}
@@ -81,7 +73,7 @@ With that done, we’re ready to build Half-Life 2 with:
 
 {% highlight bash %}
 {% raw %}
-python3 ./waf build -p -v
+python3 ./waf build -p -v 
 {% endraw %}
 {% endhighlight %}
 
@@ -108,17 +100,48 @@ ls
 {% endhighlight %}
 
 
-### Copy Game Assets
+### Step 7. Download Game Assets
 
-Last but not least, we need to copy the Half-Life 2 assets to the Pi.
+Last but not least, we need to download the Half-Life 2 game assets to the Pi.
 
-From your Steam PC, download Half-Life 2. In your Steam library, right click on the Half-Life 2 entry and select <em>Manage</em>, <em>Browse local files</em>.
+To do this, we'll use <a href="https://github.com/SteamRE/DepotDownloader" target="_blank">DepotDownloader</a>. First, download and extract DepotDownloader:
 
-This will show us the location of the Half-Life 2 assets. They’re normally located in <code>/Users/USERNAME/Library/Application Support/Steam/steamapps/common/Half-Life 2</code>).
+{% highlight bash %}
+{% raw %}
+cd ~/Downloads
+wget https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.7.4/DepotDownloader-linux-arm64.zip
+unzip DepotDownloader-linux-arm64.zip
+{% endraw %}
+{% endhighlight %}
 
-Use a USB stick or network file transfer to copy the <code>hl2</code> and <code>platform</code> folders to the newly created <code>hl2</code> directory on your Pi.
+Next, use the following command to download Half-Life 2. You'll need a Steam account with a purchased copy of the game:
 
-You might be prompted to merge files. Press <em>Yes</em> and once you’re done, the <code>hl2</code> directory should look like this:
+{% highlight bash %}
+{% raw %}
+./DepotDownloader -app 220 -depot 221 -manifest 3666218991449795038 -username <steam_username>
+{% endraw %}
+{% endhighlight %}
+
+This will download the Half-Life 2 games files to the <code>depots</code> directory.
+
+
+### Step 8. Copy Game Assets
+
+With the game files downloaded, copy them to your <code>source-engine</code> folder:
+
+* Copy the <code>depots/221/16557524/hl2</code> folder to <code>source-engine/hl2</code>
+* Copy the <code>depots/221/16557524/platform</code> folder to <code>source-engine/hl2</code>
+
+You might be prompted to merge files. Press <em>Yes</em> if prompted.
+
+If you want to do this in the terminal:
+
+{% highlight bash %}
+{% raw %}
+rsync -ah --progress ./depots/221/16557524/hl2/* ~/Downloads/source-engine/hl2/hl2
+cp -r ./depots/221/16557524/platform ~/Downloads/source-engine/hl2/
+{% endraw %}
+{% endhighlight %}
 
 
 ### Run Half-Life 2
@@ -127,11 +150,28 @@ You’re ready to play! Back in the Raspberry Pi terminal, type the following to
 
 {% highlight bash %}
 {% raw %}
+cd ~/Downloads/source-engine/hl2
 ./hl2-launcher
 {% endraw %}
 {% endhighlight %}
 
 Enjoy!
+
+
+### Optimized Graphics Settings
+
+For ~60fps gameplay:
+* Change all settings to low
+* Change the resolution to 1280x720
+
+For ~30fps gameplay:
+* Change settings to medium
+* Change texture and shader settings to high
+* Change the resolution to 1920x1080
+
+Anti-aliasing and filtering should always be turned off.
+
+To check the framerate, use <code>cl_showfps 1</code> from the Half-Life 2 console.
 
 
 ### Other Source Engine Games
@@ -145,3 +185,15 @@ These instructions are for building Half-Life 2, but you can also build other So
 * dod = Day of Defeat
 * cstrike = Counter-Strike: Source
 * portal = Portal
+
+
+### On YouTube
+
+I covered this setup on YouTube. The response was great and more than 60,000 of you tuned in (Thanks!).
+
+Enjoy the video here:
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/-S_J-3CJsPU?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div> 
