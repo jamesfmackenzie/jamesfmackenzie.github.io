@@ -24,25 +24,30 @@
 		{% for post in site.posts limit:9 %}
 		<article class="post">
 			<div class="row">
+
 				{% if post.layout == "tweet" %}
 				{% if post.summary %}
-				<p class="twitter-tweet-summary-quote">
-					<a href="{{ post.url }}">{{ post.summary }}</a>
-				</p>
+				<blockquote class="twitter-summary-quote">
+					<a href="{{ post.url }}">
+						{{ post.summary | markdownify }}
+					</a>
+				</blockquote>
 				{% endif %}
-				<p>
-					<blockquote class="twitter-tweet twitter-tweet-blockquote"><a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; {{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
-				</p>
+				<blockquote class="twitter-title-quote"><a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; {{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
+	
 				{% elsif post.layout == "youtube" %}
-				<p class="youtube-summary-quote">
-					<a href="{{ post.url }}">{{ post.summary }}</a>
-				</p>
+				<blockquote class="youtube-summary-quote">
+					<a href="{{ post.url }}">
+						{{ post.summary | markdownify }}
+					</a>
+				</blockquote>
 				<div class="youtube-container">
 					<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
 				</div> 
 				<p>
 					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 				</p>
+
 				{% else %}
 				<h2>
 					{% if post.overrideUrl %}
@@ -52,7 +57,7 @@
 					{% endif %}
 				</h2>
 				<p class="post-summary">
-					{{ post.summary }}
+					{{ post.summary | markdownify }}
 				</p>
 				<p>
 					<time>{{ post.date | date: "%b %-d, %Y" }}</time>

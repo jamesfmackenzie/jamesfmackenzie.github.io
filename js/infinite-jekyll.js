@@ -82,17 +82,17 @@ $(function () {
     if (postToAppend.layout == "tweet") {			
 		
       if (postToAppend.summary) {
-        htmlFragment = "<div class=\"row\"><p class=\"twitter-tweet-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></p><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; " + postToAppend.date + "</a></blockquote></p>" + mediaFragment + "</div>";
+        htmlFragment = "<div class=\"row\"><blockquote class=\"twitter-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></blockquote><blockquote class=\"twitter-title-quote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; " + postToAppend.date + "</a></blockquote>" + mediaFragment + "</div>";
 
       }
       else {
-        htmlFragment = "<div class=\"row\"><p><blockquote class=\"twitter-tweet twitter-tweet-blockquote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; " + postToAppend.date + "</a></blockquote></p>" + mediaFragment + "</div>";
+        htmlFragment = "<div class=\"row\"><blockquote class=\"twitter-title-quote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; " + postToAppend.date + "</a></blockquote>" + mediaFragment + "</div>";
 
       }
     } 
     else if (postToAppend.layout == "youtube") {			
 		
-      htmlFragment = "<div class=\"row\"><p class=\"youtube-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></p>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
+      htmlFragment = "<div class=\"row\"><blockquote class=\"youtube-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></blockquote>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
     } 
 	else {
       

@@ -75,10 +75,6 @@ pre {
   margin: 0 auto;
 }
 
-.post-summary {
-  line-height: 24px;
-}
-
 /*
 .quote {
   text-transform: none;
@@ -214,6 +210,17 @@ body>header a:hover {
 
 /* end main header styles */
 
+
+/* post-list styles */
+
+.post-list p {
+  line-height: 1.4em;
+}
+
+/* end post-list styles */
+
+
+
 /* article styles */
 
 article {
@@ -227,43 +234,12 @@ article img {
   margin: 0 auto;
 }
 
-/* youtube */
-
-.youtube-summary-quote {
-  border-left: 0.5em solid red;
-  border-right: 0;
-  padding-left: 1em;
-}
-
-.youtube-summary-quote a {
-  text-decoration: none;
-  color: #2c3e50;
-}
-
-article .youtube-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  margin-top: 25px;
-  height: 0;
-  max-width: 100%;
-  margin: 0;
-}
-
-article .youtube-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 .strikethrough {
   text-decoration: line-through;
 }
 
 /* end article styles */
+
 
 /* individual post page styles */
 
@@ -425,39 +401,74 @@ td {
   padding: 0.3em;
 }
 
+
 /* tweets */
 
-.twitter-tweet-summary-quote {
+.twitter-summary-quote {
   border-left: 0.5em solid #1DA1F2;
   border-right: 0;
   padding-left: 1em;
+  margin: 0;
 }
 
-.twitter-tweet-summary-quote a {
+.twitter-summary-quote a {
   text-decoration: none;
   color: #2c3e50;
 }
 
-.twitter-tweet-blockquote {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
+.twitter-title-quote {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
 	border: 1px solid #CFD9DE;
 	border-radius: 12px;
 	margin: 0;
+  margin-bottom: 1em;
 }
 
-.twitter-tweet-blockquote p {
-	line-height: 24px;
-}
-
-.twitter-tweet-blockquote a {
-	text-decoration: none;
-  	color: #2c3e50;
+.twitter-title-quote p {
+	line-height: 1.2em;
 } 	
 
-.twitter-tweet-rendered {
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 16px;
+.twitter-title-quote a {
+	text-decoration: none;
+  	color: #2c3e50;
 }
+
+/* end tweets */
+
+
+/* youtube */
+
+.youtube-summary-quote {
+  border-left: 0.5em solid red;
+  border-right: 0;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.youtube-summary-quote a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+article .youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  margin-top: 25px;
+  height: 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+article .youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* end youtube */

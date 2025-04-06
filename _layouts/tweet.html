@@ -31,10 +31,10 @@
 		<article class="post">
 			<div class="row">
 				<p>				
-					{{ page.summary }}
+					{{ page.summary | markdownify }}
 				</p>
 				<p>
-					<blockquote class="twitter-tweet twitter-tweet-blockquote"><a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ page.tweetId }}"><p lang="en" dir="ltr">{{ page.title }}</p>&mdash; {{ page.date | date: "%b %-d, %Y" }}</a></blockquote>
+					<blockquote class="twitter-title-quote"><a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ page.tweetId }}"><p lang="en" dir="ltr">{{ page.title }}</p>&mdash; {{ page.date | date: "%b %-d, %Y" }}</a></blockquote>
 				</p>
 			</div>
 		</article>
