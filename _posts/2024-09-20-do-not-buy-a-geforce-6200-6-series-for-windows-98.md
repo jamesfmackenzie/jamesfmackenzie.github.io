@@ -1,7 +1,10 @@
 ---
 layout: tweet
 title: "Recently bought this GeForce 6200 PCI as a passively cooled GPU for Windows 98. It was a bad idea! A thread.🧵"
-summary: "<strong>A Twitter thread</strong>. Why you shouldn't buy a GeForce 6 Series card for Windows 98 retro gaming."
+summary: |-
+  **A Twitter thread**.
+  
+  Why you shouldn't buy a GeForce 6 Series card for Windows 98 retro gaming.
 date: '2024-09-20 17:12:00:00'
 tweetId: 1837238505929412702
 tags: [GeForce, Tweets]
