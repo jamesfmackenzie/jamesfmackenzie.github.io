@@ -35,7 +35,7 @@ layout: null
       </author>
 	  
 	  {% if post.summary %}
-	    <summary>{{ post.summary }}</summary>
+	    <summary>{{ post.summary | markdownify | strip_html }}</summary>
 	  {% else %}
 	    <summary>{{ post.title }}</summary>
 	  {% endif %}
@@ -54,7 +54,7 @@ layout: null
 			<![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
       {% if post.summary %}
-	          <p>{{ post.summary }}</p>
+	          <p>{{ post.summary | markdownify }}</p>
 	  {% endif %}
 			  <p>Read on Twitter <a href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" target="_blank">here</a>.</p>
 			  {% if post.image %}
@@ -70,7 +70,7 @@ layout: null
 			<![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
 			  {% if post.summary %}
-				<p>{{ post.summary }}</p>
+				<p>{{ post.summary | markdownify }}</p>
 			  {% endif %}
 			  <p>View on YouTube <a href="https://youtu.be/{{ post.videoId }}" target="_blank">here</a>.</p>
 			  <img src="https://img.youtube.com/vi/{{ post.videoId }}/hqdefault.jpg" alt="YouTube thumbnail" />
@@ -83,7 +83,7 @@ layout: null
 	      <content type="html">
 		    <![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
-			  <p>{{ post.summary }}</p>
+			  <p>{{ post.summary | markdownify }}</p>
 			  <p>Read full article <a href="{{ post.url | prepend: site.url }}" target="_blank">here</a>.</p>
 			  {% if post.image %}
 				<img src="{{ site.url }}/img/posts/{{ post.image }}" alt="featured image" />
