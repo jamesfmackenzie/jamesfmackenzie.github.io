@@ -57,6 +57,9 @@ layout: null
 	          <p>{{ post.summary }}</p>
 	  {% endif %}
 			  <p>Read on Twitter <a href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" target="_blank">here</a>.</p>
+			  {% if post.image %}
+				<img src="{{ site.url }}/img/posts/{{ post.image }}" alt="featured image" />
+			  {% endif %}
 			]]>
 		  </content>
 		  
@@ -66,9 +69,9 @@ layout: null
 	      <content type="html">
 			<![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
-	  {% if post.summary %}
-	          <p>{{ post.summary }}</p>
-	  {% endif %}
+			  {% if post.summary %}
+				<p>{{ post.summary }}</p>
+			  {% endif %}
 			  <p>View on YouTube <a href="https://youtu.be/{{ post.videoId }}" target="_blank">here</a>.</p>
 			  <img src="https://img.youtube.com/vi/{{ post.videoId }}/hqdefault.jpg" alt="YouTube thumbnail" />
 			]]>
