@@ -24,7 +24,6 @@
 		{% for post in site.posts limit:9 %}
 		<article class="post">
 			<div class="row">
-
 				{% if post.layout == "tweet" %}
 				{% if post.summary %}
 				<blockquote class="twitter-summary-quote">
@@ -33,7 +32,12 @@
 					</a>
 				</blockquote>
 				{% endif %}
-				<blockquote class="twitter-title-quote"><a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}"><p lang="en" dir="ltr">{{ post.title }}</p>&mdash; {{ post.date | date: "%b %-d, %Y" }}</a></blockquote>
+				<blockquote class="twitter-title-quote">
+					<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">
+						<p lang="en" dir="ltr">{{ post.title }}</p>
+						&mdash; {{ post.date | date: "%b %-d, %Y" }}
+					</a>
+				</blockquote>
 	
 				{% elsif post.layout == "youtube" %}
 				<blockquote class="youtube-summary-quote">
@@ -63,6 +67,7 @@
 					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 				</p>
 				{% endif %}	
+
 				{% if post.image %}
 				<p>
 					<img src="/img/posts/{{ post.image }}" alt="{{ post.title }}" />
