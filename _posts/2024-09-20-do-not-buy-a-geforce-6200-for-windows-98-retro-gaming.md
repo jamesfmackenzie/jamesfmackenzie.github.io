@@ -7,7 +7,7 @@ summary: |-
   
   I recently bought this GeForce 6200 PCI as a passively cooled GPU for Windows 98. It was a bad idea!
   
-  Read on for the full details.
+  Read on for full details.
 image: nvidia-geforce-6200-pci.jpg
 tags: [GeForce, Posts]
 ---
