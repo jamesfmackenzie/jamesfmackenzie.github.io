@@ -84,7 +84,11 @@ layout: null
 		    <![CDATA[
 			  <p><strong>{{ post.title }}</strong></p>
 			  <p>{{ post.summary | markdownify }}</p>
-			  <p>Read full article <a href="{{ post.url | prepend: site.url }}" target="_blank">here</a>.</p>
+			  {% if post.overrideUrl %}
+				<p>Read full article <a href="{{ post.overrideUrl | prepend: site.url }}" target="_blank">here</a>.</p>
+			  {% else %}
+				<p>Read full article <a href="{{ post.url | prepend: site.url }}" target="_blank">here</a>.</p>  
+			  {% endif %}
 			  {% if post.image %}
 				<img src="{{ site.url }}/img/posts/{{ post.image }}" alt="featured image" />
 			  {% endif %}
