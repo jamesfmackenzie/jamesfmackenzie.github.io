@@ -8,7 +8,7 @@ summary: |-
   As a foundation, I'm using the magnificent CloneKeen from Caitlin Shaw. It's a very impressive project and very authentic to the original Keen. So far I have the graphics engine running at a **smooth 60fps**, but no input or sound *yet*.
 
   Video linked below.
-tweetId: 1905997972607005028
+tweetId: 1908974808463008240
 tags: [Commander Keen, Programming, Retrogaming, Sony PlayStation, Sony PlayStation Vita, Videogames, Tweets]
 ---
 
