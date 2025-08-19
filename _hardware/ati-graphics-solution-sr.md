@@ -8,7 +8,7 @@ tags: [ATi, Graphics Cards, PC]
 
 When it comes to vintage PC graphics hardware, most cards did one job: they implemented a standard (CGA, Hercules, EGA, VGA, etc.) and stuck to it. But every so often, a manufacturer came up with something a little different.  
 
-The **ATI Graphics Solution SR** is one of those cards. Released in the mid-to-late 1980s, it was ATI’s enhanced take on the IBM CGA and Hercules standards — offering flexibility, compatibility, and a unique trick that made it stand out.  
+The **ATI Graphics Solution SR** is one of those cards. Released in 1987, it was ATI’s enhanced take on the IBM CGA and Hercules standards — offering flexibility, compatibility, and a unique trick that made it stand out.
 
 
 ### Features and Capabilities  
