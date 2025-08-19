@@ -2,7 +2,7 @@
 layout: post
 title: ATi Graphics Solution SR
 summary: 
-date: '2024-08-19 18:47:00'
+date: '2025-08-19 18:47:00'
 tags: [ATi, Graphics Cards, PC]
 ---
 
