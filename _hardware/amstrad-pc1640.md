@@ -17,7 +17,6 @@ What really set Amstrad apart was its all-in-one philosophy. Instead of piecemea
 ### 📊 Amstrad PC1640 Specifications  
 
 | Component       | Details                                                                 |
-|——————|-————————————————————————|
 | **CPU**         | Intel 8086 @ 8 MHz                                                      |
 | **RAM**         | 512 KB (expandable to 640 KB)                                           |
 | **Graphics**    | Paradise PVGA1A chipset supporting CGA, Hercules (MDA), and EGA modes   |
