@@ -6,6 +6,8 @@ date: '2025-08-20 06:33:00'
 tags: [Computers, Amstrad PC1640, PC, PC Models]
 ---
 
+![Amstrad PC1640 PC.](/img/posts/amstrad-pc1640.jpg)
+
 There are some machines that go beyond silicon, plastic, and steel. They represent a time, a place, and a feeling. For me, the **Amstrad PC1640** is one of those machines. Recently, I was lucky enough to acquire one again—decades after my original had been lost—and the experience has brought back a flood of memories from childhood.  
 
 ### The Amstrad PC1640: A Snapshot of the Late 1980s  
