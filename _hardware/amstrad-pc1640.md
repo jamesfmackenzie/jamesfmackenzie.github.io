@@ -24,7 +24,7 @@ What really set Amstrad apart was its all-in-one philosophy. Instead of piecemea
 
 | Component       | Details                                                                 |
 | **CPU**         | Intel 8086 @ 8 MHz                                                      |
-| **RAM**         | 512 KB (expandable to 640 KB)                                           |
+| **RAM**         | 640 KB                                           |
 | **Graphics**    | Embedded Paradise chipset supporting CGA, Hercules (MDA), and EGA modes   |
 | **Storage**     | 5.25” floppy drives (1 or 2), optional 20MB hard disk                   |
 | **Display**     | Choice of monochrome (PC-MD), colour CGA (PC-CD), or enhanced EGA (PC-ECD) monitors |
