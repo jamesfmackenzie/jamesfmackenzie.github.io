@@ -3,7 +3,7 @@ layout: post
 title: "How To Install Windows XP from USB Flash Drive with Win​Setup​From​USB"
 date: '2022-09-17 18:10:00:00'
 summary: How can you install Windows XP with no CD drive? Here's how ...
-image: windows-xp-wallpaper-bliss.png
+image: windows-xp-wallpaper-bliss.jpg
 tags: [PC, Windows, Windows XP]
 ---
 
@@ -113,7 +113,7 @@ After one last reboot, Windows XP will load for the first time. This is your opp
 
 Enjoy!
 
-![](/img/posts/windows-xp-wallpaper-bliss.png)
+![](/img/posts/windows-xp-wallpaper-bliss.jpg)
 
 
 ### More Windows articles

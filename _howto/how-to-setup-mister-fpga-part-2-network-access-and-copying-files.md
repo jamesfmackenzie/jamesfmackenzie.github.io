@@ -22,7 +22,7 @@ The assigned IP address will vary from network to network, and you'll need to na
 
 3. If networking is setup correctly, you’ll see the IP address (in this case 192.168.100.45):
 
-![](/img/posts/mister_ip_address.png)
+![](/img/posts/mister_ip_address.jpg)
 
 Make a note of this address. You'll need it below.
 

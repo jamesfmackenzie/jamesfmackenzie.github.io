@@ -3,7 +3,7 @@ layout: post
 title: "How To Remote Play Xbox Series S/X Games On Your PC"
 date: '2021-01-24 09:17:00:00'
 summary: How to stream Xbox Series X/S gameplay to your Windows 10 PC ...
-image: xbox-series-s-x-game-streaming-windows-pc.png
+image: xbox-series-s-x-game-streaming-windows-pc.jpg
 tags: [Videogames, Xbox]
 ---
 
@@ -49,4 +49,4 @@ allowfullscreen class="youtube-video"></iframe>
 
 Game Streaming is a great option when the main TV is occupied. I've shared some more thoughts <a href="https://twitter.com/jamesfmackenzie/status/1353344939472654336?s=21" target="_blank">on Twitter</a>
 
-![](/img/posts/xbox-series-s-x-game-streaming-windows-pc.png)
+![](/img/posts/xbox-series-s-x-game-streaming-windows-pc.jpg)

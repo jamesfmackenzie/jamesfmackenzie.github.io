@@ -46,11 +46,11 @@ Before you start, make sure both the USB memory stick and USB keyboard are conne
 
 From Windows 8.1 Desktop, swipe from the right to open the Charms Bar, then hit "Settings":
 
-![](/img/posts/2015-01-24-13_00_18-Greenshot.png)
+![](/img/posts/2015-01-24-13_00_18-Greenshot.jpg)
 
 From the Settings panel, hit "Change PC settings":
 
-![](/img/posts/2015-01-24-13_00_51-Greenshot-2.png)
+![](/img/posts/2015-01-24-13_00_51-Greenshot-2.jpg)
 
 Inside PC settings, click "Update and recovery":
 

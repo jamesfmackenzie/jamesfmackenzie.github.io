@@ -85,11 +85,11 @@ Double click the .spj file to launch ICE. The panorama should load automatically
 
 Ensure <i>Camera motion</i> is toggled to <i>Rotating motion</i> and hit <i>Next</i> three times to proceed to the <i>EXPORT</i> tab. Once there, expand the <i>Photosynth</i> panel:
 
-![Publish to Photosynth](/img/posts/ice-publish-to-photosynth.png)
+![Publish to Photosynth](/img/posts/ice-publish-to-photosynth.jpg)
 
 The very first time, you'll need to (possibly register and) login to Photosynth. After that, fill out some descriptive details and hit <i>Publish</i>. All going well, ICE will spawn a browser window and display your brand new, published VR panorama!
 
-![Photosynth VR panorama](/img/posts/photosynth-published-panorama.png)
+![Photosynth VR panorama](/img/posts/photosynth-published-panorama.jpg)
 
 That's all there is to it! Pan around the image to your heart's content, then share the link with your friends!
 

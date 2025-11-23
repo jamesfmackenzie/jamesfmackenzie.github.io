@@ -19,7 +19,7 @@ Definitely the quickest and easiest way. You need to:
 1. [Publish your equirectangular projection to Photosynth]({% post_url 2016-10-28-publishing-equirectangular-360-vr-panorama-to-photosynth %}). If you're worried about privacy, you can mark it as <i>Unlisted</i> and delete afterwards.
 2. From your published Synth, select the <i>Export</i> option. After a minute-or-two (you may need to refresh the page), you'll see see a <i>Download</i> option. Click to download your .pano!
 
-![Export from Photosynth](/img/posts/export-from-photosynth.png)
+![Export from Photosynth](/img/posts/export-from-photosynth.jpg)
 
 ### Option 2. Direct conversion
 

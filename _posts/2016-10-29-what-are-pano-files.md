@@ -3,7 +3,7 @@ layout: post
 title: What are .pano files?
 date: '2016-10-29 17:59:00'
 summary: If you’re on the Windows platform, .pano files are probably the most convenient way to manage and share VR panoramas (aka “360 photos”) ...
-image: altered-pano-file.png
+image: altered-pano-file.jpg
 tags: [Photography, Posts, VR Photography]
 ---
 
@@ -13,11 +13,11 @@ If you're on the Windows platform, .pano files are probably the most convenient 
 
 Built-in support for .pano files is available in Windows 8.1, Windows 10, Windows 10 Mobile and OneDrive. In Windows, simply double click to open the photo viewer, then tilt, pan and zoom your way around the VR image:
 
-![Pan, zoom and tilt in Microsoft Photos](/img/posts/pan-and-tilit-the-microsoft-photos-panorama-experience.png)
+![Pan, zoom and tilt in Microsoft Photos](/img/posts/pan-and-tilt-the-microsoft-photos-panorama-experience.jpg)
 
 Upload .pano files to OneDrive for an in-browser panoramic experience, and for easy sharing with your friends:
 
-![The OneDrive pano experience](/img/posts/pan-and-tilt-the-onedrive-panorama-experience.png)
+![The OneDrive pano experience](/img/posts/pan-and-tilt-the-onedrive-panorama-experience.jpg)
 
 ### Creating .pano files
 
@@ -176,7 +176,7 @@ C:\Temp\pano_example>copy new_pano.zip new_pano.pano
         1 file(s) copied.
 {% endhighlight %}
 
-![Altered .pano file](/img/posts/altered-pano-file.png)
+![Altered .pano file](/img/posts/altered-pano-file.jpg)
 
 That's it!
 
