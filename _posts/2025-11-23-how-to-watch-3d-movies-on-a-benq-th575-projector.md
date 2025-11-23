@@ -7,21 +7,22 @@ summary: |-
 tags: [How To]
 ---
 
-I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see in 2025:
+I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see:
 
 ![Projector menu showing 3D option](/img/posts/benq-th575-projector-supports-3d.jpg)
 
 Wait… 3D?
 
-As in shutter-glasses 3D? On a *2025* projector?
+As in shutter-glasses 3D? On a 2025 projector?
 
-Well — that discovery kicked off an adventure I absolutely didn’t plan on. Find the full story below!
+I have to learn more!
+
 
 ### Finding a Hidden Feature
 
-I had no idea this projector supported stereoscopic 3D. But once I saw the option, my inner tech tinkerer demanded answers. A few minutes of research revealed:
+Surprised and intrigued, I consulted the <a href="https://esupportdownload.benq.com/esupport_/PROJECTOR/UserManual/TH575/TH575_UM_EN_220830165100.pdf" target="_blank">BenQ docs</a>. A few minutes of research revealed:
 
-- The TH575 *does* support 3D playback  
+- The TH575 *does indeed* support stereoscopic 3D playback
 - But only with glasses that use **DLP-Link** synchronisation
 
 So naturally…
@@ -29,44 +30,49 @@ So naturally…
 
 ### Buying the Right Glasses
 
-![AWOL Vision 3D Glasses](/mnt/data/3FB690B2-F047-4DD8-B4F3-334217C2016B.jpeg)
+I picked up a pair of **AWOL VISION 3D** DLP-Link glasses. Comfortable, lightweight, and (thankfully!) somewhat inexpensive.
 
-I picked up a pair of **AWOL Vision DLP-Link 3D glasses**.  
-Comfortable, lightweight, and (thankfully) inexpensive.
+DLP-Link works by inserting a flash of white between frames. The glasses detect this flash, synchronise their liquid-crystal shutters, and alternate which eye is allowed to see the screen.
 
-DLP-Link works by inserting a flash of white between frames. The glasses detect this flash, synchronise their liquid-crystal shutters, and alternate which eye is allowed to see the screen. The result? Each eye receives a slightly different image, creating the 3D effect.
+The result? Each eye receives a slightly different image, creating the 3D effect.
 
-Neat.
+Nice!
+
+![AWOL Vision 3D Glasses](/img/posts/awol-3d-vision-dlp-link-shutter-glasses.jpg)
 
 
-### First Test: YouTube 3D Trailers
+### First Test: 3D Trailers
 
-![Avatar 3D side-by-side](/mnt/data/78FA334B-D2EE-4769-8A22-62C6DE1D6B2A.jpeg)
+YouTube still has a surprising number of 3D trailers.
 
-YouTube still has a surprising number of 3D trailers. Using Apple TV, I played a side-by-side (SBS) version of *Avatar*. I switched the projector’s 3D mode to **Side By Side**, and…
+Using an Apple TV, I played a side-by-side (SBS) version of *Avatar: The Way of Water*. I switched the projector’s 3D mode to **Side By Side**, and…
 
 It worked!
 
-But… the image wasn’t very sharp. Which makes sense: SBS and Top-Bottom 3D literally sacrifice half your resolution.
+![Avatar 3D side-by-side](/img/posts/avatar-way-of-water-3d-sbs-side-by-side-trailer.jpg)
+
+However… the image wasn’t very sharp. And that makes sense. With side-by-side video, we sacrifice half the horizontal resolution.
+
+Can we do better?
 
 
-### Understanding the Four 3D Formats
+### Understanding 3D Video Formats
 
-![3D mode menu](/mnt/data/B8864B37-E00C-4CC4-9CB2-07AED1A69B25.jpeg)
+Looking closer at the 3D settings menu, the TH575 supports four different 3D video modes:
 
-The TH575 supports four 3D modes:
+- Side By Side
+- Top-Bottom
+- Frame Sequential 
+- Frame Packing
 
-- **Side By Side** — half horizontal resolution  
-- **Top-Bottom** — half vertical resolution  
-- **Frame Sequential** — better, but requires high refresh rates  
-- **Frame Packing** — the gold-standard for Blu-ray 3D
+Top-Bottom and Side By Side are the worst. You literally lose half the vertical or horizontal resolution.
 
-Let’s break down the best option.
+Frame Sequential is better, but needs support for high refresh rates (since video is sent at double the target frame rate — all the left eye frames, all the right eye frames).
+
+![3D mode menu](/img/posts/supported-3d-modes-on-benq-th575-projector.jpg)
 
 
-### Frame Packing: Full-Resolution 3D
-
-![Frame Packing Diagram](/mnt/data/B93656D1-16FF-4B28-A121-DED6372C5749.jpeg)
+### The Best Option: Frame Packing
 
 Frame Packing stores both left-eye and right-eye images at full 1080p inside a single tall frame:
 
@@ -74,17 +80,19 @@ Frame Packing stores both left-eye and right-eye images at full 1080p inside a s
 - Projector extracts each full-resolution eye image
 - Produces the highest-quality 3D possible
 
+![Frame Packing Diagram](/img/posts/1080p-3d-frame-packing-image-dimensions.jpg)
+
 This is the format used on **Blu-ray 3D discs**.
 
-Perfect.  
-And luckily…
+Perfect! And luckily
 
 
 ### Time for a Real Test: The Hobbit in 3D
 
-![The Hobbit 3D Blu-ray](/mnt/data/5CDA268E-4804-4C82-81A9-71A973090819.jpeg)
+I still had a dusty old copy of *The Hobbit: The Desolation of Smaug 3D*.
 
-I still had a dusty old copy of *The Hobbit: The Desolation of Smaug 3D*.  
+![The Hobbit 3D Blu-ray](/img/posts/the-hobbit-the-desolation-of-smaug-3d-blu-ray.jpg)
+
 Time to fire up a proper 3D movie!
 
 Except… no.
@@ -92,20 +100,21 @@ Except… no.
 
 ### Modern Consoles Have Removed 3D Support 😢
 
-![Blu-ray 3D error message](/mnt/data/0D818829-1D51-463C-B91D-AE38EA968F3C.jpeg)
+Firing about the movie on Xbox, I got an ugly error message.
 
-Both the **PlayStation 5** and **Xbox Series X** have silently dropped support for 3D Blu-ray discs.
+![Blu-ray 3D error message](/img/posts/3d-blu-ray-error-on-xbox-series-x.jpg)
 
-Trying to play a 3D movie gives you this depressing message about “no 3D display detected.”
+Turns out both the **PlayStation 5** and **Xbox** have silently dropped support for 3D Blu-ray discs.
 
-So, I had to go deeper into the retro vault…
+Trying to play a 3D movie gives you a depressing message: “no 3D display detected.”
 
 
 ### Enter the PlayStation 3 🕹️
 
-![PlayStation 3](/mnt/data/EB222B85-F21C-4D44-8399-5A98CFCDDF11.jpeg)
+Digging into the retro hardware vault, I unearthed the trusty old PS3.
 
-The PS3 — that absolute legend.  
+![PlayStation 3](/img/posts/sony-playstation-3.jpg)
+
 Not only does it support Blu-ray 3D… it was *one of the first devices* to implement the standard.
 
 Time for attempt number two.
@@ -113,32 +122,16 @@ Time for attempt number two.
 
 ### Success! Glorious Full-Resolution 3D
 
-![Frame Packing success](/mnt/data/A8084215-E864-430A-9C9E-5DBC8CC66ED1.jpeg)
+![Frame Packing success](/img/posts/viewing-desolation-of-smaug-with-3d-frame-packing-video.jpg)
 
-And it works.
+And it works!
 
-**1080p 3D Frame Packing.  
-24Hz.  
-Perfect sync.  
-Amazing depth.**
+- 1080p 3D Frame Packing 
+- 24Hz sync
+- The **best way** to watch The Hobbit!
 
-Watching *The Hobbit* in full-resolution 3D on a huge projection screen is genuinely magical — way better than I expected.
+Watching in full-resolution 3D on a huge projector screen is genuinely magical — *way* better than I expected.
 
-I may have accidentally created a new hobby.
-
-
-### Final Thoughts
-
-What started as a random menu discovery turned into:
-
-- A deep dive into 3D video standards  
-- Buying new hardware  
-- Rediscovering Blu-ray 3D  
-- Resurrecting my PlayStation 3  
-- Experiencing some surprisingly great 3D cinema at home
-
-And honestly?  
-It was *awesome.*
-
-Time to hunt down more 3D movies.  
+I may have accidentally created a new hobby. Time to hunt down more 3D movies!
+ 
 🕶️✨
