@@ -3,9 +3,7 @@ layout: post
 title: "I Accidentally Turned My Projector Into a 3D Cinema"
 date: '2025-11-23 11:37:00:00'
 summary: |-
-  I discovered my projector secretly supports full-resolution 3D.
-  
-  The result: a surprisingly awesome 3D cinema experience!
+  I discovered my projector secretly supports full-resolution 3D. The result? A surprisingly awesome 3D cinema experience!
 tags: [Consumer Tech, How To]
 ---
 
@@ -86,7 +84,7 @@ Frame Packing stores both left-eye and right-eye images at full 1080p inside a s
 
 This is the format used on **Blu-ray 3D discs**.
 
-Perfect! And luckily
+Perfect! And luckily…
 
 
 ### Time for a Real Test: The Hobbit in 3D
@@ -134,6 +132,6 @@ And it works!
 
 Watching in full-resolution 3D on a huge projector screen is genuinely magical — *way* better than I expected.
 
-I may have accidentally created a new hobby. Time to hunt down more 3D movies!
+I may have accidentally created a new hobby. Time to hunt down some 3D movies!
  
 🕶️✨
