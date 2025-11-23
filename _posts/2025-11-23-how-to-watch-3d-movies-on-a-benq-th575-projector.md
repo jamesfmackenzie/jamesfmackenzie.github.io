@@ -3,8 +3,10 @@ layout: post
 title: "I Accidentally Turned My Projector Into a 3D Cinema"
 date: '2025-11-23 11:37:00:00'
 summary: |-
-  I discovered my projector secretly supports full-resolution 3D. The result: a surprisingly awesome 3D cinema experience!
-tags: [How To]
+  I discovered my projector secretly supports full-resolution 3D.
+  
+  The result: a surprisingly awesome 3D cinema experience!
+tags: [Consumer Tech, How To]
 ---
 
 I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see:
