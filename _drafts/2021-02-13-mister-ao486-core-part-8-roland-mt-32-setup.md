@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 7 - Roland MT-32 Support"
 date: '2021-02-13 06:44:00:00'
 summary: Installing CD-ROM drivers for the MiSTer ao486 core ...
-tags: [Retrocomputing, Retrogaming, MiSTer FPGA, Single-Board Computing]
+tags: [Retrocomputing, Retrogaming, MiSTer FPGA]
 ---
 
 Notes:

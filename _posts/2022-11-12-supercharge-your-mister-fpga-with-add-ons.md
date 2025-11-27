@@ -4,6 +4,6 @@ title: "Supercharge your MiSTer FGPA"
 summary: "Some exciting new arrivals for MiSTer FPGA: I/O board, USB hub, real-time clock, 128MB SDRAM."
 date: '2022-11-12 09:00:00:00'
 videoId: eGBG-AM6se8
-tags: [MiSTer FPGA, Retrocomputing, Retrogaming, Single-Board Computing, Videos]
+tags: [MiSTer FPGA, Retrocomputing, Retrogaming, Videos]
 ---
 

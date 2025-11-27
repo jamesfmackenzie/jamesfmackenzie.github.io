@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 4 – Sound and Music Setup"
 date: '2021-03-13 17:32:00:00'
 summary: Configuring the sound and music capabilities of the MiSTer ao486 core ...
-tags: [How To, MiSTer FPGA, MS-DOS, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
+tags: [How To, MiSTer FPGA, MS-DOS, Posts, Retrocomputing, Retrogaming]
 ---
 
 The MiSTer ao486 core is feature-packed when it comes to sound and music.
