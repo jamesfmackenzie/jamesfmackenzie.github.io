@@ -3,7 +3,7 @@ layout: post
 title: Download Pocket Videos to Your PC
 date: '2015-01-03 00:47:50'
 summary: As mentioned before, I want to automatically extract the video from my Pocketed content and sync it to my phone. To achieve this, I’m going to ...
-tags: [Automation, How To, Lifehacks, Posts, Productivity, Programming, Web Development]
+tags: [How To, Posts, Productivity, Programming, Web Development]
 ---
 
 As [mentioned before](), I want to automatically extract the video from my Pocketed content and sync it to my phone. To achieve this, I'm going to:
