@@ -9,7 +9,7 @@ summary: |-
 
   Good luck!
 tweetId: 1845972476552962110
-tags: [ITX Llama, MS-DOS, Retrocomputing, Retrogaming, Videogames, Tweets]
+tags: [MS-DOS, Retrocomputing, Retrogaming, Videogames, Tweets]
 ---
 
 
