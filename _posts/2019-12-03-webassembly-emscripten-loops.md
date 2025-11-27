@@ -3,7 +3,7 @@ layout: post
 title: "WebAssembly Lesson 3: Emscripten Loops"
 date: '2019-12-03 21:06:00:00'
 summary: A deep-dive on Emscripten loops and Emterpreter
-tags: [GameDev, How To, Posts, Programming, WebAssembly]
+tags: [How To, Posts, Programming, WebAssembly]
 ---
 
 Games and other graphical apps often contain infinite loops to sequentially render animation frames to the screen:
