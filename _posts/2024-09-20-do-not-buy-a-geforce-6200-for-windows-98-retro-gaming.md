@@ -9,7 +9,7 @@ summary: |-
   
   Read on for full details.
 image: nvidia-geforce-6200-pci.jpg
-tags: [GeForce, Posts]
+tags: [Nvidia Graphics, Posts]
 ---
 
 ![nvidia GeForce 6200 PCI](/img/posts/nvidia-geforce-6200-pci.jpg)
