@@ -3,7 +3,7 @@ layout: post
 title: "iOS Games with Xbox Achievements"
 date: '2021-11-27 19:16:00:00'
 summary: Want to hunt Xbox Achievements on the go? Here's a list of iOS games with wireless controller support ...
-tags: [Consumer Tech, iOS, Posts, Videogames, Xbox]
+tags: [Consumer Tech, Posts, Videogames, Xbox]
 permalink: /ios-games-with-xbox-achievements/
 ---
 
