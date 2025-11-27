@@ -4,7 +4,7 @@ title: "How To Install SBEMU on a Bootable USB Stick"
 date: '2023-03-22 16:08:00:00'
 summary: SBEMU allows you to play DOS games, with sound effects and FM audio <i>natively on modern hardware</i> – no Sound Blaster required!<br /><br />Here's how to get started.
 image: duke-nukem-3d-running-on-sound-blaster-sbemu-4.jpg
-tags: [MS-DOS, PC, SBEMU, Sound]
+tags: [MS-DOS, PC, Sound]
 ---
 
 SBEMU is an awesome new DOS program that emulates a Sound Blaster card.
