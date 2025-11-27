@@ -3,7 +3,7 @@ layout: post
 title: "WebAssembly Lesson 1: Hello World"
 date: '2019-11-30 19:18:00:00'
 summary: What is WebAssembly? Emscripten? asm.js? Find out how to get started with WebAssembly and run some Hello World examples
-tags: [Emscripten, Programming, WebAssembly]
+tags: Programming, WebAssembly]
 ---
 
 I recently undertook my first WebAssembly project: [porting a C video game to the web browser]({% post_url 2019-10-28-commander-keen-ported-to-webassembly %}). I plan to record my learnings as a series of Lessons - each covering a major WebAssembly topic. Find Lesson 1 below
