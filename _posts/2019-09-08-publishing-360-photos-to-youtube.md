@@ -3,7 +3,7 @@ layout: post
 title: Publishing VR Panoramas to YouTube
 date: '2019-09-08 21:43:00'
 summary: YouTube has built-in support for 360° videos, allowing you to tilt and pan around a scene, creating the fully immersive experience of “really being there” ...
-tags: [How To, Photography, Posts, VR Photography, YouTube]
+tags: [How To, Posts, VR Photography, YouTube]
 ---
 
 YouTube has built-in support for <a href="https://creatoracademy.youtube.com/page/lesson/spherical-video#strategies-zippy-link-1" target="_blank">360° videos</a>, allowing you to tilt and pan around a scene, creating the fully immersive experience of "really being there"

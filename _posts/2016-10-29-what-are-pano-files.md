@@ -4,7 +4,7 @@ title: What are .pano files?
 date: '2016-10-29 17:59:00'
 summary: If you’re on the Windows platform, .pano files are probably the most convenient way to manage and share VR panoramas (aka “360 photos”) ...
 image: altered-pano-file.jpg
-tags: [Photography, Posts, VR Photography]
+tags: [Posts, VR Photography]
 ---
 
 If you're on the Windows platform, .pano files are probably the most convenient way to manage and share <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">VR panoramas</a> (aka "360 photos").

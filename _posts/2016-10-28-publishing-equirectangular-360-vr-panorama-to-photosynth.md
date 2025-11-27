@@ -4,7 +4,7 @@ title: Publishing VR Panoramas to Photosynth
 date: '2016-10-28 07:54:00'
 summary: You’ve shot a 360 photo or VR panorama, and now you’d like to share it with your friends using Photosynth’s excellent sharing features. Here’s how ...
 image: cube-faces-guide.jpg
-tags: [How To, Photography, Photosynth, Posts, VR Photography]
+tags: [How To, Posts, VR Photography]
 ---
 
 You've shot a 360 photo or <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">VR panorama</a>, and now you'd like to share it with your friends using <a href="https://photosynth.net/" target="_blank">Photosynth</a>'s excellent sharing features. Here's how.
