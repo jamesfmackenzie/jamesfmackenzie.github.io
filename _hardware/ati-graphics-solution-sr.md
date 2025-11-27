@@ -3,7 +3,7 @@ layout: post
 title: ATi Graphics Solution SR
 summary: 
 date: '2025-08-19 18:47:00'
-tags: [ATi, Graphics Cards, PC]
+tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
 When it comes to vintage PC graphics hardware, most cards did one job: they implemented a standard (CGA, Hercules, EGA, VGA, etc.) and stuck to it. But every so often, a manufacturer came up with something a little different.  

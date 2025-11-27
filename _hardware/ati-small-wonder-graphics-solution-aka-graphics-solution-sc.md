@@ -3,7 +3,7 @@ layout: post
 title: ATi Small Wonder Graphics Solution 
 summary: 
 date: '2025-08-19 18:47:00'
-tags: [ATi, Graphics Cards, PC]
+tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
 In the mid-1980s, the IBM PC graphics landscape was fragmented. You had **CGA** for colour, **Hercules** for sharp monochrome, **MDA** for text, and by 1984–85, **EGA** was entering the scene. For PC users, it wasn’t always clear which card to buy — or which monitor they’d be stuck with.  
