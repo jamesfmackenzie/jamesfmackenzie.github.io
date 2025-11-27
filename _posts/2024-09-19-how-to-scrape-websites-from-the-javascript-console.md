@@ -43,5 +43,5 @@ $$('.c-siteReviewScore').forEach(function(element) { scores += element.children[
 
 With the query done, just print and copy your structured data to the clipboard. Enjoy!
 
-![JavaScript DOM query result](/img/posts/browser-dom-query-result.png)
+![JavaScript DOM query result](/img/posts/browser-dom-query-result.jpg)
 

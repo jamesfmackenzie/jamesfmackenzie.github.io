@@ -3,7 +3,7 @@ layout: post
 title: Publishing VR Panoramas to Photosynth
 date: '2016-10-28 07:54:00'
 summary: You’ve shot a 360 photo or VR panorama, and now you’d like to share it with your friends using Photosynth’s excellent sharing features. Here’s how ...
-image: cube-faces-guide.png
+image: cube-faces-guide.jpg
 tags: [How To, Photography, Photosynth, Posts, VR Photography]
 ---
 
@@ -44,7 +44,7 @@ Before you can upload your VR panorama to Photosynth, you'll need to convert it 
 
 If you're unsure which cube face is which, check my visual guide below:
 
-![cube faces guide](/img/posts/cube-faces-guide.png)
+![cube faces guide](/img/posts/cube-faces-guide.jpg)
 
 ### Step 3. Create ICE project file
 
