@@ -9,6 +9,6 @@ summary: |-
 
   Video linked below.
 tweetId: 1908974808463008240
-tags: [Commander Keen, Programming, Retrogaming, Sony PlayStation, Sony PlayStation Vita, Videogames, Tweets]
+tags: [Programming, Retrogaming, Sony PlayStation, Sony PlayStation Vita, Videogames, Tweets]
 ---
 
