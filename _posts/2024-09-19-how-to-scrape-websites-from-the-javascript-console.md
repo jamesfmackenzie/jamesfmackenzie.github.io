@@ -4,7 +4,7 @@ title: "How To Scrape Website Data With the JavaScript Console"
 date: '2024-09-19 10:59:00:00'
 summary: Want to grab some structured data from the Web? It's easy via the JavaScript console.
 image: browser-dom-query.png
-tags: [How To, Posts, Programming, Web Development]
+tags: [How To, Posts, Programming]
 ---
 
 Want to grab some data from the Web? It's easy via the JavaScript console.

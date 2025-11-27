@@ -3,7 +3,7 @@ layout: post
 title: Dropbox as a GitHub Alternative
 date: '2017-03-28 22:40:21'
 summary: Want the benefits of private, distributed version control but don’t want to pay GitHub’s subscription fee? Or simply don’t trust GitHub with checked in passwords, tokens and secrets? ...
-tags: [How To, Posts, Programming, Web Development]
+tags: [How To, Posts, Programming]
 ---
 
 Want the benefits of private, <a href="https://en.wikipedia.org/wiki/Distributed_version_control" target="_blank">distributed version control</a> but don't want to pay <a href="https://github.com/pricing" target="_blank">GitHub's subscription fee</a>? Or simply don't trust GitHub with checked in passwords, tokens and secrets?
