@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 8 – Installing Windows 95"
 date: '2021-02-13 06:44:00:00'
 summary: Installing CD-ROM drivers for the MiSTer ao486 core ...
-tags: [Retrocomputing, Retrogaming, FPGA, MiSTer, Single-Board Computing]
+tags: [MiSTer FPGA, Retrocomputing, Retrogaming, Single-Board Computing]
 ---
 
 You have the ao486 core setup with DOS. You have file sharing enabled via MiSTerFS. What’s next?

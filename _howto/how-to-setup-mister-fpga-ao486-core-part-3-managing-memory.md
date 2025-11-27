@@ -4,7 +4,7 @@ title: "MiSTer AO486 Core Part 3 – Managing Memory"
 date: '2021-03-13 11:57:00:00'
 summary: Configuring the MiSTer ao486 core to use Extended/Expanded memory ...
 image: mister-ao486-emm386-expanded-extended-conventional-memory-choice.png
-tags: [Emulation, MiSTer FPGA, MiSTer FPGA Cores]
+tags: [Emulation, MiSTer FPGA]
 ---
 
 You've [installed DOS]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}) and [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}). Next we need to look at memory management.

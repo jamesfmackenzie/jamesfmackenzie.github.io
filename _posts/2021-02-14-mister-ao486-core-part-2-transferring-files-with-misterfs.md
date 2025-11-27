@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS"
 date: '2021-02-14 22:55:00:00'
 summary: Sharing files with MiSTerFS ...
-tags: [FPGA, How To, MiSTer, MS-DOS, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
+tags: [How To, MiSTer FPGA, MS-DOS, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
 ---
 
 You have the [ao486 core setup and DOS installed]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}), but what’s next?
