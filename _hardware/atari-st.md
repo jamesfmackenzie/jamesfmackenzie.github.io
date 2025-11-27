@@ -3,7 +3,7 @@ layout: nodate
 title: Atari ST
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [Atari, Atari ST, Computers]
+tags: [Atari ST, Computers]
 ---
 
 I received my first Atari ST in the 1989; a surplus unit from my father's business. It was a luxury (at the time!) 1MB model — the 1040 STFM, complete with Professional software pack.
