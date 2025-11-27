@@ -10,7 +10,7 @@
 		<span><a href="/hardware">Hardware</a></span>
 		<span><a href="/software">Software</a></span>
 		<span><a href="/howto">Guides</a></span>
-		<span><a href="/all-pages">Sitemap</a></span>
+		<span><a href="/sitemap">Sitemap</a></span>
 	</nav>
 </div>
 <div class="row mobileOnly">
@@ -21,6 +21,6 @@
 	<span><a href="/">Home</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/sitemap">Posts</a></span>
 	<br /><br />
     -->
-	<span><a href="/hardware">Hardware</a> &nbsp; <a href="/software">Software</a> &nbsp; <a href="/howto">Guides</a> &nbsp; <a href="/all-pages">Sitemap</a></span>
+	<span><a href="/hardware">Hardware</a> &nbsp; <a href="/software">Software</a> &nbsp; <a href="/howto">Guides</a> &nbsp; <a href="/sitemap">Sitemap</a></span>
 	<br /><br />
 </div>

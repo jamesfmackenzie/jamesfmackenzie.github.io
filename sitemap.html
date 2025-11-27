@@ -1,6 +1,6 @@
 ---
-layout:   nocomments
-title:    All Posts
+layout:   category-page
+title:    Sitemap
 ---
 
 {% comment%}
@@ -8,9 +8,30 @@ Here we generate all the tags.
 {% endcomment%}
 
 {% assign rawtags = "" %}
-{% for post in site.posts %}
-{% assign ttags = post.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:ttags %}
+
+{% for page in site.posts %}
+  {% assign ttags = page.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
+{% for page in site.hardware %}
+  {% assign ttags = page.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
+{% for page in site.software %}
+  {% assign ttags = page.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
+{% for page in site.howto %}
+  {% assign ttags = page.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
+{% for page in site.reference %}
+  {% assign ttags = page.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 
 {% assign rawtags = rawtags | split:'|' | sort_natural %}
@@ -18,47 +39,139 @@ Here we generate all the tags.
 {% assign tags = "" %}
 
 {% for tag in rawtags %}
-{% if tag != "" %}
-
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
-{% endif %}
-
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-<h2>Categories</h2>
-{% for tag in tags %}
-  <a href="#{{ tag | slugify }}"> {{ tag }} </a>{% unless forloop.last %} | {% endunless %} 
-{% endfor %}
-<br />
-<br />
-
-<h2>Posts</h2>
-{% for tag in tags %}
-<h3><a name="{{ tag | slugify }}">{{ tag }}</a></h3>
-<ul>
-  {% for post in site.posts %}
-  {% if post.tags contains tag %}
-  <li>
-    {% if post.layout == "tweet" %}
-	  <img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
-	  <!--<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">{{ post.title }}</a> - {{ post.date | date_to_string }} -->
-	  <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-    {% elsif post.layout == "youtube" %}
-	  <img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
-	  <!-- <a target="_blank" href="https://youtu.be/{{ post.videoId }}">{{ post.title }}</a> - {{ post.date | date_to_string }} -->
-    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-	{% elsif post.overrideUrl %} 
-      <a href="{{ post.overrideUrl }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-    {% else %}
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-	{% endif %}
-  </li>
+  {% if tag != "" %}
+    {% if tags == "" %}
+      {% assign tags = tag | split:'|' %}
+    {% endif %}
+    {% unless tags contains tag %}
+      {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+    {% endunless %}
   {% endif %}
-  {% endfor %}
-</ul>
 {% endfor %}
+
+<article>
+    <div class="row">
+        <h2>Categories</h2>
+        {% for tag in tags %}
+          <a href="#{{ tag | slugify }}"> {{ tag }} </a>{% unless forloop.last %} | {% endunless %} 
+        {% endfor %}
+        <br />
+        <br />
+    </div>
+</article>
+
+{% for tag in tags %}
+<article class="post">
+  <div class="row">
+    <h2><a name="{{ tag | slugify }}">{{ tag }}</a></h2>
+
+  {% assign subtitle = "" %}
+  {% for page in site.hardware %}
+    {% if page.tags contains tag %}
+      {% assign subtitle = "<h3>Hardware</h3>" %}
+    {% endif %}
+  {% endfor %}
+  {{ subtitle }}
+
+  <ul>
+    {% assign list = site.hardware | sort_natural: "title" %}
+    {% for page in list %}
+      {% if page.tags contains tag %}
+      <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% assign subtitle = "" %}
+  {% for page in site.software %}
+    {% if page.tags contains tag %}
+      {% assign subtitle = "<h3>Software</h3>" %}
+    {% endif %}
+  {% endfor %}
+  {{ subtitle }}
+
+  <ul>
+    {% assign list = site.software | sort_natural: "title" %}
+    {% for page in list %}
+      {% if page.tags contains tag %}
+      <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% assign subtitle = "" %}
+  {% for page in site.howto %}
+    {% if page.tags contains tag %}
+      {% assign subtitle = "<h3>How To</h3>" %}
+    {% endif %}
+  {% endfor %}
+  {{ subtitle }}
+
+  <ul>
+    {% assign list = site.howto | sort_natural: "title" %}
+    {% for page in list %}
+      {% if page.tags contains tag %}
+      <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% assign subtitle = "" %}
+  {% for page in site.reference %}
+    {% if page.tags contains tag %}
+      {% assign subtitle = "<h3>Reference</h3>" %}
+    {% endif %}
+  {% endfor %}
+  {{ subtitle }}
+
+  <ul>
+    {% assign list = site.reference | sort_natural: "title" %}
+    {% for page in list %}
+      {% if page.tags contains tag %}
+      <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% assign subtitle = "" %}
+  {% for page in site.posts %}
+    {% if page.tags contains tag %}
+      {% assign subtitle = "<h3>Posts</h3>" %}
+    {% endif %}
+  {% endfor %}
+  {{ subtitle }}
+
+  <ul>
+  {% for page in site.posts %}
+    {% if page.tags contains tag %}
+    <li>
+      {% if page.layout == "tweet" %}
+        <img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
+        <!--<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ page.tweetId }}">{{ page.title }}</a> - {{ page.date | date_to_string }} -->
+        <a href="{{ page.url }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
+      {% elsif page.layout == "youtube" %}
+        <img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+        <!-- <a target="_blank" href="https://youtu.be/{{ page.videoId }}">{{ page.title }}</a> - {{ page.date | date_to_string }} -->
+      <a href="{{ page.url }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
+      {% elsif page.overrideUrl %} 
+        <a href="{{ page.overrideUrl }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
+      {% else %}
+        <a href="{{ page.url }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  </div>
+</article>
+{% endfor %}
+
