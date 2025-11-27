@@ -23,7 +23,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
-  {% if page.tags contains "MIDI Synthesizers" %}
+  {% if page.tags contains "MIDI" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
@@ -37,7 +37,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
-  {% if page.tags contains "MiSTer FPGA Cores" %}
+  {% if page.tags contains "MiSTer FPGA" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
