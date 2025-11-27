@@ -4,7 +4,7 @@ title: "HP Compaq t5710 Review – Great for DOS and Windows 98 Gaming?"
 date: '2021-07-11 12:21:00:00'
 summary: In search of a DOS gaming PC, I recently purchased a HP Compaq t5710 thin client. Although built in 2004, the hardware is very well suited to DOS and Windows 98 gaming ...
 image: hp-compaq-t5710-back.jpg
-tags: [MS-DOS, Posts, Retrocomputing, Retrogaming, t5710]
+tags: [MS-DOS, PC, Posts, Retrocomputing, Retrogaming]
 permalink: /hp-compaq-t5710/
 ---
 
