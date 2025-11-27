@@ -74,7 +74,8 @@ Here we generate all the tags.
   {{ subtitle }}
 
   <ul>
-    {% for page in site.hardware %}
+    {% assign list = site.hardware | sort_natural: "title" %}
+    {% for page in list %}
       {% if page.tags contains tag %}
       <li>
           <a href="{{ page.url }}">{{ page.title }}</a>
@@ -92,7 +93,8 @@ Here we generate all the tags.
   {{ subtitle }}
 
   <ul>
-    {% for page in site.software %}
+    {% assign list = site.software | sort_natural: "title" %}
+    {% for page in list %}
       {% if page.tags contains tag %}
       <li>
           <a href="{{ page.url }}">{{ page.title }}</a>
@@ -110,7 +112,8 @@ Here we generate all the tags.
   {{ subtitle }}
 
   <ul>
-    {% for page in site.howto %}
+    {% assign list = site.howto | sort_natural: "title" %}
+    {% for page in list %}
       {% if page.tags contains tag %}
       <li>
           <a href="{{ page.url }}">{{ page.title }}</a>
@@ -128,7 +131,8 @@ Here we generate all the tags.
   {{ subtitle }}
 
   <ul>
-    {% for page in site.reference %}
+    {% assign list = site.reference | sort_natural: "title" %}
+    {% for page in list %}
       {% if page.tags contains tag %}
       <li>
           <a href="{{ page.url }}">{{ page.title }}</a>
