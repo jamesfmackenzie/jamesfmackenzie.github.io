@@ -9,6 +9,6 @@ summary: |-
   
   Full video below.
 videoId: eGxguvyLegg
-tags: [DOS, Retrocomputing, Retrogaming, Videogames, Videos]
+tags: [MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 

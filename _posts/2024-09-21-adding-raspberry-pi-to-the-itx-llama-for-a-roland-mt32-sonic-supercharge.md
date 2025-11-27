@@ -9,5 +9,5 @@ summary: |-
   
   Enjoy!
 videoId: ZCnQOgArgMk
-tags: [DOS, ITX Llama, MIDI, Retrocomputing, Retrogaming, Videogames, Videos]
+tags: [ITX Llama, MIDI, MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---

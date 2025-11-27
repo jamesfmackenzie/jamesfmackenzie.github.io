@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 7 – Quick Start DOS Image"
 date: '2021-03-18 00:59:00:00'
 summary: To get gaming fast, download this quick start DOS image ...
-tags: [DOS, FPGA, How To, MiSTer, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
+tags: [FPGA, How To, MiSTer, MS-DOS, Posts, Retrocomputing, Retrogaming, Single-Board Computing]
 ---
 
 <a href="https://github.com/MiSTer-devel/ao486_MiSTer" target="_blank">ao486</a> is an x86 FPGA core for MiSTer, implementing all features of an 80486SX CPU. Performance-wise, the core is in line with an i486DX-33 CPU, making it perfect for DOS gaming.

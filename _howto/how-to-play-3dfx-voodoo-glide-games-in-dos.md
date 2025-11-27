@@ -3,7 +3,7 @@ layout: post
 title: How To Play 3Dfx Glide Games in DOS
 date: '2024-09-18 22:47:00'
 summary: How to play 3Dfx Glide games in the DOS environment
-tags: [3Dfx Voodoo, DOS, PC]
+tags: [3Dfx Voodoo, MS-DOS, PC]
 ---
 
 We all know that many Windows 98 games take advantage of the 3Dfx Glide API - in fact the widespread support for Glide was a big reason to buy a Voodoo card back in the 90s.
@@ -26,18 +26,6 @@ Because of this, these games only support earlier Voodoo hardware - i.e. the Voo
 The good news: we can take advantage of the OVL abstraction to play these games on a Voodoo 3, 4 or even Voodoo 5 card!
 
 All official Voodoo driver packages include a copy of <code>glide2x.ovl</code>. Just grab the appropriate version for your card, and place it in the game directory.
-  
-EXPAND ON THIS, AND ALSO SHOW THE VOODOO ENVIRONMENT VARIABLES WE NEED TO SET
-
-```
-SET SST_GRXCLK=90
-SET SST_FT_CLK_DEL=0x4
-SET SST_TF0_CLK_DEL=0x6
-SET SST_TF1_CLK_DEL=0x6
-SET SST_VIN_CLKDEL=0x1
-SET SST_VOUT_CLKDEL=0x0
-SET SST_TMUMEM_SIZE=2
-```
 
 ### Environment Variables
 

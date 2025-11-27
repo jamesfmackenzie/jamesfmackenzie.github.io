@@ -4,7 +4,7 @@ title: "DreamBlaster X2GS – A New MIDI Challenger?"
 date: '2021-10-02 15:07:00:00'
 summary: Looking to give your system a MIDI boost? The DreamBlaster X2GS fits the Wave Blaster header present on many DOS-era sound cards ...
 image: dreamblaster-x2-x2gs-wavetable-daughterboard-2.jpg
-tags: [DOS, MIDI, Posts, Retrocomputing, Retrogaming]
+tags: [MIDI, MS-DOS, Posts, Retrocomputing, Retrogaming]
 ---
 
 ![](/img/posts/dreamblaster-x2-x2gs-wavetable-daughterboard.jpg)

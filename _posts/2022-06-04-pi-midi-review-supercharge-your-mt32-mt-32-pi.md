@@ -4,7 +4,7 @@ title: "PI-MIDI Review – Supercharge your mt32-pi"
 date: '2022-06-04 16:41:00:00'
 summary: PI-MIDI is fantastic companion for mt32-pi and a great way to boost for your DOS MIDI setup ...
 image: pi-midi-connected.jpg
-tags: [DOS, MIDI, Posts, Retrocomputing, Retrogaming]
+tags: [MIDI, MS-DOS, Posts, Retrocomputing, Retrogaming]
 ---
 
 The PI-MIDI is a MIDI hat for Raspberry Pi, granting your Pi extended MIDI capabilities like GPIO MIDI input, Stereo RCA output and a dedicated user port connection for MiSTer FPGA.

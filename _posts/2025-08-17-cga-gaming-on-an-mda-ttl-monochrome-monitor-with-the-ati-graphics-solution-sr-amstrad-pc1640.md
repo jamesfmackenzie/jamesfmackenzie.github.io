@@ -6,7 +6,7 @@ summary: |-
   The 1987 **ATI Graphics Solution SR** is a retro graphics card with a unique trick. It can **emulate CGA output on an MDA monochrome monitor**.
   
   Let’s try it out!  
-tags: [ATi Graphics, DOS, How To, PC]
+tags: [ATi Graphics, How To, MS-DOS, PC]
 ---
 
 
