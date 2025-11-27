@@ -4,7 +4,7 @@ title: "What is a TPM? And Why Do I Need One for Windows 11?"
 date: '2021-08-28 11:01:00:00'
 summary: A quick post on Trusted Platform Modules (TPMs). I recently rushed to buy and install one after learning that Windows 11 requires a TPM to run ...
 image: supermicro-tpm-module.jpg
-tags: [How To, Posts, TPM, Windows 11]
+tags: [How To, Posts, Windows 11]
 ---
 
 **Update 2021-10-16: Thanks to <a href="https://support.microsoft.com/en-us/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e" target="_blank">recently published upgrade instructions</a>, it's now possible to upgrade previously unsupported TPM 1.2 PCs to Windows 11. Learn more [here]({% post_url 2021-10-16-upgrade-an-unsupported-pc-to-windows-11-with-registry-bypass %}).**
