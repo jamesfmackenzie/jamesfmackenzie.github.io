@@ -3,7 +3,7 @@ layout: post
 title: HP Compaq T5710
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [Computers, HP Compaq t5710, PC, PC Models]
+tags: [Computers, PC, PC Models]
 ---
 
 ![](/img/posts/hp-compaq-t5710-back.jpg)
