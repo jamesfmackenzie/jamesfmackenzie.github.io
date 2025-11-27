@@ -3,7 +3,7 @@ layout: post
 title: Framerate Analysis Tool
 summary: 
 date: '2024-08-29 11:33:00'
-#tags: [PC, Tools, Windows]
+#tags: [PC, Utilities, Windows]
 ---
 
 <a name="Framerate Analysis Tooling">

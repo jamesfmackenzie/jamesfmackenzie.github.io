@@ -3,5 +3,5 @@ layout: post
 title: XModem / YModem / ZModem
 summary: 
 date: '2024-08-29 11:33:00'
-tags: [Atari ST, PC, Tools]
+tags: [Atari ST, PC, Utilities]
 ---

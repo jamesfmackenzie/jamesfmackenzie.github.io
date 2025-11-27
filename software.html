@@ -74,12 +74,12 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>Tools</h3>
+<h3>Utilities</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
-  {% if page.tags contains "Tools" %}
+  {% if page.tags contains "Utilities" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
