@@ -3,7 +3,7 @@ layout: post
 title: Amstrad PC1640
 summary: 
 date: '2025-08-20 06:33:00'
-tags: [Computers, Amstrad PC1640, PC, PC Models]
+tags: [Computers, Amstrad, PC, PC Models]
 ---
 
 ![Amstrad PC1640 PC.](/img/posts/amstrad-pc1640-2.jpg)
