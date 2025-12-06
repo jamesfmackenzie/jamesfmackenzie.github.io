@@ -1,9 +1,9 @@
 # Site settings
-name: James Mackenzie's Retro Blog
-shortName: James' Retro Blog
+name: James Mackenzie
+shortName: James Mackenzie
 host: 0.0.0.0
 url: https://www.jamesfmackenzie.com
-description: "I'm a hardware/software tinkerer and avid collector of classic computers. This site is about rediscovering retro tech, hacking vintage hardware and most importantly celebrating those cherished memories!"
+description: "I fix (and break) old computers on the internet! This is where I share all the behind-the-scenes bits — project files, fixes, quirks, and technical notes. Take whatever helps, and enjoy your own retro adventures!"
 permalink: pretty
 future: false
 
