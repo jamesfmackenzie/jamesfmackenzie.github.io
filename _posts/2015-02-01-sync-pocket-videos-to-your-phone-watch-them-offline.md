@@ -30,7 +30,7 @@ For the avoidance of confusion:
 
 ### Step 1. Download Pocketed videos to your PC
 
-Before you can sync videos to the phone you'll need to download them to your PC. Follow my previous guide: <a href="/download-pocket-videos-to-your-pc/">how to automatically download Pocketed videos to your PC</a>.
+Before you can sync videos to the phone you'll need to download them to your PC. Follow my previous guide on [how to automatically download Pocketed videos to your PC]({% post_url 2015-01-03-download-pocket-videos-to-your-pc %}).
 
 Make a note of your Downloaded Videos folder location (in my case <code>D:\Videos\Downloaded Videos</code>). You'll need this later.
 
