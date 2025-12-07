@@ -9,7 +9,7 @@ Here we generate all the tags.
 
 {% assign rawtags = "" %}
 
-{% for page in site.posts %}
+{% for page in site.projects %}
   {% assign ttags = page.tags | join:'|' | append:'|' %}
   {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
@@ -34,6 +34,11 @@ Here we generate all the tags.
   {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 
+{% for page in site.posts %}
+  {% assign ttags = page.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
 {% assign rawtags = rawtags | split:'|' | sort_natural %}
 
 {% assign tags = "" %}
@@ -51,6 +56,27 @@ Here we generate all the tags.
 
 <article>
     <div class="row">
+        <h2>Navigation</h2>
+        At the macro level, the site is organized as follows:
+
+        <ul>
+          <li><a href="/">Home</a> — All posts, in chronological order. Newest first.
+            <ul>
+              <li><a href="/projects">Projects</a> — Projects and project updates.</li>
+              <li><a href="/hardware">Hardware</a> — Vintage hardware reviews and information.</li>
+              <li><a href="/software/">Software</a> — Useful software tools and retro video games.</li>
+              <li><a href="/howto/">Guides</a> — Guides. Hope you find these useful!</li>
+              <li><a href="/sitemap">Sitemap</a> — This page. For navigation.</li>
+            </ul>
+          </li>
+        </ul>
+
+        In addition, all pages on the site are categorized for easy navigation. This is used to build the full index below. Use the links below to navigate or just search this page — everything is here!
+    </div>
+</article>
+
+<article>
+    <div class="row">
         <h2>Categories</h2>
         {% for tag in tags %}
           <a href="#{{ tag | slugify }}"> {{ tag }} </a>{% unless forloop.last %} | {% endunless %} 
@@ -64,6 +90,25 @@ Here we generate all the tags.
 <article class="post">
   <div class="row">
     <h2><a name="{{ tag | slugify }}">{{ tag }}</a></h2>
+
+  {% assign subtitle = "" %}
+  {% for page in site.projects %}
+    {% if page.tags contains tag %}
+      {% assign subtitle = "<h3>Projects</h3>" %}
+    {% endif %}
+  {% endfor %}
+  {{ subtitle }}
+
+  <ul>
+    {% assign list = site.projects | sort_natural: "title" %}
+    {% for page in list %}
+      {% if page.tags contains tag %}
+      <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
   {% assign subtitle = "" %}
   {% for page in site.hardware %}
@@ -106,7 +151,7 @@ Here we generate all the tags.
   {% assign subtitle = "" %}
   {% for page in site.howto %}
     {% if page.tags contains tag %}
-      {% assign subtitle = "<h3>How To</h3>" %}
+      {% assign subtitle = "<h3>Guides</h3>" %}
     {% endif %}
   {% endfor %}
   {{ subtitle }}

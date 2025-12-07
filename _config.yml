@@ -1,7 +1,7 @@
 # Site settings
 name: James Mackenzie
 shortName: James Mackenzie
-host: 0.0.0.0
+#host: 0.0.0.0
 url: https://www.jamesfmackenzie.com
 description: "I fix (and break) old computers on the internet! This is where I share all the behind-the-scenes bits — project files, fixes, quirks, and technical notes. Take whatever helps, and enjoy your own retro adventures!"
 permalink: pretty
@@ -9,18 +9,22 @@ future: false
 
 # collections (i.e. not posts)
 collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  howto:
+    output: true
+    permalink: /:collection/:path/
   hardware:
     output: true
     permalink: /:collection/:path/
   software:
     output: true
     permalink: /:collection/:path/
-  howto:
-    output: true
-    permalink: /:collection/:path/
   reference:
     output: true
     permalink: /:collection/:path/
-  projects:
-    output: true
-    permalink: /:collection/:path/
+
+# plugins
+plugins:
+  - jekyll-redirect-from
