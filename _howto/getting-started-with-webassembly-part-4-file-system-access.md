@@ -3,7 +3,7 @@ layout: post
 title: "WebAssembly Lesson 4: File System Access"
 date: '2019-12-08 00:00:02:00'
 summary: How does File IO work in WebAssembly?
-tags: [Programming, WebAssembly]
+tags: [How To, Programming, WebAssembly]
 ---
  
 JavaScript and WebAssembly do not have access to the host file system when run inside the sandboxed Web Browser environment

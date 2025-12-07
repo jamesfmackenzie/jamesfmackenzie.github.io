@@ -4,7 +4,7 @@ title: "How to Install Half-Life 2 on Raspberry Pi"
 date: '2024-10-27 08:35:00:00'
 summary: In this guide, we’ll explore how to install Half-Life 2 on the Raspberry Pi, with step-by-step instructions to build your own mini Half-Life machine!
 image:
-tags: [Raspberry Pi]
+tags: [How To, Raspberry Pi, Retrogaming, Videogames]
 ---
 
 In this how to guide, we’ll explore how to install and run Half-Life 2 on the Raspberry Pi. This is an ARM64 native version of the game, giving us the best possible performance with zero emulation overhead.

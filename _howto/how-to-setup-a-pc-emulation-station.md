@@ -2,7 +2,7 @@
 layout: post
 title: Ultimate Batocera build
 summary: Setup the best Batocera build
-tags: [Emulation, PC, Videogames]
+tags: [Emulation, How To, PC, Videogames]
 ---
 
 # What is Batocera?
