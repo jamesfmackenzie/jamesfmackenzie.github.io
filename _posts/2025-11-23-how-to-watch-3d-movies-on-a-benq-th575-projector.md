@@ -7,6 +7,8 @@ summary: |-
 tags: [Consumer Tech, Home Media, How To]
 ---
 
+![BenQ TH575 1080p Projector](/img/posts/benq-th575-projector.jpg)
+
 I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see:
 
 ![Projector menu showing 3D option](/img/posts/benq-th575-projector-supports-3d.jpg)
@@ -20,7 +22,7 @@ I have to learn more!
 
 ### Finding a Hidden Feature
 
-Surprised and intrigued, I consulted the <a href="https://esupportdownload.benq.com/esupport_/PROJECTOR/UserManual/TH575/TH575_UM_EN_220830165100.pdf" target="_blank">BenQ docs</a>. A few minutes of research revealed:
+Surprised and intrigued, I consulted the <a href="https://esupportdownload.benq.com/esupport/PROJECTOR/UserManual/TH575/TH575_UM_EN_220830165100.pdf" target="_blank">BenQ docs</a>. A few minutes of research revealed:
 
 - The TH575 *does indeed* support stereoscopic 3D playback
 - But only with glasses that use **DLP-Link** synchronisation
