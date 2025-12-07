@@ -256,5 +256,4 @@ You're good to go! Doom runs relatively well but is pushing the performance limi
 
 ### Other Posts in this Series
 
-{% include mister-fpga-series.md %}
-
+{% include mister-fpga-post-series.md %}

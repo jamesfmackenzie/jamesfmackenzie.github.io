@@ -4,7 +4,7 @@ title: "MiSTer FPGA – Install and Setup"
 date: '2020-09-20 09:25:00:00'
 summary: How to install and configure your MiSTer to play the latest arcade, computer and game console cores ...
 image: mister-fpga-install.jpg
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, Retrocomputing, Retrogaming]
 ---
 
 <div class="youtube-container">
@@ -65,9 +65,9 @@ Once complete the DE10-Nano will reboot. When it loads again, you'll see a fully
 
 ![](/img/posts/mister-fpga-install-3.jpg)
 
-That completes the MiSTer setup. Next up: [Network Access and Copying Files]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}).
+That completes the MiSTer setup. Next up: [Network Access and Copying Files]({% link _howto/how-to-setup-mister-fpga-network-access-and-copying-files.md %}).
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}

@@ -4,7 +4,7 @@ title: "MiSTer AO486 Core Part 8 – Roland MT-32, Sound Canvas Audio via MidiLi
 date: '2021-03-28 15:12:00:00'
 summary: Thanks to fantastic work in the MiSTer community, you can get Roland MT-32 and Sound Canvas audio working in ao486. Here's how ...
 image: roland-um-one_mk2_usb-midi-interface-adapter.jpg
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
 <a href="https://en.wikipedia.org/wiki/Ad_Lib,_Inc." target="_blank">AdLib</a> is the de facto synth standard for DOS-gaming. Almost all games support AdLib music, and popular cards like the Sound Blaster include the same <a href="https://en.wikipedia.org/wiki/Yamaha_YM3812" target="_blank">Yamaha YM3812 (OPL2) chip</a> for AdLib-compatibility.
@@ -173,9 +173,9 @@ You can even run MidiLink on <a href="https://github.com/dwhinham/mt32-pi" targe
 That’s it! We've explored all facets of MidiLink and MIDI playback options in ao486. Good luck with your own MIDI adventures!
  
  
-### Other Posts in this Series
+### Other Guides in this Series
  
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 
 
 ### More MIDI articles

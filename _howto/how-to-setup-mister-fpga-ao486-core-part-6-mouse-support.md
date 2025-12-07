@@ -3,10 +3,11 @@ layout: post
 title: "MiSTer AO486 Core Part 6 – Mouse Support"
 date: '2021-03-13 22:57:00:00'
 summary: Adding mouse support to the MiSTer ao486 core ...
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
 Many DOS games and applications need mouse support. Here's how to get up and running.
+
 
 ### Step 1 – Download and Copy Mouse Driver
 
@@ -45,13 +46,13 @@ That's it – you're ready to play some games! Can I recommend Monkey Island?
 ![](/img/posts/mister-ao486-mouse-cutemouse-monkey-island-lucasarts.png)
 
 
-### Related Posts
+### Related Guides
 
-* [MiSTer AO486 Core Part 4 – Sound and Music Setup]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %})
-* [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %})
+- [MiSTer AO486 Core Part 4 – Sound and Music Setup]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-4-sound-and-music.md %})
+- [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-5-cd-rom-cdrom.md %})
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 

@@ -4,10 +4,10 @@ title: "MiSTer AO486 Core Part 3 – Managing Memory"
 date: '2021-03-13 11:57:00:00'
 summary: Configuring the MiSTer ao486 core to use Extended/Expanded memory ...
 image: mister-ao486-emm386-expanded-extended-conventional-memory-choice.png
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
-You've [installed DOS]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}) and [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}). Next we need to look at memory management.
+You've [installed DOS]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-1-getting-started.md %}) and [MiSTerFS]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-2-sharing-files-with-misterfs-mister-fs.md %}). Next we need to look at memory management.
 
 Some DOS games require <a href="https://en.wikipedia.org/wiki/Extended_memory" target="_blank">Extended Memory</a> to be configured. Some take advantage of <a href="https://en.m.wikipedia.org/wiki/Expanded_memory" target="_blank">Expanded Memory (EMS)</a> and some only need the original 640kB of DOS <a href="https://en.wikipedia.org/wiki/Conventional_memory" target="_blank">Conventional Memory</a>. Others still do their own memory management.
 
@@ -18,7 +18,7 @@ There's no "one size fits all" – DOS needs to be configured differently for di
 
 **Quick setup (if you have [MiSTerFS installed]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}))**
 
-Copy/Paste the code below and save it as <code>CONFIG.SYS</code>. Use [MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %}) to transfer it to ao486 and copy to <code>C:\CONFIG.SYS</code> (overwrite the existing file with this new one). Reboot ao486.
+Copy/Paste the code below and save it as <code>CONFIG.SYS</code>. Use [MiSTerFS]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-2-sharing-files-with-misterfs-mister-fs.md %}) to transfer it to ao486 and copy to <code>C:\CONFIG.SYS</code> (overwrite the existing file with this new one). Reboot ao486.
 
 **Without MiSTerFS**:
 
@@ -72,14 +72,14 @@ Some games (e.g. Wing Commander 1 and 2) make use of Expanded memory. Use option
 Lastly, some games (e.g. Ultima VII) use their own memory manager and won't work with either Expanded or Extended memory. For these use option 3.
 
 
-### Next Posts
+### Next Guides
 
-* [MiSTer AO486 Core Part 4 – Sound and Music Setup]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %})
-* [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %})
-* [MiSTer AO486 Core Part 6 – Mouse Support]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %})
+- [MiSTer AO486 Core Part 4 – Sound and Music Setup]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-4-sound-and-music.md %})
+- [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-5-cd-rom-cdrom.md %})
+- [MiSTer AO486 Core Part 6 – Mouse Support]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-6-mouse-support.md %})
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 5 – Adding CD-ROM Support"
 date: '2021-03-13 21:26:00:00'
 summary: Installing CD-ROM drivers for the MiSTer ao486 core ...
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
 Did you know that ao486 has built-in CD-ROM support? You can mount either ISO or BIN/CUE files – ao486 will think it's a real CD-ROM! Here's how.
@@ -84,7 +84,7 @@ Time to mount a CD-ROM! From the DOS prompt:
 That's it for this post. Consider looking at [sound]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %}) and [mouse]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %}) setup if you haven't already.
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 

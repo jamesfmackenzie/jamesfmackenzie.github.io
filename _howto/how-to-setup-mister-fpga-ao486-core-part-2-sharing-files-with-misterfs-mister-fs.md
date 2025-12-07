@@ -3,10 +3,10 @@ layout: post
 title: "MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS"
 date: '2021-02-14 22:55:00:00'
 summary: Sharing files with MiSTerFS ...
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
-You have the [ao486 core setup and DOS installed]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}), but what’s next?
+You have the [ao486 core setup and DOS installed]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-1-getting-started.md %}), but what’s next?
 
 One super-convenient ao486 feature is MiSTerFS – a file transfer solution that allows you to share files directly into ao486's DOS file system. Traditionally you'd use <a href="https://en.wikipedia.org/wiki/Disk_image" target="_blank">mounted disk images</a> to transfer files, but with MiSTerFS it's just drag and drop! Way easier. Here's how to get started.
 
@@ -85,12 +85,11 @@ To transfer files from ao486 to PC, simply do the reverse.
 That's it for MiSTerFS. You'll come to rely on this a lot for file transfer.
 
 
-### Next Post
+### Next Guide
 
-* [MiSTer AO486 Core Part 3 – Managing Memory]({% post_url 2021-03-13-mister-ao486-core-part-3-managing-memory %})
+- [MiSTer AO486 Core Part 3 – Managing Memory]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-3-managing-memory.md %})
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
-
+{% include mister-fpga-howto-series.md %}

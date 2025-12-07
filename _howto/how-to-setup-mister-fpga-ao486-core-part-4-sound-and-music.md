@@ -3,7 +3,7 @@ layout: post
 title: "MiSTer AO486 Core Part 4 – Sound and Music Setup"
 date: '2021-03-13 17:32:00:00'
 summary: Configuring the sound and music capabilities of the MiSTer ao486 core ...
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
 The MiSTer ao486 core is feature-packed when it comes to sound and music.
@@ -54,12 +54,11 @@ That's it for sound setup.
 
 Next:
 
-* [MiSTer AO486 – Roland MT-32, Sound Canvas Audio via MidiLink]({% post_url 2021-03-28-mister-ao486-core-part-8-midilink-midi-roland-mt-32-sound-canvas %})
-* [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %})
-* [MiSTer AO486 Core Part 6 – Mouse Support]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %})
+- [MiSTer AO486 Core Part 5 – Adding CD-ROM Support]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-5-cd-rom-cdrom.md %})
+- [MiSTer AO486 Core Part 6 – Mouse Support]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-6-mouse-support.md %})
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 

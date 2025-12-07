@@ -4,10 +4,11 @@ title: "MiSTer AO486 Core Part 1 – Getting Started"
 date: '2021-02-06 18:21:00:00'
 summary: Getting started with MS-DOS and the MiSTer ao486 core ...
 image: mister-ao486-doom-2.png
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
-You’ve followed the [setup guide]({% post_url 2020-09-20-mister-fpga-install-and-setup %}) and know how to [copy files to your MiSTer]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}). Now you're ready to try out some cores. Let's start with ao486.
+You’ve followed the [setup guide]({% link _howto/how-to-setup-mister-fpga.md %}) and know how to [copy files to your MiSTer]({% link _howto/how-to-setup-mister-fpga-network-access-and-copying-files.md %}). Now you're ready to try out some cores. Let's start with ao486.
+
 
 ### What is ao486?
 
@@ -152,12 +153,12 @@ You're good to go! Doom runs relatively well but is pushing the performance limi
 ![](/img/posts/mister-ao486-doom-2.png)
 
 
-### Next Post
+### Next Guide
 
-* [MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS]({% post_url 2021-02-14-mister-ao486-core-part-2-transferring-files-with-misterfs %})
+- [MiSTer AO486 Core Part 2 – Sharing Files With MiSTerFS]({% link _howto/how-to-setup-mister-fpga-ao486-core-part-2-sharing-files-with-misterfs-mister-fs.md %})
 
 
-### Other Posts in this Series
+### Other Guides in this Series
 
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 

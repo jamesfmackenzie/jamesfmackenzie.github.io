@@ -4,7 +4,7 @@ title: "MiSTer AO486 Core Part 9 – Installing Windows 95"
 date: '2021-03-28 15:12:00:00'
 summary: You've installed DOS on ao486, but what about Windows 95? Find out how ...
 image: mister-ao486-welcome-to-windows-95.png
-tags: [Emulation, MiSTer FPGA]
+tags: [Emulation, How To, MiSTer FPGA, MS-DOS, Retrocomputing, Retrogaming]
 ---
 
 You've [installed DOS on ao486]({% post_url 2021-02-06-mister-ao486-core-part-1-dos-quick-start %}), but what about <a href="https://en.wikipedia.org/wiki/Windows_95" target="_blank">Windows 95</a>? Here's how to do it.
@@ -178,9 +178,9 @@ That’s it! You now have a fully functional Windows 95 installation.
 Next, you might consider adding [adding CD-ROM support]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %}).
  
  
-### Other Posts in this Series
+### Other Guides in this Series
  
-{% include mister-fpga-series.md %}
+{% include mister-fpga-howto-series.md %}
 
 
 
