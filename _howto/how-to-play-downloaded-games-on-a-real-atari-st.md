@@ -3,27 +3,14 @@ layout: post
 title: Playing Downloaded Games on a Real Atari ST
 date: '2015-09-18 22:33:00'
 summary: As discussed before, I want to play some downloaded games on my Atari ST ...
-tags: [Atari ST, How To, Retrocomputing]
+tags: [Atari ST, How To, Retrocomputing, Retrogaming, Videogames]
 ---
 
+I want to play Atari ST but [my old disks are dying]({% post_url 2015-08-15-atari-in-the-attic %}). The years haven't been kind to my magnetic media.
 
-## Playing Downloaded Games on Real ST Hardware
+Is there a way to download replacement images and play them on original hardware?
 
-Status | Completed September 2015
-Goal | Download an Atari ST game image from the web and play it on my real ST
-
-My old ST disks are dead! Can I download replacement disk images from the web and play on my physical ST?
-
-I explored several options, including floppy disk images and hard disk adaptations:
-
-- [Playing Downloaded Games on a Real Atari ST]({% post_url 2015-09-18-playing-downloaded-games-on-a-real-atari-st %}) - 18 Sep 2015
-- [Use Your PC to Create a Bootable Atari ST Game Disk]({% post_url 2015-09-22-use-your-pc-to-create-a-bootable-atari-st-game-disk %}) - 22 Sep 2015
-
-
-
-As discussed before, I want to [play some downloaded games on my Atari ST]({% post_url 2015-08-15-atari-in-the-attic %}).
-
-But first we need to get them there. Here are the options:
+Well yes! There is! Here's how.
 
 
 ### Option 1. Use Disk Images
@@ -57,9 +44,11 @@ To play a hard disk adaptation, all you need to do is:
 
 ### How Do I Transfer Files From PC to ST?
 
-Several of the solutions above rely on transferring files from PC to ST. I've already explored this and you [can find the details here]({% post_url 2015-12-26-transferring-files-from-pc-to-st %})
+Several of the solutions above rely on transferring files from PC to ST. I've already explored this and you [can find the details here]({% post_url 2015-12-26-transferring-files-from-pc-to-st %}).
 
-That's pretty much it. Happy retrogaming!
+That's pretty much it.
+
+Happy retrogaming!
 
 
 ### More Atari ST Posts
