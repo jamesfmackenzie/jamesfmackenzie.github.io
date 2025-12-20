@@ -5,8 +5,8 @@ date: '2025-11-24 23:01:00'
 summary: |-
   In tweet form!
   
-  I chronicled my recent experiments with **3D home cinema** on my BenQ TH575 projector.
-
+  My recent experiments with **3D home cinema**, chronicled with images.
+  
   Linked below.
 tweetId: 1992383395830317523
 tags: [Consumer Tech, Home Media, Tweets]
