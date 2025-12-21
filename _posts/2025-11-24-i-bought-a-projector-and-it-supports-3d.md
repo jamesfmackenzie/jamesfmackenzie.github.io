@@ -10,5 +10,13 @@ summary: |-
   Linked below.
 tweetId: 1992383395830317523
 tags: [Consumer Tech, Home Media, Tweets]
+image: benq-th575-projector.jpg
 ---
 
+It was a fun adventure, and I learned a lot about shutter glasses, 3D video formats and device support.
+
+I also wrote this up as a blog post, which you can find [here]({% post_url 2025-11-23-how-to-watch-3d-movies-on-a-benq-th575-projector %}).
+
+Enjoy!
+
+![](/img/posts/benq-th575-projector.jpg)
