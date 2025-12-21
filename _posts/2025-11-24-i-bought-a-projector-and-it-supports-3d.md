@@ -5,7 +5,7 @@ date: '2025-11-24 23:01:00'
 summary: |-
   In tweet form!
   
-  My recent adventures with **3D home cinema**, chronicled with more info and images.
+  My recent adventures with **3D home cinema**, chronicled with info and images.
   
   Linked below.
 tweetId: 1992383395830317523
