@@ -7,20 +7,17 @@ summary: |-
 tags: [Computers, PC, Posts, Retrocomputing]
 ---
 
-*A practical guide to legacy hardware, touchscreens, and patience*
+![ASUS EeeTop ET2010PNT](/img/posts/asus-eeetop-et2010pnt.jpg)
 
-> **TL;DR**  
-> I turned an old ASUS ET2010PNT EeeTop touchscreen PC into a fast, reliable kitchen calendar and email display using Linux Mint XFCE.
-> The key challenges were legacy BIOS booting, GRUB installation, touchscreen drivers, and Wi-Fi quirks — all of which are solvable with some determination!
+I turned an old ASUS ET2010PNT EeeTop touchscreen PC into a fast, reliable kitchen calendar and email display using Linux Mint XFCE.
 
-—
+The key challenges were legacy BIOS booting, GRUB installation, touchscreen drivers, and Wi-Fi quirks — all of which are solvable with some determination!
+
+---
 
 ### Hardware overview
 
-![ASUS EeeTop on the workbench](images/eetop-workbench.jpg)
-*The ASUS EeeTop all-in-one PC before refurbishment.*
-
-My EeeTop has:
+Released back in 2010, my EeeTop ET2010PNT has:
 
 - Intel Atom D510 (dual-core, 64-bit capable)
 - 2GB DDR2 RAM
@@ -31,11 +28,10 @@ My EeeTop has:
 - Built-in NextWindow 1950 HID touchscreen
 - Internal Atheros AR9285 Wi-Fi
 
+—
+
 
 ### Step 1: Essential upgrades
-
-![SSD and RAM upgrade](images/ssd-ram-upgrade.jpg)
-*Replacing the original hard drive with an SSD and upgrading the RAM.*
 
 Before touching software, I strongly recommend:
 
@@ -51,6 +47,7 @@ After removing the screws, some prying was needed to loosen and remove the back 
 Once inside, the hardware upgrades were easy to make — just plug and play.
 
 —
+
 
 ### Step 2: OS Installation Media
 
@@ -69,8 +66,8 @@ Unfortunately this *would not work*. The machine stubbornly refused to boot the 
 
 After too much time wasted, I gave up on USB and went old school — time to burn a bootable DVD!
 
-
 —
+
 
 ### Step 3: BIOS configuration (important)
 
@@ -82,16 +79,19 @@ Save and exit.
 
 —
 
+
 ### Step 4: Booting the installer (network quirks)
 
-![Linux Mint boot screen](images/mint-boot-screen.jpg)
-*Linux Mint installer booting in compatibility mode.*
+![Operating System Doesn't Finish Loading](/img/posts/linux-mint-xfce-live-dvd-cannot-load-on-asus-eeetop-et2010pnt.jpg)
 
 On the first try, the Linux Mint installer may hang on a black screen with white squares.
 
 If that happens, **unplug the Ethernet cable** during boot. Surprisingly, this can avoid early boot deadlocks on older Atom systems.
 
+One additional tip: listen for the DVD drive. So long as it's still spinning, the OS will (eventually!) load.
+
 —
+
 
 ### Step 5: Correct disk partitioning (legacy BIOS!)
 
@@ -101,14 +101,12 @@ The BIOS is just too old — it only understands the old MS-DOS style Master Boo
 
 So some special disk partitioning is needed.
 
+
 #### Open GParted *before* installing
 
 ```
 Menu → Administration → GParted
 ```
-
-![GParted with msdos partition table](images/gparted-msdos.jpg)
-*Using an msdos (MBR) partition table instead of GPT.*
 
 #### Create a new partition table
 - Device → Create Partition Table
@@ -132,7 +130,9 @@ You should end up with:
 
 ### Step 6: Install Linux Mint
 
-Click “Install Linux” to start the installer process. When asked about installation type:
+![Linux Mint Xfce Desktop](/img/posts/linux-mint-xfce-desktop.webp)
+
+From the Mint Xfce desktop, double click “Install Linux Mint” to start the installer process. When asked about installation type:
 
 - Choose **“Something else”**
 
@@ -141,11 +141,7 @@ Assign:
 
 #### Bootloader location (critical)
 
-```
-Install bootloader to: /dev/sda
-```
-
-Not `/dev/sda1`.
+Install bootloader to `/dev/sda`. Not `/dev/sda1`.
 
 You may see a warning about **no EFI partition**. This is **normal and safe to ignore** on legacy BIOS systems like our EeeTop.
 
@@ -153,10 +149,10 @@ You may see a warning about **no EFI partition**. This is **normal and safe to i
 
 ### Step 7: Fixing GRUB
 
-![GRUB error during install](images/grub-error.jpg)
+![GRUB error during install](/img/posts/linux-mint-xfce-grub-install-error.jpg)
 *A GRUB installation failure — common on legacy systems.*
 
-As the Linux installer finishes up, you’ll likely see a GRUB error like this above.
+As the Linux installer finishes up, you’ll likely see a GRUB error like the above.
 
 This is expected. We just need to mount the new Linux partition:
 
@@ -180,12 +176,12 @@ After this, the system should boot cleanly from disk.
 
 —
 
+
 ### Step 8: Wi-Fi quirks
 
-![USB Wi-Fi adapter](images/usb-wifi.jpg)
-*Using a USB Wi-Fi adapter instead of the internal card.*
+![Built in Wi-Fi adapter is Hard blocked](/img/posts/asus-eeetop-et2010pnt-linux-mint-xcfe-wifi-not-working-hard-blocked.jpg)
 
-Unfortunately I was unable to get the built-in Atheros Wi-Fi working. It repeatedly asserted that it was “disabled via hardware switch” and could not be coaxed to life.
+Unfortunately I was unable to get the built-in Atheros Wi-Fi working. It repeatedly asserted that it was “hard blocked” and could not be coaxed to life.
 
 Even worse, this Wi-Fi kill switch disables all Wi-Fi globally — so even USB Wi-Fi wouldn’t work.
 
@@ -203,16 +199,13 @@ After reboot, any USB Wi-Fi adapter works normally (phew!).
 
 ### Step 9: Touchscreen support (NextWindow)
 
-![Touchscreen calibration](images/touch-calibration.jpg)
-*Calibrating the built-in touchscreen.*
-
 The built-in touchscreen uses a **NextWindow 1950 HID controller**, which modern kernels no longer support out of the box.
 
 I used the community-maintained **nwfermi** driver, which works great. 
 
 This install process is somewhat manual and required a compile from source.
 
-Find the instruction on GitHub here.
+Find the instruction on GitHub <a href="https://github.com/glorang/nwfermi" target="_blank">here</a>.
 
 —
 
@@ -230,9 +223,6 @@ Find the instruction on GitHub here.
 
 #### Email & calendar
 
-![Thunderbird calendar view](images/thunderbird-calendar.jpg)
-*Thunderbird used as a full-screen calendar display.*
-
 - **Thunderbird**
 - Built-in calendar view
 - Works well with Microsoft 365 via IMAP + CalDAV
@@ -241,6 +231,13 @@ Find the instruction on GitHub here.
 ```
 thunderbird -calendar
 ```
+
+#### Other Options
+
+- <a href="https://wiki.gnome.org/Apps/Geary" target="_blank">Geary</a> (lightweight email client)
+- <a href="https://apps.gnome.org/Calendar/" target="_blank">GNOME Calendar</a>
+- <a href="https://docs.xfce.org/apps/orage/start" target="_blank">Orage</a> (another calendar option)
+
 
 —
 
@@ -257,9 +254,6 @@ To make the system feel like an appliance:
 —
 
 ### The end result
-
-![Finished kitchen PC](images/kitchen-pc-finished.jpg)
-*The finished kitchen PC in daily use.*
 
 The finished system:
 
@@ -283,5 +277,5 @@ This project was a reminder that:
 - Touchscreens on Linux require patience
 - Reusing old hardware can be genuinely rewarding
 
-What started as a slow, obsolete Windows machine is now a **useful, always-on household appliance** — and that feels like a good outcome.
+What started as a slow, obsolete Windows machine is now a **useful, always-on household appliance** — and that feels like a good outcome!
 
