@@ -3,7 +3,7 @@ layout: post
 title: Atari ST on the Web
 date: '2018-06-01 12:00:00'
 tags: [Atari ST, Projects, Retrocomputing]
-status: on hold
+status: completed
 ---
 
 The Atari ST was released in 1985. But is it usable on the modern Web today? How far can I push the experience?
@@ -20,9 +20,16 @@ Starting with a <a href="https://lotharek.pl/productdetail.php?id=46" target="_b
 
 With those (and a successful TCP/IP ping) in place, <a href="https://breakintochat.com/blog/2017/09/05/web-browsing-on-the-atari-st-with-a-cosmosex/" target="_blank">I downloaded and configured Crystal Atari Browser (CAB)</a>.
 
-The Web experience is slow and doesn't support CSS - which rules out a lot of content. However I was able to make <a href="https://twitter.com/jamesfmackenzie/status/1004495104885886978" target="_blank">older sites work</a>.
+The Web experience is slow and doesn't support SSL or CSS – which rules out a lot of content. However I was able to make <a href="https://twitter.com/jamesfmackenzie/status/1004495104885886978" target="_blank">older sites work</a>.
 
 I'll call this a success!
+
+![Pray before the head of Bob!](/img/projects/atari-st-on-the-web.jpg)
+
+
+### Project Updates
+
+- [How to Browse the Web on Atari ST]({% link _howto/how-to-browse-the-web-on-atari-st.md %}) 
 
 
 ### One Day Maybe

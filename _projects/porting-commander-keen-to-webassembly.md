@@ -21,7 +21,8 @@ I'm happy with the end result. Play Commander Keen in the browser right <a href=
 
 In future, I could refactor towards Emscripten Loops to improve performance and add on-screen controls for mobile devices.
 
-Posts:
+
+### Project Updates
 
 - <a href="https://twitter.com/jamesfmackenzie/status/1186034903294644224?s=21" target="_blank">Porting Commander Keen / CloneKeen to the web browser with #Emscripten. Great progress so far!</a> - 20 Oct 2019
 - [Commander Keen in a Web Browser?]({% post_url 2019-10-28-commander-keen-ported-to-webassembly %}) - 28 Oct 2019

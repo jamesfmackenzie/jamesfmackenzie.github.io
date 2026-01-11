@@ -6,6 +6,8 @@ tags: [Programming, Projects, Retrogaming, Sony PlayStation, Videogames]
 status: in progress
 ---
 
+![Commander Keen](/img/posts/keen.png)
+
 I've wanted to explore <a href="https://en.wikipedia.org/wiki/Cross_compiler" target="_blank">cross-compilation</a> (i.e. building code on one platform for execution on another) for a while. I'm also passionate about bringing classic retro games to a new audience.
 
 With the advent of <a href="https://vita.hacks.guide/installing-h-encore.html" target="_blank">h-encore</a>, pretty much any <a href="https://en.wikipedia.org/wiki/PlayStation_Vita" target="_blank">PlayStation Vita</a> can now be unlocked to run <a href="https://en.wikipedia.org/wiki/Homebrew_(video_gaming)" target="_blank">homebrew</a> code. There's also the <a href="https://vitasdk.org/" target="_blank">Vita SDK</a> development framework available to help create working binaries. So the Vita seems like a great target platform.

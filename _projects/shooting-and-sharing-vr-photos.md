@@ -6,6 +6,8 @@ tags: [Projects, VR Photography]
 status: completed
 ---
 
+![VR photo of the Louvre, Paris](/img/projects/shooting-and-sharing-vr-photos.jpg)
+
 Ever seen one of <a href="https://flickr.com/photos/136386099@N02/21597873406/" target="_blank">these photos</a> where you can interactively zoom and pan around? They're known as <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">360° or VR photos</a>.
 
 More formally, <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">VR photography</a> (Virtual Reality photography) is the art of capturing or creating a complete scene as a single image, as viewed when rotating about a single central position.
