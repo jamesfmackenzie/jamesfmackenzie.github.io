@@ -74,5 +74,4 @@ As a next step, I’m trying to buy an EGA Wonder. This should achieve the same 
 ### Further Reading
 
 - <a href="https://www.vogons.org/viewtopic.php?t=87689" target="_blank">Displaying CGA/EGA graphics on an MDA monitor</a>
-800+
 - <a href="https://www.tumblr.com/swarmik/178909439269/full-cga-graphics-on-mda-monitors-a-few-weeks-ago" target="_blank">Full CGA graphics on MDA monitors</a>
