@@ -8,8 +8,6 @@ status: completed
 
 ![Commander Keen](/img/posts/keen.png)
 
-## Porting Commander Keen to WebAssembly 
-
 Status | Completed November 2019
 Goal | Port <a href="https://en.wikipedia.org/wiki/Commander_Keen" target="_blank">Commander Keen</a> to <a href="https://en.wikipedia.org/wiki/WebAssembly" target="_blank">WebAssembly</a>, making it playable in the Browser
 
@@ -27,5 +25,17 @@ In future, I could refactor towards Emscripten Loops to improve performance and 
 - <a href="https://twitter.com/jamesfmackenzie/status/1186034903294644224?s=21" target="_blank">Porting Commander Keen / CloneKeen to the web browser with #Emscripten. Great progress so far!</a> - 20 Oct 2019
 - [Commander Keen in a Web Browser?]({% post_url 2019-10-28-commander-keen-ported-to-webassembly %}) - 28 Oct 2019
 - <a href="https://twitter.com/jamesfmackenzie/status/1190604121717592064?s=21" target="_blank">The Commander Keen WebAssembly port is done!</a> - 02 Nov 2019
+
+
+### Videos
+
+- [I Ported Commander Keen to WebAssembly]({% post_url 2024-06-01-i-ported-commander-keen-to-the-web-browser-webassembly %}) - 01 Jun 2024
+- [How to Build Commander Keen in WebAssembly]({% post_url 2024-06-07-how-to-build-commander-keen-in-webassembly %}) - 07-Jun-2024
+
+
+### Guides
+
+- [How to Build Commander Keen in WebAssembly]({% link _howto/how-to-build-commander-keen-for-webassembly.md %})
+
 
 <br />
