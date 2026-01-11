@@ -6,6 +6,8 @@ date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
+![](/img/posts/dell-optiplex-380-small.png)
+
 The Dell OptiPlex 380 is an unassuming late-2000s business desktop — but for retro PC builders, it sits in a *very* interesting sweet spot. Cheap, widely available, and just old enough to retain key legacy features, it can be turned into a surprisingly capable **DOS, Windows 98, and Windows XP** gaming machine with the right approach.
 
 This page documents what makes the OptiPlex 380 interesting for retro use, what works well, and what you need to watch out for.
@@ -198,3 +200,6 @@ Ugly? Absolutely.
 Capable? Shockingly so.
 
 
+### Blog Posts
+
+- [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})

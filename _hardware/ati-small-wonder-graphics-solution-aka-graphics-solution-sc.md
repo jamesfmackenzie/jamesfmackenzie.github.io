@@ -6,6 +6,8 @@ date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
+![ATI Graphics Solution SR](/img/posts/ati-small-wonder-graphics-solution-v1.png)
+
 In the mid-1980s, the IBM PC graphics landscape was fragmented. You had **CGA** for colour, **Hercules** for sharp monochrome, **MDA** for text, and by 1984–85, **EGA** was entering the scene. For PC users, it wasn’t always clear which card to buy — or which monitor they’d be stuck with.  
 
 ATI (founded in 1985) entered this market with one of its first commercial graphics cards: the **ATI Small Wonder Graphics Solution**. Despite its humble name, this card was anything but small in ambition. It provided broad compatibility in a single package, cementing ATI’s reputation as a company that could do more than just clone IBM’s designs.  

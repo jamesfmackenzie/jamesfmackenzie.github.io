@@ -6,8 +6,13 @@ date: '2024-08-29 11:33:00'
 #tags: [PC, Video Capture]
 ---
 
+![Micomsoft SC-512N1-L/DVI Capture Card](/img/posts/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
+
 Micomsoft SC-512N1-L/DVI Capture Card Review
 
 https://www.youtube.com/watch?v=mc76v8aP5LU
 
 https://thethrillness.blogspot.com/2014/01/micomsoft-sc-512n1-ldvi-capture-card.html
+
+
+LINK TO BLOG POST ON CLEAN CAPTURE

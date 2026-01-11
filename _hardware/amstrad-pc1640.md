@@ -59,3 +59,8 @@ One of my joys when revisiting retro hardware is rediscovering the games that ma
 
 These titles capture the diversity of what the PC1640 could do: platformers, adventures, simulators, and arcade fun. They’re not just games, they’re part of the memory of what it meant to *discover computing* in the late 1980s.
 
+
+### Blog Posts
+
+- [CGA Gaming on an MDA Monochrome Monitor]({% post_url 2025-08-17-cga-gaming-on-an-mda-ttl-monochrome-monitor-with-the-ati-graphics-solution-sr-amstrad-pc1640 %})
+

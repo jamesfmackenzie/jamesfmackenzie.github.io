@@ -6,6 +6,8 @@ date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
+![ATI Graphics Solution SR](/img/posts/ati-graphics-solution-sr.png)
+
 When it comes to vintage PC graphics hardware, most cards did one job: they implemented a standard (CGA, Hercules, EGA, VGA, etc.) and stuck to it. But every so often, a manufacturer came up with something a little different.  
 
 The **ATI Graphics Solution SR** is one of those cards. Released in 1987, it was ATI’s enhanced take on the IBM CGA and Hercules standards — offering flexibility, compatibility, and a unique trick that made it stand out.
@@ -64,3 +66,9 @@ ATI was already showing its hallmark design philosophy: **not just cloning stand
 The **ATI Graphics Solution SR** may not have had the raw appeal of VGA or the widespread adoption of Hercules, but its clever engineering made it a standout. It gave monochrome users a window into the world of CGA gaming and demonstrated ATI’s knack for innovative solutions.  
 
 In many ways, this card laid the groundwork for ATI’s reputation in the graphics market — a company that would go on to challenge (and eventually merge with) giants like AMD.  
+
+
+### Blog Posts
+
+- [CGA Gaming on an MDA Monochrome Monitor]({% post_url 2025-08-17-cga-gaming-on-an-mda-ttl-monochrome-monitor-with-the-ati-graphics-solution-sr-amstrad-pc1640 %})
+
