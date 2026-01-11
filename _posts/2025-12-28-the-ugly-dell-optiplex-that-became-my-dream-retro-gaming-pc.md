@@ -7,9 +7,11 @@ summary: |-
 tags: [MS-DOS, PC, Posts, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 ---
 
-*Yes, it’s a Dell… but let’s not judge a book by its beige cover.*
+![](/img/posts/dell-optiplex-380-small.png)
 
-I wanted a retro PC that could do the full “greatest hits” tour of retro gaming: **native DOS**, **Windows 98**, and **Windows XP** — without spending silly money, without hunting rare parts for months, and without ending up with something that’s allergic to modern conveniences like SATA.
+*<center>Yes, it’s a Dell… but let’s not judge a book by its beige cover.</center>*
+
+Earlier this year, I wanted a retro PC that could do the full “greatest hits” tour of retro gaming: **native DOS**, **Windows 98**, and **Windows XP** — without spending silly money, without hunting rare parts for months, and without ending up with something that’s allergic to modern conveniences like SATA.
 
 What I found is right on that knife edge: **new enough to absolutely crush late DOS and Win9x games**, but **old enough to still behave like a proper retro box**.
 
@@ -29,7 +31,8 @@ But here’s the thing: if you focus on the *experience* instead of the vibes, t
 - Windows 98 gaming with a **period-correct, officially supported Radeon**
 - Windows XP power for early-2000s classics — and yes… **even Crysis**
 
----
+—
+
 
 ### The base machine: Dell OptiPlex 380
 
@@ -55,7 +58,8 @@ Expansion is solid too:
 
 Importantly, it’s modern enough that late DOS and Windows 9x titles don’t just run — they *fly*.
 
----
+—
+
 
 ### Graphics upgrade: Radeon X800 XL (PCIe)
 
@@ -72,7 +76,8 @@ Not bad for twelve bucks.
 
 Unfortunately, the reason it was so cheap became obvious immediately — the fan was seized and made an awful grinding noise. After fixing the fan bearing, the card behaved normally and the system posted fine.
 
----
+—
+
 
 ### Sound card: Yamaha YMF-724 (real OPL3)
 
@@ -88,7 +93,8 @@ I managed to find an off-brand YMF-724 variant for **$10**. I had to zoom into t
 
 At this point, the running total was **$82**.
 
----
+—
+
 
 ### Input matters: PS/2 beats USB for DOS
 
@@ -96,7 +102,8 @@ Native DOS apps — and even the Windows 98 installer — can behave badly with 
 
 Luckily, the OptiPlex has a **serial header** on the motherboard. Using a Dell add-in bracket, I added proper **PS/2 keyboard and mouse** support, instantly fixing input issues.
 
----
+—
+
 
 ### Installing Windows 98: the key BIOS trick
 
@@ -106,7 +113,8 @@ That’s perfect for Windows 98 setup, which doesn’t like large amounts of RAM
 
 With that enabled, the Windows 98 installer behaved perfectly.
 
----
+—
+
 
 ### Making Windows 98 behave on SATA hardware
 
@@ -123,7 +131,8 @@ Once installed, I added:
 
 After one hiccup — removing an extra “Standard Display Adapter” entry from Device Manager — Direct3D was fully working.
 
----
+—
+
 
 ### Sound in Windows 98: Yamaha goodness
 
@@ -135,7 +144,8 @@ After installing the Yamaha DS-XG drivers and rebooting:
 
 Naturally, Doom was the first test — and it worked beautifully.
 
----
+—
+
 
 ### DOS performance: software rendering at its best
 
@@ -150,7 +160,8 @@ Quake in **software rendering at 800×600**, running at a **locked 60fps**, is g
 
 Some DOS titles struggle in DOSBox, but on real hardware like this they behave exactly as intended.
 
----
+—
+
 
 ### Native DOS sound via Yamaha DSDMA
 
@@ -162,7 +173,8 @@ Wolfenstein 3D sounded exactly right — and because this is real OPL3 hardware,
 
 Some games run too fast, but with CPU throttling tools (like CPUSPD) and cache control, even tricky titles behave well.
 
----
+—
+
 
 ### Benchmarks: silly fast
 
@@ -179,7 +191,8 @@ Some games run too fast, but with CPU throttling tools (like CPUSPD) and cache c
 - Quake II timedemo: **972.4 fps**
 - Unreal timedemo: **497.3 fps**
 
----
+—
+
 
 ### Windows XP: finding the ceiling
 
@@ -194,7 +207,8 @@ At **800×600, Medium settings**, Crysis is genuinely playable — I even got di
 
 Crysis is still the king.
 
----
+—
+
 
 ### Don't judge a book by its beige cover
 
@@ -204,7 +218,8 @@ It might not have the classic retro aesthetic, but I’ve grown to love it, beca
 
 And because it’s cheap, it’s also perfect for experimentation.
 
----
+—
+
 
 ### What’s next?
 
@@ -212,7 +227,8 @@ I have a [Voodoo 3]({% link _hardware/3dfx-voodoo-3.md %}) on order and plan to 
 
 If you’ve successfully run 3dfx hardware in a similar Core 2 / G41 / OptiPlex setup, I’d love to hear what worked for you.
 
----
+—
+
 
 ### Final thoughts
 
@@ -228,7 +244,8 @@ If you try your own OptiPlex sleeper build, let me know what you used for graphi
 
 Sometimes the best retro machines are the ones nobody wants.
 
----
+—
+
 
 ### Watch on YouTube!
 
