@@ -5,6 +5,7 @@ date: '2026-01-11 15:10:00:00'
 summary: |-
   You don’t need a RetroTINK or Framemeister scaler to get excellent results — with careful capture and post-processing, you can still achieve native-resolution, documentation-quality video.
 tags: [Posts, Video Capture]
+image: micomsoft-sc-512n1-l-dvi-capture-card.jpg
 ---
 
 ![Micomsoft SC-512N1-L/DVI Capture Card](/img/posts/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
