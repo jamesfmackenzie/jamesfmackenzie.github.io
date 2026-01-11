@@ -64,7 +64,7 @@ And just like that, you’re back in Hercules mode.
 
 ### Final Thoughts  
 
-The **ATI Graphics Solution SR** is a very interesting card that bridges the gap between productivity-oriented mono PCs and the world of CGA gaming — and it really expands what’s possible on Amstrad PC1640’s PC-MD monochrome monitor.
+The **[ATI Graphics Solution SR]({% link _hardware/ati-graphics-solution-sr.md %})** is a very interesting card that bridges the gap between productivity-oriented mono PCs and the world of CGA gaming — and it really expands what’s possible on Amstrad PC1640’s PC-MD monochrome monitor.
 
 So far as I can tell, this is (almost!) a unique feature — the only other card that does this is ATI’s **EGA Wonder** graphics card. 
 
