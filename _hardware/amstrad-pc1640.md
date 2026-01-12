@@ -8,9 +8,9 @@ tags: [Computers, Amstrad, PC]
 
 ![Amstrad PC1640 PC.](/img/posts/amstrad-pc1640-2.jpg)
 
-Some machines go beyond silicon, plastic, and steel. They represent time, place, and a memory. For me, the **Amstrad PC1640** is one of those machines.
+I grew up using an Amstrad PC1640, and it’s a machine I’ve always wanted to own again. I was recently lucky enough to (re)acquire one — decades after my original had been lost.
 
-The PC of my childhood, I was recently lucky enough to (re)acquire one — decades after my original had been lost.
+This page serves as a record of the hardware and its restoration.
 
 
 ### The Amstrad PC1640: A Snapshot of the Late 1980s
@@ -42,7 +42,7 @@ In the UK especially, the PC1640 helped democratise computing. Its affordability
 
 ### A Machine of Memories  
 
-For me, the PC1640 was a core memory of my childhood. It was the machine where I first cut my teeth on DOS commands, grappled with memory management — and of course spent endless hours with games that pushed the limits of the humble hardware.  
+For me, the PC1640 was a core memory of my childhood. It was the machine where I first cut my teeth on DOS commands, grappled with memory management — and of course spent endless hours with games that pushed the limits of this humble hardware.  
 
 Rediscovering the PC1640 now is pure nostalgia — like opening a time capsule. The satisfying clunkiness of the mouse buttons, the slightly off-spec keyboard, the forgotten familiarity of the various knobs and dials — all of them take me back. These small details remind me of a time when computing felt new, mysterious, and exciting.
 
