@@ -27,9 +27,8 @@ On paper, the OptiPlex 380 doesn’t look like a retro machine at all. But dig a
 
 It’s a classic example of a machine that makes more sense when judged by **capability**, not appearance.
 
----
 
-### Core specifications (typical)
+### Specifications
 
 Exact specs vary by configuration, but most OptiPlex 380 systems share the following baseline:
 
@@ -59,7 +58,6 @@ This allows for:
 
 Despite common myths, **PCIe graphics *can* work in Windows 98** on this system with the right card and drivers.
 
----
 
 ### Rear I/O and legacy ports
 
@@ -74,7 +72,6 @@ Unlike many later systems, the OptiPlex 380 still includes genuinely useful lega
 
 For DOS and early Windows installs, this is a *big* advantage — especially when USB input proves unreliable.
 
----
 
 ### BIOS features that matter
 
@@ -96,7 +93,6 @@ Once Windows is installed, you can choose whether to stay capped or apply RAM pa
 
 The BIOS exposes SATA drives in a way that *can* work with Windows 98 once appropriate patches are applied — something many newer systems fail at entirely.
 
----
 
 ### Windows 98 compatibility overview
 
@@ -115,7 +111,6 @@ Key points:
 
 In practice, Windows 98 is very usable on this system if you treat it like a *retro platform* rather than a stock PC.
 
----
 
 ### DOS compatibility (the reality)
 
@@ -142,7 +137,6 @@ The ICH7 southbridge **does not support DDMA or PC/PCI**, which rules out many P
 
 ISA sound cards are not an option on this platform.
 
----
 
 ### Windows XP compatibility
 
@@ -161,7 +155,6 @@ It comfortably handles titles like:
 
 …and can even stretch to famously demanding games with reduced settings.
 
----
 
 ### Known quirks and gotchas
 
@@ -173,7 +166,6 @@ It comfortably handles titles like:
 
 None of these are deal-breakers — just things to plan around.
 
----
 
 ### Who is the OptiPlex 380 *for*?
 
@@ -190,14 +182,13 @@ It’s *not* ideal if you need:
 - Perfect SB16-style DOS compatibility
 - Zero configuration effort
 
----
 
 ### Summary
 
 The Dell OptiPlex 380 is a great example of an overlooked system that becomes interesting once you stop judging it by its intended purpose. With a few smart upgrades, it can span nearly **two decades of PC gaming**, all while costing less than many single “retro” components.
 
 Ugly? Absolutely.  
-Capable? Shockingly so.
+Capable? Yes indeed.
 
 
 ### Blog Posts
