@@ -10,57 +10,69 @@ tags: [Computers, Amstrad, PC]
 
 I grew up using an Amstrad PC1640, and it’s a machine I’ve always wanted to own again. I was recently lucky enough to (re)acquire one — decades after my original had been lost.
 
-This page serves as a record of the hardware and its restoration.
+This page serves as a record of the hardware, its place in history, and its restoration.
 
 
 ### The Amstrad PC1640: A Snapshot of the Late 1980s
 
-Launched in 1987, the Amstrad PC1640 was part of Amstrad’s push to bring IBM-compatible computing to the masses at an affordable price. With an Intel 8086 processor, support for up to 640KB RAM, and a choice of graphics standards (CGA, EGA, Hercules), the PC1640 was a versatile machine.  
+Launched in **1987**, the Amstrad PC1640 represented a key moment in UK home and small-business computing. Amstrad had already found huge success with the PC1512, and the PC1640 built on that momentum with a faster CPU, improved graphics options, and a more expandable design — while keeping costs low.
 
-What really set Amstrad apart was its all-in-one philosophy. Instead of piecemeal components and high costs, the PC1640 came as a complete package: base unit, monitor, keyboard, and even software. For many families (including mine!), this was the first step into the world of the PC.
+At its heart was an **Intel 8086 running at 8 MHz**, paired with up to the PC-standard **640 KB of RAM**. While that specification might sound modest today, it placed the PC1640 firmly in the “serious PC” category at the time, capable of running mainstream DOS applications, productivity software, and an ever-growing library of IBM-compatible games.
 
+One of the PC1640’s standout features was its **integrated graphics solution**, based on a Paradise chipset. Unlike many contemporaries, this allowed the machine to support **CGA, Hercules (MDA), and EGA-compatible modes** without requiring additional expansion cards — a significant cost and convenience advantage.
 
-### Amstrad PC1640 Specifications  
-
-| Component       | Details                                                                 |
-| **CPU**         | Intel 8086 @ 8 MHz                                                      |
-| **RAM**         | 640 KB                                           |
-| **Graphics**    | Embedded Paradise chipset supporting CGA, Hercules (MDA), and EGA modes   |
-| **Storage**     | 5.25” floppy drives (1 or 2), optional 20MB hard disk                   |
-| **Display**     | Choice of monochrome (PC-MD), colour CGA (PC-CD), or enhanced EGA (PC-ECD) monitors |
-| **Operating System** | MS-DOS 3.2 (bundled) + GEM Desktop 3 GUI                             |
-| **Keyboard**    | Full-size Amstrad XT-style mechanical keyboard                          |
-| **Expansion**   | 4x 8-bit ISA slots (for additional cards and upgrades)                     |
+As with other Amstrad systems, the PC1640 followed an **all-in-one philosophy**. Rather than selling a bare system unit, Amstrad offered complete bundles that included the base unit, monitor, keyboard, mouse, and even bundled software. For many households (including mine), this made the PC1640 an accessible first step into PC ownership.
 
 
-### Impact and Legacy  
+### Amstrad PC1640 Specifications
 
-While Amstrad’s CPC range had already made a name in the home computer scene, the PC1640 was a different beast entirely. It wasn’t just for games or hobby projects — it was a serious PC compatible, capable of running DOS applications, business software, and the growing library of IBM PC games.  
+| Component | Details |
+|---------|---------|
+| **CPU** | Intel 8086 @ 8 MHz |
+| **RAM** | Up to 640 KB |
+| **Graphics** | Integrated Paradise chipset supporting CGA, Hercules (MDA), and EGA-compatible modes |
+| **Storage** | One or two 5.25″ 360 KB floppy drives; optional 20 MB hard disk |
+| **Display** | Monochrome (PC-MD), colour CGA (PC-CD), or enhanced colour EGA (PC-ECD) monitors |
+| **Operating System** | MS-DOS 3.2 bundled, often supplied with GEM Desktop 3 |
+| **Keyboard** | Full-size Amstrad XT-style mechanical keyboard |
+| **Expansion** | 4 × 8-bit ISA slots |
 
-In the UK especially, the PC1640 helped democratise computing. Its affordability compared to IBM and Compaq systems meant more people could own a “proper” PC. Many took the leap, with the PC1640 and sister PC1512 model taking more than 30% of the PC market.
+While limited to 8-bit ISA expansion, the PC1640 was surprisingly flexible. Common upgrades included hard disk controllers, serial and parallel cards, sound solutions, and alternative graphics adapters — although the integrated video reduced the need for the latter.
 
 
-### A Machine of Memories  
+### Impact and Legacy
 
-For me, the PC1640 was a core memory of my childhood. It was the machine where I first cut my teeth on DOS commands, grappled with memory management — and of course spent endless hours with games that pushed the limits of this humble hardware.  
+The PC1640 arrived at a time when IBM-compatible PCs were still perceived as expensive, corporate machines. In contrast, Amstrad positioned the PC1640 as affordable, approachable, and practical — without sacrificing compatibility.
 
-Rediscovering the PC1640 now is pure nostalgia — like opening a time capsule. The satisfying clunkiness of the mouse buttons, the slightly off-spec keyboard, the forgotten familiarity of the various knobs and dials — all of them take me back. These small details remind me of a time when computing felt new, mysterious, and exciting.
+In the **UK and parts of Europe**, this strategy paid off. Combined with the PC1512, Amstrad briefly captured a **significant share of the British PC market in the late 1980s**, challenging far more established American brands. For schools, home offices, and small businesses, the PC1640 often became the default choice.
+
+Although it lacked the raw performance of emerging 286-based systems, its balance of price, features, and usability helped normalise PC ownership outside professional environments — an important step in the broader adoption of personal computing.
 
 
-### Games to Try on the Amstrad PC1640  
+### A Machine of Memories
 
-One of my joys when revisiting retro hardware is rediscovering the games that made it special. The PC1640’s 8086 CPU isn’t too beefy, but there’s a surprisingly rich library of classics. Here are some of my faves:
+For me, the PC1640 is inseparable from my early experiences with computing. It’s where I learned DOS commands, edited AUTOEXEC.BAT and CONFIG.SYS, and slowly discovered how software and hardware interacted.
 
-- **Prince of Persia (1989)** – Smooth animation and challenging platforming, even on an 8086.  
-- **Commander Keen (1990)** – A fun side-scrolling adventure that plays well in EGA mode.
-- **SimCity (1989)** – The original city builder is perfectly at home on the PC1640.  
-- **Alley Cat (1984)** – A quirky and addictive early IBM PC classic that runs on even the most modest hardware.  
-- **Monkey Island (1990)** – Pushes the limits, but still playable on an 8086.
+Revisiting the machine now feels like opening a time capsule. The reassuring clunk of the keyboard, the slightly unconventional layout, the tactile switches and dials on the monitor — all of it comes flooding back. These small, physical details are easy to forget, but they defined the everyday experience of computing in the late 1980s.
 
-These titles capture the diversity of what the PC1640 could do: platformers, adventures, simulators, and arcade fun. They’re not just games, they’re part of the memory of what it meant to *discover computing* in the late 1980s.
+Owning and restoring a PC1640 again isn’t just about preserving hardware. It’s about reconnecting with a period when computers felt mysterious, slightly intimidating, and endlessly exciting.
+
+
+### Games to Try on the Amstrad PC1640
+
+Despite its modest specifications, the PC1640 can run a surprisingly rich selection of classic PC games — particularly titles designed with CGA or EGA systems in mind.
+
+Some favourites that work well on this hardware include:
+
+- **Prince of Persia (1989)** – Remarkably smooth animation and tight controls, even on an 8086.
+- **Commander Keen (1990)** – Colourful, fast-paced platforming that shines in EGA mode.
+- **SimCity (1989)** – The original city builder runs comfortably and remains hugely engaging.
+- **Alley Cat (1984)** – A quirky early PC classic that’s perfectly suited to the PC1640’s capabilities.
+- **The Secret of Monkey Island (1990)** – Playable with patience; a reminder of how far developers pushed early PC hardware.
+
+Together, these games highlight the versatility of the platform — from arcade-style action to deep simulations and graphic adventures.
 
 
 ### Blog Posts
 
 - [CGA Gaming on an MDA Monochrome Monitor]({% post_url 2025-08-17-cga-gaming-on-an-mda-ttl-monochrome-monitor-with-the-ati-graphics-solution-sr-amstrad-pc1640 %})
-
