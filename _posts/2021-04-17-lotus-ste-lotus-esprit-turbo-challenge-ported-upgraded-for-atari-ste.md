@@ -27,7 +27,7 @@ You can download Lotus STE over <a href="http://www.atarimania.com/game-atari-st
 Find a full *new versus old* comparison video below:
 
 <div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/-gqdpt5siYk?rel=0" 
+<iframe src="https://www.youtube.com/embed/esK396UQnaQ?rel=0" 
 allowfullscreen class="youtube-video"></iframe>
 </div> 
 
