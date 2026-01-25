@@ -14,6 +14,6 @@ summary: |-
   - Video quality is high, with very few compression artefacts.
 
   **I'll definitely use this when the TV is occupied!** Video capture below.
-videoId: Y7XUq_pm-80
+videoId: flVbpfXFip8
 tags: [Videogames, Videos, Xbox]
 ---
