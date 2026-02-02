@@ -57,11 +57,8 @@ The Sync Strike extracts clean sync from the ST’s RGB output, while the Micoms
 
 All capture and processing was done using free, well-established PC software:
 
-- **AmaRecTV Live**
-  <a href="http://www.amarectv.com/english/amarectv_e.htm" target="_blank">http://www.amarectv.com/english/amarectv_e.htm</a>
-
-- **VirtualDub**
-  <a href="http://www.virtualdub.org/" target="_blank">http://www.virtualdub.org/</a>
+- **<a href="http://www.amarectv.com/english/amarectv_e.htm" target="_blank">AmaRecTV Live</a>**
+- **<a href="http://www.virtualdub.org/" target="_blank">VirtualDub</a>**
 
 AmaRecTV was used to capture uncompressed video. VirtualDub was then used to perform deliberate, step-by-step scaling to recover the original pixel structure.
 
