@@ -162,5 +162,5 @@ Cons:
 
 ## Learn more
 
-- *I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC*  
+- [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %})  
   Case-study write-up on what worked, what failed, and why the 760 is a better XP/DOS machine than a straightforward Win98 one.
