@@ -1,16 +1,22 @@
 ---
 layout: post
 title: Dell OptiPlex 760
-summary: 
+summary: Hardware overview and retro gaming reference notes for the Dell OptiPlex 760, with a focus on DOS, Windows 98, and Windows XP.
 date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
-The Dell OptiPlex 760 is a later Core 2–era business desktop that can be a surprisingly capable retro platform — particularly for **Windows 98 with a PCIe Radeon** and, more realistically, **Windows XP** gaming. At the same time, it introduces several more “modern” traits that make it noticeably harder to work with than slightly older systems, especially around **memory handling** and **3dfx / Voodoo compatibility**.
+The Dell OptiPlex 760 is a later Core 2-era business desktop built around Intel's Q45 platform. It sits in an interesting middle ground: modern enough to be fast, cheap, and easy to source, but old enough to expose some genuinely useful expansion and legacy-friendly features.
 
-This page captures what I have tested so far on my own OptiPlex 760, what worked quickly, and what really did not.
+I am mostly interested in this machine as a **retro gaming platform**. The question is not just what hardware is inside it, but whether it is actually fun and useful for playing older PC games.
 
----
+For this class of machine, the three main targets are:
+
+- **DOS**
+- **Windows 98**
+- **Windows XP**
+
+This page is intended as a **hardware overview and reference page** for the machine itself, with a high-level take on how well it fits those three use cases. For deeper write-ups on specific experiments, see the linked posts.
 
 ### Specifications
 
@@ -26,7 +32,25 @@ Exact configurations vary, but most OptiPlex 760 systems share the following cha
 
 Like most business systems of its era, the 760 is extremely common and inexpensive on the second-hand market.
 
----
+### Chipset and onboard devices
+
+One useful detail for retro testing is the platform makeup:
+
+- **Chipset:** Intel Q45 Express
+- **Southbridge / I/O controller:** Intel `ICH10`
+- **Onboard audio codec:** Analog Devices `AD1984A`
+
+Those parts matter because later Intel southbridges and HD Audio codecs tend to be much less friendly to Windows 98 and classic PCI sound hardware than earlier systems.
+
+### High-level retro gaming verdict
+
+At a high level, the OptiPlex 760 feels like this:
+
+- **DOS:** surprisingly good
+- **Windows 98:** possible, but awkward
+- **Windows XP:** the natural fit
+
+That split is really the story of this machine. It has enough speed and expansion to be interesting, but it is just new enough that Win98 and some legacy acceleration paths stop being straightforward.
 
 ### BIOS tweaks used for retro testing
 
@@ -38,8 +62,6 @@ To reduce interference from modern CPU power-management features, I disabled the
 
 These changes do not guarantee Windows 98 success, but they help reduce the number of advanced CPU behaviours that Win9x was never designed to handle.
 
----
-
 ### Why the OptiPlex 760 is interesting for retro builds
 
 Despite its age, the 760 still offers several traits that make it worth experimenting with:
@@ -49,6 +71,15 @@ Despite its age, the 760 still offers several traits that make it worth experime
 - A motherboard **serial header**, which can be leveraged to restore more reliable legacy input
 
 However, it also lacks one particularly helpful feature found on some earlier Dell systems.
+
+### What I care about on a machine like this
+
+When judging whether this hardware is worth keeping around for retro games, I mainly care about:
+
+- how well it handles late DOS games
+- whether Windows 98 is practical rather than merely possible
+- whether it makes a strong Windows XP gaming box
+- whether input, sound, and graphics setup feel fun or frustrating
 
 ---
 
@@ -61,9 +92,7 @@ This matters because Windows 98 becomes unstable on systems with large amounts o
 - Physically reduce installed memory, or
 - Apply a Windows 98 memory and VCache patch
 
-**Practical takeaway:** if you want a clean Windows 98 install on the OptiPlex 760, you must plan a memory strategy rather than relying on BIOS assistance.
-
----
+**Practical takeaway:** if you want to experiment with Windows 98 on the OptiPlex 760, you must plan a memory strategy rather than relying on BIOS assistance.
 
 ### Input: serial header and PS/2 keyboard support
 
@@ -74,106 +103,64 @@ One notable advantage over many consumer systems:
 
 This is particularly valuable because USB keyboards and mice can be laggy or unreliable in DOS on some Dell platforms. Having a path to traditional input is a genuine quality-of-life improvement.
 
----
+### Retro gaming notes
 
-### Windows 98 viability test (quick-and-dirty)
+At a hardware level, the machine looks promising for experimentation:
 
-Rather than performing a clean installation immediately, I used a fast sanity check:
+- plenty of CPU performance for DOS and Windows XP-era games
+- practical PCI and PCIe expansion
+- workable legacy input options via the serial header
 
-- I connected the **same Windows 98 hard disk** previously configured in a Dimension E520
-- Booted it directly in the OptiPlex 760
+Where it becomes more challenging is **platform behaviour**, especially for Windows 98, HD Audio, and some older PCI accelerators.
 
-This is not best practice — it triggers extensive hardware redetection — but it is a quick way to determine whether Windows 98 is viable at all on a new platform.
+Rather than duplicate all of the test results here, the detailed compatibility findings are better handled in a separate post focused on the experiment itself.
 
-#### Result
+### DOS
 
-Windows 98 booted successfully and was usable, which allowed me to test graphics compatibility almost immediately.
+**High-level take:** better than expected.
 
----
+Pros:
 
-### Windows 98 graphics: Radeon X600 with Catalyst 6.2
+- plenty of CPU performance for demanding DOS games
+- serial header gives a path to better legacy input
+- looks promising as a DOS gaming machine with the right sound approach
 
-On the OptiPlex 760, I installed and tested:
+Cons:
 
-- **ATI Radeon X600**
-- **Catalyst 6.2** drivers
+- later platform quirks still mean some setup work
+- USB input is not ideal, so you need to care about legacy keyboard and mouse options
 
-The result was unexpectedly positive. Driver installation was quick, and the system remained stable afterward.
+### Windows 98
 
-This is notable because the Radeon X600 can be problematic on some mid-2000s chipsets, where driver initialization may freeze the system. On the 760, it behaved far better than expected during early testing.
+**High-level take:** possible, but not naturally friendly.
 
----
+Pros:
 
-### 3dfx / Voodoo 2: major instability so far
+- enough horsepower for a very fast late Win98 system
+- PCIe graphics options make experimentation interesting
 
-Unfortunately, Voodoo 2 support appears to be a serious problem on this platform.
+Cons:
 
-#### Symptoms observed
+- no BIOS RAM-limiting mode
+- HD Audio is a weak point
+- some classic acceleration paths, especially Voodoo 2, look problematic
 
-In DOS:
+### Windows XP
 
-- Running a demo produced a **DOS/4GW general protection fault**
+**High-level take:** this is where the machine makes the most sense.
 
-In Windows 98:
+Pros:
 
-- Frequent crashes
-- **FXMEMMAP** blue screen errors
+- hardware generation lines up well with XP
+- fast enough to feel effortless
+- modern-enough GPU options become much easier to use
 
-These symptoms point to a deeper incompatibility rather than a simple driver or configuration issue.
+Cons:
 
-#### What I tried
+- less novel than the DOS/Win98 angle
+- if XP is your only goal, there may be many other equally good Core 2 machines
 
-To rule out conflicts, I attempted a stripped-down configuration:
+## Learn more
 
-- Removed additional expansion cards
-- Disabled onboard devices
-- Tested with minimal hardware installed
-
-The behaviour did not change.
-
-#### Working theory
-
-At this stage, the evidence suggests either:
-
-- A memory mapping or address space issue (notably around 0x0D-related faults), or
-- A chipset or platform incompatibility affecting how the Voodoo 2 driver and memory map behave on the Q45-based system
-
-More investigation is required.
-
-**Practical takeaway:** even if Windows 98 and a PCIe Radeon work, **Voodoo 2 on the OptiPlex 760 may be a dead end**, or require very specific and fragile workarounds.
-
----
-
-### Known good and known bad (so far)
-
-#### Worked
-
-- Windows 98 booted successfully (even via a migrated installation)
-- Radeon X600 with Catalyst 6.2 installed and functioned correctly
-- PS/2 keyboard via motherboard header improved DOS usability
-
-#### Problematic
-
-- Voodoo 2 in DOS (DOS/4GW general protection faults)
-- Voodoo 2 in Windows 98 (crashes and FXMEMMAP blue screens)
-
----
-
-### Recommendations for Windows 98 on the OptiPlex 760
-
-If you plan to experiment with this system:
-
-- Use a **clean Windows 98 installation** for long-term testing
-- Plan your memory handling in advance:
-  - Reduce installed RAM, or
-  - Apply a Win98 memory and VCache patch
-- Prefer **PS/2 input** for DOS reliability
-- Treat 3dfx / Voodoo testing as optional and experimental
-
----
-
-### Summary
-
-The Dell OptiPlex 760 is a promising but challenging retro platform. In early testing, it handled a **PCIe Radeon X600 with Catalyst 6.2** far more smoothly than expected, making it a viable option for late Windows 98 and Windows XP gaming. However, the lack of BIOS RAM-limiting features and the severe instability observed with **Voodoo 2** hardware make it a more demanding system to work with than slightly older Dells.
-
-If your goal is a cheap, fast Win9x or XP gaming PC with a PCIe GPU, the OptiPlex 760 is worth exploring. If your goal is a stable Windows 98 system with 3dfx acceleration, expect frustration — and possibly a hard stop.
+- *I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC*  
+  Case-study write-up on what worked, what failed, and why the 760 is a better XP/DOS machine than a straightforward Win98 one.

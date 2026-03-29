@@ -1,12 +1,24 @@
-Discussion:
+---
+layout: post
+title: What Is the Best Mouse for Atari ST?
+summary: A draft about modern alternatives to the original Atari ST mouse, including USB-based options.
+tags: [Atari ST, Retrocomputing, Peripherals]
+---
 
-* The original mouse is terrible
+The original Atari ST mouse has a certain charm, but it is not what most people would call pleasant today.
 
-* You can use a replacement mouse or mouse accelerator software, but we're all used to optical mice today, right?
+## Core Question
 
-* can you do this?
+Can you use a more modern mouse with an Atari ST and actually improve the experience?
 
-Yep!
+The original note suggests the answer is yes:
 
-Either via netusb (more compatible) or via a cheap USB mouse adapter (less compatible, but driver free)
+- via NetUSB, with broader compatibility
+- via a simple USB mouse adapter, with less compatibility but no driver requirement
 
+## What the Final Post Should Cover
+
+- How bad the original mouse really is
+- Which modern replacements feel best
+- Compatibility differences between the available approaches
+- Whether mouse accelerator software is enough on its own

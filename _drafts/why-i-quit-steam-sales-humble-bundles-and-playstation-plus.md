@@ -2,6 +2,8 @@
 layout: post
 title: Why I Quit Steam Sales, Humble Bundles and PlayStation Plus
 date: '2015-12-26 10:13:00'
+summary: A draft about backlog guilt, fear of missing out, and buying games only when ready to play them.
+tags: [Posts, Videogames]
 ---
 
 Background:

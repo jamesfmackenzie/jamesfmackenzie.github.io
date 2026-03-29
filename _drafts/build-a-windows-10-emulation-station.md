@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ultimate Windows 10 Emulation PC build
-summary: How to build a Windows 10 Emulation PC
+title: Ultimate Windows 10 Emulation PC Build
+summary: Notes for building a Windows 10 based emulation machine for living room use.
 tags: [How To, Videogames, Retrogaming]
 ---
 
@@ -31,5 +31,4 @@ https://www.majorgeeks.com/content/page/how_to_disable_the_windows_10_login_scre
 # Setup Moonlight
 
 # Setup Wii in "pass through" mode 
-
 

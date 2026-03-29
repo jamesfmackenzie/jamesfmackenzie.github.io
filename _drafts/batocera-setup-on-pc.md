@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ultimate Batocera build
-summary: Setup the best Batocera build
+title: Ultimate Batocera Build
+summary: Setup notes for building a polished Batocera-based retro gaming machine.
 tags: [How To, Videogames, Retrogaming]
 ---
 
