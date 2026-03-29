@@ -48,6 +48,8 @@ The notes on this page are based on my own OptiPlex 760 with the following confi
 
 This is not a top-spec 760, but it is representative of the kind of cheap office configuration these machines often appear in on the second-hand market.
 
+![](/img/posts/dell-optiplex-760-bios.jpg)
+
 ### Chipset and onboard devices
 
 One useful detail for retro testing is the platform makeup:
@@ -120,6 +122,10 @@ One notable advantage over many consumer systems:
 - By adding the appropriate header or bracket, I was able to use a **PS/2 keyboard**
 
 This is particularly valuable because USB keyboards and mice can be laggy or unreliable in DOS on some Dell platforms. Having a path to traditional input is a genuine quality-of-life improvement.
+
+The header is the same style used on the OptiPlex 380:
+
+![](/img/posts/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg)
 
 ### Retro gaming notes
 

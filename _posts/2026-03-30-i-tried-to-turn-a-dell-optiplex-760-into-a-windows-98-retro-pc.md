@@ -33,6 +33,8 @@ My specific machine is not a maxed-out 760 either. It is a fairly ordinary offic
 
 That makes the results more interesting, because this is much closer to the kind of machine you might actually pick up cheaply rather than some fully upgraded ideal configuration.
 
+![](/img/posts/dell-optiplex-760-bios.jpg)
+
 ## Why I Thought It Might Work
 
 At a glance, the 760 has a few things going for it:
@@ -133,6 +135,10 @@ Useful findings:
 - the motherboard has a serial header
 - adding a proper header and using PS/2 input avoids some USB keyboard headaches
 - **SBEMU** works well for sound
+
+The serial / PS2 header arrangement is the same style I used on the OptiPlex 380:
+
+![](/img/posts/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg)
 
 That gives the machine an interesting split personality:
 
