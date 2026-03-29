@@ -37,10 +37,30 @@ Like a lot of Dell home systems from this era, the E520 is cheap, common, and vi
 The notes on this page are based on my own Dimension E520 with the following configuration:
 
 - **CPU:** Intel Core 2 Duo `E4300 @ 1.80GHz`
-- **Memory:** 3GB DDR2
+- **Bus speed:** 800MHz
+- **L2 cache:** 2MB
+- **Memory:** 3GB DDR2 at 667MHz
+- **Memory mode:** dual interleaved
+- **DIMM layout:** 512MB in DIMM 1, 1GB in DIMM 2, 1GB in DIMM 3, 512MB in DIMM 4
 - **Audio:** Intel HD Audio with a Sigmatel codec
 
 This is not an exotic build. It is the kind of ordinary office or family PC configuration that still turns up cheaply today.
+
+![](/img/posts/dell-dimension-e520-bios-processor-info.jpg)
+
+![](/img/posts/dell-dimension-e520-bios-memory-info.jpg)
+
+### Chipset and onboard devices
+
+One of the details that matters most for retro testing is the platform makeup:
+
+- **Chipset:** Intel G965 Express
+- **Southbridge / I/O controller:** Intel `ICH8`
+- **Audio:** Intel HD Audio with a Sigmatel codec
+
+That later southbridge is a big part of why the machine feels much more natural under Windows XP than it does under Windows 98 or native DOS.
+
+![](/img/posts/dell-dimension-e520-nh82801hh-ich-8-chip.jpg)
 
 ### Why the Dimension E520 is interesting for retro builds
 
@@ -95,6 +115,8 @@ When enabled, this limits available system memory to **256MB**, which is extreme
 - avoiding early setup crashes on high-RAM systems
 
 This feature is one of the E520's biggest advantages for retro experimentation.
+
+![](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg)
 
 ### Input and legacy caveats
 

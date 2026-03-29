@@ -28,6 +28,10 @@ My specific machine is based on:
 - **Memory:** 3GB DDR2 RAM
 - **Audio:** Intel HD Audio with a Sigmatel codec
 
+![](/img/posts/dell-dimension-e520-bios-processor-info.jpg)
+
+![](/img/posts/dell-dimension-e520-bios-memory-info.jpg)
+
 ## Why I Thought It Might Work
 
 At a glance, the E520 has several things going for it:
@@ -58,6 +62,8 @@ Useful ingredients from the notes were:
 
 That was enough to get Windows 98 onto the machine, but not enough to make it comfortable.
 
+![](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg)
+
 ## The Big Problem: Disk Access Was Unstable
 
 The main problem was not simply installation. It was what happened afterwards.
@@ -84,6 +90,8 @@ The notes suggest:
 
 That makes the E520 a useful reminder that a "supported" late Win98 GPU is not always a stable one once PCIe and newer Intel chipsets enter the picture.
 
+![](/img/posts/dell-dimension-e520-windows-98-using-the-vbe-driver-as-a-fallback.jpg)
+
 ## The Good News: Voodoo 2 Looked Much Better
 
 Unlike the OptiPlex 760, the Voodoo 2 notes here are actually encouraging.
@@ -93,6 +101,10 @@ Unlike the OptiPlex 760, the Voodoo 2 notes here are actually encouraging.
 - Glide support looked strong enough to make the machine worth pursuing
 
 That is a big point in the E520's favour. A hybrid setup with VBE for 2D and Voodoo 2 for Glide is much more convincing than a pure PCIe Radeon-based Win98 plan.
+
+One of the screenshots in the notes shows a **3DMark 99 Max score of 4796** with the Voodoo 2 installed, which is a good sign that the hybrid approach is more than just theoretically workable.
+
+![](/img/posts/dell-dimension-e520-windows-98-3dmark-99-max-score-with-voodoo-2.jpg)
 
 ## DOS
 
@@ -108,6 +120,8 @@ Possible routes from the notes:
 Sound is also more of a workaround story than a clean period-correct one, but **SBEMU** looks like a practical option when dedicated DOS-friendly sound hardware is not available.
 
 Even without a lot of polishing, though, the machine already looked fast and interesting for software-rendered DOS games.
+
+![](/img/posts/dell-dimension-e520-doom-running-in-dos-mode.jpg)
 
 ## Windows XP
 
