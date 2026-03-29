@@ -22,6 +22,17 @@ The important details for this experiment were:
 
 That missing RAM-limiting feature makes Windows 98 setup harder straight away.
 
+My specific machine is not a maxed-out 760 either. It is a fairly ordinary office-spec box:
+
+- **BIOS:** A02
+- **CPU:** Pentium Dual-Core `E5200 @ 2.50GHz`
+- **Bus speed:** 800MHz
+- **L2 cache:** 2MB
+- **Memory:** 2GB DDR2 at 667MHz
+- **Memory layout:** 1GB in DIMM 1 and 1GB in DIMM 3, running in dual-channel symmetric mode
+
+That makes the results more interesting, because this is much closer to the kind of machine you might actually pick up cheaply rather than some fully upgraded ideal configuration.
+
 ## Why I Thought It Might Work
 
 At a glance, the 760 has a few things going for it:
@@ -148,9 +159,3 @@ My current verdict is:
 - **Windows XP:** the real sweet spot
 
 That still makes it an interesting retro machine. Just not in quite the way I first hoped.
-
-## What the Final Version Should Add
-
-- exact system specification for your own unit
-- benchmark examples under Windows 98, XP, and DOS
-- a comparison with the e520 and OptiPlex 380

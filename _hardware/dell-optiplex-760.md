@@ -32,6 +32,22 @@ Exact configurations vary, but most OptiPlex 760 systems share the following cha
 
 Like most business systems of its era, the 760 is extremely common and inexpensive on the second-hand market.
 
+### My machine
+
+The notes on this page are based on my own OptiPlex 760 with the following configuration:
+
+- **BIOS:** A02
+- **Board manufacture date:** 2009-03-17
+- **CPU:** Pentium Dual-Core `E5200 @ 2.50GHz`
+- **Front-side bus:** 800MHz
+- **L2 cache:** 2MB
+- **Memory:** 2GB DDR2
+- **Memory speed:** 667MHz
+- **Memory mode:** dual-channel symmetric
+- **DIMM layout:** 1GB in DIMM 1, 1GB in DIMM 3
+
+This is not a top-spec 760, but it is representative of the kind of cheap office configuration these machines often appear in on the second-hand market.
+
 ### Chipset and onboard devices
 
 One useful detail for retro testing is the platform makeup:
@@ -61,6 +77,8 @@ To reduce interference from modern CPU power-management features, I disabled the
 - C-States control
 
 These changes do not guarantee Windows 98 success, but they help reduce the number of advanced CPU behaviours that Win9x was never designed to handle.
+
+In my case, the processor is a dual-core Pentium E5200, so disabling multi-core support is especially relevant when trying to make older operating systems behave.
 
 ### Why the OptiPlex 760 is interesting for retro builds
 
