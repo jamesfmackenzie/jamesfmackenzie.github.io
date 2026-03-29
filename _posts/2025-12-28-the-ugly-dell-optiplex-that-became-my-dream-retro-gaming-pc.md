@@ -17,6 +17,8 @@ What I found is right on that knife edge: **new enough to absolutely crush late 
 
 And the best part? These machines are often so unwanted that you can find them for **almost the cost of postage**.
 
+If you want the broader hardware overview first, see the companion page for the **[Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})**.
+
 ---
 
 ### The idea: stop judging retro builds by the case

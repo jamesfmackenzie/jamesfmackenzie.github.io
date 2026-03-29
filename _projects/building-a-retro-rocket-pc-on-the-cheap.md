@@ -22,8 +22,9 @@ With the right parts and a bit of tinkering, this Core 2 system became a true tr
 
 This project wasn't about rare hardware or expensive nostalgia. It’s about finding that perfect in-between generation — cheap, overlooked, and quietly capable — and turning it into a retro gaming PC that spans nearly two decades of PC gaming. I'll call this a success.
 
-Find the full write up here:
+More details:
 
+- [Dell OptiPlex 380 hardware overview]({% link _hardware/dell-optiplex-380.md %})
 - [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})
 
 And also in video form below. Enjoy!
