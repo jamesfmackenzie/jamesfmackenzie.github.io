@@ -57,6 +57,6 @@ When it works, it feels like a very elegant bridge between classic Win98 gaming 
 
 ### Learn more
 
-- [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %})
+- [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-29-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %})
 - [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})
 - [Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %})
