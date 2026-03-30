@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3Dfx Voodoo
-summary: 
+summary: Overview of the 3Dfx Voodoo graphics family and why these Glide-focused accelerators still matter for retro PC gaming.
 date: '2024-08-29 11:33:00'
 tags: [3Dfx Voodoo, Graphics Cards, PC]
 ---

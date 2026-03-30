@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nvidia GeForce 6200
-summary: 
+summary: Notes on the Nvidia GeForce 6200, including PCI compatibility quirks and driver behavior under Windows 98 and Windows XP.
 date: '2024-08-29 11:33:00'
 tags: [Graphics Cards, Nvidia Graphics, PC]
 ---
@@ -37,4 +37,3 @@ https://www.philscomputerlab.com/nvidia-xp-graphics-drivers.html
 https://www.nvidia.com/en-us/drivers/details/57493/
 
 Both perform *significantly* better than the Windows 98 driver.
-

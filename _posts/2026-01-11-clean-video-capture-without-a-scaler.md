@@ -10,6 +10,8 @@ image: micomsoft-sc-512n1-l-dvi-capture-card.jpg
 
 ![Micomsoft SC-512N1-L/DVI Capture Card](/img/posts/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
 
+For the broader hardware overview, see **[Micomsoft SC-512N1-L/DVI]({% link _hardware/micomsoft-sc-512-n1-l-dvi-pci-e-capture-card.md %})**.
+
 High-quality capture of classic computers is often associated with external scalers like the RetroTINK or Framemeister. These devices are excellent, but they’re not the only way to achieve sharp, native-resolution results.
 
 In this post, I document an alternative approach: **capturing raw RGB video directly into a PC capture card and using careful post-processing to reconstruct the original pixel grid**.

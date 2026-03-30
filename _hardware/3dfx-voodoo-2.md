@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3Dfx Voodoo 2
-summary: 
+summary: Overview and reference notes for the 3Dfx Voodoo 2, one of the most iconic Glide accelerators of the late 1990s.
 date: '2024-08-29 11:33:00'
 tags: [3Dfx Voodoo, Graphics Cards, PC]
 ---
@@ -53,6 +53,5 @@ Add drivers here.
   {% endif %}
 {% endfor %}
 </ul>
-
 
 

@@ -7,3 +7,4 @@ videoId: 7e8Sfhd4j1g
 tags: [Retrocomputing, Retrogaming, Videos]
 ---
 
+For the broader hardware overview, see **[ATi Radeon X800 XL]({% link _hardware/ati-radeon-x800-xl.md %})**.

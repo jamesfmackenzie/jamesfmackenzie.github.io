@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ATi Radeon X700 Pro
-summary: 
+summary: Overview of the ATI Radeon X700 Pro as a practical PCIe graphics card for late Windows 98 and Windows XP retro builds.
 date: '2025-12-28 21:00:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---

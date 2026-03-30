@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ATi Small Wonder Graphics Solution 
-summary: 
+summary: Overview of the ATI Small Wonder Graphics Solution, an early multi-standard PC graphics card for CGA, Hercules, and mono displays.
 date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---

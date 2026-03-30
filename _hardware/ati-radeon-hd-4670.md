@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ATi Radeon HD 4670
-summary: 
+summary: Overview of the ATI Radeon HD 4670 as a low-power, highly practical graphics card for Windows XP and early Windows 7 retro PCs.
 date: '2025-12-28 21:00:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
@@ -21,4 +21,3 @@ My model is the 512MB PowerColor Radeon HD 4670, manufactured by PowerColor usin
 ![PowerColor Radeon HD 4670 front](/img/hardware/powercolor-radeon-hd-4670-front.jpg)
 
 ![PowerColor Radeon HD 4670 back](/img/hardware/powercolor-radeon-hd-4670-back.jpg)
-

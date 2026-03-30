@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HP Compaq t5710
-summary: 
+summary: Hardware overview and retro gaming notes for the HP Compaq t5710 thin client, with a focus on DOS and Windows 98 use.
 date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
 ---

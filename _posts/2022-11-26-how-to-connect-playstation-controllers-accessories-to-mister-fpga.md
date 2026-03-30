@@ -7,3 +7,4 @@ videoId: R_lxNyalua4
 tags: [MiSTer FPGA, Retrocomputing, Retrogaming, Videos]
 ---
 
+This video includes tests with the **[PlayStation Mouse]({% link _hardware/playstation-mouse.md %})** on MiSTer.

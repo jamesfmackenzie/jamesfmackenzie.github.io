@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ATi Graphics Solution SR
-summary: 
+summary: Overview of the ATI Graphics Solution SR, a versatile late-1980s PC graphics card with CGA, Hercules, and mono-display tricks.
 date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
@@ -71,4 +71,3 @@ In many ways, this card laid the groundwork for ATI’s reputation in the graphi
 ### Blog Posts
 
 - [CGA Gaming on an MDA Monochrome Monitor]({% post_url 2025-08-17-cga-gaming-on-an-mda-ttl-monochrome-monitor-with-the-ati-graphics-solution-sr-amstrad-pc1640 %})
-

@@ -16,7 +16,7 @@ For this class of machine, the three main targets are:
 - **Windows 98**
 - **Windows XP**
 
-This page is intended as a hardware overview and reference page for the machine itself, with a high-level take on how well it fits those three use cases. The more detailed troubleshooting belongs in the companion case-study post.
+This page is intended as a hardware overview and reference page for the machine itself, with a high-level take on how well it fits those three use cases. For the fuller troubleshooting and test results, see the companion case-study post: **[I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %})**.
 
 ### Specifications
 
@@ -191,3 +191,9 @@ Cons:
 What makes the E520 interesting is not that it is perfect. It is that it combines a few genuinely useful retro-friendly traits with a few very modern-for-Win98 headaches.
 
 That makes it a good machine for experimentation, and a much better machine for a hybrid DOS and XP build than for a simple, low-drama Windows 98 setup.
+
+## Learn more
+
+A case-study write-up on what worked, what failed, and why the E520 ended up being more convincing as a hybrid machine than as a simple Win98 build:
+
+- [I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %})

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac Pro 5,1
-summary: 
+summary: Hardware overview of the Mac Pro 5,1, a modular 2010-2012 workstation that still makes sense for upgrades, legacy software, and retro projects.
 date: '2024-08-29 11:33:00'
 tags: [Apple Mac, Computers]
 ---

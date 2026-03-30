@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Amstrad PC1640
-summary: 
+summary: Hardware overview and restoration notes for the Amstrad PC1640, a late-1980s IBM-compatible home and small-business PC.
 date: '2025-08-20 06:33:00'
 tags: [Computers, Amstrad, PC]
 ---

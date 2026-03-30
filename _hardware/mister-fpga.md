@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MiSTer FPGA
-summary: 
+summary: Hardware overview of MiSTer FPGA and why it remains one of the most compelling modern platforms for accurate retro gaming.
 date: '2024-08-29 11:33:00'
 tags: [Computers, Consoles, Emulation, MiSTer FPGA]
 ---
