@@ -45,5 +45,3 @@ For me, that video side is a big part of why the system remains interesting. The
 ### Learn more
 
 - [Final Fantasy X: Why the PlayStation 2 Version is Best]({% post_url 2024-06-15-why-final-fantasy-x-ffx-ff10-is-best-on-ps2-playstation-2 %})
-- [How to Capture PlayStation 2 Video]({% link _drafts/playstation-2-video-capture.md %})
-- [PlayStation 2 VGA Adapters]({% link _drafts/playstation-2-vga-adapter.md %})
