@@ -1,69 +1,60 @@
 ---
 layout: post
 title: Yamaha YMF724
-summary: Hardware overview of the Yamaha YMF724 and related YMF7x4 PCI sound cards, which remain some of the best DOS-friendly PCI audio options.
+summary: My take on the Yamaha YMF724 as the best PCI sound card for DOS compatibility, with brilliant XG MIDI under Windows and remarkably few downsides.
 date: '2024-08-29 11:33:00'
 tags: [PC, Sound, Sound Cards, Yamaha]
 ---
 
-The Yamaha YMF724 is part of Yamaha's excellent **YMF7x4** family of PCI sound chips. For retro PC builders, these cards are valuable because they solve a problem that most PCI audio hardware does not: they remain genuinely useful for both **Windows 9x** and **native DOS**.
+The Yamaha YMF724 is one of my favourite retro-PC bargains.
 
-That makes them far more interesting than a typical late-1990s PCI sound card. In the right machine, a YMF724 can provide real Yamaha FM synthesis, strong DOS compatibility, and very good Windows drivers without needing an ISA slot.
+I found mine on eBay for only `$20` in February 2022. It was not even labelled as a `YMF724`, but I could make out the chips in the listing photo and decided it was worth the risk. It paid off nicely, and it remains good proof that proper eBay bargains still exist if you pay attention.
 
-### Why the YMF724 is special
+### What it is
 
-The YMF724 and its close relatives stand out because they combine several useful traits:
+The YMF724 is part of Yamaha's `YMF7x4` family of PCI sound chips. For retro-PC use, these cards are special because they combine real Yamaha FM synthesis, strong Windows support, and unusually good DOS compatibility for a PCI card.
 
-- genuine **Yamaha OPL3** FM synthesis
-- strong DOS compatibility for a PCI sound card
-- good Windows 95, 98, and XP driver support
-- support for Yamaha's XG MIDI features under Windows
-- wide availability on low-cost OEM and no-name boards
+### Why I keep it
 
-For many late Socket 7, Pentium II, Pentium III, and even some much newer retro builds, that combination is hard to beat.
+I keep the YMF724 around because it solves one of the hardest retro-PC problems elegantly:
 
-### DOS compatibility
+- getting strong DOS audio without an ISA slot
+- keeping Windows support easy
+- getting better music options than most PCI sound cards offer
 
-This is the big reason people still seek these cards out.
+It is one of the few PCI cards that feels genuinely exciting rather than merely acceptable.
 
-Unlike most PCI sound cards, the YMF724 can provide practical DOS game support with:
+### My take
 
-- Sound Blaster compatibility
-- real OPL3 music
-- usable setup tools and Yamaha's **DSDMA** TSR support
+My take is that this is the most compatible PCI sound card for DOS.
 
-That does not make it identical to a classic ISA Sound Blaster, but it does make it one of the most useful compromises on systems where ISA is gone.
+The DOS support via `DSDMA` is incredible. It works on surprisingly modern hardware and makes the card useful in systems where most PCI audio options fall apart. On top of that, I was super impressed by the MIDI side. General MIDI already sounds good, but `XG MIDI` sounds incredible on this card. It is a shame there is not more software support for XG, because when you do hear it properly, it is a real highlight.
 
-In practice, **DSDMA** is also a much more dependable path than the Sound Blaster Live!'s DOS support. It can still work decently well on surprisingly modern retro PCs, including some Core 2-era systems, which is a big part of why the YMF724 remains so valuable.
+There are very few real downsides here.
 
-### Windows support
+### Pros
 
-Under Windows 9x, the YMF724 is also very comfortable:
+- best DOS compatibility I have seen from a PCI sound card
+- `DSDMA` can keep DOS sound working on quite modern machines
+- real Yamaha FM synthesis
+- excellent Windows support
+- `XG MIDI` sounds fantastic
 
-- stable drivers
-- good game compatibility
-- Yamaha XG MIDI features
-- easy integration into mixed DOS and Windows retro builds
+### Cons
 
-That means the same card can make sense in a Windows 98 gaming machine and still carry some of the load when you reboot into DOS.
+- General MIDI in DOS is the main weak point
+- `XG MIDI` is wonderful, but there is not much software that takes advantage of it
 
-### Why I care about it
+### Other useful things to know
 
-For my own builds, the YMF724 matters because it is one of the cleanest ways to get strong DOS audio on newer PCI-era systems.
+- This is the card I would reach for before a `Sound Blaster Live!` if DOS compatibility is the priority.
+- It is a particularly strong choice for mixed-era builds that need to cover DOS, Windows 98, and even newer PCI-only systems.
+- Windows is where you really get to enjoy the XG side of the card.
+- For me, the only meaningful limitation is that General MIDI is not working in DOS, only in Windows.
 
-It was a key part of the **retro rocket** OptiPlex 380 build, where it helped turn a cheap OEM PC into a machine that could handle DOS, Windows 98, and Windows XP without relying entirely on modern software tricks.
-
-### Limitations
-
-The YMF724 is excellent, but it is not magic:
-
-- it still depends on the motherboard and chipset behaving reasonably
-- it is not a universal fix for every PCI-only system
-- some builders will still prefer ISA for maximum authenticity
-
-Even so, it remains one of the strongest PCI sound-card choices for mixed-era retro PCs, and a much more dependable DOS option than a Sound Blaster Live! in most retro-builder scenarios.
-
-### Learn more
+### Related on this site
 
 - [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})
 - [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})
+- [Creative Labs Sound Blaster Live!]({% link _hardware/creative-labs-sound-blaster-live.md %})
+- [New retrocomputing arrival! Yamaha YMF724F sound card. I’m trying to get DOS sound working on an ICH7 southbridge. Wish me luck!]({% post_url 2022-02-26-yamaha-ymf724-pci-sound-card-has-arrived %})

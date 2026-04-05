@@ -1,109 +1,65 @@
 ---
 layout: post
 title: HP Compaq t5710
-summary: Hardware overview and retro gaming notes for the HP Compaq t5710 thin client, with a focus on DOS and Windows 98 use.
+summary: My take on the HP Compaq t5710 as a tiny, silent, and surprisingly authentic retro PC for DOS and light Windows gaming.
 date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
 ---
 
 ![](/img/posts/hp-compaq-t5710-back.jpg)
 
-The HP Compaq t5710 is a compact **thin client** released in 2004, designed primarily for enterprise deployments. Despite its intended purpose as a lightweight networked device, it has become a surprisingly capable platform for **DOS and Windows 98 gaming** — particularly for retro enthusiasts with limited space.  
+The HP Compaq t5710 is one of my favourite retro-PC finds.
 
-I first purchased one after moving to New York in 2019, seeking a retro PC that didn’t take up much apartment space. Its small footprint hides a surprisingly flexible system that supports classic DOS audio, early Windows 9x gaming, and even PCI graphics expansion.
+I picked mine up cheaply for about `$60` in September 2020, not long after moving into a small New York apartment. I wanted something tiny but still authentic, and a Phil's Retro Computing Lab video pushed me toward giving this odd little thin client a chance. That turned out to be a very good decision.
 
----
+### What it is
 
-### Why the t5710 is interesting for retro use
+The t5710 is a fanless thin client from the mid-2000s. In normal business use it was meant to be a compact terminal, but for retro use it is much more interesting than that sounds because it has built-in DOS-friendly audio, solid DOS performance, and an unusually useful PCI expansion slot.
 
-Thin clients aren’t usually associated with gaming, but the t5710 has several features that make it attractive:
+### Why I keep it
 
-- Compact, low-noise, and energy-efficient
-- Onboard legacy support:
-  - **PS/2 keyboard/mouse**
-  - Serial header for classic input devices
-- A **PCI expansion slot**, uncommon in small thin clients
-- Fully DOS-compatible audio:
-  - Sound Blaster Pro support
-  - AdLib FM synthesis
-- Windows 98–friendly hardware once configured
+I keep the t5710 because it solves a very specific problem brilliantly:
 
-Despite being a 2004 device, it covers nearly every retro use-case in a single, low-cost, ultra-small form factor.
+- it is genuinely tiny
+- it runs silently
+- it feels like real hardware rather than a compromise
+- it is much more expandable than most machines this size
 
----
+This has grown into my favourite mini retro PC. For DOS in particular, it just makes sense.
 
-### Specifications
+### My take
 
-| Component           | Details                                                                 |
-|---------------------|-------------------------------------------------------------------------|
-| **CPU**             | Transmeta Crusoe, 800 MHz                                               |
-| **RAM**             | 256–512 MB DDR2 (expandable depending on model)                         |
-| **Graphics**        | Integrated ATI Radeon 7000M with 16 MB dedicated graphics memory        |
-| **Storage**         | 44-pin IDE for Disk on Module or Compact Flash storage                  |
-| **Audio**           | SBPro–compatible audio; supports DOS Sound Blaster / AdLib              |
-| **Expansion**       | 1× PCI slot                                                             |
-| **I/O**             | PS/2 keyboard/mouse, 4x USB 2.0, serial port, parallel port, VGA output |
-| **OS Compatibility**| DOS, Windows 98 SE, Windows XP                                          |
-| **Form Factor**     | Thin client (small footprint, fanless design)                           |
+My take is that the t5710 is one of the best small-footprint retro PCs around, as long as you understand what it is good at.
 
----
+It has built-in Sound Blaster and AdLib audio, strong DOS performance, silent operation, and a PCI slot that makes the machine much more flexible than it has any right to be. I have had success using that slot for more capable sound cards such as the `ESS Solo-1`, and also for a `3dfx Voodoo 2`.
 
-### DOS and Windows 98 compatibility
+The catch is that the CPU is a bit weak for heavier Windows 3D gaming. That makes the t5710 ideal for DOS and lighter Windows titles rather than as an all-purpose late-1990s monster.
 
-The t5710 shines in DOS and early Windows environments:
+### Pros
 
-- Native DOS audio works **out of the box**:
-  - Sound Blaster Pro emulation
-  - AdLib FM synthesis fully functional
-- Windows 98 installation is achievable with minor tweaks
-- PS/2 keyboard input works reliably, and USB can be used if necessary
-- Storage: a CF-to-IDE adapter provides reliable disk access for Win98
+- tiny footprint
+- silent operation
+- built-in Sound Blaster and AdLib audio
+- excellent fit for DOS gaming
+- PCI expansion slot is very unusual and genuinely useful in a machine this small
 
-After trial and error, I was able to <a href="https://youtu.be/V4DIPffO-sI" target="_blank">successfully install and game on Windows 98</a>.
+### Cons
 
----
+- CPU is weak for heavier Windows 3D games
+- only one PCI slot, so expansion choices matter
+- storage setup can need adapters and a bit of planning
 
-### PCI expansion: 3dfx Voodoo 2
+### Other useful things to know
 
-The single PCI slot opens the door to more ambitious retro builds:
+- The built-in DOS audio support is a big part of what makes the machine special. It feels much more authentic than many later small-form-factor PCs.
+- The PCI slot opens up far more ambitious builds than you would expect from a thin client.
+- I have had success with both upgraded sound hardware and a `Voodoo 2`, which is a large part of why I rate the machine so highly.
+- For me, the sweet spot is DOS and very light Windows gaming, not demanding Windows 3D.
 
-- After testing, I successfully installed a **3dfx Voodoo 2 PCI card**
-- This allowed for classic **Glide acceleration** in Windows 98 and DOS games
-- Combining onboard SBPro-compatible audio and Voodoo 2 graphics produces a surprisingly authentic retro experience
+### Related on this site
 
-This is particularly notable because most thin clients of this era do **not** support legacy PCI expansion for 3dfx hardware.
-
----
-
-### Practical retro notes
-
-- **PS/2 splitter:** I was able to use a [working Monoprice PS/2 splitter]({% post_url 2021-11-13-using-monoprice-ps2-splitter-with-hp-compaq-t5710-review %}) for reliable keyboard and mouse input
-- **Sound:** Both native DOS and Win98 sound work well; MIDI playback and FM synthesis are accurate
-- **GPU:** While onboard S3 graphics are adequate for early DOS titles, Voodoo 2 PCI support enables higher-end Glide games
-- **Form factor:** Ultra-compact; ideal for small desks, apartments, or dedicated retro setups
-
----
-
-### Known quirks and limitations
-
-- Limited RAM (256–512 MB) may require careful configuration for Windows 98 or XP
-- Only one PCI slot: expansion choices are limited
-- Onboard graphics performance is weak for later 3D titles
-- Storage options may require adapters or compact drives
-
-None of these are deal-breakers, but they require planning for optimal retro performance.
-
----
-
-### Summary
-
-The HP Compaq t5710 is a remarkable “hidden gem” for retro enthusiasts. It combines:
-
-- Small footprint
-- Authentic DOS / Windows 98 sound
-- Reliable PS/2 input
-- PCI expansion for Voodoo 2 and other legacy cards
-
-For compact retro PC setups where space is at a premium, the t5710 delivers a surprising amount of capability in a single, tiny package.  
-
-I can **thoroughly recommend** it for anyone exploring classic DOS, early Windows
+- [HP Compaq t5710 Review – Great for DOS and Windows 98 Gaming?]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %})
+- [How To Install Windows 98 from USB Flash Drive with Easy2Boot - HP Compaq t5710]({% post_url 2021-07-11-how-to-install-windows-98-from-usb-flash-drive-with-easy2boot-easy-2-boot %})
+- [HP Compaq t5710 – Using a PS/2 Splitter Cable]({% post_url 2021-11-13-using-monoprice-ps2-splitter-with-hp-compaq-t5710-review %})
+- [Adding 3dfx Voodoo2 to a Thin Client PC]({% post_url 2022-02-15-adding-3dfx-voodoo2-to-a-thin-client-pc %})
+- [3Dfx Voodoo 2]({% link _hardware/3dfx-voodoo-2.md %})
