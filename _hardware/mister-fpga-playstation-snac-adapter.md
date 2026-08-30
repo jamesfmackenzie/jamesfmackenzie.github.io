@@ -29,6 +29,7 @@ MiSTer is at its best when the whole chain is authentic, and input is the part y
 
 ### Related on this site
 
+- [Native PlayStation Accessories on MiSTer (video)]({% post_url 2022-11-19-native-playstation-accessories-on-mister-controller-memory-card-snac %})
 - [How to Connect PlayStation Accessories to MiSTer (video)]({% post_url 2022-11-26-how-to-connect-playstation-controllers-accessories-to-mister-fpga %})
 - [MiSTer FPGA]({% link _hardware/mister-fpga.md %})
 - [MiSTer FPGA IO Board]({% link _hardware/mister-fpga-io-board.md %})

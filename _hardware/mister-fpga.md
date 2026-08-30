@@ -1,99 +1,61 @@
 ---
 layout: post
 title: MiSTer FPGA
-summary: Hardware overview of MiSTer FPGA and why it remains one of the most compelling modern platforms for accurate retro gaming.
+summary: My overview of MiSTer FPGA — what it actually is, why FPGA recreation beats software emulation for accuracy and latency, and the add-on boards that turn a bare dev board into a real retro platform.
 date: '2024-08-29 11:33:00'
 tags: [Computers, Consoles, Emulation, MiSTer FPGA]
 ---
 
-The **MiSTer FPGA** is a modern, open-source project designed to faithfully emulate classic computers, consoles, and arcade machines **at the hardware level**, using FPGA (Field-Programmable Gate Array) technology. Unlike software emulation, the MiSTer implements the logic of the original hardware directly in programmable circuits, producing extremely accurate timing, graphics, and audio reproduction.
+![The MiSTer's DE10-Nano board with an SDRAM add-on fitted](/img/posts/mister-fpga-hardware.jpg){: width="680"}
 
-It has become a favorite for retro gaming enthusiasts who demand **the closest experience to the original machines**, without the limitations or inaccuracies of software emulators.
+MiSTer is an open project that recreates classic computers, consoles and arcade machines on modern FPGA hardware. Instead of a program *interpreting* what old hardware did, an FPGA is wired up to *behave* like that hardware at the logic level — which, done well, gets you extremely close to the real thing on timing, video and audio.
 
----
+I have been running one since 2020, mostly for the retro PC (ao486), Atari ST and console cores.
 
-### Why the MiSTer FPGA is special
+### What it actually is
 
-- **Hardware-level accuracy** – recreates original CPU, GPU, sound chips, and I/O behavior  
-- **Wide system support** – cores exist for NES, SNES, Genesis, Sega CD, Neo Geo, Atari ST, Commodore 64, arcade boards, and more  
-- **Expandable design** – supports add-on boards for SDRAM, USB hubs, analog video, and I/O adapters  
-- **Low latency input** – USB and PS/2 controller support, ideal for precise arcade and console gameplay  
-- **Open-source ecosystem** – active community, frequent updates, and continual development of new cores
+"MiSTer" is really four things stacked together:
 
-The MiSTer is popular among enthusiasts who care about **perfectly timed gameplay, accurate video output, and original audio**, as well as those building compact retro gaming setups.
+- **The board** — a Terasic **DE10-Nano**, an FPGA development kit built around a Cyclone V SoC (FPGA fabric plus a dual-core ARM that runs the host OS)
+- **Cores** — hardware definitions, written in HDL, for each system you want to run
+- **A Linux OS** on the microSD card that loads and manages those cores
+- **Add-on boards** — SDRAM, I/O, USB and more, that fill in what the bare DE10-Nano is missing
 
----
+The whole project is open source and community-run, with new cores and fixes landing constantly.
 
-### Core hardware specifications
+### Why I rate it
 
-| Component          | Details |
-|-------------------|---------|
-| **Main board**     | DE10-Nano FPGA (Cyclone V SoC) |
-| **CPU/FPGA**       | ARM Cortex-A9 + Cyclone V FPGA fabric |
-| **RAM**            | On-board SDRAM; expandable with add-on SDRAM boards (512MB–1GB typical) |
-| **Storage**        | MicroSD card for cores, ROMs, and configuration |
-| **Video output**   | HDMI (digital) with add-on VGA / analog options |
-| **Audio output**   | HDMI audio; optional analog I/O via add-on boards |
-| **I/O**            | USB hub, PS/2 adapters, GPIO for expansion |
-| **Cores supported**| Consoles, computers, arcade machines, pinball, and more |
+The appeal is accuracy without the fight. Software emulators can be excellent, but they still model the hardware in code, and the gaps show up as frame-timing wobble, audio glitches or input lag. MiSTer recreates the circuitry itself, so a lot of that simply goes away. It is most worth it for timing-sensitive genres — shoot-'em-ups, platformers, rhythm games — and for systems with awkward video or audio hardware.
 
----
+The other thing I like is the breadth: NES, SNES, Genesis, Neo Geo, Atari ST, Amiga, C64, arcade boards and IBM PC compatibles, all from one box.
 
-### Why FPGA matters for retro gaming
+### The add-on ecosystem
 
-Traditional software emulators interpret the behavior of hardware via software, which can introduce:
+A bare DE10-Nano boots MiSTer, but you will want at least the SDRAM board — most computer and console cores need it. Beyond that, the common upgrades each have their own page here:
 
-- Frame-timing inaccuracies  
-- Audio glitches  
-- Input lag  
+- [I/O Board]({% link _hardware/mister-fpga-io-board.md %}) — analog video for CRTs, cooling, a tidier build
+- [USB Hub]({% link _hardware/mister-fpga-usb-hub.md %}) — room for multiple controllers, keyboard and storage
+- [RTC board]({% link _hardware/mister-fpga-rtc-real-time-clock.md %}) — a battery-backed clock for offline setups
+- [PlayStation SNAC adapter]({% link _hardware/mister-fpga-playstation-snac-adapter.md %}) — original PlayStation controllers wired straight to the FPGA
 
-FPGA emulation, as used in the MiSTer, **recreates the circuitry itself**, producing behavior that is virtually indistinguishable from the original hardware. This is particularly important for:
+### Related on this site
 
-- Timing-sensitive games (platformers, rhythm games, shoot-‘em-ups)  
-- Systems with complex audio or video processing (SNES, Sega CD, Neo Geo, arcade boards)  
-- Multi-system setups where accuracy is preferred over convenience
+- [MiSTer FPGA Part 1 – Intro and Hardware Overview]({% post_url 2020-08-22-mister-fpga-introduction-and-hardware-overview %})
+- [How to Install and Set Up MiSTer FPGA]({% link _howto/how-to-setup-mister-fpga.md %})
 
----
+### MiSTer FPGA videos
 
-### Add-on boards and expansion
+<ul>
+{% for post in site.posts %}
+  {% if post.tags contains "MiSTer FPGA" and post.layout == "youtube" %}
+  <li>
+    <img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
 
-The MiSTer ecosystem supports modular expansion to improve compatibility and usability:
-
-- **SDRAM boards** – required for many cores to run full speed  
-- **USB hub** – connect multiple controllers or storage devices  
-- **Analog video boards** – VGA, component, and composite output for CRT setups  
-- **I/O adapters** – joystick adapters, keyboard adapters, and pinball interface boards
-
-These add-ons let enthusiasts tailor the MiSTer to **their preferred setup**, whether that’s modern HDMI-only gaming or authentic CRT experiences.
-
----
-
-### Recommended use cases
-
-- **Living room retro emulation** – single box, HDMI output, wireless controllers  
-- **Arcade cab conversion** – supports JAMMA adapters, original arcade controls, CRT output  
-- **Classic console preservation** – NES, SNES, Genesis, Neo Geo, and more  
-- **Computer emulation** – C64, Atari ST, Amiga, and IBM PC compatibles
-
-The MiSTer works equally well for casual players, collectors, and purists seeking **perfect timing and low-latency gameplay**.
-
----
-
-### Community and software
-
-- Active development community, both on GitHub and specialized forums  
-- Constantly updated cores and add-ons  
-- Optional frontends like MiSTer GUI or HyperSpin make navigating cores and ROMs easy  
-- Supports scripting and configuration to match the original system experience
-
----
-
-### Summary
-
-The **MiSTer FPGA** is not just another emulator — it’s a **hardware recreation platform** that faithfully reproduces the behavior of dozens of classic systems. Its modular design, FPGA-level accuracy, and broad support for consoles, computers, and arcade hardware make it a **must-have for serious retro enthusiasts** who want the closest experience to the original machines without the compromises of software emulation.
-
----
-
-### Posts
+### MiSTer AO486 guides
 
 {% include mister-fpga-howto-series.md %}
