@@ -40,7 +40,7 @@ The IO Board helps with that. It adds useful real-world features, especially if 
 - tidy case builds
 - a setup that feels stable and intentional
 
-### Learn more
+### Related on this site
 
 - [MiSTer FPGA]({% link _hardware/mister-fpga.md %})
 - [Supercharge your MiSTer FGPA]({% post_url 2022-11-12-supercharge-your-mister-fpga-with-add-ons %})

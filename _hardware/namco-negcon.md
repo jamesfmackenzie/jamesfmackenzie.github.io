@@ -44,7 +44,7 @@ It is not just about running the software. It is about preserving:
 
 That makes the NeGcon more than a curiosity. It is part of what gives the PlayStation platform its character.
 
-### Learn more
+### Related on this site
 
 - [Sony PlayStation]({% link _hardware/sony-playstation-1.md %})
 - [Is Namco NeGcon the Best PlayStation Controller? Hardware Review]({% post_url 2021-12-26-is-namco-negcon-the-best-playstation-controller %})

@@ -80,7 +80,7 @@ My own X800 XL was used in the **retro rocket** OptiPlex 380 build, where it hel
 
 That is a big part of why I rate the card so highly. It is not just historically interesting. It has already proved itself in a practical modern retro build.
 
-### Learn more
+### Related on this site
 
 - [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})
 - [ATi Radeon X800 XL Cooler and Fan Disassembly]({% post_url 2022-04-04-ati-radeon-x800-xl-cooler-and-fan-disassembly %})

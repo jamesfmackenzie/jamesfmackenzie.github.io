@@ -52,7 +52,7 @@ Even with newer options available, the Micomsoft card still has a strong niche.
 
 If I want a workflow where I can capture a low-resolution RGB signal, oversample it, and then reconstruct a clean final image in software, it remains a very respectable option. That is exactly why it worked so well in my Atari ST capture experiments.
 
-### Learn more
+### Related on this site
 
 - [Capturing Native-Resolution Video Without a Scaler]({% post_url 2026-01-11-clean-video-capture-without-a-scaler %})
 - [Raw Video Capture Experiments with a Micomsoft SC-512N1-L/DVI Capture Card]({% post_url 2016-01-30-raw-video-capture-experiments-with-micomsoft-sc-512n1-l-dvi-capture-card-and-atari-st %})

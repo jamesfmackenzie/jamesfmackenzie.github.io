@@ -55,7 +55,7 @@ What keeps the X600 interesting is that it can unlock builds that would otherwis
 
 When it works, it feels like a very elegant bridge between classic Win98 gaming and later hardware.
 
-### Learn more
+### Related on this site
 
 - [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-29-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %})
 - [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})

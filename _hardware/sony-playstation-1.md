@@ -73,9 +73,7 @@ The PlayStation also stands out because of its accessory ecosystem:
 
 These accessories are part of why the platform still feels distinctive today.
 
-### Learn more
-
-Related posts and hardware notes:
+### Related on this site
 
 - [Is Namco NeGcon the Best PlayStation Controller? Hardware Review]({% post_url 2021-12-26-is-namco-negcon-the-best-playstation-controller %})
 - [PlayStation vs MiSTer FPGA accuracy test. Both devices are running Ridge Racer in attract mode.]({% post_url 2022-12-03-how-accurate-is-mister-fpga-versus-vs-original-hardware %})

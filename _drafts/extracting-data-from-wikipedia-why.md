@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extracting Data from Wikipedia: Why Bother?
+title: "Extracting Data from Wikipedia: Why Bother?"
 summary: A framing draft on why Wikipedia is such a useful source for structured extraction, aggregation, and analysis.
 tags: [Data, Wikipedia]
 ---

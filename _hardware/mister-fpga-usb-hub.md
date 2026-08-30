@@ -40,7 +40,7 @@ Some add-ons are specialized. The USB Hub is different because it improves the b
 
 It is not the most exciting board, but it is one of the most sensible.
 
-### Learn more
+### Related on this site
 
 - [MiSTer FPGA]({% link _hardware/mister-fpga.md %})
 - [Supercharge your MiSTer FGPA]({% post_url 2022-11-12-supercharge-your-mister-fpga-with-add-ons %})

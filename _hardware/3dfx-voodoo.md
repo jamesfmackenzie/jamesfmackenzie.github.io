@@ -17,10 +17,10 @@ For retro gaming enthusiasts, the 3dfx Voodoo series remains iconic. It represen
 ### 3Dfx Voodoo Models
 
 <ul>
-  {% for page in site.hardware %}
-  {% if page.tags contains "3Dfx Voodoo Models" %}
+  {% for card in site.hardware %}
+  {% if card.tags contains "3Dfx Voodoo" and card.url != "/hardware/3dfx-voodoo/" %}
   <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
+      <a href="{{ card.url }}">{{ card.title }}</a>
   </li>
   {% endif %}
   {% endfor %}

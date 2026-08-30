@@ -61,7 +61,7 @@ The original Voodoo is not the most practical retro graphics card if your only g
 
 It represents the moment when PC 3D acceleration stopped being experimental and started becoming essential.
 
-### Learn more
+### Related on this site
 
 - [3Dfx Voodoo]({% link _hardware/3dfx-voodoo.md %})
 - [3Dfx Voodoo 2]({% link _hardware/3dfx-voodoo-2.md %})

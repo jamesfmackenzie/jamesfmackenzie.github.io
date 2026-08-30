@@ -43,7 +43,7 @@ That means:
 - dependable results
 - a good baseline card when I do not need to fight an awkward legacy video signal
 
-### Learn more
+### Related on this site
 
 - [AVerMedia Live Gamer 4K – Cheap and Reliable 4K60 Video Capture]({% post_url 2022-11-06-avermedia-gc573-live-gamer-4k-4k60-video-capture-card %})
 - [Micomsoft SC-512N1-L/DVI]({% link _hardware/micomsoft-sc-512-n1-l-dvi-pci-e-capture-card.md %})
