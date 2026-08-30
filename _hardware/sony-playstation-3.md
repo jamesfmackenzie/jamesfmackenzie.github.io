@@ -1,49 +1,56 @@
 ---
 layout: post
 title: Sony PlayStation 3
-summary: Hardware overview of the Sony PlayStation 3, a powerful and sometimes awkward console that still makes sense for original hardware, media playback, and specialist setups.
+summary: My take on the PlayStation 3 as a technically ambitious console that is still useful for original games, Blu-ray, and a few specialist AV setups modern boxes do not replace neatly.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Sony PlayStation]
 ---
 
-The PlayStation 3 is one of Sony's most technically ambitious consoles. It had a complicated launch, a long lifespan, and a reputation that shifted over time, but the hardware itself remains very interesting.
+The PlayStation 3 is one of Sony's most ambitious and most awkward consoles.
 
-That is partly because of the software library, but also because the PS3 sits in a useful middle ground between retro and modern. It is old enough to feel like a distinct original-hardware platform, yet new enough to remain useful for media playback, late-HD-era gaming, and specialist setups.
+It had a complicated launch, a long life, and a reputation that changed over time, but the hardware itself still matters because it sits in a useful middle ground. It is old enough to feel like a distinct original-hardware platform, but still new enough to be handy in a living-room AV setup.
 
-### Why the PlayStation 3 is interesting
+### What it is
 
-The PS3 stands out because it combines:
+The PS3 is Sony's seventh-generation console and one of the defining machines of the early HD era. It mixes a strong software library with Blu-ray playback, unusual hardware revisions, and more day-to-day utility than many old consoles can claim.
 
-- a strong first-party and late-HD-era game library
+### Why I keep it
+
+I keep the PS3 around because it still does a few valuable things in one machine:
+
+- original PS3 software
 - Blu-ray playback
-- distinctive hardware revisions and capabilities
-- practical value in specialist display and media setups
+- useful media and AV edge cases
+- a few awkward jobs that newer hardware does not always replace cleanly
 
-It is not just a console to archive. It can still be a useful living-room box in the right setup.
+It is not just a console to archive. In the right setup, it is still practical.
 
-### Why original hardware still matters
+### My take
 
-The PS3 still makes sense on real hardware because:
+My take is that the PS3 is one of those consoles that earns its keep through versatility.
 
-- native software and controller support are straightforward
-- Blu-ray and 3D media playback can still be relevant
-- the real console avoids the configuration overhead of emulation
+I care about the games, but I also care that it can still make sense as a Blu-ray box or as part of a more specialist display setup. That gives it a stronger case than a machine that only survives on nostalgia.
 
-That is especially true when the machine is part of a broader AV setup rather than just a game collection.
+### Pros
 
-### Why it still has a place
+- strong first-party and HD-era library
+- Blu-ray playback still matters in some setups
+- real hardware remains straightforward compared with emulation
+- more useful in AV setups than many older consoles
 
-The PS3 is one of those consoles that ended up being more versatile than its launch-era reputation suggested.
+### Cons
 
-It can still earn its place through:
+- hardware revisions can make the platform story messy
+- less emotionally tidy than Sony's earlier consoles
+- some of its modern-looking functions have partly been replaced by newer boxes
 
-- original game support
-- media playback
-- awkward use cases modern consoles no longer handle as well
+### Other useful things to know
 
-That alone makes it worth keeping around.
+- The PS3 makes the most sense when it is part of a broader living-room setup, not just a shelf of old consoles.
+- Blu-ray and 3D media playback can still be relevant depending on the rest of your hardware.
+- For me, the interesting part is that the PS3 still has real utility rather than surviving only as a museum piece.
 
-### Learn more
+### Related on this site
 
 - [How to Watch 3D Movies on a BenQ TH575 Projector]({% post_url 2025-11-23-how-to-watch-3d-movies-on-a-benq-th575-projector %})
 - [This U9/ViewHD HDMI splitter allows video capture from devices that have HDCP force-enabled (like the PlayStation TV and PlayStation 3). Just saying!]({% post_url 2022-05-03-the-u9-viewhd-splitter-will-strip-hdcp-and-allow-capture-from-devices-like-playstation-3 %})

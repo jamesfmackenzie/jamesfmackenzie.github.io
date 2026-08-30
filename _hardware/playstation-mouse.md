@@ -1,46 +1,56 @@
 ---
 layout: post
 title: PlayStation Mouse
-summary: Hardware overview of the PlayStation Mouse, one of Sony's stranger and more charming official accessories for the original PlayStation.
+summary: My take on the PlayStation Mouse as one of Sony's oddest and most charming accessories, and a good reminder that the original PlayStation ecosystem was broader than people remember.
 date: '2024-08-29 11:33:00'
 tags: [Peripherals, Sony PlayStation]
 ---
 
-The PlayStation Mouse is one of those accessories that makes the original PlayStation feel delightfully experimental. Most people associate the console with gamepads, racing wheels, and memory cards, but Sony also shipped a proper mouse for games that wanted more PC-like input.
+The PlayStation Mouse is exactly the kind of accessory I enjoy finding around old console ecosystems.
 
-That makes it a niche accessory, but also a very memorable one.
+Most people think of the original PlayStation as a console of pads, memory cards, and maybe a few specialist controllers. But Sony also shipped a proper mouse, and that makes the whole platform feel slightly broader and more experimental than the simplified memory of it.
 
-### Why the PlayStation Mouse is interesting
+### What it is
 
-The mouse matters because it shows how broad the PlayStation ecosystem really became:
+The PlayStation Mouse is an official Sony accessory for the original PlayStation. It gave supported games a more PC-like input method and helped certain genres make much more sense on the console.
 
-- it gave developers a different style of input to target
-- it helped certain strategy, simulation, and point-and-click games feel much more natural
-- it remains a fun accessory to test on original hardware and on MiSTer FPGA
+### Why I keep it
 
-It is also just a very PlayStation object: slightly odd, surprisingly practical, and easy to overlook if you only think of the console as a pad-and-CRT platform.
+I keep it because it says something useful about the PlayStation ecosystem:
 
-### What it is good for
+- Sony supported stranger and broader ideas than people often remember
+- some games genuinely benefit from pointer-style input
+- it is fun to test on original hardware and on `MiSTer FPGA`
+- it makes the platform feel richer than its headline specs suggest
 
-The PlayStation Mouse makes the most sense in games that benefit from pointer-style control:
+It is also just a very PlayStation object: slightly odd, easy to overlook, and more practical than expected.
 
-- strategy and management games
-- point-and-click interfaces
-- unusual controller-compatible experiments from the late 1990s
+### My take
 
-It was never a universal accessory, but in supported games it makes a lot of sense.
+My take is that the PlayStation Mouse is exactly the sort of accessory that makes original hardware fun.
 
-### Why it still matters now
+It was never universal, but that is not really the point. The point is that it shows how much input experimentation the platform supported, and in the right games it makes a lot of sense.
 
-For retro hardware enthusiasts, the PlayStation Mouse is useful because it is:
+### Pros
 
-- a genuine original PlayStation accessory
-- a nice example of Sony's wider peripheral ecosystem
-- a good test case for original-hardware and MiSTer accessory support
+- charming and unusual official accessory
+- useful in supported strategy and pointer-driven games
+- good test case for PlayStation accessory support on real hardware and MiSTer
+- helps make the platform feel broader and more interesting
 
-It is exactly the kind of hardware that makes a platform feel richer than its headline specs suggest.
+### Cons
 
-### Learn more
+- niche accessory with limited software support
+- easy to ignore if you only think of the PlayStation as a standard gamepad console
+- more interesting to enthusiasts than to most casual players
+
+### Other useful things to know
+
+- The PlayStation Mouse makes the most sense in strategy, management, point-and-click, and other pointer-friendly games.
+- It is one of those accessories that matters less for raw utility than for what it reveals about the platform.
+- For me, it is exactly the kind of overlooked hardware that keeps a console ecosystem interesting.
+
+### Related on this site
 
 - [Sony PlayStation]({% link _hardware/sony-playstation-1.md %})
 - [How to Connect PlayStation Accessories to MiSTer]({% post_url 2022-11-26-how-to-connect-playstation-controllers-accessories-to-mister-fpga %})
