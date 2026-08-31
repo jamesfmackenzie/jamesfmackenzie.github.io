@@ -3,7 +3,7 @@ layout: post
 title: Atari ST UltraSatan
 summary: My take on the UltraSatan, an SD-card hard drive replacement for the Atari ST that connects to the ACSI port — bulk storage for a whole game library, and a fast way to load files from a PC.
 date: '2024-08-29 11:33:00'
-tags: [Atari ST, Peripherals]
+tags: [Atari ST, Peripherals, Storage Devices]
 ---
 
 The UltraSatan is a hard disk replacement for the Atari ST that stores everything on SD cards. It connects to the ST's ACSI port and, once set up, behaves like a set of hard drive partitions — but with no moving parts, no noise, and cards you can pull out and read on a modern PC.
