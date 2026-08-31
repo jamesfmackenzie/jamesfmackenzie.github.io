@@ -2,7 +2,7 @@
 layout: post
 title: PCI Bus on Modern PCs
 summary: A technical draft on how PCI survives on newer systems through PCIe bridge chips, and why some legacy cards work better than others.
-tags: [PC Hardware, PCI, Retrocomputing]
+tags: [PC, PCI, Retrocomputing]
 ---
 
 Modern consumer PCs no longer provide a native PCI bus in the way older chipsets did. If a current-era motherboard or adapter still exposes PCI slots, there is usually a bridge chip involved.

@@ -2,7 +2,7 @@
 layout: post
 title: XTIDE Notes
 summary: A practical working draft on getting XTIDE and CompactFlash storage booting on an older PC, including the failures along the way.
-tags: [DOS, PC Hardware, Retrocomputing, XTIDE]
+tags: [DOS, PC, Retrocomputing, XTIDE]
 ---
 
 This draft is meant to become one large practical XTIDE article first, with smaller spin-off posts later if needed.

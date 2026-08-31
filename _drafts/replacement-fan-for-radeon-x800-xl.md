@@ -2,7 +2,7 @@
 layout: post
 title: Replacement Fan for Radeon X800 XL
 summary: A practical draft on identifying and replacing the fan used on a Radeon X800 XL graphics card.
-tags: [GPU, PC Hardware, Repairs, Retrocomputing]
+tags: [GPU, PC, Repairs, Retrocomputing]
 ---
 
 Old graphics cards often fail in very boring ways, and worn-out fans are high on the list. This draft is about replacing the fan on a Radeon X800 XL rather than trying to source a whole new cooler.

@@ -2,7 +2,7 @@
 layout: post
 title: Industrial PCs and Passive Backplanes
 summary: A starter draft explaining industrial PC backplanes and why they are interesting for retro and unusual PC hardware.
-tags: [PC Hardware, Retrocomputing]
+tags: [PC, Retrocomputing]
 ---
 
 Industrial PCs and passive backplanes are a weird but fascinating corner of PC hardware. They look unfamiliar at first, but the design solves some very practical problems.

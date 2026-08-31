@@ -3,7 +3,7 @@ layout: post
 title: I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC
 date: '2026-03-30 08:00:00'
 summary: A case-study post on why the Dell Dimension E520 looked promising for Windows 98, but turned into a more mixed DOS, Win98, and XP experiment.
-tags: [DOS, PC Hardware, Retrogaming, Windows 98, Windows XP]
+tags: [DOS, PC, Retrogaming, Windows 98, Windows XP]
 ---
 
 The Dell Dimension E520 looked like it should be a good retro sleeper build: cheap Core 2-era hardware, PCI and PCIe expansion, a BIOS RAM-limiting option for Windows 98 setup, and just enough weirdness to make it interesting.
