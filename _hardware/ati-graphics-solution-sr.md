@@ -68,6 +68,8 @@ The **ATI Graphics Solution SR** may not have had the raw appeal of VGA or the w
 In many ways, this card laid the groundwork for ATI’s reputation in the graphics market — a company that would go on to challenge (and eventually merge with) giants like AMD.  
 
 
-### Blog Posts
+### Related on this site
 
+- [ATi]({% link _hardware/ati.md %})
+- [ATi Small Wonder Graphics Solution]({% link _hardware/ati-small-wonder-graphics-solution-aka-graphics-solution-sc.md %})
 - [CGA Gaming on an MDA Monochrome Monitor]({% post_url 2025-08-17-cga-gaming-on-an-mda-ttl-monochrome-monitor-with-the-ati-graphics-solution-sr-amstrad-pc1640 %})

@@ -21,3 +21,8 @@ My model is the 512MB PowerColor Radeon HD 4670, manufactured by PowerColor usin
 ![PowerColor Radeon HD 4670 front](/img/hardware/powercolor-radeon-hd-4670-front.jpg)
 
 ![PowerColor Radeon HD 4670 back](/img/hardware/powercolor-radeon-hd-4670-back.jpg)
+
+### Related on this site
+
+- [ATi]({% link _hardware/ati.md %})
+- [ATi Radeon X800 XL]({% link _hardware/ati-radeon-x800-xl.md %})

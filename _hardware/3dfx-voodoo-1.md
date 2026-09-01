@@ -63,6 +63,6 @@ It represents the moment when PC 3D acceleration stopped being experimental and 
 
 ### Related on this site
 
-- [3Dfx Voodoo]({% link _hardware/3dfx-voodoo.md %})
+- [3Dfx]({% link _hardware/3dfx.md %})
 - [3Dfx Voodoo 2]({% link _hardware/3dfx-voodoo-2.md %})
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})

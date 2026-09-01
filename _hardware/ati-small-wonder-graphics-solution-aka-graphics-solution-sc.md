@@ -64,4 +64,10 @@ ATI would go on to refine the Small Wonder line, eventually replacing it with th
 
 The Small Wonder Graphics Solution is a fascinating piece of retro hardware. It wasn’t the most powerful graphics card of its era, but it solved a very real problem for early PC owners — and it introduced ATI to the world as more than just a clone manufacturer.  
 
-For collectors and enthusiasts today, the Small Wonder represents the **roots of ATI’s graphics empire**, long before Radeon and AMD came into the picture.  
+For collectors and enthusiasts today, the Small Wonder represents the **roots of ATI’s graphics empire**, long before Radeon and AMD came into the picture.
+
+
+### Related on this site
+
+- [ATi]({% link _hardware/ati.md %})
+- [ATi Graphics Solution SR]({% link _hardware/ati-graphics-solution-sr.md %})  

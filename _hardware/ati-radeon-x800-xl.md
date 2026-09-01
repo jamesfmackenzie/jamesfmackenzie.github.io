@@ -72,6 +72,8 @@ Many surviving examples are cheap because they arrive with:
 
 That is exactly what happened with my own card. It was inexpensive, but the fan was making an awful grinding noise and needed attention before the card was pleasant to use.
 
+![The X800 XL with its cooler removed, showing the R430 GPU](/img/hardware/ati-radeon-x800-xl-r430-gpu.jpg){: width="680"}
+
 That kind of age-related maintenance is now just part of owning hardware from this era.
 
 ### My card
@@ -82,6 +84,7 @@ That is a big part of why I rate the card so highly. It is not just historically
 
 ### Related on this site
 
+- [ATi]({% link _hardware/ati.md %})
 - [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})
 - [ATi Radeon X800 XL Cooler and Fan Disassembly]({% post_url 2022-04-04-ati-radeon-x800-xl-cooler-and-fan-disassembly %})
 - [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})

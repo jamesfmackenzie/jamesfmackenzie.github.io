@@ -12,7 +12,7 @@ The GeForce 6200 is a budget card from 2004. I bought the **PCI version** — on
 
 ### The Windows 98 problem
 
-Under Windows 98 SE, every game stutters constantly. Direct3D performance is also far lower than the spec sheet suggests — barely ahead of a [3Dfx Voodoo3]({% link _hardware/3dfx-voodoo.md %}) 2000, which is a 16 MB, 143 MHz card from 1999. The 6200 is a 256 MB, 300 MHz card from 2004. It should not be close.
+Under Windows 98 SE, every game stutters constantly. Direct3D performance is also far lower than the spec sheet suggests — barely ahead of a [3Dfx Voodoo3]({% link _hardware/3dfx-voodoo-3.md %}) 2000, which is a 16 MB, 143 MHz card from 1999. The 6200 is a 256 MB, 300 MHz card from 2004. It should not be close.
 
 My first suspicion was the PCI bus holding back a chip designed for AGP. But running the same card in **Windows XP** roughly doubles the frame rate in some scenes, so the bottleneck is not the bus — it is the driver.
 
@@ -39,4 +39,4 @@ Don't buy a GeForce 6200 — or, most likely, any GeForce 6-series card — for 
 
 - [Do Not Buy a GeForce 6200 for Windows 98]({% post_url 2024-09-20-do-not-buy-a-geforce-6200-for-windows-98-retro-gaming %})
 - [Recently bought this GeForce 6200 PCI... a thread]({% post_url 2024-09-20-do-not-buy-a-geforce-6200-6-series-for-windows-98 %})
-- [3Dfx Voodoo]({% link _hardware/3dfx-voodoo.md %})
+- [3Dfx]({% link _hardware/3dfx.md %})

@@ -29,6 +29,6 @@ For a period Windows 98 build the Voodoo 3 is one of the most practical 3Dfx car
 ### Related on this site
 
 - [Does this Arcade Machine Voodoo 3 work on PC?]({% post_url 2024-02-16-the-cheapest-3dfx-voodoo3-voodoo-3 %})
-- [3Dfx Voodoo]({% link _hardware/3dfx-voodoo.md %})
+- [3Dfx]({% link _hardware/3dfx.md %})
 - [3Dfx Velocity 100]({% link _hardware/3dfx-voodoo-velocity-100.md %}) — a cut-down Voodoo 3
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})

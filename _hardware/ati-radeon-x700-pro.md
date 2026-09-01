@@ -23,3 +23,9 @@ Unfortunately the years haven't been kind to my card. The fan bearings have worn
 Some TLC required!
 
 ![Connect3D Radeon X700 Pro graphics corruption](/img/hardware/connect3d-radeon-x700-corrupted-graphics.jpg)
+
+### Related on this site
+
+- [ATi]({% link _hardware/ati.md %})
+- [ATi Radeon X600]({% link _hardware/ati-radeon-x600.md %})
+- [ATi Radeon X800 XL]({% link _hardware/ati-radeon-x800-xl.md %})

@@ -7,5 +7,5 @@ summary: |-
 
   Spoiler: it’s **really fast**.
 videoId: J0z09Ddr58w
-tags: [Raspberry Pi, Retrogaming, Videogames, Videos]
+tags: [ATi Graphics, Raspberry Pi, Retrogaming, Videogames, Videos]
 ---

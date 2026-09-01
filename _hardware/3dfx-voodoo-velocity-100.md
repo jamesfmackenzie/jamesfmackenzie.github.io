@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [3Dfx Voodoo, Graphics Cards, PC]
 ---
 
-The 3Dfx Velocity 100 is a budget AGP graphics card released in 1999, based directly on the [Voodoo3]({% link _hardware/3dfx-voodoo.md %}) architecture. It was aimed at the low end of the market and sold for around $50, largely through OEM channels. I made a whole video about it — [The Secret 3Dfx Graphics Card (You Never Knew Existed)]({% post_url 2024-11-30-the-secret-3dfx-graphics-card-velocity-100 %}).
+The 3Dfx Velocity 100 is a budget AGP graphics card released in 1999, based directly on the [Voodoo3]({% link _hardware/3dfx-voodoo-3.md %}) architecture. It was aimed at the low end of the market and sold for around $50, largely through OEM channels. I made a whole video about it — [The Secret 3Dfx Graphics Card (You Never Knew Existed)]({% post_url 2024-11-30-the-secret-3dfx-graphics-card-velocity-100 %}).
 
 ### What it is
 
@@ -30,7 +30,7 @@ For a period Windows 98 build it is a cheap way onto the Voodoo3 / Glide 2 platf
 ### Related on this site
 
 - [The Secret 3Dfx Graphics Card (You Never Knew Existed)]({% post_url 2024-11-30-the-secret-3dfx-graphics-card-velocity-100 %}) — my video on this card
-- [3Dfx Voodoo]({% link _hardware/3dfx-voodoo.md %})
+- [3Dfx]({% link _hardware/3dfx.md %})
 - [3Dfx Voodoo 2]({% link _hardware/3dfx-voodoo-2.md %})
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})
 - [Does this Arcade Machine Voodoo 3 work on PC?]({% post_url 2024-02-16-the-cheapest-3dfx-voodoo3-voodoo-3 %})
