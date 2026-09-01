@@ -30,12 +30,15 @@
 		</header>
 		<article class="post">
 			<div class="row">
-				<p>				
+				<p>
 					{{ page.summary | markdownify }}
 				</p>
 				<div class="youtube-container">
 					<iframe src="https://www.youtube.com/embed/{{ page.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
-				</div> 
+				</div>
+			</div>
+			<div class="row">
+				{{ content }}
 			</div>
 		</article>
 		{% include other-posts.md %}

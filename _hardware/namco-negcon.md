@@ -47,5 +47,5 @@ That makes the NeGcon more than a curiosity. It is part of what gives the PlaySt
 ### Related on this site
 
 - [Sony PlayStation]({% link _hardware/sony-playstation-1.md %})
-- [Is Namco NeGcon the Best PlayStation Controller? Hardware Review]({% post_url 2021-12-26-is-namco-negcon-the-best-playstation-controller %})
+- [Namco NeGcon Review – The Best Controller for Racers?]({% post_url 2021-12-28-namco-negcon-controller-review-best-for-racers %})
 - [Namco NeGcon Gameplay Demo - Ridge Racer (PlayStation)]({% post_url 2022-01-07-namco-negcon-gameplay-demo-ridge-racer %})
