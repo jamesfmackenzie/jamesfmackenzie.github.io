@@ -6,11 +6,6 @@ summary: Ethernet - probably the quickest and most convenient way to transfer fi
 tags: [Atari ST, How To, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/m3Lk96knpI0?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 <a href="https://en.wikipedia.org/wiki/Ethernet" target="_blank">Ethernet</a> - probably the quickest and most convenient way to transfer files between your PC and ST.
  
 ### What do you need?
@@ -48,6 +43,14 @@ Back on the PC, launch a Web browser (any will do) and navigate to <code>http://
 ![](/img/posts/atari_st_uip_tool_file_copy.png "uip-tool File Copy")
 
 Use the leftmost column to navigate through drives and folders in the ST's file system. Files are displayed in the main column. To upload a file, simply drag-and-drop (shown above). That's it! Easy peasy.
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/m3Lk96knpI0?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  

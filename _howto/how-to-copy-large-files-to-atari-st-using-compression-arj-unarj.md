@@ -6,11 +6,6 @@ summary: If you have a hard drive attached to your ST, you might want to transfe
 tags: [Atari ST, How To, Posts, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/UNkJJKaKd2w?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software, available for PC <a href="http://www.arjsoftware.com/arj32.htm" target="_blank">here</a> and ST <a href="https://sites.google.com/site/stessential/archiver-tools" target="_blank">here</a>.
 
 Once you have the software downloaded and extracted, use your PC split the large file into 720KB (or, if your drive supports it, 1440KB) chunks:
@@ -34,6 +29,14 @@ In older versions of TOS, drag-and-drop won't work - you'll need to double click
 ![](/img/posts/atari_st_unarj.png)
 
 That's all there is to it! Easy when you know how.
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/UNkJJKaKd2w?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  

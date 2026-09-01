@@ -13,12 +13,6 @@ It allows you to play DOS games, with sound effects and FM audio *natively on mo
 
 It's a true breakthrough for DOS gaming. Here's how to get started.
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/rg-ci97DDow?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
-
 ### What you need
 
 * USB stick
@@ -36,7 +30,6 @@ SBEMU works on a good variety of modern hardware. The supported sound cards:
 * <a href="https://en.wikipedia.org/wiki/Intel_High_Definition_Audio" target="_blank">Intel High Definition Autio (HDA)</a>
 * <a href="https://en.wikipedia.org/wiki/Sound_Blaster_Live!" target="_blank">Sound Blaster Live</a> or <a href="https://en.wikipedia.org/wiki/Sound_Blaster_Audigy" target="_blank">Audigy</a>
 
-
 ### Step 1 – Download and run Rufus
 
 First download and run <a href="https://rufus.ie/en/" target="_blank">Rufus</a>. This utility helps create bootable USB flash drives.
@@ -47,8 +40,6 @@ Use Rufus to prepare the drive, make sure to select the FreeDOS option:
 
 When you're ready click START to create a bootable FreeDOS drive.
 
-
-
 ### Step 2 – Download and extract SBEMU
 
 Download SBEMU from the <a href="https://github.com/crazii/SBEMU/releases" target="_blank">GitHub Releases page</a>.
@@ -56,8 +47,6 @@ Download SBEMU from the <a href="https://github.com/crazii/SBEMU/releases" targe
 Extract and copy the files to your bootable USB stick:
 
 ![](/img/posts/extra-copy-sbemu-files-to-bootable-freedos-usb-drive-stick.jpg)
-
-
 
 ### Step 3 – Create CONFIG.SYS
 
@@ -71,7 +60,6 @@ DEVICE=jemmex.exe
 {% endhighlight %}
 
 Save it in the root of your USB stick as CONFIG.SYS. 
-
 
 ### Step 4 – Edit AUTOEXEC.BAT
 
@@ -89,13 +77,11 @@ Once saved, the full file should look like this:
 
 ![](/img/posts/sbemu-autoexec-bat-file.png)
 
-
 ### Step 5 – Copy DOS Games
 
 Next, copy any software you want to the USB stick. These will be available when you start FreeDOS. I went with some shareware classics and demos:
 
 ![](/img/posts/dos-classic-video-games-for-freedos-and-sbemu.png)
-
 
 ### Step 6 – Boot FreeDOS
 
@@ -111,7 +97,6 @@ Make a note of the Sound Blaster settings. I have:
 * IRQ: 7
 * DMA: 1
 
-
 ### Step 7 – Play Games!
 
 Now we're ready to go! Configure some games and get ready to be Sound Blasted!
@@ -124,4 +109,10 @@ Now we're ready to go! Configure some games and get ready to be Sound Blasted!
 
 ![](/img/posts/duke-nukem-3d-running-on-sound-blaster-sbemu-4.jpg)
 
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/rg-ci97DDow?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 

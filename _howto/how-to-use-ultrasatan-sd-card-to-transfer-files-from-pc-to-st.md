@@ -6,11 +6,6 @@ summary: If you want to make a large number of files available on your ST, Ultra
 tags: [Atari ST, How To, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/ddwDJn8CV8I?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 If you want to make a large number of files available on your ST, <a href="http://www.lotharek.pl/product.php?pid=94" target="_blank">Ultrasatan</a> is the way to go.
 
 ### What is Ultrasatan?
@@ -160,6 +155,14 @@ Now that you have a working SD card, it's time to copy some files!
 * Reboot your ST and open the <code>C:</code> drive. You'll find all the copied files ready and waiting!
 
 ![](/img/posts/atari_st_ultrasatan_atari_st_copied_files.png "Copied files, available on the ST!")
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/ddwDJn8CV8I?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  

@@ -9,12 +9,6 @@ tags: [How To, PC, Retrocomputing, Windows 98]
 
 The HP Compaq t5710 [makes a great DOS and Windows 98 retro gaming machine]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}). But how can you install Windows 98 on a system with no CD drive? Can you install from USB? Here's how to do it.
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/GioiRupslkU?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
-
 ### What you need
 
 * 32GB (or larger) USB stick
@@ -26,7 +20,6 @@ allowfullscreen class="youtube-video"></iframe>
 
 These instructions will also work for other driveless PCs (e.g. HP t5000 Series thin clients) with some minor adjustments.
 
-
 ### Step 1 - Download and install Easy2Boot
 
 First download and install <a href="https://easy2boot.xyz/download/" target="_blank">Easy2Boot</a>. This is a super useful tool that can prepare a USB flash drive to boot almost any floppy or CD image - even when you don't actually have a physical floppy or CD drive on your system. Perfect for our thin client build.
@@ -36,7 +29,6 @@ Easy2Boot likes to work with contigious (not fragmented) files - this is why we 
 When the install completes, the <code>Make_E2B</code> utility will launch. Just ignore and close this. Instead, open the install folder and find <code>MAKE_E2B_USB_DRIVE.cmd</code>. Run this batch script as Administrator:
 
 ![](/img/posts/easy2boot-make_e2b_usb_drive.png)
-
 
 ### Step 2 - Prepare USB install media
 
@@ -54,7 +46,6 @@ With the USB stick prepared, you should have two partitions:
 
 1. <code>E2B</code> aka "Easy2Boot" partition. Any ISOs or images you copy in here will be bootable via the Easy2Boot menu system
 2. <code>E2B_PTN2</code> aka "Easy2Boot data partition". Any files you copy here will be mounted on the host operating system when we launch via Easy2Boot
-
 
 ### Step 3 - Copy Windows install files
 
@@ -74,7 +65,6 @@ Once the copy is done, we need to change the file extension. Rename the file, an
 
 ![](/img/posts/easy2boot-rename-windows98-boot-floppy-disk-image.png)
 
-
 ### Step 4 - Copy drivers and utilities
 
 Lastly, download and copy the <a href="https://mega.nz/file/LgYDhKDA#7upam9AIguSzKWAvV_ENg7_SnWvWNCpYYwAnF94eUpU" target="_blank">Windows 98 driver package</a> to the Easy2Boot data partition (<code>E2B_PTN2</code>). This contains the chipset, graphics and audio drivers for our thin client hardware:
@@ -86,7 +76,6 @@ You'll also need a zip utility to extract the drivers. I recommend <a href="http
 ![](/img/posts/easy2boot-copy-utils-utilities.png)
 
 That's our USB setup done. Remove the USB stick and switch over to the thin client.
-
 
 ### Step 5 - Partition thin client internal hard disk
 
@@ -113,13 +102,11 @@ Once you've made partition changes, restart the system and boot from the Windows
 
 ![](/img/posts/t5000-t5710-windows-98-install-fdisk-restart.png)
 
-
 ### Step 6 - Format thin client internal hard disk
 
 Back at the DOS prompt. Before we install Windows 98, we need to format the internal hard disk. Type <code>format c:</code> and then <code>Y</code> to start the format process:
 
 ![](/img/posts/t5000-t5710-windows-98-install-format-internal-hard-drive-disk.png)
-
 
 ### Step 7 - Copy Windows install files, drivers and utilities to hard disk
 
@@ -144,7 +131,6 @@ copy D:\UTILS\*.* C:\UTILS
 
 With everything safely on our internal hard disk, we're ready to start the Windows 98 install process.
 
-
 ### Step 8 - Install Windows 98
 
 Run <code>C:\WIN98\SETUP.EXE</code> to launch Windows 98 setup. Follow all the defaults to install Windows 98:
@@ -153,13 +139,11 @@ Run <code>C:\WIN98\SETUP.EXE</code> to launch Windows 98 setup. Follow all the d
 
 ![](/img/posts/t5000-t5710-windows-98-install-windows-98-install-2.png)
 
-
 ### Step 9 - Install 7-Zip
 
 When Windows 98 loads, first install 7-Zip. We need this to extract the drivers. Double click to install:
 
 ![](/img/posts/t5000-t5710-windows-98-install-windows-98-install-7zip-7-zip.png)
-
 
 ### Step 10 - Install drivers
 
@@ -178,6 +162,13 @@ With these two installed, you can install the following in any order:
 
 You'll need to reboot after each driver install - it'll take a while. But once complete you'll have a fully working Windows 98 install. Enjoy!
 
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/GioiRupslkU?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More t5710 articles
 

@@ -11,12 +11,6 @@ Can you install Windows XP on a retro system with no CD drive?
 
 Easy2Boot is super useful tool that can prepare a USB flash drive to install almost any version of Windows. Here's how to use it!
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/ozEF3McmWfM?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
-
 ### What you need
 
 * 16GB (or larger) USB stick
@@ -33,7 +27,6 @@ First download and extract <a href="https://www.fosshub.com/Easy2Boot.html" targ
 With the files extracted, run <code>MAKE_E2B_USB_DRIVE.cmd</code> as Administrator:
 
 ![](/img/posts/create-easy2boot-usb-stick.jpg)
-
 
 ### Step 2 - Prepare USB drive
 
@@ -52,13 +45,11 @@ With the USB stick prepared, you should have two partitions:
 1. <code>E2B</code> aka “Easy2Boot” partition. Any ISOs or images you copy in here will be bootable via the Easy2Boot menu system
 2. <code>E2B_PTN2</code> aka “Easy2Boot Data” partition. A simple FAT partition, any files you copy here will be mounted on the host operating system when you boot via Easy2Boot
 
-
 ### Step 3 - Copy Windows XP ISO
 
 Copy your Windows XP ISO over to the <code>\_ISO\WINDOWS\XP</code> folder on your Easy2Boot (<code>E2B</code>) partition:
 
 ![](/img/posts/copy-windows-xp-install-files-iso-easy2boot-usb-stick.jpg)
-
 
 ### Step 4 - Boot from USB stick, install Windows XP
 
@@ -73,7 +64,6 @@ Select *WINDOWS INSTALL Menu*, then *Install XP - Step 1* to start the first pha
 
 ![](/img/posts/install-windows-xp-from-usb-stick-easy2boot-step-1.jpg)
 
-
 ### Step 5 - Prepare disks, copy install files
 
 Windows will boot into the text mode installation menu.
@@ -81,7 +71,6 @@ Windows will boot into the text mode installation menu.
 Follow the on-screen prompts to partition/format your hard disk and copy Windows installation files.
 
 ![](/img/posts/windows-xp-text-mode-install-2.png)
-
 
 ### Step 6 - Configure Windows XP
 
@@ -93,13 +82,19 @@ Follow the on-screen prompts to configure Windows. The default options are suita
 
 ![](/img/posts/windows-xp-graphics-mode-setup-and-configuration.png)
 
-
 ### Setup 7 - Boot Windows XP
 
 After one last reboot, Windows XP will load for the first time. Enjoy!
 
 ![](/img/posts/windows-xp-wallpaper-bliss.jpg)
 
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/ozEF3McmWfM?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Windows articles
 

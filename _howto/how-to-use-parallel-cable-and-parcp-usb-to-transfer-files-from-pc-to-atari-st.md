@@ -6,11 +6,6 @@ summary: If you want to quickly transfer files between your PC and ST, PARCP-USB
 tags: [Atari ST, How To, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/-xNCRaiEHG0?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 If you want to quickly transfer files between your PC and ST, PARCP-USB is a great option.
 
 ### What is PARCP-USB?
@@ -74,6 +69,14 @@ Owing to the (relative) high bandwidth of your ST's parallel port, the file tran
 Back on the ST, hit <code>Ctrl+Alt+Shift</code> to shut down the PARCP server. You'll drop back to the GEM desktop and (all things going well) your transferred file should be staring you in the face. Easy peasy!
 
 ![](/img/posts/parcp_transferred_file.png "File Transfer Success!")
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/-xNCRaiEHG0?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  

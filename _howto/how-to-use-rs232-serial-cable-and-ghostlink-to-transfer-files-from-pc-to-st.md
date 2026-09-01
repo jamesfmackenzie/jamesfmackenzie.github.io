@@ -6,11 +6,6 @@ summary: At some point, you’ll most likely want to transfer files from PC to S
 tags: [Atari ST, How To, Posts, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/N_l7VXHF9m0?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 At some point, you'll most likely want to transfer files from PC to ST. One common approach is to use the Ghostlink software along with the correct cabling.
 
 ### What is Ghostlink?
@@ -159,6 +154,14 @@ Whilst running <code>PCSLAVE.EXE</code> in DOSBox, press F4 to set the Baud rate
 ![](/img/posts/ghostlink_19200_baud.png)
 
 With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800 bits per second or higher, but 19200 was the fastest that worked reliably for me.
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/N_l7VXHF9m0?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  

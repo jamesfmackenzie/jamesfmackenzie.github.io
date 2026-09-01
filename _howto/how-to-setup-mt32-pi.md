@@ -7,15 +7,9 @@ image: mt32-pi-setup.jpg
 tags: [How To, MIDI, Retrocomputing, Sound]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/9TI6cYEtwLE?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 Although <a href="https://www.youtube.com/watch?v=U4R_--__fjE" target="_blank">AdLib audio</a> is the synth standard for DOS-gaming, many games include support for vastly superior <a href="https://www.youtube.com/watch?v=PMYKSwTa2cY" target="_blank">MIDI audio</a>.
 
 In 2021, it's cheap and easy to add MIDI music to your DOS gaming PC. Here's how.
-
 
 ### What you need
 
@@ -29,11 +23,9 @@ Hardware and software you need:
 * <a href="http://bjt42.github.io/softmpu/" target="_blank">SoftMPU</a>
 * <a href="https://github.com/gmcn42/mt32-pi-control" target="_blank">mt32-pi control</a> (optional)
 
-
 ### Step 1 – Install mt32-pi
 
 Follow <a href="https://github.com/dwhinham/mt32-pi#-quick-start-guide" target="_blank">these quick steps</a> to install and configure mt32-pi on your Pi.
-
 
 ### Step 2 – Update port settings
 
@@ -54,7 +46,6 @@ MIDI</a> baud rate of 31250bps. Instead we tell our mt32-pi to use 38400bps – 
 
 Save <code>mt32-pi.cfg</code> and insert the microSD card back into your Pi once complete.
 
-
 ### Step 3 – Connect hardware
 
 Wire the serial converter module to the GPIO pins on your Raspberry Pi:
@@ -73,7 +64,6 @@ Once you're fully-wired:
 2. Connect speakers / headphones to the Pi audio jack
 3. Power-on the Pi and PC
 
-
 ### Step 4 – Start SoftMPU
 
 Copy <a href="http://bjt42.github.io/softmpu/" target="_blank">SoftMPU</a> to your DOS PC and run it with the following parameters:
@@ -91,7 +81,6 @@ SOFTMPU.EXE /MPU:330 /SB:220 /IRQ:7 /OUTPUT:COM1
 SoftMPU will detect your PC serial port and create a "Soft" MIDI interface that your games use for MIDI playback:
 
 ![](/img/posts/mt32-pi-softmpu-serial-mode-rs232-mpu-401.png)
-
 
 ### Step 5 – Switching Modes
 
@@ -114,20 +103,17 @@ default_synth = soundfont (for General MIDI / Roland Sound Canvas)
 
 To change modes "on the fly", use <a href="https://github.com/gmcn42/mt32-pi-control" target="_blank">mt32-pi control</a>.
 
-
 ### Step 6 – Play games!
 
 You're ready to play!
 
 For beautiful music, configure your games to use Roland MT-32, Roland Sound Canvas or General MIDI audio on <i>Port 330</i>.
 
-
 ### Notes
 
 * Games that use <a href="https://en.wikipedia.org/wiki/DOS_extender" target="_blank">DOS extenders</a> (e.g. <a href="https://en.wikipedia.org/wiki/DOS/4G" target="_blank">DOS/4GW</a>) *will not work* with this "Serial MIDI" approach. <a href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)" target="_blank">Doom</a> is a notable example. This is a limitation of <a href="http://bjt42.github.io/softmpu/" target="_blank">SoftMPU</a>. 
 * To increase compatibility you'll need a hardware <a href="https://en.wikipedia.org/wiki/MPU-401" target="_blank">MPU-401 interface</a>, usually provided by your PC Sound Card or dedicated hardware like <a href="http://pcmidi.eu/" target="_blank">PCMIDI</a>. You'll also need a MIDI interface for your Pi – learn more <a href="https://github.com/dwhinham/mt32-pi/wiki/MIDI-connectivity" target="_blank">here</a>.
 * The Raspberry Pi audio jack is not designed for high quality. If you want better quality audio output, consider <a href="https://github.com/dwhinham/mt32-pi/wiki/I%C2%B2S-DACs" target="_blank">adding your own DAC</a>.
-
 
 ### Moving Beyond Serial MIDI
 
@@ -138,12 +124,14 @@ Together with mt32-pi, this allows you to  create a DIY MIDI synthesiser with si
 For more details see my [PI-MIDI review]({% post_url 2022-06-04-pi-midi-review-supercharge-your-mt32-mt-32-pi %}).
 
 
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/9TI6cYEtwLE?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
+
 ### More MIDI articles
 
 {% include midi.md %}
-
-
-
-
-
 

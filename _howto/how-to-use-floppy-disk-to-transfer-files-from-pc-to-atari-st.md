@@ -6,11 +6,6 @@ summary: For the vast majority of cases, you’ll want 3.5” Double-Sided, Doub
 tags: [Atari ST, How To, Posts, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/HwcleHTcZr8?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 ### 1. Choosing the right floppy disks
 
 For the vast majority of cases, you'll want 3.5" Double-Sided, Double-Density ("DD") floppy disks - they're the only variety supported by both PC and ST drives. They're also known as "720KB" floppy disks due to their standard formatted capacity. Unfortunately, manufacturing stopped years ago, so your best option is <a href="http://www.ebay.co.uk/itm/3-5-in-DSDD-720k-DS-formatted-floppy-disks-Double-sided-double-density-2DD-new-/291572499546?hash=item43e313445a:g:tHUAAOSwWnFWA6lR" target="_blank">eBay</a> or <a href="http://www.st-freakz.co.uk/page8.html" target="_blank">specialist ST providers</a>.
@@ -70,6 +65,14 @@ Pop the disk into your ST, power on and browse to the files. You're all done!
 ### Splitting large files
 
 If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software. Find more details [here]({% post_url 2016-01-31-using-arj-to-split-and-copy-large-files-to-your-atari-st-in-chunks %}).
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/HwcleHTcZr8?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  

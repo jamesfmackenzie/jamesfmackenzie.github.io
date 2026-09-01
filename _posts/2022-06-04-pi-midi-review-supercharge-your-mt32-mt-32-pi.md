@@ -9,11 +9,6 @@ tags: [MIDI, MS-DOS, Posts, Retrocomputing, Retrogaming]
 
 The PI-MIDI is a MIDI hat for Raspberry Pi, granting your Pi extended MIDI capabilities like GPIO MIDI input, Stereo RCA output and a dedicated user port connection for MiSTer FPGA.
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/vnVbw3OV3N4?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 
 ### Hardware Overview
 
@@ -92,5 +87,13 @@ If you can’t get your hands on a real Roland MT-32 or Sound Canvas synth, I’
 ### Useful Links
 
 * <a href="https://github.com/dwhinham/mt32-pi/wiki" target="_blank">mt32-pi Wiki</a>
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/vnVbw3OV3N4?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 

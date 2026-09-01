@@ -6,11 +6,6 @@ summary: At some point, you’ll most likely want to transfer files from PC to S
 tags: [Atari ST, How To, Retrocomputing]
 ---
 
-<div class="youtube-container">
-<iframe src="https://www.youtube.com/embed/ofhKCXVbu-0?rel=0" 
-allowfullscreen class="youtube-video"></iframe>
-</div> 
-
 At some point, you'll most likely want to transfer files from PC to ST. One approach is to use a serial cable (or null modem) connection and ZMODEM.
 
 ### What is ZMODEM?
@@ -107,6 +102,14 @@ In Teraterm, navigate to "Setup", "Serial port..." and increase the Baud rate to
 ![](/img/posts/teraterm_serial_port_19200.png)
 
 With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800bps, 38400bps or even higher! But 19200bps was the fastest that worked reliably for me.
+
+
+### Watch on YouTube
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/ofhKCXVbu-0?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
 
 ### More Atari ST Posts
  
