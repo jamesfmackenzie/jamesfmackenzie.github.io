@@ -48,6 +48,8 @@ Save <code>mt32-pi.cfg</code> and insert the microSD card back into your Pi once
 
 ### Step 3 – Connect hardware
 
+*mt32-pi v0.10.0 and later also support plain USB-to-serial cables, which skip the GPIO wiring entirely — see [How to Connect mt32-pi Over USB Serial]({% link _howto/how-to-setup-mt32-pi-with-serial-usb.md %}).*
+
 Wire the serial converter module to the GPIO pins on your Raspberry Pi:
 
 <strong>Converter pin</strong> | <strong>Raspberry Pi GPIO pin</strong>

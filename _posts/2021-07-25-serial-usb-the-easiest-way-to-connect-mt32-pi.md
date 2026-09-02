@@ -7,3 +7,5 @@ videoId: SxMjDsT9rEo
 tags: [MS-DOS, How To, MIDI, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 
+Prefer to read? See [How to Connect mt32-pi Over USB Serial]({% link _howto/how-to-setup-mt32-pi-with-serial-usb.md %}).
+
