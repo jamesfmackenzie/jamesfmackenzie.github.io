@@ -30,12 +30,7 @@ In future, I could refactor towards Emscripten Loops to improve performance and 
 ### Videos
 
 - [I Ported Commander Keen to WebAssembly]({% post_url 2024-06-01-i-ported-commander-keen-to-the-web-browser-webassembly %}) - 01 Jun 2024
-- [How to Build Commander Keen in WebAssembly]({% post_url 2024-06-07-how-to-build-commander-keen-in-webassembly %}) - 07-Jun-2024
-
-
-### Guides
-
-- [How to Build Commander Keen in WebAssembly]({% link _howto/how-to-build-commander-keen-for-webassembly.md %})
+- [How to Build Commander Keen in WebAssembly]({% post_url 2024-06-07-how-to-build-commander-keen-in-webassembly %}) - 07 Jun 2024 (video + write-up)
 
 
 <br />

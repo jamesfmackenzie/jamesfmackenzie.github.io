@@ -7,5 +7,5 @@ tweetId: 1799127064974598485
 tags: [MS-DOS, Programming, Retrocomputing, Retrogaming, Tweets, Videogames, WebAssembly]
 ---
 
-Prefer to read? See the written [How to Build Commander Keen in WebAssembly]({% link _howto/how-to-build-commander-keen-for-webassembly.md %}) guide.
+See also the [How to Build Commander Keen in WebAssembly]({% post_url 2024-06-07-how-to-build-commander-keen-in-webassembly %}) write-up.
 
