@@ -7,3 +7,5 @@ videoId: "5Zht_r96ulk"
 tags: [MIDI, MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 
+Prefer to read? See the [DreamBlaster X2GS write-up]({% post_url 2021-10-02-dreamblaster-x2-x2gs-a-new-midi-challenger %}).
+

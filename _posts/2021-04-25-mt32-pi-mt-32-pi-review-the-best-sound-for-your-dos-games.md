@@ -7,3 +7,5 @@ videoId: 9TI6cYEtwLE
 tags: [MIDI, MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 
+Prefer to read? See [Get the Best MS-DOS Audio With mt32-pi]({% link _howto/how-to-setup-mt32-pi.md %}) for the full setup guide.
+

@@ -7,3 +7,5 @@ videoId: vnVbw3OV3N4
 tags: [MS-DOS, MIDI, Retrocomputing, Retrogaming, Videos]
 ---
 
+Prefer to read? See the [full PI-MIDI review]({% post_url 2022-06-04-pi-midi-review-supercharge-your-mt32-mt-32-pi %}).
+

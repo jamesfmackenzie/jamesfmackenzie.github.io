@@ -7,3 +7,5 @@ videoId: V4DIPffO-sI
 tags: [MS-DOS, PC, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 
+Prefer to read? See the [HP Compaq t5710 review]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}).
+
