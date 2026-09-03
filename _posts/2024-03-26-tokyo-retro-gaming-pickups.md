@@ -8,7 +8,7 @@ tags: [Retrogaming, Nintendo, Sega, Sony PlayStation, Videogames]
 
 ![Nintendo 64 console](/img/hardware/nintendo-64-n64.jpg)
 
-I already posted a thread about these pickups, but there was enough here for a proper blog post too.
+I already posted a <a href="https://twitter.com/jamesfmackenzie/status/1772633001819590946" target="_blank">thread about these pickups</a>, but there was enough here for a proper blog post too.
 
 Despite some obvious tourist pricing in Tokyo, there were still genuine bargains to be found if you were willing to browse carefully and compare stores. My best finds came from a mix of Akihabara and Shinjuku, and they were a good reminder that Tokyo retro shopping is still fun even when it is not universally cheap.
 
