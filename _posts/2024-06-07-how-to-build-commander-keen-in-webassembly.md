@@ -7,3 +7,5 @@ videoId: in05zYjIIE4
 tags: [How To, MS-DOS, Programming, Retrocomputing, Retrogaming, Videogames, Videos, WebAssembly]
 ---
 
+Prefer to read? See the written [How to Build Commander Keen in WebAssembly]({% link _howto/how-to-build-commander-keen-for-webassembly.md %}) guide.
+
