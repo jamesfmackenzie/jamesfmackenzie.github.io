@@ -56,4 +56,5 @@ The commercial failure story is real, but it is also not the most interesting th
 
 ### Related on this site
 
+- [How To Fix Wii U GamePad Stick Drift]({% link _howto/how-to-fix-wii-u-gamepad-drift.md %})
 - [Nintendo 64]({% link _hardware/nintendo-64.md %})
