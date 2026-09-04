@@ -45,32 +45,7 @@ The hard drive on this particular machine started failing — file allocation ta
 
 ## Installing XTIDE
 
-Bought the TexElec version — BIOS comes pre-installed. Getting it actually booting from a modern CF card turned into a proper saga.
-
-**What didn't work, in order:**
-
-1. Rufus, writing a bootable image straight to a 64MB CF card — stuck at "Booting C>>C".
-2. Booting from a DOS 3.3 floppy, then `fdisk` + `format /s` on the CF card directly. DOS 3.3's filesystem limits meant capping the cylinder count low (200) — the card mounted and was usable once booted from floppy, but still wouldn't boot from the CF card itself.
-3. `serdrive`, mounting a floppy over COM1 (not included in current XTIDE Universal BIOS builds — needed an older version), booting an MS-DOS 6.2 disk via serdrive, then `fdisk /mbr` — fixed the "Booting C>>C" hang, but produced a new error: "Boot sector not found".
-4. A bigger 16GB CF card, `fdisk` via serdrive-booted DOS 6.22 to create a 2GB partition — `fdisk` worked, but DOS 6.22's `format` failed outright. Formatting the partition from Windows 10 succeeded, but produced a non-bootable partition.
-
-**What finally worked:**
-
-1. Install XTIDE in the PC1640's slot.
-2. Download `serdrive`.
-3. USB-to-serial cable, with a null modem adapter.
-4. A DOS 5 boot floppy image.
-5. Boot from serdrive.
-6. `FDISK /mbr` to proactively fix any master boot record/boot sector issues on the CF card.
-7. `FDISK` to partition the card.
-8. `Format c: /u /s`.
-9. Reboot to verify.
-
-Useful hotkey: **Alt** searches COM ports for mounted serial drives.
-
-One limitation found along the way: the Amstrad's original MFM hard drive and XTIDE can't be mounted concurrently — the XTIDE BIOS doesn't load when the MFM controller card is also connected. Seems to come down to whichever card sits in the first ISA slot.
-
-Possible follow-up: try installing from the original Amstrad disk images instead of a generic DOS floppy — not attempted yet.
+Bought the TexElec-manufactured [Lo-tech XT-CF adapter]({% link _hardware/lo-tech-xt-cf.md %}) — BIOS comes pre-installed. Getting it actually booting from a modern CF card turned into a proper saga: four failed attempts before a DOS 5 floppy booted over `serdrive` (part of [XTIDE Universal BIOS]({% link _software/xt-ide.md %})) finally cracked it. Full story, including the exact recipe and the gotcha with the original MFM controller, over on [Getting XTIDE Working on the Amstrad PC1640]({% post_url 2026-09-04-getting-xtide-working-on-the-amstrad-pc1640 %}).
 
 ## Future hardware wishlist
 
@@ -81,11 +56,11 @@ The PC1640 has four 8-bit-only ISA expansion slots (no 16-bit AT support), which
 - [PCem emulator forum thread](http://pcem-emulator.co.uk/phpBB3/viewtopic.php?t=3402)
 - [reenigne's GEM notes](https://www.reenigne.org/blog/gem/)
 - [WinWorld PC — GEM 3.x archive](https://winworldpc.com/product/gem/3x)
-- [minuszerodegrees.net's XTIDE/Serial Drive writeup](https://www.minuszerodegrees.net/xtide/Serial%20drive/Serial%20drive.htm) — good structural reference for a dedicated XTIDE post, if that ever gets split out.
+- [minuszerodegrees.net's XTIDE/Serial Drive writeup](https://www.minuszerodegrees.net/xtide/Serial%20drive/Serial%20drive.htm)
 - [XTIDE Universal BIOS wiki — Serial Drives](https://www.xtideuniversalbios.org/wiki/SerialDrives)
 
 ## Still to do
 
 - Photos: the machine itself, disassembly steps, GEM running in different video modes.
 - Write disassembly/restoration and hardware/software overview sections from real experience — currently placeholders.
-- Decide whether XTIDE installation and/or file transfer deserve to be split into their own dedicated posts, now that there's real content for both.
+- Decide whether the file-transfer section deserves its own dedicated post too, the way the XTIDE saga did.
