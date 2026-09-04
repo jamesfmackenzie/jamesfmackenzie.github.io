@@ -72,7 +72,7 @@ The X800 sits in a sweet spot:
 
 Not bad for twelve bucks!
 
-Unfortunately, the reason it was so cheap became obvious immediately — the fan was seized and made an awful grinding noise. After [fixing the fan bearing]({% post_url 2022-04-04-ati-radeon-x800-xl-cooler-and-fan-disassembly %}), the card behaved normally and the system posted fine.
+Unfortunately, the reason it was so cheap became obvious immediately — the fan was seized and made an awful grinding noise. After [sorting out the cooler]({% post_url 2026-09-03-fixing-fan-noise-on-a-radeon-x800-xl %}), the card behaved normally and the system posted fine.
 
 ![Fixing the Radeon X800 XL fan bearing](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg)
 
