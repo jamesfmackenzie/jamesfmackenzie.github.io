@@ -170,7 +170,3 @@ You'll need to reboot after each driver install - it'll take a while. But once c
 allowfullscreen class="youtube-video"></iframe>
 </div>
 
-### More t5710 articles
-
-{% include t5710.md %}
-

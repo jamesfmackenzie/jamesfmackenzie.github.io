@@ -35,9 +35,5 @@ allowfullscreen class="youtube-video"></iframe>
 </div> 
 
 
-### More t5710 articles
-
-{% include t5710.md %}
-
 
 

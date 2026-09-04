@@ -24,9 +24,4 @@ I've had several queries on using a PS/2 splitter cable to connect keyboard and 
 Good luck!
 
 
-### More t5710 articles
-
-{% include t5710.md %}
-
-
 
