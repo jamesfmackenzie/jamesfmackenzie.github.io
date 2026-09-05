@@ -1,48 +1,41 @@
 ---
 layout: post
 title: Namco NeGcon
-summary: Hardware overview of the Namco NeGcon, one of the most distinctive and effective racing controllers ever made for the original PlayStation.
+summary: My take on the Namco NeGcon, PlayStation's oddest and most effective racing controller, with a twist-to-steer design that still feels great today.
 date: '2024-08-29 11:33:00'
 tags: [Peripherals, Sony PlayStation]
 ---
 
-The Namco NeGcon is one of the most unusual console controllers of the 1990s. Instead of relying on a traditional d-pad or analog stick for steering, it uses a twisting central hinge that lets you rotate the pad itself.
+I went looking for a Namco NeGcon for a while before finally tracking one down. It's PlayStation's first analog gamepad, and instead of a d-pad or stick for steering, the whole controller body twists — left for a left turn, right for a right turn.
 
-That sounds gimmicky until you actually use one in a supported racing game. Then it starts to feel like one of the smartest controller ideas Sony's generation ever produced.
+### What it is
 
-### Why the NeGcon is interesting
+It sounds like a gimmick until you actually play a supported game with it, and then it starts to feel like one of the smartest controller ideas of the era. Forty games support it in total — 36 on PS1, 4 on PS2 — mostly racers, and mostly from Namco itself: the Ridge Racer series (Ridge Racer, Ridge Racer Revolution, Rage Racer, Ridge Racer Type 4) all support the twist, and power-sliding through corners with analog counter-steer feels genuinely better than a d-pad ever could.
 
-The NeGcon matters because it is not just weird. It is good.
+Support goes beyond Namco, too. Psygnosis's Wipeout and Destruction Derby both work with it — Wipeout in particular is now my preferred way to play it, though Destruction Derby feels a bit too sensitive and twitchy. Sony's own Crash Team Racing and Gran Turismo support it, and the original Need for Speed plays nicely too, with the twist giving the cars a weightier feel than a d-pad manages.
 
-It stands out for:
+There are non-racers as well: Galaxian³ and Xevious 3D/G support the NeGcon but don't actually use the twist, just the d-pad, while the Air/Ace Combat series uses the twist to turn and roll the aircraft — takes some getting used to, but it's a real improvement over d-pad aiming.
 
-- genuinely expressive steering control
-- strong fit for arcade racers
-- a design that feels completely unlike standard gamepads
-- direct relevance to original PlayStation hardware and accessories
+### The catch
 
-It is one of those rare peripherals that can still change how a familiar game feels.
+You can't use it in just any game — support has to be built in by the developer, and the controller is missing L2, R2, and Select entirely. When a game does support it, it auto-detects and swaps the on-screen prompts to the NeGcon's own I, II, A, and B buttons. The feel varies a lot from game to game too: Wipeout uses the full 180 degrees of twist, Ridge Racer only uses 35. Most supported games include a calibration tool so you can dial in what feels right.
 
-### What makes it special
+### My take
 
-The key idea is simple:
+It's a genuinely great controller for the games that support it, and a good reminder that the original PlayStation ecosystem was broader and more experimental than people tend to remember it.
 
-- twist the controller body to steer
-- use the face and shoulder controls for accelerate, brake, and other functions
+### Pros
 
-That gives the controller a very different feel from both the standard PlayStation pad and later dual-analog layouts.
+- analog twist steering feels far better than a d-pad in supported racers
+- strong Namco and Psygnosis support, especially Ridge Racer and Wipeout
+- per-game calibration tools let you tune the feel
+- distinctive enough to be worth owning just for the novelty
 
-### Why original hardware still matters
+### Cons
 
-The NeGcon is a good example of why original PlayStation hardware still matters.
-
-It is not just about running the software. It is about preserving:
-
-- the intended accessory support
-- the feel of the original controller ecosystem
-- the small but important ways certain games were meant to be played
-
-That makes the NeGcon more than a curiosity. It is part of what gives the PlayStation platform its character.
+- support is limited to specific games — nothing works without built-in support
+- missing L2, R2, and Select entirely
+- feel varies wildly by game, so there's a learning curve each time
 
 ### Related on this site
 

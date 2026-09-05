@@ -1,90 +1,44 @@
 ---
 layout: post
-title: Lenovo m93p Tiny
-summary: Hardware overview of the Lenovo M93p Tiny as a compact, quiet, and practical PC for console and arcade emulation.
+title: Lenovo M93p Tiny
+summary: My take on the Lenovo M93p Tiny as a small-form-factor emulation PC — quiet, tiny, and still handles Dreamcast and GameCube well.
 date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
 ---
 
 ![](/img/posts/lenovo-m93p.jpg)
 
-The **Lenovo M93p Tiny** is a compact business desktop from Lenovo’s ThinkCentre line, first released around 2013. While it was intended as a corporate PC, its **small footprint, quiet operation, and Core i-series performance** make it an excellent candidate for a **thin-and-light emulation PC**.
+I spent years looking for the perfect emulation box: small, quiet, sits under the TV, works with a wireless controller, and has enough horsepower for 32-bit consoles. A Raspberry Pi with RetroPie got close, but it wasn't enough for PlayStation or Saturn. The Lenovo M93p Tiny — a business desktop from Lenovo's ThinkCentre line — turned out to be the answer.
 
-I purchased mine specifically to run console and arcade emulation from the NES through to GameCube and Dreamcast, all in a small form factor that fits neatly under a TV, with wireless controller support and minimal noise.
+### What it is
 
----
+Mine is a Core i5-4570T (2 cores @ 2.9GHz) with 8GB of DDR3-1600 and a 500GB 7200rpm hard drive, bought off eBay for about $100. The onboard graphics are Intel HD 4600 — not a discrete GPU, but emulators lean heavily on CPU and lightly on GPU, so it's rarely the bottleneck. It supports 4K at 30Hz or 1440p at full 60Hz; I run mine at 1080p, which is the sweet spot for this hardware.
 
-### Why the M93p Tiny works for emulation
+### Why I like it
 
-Several traits make this PC ideal for a lightweight emulation setup:
+- the "Tiny" form factor genuinely disappears under a TV — no tower, no fan noise
+- performance handily beats any single-board computer I've tried
+- there's room to grow: max RAM is 16GB (2× 8GB SODIMMs), and the CPU can be swapped for an i7-4765T, i7-4785T, or even a rehoused laptop i7-4750HQ that also upgrades the GPU to Intel Iris Pro 5200
+- one internal 2.5" SATA bay, so an SSD upgrade is trivial
 
-- **Core i5 / i7 CPU** capable of running demanding emulators such as Dolphin (GameCube/Wii) and Reicast (Dreamcast)  
-- **Compact “Tiny” chassis** fits neatly under a TV or in a living room entertainment center  
-- **Quiet operation**, even under load, reducing distraction during gameplay  
-- **Full Windows compatibility**, allowing RetroArch, LaunchBox, or similar frameworks  
-- **USB ports** for wireless controllers, external storage, and other peripherals  
-- **Low cost and widely available**, making it an affordable emulation platform
+### My take
 
-It’s the perfect mix of **performance, size, and price** for modern console emulation without building a full tower PC.
+For the price, it's hard to beat. SNES, Genesis, and PlayStation all run perfectly, PSP is flawless even at 2x native resolution, and Dreamcast runs full speed via the Redream emulator (other Dreamcast emulators don't keep up on this hardware). GameCube and Wii run great at native resolution, though pushing the resolution higher causes slowdown in some games. Saturn is a mixed bag — 2D games are perfect, but 3D titles like Sega Rally or Panzer Dragoon can stutter. PlayStation 2 is where it runs out of steam: some games hit full speed, but graphically demanding ones like God of War or Gran Turismo 4 only manage 70-80%, which is noticeable in play.
 
----
+### Pros
 
-### Specifications
+- tiny, quiet, and genuinely TV-friendly
+- excellent price-to-performance for anything up to Dreamcast/GameCube
+- upgradeable RAM, storage, and even CPU/GPU
+- handles a wide spread of consoles without a discrete graphics card
 
-| Component       | Details                                                                 |
-|-----------------|-------------------------------------------------------------------------|
-| **CPU**         | Intel Core i5 / i7 (3rd generation, Ivy Bridge)                         |
-| **Memory**      | DDR3, up to 16 GB                                                      |
-| **Storage**     | SATA HDD / SSD; supports USB boot drives                                 |
-| **Graphics**    | Integrated Intel HD Graphics 2500/4000                                  |
-| **Audio**       | Onboard HD audio; works well with Windows emulators                     |
-| **Networking**  | Gigabit Ethernet; optional Wi-Fi adapters                               |
-| **I/O**         | USB 2.0/3.0, DisplayPort, audio jacks                                   |
-| **Form Factor** | Small Form Factor “Tiny” design, ~1 L volume                             |
+### Cons
 
----
+- PlayStation 2 is inconsistent — fine for some games, sluggish for demanding ones
+- anything past PS2 (Wii U, PS3, etc.) is off the table
+- onboard graphics cap out 4K at 30Hz
 
-### Emulation performance
+### Related on this site
 
-The M93p Tiny handles a wide range of systems:
-
-- **NES / SNES / Genesis / arcade** – perfect, full speed  
-- **PlayStation / PlayStation 2 (with PCSX2)** – smooth on most titles  
-- **GameCube / Wii (Dolphin)** – high compatibility, full speed for most games  
-- **Dreamcast (Reicast)** – playable at high settings  
-- **Arcade (MAME / FinalBurn)** – excellent for 2D and simpler 3D titles  
-
-The combination of a powerful CPU and integrated graphics makes it capable of running these emulators without the need for a discrete GPU, though PCIe upgrades are possible for extra 3D performance if desired.
-
----
-
-### Advantages for a living room setup
-
-- **Minimal noise** – keeps a TV room quiet  
-- **Small footprint** – easily hidden or stacked with other devices  
-- **USB controller support** – works with modern wireless pads or original USB adapters  
-- **Energy efficient** – consumes very little power compared to a tower PC  
-- **Windows compatibility** – allows use of popular emulation frontends
-
----
-
-### Known limitations
-
-- Integrated graphics may struggle with very demanding GameCube/Wii titles at max resolution  
-- Only a single PCIe slot for discrete GPU expansion  
-- Limited internal storage; external SSD or USB solutions are recommended  
-- No native analog video output – requires HDMI/DisplayPort adapters for older displays  
-
----
-
-### Summary
-
-The Lenovo M93p Tiny is an **ideal thin-and-light emulation PC**. It combines a small form factor, quiet operation, and sufficient CPU performance to emulate a wide range of systems, from classic 8-bit consoles up to GameCube, Dreamcast, and mid-2000s arcade hardware.  
-
-It’s a perfect choice for those who want **a compact, unobtrusive, and capable living room emulation system** without building a full-size tower PC.
-
----
-
-### Related Projects
-
+- [Lenovo M93p Tiny Review – The Best Mini PC for Emulation?]({% post_url 2020-05-31-the-lenova-m93p-is-a-great-small-form-factor-emulation-pc %})
 - [Building a Thin and Light Emulation PC]({% link _projects/building-a-thin-and-light-emulation-pc-lenovo-m93p-tiny.md %})
