@@ -6,7 +6,7 @@ date: '2026-09-04 18:00:00'
 tags: [Amstrad, DOS, PC, Retrocomputing, XTIDE]
 ---
 
-![My Amstrad PC1640 HD20, with the PC-MD monochrome monitor](/img/posts/amstrad-pc1640-3.jpg){: width="680"}
+![My Amstrad PC1640, with the PC-MD monochrome monitor](/img/posts/amstrad-pc1640-2.jpg){: width="450"}
 
 Getting reliable, modern storage into an [Amstrad PC1640]({% link _hardware/amstrad-pc1640.md %}) means a [Lo-tech XT-CF adapter]({% link _hardware/lo-tech-xt-cf.md %}) running [XTIDE Universal BIOS]({% link _software/xt-ide.md %}) — it lets a CompactFlash card stand in for a hard drive. I bought the [TexElec](https://texelec.com/) version, which comes with the BIOS pre-installed, so the hardware side was the easy part. Getting it to actually boot was a different story.
 
