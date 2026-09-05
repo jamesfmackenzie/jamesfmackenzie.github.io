@@ -37,7 +37,7 @@ My own machine is a modest one: a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus,
 - **No rear PS/2 or serial ports.** USB keyboards can be laggy or buffered in native DOS, and there's no easy legacy fallback. The motherboard appears to have solder pads for a serial or PS/2 header, but that's an untested path.
 - The **`ICH8` southbridge** is late enough that it was never designed with Windows 98 or DOS in mind. That's the main reason the machine feels far more natural under Windows XP than under either of them.
 
-![The E520 BIOS "OS Install" option, which caps RAM at 256MB](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg){: width="520"}
+![The E520 BIOS "OS Install" option, which caps RAM at 256MB](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg){: width="720"}
 
 ### Where it fits
 
