@@ -253,12 +253,15 @@ article img {
   text-align: center;
 }
 
-.single-post article h2 {
-  display: none;
-}
-
+.single-post article h2,
 .single-post article h3 {
   margin-top: 2em;
+}
+
+/* h2 was previously hidden; render it at h3 size for now */
+.single-post article h2 {
+  font-size: 1.17em;
+  letter-spacing: normal;
 }
 
 .single-post article hr {
