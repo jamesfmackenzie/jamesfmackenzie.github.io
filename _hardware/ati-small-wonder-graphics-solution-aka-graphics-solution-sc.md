@@ -8,7 +8,7 @@ tags: [ATi Graphics, Graphics Cards, PC]
 
 ![ATI Small Wonder Graphics Solution](/img/posts/ati-small-wonder-graphics-solution-v1.png)
 
-I bought the Small Wonder Graphics Solution for the same reason as the [Graphics Solution SR]({% link _hardware/ati-graphics-solution-sr.md %}): running colour CGA games on a monochrome monitor. It arrived after the SR, and it's the slightly newer, more refined card of the two — the 1988 Small Wonder (also sold as the Graphics Solution **SC**, for "single chip") folds the SR's discrete multi-chip design into ATI's first single graphics chip, the 18700. The capability set is near enough identical.
+The Small Wonder Graphics Solution does the same job as the [Graphics Solution SR]({% link _hardware/ati-graphics-solution-sr.md %}) — running colour CGA games on a monochrome monitor — but the reason I wanted one was really about owning a piece of history. The 1988 Small Wonder (also sold as the Graphics Solution **SC**, for "single chip") folds the SR's discrete multi-chip design onto the ATI 18700, ATI's first single-chip graphics IC. It arrived after my SR, and it's the slightly newer, more refined card of the two, with a near-identical capability set.
 
 ### What it does
 
@@ -20,7 +20,7 @@ I bought the Small Wonder Graphics Solution for the same reason as the [Graphics
 
 ### My take
 
-If you already have a Graphics Solution SR, there's no strong reason to add this one too — they do the same job. On its own it's a perfectly good way to get CGA gaming onto a mono-monitor machine, with the same caveat as the SR: the interlaced CGA-on-MDA mode flickers noticeably. It's also a nice bit of ATI history, from the era before EGA Wonder, VGA Wonder, and eventually Radeon made the company a household name.
+Purely on function, if you already have a Graphics Solution SR there's no need for this one too — they do the same job, with the same caveat that the interlaced CGA-on-MDA mode flickers noticeably. What makes it worth having is what it represents: ATI's first move from a boardful of discrete logic to a single custom chip, at the very start of the road that ran through EGA Wonder, VGA Wonder, Mach, and eventually Radeon.
 
 ### Related on this site
 
