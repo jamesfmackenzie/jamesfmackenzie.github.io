@@ -247,7 +247,8 @@ article img {
 }
 
 .image-row img {
-  flex: 1 1 300px;
+  flex: 1 1 280px;
+  min-width: 0;
   max-width: 100%;
   margin: 0;
 }
