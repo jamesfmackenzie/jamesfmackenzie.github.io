@@ -10,7 +10,7 @@ tags: [Computers, PC]
 
 The Dell OptiPlex 380 is an unassuming late-2000s business desktop, and it's become one of my favourite cheap retro PC bases. It's common, dirt cheap on the second-hand market, and just old enough to keep the legacy I/O that makes DOS and Windows 98 livable — while being fast enough to crush anything from that era.
 
-Unlike the [Dimension E520]({% link _hardware/dell-dimension-e520.md %}) and the [OptiPlex 760]({% link _hardware/dell-optiplex-760.md %}), which both fight back under Windows 98, the 380 covers all three eras without much drama.
+Unlike the [Dimension E520]({% link _hardware/dell-dimension-e520.md %}) and the [OptiPlex 760]({% link _hardware/dell-optiplex-760.md %}), which both fight back under Windows 98, the 380 covers all three eras without much drama. It's a great retro machine!
 
 ### Specifications
 
