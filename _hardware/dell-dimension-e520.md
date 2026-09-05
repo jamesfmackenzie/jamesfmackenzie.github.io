@@ -1,78 +1,42 @@
 ---
 layout: post
 title: Dell Dimension E520
-summary: My take on the Dell Dimension E520 as a Core 2-era retro PC, with the bits that matter for DOS, Windows 98, and Windows XP.
+summary: Hardware notes on the Dell Dimension E520 — a Core 2-era Dell tower, and what to know about it before using one for a retro build.
 date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
 ![Dell Dimension E520 tower](/img/posts/dell-dimension-e520.jpg){: width="500"}
 
-The Dell Dimension E520 is the kind of PC nobody would call exciting on paper — a no-frills mid-2000s home machine built around Intel's G965 platform. What makes it interesting to me is timing: it's fast enough to brute-force a lot of late DOS and Win9x games, but new enough that older operating systems stop behaving naturally the moment you install them.
+The Dell Dimension E520 is a no-frills mid-2000s home tower built around Intel's G965 platform — cheap, common, and visually unremarkable, the sort of ordinary Windows XP-era family PC that still turns up for very little. For retro use it sits right on a boundary: fast enough to brute-force a lot of late DOS and Win9x software, but new enough that those older operating systems stop behaving naturally once you install them.
 
-My own machine has a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus with 2MB of L2 cache, and 3GB of DDR2-667 running in dual interleaved mode (512MB, 1GB, 1GB, 512MB across the four DIMMs), with Intel HD Audio and a Sigmatel codec for sound. Nothing exotic — the kind of ordinary office or family PC configuration that still turns up cheaply today.
+### Specifications
 
-![](/img/posts/dell-dimension-e520-bios-processor-info.jpg)
+Configurations vary, but most E520 systems share:
 
-![](/img/posts/dell-dimension-e520-bios-memory-info.jpg)
-
-### What it is
-
-The E520 is built around Intel's G965 Express chipset with an `ICH8` southbridge — solid for its Windows XP-era home-PC role, but never designed with Windows 98 or DOS in mind. That later southbridge is a big part of why the machine feels far more natural under XP than under Win98 or native DOS.
-
-![](/img/posts/dell-dimension-e520-nh82801hh-ich-8-chip.jpg)
-
-Specs vary by configuration, but most E520 systems share:
-
-- **Chipset:** Intel G965 Express
-- **Southbridge / I/O controller:** Intel `ICH8`
+- **Chipset:** Intel G965 Express with an `ICH8` southbridge
 - **Memory:** DDR2-533 or DDR2-667
 - **Storage:** SATA
 - **Graphics:** Intel GMA 3000 onboard
 - **Expansion:** PCI Express x16, PCI Express x1, 2 PCI
 - **Networking:** integrated Ethernet
 
-### Why I keep it
+My own machine is a modest one: a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus, 2MB of L2 cache, 3GB of DDR2-667 running in dual interleaved mode, and Intel HD Audio with a Sigmatel codec.
 
-- Core 2-class performance for late DOS and Win9x games — enough to brute-force where subtlety fails
-- both PCI and PCIe expansion give me room to experiment
-- a BIOS **OS Install** option that limits RAM to 256MB, which takes a lot of the pain out of Windows 98 setup
-- SATA storage that can be made usable under Windows 98 with the right patches
+![](/img/posts/dell-dimension-e520-bios-processor-info.jpg)
+
+![](/img/posts/dell-dimension-e520-bios-memory-info.jpg)
+
+### Things worth knowing before you use one
+
+- **BIOS "OS Install" mode** temporarily caps available RAM at 256MB. It's genuinely useful — it removes one of the first hurdles to a Windows 98 install before setup even starts.
+- **No rear PS/2 or serial ports.** USB keyboards can be laggy or buffered in native DOS, and there's no easy legacy fallback. The motherboard appears to have solder pads for a serial or PS/2 header, but that's an untested path.
+- The **`ICH8` southbridge** is late enough that it was never designed with Windows 98 or DOS in mind. That's the main reason the machine feels far more natural under Windows XP than under either of them.
 
 ![](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg)
 
-### My take
+### Where it fits
 
-- **DOS:** interesting, but compromised
-- **Windows 98:** possible, but temperamental
-- **Windows XP:** the natural fit
+Windows XP is the natural home for this hardware generation. Windows 98 is possible but you'll be managing storage quirks and patches, and DOS is viable given the CPU headroom but wants input and sound workarounds.
 
-That split is really the story of the machine. The E520 is powerful enough to be appealing, but it sits right on the boundary where Win98 and DOS stop being comfortable.
-
-### Pros
-
-- Core 2 performance makes late DOS and Win9x games an easy win
-- PCI plus PCIe expansion leaves room for sound-card and GPU experiments
-- BIOS RAM-limiting mode takes a lot of the pain out of Windows 98 setup
-- SATA storage can be patched into working shape under Windows 98
-- **SBEMU** gives a practical fallback for DOS sound
-- Voodoo 2 results look more promising here than on the OptiPlex 760
-- Windows XP just works — stable storage and chipset support, enough performance for a wide range of early-2000s games
-
-### Cons
-
-- `ICH8` was never designed with Windows 98 in mind, and it shows in post-install disk behaviour
-- PCIe Radeon cards don't behave as cleanly as they should under Win98
-- onboard audio remains a weak point throughout
-- no native PS/2 or serial ports on the rear I/O, and USB keyboards can be laggy or buffered in DOS
-- native DOS digital audio is still limited by the later chipset design
-- if Windows XP is your only goal, there are plenty of other Core 2 machines that will do the job just as well
-
-### Other useful things to know
-
-- The motherboard does appear to have solder pads for a serial or PS/2 header. I haven't tried it myself — more of an experimental path than a solved convenience.
-- VBE and other software-rendered DOS games are an easy win here, even before you've sorted out sound.
-
-## Related on this site
-
-- [I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %})
+For the full experiment — the SATA patching, the PCIe Radeon trouble, the surprisingly good Voodoo 2 results, and where it all landed — see [I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %}).
