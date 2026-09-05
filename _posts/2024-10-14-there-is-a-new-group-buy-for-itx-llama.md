@@ -12,6 +12,8 @@ tweetId: 1845972476552962110
 tags: [MS-DOS, Retrocomputing, Retrogaming, Videogames, Tweets]
 ---
 
+New to the Llama? See the [ITX Llama]({% link _hardware/itx-llama.md %}) hardware page for what the board actually is and why it's worth a group buy.
+
 
 
 

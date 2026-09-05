@@ -11,3 +11,5 @@ summary: |-
 videoId: ZCnQOgArgMk
 tags: [MIDI, MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
+
+More on the hardware behind this: the [ITX Llama]({% link _hardware/itx-llama.md %}) board and the [PI-MIDI]({% link _hardware/pi-midi.md %}) / mt32-pi setup that adds the Roland MT-32 support.

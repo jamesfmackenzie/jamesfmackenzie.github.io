@@ -6,3 +6,5 @@ summary: '<strong>The ITX Llama</strong> is a brand new PC, purpose built for pl
 videoId: ogHqmjn6sY4
 tags: [MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
+
+For my notes on the board itself — specs, audio options, AGP support — see the [ITX Llama]({% link _hardware/itx-llama.md %}) hardware page.
