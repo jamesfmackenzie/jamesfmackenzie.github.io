@@ -6,13 +6,17 @@ date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
 ---
 
-![](/img/hardware/som-128-ex.png)
+![My ITX Llama, with the OPL3 module, a Raspberry Pi for MT-32, a D1 Mini Wi-Fi modem, and a Noctua fan fitted](/img/hardware/itx-llama.jpg){: width="680"}
 
 The ITX Llama is not a repurposed old PC — it's a brand new motherboard, designed from scratch, purely to run real MS-DOS and early Windows (95/98) games on real x86 hardware. No emulation, no compromise. I picked one up through a community group buy and it's become one of my favourite pieces of retro hardware.
 
 ### What it is
 
-At the core is a Vortex86EX system-on-module — an x86-compatible CPU that behaves roughly like a Pentium/Pentium MMX, selectable from about 60 to 500MHz. It's paired with 128MB of DDR3 on the module itself, a Crystal CS4237B audio chip (Sound Blaster Pro 2, AdLib, and Windows Sound System support out of the box), a 3.3V-keyed AGP slot via a PCIe-to-AGP bridge, and the full set of legacy PC I/O: PS/2, RS-232 serial, gameport/MIDI, and USB 2.0. It boots from SD card, SATA, or USB. The whole project is open source — schematics, board files, and BIOS are all published, and boards have circulated through community group buys rather than a normal retail channel.
+At the core is a Vortex86EX system-on-module — an x86-compatible CPU that behaves roughly like a Pentium/Pentium MMX, selectable from about 60 to 500MHz.
+
+![The DM&P SOM-128-EX module the ITX Llama is built around](/img/hardware/som-128-ex.png){: width="420"}
+
+It's paired with 128MB of DDR3 on the module itself, a Crystal CS4237B audio chip (Sound Blaster Pro 2, AdLib, and Windows Sound System support out of the box), a 3.3V-keyed AGP slot via a PCIe-to-AGP bridge, and the full set of legacy PC I/O: PS/2, RS-232 serial, gameport/MIDI, and USB 2.0. It boots from SD card, SATA, or USB. The whole project is open source — schematics, board files, and BIOS are all published, and boards have circulated through community group buys rather than a normal retail channel.
 
 ### Why I like it
 
