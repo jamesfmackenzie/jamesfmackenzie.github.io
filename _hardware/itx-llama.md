@@ -16,14 +16,14 @@ At the core is a Vortex86EX system-on-module — an x86-compatible CPU that beha
 
 ![The DM&P SOM-128-EX module the ITX Llama is built around](/img/hardware/som-128-ex.png){: width="420"}
 
-It's paired with 128MB of DDR3 on the module itself, a Crystal CS4237B audio chip (Sound Blaster Pro 2, AdLib, and Windows Sound System support out of the box), a 3.3V-keyed AGP slot via a PCIe-to-AGP bridge, and the full set of legacy PC I/O: PS/2, RS-232 serial, gameport/MIDI, and USB 2.0. It boots from SD card, SATA, or USB. The whole project is open source — schematics, board files, and BIOS are all published, and boards have circulated through community group buys rather than a normal retail channel.
+It's paired with 128MB of DDR3 on the module itself, a Crystal CS4237B audio chip (AdLib, Sound Blaster Pro 2, and Windows Sound System compatible), a single 3.3V-keyed AGP-format slot (electrically PCI at 66MHz), and the full set of legacy PC I/O: PS/2, RS-232 serial, gameport/MIDI, and USB 2.0. Internally there are headers for a real Yamaha OPL3 module, a Wave Blaster wavetable daughterboard, and a Raspberry Pi. It boots from SD card, SATA, or USB. The whole project is open source — schematics, board files, and BIOS are all published, and boards have circulated through community group buys rather than a normal retail channel.
 
 ### Why I like it
 
 - it runs actual DOS and Windows 9x on real x86 silicon, not an emulator
-- the AGP slot works with genuine period graphics cards, not just PCI ones
-- the audio setup is properly authentic: real AdLib FM and Sound Blaster Pro 2 compatibility, plus a header for a genuine Yamaha OPL3 module if you want to go further
-- the MIDI header let me add Roland MT-32 support with nothing more than a Raspberry Pi and [PI-MIDI]({% link _hardware/pi-midi.md %}) running mt32-pi
+- a single AGP-format slot — electrically it's PCI at 66MHz — that takes genuine period cards like a Voodoo3 or Radeon 9200
+- the onboard Crystal CS4237B covers AdLib and Sound Blaster Pro 2 with a good built-in OPL3-compatible synth — and there's a header for a real-Yamaha-chip OPL3 module if you want 100% authentic FM
+- for MIDI there's a Wave Blaster header for a [wavetable daughterboard]({% link _hardware/dreamblaster-x2gs.md %}), plus an onboard Raspberry Pi header — seat a Pi Zero 2 running mt32-pi and you get both Roland MT-32 and SoundFont (General MIDI) synthesis, with no separate interface needed
 - it's small enough to disappear next to a modern PC, unlike a full-size vintage tower
 
 ### My take
@@ -33,15 +33,15 @@ For DOS gaming specifically, this is about as close to "just works" as modern re
 ### Pros
 
 - real hardware, not emulation — no chasing down obscure timing or driver quirks
-- genuinely good audio out of the box, with a path to real OPL3 and MT-32 if you want it
-- AGP support opens the door to real period graphics cards
+- genuinely good audio out of the box, with a path to real OPL3, wavetable, and MT-32 if you want it
+- the AGP-format slot takes real period graphics cards
 - open-source design, so it isn't tied to one supplier
 
 ### Cons
 
 - only available through community group buys, not a normal retail purchase
 - early boards had some analog audio downmixing quirks — worth checking which revision you're getting
-- AGP compatibility depends on 3.3V-keyed cards, so not every period GPU will fit
+- the slot runs in PCI mode, so not every AGP card will work — stick to known-good ones
 
 ### Related on this site
 

@@ -12,4 +12,4 @@ videoId: ZCnQOgArgMk
 tags: [MIDI, MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 
-More on the hardware behind this: the [ITX Llama]({% link _hardware/itx-llama.md %}) board and the [PI-MIDI]({% link _hardware/pi-midi.md %}) / mt32-pi setup that adds the Roland MT-32 support.
+More on the hardware behind this: the [ITX Llama]({% link _hardware/itx-llama.md %}) board has an onboard Raspberry Pi header, so a Pi Zero 2 running mt32-pi seats straight onto it — no separate MIDI interface needed.
