@@ -6,6 +6,8 @@ date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
+![Dell OptiPlex 760 tower](/img/posts/dell-optiplex-760.jpg){: width="500"}
+
 The Dell OptiPlex 760 is the kind of machine I find hard to ignore: a cheap, slightly boring office PC that looks like it might have hidden retro potential. It has some — but less than it first appears.
 
 If you want a clean, low-drama Windows 98 build, reach for something earlier — or the [OptiPlex 380]({% link _hardware/dell-optiplex-380.md %}). As a cheap Windows XP machine that can also do some interesting DOS experiments, the 760 makes more sense.
