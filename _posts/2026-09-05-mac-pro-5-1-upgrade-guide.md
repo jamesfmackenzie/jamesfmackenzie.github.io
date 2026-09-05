@@ -16,8 +16,8 @@ The Mac Pro 5,1 is one of the most flexible old Macs you can still meaningfully 
 
 The real breakpoints are:
 
-- **High Sierra (10.13)** is the highest version you can install directly from standard USB install media, no OpenCore involved.
-- **Mojave (10.14)** is the highest *officially supported* macOS version for this machine — you can upgrade to it from High Sierra without any hacks.
+- **High Sierra (10.13)** is the highest version you can download from Apple and install directly from standard USB install media.
+- **Mojave (10.14)** is the highest *officially supported* macOS version for this machine — you can upgrade to it from High Sierra.
 - Beyond that, newer macOS versions — Monterey, even Sonoma-era builds — are possible, but only via **OpenCore**: a bootloader that patches the OS at boot time so it'll run on Mac hardware Apple no longer officially supports. Two flavors exist here: **OpenCore Legacy Patcher (OCLP)**, built for a wide range of unsupported Mac hardware generally, and **Martin Lo's OpenCore**, built specifically for the Mac Pro 5,1 and aiming to stay closer to a "vanilla" experience. Martin Lo's build supports up to Monterey 12.7.
 
 Mojave ends up being a genuinely useful pivot point: it's the first version to require a **Metal**-compatible GPU — Metal being Apple's own graphics API, which replaced OpenGL starting with Mojave — but it's still old enough to preserve 32-bit application support, which matters a lot if you care about older Mac games and software.
