@@ -6,11 +6,10 @@ date: '2026-09-04 18:00:00'
 tags: [Amstrad, DOS, PC, Retrocomputing, XTIDE]
 ---
 
-![My Amstrad PC1640, with the PC-MD monochrome monitor](/img/posts/amstrad-pc1640-2.jpg){: width="450"}
+![The TexElec-manufactured Lo-tech XT-CF adapter](/img/hardware/lo-tech-xt-cf-texelec-isa-card.jpg){: width="560"}
 
 Getting reliable, modern storage into an [Amstrad PC1640]({% link _hardware/amstrad-pc1640.md %}) means a [Lo-tech XT-CF adapter]({% link _hardware/lo-tech-xt-cf.md %}) running [XTIDE Universal BIOS]({% link _software/xt-ide.md %}) — it lets a CompactFlash card stand in for a hard drive. I bought the [TexElec](https://texelec.com/) version, which comes with the BIOS pre-installed, so the hardware side was the easy part. Getting it to actually boot was a different story.
 
-![The TexElec-manufactured Lo-tech XT-CF adapter](/img/hardware/lo-tech-xt-cf-texelec-isa-card.jpg){: width="560"}
 
 ## What didn't work
 
@@ -22,7 +21,7 @@ Worth documenting the failed attempts here, because each one narrows down where 
 
 **Attempt 3**: switched to `serdrive`, which mounts a floppy image over a serial port (COM1) instead of a physical disk — useful since the PC1640 doesn't have a lot of good options for getting boot media onto it otherwise. It's not included in the latest XTIDE Universal BIOS binaries, so I had to track down an older version that still had it.
 
-Booted an MS-DOS 6.2 disk over serdrive and ran `fdisk /mbr`, which did fix the `Booting C>>C` hang — progress — but immediately hit a new error: `Boot sector not found`.
+Booted an MS-DOS 6.22 disk over serdrive and (in an attempt to fix the DOS 3.3 partition) ran `fdisk /mbr`, which did fix the `Booting C>>C` hang — progress — but immediately hit a new error: `Boot sector not found`.
 
 **Attempt 4**: tried a larger 16GB CF card. Booted DOS 6.22 over serdrive, used `fdisk` to create a 2GB primary partition — that part worked fine. But DOS 6.22's `format` failed to actually format the partition or copy the system files. Formatting the same partition from Windows 10 worked, but produced a partition that wasn't bootable at all.
 
