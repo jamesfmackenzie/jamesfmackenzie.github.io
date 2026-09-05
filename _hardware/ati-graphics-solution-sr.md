@@ -25,7 +25,7 @@ On the PC1640 I had to disable the onboard graphics chip via motherboard DIP swi
 
 ### My take
 
-It works, and it's a genuinely neat trick — the grayscale output looks noticeably richer than plain Hercules black-and-white. The catch is flicker: the interlaced mode the card uses to fake CGA on a mono display is visibly flickery, so it's more of a novelty than something you'd want to stare at for hours. As far as I can tell, the only other card that does the same trick is ATI's EGA Wonder, which I'm hunting down next to try EGA-on-mono.
+It works, and it's a genuinely neat trick — the grayscale output looks noticeably richer than plain Hercules black-and-white. The catch is flicker: the interlaced mode the card uses to fake CGA on a mono display is visibly flickery, so it's more of a novelty than something you'd want to stare at for hours. ATI's own [Small Wonder Graphics Solution]({% link _hardware/ati-small-wonder-graphics-solution-aka-graphics-solution-sc.md %}) does the same CGA-on-mono trick, and the EGA Wonder extends it to EGA colour — which is the one I'm hunting down next.
 
 ### Pros
 
