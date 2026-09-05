@@ -6,6 +6,8 @@ date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
+![Dell Dimension E520 tower](/img/posts/dell-dimension-e520.jpg){: width="500"}
+
 The Dell Dimension E520 is the kind of PC nobody would call exciting on paper — a no-frills mid-2000s home machine built around Intel's G965 platform. What makes it interesting to me is timing: it's fast enough to brute-force a lot of late DOS and Win9x games, but new enough that older operating systems stop behaving naturally the moment you install them.
 
 My own machine has a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus with 2MB of L2 cache, and 3GB of DDR2-667 running in dual interleaved mode (512MB, 1GB, 1GB, 512MB across the four DIMMs), with Intel HD Audio and a Sigmatel codec for sound. Nothing exotic — the kind of ordinary office or family PC configuration that still turns up cheaply today.
