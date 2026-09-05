@@ -92,6 +92,7 @@ The **Mac Pro 5,1** is a remarkable combination of **modular engineering, raw pe
 
 ---
 
-### Videos
+### Related on this site
 
 - [I Supercharged This Old Mac for AAA Gaming]({% post_url 2024-05-04-i-supercharged-this-old-mac-for-aaa-gaming %})
+- [Mac Pro 5,1 Upgrade Guide]({% post_url 2026-09-05-mac-pro-5-1-upgrade-guide %})

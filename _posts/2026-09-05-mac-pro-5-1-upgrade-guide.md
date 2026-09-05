@@ -2,6 +2,7 @@
 layout: post
 title: Mac Pro 5,1 Upgrade Guide
 summary: "Choosing a macOS version, a GPU, and an upgrade path for the classic Mac Pro 5,1 — there's no single perfect configuration, just tradeoffs."
+date: '2026-09-05 07:00:00'
 tags: [Apple Mac, Upgrades]
 ---
 

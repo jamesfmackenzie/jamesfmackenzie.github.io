@@ -7,3 +7,5 @@ videoId: dipVhVGE004
 tags: [Apple Mac, Retrocomputing, Videogames, Videos]
 ---
 
+Want the full breakdown of the choices behind this build — OS, GPU, upgrade path? See the [Mac Pro 5,1 Upgrade Guide]({% post_url 2026-09-05-mac-pro-5-1-upgrade-guide %}).
+
