@@ -238,6 +238,20 @@ article img {
   text-decoration: line-through;
 }
 
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+.image-row img {
+  flex: 1 1 300px;
+  max-width: 100%;
+  margin: 0;
+}
+
 /* end article styles */
 
 
