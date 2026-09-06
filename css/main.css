@@ -6,6 +6,12 @@
 
 /* whole page styles */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -419,9 +425,6 @@ footer a:hover {
   header {
     padding: 1em 0;
   }
-  header .row {
-    justify-content: center;
-  }
   .bio {
 	text-align: center;
   }
@@ -432,9 +435,12 @@ footer a:hover {
   /* collapse the section nav behind a toggle */
   .nav-header {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .nav-header h2 {
-    margin-right: auto;
+    margin: 0;
+    font-size: 1.25em;
+    min-width: 0;
   }
   .nav-toggle {
     display: block;
