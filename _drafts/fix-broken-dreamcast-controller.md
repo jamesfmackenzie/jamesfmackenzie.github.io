@@ -1,27 +1,16 @@
 ---
 layout: post
 title: Fixing a Broken Dreamcast Controller
-summary: A starter repair draft based on a Dreamcast pad with damaged or pushed-in connector pins.
+summary: A second Dreamcast controller stopped working, with what looked like pushed-in connector pins — turned out to be a cheap, no-solder fix.
 tags: [Dreamcast, Repairs, Retrogaming]
 ---
 
-One of my Dreamcast controllers stopped working, and the most obvious problem seems to be the connector end of the cable. Compared with a working controller, the pins look pushed in.
+My second Dreamcast controller stopped working. Comparing it against a known-good pad, the problem looked obvious: the pins on the cable's connector end were pushed in.
 
-## Likely Fault
+![Replacement Dreamcast controller cable](/img/dreamcast-controller-replacement-cable.png)
 
-If the cable-end connector is damaged, the fix may be simpler than replacing the entire controller:
+While looking into it, I came across a Dreamcast Controller Restoration video that pointed toward the fix — rather than trying to coax the damaged pins back into shape, or opening up the controller to re-terminate the wire, the whole cable is a cheap, easy swap. Replacement Dreamcast controller cords turn up for a few dollars on AliExpress, or a bit more on eBay.
 
-- inspect the pins carefully against a known-good pad
-- check whether the wire or connector shell is damaged
-- consider replacing the controller cord assembly
+I picked one up, and the fix was as simple as it sounds: no soldering, no disassembly beyond opening the shell to swap the connector — just plug and play. Fixed.
 
-## Current Working Theory
-
-The replacement cord route looks promising, because the parts are cheap and readily available on eBay and AliExpress.
-
-## What the Final Post Should Add
-
-- close-up photos of the connector
-- confirmation of whether the fault is the cable or the controller PCB
-- a tested replacement procedure
-- whether aftermarket cords work well enough
+If you've got a Dreamcast controller with the same pushed-in-pins symptom, this is worth trying before anything more drastic.
