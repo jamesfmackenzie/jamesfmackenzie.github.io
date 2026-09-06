@@ -55,11 +55,7 @@ The basic install recipe was sensible enough:
 - apply the storage and memory patches where needed
 - add the unofficial Intel INF files
 
-Useful ingredients from the notes were:
-
-- **rloew SATA patch**
-- optional **PATCHMEM**
-- **LoneCrusader** Intel INF files
+The pieces I needed were the **rloew SATA patch**, optionally **PATCHMEM**, and the **LoneCrusader** Intel INF files.
 
 That was enough to get Windows 98 onto the machine, but not enough to make it comfortable.
 
@@ -83,11 +79,7 @@ That costs performance, but it made the system behave much better. More than any
 
 The onboard graphics were never the point. The interesting part was how add-in cards behaved.
 
-The notes suggest:
-
-- Radeon **X600** and **X700** cards were unstable under Catalyst on this machine
-- **VBEMP** drivers gave a much more usable fallback
-- Quake II in software mode already ran very well
+Radeon **X600** and **X700** cards were unstable under Catalyst on this machine. **VBEMP** drivers gave a much more usable fallback, and Quake II in software mode already ran very well.
 
 That makes the E520 a useful reminder that a "supported" late Win98 GPU is not always a stable one once PCIe and newer Intel chipsets enter the picture.
 
@@ -95,15 +87,11 @@ That makes the E520 a useful reminder that a "supported" late Win98 GPU is not a
 
 ## The Good News: Voodoo 2 Looked Much Better
 
-Unlike the OptiPlex 760, the Voodoo 2 notes here are actually encouraging.
-
-- **FastVoodoo 4.6** installed
-- Quake II, Unreal, and 3DMark reportedly worked well
-- Glide support looked strong enough to make the machine worth pursuing
+Unlike the OptiPlex 760, the Voodoo 2 results here were actually encouraging. **FastVoodoo 4.6** installed, Quake II, Unreal, and 3DMark all worked well, and Glide support looked strong enough to make the machine worth pursuing.
 
 That is a big point in the E520's favour. A hybrid setup with VBE for 2D and Voodoo 2 for Glide is much more convincing than a pure PCIe Radeon-based Win98 plan.
 
-One of the screenshots in the notes shows a **3DMark 99 Max score of 4796** with the Voodoo 2 installed, which is a good sign that the hybrid approach is more than just theoretically workable.
+I got a **3DMark 99 Max score of 4796** with the Voodoo 2 installed — a good sign the hybrid approach is more than just theoretically workable.
 
 ![](/img/posts/dell-dimension-e520-windows-98-3dmark-99-max-score-with-voodoo-2.jpg)
 
@@ -113,7 +101,7 @@ DOS on the E520 is surprisingly viable, but not effortless.
 
 The biggest annoyance is laggy USB keyboard behaviour in native DOS. That is a recurring problem on some Dell systems of this era, and the E520 is made worse by the lack of easy rear-panel PS/2 or serial options.
 
-Possible routes from the notes:
+Two routes I want to try:
 
 1. unlock or flash the BIOS for better USB legacy support
 2. explore the motherboard header pads for a serial or PS/2-style input solution

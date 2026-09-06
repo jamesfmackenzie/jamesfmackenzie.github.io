@@ -2,7 +2,7 @@
 layout: post
 title: I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC
 date: '2026-03-29 09:00:00'
-summary: A case-study draft on why the Dell OptiPlex 760 looked promising for Windows 98, but turned out to be much happier as an XP and DOS machine.
+summary: A case study on why the Dell OptiPlex 760 looked promising for Windows 98, but turned out to be much happier as an XP and DOS machine.
 tags: [DOS, PC, Retrogaming, Windows 98, Windows XP]
 ---
 
@@ -50,7 +50,7 @@ That was enough to make it worth a proper test.
 
 Rather than start with a clean install immediately, I did a fast and slightly messy sanity check:
 
-- move over an existing Windows 98 hard disk from the Dell Dimension e520
+- move over an existing Windows 98 hard disk from the Dell Dimension E520
 - disable some modern CPU features such as multicore, SpeedStep, and C-states
 - see how far the system gets
 
@@ -74,13 +74,7 @@ For a moment, it looked like the 760 might become a very capable late Win98 mach
 
 This is where the experiment stopped looking easy.
 
-The moment I tried to bring in a **Voodoo 2**, the platform became much less convincing.
-
-The notes suggest:
-
-- repeated crashes
-- `FXMEMMAP` blue screens
-- DOS `dos/4gw` protection faults
+The moment I tried to bring in a **Voodoo 2**, the platform became much less convincing. What I got was repeated crashes, `FXMEMMAP` blue screens, and `dos/4gw` protection faults in DOS.
 
 I stripped the machine back to a minimal hardware set and disabled onboard devices, but the behaviour did not improve.
 
@@ -98,43 +92,25 @@ Whatever the exact root cause, the practical conclusion is the important part:
 
 The onboard Intel HD Audio is also awkward under Windows 98.
 
-The onboard Intel audio is not officially supported on Windows 98.
-
-The **WDMHDA** project gets part of the way there, but the current state of the notes is:
-
-- driver installs
-- no actual audio output
-- codec support for this Analog Devices chip is not there yet
+The onboard Intel audio is not officially supported on Windows 98. The **WDMHDA** project gets part of the way there — the driver installs, but I got no actual audio output. Codec support for this Analog Devices chip just isn't there yet.
 
 So while the driver situation is interesting, it is not yet a solved path for this machine.
 
 ## Windows XP
 
-Windows XP is where the 760 starts to make much more sense.
-
-The notes suggest:
-
-- chipset drivers install cleanly
-- performance is excellent
-- faster GPUs such as the Radeon 4670 become practical
+Windows XP is where the 760 starts to make much more sense. Chipset drivers install cleanly, performance is excellent, and faster GPUs like the Radeon 4670 become practical.
 
 If the goal is a cheap, fast, low-drama retro machine for early-2000s PC gaming, XP is probably the best reason to use this hardware at all.
 
 ## Windows 7
 
-Windows 7 works, but the notes suggest performance is underwhelming without upgrades such as more RAM or an SSD.
+Windows 7 works, but performance is underwhelming without more RAM or an SSD.
 
 That probably makes it less interesting than XP for this specific project.
 
 ## DOS
 
-DOS support looks much better than expected.
-
-Useful findings:
-
-- the motherboard has a serial header
-- adding a proper header and using PS/2 input avoids some USB keyboard headaches
-- **SBEMU** works well for sound
+DOS support is much better than expected. The motherboard has a serial header, and adding a proper bracket to run PS/2 keyboard and mouse off it cleared up the USB-keyboard headaches. **SBEMU** works well for sound.
 
 The serial / PS2 header arrangement is the same style I used on the OptiPlex 380:
 
@@ -148,9 +124,9 @@ That gives the machine an interesting split personality:
 
 ## BIOS Modding Angle
 
-One unresolved path in the notes is BIOS modification via an **SOP8 clip**, potentially to unlock settings that could help with memory mapping or compatibility problems.
+One path I haven't gone down yet is BIOS modification via an **SOP8 clip**, potentially to unlock settings that could help with the memory-mapping or compatibility problems.
 
-That might eventually change the story, but it should be treated as experimental rather than as part of the core recipe.
+That might eventually change the story, but for now it's experimental rather than part of the recipe.
 
 ## Verdict So Far
 
