@@ -6,6 +6,8 @@ date: '2024-08-29 11:33:00'
 tags: [Peripherals, Sony PlayStation]
 ---
 
+![My Namco NeGcon — the split down the middle is the twist joint](/img/posts/namco-negcon-controller-for-playstation-ps1.jpg){: width="680"}
+
 I went looking for a Namco NeGcon for a while before finally tracking one down. It's PlayStation's first analog gamepad, and instead of a d-pad or stick for steering, the whole controller body twists — left for a left turn, right for a right turn.
 
 ### What it is
