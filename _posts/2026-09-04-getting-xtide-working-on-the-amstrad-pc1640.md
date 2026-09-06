@@ -3,10 +3,11 @@ layout: post
 title: Getting XTIDE Working on the Amstrad PC1640
 summary: "Turning a CompactFlash card into hard drive storage for an Amstrad PC1640 — the failed attempts, the Serial Drive detour, and the recipe that finally worked."
 date: '2026-09-04 18:00:00'
+image: lo-tech-xt-cf-texelec-isa-card.jpg
 tags: [Amstrad, DOS, PC, Retrocomputing, XTIDE]
 ---
 
-![The TexElec-manufactured Lo-tech XT-CF adapter](/img/hardware/lo-tech-xt-cf-texelec-isa-card.jpg){: width="560"}
+![The TexElec-manufactured Lo-tech XT-CF adapter](/img/posts/lo-tech-xt-cf-texelec-isa-card.jpg){: width="560"}
 
 Getting reliable, modern storage into an [Amstrad PC1640]({% link _hardware/amstrad-pc1640.md %}) means a [Lo-tech XT-CF adapter]({% link _hardware/lo-tech-xt-cf.md %}) running [XTIDE Universal BIOS]({% link _software/xt-ide.md %}) — it lets a CompactFlash card stand in for a hard drive. I bought the [TexElec](https://texelec.com/) version, which comes with the BIOS pre-installed, so the hardware side was the easy part. Getting it to actually boot was a different story.
 
