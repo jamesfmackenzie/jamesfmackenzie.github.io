@@ -19,8 +19,6 @@ And the best part? These machines are often so unwanted that you can find them f
 
 If you want the broader hardware overview first, see the companion page for the **[Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})**.
 
----
-
 ### The idea: stop judging retro builds by the case
 
 When you think “retro gaming PC,” you might picture a tasteful beige tower, maybe a glowing Voodoo logo, and a Sound Blaster peeking out the back.
@@ -32,7 +30,6 @@ But here’s the thing: if you focus on the *experience* instead of the vibes, t
 - **Locked 60fps DOS Quake** (even in software rendering!)
 - Windows 98 gaming with a **period-correct, officially supported Radeon**
 - Windows XP power for early-2000s classics (and yes… **even Crysis**)
-
 
 ### The base machine: Dell OptiPlex 380
 
@@ -58,7 +55,6 @@ Expansion is solid too:
 
 Importantly, it’s modern enough that late DOS and Windows 9x titles don’t just run — they *fly*.
 
-
 ### Graphics upgrade: Radeon X800 XL (PCIe)
 
 There’s a common myth that **PCIe doesn’t work with Windows 98**. Sometimes that’s true depending on the hardware, but in my case it worked perfectly.
@@ -76,7 +72,6 @@ Unfortunately, the reason it was so cheap became obvious immediately — the fan
 
 ![Fixing the Radeon X800 XL fan bearing](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg)
 
-
 ### Sound card: Yamaha YMF-724 (real OPL3)
 
 Sound is where many retro builds fall apart, especially for DOS.
@@ -91,7 +86,6 @@ I managed to find an off-brand YMF-724 variant for **$10**. I had to zoom into t
 
 At this point, the running total was a cool **$82**.
 
-
 ### Input matters: PS/2 beats USB for DOS
 
 Native DOS apps — and even the Windows 98 installer — can behave badly with USB keyboards and mice on newer systems. Lag, missed input, and outright crashes are common.
@@ -100,8 +94,6 @@ Luckily, the OptiPlex has a **serial header** on the motherboard. Using a Dell a
 
 ![](/img/posts/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg)
 
-
-
 ### Installing Windows 98: the key BIOS trick
 
 In the BIOS, this machine has an **“OS Install”** option that limits available memory to **256MB**.
@@ -109,7 +101,6 @@ In the BIOS, this machine has an **“OS Install”** option that limits availab
 That’s perfect for Windows 98 setup, which doesn’t like large amounts of RAM — especially the full 4GB installed here.
 
 With that enabled, the Windows 98 installer behaved perfectly.
-
 
 ### Making Windows 98 behave on SATA hardware
 
@@ -126,7 +117,6 @@ Once installed, I added:
 
 After one hiccup — removing an extra “Standard Display Adapter” entry from Device Manager — Direct3D was fully working.
 
-
 ### Sound in Windows 98: Yamaha goodness
 
 After installing the Yamaha DS-XG drivers and rebooting:
@@ -136,7 +126,6 @@ After installing the Yamaha DS-XG drivers and rebooting:
 - DOS games launched inside Windows worked without issue
 
 Naturally, Doom was the first test — and it worked beautifully.
-
 
 ### DOS performance: software rendering at its best
 
@@ -151,7 +140,6 @@ Quake in **software rendering at 800×600**, running at a **locked 60fps**, is g
 
 Some DOS titles struggle in DOSBox, but on real hardware like this they behave exactly as intended.
 
-
 ### Native DOS sound via Yamaha DSDMA
 
 One of the coolest features of the YMF-724 is **DSDMA**, which helps emulate the legacy ISA DMA behavior DOS games expect.
@@ -161,7 +149,6 @@ Run the setup tool, get valid IRQ/DMA values, and native DOS sound just works.
 Wolfenstein 3D sounded exactly right — and because this is real OPL3 hardware, AdLib music is as authentic as it gets.
 
 Some games run too fast, but with CPU throttling tools (like CPUSPD) and cache control, even tricky titles behave well.
-
 
 ### Benchmarks (silly fast)
 
@@ -178,7 +165,6 @@ Some games run too fast, but with CPU throttling tools (like CPUSPD) and cache c
 - Quake II timedemo: **972.4 fps**
 - Unreal timedemo: **497.3 fps**
 
-
 ### Windows XP: finding the ceiling
 
 To see how far this system could stretch, I installed Windows XP.
@@ -190,7 +176,6 @@ To see how far this system could stretch, I installed Windows XP.
 
 At **800×600, Medium settings**, Crysis is genuinely playable — I even got distracted and played through the entire first mission.
 
-
 ### Don't judge a book by its greige cover
 
 As I mentioned already, this miracle machine is an **[ugly Dell Optiplex 380]({% link _hardware/dell-optiplex-380.md %})**.
@@ -199,13 +184,11 @@ It might not have the classic retro aesthetic, but I’ve grown to love it, beca
 
 And because it’s cheap, it’s also perfect for experimentation.
 
-
 ### What’s next?
 
 I have a **[Voodoo 3]({% link _hardware/3dfx-voodoo-3.md %})** on order and plan to try native Glide on this retro rocket.
 
 (If you’ve successfully run 3dfx hardware in a similar Core 2 / G41 / OptiPlex setup, I’d love to hear what worked for you!)
-
 
 ### Final thoughts
 
@@ -220,7 +203,6 @@ Would you build an **ugly retro PC** if it meant:
 If you try your own OptiPlex sleeper build, let me know what you used for graphics, sound, and memory limits — and whether you ran into any weird compatibility issues.
 
 Sometimes the best retro machines are the ones nobody wants!
-
 
 ### Watch on YouTube
 

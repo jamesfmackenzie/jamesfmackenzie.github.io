@@ -102,7 +102,7 @@ Except… no.
 
 ### Modern Consoles Have Removed 3D Support 😢
 
-Firing about the movie on Xbox, I got an ugly error message.
+Firing up the movie on Xbox, I got an ugly error message.
 
 ![Blu-ray 3D error message](/img/posts/3d-blu-ray-error-on-xbox-series-x.jpg)
 

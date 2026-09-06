@@ -14,8 +14,6 @@ In 1993, Namco built an arcade cabinet that shouldn't have made sense as a busin
 
 I found a photo of this cabinet and could not stop thinking about it. And the more I dug, the more I realised: **nobody had ever gotten this working properly in MAME.** Not because it was impossible — because the chip responsible for stitching the three screens together had never been properly emulated. This is the story of chasing that cabinet down, through two dead ends left by other people, a lot of dead-end evenings of my own, and a discovery late in the process that I genuinely did not see coming.
 
----
-
 ## Act One: The Cabinet That Shouldn't Exist
 
 ### A chip called the C139
@@ -154,8 +152,6 @@ All three connected over TCP cleanly. DIP-switch role selection worked exactly a
 That's not three copies of the same frame stitched together — look closely and you can see it's not even trying to be. The center screen shows a full attract-mode scene with the HUD intact. The left and right monitors show tight, close-up canyon-wall views, consistent with a wraparound side-camera perspective mid-corner, hugging a rock face the center camera can't even see. Each PCB is receiving the same broadcast scene state over the link and computing its *own* distinct camera viewport from it — genuinely doing what the real, three-PCB cabinet does, not faking it.
 
 It's not quite the cabinet I set out chasing. A real Full Scale, with the actual roadster-shell graphics rendering correctly, is still waiting on a ROM dump that exists but can't yet see daylight. But getting a three-screen, C139-linked Ridge Racer running cleanly, with correct per-screen graphics and not a hint of the corruption or clipping bugs that dogged both earlier attempts, is the moment this whole quest was actually about. Full Scale was the cabinet that started it. Three Monitor Version is the one that proved the chip — and the emulation of it — actually works.
-
----
 
 ## What's Next
 
