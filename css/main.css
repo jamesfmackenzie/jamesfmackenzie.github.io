@@ -176,11 +176,10 @@ body > header nav a:hover { color: #fff; }
 aside {
   background: none;
   color: inherit;
+  padding: 2.6rem 0 3rem;   /* top: below header; bottom: clear gap before the feed */
 }
-aside .row {
-  max-width: var(--wrap);
-  padding-top: 2.6rem;
-}
+aside .row { max-width: var(--wrap); }
+aside .row + .row { margin-top: 1.4rem; }   /* bio -> social pips */
 aside p {
   margin: 0;
   max-width: var(--measure);
@@ -246,7 +245,7 @@ aside p {
 /* social links — mono pill chips */
 .social-buttons {
   list-style: none;
-  margin: 1.1rem 0 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -299,9 +298,10 @@ main { margin-bottom: 3rem; }
 
 .post-list .post-summary {
   max-width: var(--measure);
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.55rem;
 }
-.post-list .post-summary p { margin: 0 0 0.5rem; }
+.post-list .post-summary p { margin: 0; }
+.post-list .post-summary p + p { margin-top: 0.6rem; }
 .post-list .post-summary a { color: inherit; text-decoration: none; }
 
 .feed-meta {
@@ -311,6 +311,8 @@ main { margin-bottom: 3rem; }
   color: var(--muted);
 }
 .feed-meta time { color: inherit; }
+.feed-meta a { color: inherit; text-decoration: underline; }
+.feed-meta a:hover { color: var(--accent); }
 
 .feed-thumb {
   display: block;
@@ -615,7 +617,7 @@ footer .social-buttons a:hover {
   body { font-size: 1.14rem; }
   h1 { font-size: 1.8rem; }
   .intro { padding-top: 2rem; }
-  aside .row { padding-top: 2rem; }
+  aside { padding-top: 2rem; }
   .tweet-page .intro h1 { font-size: 1.2rem; }
 
   /* collapse the section nav behind a toggle */

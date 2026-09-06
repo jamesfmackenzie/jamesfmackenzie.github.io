@@ -72,6 +72,12 @@ $(function () {
       ? "<div class=\"post-summary\">" + postToAppend.summary + "</div>"
       : "";
 
+    var tagsSuffix = (postToAppend.tags && postToAppend.tags.length)
+      ? " &middot; " + postToAppend.tags.map(function (t) {
+          return "<a href=\"/sitemap/#" + t.urlSafeName + "\">" + t.name + "</a>";
+        }).join(", ")
+      : "";
+
     var htmlFragment = "";
 
     if (postToAppend.layout == "tweet") {
@@ -87,7 +93,7 @@ $(function () {
         "<div class=\"row\">" +
         "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" +
         summaryFragment +
-        "<p class=\"feed-meta\">Video &nbsp;&middot;&nbsp; <time>" + postToAppend.date + "</time></p>" +
+        "<p class=\"feed-meta\">Video &nbsp;&middot;&nbsp; <time>" + postToAppend.date + "</time>" + tagsSuffix + "</p>" +
         "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>" +
         "</div>";
     }
@@ -100,7 +106,7 @@ $(function () {
         "<div class=\"row\">" +
         "<h2><a href=\"" + url + "\">" + postToAppend.title + "</a></h2>" +
         summaryFragment +
-        "<p class=\"feed-meta\"><time>" + postToAppend.date + "</time></p>" +
+        "<p class=\"feed-meta\"><time>" + postToAppend.date + "</time>" + tagsSuffix + "</p>" +
         thumbFragment +
         "</div>";
     }
