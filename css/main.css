@@ -218,7 +218,7 @@ body>header a:hover {
 }
 
 .post-list article img {
-  max-width: 600px;
+  max-width: min(600px, 100%);
 }
 
 /* end post-list styles */
