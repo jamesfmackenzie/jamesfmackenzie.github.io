@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
-![Fixing the Radeon X800 XL fan bearing](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg)
+![The Radeon X800 XL with its stock ATI cooler](/img/posts/ati-radeon-x800-xl.jpg){: width="680"}
 
 The ATI Radeon X800 XL is one of the most appealing graphics cards from the last really interesting stretch of Windows 98 and early Windows XP gaming. It is fast, relatively common, and old enough to feel period-correct for late DirectX 9 gaming, while still being new enough to make a powerful bridge card for mixed Win98 and XP builds.
 
@@ -72,7 +72,7 @@ Many surviving examples are cheap because they arrive with:
 
 That is exactly what happened with my own card. It was inexpensive, but the fan was seized and making an awful grinding noise — sorting it out took [three attempts]({% post_url 2026-09-03-fixing-fan-noise-on-a-radeon-x800-xl %}), ending with an aftermarket cooler.
 
-![The X800 XL with its cooler removed, showing the R430 GPU](/img/hardware/ati-radeon-x800-xl-r430-gpu.jpg){: width="680"}
+![The seized stock fan, mid-repair](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="440"}
 
 That kind of age-related maintenance is now just part of owning hardware from this era.
 
