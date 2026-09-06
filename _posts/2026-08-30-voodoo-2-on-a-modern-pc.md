@@ -19,7 +19,7 @@ My Z97 board doesn't have a single one. Every slot is PCIe. So if I wanted to tr
 
 Enter a cheap PCI-to-PCIe adapter card. In theory, it lets a PCI card like the Voodoo 2 plug into a PCIe slot.
 
-![A cheap PCIe-to-PCI adapter card, with a Molex power lead and a bridge chip](/img/posts/pcie-to-pci-adapter-for-voodoo-2.jpg){: width="600"}
+![The PCIe-to-PCI adapter I bought — Molex power lead, bridge chip, and a full-length PCI slot](/img/posts/pcie-to-pci-adapter-for-voodoo-2.jpg){: width="600"}
 
 In practice, there was an immediate physical problem: the Voodoo 2 is a **full-height card**, and mounted the normal way through the adapter it was simply too tall for the case.
 
