@@ -6,6 +6,8 @@ tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP
 status: in progress
 ---
 
+![Dell OptiPlex 760 tower](/img/posts/dell-optiplex-760.jpg)
+
 After the [OptiPlex 380]({% link _hardware/dell-optiplex-380.md %}) turned into such a strong multi-era retro PC, I wanted to see if the same trick would work on its newer sibling — the [OptiPlex 760]({% link _hardware/dell-optiplex-760.md %}). It didn't repeat quite as cleanly.
 
 ### Project Notes

@@ -6,6 +6,8 @@ tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP
 status: in progress
 ---
 
+![Dell Dimension E520 tower](/img/posts/dell-dimension-e520.jpg)
+
 The [Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %}) is the home-market cousin of [the OptiPlex 760]({% link _projects/turning-a-dell-optiplex-760-into-a-retro-gaming-pc.md %}) — same Core 2 / mid-2000s Dell generation, similar retro potential, and its own separate set of quirks to work through.
 
 ### Project Notes
