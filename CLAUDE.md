@@ -105,6 +105,15 @@ Model page: `_hardware/dell-optiplex-760.md`.
 - triple-redundant sections restating the same point
 - the "My take is that X is one of the…" template opener on hardware pages
 
+## Design
+
+`css/main.css` is a single stylesheet built on `:root` tokens (colour + type +
+layout). Ground `#f8f5ef` (warm paper), ink `#222a33`, accent `#0f8576`, dark code
+blocks. **Source Serif 4** body / **Space Grotesk** headings + UI (loaded in
+`_includes/head-includes.md`); `code.css` is the matching dark syntax theme. Layout is
+a centred column: ~928px chrome, ~752px media, ~656px running text, all left-aligned.
+Keep new CSS token-driven and in that file.
+
 ## House styles
 
 - **Hardware page shape:** personal-hook intro → `### What it is` / `### Specifications`
@@ -116,23 +125,30 @@ Model page: `_hardware/dell-optiplex-760.md`.
   embed(s), then `<br />`.
 - **Cross-linking:** every hardware / project / post ends with `### Related on this
   site`. When pointing at "how I used it", link the build *post*, not the hardware page.
-- **Kicker:** the small label above a page title — `HARDWARE`, `GUIDE`, `PROJECT`,
-  `SOFTWARE`. Derived from the collection; posts fall back to their first tag or omit it.
-  *(rendered by the design refresh.)*
+- **Kicker:** the small label above a page title — `HARDWARE`, `GUIDE`, `SOFTWARE`,
+  `PROJECT`, `REFERENCE`, `VIDEO`, `TWEET`. Derived from the collection (or the
+  `youtube` / `tweet` layout) in `_includes/post-intro.md`. Plain `_posts` get no kicker.
+- The page intro (kicker + `<h1>` + one-line meta + optional hero) is
+  `_includes/post-intro.md`, used by post / nodate / nocomments; section + sitemap
+  layouts render their own `.intro`.
 
 ### Images
 
 - `img/` is a single flat folder — no subfolders. Reference every image as `/img/<file>`.
-- **`hero:`** — the lead image at the top of a hardware page or post (filename only).
-  Rendered by the layout in a fixed slot below the title: **frameless**, and re-matted
-  onto the page ground colour (`#f8f5ef`) so it sits flush with no card. Keep the
-  re-matte script for when the ground colour changes. *(hero: rendering lands with the
-  design refresh; today the lead image is just the first `![]()` in the body.)*
+- **`hero:`** — the lead image, in frontmatter (filename only; `hero_alt:`,
+  `hero_caption:` optional). Rendered frameless in a fixed slot below the title, wider
+  than the text column, sitting directly on the ground colour `#f8f5ef`.
+- Hero images are **re-matted onto `#f8f5ef` and margin-trimmed** by
+  `tools/hero-rematte.py` (transparent → composite; near-white studio bg → replace;
+  trim dead space, never below 50% of a dimension; opaque photo-PNGs → JPEG with refs
+  updated). Re-run it if the ground colour ever changes. Full-frame photos and
+  screenshots are left alone.
 - **`image:`** — the home-page / feed thumbnail (filename only). **If absent, the
-  thumbnail falls back to `hero:`.** Set `image:` explicitly only to override the hero
-  for the thumbnail.
-- **Body images** are framed on white cards (hairline + rounded corners); cutout
-  renders get a little inner padding.
+  thumbnail falls back to `hero:`.** Set `image:` explicitly only when the thumbnail
+  should differ from the hero.
+- **Feed thumbnails are frameless too** (same treatment as heroes). **Body images**
+  (anything inside the article) are framed on a white card — hairline + rounded corners;
+  add `{: .cutout}` for a transparent render that needs inner padding.
 - **Prefer James's own photos** over stock product renders where one exists, and caption
   a personal photo to say so — e.g. *"My own Saturn — a boxed Model 2 I picked up in
   Tokyo."*

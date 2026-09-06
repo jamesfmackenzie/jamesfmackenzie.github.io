@@ -442,7 +442,7 @@ figcaption {
 }
 .section-index .body h3:first-child { margin-top: 1.2rem; }
 .section-index .body ul { list-style: none; padding: 0; margin: 0 0 0.5rem; }
-.section-index .body li { margin: 0.4rem 0; }
+.section-index .body li { margin: 0.28rem 0; }
 .section-index .body li a { text-decoration: none; }
 .section-index .body li a:hover { text-decoration: underline; }
 
@@ -612,8 +612,6 @@ footer .social-buttons a:hover {
    ================================================================ */
 
 @media only screen and (max-width: 1023px) {
-  .desktopOnly { display: none !important; }
-
   body { font-size: 1.14rem; }
   h1 { font-size: 1.8rem; }
   .intro { padding-top: 2rem; }
@@ -667,8 +665,4 @@ footer .social-buttons a:hover {
   }
   #nav-toggle:checked ~ nav { display: flex; }
   body > header nav a { padding: 0.5rem 0; }
-}
-
-@media only screen and (min-width: 1024px) {
-  .mobileOnly { display: none !important; }
 }
