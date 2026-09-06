@@ -6,6 +6,21 @@ description: "I fix (and break) old computers on the internet! This is where I s
 permalink: pretty
 future: false
 
+# keep dev/agent files out of the build (this list replaces Jekyll's defaults,
+# so the standard entries are repeated here)
+exclude:
+  - CLAUDE.md
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 # collections (i.e. not posts)
 collections:
   projects:
