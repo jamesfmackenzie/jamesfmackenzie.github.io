@@ -20,7 +20,7 @@ mkdir C:\DRIVERS
 copy E:\OAKCDROM.SYS C:\DRIVERS
 ```
 
-![](/img/posts/mister-ao486-cdrom-oakcdrom-sys-driver.png)
+![](/img/mister-ao486-cdrom-oakcdrom-sys-driver.png)
 
 
 ### Step 2 – Install CD-ROM Driver
@@ -47,14 +47,14 @@ LH C:\DOS\MSCDEX.EXE /D:MSCD001 /L:D
 {:start="3"}
 3. Hit *Windows Key* + *F12* for ao486 core options. Select *Reset and apply HDD* to reboot ao486. The CD-ROM driver should load as follows:
 
-![](/img/posts/mister-ao486-cdrom-oakcdrom-sys-driver-2.png)
+![](/img/mister-ao486-cdrom-oakcdrom-sys-driver-2.png)
 
 
 ### Step 3 – Copy an ISO CD-ROM image to your MiSTer
 
 Download a CD-ROM image in <a href="https://en.wikipedia.org/wiki/Optical_disc_image" target="_blank">ISO</a> format. I went for the <a href="https://archive.org/details/cdrom-ultimate-shareware-games-1" target="_blank">Ultimate Shareware Games Collection</a> from archive.org:
 
-![](/img/posts/ultimate-shareware-games-collection.jpg)
+![](/img/ultimate-shareware-games-collection.jpg)
 
 Once downloaded, [copy your ISO]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) to the <code>/media/fat/games/AO486</code> folder on your MiSTer.
 
@@ -70,16 +70,16 @@ Time to mount a CD-ROM! From the DOS prompt:
 
 1. Hit *Windows Key* + *F12* for ao486 core options. Highlight *IDE 1-0* and hit *Enter*. Select your ISO file:
 
-![](/img/posts/mister-ao486-cdrom-choose-ide1-0-cd-rom-iso-bin-cue-2.png)
+![](/img/mister-ao486-cdrom-choose-ide1-0-cd-rom-iso-bin-cue-2.png)
 
 {:start="2"}
 2. Hit *Esc* to close the MiSTer menu and navigate to the CD-ROM by typing <code>D:</code>. Then type <code>dir</code> to view the contents of your CD:
 
-![](/img/posts/mister-ao486-cdrom-list-cd-rom-contents.png)
+![](/img/mister-ao486-cdrom-list-cd-rom-contents.png)
 
 <blockquote>All going well, you should see the CD contents. You're ready to play some games!</blockquote>
 
-![](/img/posts/mister-ao486-spear-of-destiny.png)
+![](/img/mister-ao486-spear-of-destiny.png)
 
 That's it for this post. Consider looking at [sound]({% post_url 2021-03-13-mister-ao486-core-part-4-sound-blaster-and-adlib-opl2-opl3-music %}) and [mouse]({% post_url 2021-03-13-mister-ao486-core-part-6-mouse-support %}) setup if you haven't already.
 

@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
 ---
 
-![](/img/posts/lenovo-m93p.jpg)
+![](/img/lenovo-m93p.jpg)
 
 I spent years looking for the perfect emulation box: small, quiet, sits under the TV, works with a wireless controller, and has enough horsepower for 32-bit consoles. A Raspberry Pi with RetroPie got close, but it wasn't enough for PlayStation or Saturn. The Lenovo M93p Tiny — a business desktop from Lenovo's ThinkCentre line — turned out to be the answer.
 

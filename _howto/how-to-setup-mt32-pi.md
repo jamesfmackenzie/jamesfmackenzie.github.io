@@ -82,7 +82,7 @@ SOFTMPU.EXE /MPU:330 /SB:220 /IRQ:7 /OUTPUT:COM1
 
 SoftMPU will detect your PC serial port and create a "Soft" MIDI interface that your games use for MIDI playback:
 
-![](/img/posts/mt32-pi-softmpu-serial-mode-rs232-mpu-401.png)
+![](/img/mt32-pi-softmpu-serial-mode-rs232-mpu-401.png)
 
 ### Step 5 – Switching Modes
 

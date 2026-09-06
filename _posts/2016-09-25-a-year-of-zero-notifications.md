@@ -49,7 +49,7 @@ To action! Head to your Settings menu and disable those pesky notifications. As 
 
 Everything else is disabled.
 
-![](/img/posts/the-great-notification-purge.png)
+![](/img/the-great-notification-purge.png)
 
 The major victim here is email. No notifications for those at all. I work on the assumption that if something is truly urgent, someone will SMS or call.
 

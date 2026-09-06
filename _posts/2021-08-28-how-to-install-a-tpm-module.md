@@ -9,7 +9,7 @@ tags: [How To, PC, Posts]
 
 **Update 2021-10-16: Thanks to <a href="https://support.microsoft.com/en-us/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e" target="_blank">recently published upgrade instructions</a>, it's now possible to upgrade previously unsupported TPM 1.2 PCs to Windows 11. Learn more [here]({% post_url 2021-10-16-upgrade-an-unsupported-pc-to-windows-11-with-registry-bypass %}).**
 
-![](/img/posts/tpm-module.png)
+![](/img/tpm-module.png)
 
 A quick post on Trusted Platform Modules (TPMs).
  
@@ -66,7 +66,7 @@ There are many different Discrete TPM pinout standards and you'll need to find t
 
 I have an Asus Z87-PRO motherboard. After some research I bought this module for $7: 
 
-![](/img/posts/supermicro-tpm-module.jpg)
+![](/img/supermicro-tpm-module.jpg)
 
 You also need to verify Secure Boot and UEFI support:
 
@@ -78,7 +78,7 @@ If you have all the above, you're good to go
 
 ### Preparing your system for a TPM
 
-![](/img/posts/secureboot-legacy-mode.png)
+![](/img/secureboot-legacy-mode.png)
 
 Before you install/enable the TPM, check the System Information app in Windows (<code>Start</code> -> <code>msinfo32</code>). If you have "BIOS Mode" = *Legacy* and "Secure Boot State" = *Unsupported*, you need to fix that first:
 
@@ -89,7 +89,7 @@ Before you install/enable the TPM, check the System Information app in Windows (
 5. Reboot your PC, enter the BIOS, enable UEFI and Secure Boot
 6. Save changes and load Windows. System Information should now show "BIOS mode" = *UEFI* and "Secure Boot State" = *On*
 
-![](/img/posts/uefi-secureboot-bios-mode.png)
+![](/img/uefi-secureboot-bios-mode.png)
 
 
 ### Install and enable the TPM
@@ -103,7 +103,7 @@ With UEFI and Secure Boot fully enabled, you're ready to install/enable the TPM:
 
 Congratulations, you've successfully installed a TPM!
 
-![](/img/posts/the-tpm-is-ready-for-use.png)
+![](/img/the-tpm-is-ready-for-use.png)
 
 
 ### I've installed a TPM! Can I use Windows 11?
@@ -115,7 +115,7 @@ Unfortunately Windows 11 compatibility is more complicated than just TPM – and
 
 To check your own machine, download and run the Windows 11 PC Health Check app. It will run a diagnostic and provide a compatibility summary for you:
 
-![](/img/posts/windows-11-pc-health-check-app-tool.png)
+![](/img/windows-11-pc-health-check-app-tool.png)
 
 This was a fun journey and I learned a lot about TPM! Hope you find this post useful too!
 

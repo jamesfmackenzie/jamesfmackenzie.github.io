@@ -7,7 +7,7 @@ image: t5710-monoprice-ps2-y-splitter-cable.jpg
 tags: [MS-DOS, PC, Posts, Retrocomputing, Retrogaming]
 ---
 
-![](/img/posts/t5710-monoprice-ps2-y-splitter-cable.jpg)
+![](/img/t5710-monoprice-ps2-y-splitter-cable.jpg)
 
 I've had several queries on using a PS/2 splitter cable to connect keyboard and mouse to the [t5710]({% post_url 2021-07-11-hp-compaq-t5710-review-great-for-dos-and-windows-98-gaming %}) simultaneously. The good news? It works great. I purchased <a href="https://www.ebay.com/itm/392826957006" target="_blank">this Monoprice cable</a> and have keyboard/mouse working with the following setup:
 
@@ -15,11 +15,11 @@ I've had several queries on using a PS/2 splitter cable to connect keyboard and 
 
 * <a href="https://www.parkytowers.me.uk/thin/hp/bios.shtml" target="_blank">BIOS 786R1</a> (Version 1.07, Revision A):
 
-![](/img/posts/t5710-bios-107-786r1.png)
+![](/img/t5710-bios-107-786r1.png)
 
 * Set <code>PS2 KB/MS</code> to *Keyboard*:
 
-![](/img/posts/t5710-bios-ps2-y-splitter-cable-keyboard-mouse.png)
+![](/img/t5710-bios-ps2-y-splitter-cable-keyboard-mouse.png)
 
 Good luck!
 

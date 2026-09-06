@@ -7,7 +7,7 @@ image: cubefaces.png
 tags: [How To, Posts, VR Photography]
 ---
 
-![Equirectangular source image](/img/posts/equirectangular-pano.png)
+![Equirectangular source image](/img/equirectangular-pano.png)
 
 Equirectangular and cube face projections are commonly used in 360 photo / VR panorama processing. Here's how to convert from one to the other.
 
@@ -31,7 +31,7 @@ A real world example:
 erect2cubic --erect=equirectangular-pano.png --ptofile=convert_to_cubefaces.pto --face=1024
 {% endhighlight %}
 
-![Specify transformation parameters](/img/posts/2016-10-17-erect2cubic-command.png)
+![Specify transformation parameters](/img/2016-10-17-erect2cubic-command.png)
 
 ### Step 3. Execute convert
 
@@ -49,9 +49,9 @@ nona -o convert convert_to_cubefaces.pto
 
 This will produce 6 images, one for each cube face:
 
-![Execute transformation](/img/posts/2016-10-17-nona-command.png)
+![Execute transformation](/img/2016-10-17-nona-command.png)
 
-![Output cubefaces](/img/posts/cubefaces.png)
+![Output cubefaces](/img/cubefaces.png)
 
 Job done!
 

@@ -6,7 +6,7 @@ date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
-![](/img/posts/dell-optiplex-380-small.png)
+![](/img/dell-optiplex-380-small.png)
 
 The Dell OptiPlex 380 is an unassuming late-2000s business desktop, and it's become one of my favourite cheap retro PC bases. It's common, dirt cheap on the second-hand market, and just old enough to keep the legacy I/O that makes DOS and Windows 98 livable — while being fast enough to crush anything from that era.
 
@@ -33,7 +33,7 @@ My own machine is a Core 2 Duo `E7600 @ 3.06GHz` with 4GB of DDR3, a 500GB hard 
 - **BIOS "OS Install" mode** caps available RAM at 256MB — exactly what Windows 98 setup wants, especially with 4GB fitted.
 - **No ISA slots**, and the ICH7 southbridge doesn't support DDMA or PC/PCI, so native DOS digital audio depends on picking the right PCI card. Yamaha YMF7x4 cards (724, 744, 754) are the ones that work — real OPL3 plus DSDMA.
 
-![The PS/2 header extension run out to the back of the case](/img/posts/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg){: width="405"}
+![The PS/2 header extension run out to the back of the case](/img/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg){: width="405"}
 
 ### Where it fits
 

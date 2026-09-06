@@ -24,7 +24,7 @@ But what magic is this!? Well it's a little-known fact that some Atari ST games 
 
 Space Quest III (and many other Sierra games) support both Casio CZ (good) and Roland MT-32 (great) synths. Use the built-in MUSIC.PRG utility to set your Music Device:
 
-![](/img/posts/atari-st-sierra-midi-utility.png) 
+![](/img/atari-st-sierra-midi-utility.png) 
 
 Find a full list of MT-32 compatible games <a href="https://en.wikipedia.org/wiki/List_of_MT-32-compatible_computer_games#Atari_ST" target="_blank">here</a>. Happy listening!
 

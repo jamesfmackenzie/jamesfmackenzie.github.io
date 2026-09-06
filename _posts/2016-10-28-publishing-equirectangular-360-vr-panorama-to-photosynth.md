@@ -19,7 +19,7 @@ If you have Photoshop or Photoshop Elements, there's a really easy way to do thi
 4. Select a projection. VR panoramas typically use <i><a href="https://en.wikipedia.org/wiki/Equirectangular_projection" target="_blank">Equirectangular</a> (Horizontal)</i>
 5. Click <i>Publish</i>
 
-![Export to PhotoSynth](/img/posts/photosynth-export.png)
+![Export to PhotoSynth](/img/photosynth-export.png)
 
 ### If you don't
 
@@ -44,7 +44,7 @@ Before you can upload your VR panorama to Photosynth, you'll need to convert it 
 
 If you're unsure which cube face is which, check my visual guide below:
 
-![cube faces guide](/img/posts/cube-faces-guide.jpg)
+![cube faces guide](/img/cube-faces-guide.jpg)
 
 ### Step 3. Create ICE project file
 
@@ -81,15 +81,15 @@ In the same directory as your cube faces, create a new file called <code>pano.sp
  
 Double click the .spj file to launch ICE. The panorama should load automatically, showing thumbnails of your cube faces:
 
-![stitch a panorama](/img/posts/ice-1.png)
+![stitch a panorama](/img/ice-1.png)
 
 Ensure <i>Camera motion</i> is toggled to <i>Rotating motion</i> and hit <i>Next</i> three times to proceed to the <i>EXPORT</i> tab. Once there, expand the <i>Photosynth</i> panel:
 
-![Publish to Photosynth](/img/posts/ice-publish-to-photosynth.jpg)
+![Publish to Photosynth](/img/ice-publish-to-photosynth.jpg)
 
 The very first time, you'll need to (possibly register and) login to Photosynth. After that, fill out some descriptive details and hit <i>Publish</i>. All going well, ICE will spawn a browser window and display your brand new, published VR panorama!
 
-![Photosynth VR panorama](/img/posts/photosynth-published-panorama.jpg)
+![Photosynth VR panorama](/img/photosynth-published-panorama.jpg)
 
 That's all there is to it! Pan around the image to your heart's content, then share the link with your friends!
 

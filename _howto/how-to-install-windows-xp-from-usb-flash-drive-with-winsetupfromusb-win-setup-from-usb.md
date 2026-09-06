@@ -21,13 +21,13 @@ WinSetupFromUSB is a super useful tool that can prepare a USB flash drive to ins
 
 First, insert the USB stick on a modern PC and format as NTFS.
 
-![](/img/posts/usb-stick-flash-drive-formatted-ntfs.png)
+![](/img/usb-stick-flash-drive-formatted-ntfs.png)
 
 ### Step 2 - Extract Windows XP ISO
 
 Using an archival tool like <a href="https://www.7-zip.org/" target="_blank">7-Zip</a>, extract your Windows XP ISO to a folder. 
 
-![](/img/posts/extract-windows-xp-iso-using-7zip.png)
+![](/img/extract-windows-xp-iso-using-7zip.png)
 
 ### Step 3 - Download and extract WinSetupFromUSB
 
@@ -35,7 +35,7 @@ Download and extract <a href="http://www.winsetupfromusb.com/downloads/" target=
 
 When the extract completes, run <code>WinSetupFromUSB_1-10_x64.exe</code>:
 
-![](/img/posts/launch-winsetupfromusb-x64.png)
+![](/img/launch-winsetupfromusb-x64.png)
 
 ### Step 4 - Prepare USB install media
 
@@ -45,13 +45,13 @@ Under *Add to USB disk*, find *Windows 2000/XP/2003 Setup*. Check the checkbox a
 
 Accept the Microsoft EULA and click *GO* to create the bootable USB stick.
 
-![](/img/posts/create-bootable-windows-xp-install-media-with-winsetupfromusb-win-setup-from-usb.png)
+![](/img/create-bootable-windows-xp-install-media-with-winsetupfromusb-win-setup-from-usb.png)
 
 ### Step 5 - Verify files
 
 Once the install completes, verify the USB stick is readable with the following files in place:
 
-![](/img/posts/verify-windows-xp-winsetupfromusb-stick-and-copy-drivers.png)
+![](/img/verify-windows-xp-winsetupfromusb-stick-and-copy-drivers.png)
 
 Also copy any *extra* files you want onto the USB stick (drivers/utilities/games etc). They will be available in Windows XP when the install completes.
 
@@ -63,7 +63,7 @@ Insert the WinSetupFromUSB stick and power on your retro PC. The system will rec
 
 From the menu, select *Windows XP/2003/2003 Setup*:
 
-![](/img/posts/windows-xp-2000-2003-setup-winsetupfromusb-win-setup-from-usb.png)
+![](/img/windows-xp-2000-2003-setup-winsetupfromusb-win-setup-from-usb.png)
 
 The Windows XP install has two phases:
 
@@ -72,7 +72,7 @@ The Windows XP install has two phases:
 
 Select *First part of Windows XP Professional SP3 setup* to start the first phase.
 
-![](/img/posts/windows-xp-text-mode-install-1.png)
+![](/img/windows-xp-text-mode-install-1.png)
 
 ### Step 7 - Prepare disks, copy install files
 
@@ -80,17 +80,17 @@ Windows will boot into the text mode installation menu.
 
 Follow the on-screen prompts to partition/format your hard disk and copy Windows installation files.
 
-![](/img/posts/windows-xp-text-mode-install-2.png)
+![](/img/windows-xp-text-mode-install-2.png)
 
 ### Step 8 - Configure Windows XP
 
 After some time, your PC will reboot to the WinSetupFromUSB menu. This time, select *Second part of Windows XP Professional setup* to start the graphics mode setup:
 
-![](/img/posts/windows-xp-graphics-mode-install.png)
+![](/img/windows-xp-graphics-mode-install.png)
 
 Follow the on-screen prompts to configure Windows. The default options are suitable for most installations.
 
-![](/img/posts/windows-xp-graphics-mode-setup-and-configuration.png)
+![](/img/windows-xp-graphics-mode-setup-and-configuration.png)
 
 ### Setup 9 - Boot Windows XP
 
@@ -98,7 +98,7 @@ After one last reboot, Windows XP will load for the first time. This is your opp
 
 Enjoy!
 
-![](/img/posts/windows-xp-wallpaper-bliss.jpg)
+![](/img/windows-xp-wallpaper-bliss.jpg)
 
 
 ### Watch on YouTube

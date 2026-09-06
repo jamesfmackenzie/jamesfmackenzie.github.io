@@ -16,7 +16,7 @@ Head over to <a href="https://apps.twitter.com/" target="_blank">https://apps.tw
 
 Choose a Name, Description, Website and Callback URL. Choose anything you like - even the Callback URL doesn't matter at this point. Accept the Developer Agreement and click "Create your Twitter application".
 
-![](/img/posts/Create_an_application___Twitter_Application_Management_1.png)
+![](/img/Create_an_application___Twitter_Application_Management_1.png)
 
 ### Step 2. Get your Consumer Keys and Access Tokens
 
@@ -24,11 +24,11 @@ On your application management page, navigate to the "Keys and Access Tokens" ta
 
 Also note that the "Access Level" is Read-only by default. If you want you application to post Tweets, now is the time to change it to "Read and write".
 
-![](/img/posts/jamesfmackenzie_com_Test_App___Twitter_Application_Management.png)
+![](/img/jamesfmackenzie_com_Test_App___Twitter_Application_Management.png)
 
 Next, scroll to the bottom of the page and click "Create my access token". This will generate an Access Token and Access Token Secret that let your new App make Twitter API calls on your account's behalf. Make a note of these too.
 
-![](/img/posts/jamesfmackenzie_com_Test_App___Twitter_Application_Management_2.png)
+![](/img/jamesfmackenzie_com_Test_App___Twitter_Application_Management_2.png)
 
 If you want your App to make API calls on behalf of *other users*, there's a more complicated <a href="https://dev.twitter.com/web/sign-in/implementing" target="_blank">Authorization Process</a> your apps needs to follow. But we won't go into it today.
 

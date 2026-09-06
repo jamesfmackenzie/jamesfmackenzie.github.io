@@ -11,7 +11,7 @@ Graphics glitches. Timing issues. Emulators suck. The best way to enjoy retro ga
 
 With this in mind, I headed to the attic in search of my old Atari ST. After (too much) digging, I unearthed the beast:
 
-![](/img/posts/mega_st_4.jpg)
+![](/img/mega_st_4.jpg)
 
 Colour-coded monitor, system and keyboard. 4MB RAM. 30MB hard drive. Truly glorious.
 

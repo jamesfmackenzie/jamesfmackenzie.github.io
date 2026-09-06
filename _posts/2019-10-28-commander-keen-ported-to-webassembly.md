@@ -7,7 +7,7 @@ image: commander-keen-invasion-of-the-vorticons-screenshot.png
 tags: [Posts, Programming, Retrogaming, Videogames, WebAssembly]
 ---
 
-![](/img/posts/keen.png)
+![](/img/keen.png)
 
 After a few weeks on/off work with <a href="https://emscripten.org" target="_blank">Emscripten</a>, I've succesfully ported <a href="https://en.wikipedia.org/wiki/Commander_Keen">Commander Keen</a> to the Web Browser. The code is <a href="https://github.com/jamesfmackenzie/chocolatekeen" target="_blank">on GitHub</a> and you can play it <strong><a href="http://www.jamesfmackenzie.com/chocolatekeen/" target="_blank">right here</a></strong>.
 

@@ -6,7 +6,7 @@ tags: [Emulation, PC, Projects, Retrogaming, Videogames]
 status: completed
 ---
 
-![Lenovo M93p Tiny](/img/posts/lenovo-m93p.jpg)
+![Lenovo M93p Tiny](/img/lenovo-m93p.jpg)
 
 For many years I've been on quest to find the perfect emulation station. Something small and quiet, hidden under the TV, with a wireless controller and enough horsepower for high quality retrogaming.
 

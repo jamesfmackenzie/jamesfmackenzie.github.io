@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [3Dfx Voodoo, Graphics Cards, PC]
 ---
 
-![3Dfx Voodoo2](/img/hardware/3dfx-voodoo-2-board.jpg)
+![3Dfx Voodoo2](/img/3dfx-voodoo-2-board.jpg)
 
 The legendary Voodoo2 is a PC 3D accelerator from 3Dfx. Released in February 1998 as a replacement for the original Voodoo Graphics accelerator, the card runs at a chipset clock rate of 90 MHz and uses 100 MHz EDO DRAM.
 
@@ -31,7 +31,7 @@ Add drivers here.
   {% if post.tags contains "Voodoo" %}
     {% if post.layout == "youtube" %}
 <li>
-  <img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+  <img src="/img/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
   <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
 </li>
     {% endif %}
@@ -46,7 +46,7 @@ Add drivers here.
   {% if post.tags contains "Voodoo" %}
     {% if post.layout == "tweet" %}
 <li>
-  <img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
+  <img src="/img/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
   <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
 </li>
     {% endif %}

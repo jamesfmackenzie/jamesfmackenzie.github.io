@@ -24,22 +24,22 @@ Setup takes ~10 minutes. Here's how to get started.
 
 2. Use a file transfer tool like FileZilla to copy the image to <code>/media/fat/games/AO486</code> on your MiSTer (learn how to do that [here]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %})). You should have a single file named <code>DOS622.vhd</code>:
 
-![](/img/posts/mister-ao486-dos-quick-start-dos622-copy-vhd-hard-disk-drive-image.png)
+![](/img/mister-ao486-dos-quick-start-dos622-copy-vhd-hard-disk-drive-image.png)
 
 {:start="3"}
 3. Download boot0.rom and boot1.rom from <a href="https://github.com/MiSTer-devel/ao486_MiSTer/tree/master/releases/bios" target="_blank">this Releases page</a>. [Copy]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) them to <code>/media/fat/games/AO486</code> on your MiSTer:
 
-![](/img/posts/mister-ao486-dos-quick-start-dos622-copy-boot-roms.png)
+![](/img/mister-ao486-dos-quick-start-dos622-copy-boot-roms.png)
 
 {:start="4"}
 4. Power up the ao486 core and mount the hard drive  (*Windows Key* + *F12* for ao486 core options, set *IDE 0-0* to <code>DOS622.vhd</code>):
 
-![](/img/posts/mister-ao486-dos-quick-start-dos622-mount-vhd-hard-disk-drive-image.png)
+![](/img/mister-ao486-dos-quick-start-dos622-mount-vhd-hard-disk-drive-image.png)
 
 {:start="5"}
 5. Still in the core options menu, select *Reset and apply HDD*. The core will reboot and load DOS.  The following indicates a succesful load:
 
-![](/img/posts/mister-ao486-dos-quick-start-first-boot.png)
+![](/img/mister-ao486-dos-quick-start-first-boot.png)
 
 <!-- TODO: add YouTube video and link here -->
 
@@ -54,7 +54,7 @@ To mount a floppy image, first [transfer it to your MiSTer]({% post_url 2021-01-
 2. Select *Floppy A:* and hit *Enter*. Select your image file and hit *Enter* again
 3. Hit *Esc* to exit the core options menu. Your floppy image is now mounted and available in DOS at <code>A:</code>
 
-![](/img/posts/mister-ao486-dos-quick-start-mount-floppy.png)
+![](/img/mister-ao486-dos-quick-start-mount-floppy.png)
 
 To mount a CD-ROM image, again [transfer it to your MiSTer]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}), then:
 
@@ -62,7 +62,7 @@ To mount a CD-ROM image, again [transfer it to your MiSTer]({% post_url 2021-01-
 2. Select *IDE 1-0* and hit *Enter*. Select your image file and hit *Enter* again
 3. Hit *Esc* to exit the core options menu. Your CD-ROM image is now mounted and available in DOS at <code>D:</code>
 
-![](/img/posts/mister-ao486-dos-quick-start-mount-cd-rom.png)
+![](/img/mister-ao486-dos-quick-start-mount-cd-rom.png)
 
 You can learn more about CD-ROM support [here]({% post_url 2021-03-13-mister-ao486-core-part-5-cd-rom-support %}).
 

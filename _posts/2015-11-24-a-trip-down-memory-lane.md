@@ -13,11 +13,11 @@ These (re)discoveries chart my video gaming education from child to adulthood. T
 
 ### ZX Spectrum (1982)
 
-![](/img/posts/zx_spectrum_48k.jpg)
+![](/img/zx_spectrum_48k.jpg)
 
 My old <a href="https://en.wikipedia.org/wiki/ZX_Spectrum" target="_blank">ZX Spectrum</a>! I've fond memories of Horace Goes Skiing, Chuckie Egg and Manic Miner. Not such a big fan of the 20 (or so) attempts it took to load a game in the first place. I also came across a <a href="http://www.worldofspectrum.org/hardware/feat24.html" target="_blank">Prism VTX 5000 modem</a>. Wonder if any bulletin boards still operate?
 
-![](/img/posts/prism_vtx_5000.jpg)
+![](/img/prism_vtx_5000.jpg)
 
 ### Amstrad PC1640 (1986)
 
@@ -31,11 +31,11 @@ Back in the late 80s, I used to play PC games on an <a href="http://www.computin
 
 Now, I wonder if there's any way to read 5.25" floppies nowadays?
 
-![](/img/posts/the_amstrad_pc_collection.jpg)
+![](/img/the_amstrad_pc_collection.jpg)
 
 ### Atari 1040STFM (1986)
 
-![](/img/posts/atari_st_1040stfm.jpg)
+![](/img/atari_st_1040stfm.jpg)
 
 My "proper" games machine growing up was an <a href="https://en.wikipedia.org/wiki/Atari_ST" target="_blank">Atari 1040STFM</a>. I even broke open the case to add composite video support. Although the ST was pressed back into service some time ago, I did make the following rediscoveries:
 
@@ -52,29 +52,29 @@ My "proper" games machine growing up was an <a href="https://en.wikipedia.org/wi
 * Atari ST <a href="http://www.computinghistory.org.uk/det/36192/Quickshot-QS-131-Apache-1-Jopystick/" target="_blank">Quickshot QS-131 Apache 1 Joystick</a>
 * <a href="http://www.stformat.com/" target="_blank">ST Format</a> Magazines
 
-![](/img/posts/nine_tiles.jpg)
+![](/img/nine_tiles.jpg)
 
-![](/img/posts/chaos_engine.jpg)
+![](/img/chaos_engine.jpg)
 
-![](/img/posts/speedball_2.jpg)
+![](/img/speedball_2.jpg)
 
-![](/img/posts/return_of_the_jedi_atari_st.jpg)
+![](/img/return_of_the_jedi_atari_st.jpg)
 
-![](/img/posts/magic_pockets.jpg)
+![](/img/magic_pockets.jpg)
 
-![](/img/posts/domark_f1_atari_st.jpg)
+![](/img/domark_f1_atari_st.jpg)
 
-![](/img/posts/cannon_fodder_atari_st.jpg)
+![](/img/cannon_fodder_atari_st.jpg)
 
-![](/img/posts/knight_force_atari_st.jpg)
+![](/img/knight_force_atari_st.jpg)
 
-![](/img/posts/the_munsters_atari_st.jpg)
+![](/img/the_munsters_atari_st.jpg)
 
-![](/img/posts/st_format_magazine.jpg)
+![](/img/st_format_magazine.jpg)
 
 ### Nintendo Entertainment System (1986)
 
-![](/img/posts/nintendo_entertainment_system_nes_famicom.jpg)
+![](/img/nintendo_entertainment_system_nes_famicom.jpg)
 
 Mostly intrigued by what all the console fuss was about, I bought a <a href="https://en.wikipedia.org/wiki/Nintendo_Entertainment_System" target="_blank">NES</a> very late in the cycle. No regrets! As well as the NES itself, I also unearthed some gaming gems:
 
@@ -86,15 +86,15 @@ Mostly intrigued by what all the console fuss was about, I bought a <a href="htt
   * <a href="https://en.wikipedia.org/wiki/Super_Mario_Bros." target="_blank">Super Mario Bros</a>
   * <a href="" target="_blank">Kirby's Adventure</a>
   
-![](/img/posts/nes_advantage.jpg)
+![](/img/nes_advantage.jpg)
 
-![](/img/posts/nes_controllers.jpg)
+![](/img/nes_controllers.jpg)
 
-![](/img/posts/nes_smb3_smb2_kirby_mario_cartridges.jpg)
+![](/img/nes_smb3_smb2_kirby_mario_cartridges.jpg)
 
 ### Sega Game Gear (1991)
 
-![](/img/posts/sega_game_gear.jpg)
+![](/img/sega_game_gear.jpg)
 
 <a href="" target="_blank">Game Gear</a>! This beast could chomp through 6 AA batteries in only a few minutes. Taken on many a car journey, it usually died before too long; but it did have colour! I've fond memories of the Sonic titles, but I never finished them - much too hard!
 
@@ -106,11 +106,11 @@ Mostly intrigued by what all the console fuss was about, I bought a <a href="htt
   * <a href="https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_2_(8-bit_video_game)" target="_blank">Sonic the Hedgehog 2</a>
   * <a href="http://segaretro.org/The_Lucky_Dime_Caper_Starring_Donald_Duck" target="_blank">The Lucky Dime Caper Starring Donald Duck</a>
   
-![](/img/posts/sonic_sonic2_ecco_game_gear_cartridges.jpg)  
+![](/img/sonic_sonic2_ecco_game_gear_cartridges.jpg)  
 
 ### PlayStation (1995)
 
-![](/img/posts/sony_playstation_1_psx_console.jpg)  
+![](/img/sony_playstation_1_psx_console.jpg)  
 
 Excitedly unwrapped on Christmas Day 1995, the PlayStation felt like the future. Stellar 3D graphics, massive CD-ROM storage, amazing memories. I probably spent more hours on this than any other console.
 
@@ -131,11 +131,11 @@ Excitedly unwrapped on Christmas Day 1995, the PlayStation felt like the future.
   * <a href="https://en.wikipedia.org/wiki/Wipeout_2097" target="_blank">Wipeout 2097</a>
   
   
-![](/img/posts/playstation_1_psx_controllers.jpg)
+![](/img/playstation_1_psx_controllers.jpg)
 
-![](/img/posts/guncon_time_crisis.jpg)
+![](/img/guncon_time_crisis.jpg)
   
-![](/img/posts/playstation_psx_games.jpg)
+![](/img/playstation_psx_games.jpg)
   
 ### AST Advantage! Adventure 575 Plus (1997)
 
@@ -154,11 +154,11 @@ The Internet arrived in the Mackenzie household via this AMD-powered 80486 clone
   * <a href="https://en.wikipedia.org/wiki/Unreal" target="_blank">Unreal</a>
   * <a href="https://en.wikipedia.org/wiki/Ultimate_Race_Pro" target="_blank">Ultimate Race Pro</a>
 
-![](/img/posts/command_and_conquer_box.jpg)
+![](/img/command_and_conquer_box.jpg)
 
 ### PlayStation 2 (2000)
 
-![](/img/posts/sony_playstation_2_ps2_silver_console.jpg)
+![](/img/sony_playstation_2_ps2_silver_console.jpg)
 
 A birthday present in the early noughties, the <a href="https://en.wikipedia.org/wiki/PlayStation_2" target="_blank">Sony PlayStation 2</a> ("PS2") went to Uni with me. Many beer-fuelled hours of multiplayer gaming ensued - Gran Turismo 3 and Pro Evolution Soccer being big favourites. I also accumulated a stack of peripherals over time - and invested in VGA converters to squeeze PS2 gaming into my limited student space.
 
@@ -180,19 +180,19 @@ A birthday present in the early noughties, the <a href="https://en.wikipedia.org
   * JS-909A (originally from play.com)
   * PSXTOUSB (originally from RadioShack)
 
-![](/img/posts/playstation_2_ps2_controllers_multitap_eye_toy.jpg)
+![](/img/playstation_2_ps2_controllers_multitap_eye_toy.jpg)
 
-![](/img/posts/playstation_2_ps2_to_usb_psxtousb_controller_converter.jpg)
+![](/img/playstation_2_ps2_to_usb_psxtousb_controller_converter.jpg)
 
-![](/img/posts/ps2_games_ffx_gt3_gt_concept_mgs2.jpg)
+![](/img/ps2_games_ffx_gt3_gt_concept_mgs2.jpg)
 
-![](/img/posts/playstation_2_ps2_vga_converters.jpg)
+![](/img/playstation_2_ps2_vga_converters.jpg)
 
-![](/img/posts/playstation_2_ps2_offical_vga_cable.jpg)
+![](/img/playstation_2_ps2_offical_vga_cable.jpg)
 
 ### Nokia NGage QD (2004)
 
-![](/img/posts/nokia_ngage_qd.jpg)
+![](/img/nokia_ngage_qd.jpg)
 
 Nokia's weird phone/gaming hybrid, I picked a <a href="https://en.wikipedia.org/wiki/N-Gage_QD" target="_blank">Ngage-QD</a> up for cheap just as it was being discontinued. The games were bad, but I did hear of good emulator support - a consequence of the (relatively) open Symbian OS. Might invest some time in this!
 
@@ -200,5 +200,5 @@ Nokia's weird phone/gaming hybrid, I picked a <a href="https://en.wikipedia.org/
   * <a href="http://uk.ign.com/games/motogp-2002/nng-573345" target="_blank">Moto GP</a>
   * <a href="http://uk.ign.com/games/virtua-tennis/nng-573374" target="_blank">Virtua Tennis</a>
   
-![](/img/posts/nokia_ngage_moto_gp_virtua_tennis.jpg)
+![](/img/nokia_ngage_moto_gp_virtua_tennis.jpg)
   

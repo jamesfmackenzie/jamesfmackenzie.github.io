@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
 ---
 
-![](/img/posts/hp-compaq-t5710-back.jpg)
+![](/img/hp-compaq-t5710-back.jpg)
 
 The HP Compaq t5710 is one of my favourite retro-PC finds. I picked mine up for about `$60` in September 2020, just after moving into a small New York apartment — I wanted something tiny but still authentic, and a Phil's Retro Computing Lab video pushed me toward giving this odd little thin client a chance. It's since become my favourite mini retro PC.
 

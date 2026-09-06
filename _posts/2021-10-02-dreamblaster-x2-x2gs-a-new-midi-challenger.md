@@ -7,7 +7,7 @@ image: dreamblaster-x2-x2gs-wavetable-daughterboard-2.jpg
 tags: [MIDI, MS-DOS, Posts, Retrocomputing, Retrogaming]
 ---
 
-![](/img/posts/dreamblaster-x2-x2gs-wavetable-daughterboard.jpg)
+![](/img/dreamblaster-x2-x2gs-wavetable-daughterboard.jpg)
 
 Looking to give your system a MIDI boost? The DreamBlaster X2GS is a <a href="https://en.wikipedia.org/wiki/Creative_Wave_Blaster" target="_blank">wavetable daughterboard</a> that fits the Wave Blaster header present on many DOS-era sound cards.
 

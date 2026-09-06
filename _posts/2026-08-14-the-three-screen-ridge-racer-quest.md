@@ -8,7 +8,7 @@ image: ridge-racer-full-scale-arcade-cabinet.jpg
 tags: [Posts, Emulation, Programming, Retrogaming]
 ---
 
-![Ridge Racer Full Scale arcade cabinet, three-screen sit-down cabinet with a real Eunos Roadster body](/img/posts/ridge-racer-full-scale-arcade-cabinet.jpg)
+![Ridge Racer Full Scale arcade cabinet, three-screen sit-down cabinet with a real Eunos Roadster body](/img/ridge-racer-full-scale-arcade-cabinet.jpg)
 
 In 1993, Namco built an arcade cabinet that shouldn't have made sense as a business decision. Ridge Racer Full Scale wraps three screens around a real Eunos Roadster body — an actual convertible car shell, cut down to a cockpit, with three PCBs behind it working in concert to render your peripheral vision as well as the road ahead.
 
@@ -59,7 +59,7 @@ His own header comment for the device was refreshingly honest about what it was:
 
 There was a second problem, and this one had nothing to do with John's code at all:
 
-![Ridge Racer Full Scale running with corrupted, static-like road textures in MAME](/img/posts/ridge-racer-full-scale-corrupted-graphics-mame.jpg)
+![Ridge Racer Full Scale running with corrupted, static-like road textures in MAME](/img/ridge-racer-full-scale-corrupted-graphics-mame.jpg)
 
 That static-y, corrupted road surface is a ROM problem. Full Scale's program ROM has been dumped and is freely available — you can grab `ridgeracf.zip` from any standard MAME 0.260+ set. But its **graphics ROMs have never been publicly dumped.** The available set quietly substitutes graphics from the ordinary, single-screen Ridge Racer, and Full Scale's program code doesn't agree with that substitution — hence the "WRONG WAY" bitmap and static wherever the game expects data that simply isn't there.
 
@@ -147,7 +147,7 @@ I checksummed all four of Three Monitor Version's program ROMs against MAME's ex
 
 All three connected over TCP cleanly. DIP-switch role selection worked exactly as documented. The forwarder relayed thousands of frames with zero errors, zero overflows, zero disconnects. And it rendered *correctly*:
 
-![Three linked MAME windows running Ridge Racer Three Monitor Version, showing distinct camera angles per screen](/img/posts/ridge-racer-three-monitor-version-mame-3-screen.jpg)
+![Three linked MAME windows running Ridge Racer Three Monitor Version, showing distinct camera angles per screen](/img/ridge-racer-three-monitor-version-mame-3-screen.jpg)
 
 That's not three copies of the same frame stitched together — look closely and you can see it's not even trying to be. The center screen shows a full attract-mode scene with the HUD intact. The left and right monitors show tight, close-up canyon-wall views, consistent with a wraparound side-camera perspective mid-corner, hugging a rock face the center camera can't even see. Each PCB is receiving the same broadcast scene state over the link and computing its *own* distinct camera viewport from it — genuinely doing what the real, three-PCB cabinet does, not faking it.
 

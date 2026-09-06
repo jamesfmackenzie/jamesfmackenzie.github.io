@@ -17,11 +17,11 @@ Open your browser and navigate to the page you want to extract data from. In thi
 
 Open the JavaScript console. On most browsers you can do this with a keyboard shortcut: <code>F12</code>. If the  shortcut doesn't work, Open it from the Developer or Tools menu.
 
-![How to open the JavaScript Console](/img/posts/browser-open-javascript-console.png)
+![How to open the JavaScript Console](/img/browser-open-javascript-console.png)
 
 ### Step 3. Issue a DOM query
 
-![JavaScript DOM query](/img/posts/browser-dom-query.png)
+![JavaScript DOM query](/img/browser-dom-query.png)
 
 A Document Object Model (DOM) query can be used to interrogate the page and extract data.
 
@@ -43,5 +43,5 @@ $$('.c-siteReviewScore').forEach(function(element) { scores += element.children[
 
 With the query done, just print and copy your structured data to the clipboard. Enjoy!
 
-![JavaScript DOM query result](/img/posts/browser-dom-query-result.jpg)
+![JavaScript DOM query result](/img/browser-dom-query-result.jpg)
 

@@ -6,7 +6,7 @@ date: '2025-08-20 06:33:00'
 tags: [Computers, Amstrad, PC]
 ---
 
-![Amstrad PC1640 PC.](/img/posts/amstrad-pc1640-2.jpg)
+![Amstrad PC1640 PC.](/img/amstrad-pc1640-2.jpg)
 
 I grew up using an Amstrad PC1640, and it’s a machine I’ve always wanted to own again. I was recently lucky enough to (re)acquire one — decades after my original had been lost.
 

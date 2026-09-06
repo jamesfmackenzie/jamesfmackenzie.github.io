@@ -21,7 +21,7 @@ mkdir C:\DRIVERS
 copy E:\CTMOUSE.EXE C:\DRIVERS
 ```
 
-![](/img/posts/mister-ao486-mouse-cutemouse-driver.png)
+![](/img/mister-ao486-mouse-cutemouse-driver.png)
 
 
 ### Step 2 – Install Mouse Driver
@@ -39,11 +39,11 @@ LH C:\DRIVERS\CTMOUSE.EXE
 {:start="2"}
 2. Hit *Windows Key* + *F12* for ao486 core options. Select *Reset and apply HDD* to reboot ao486 and load the mouse driver. The following indicates a succesful load:
 
-![](/img/posts/mister-ao486-mouse-cutemouse-driver-autoexec-bat-load.png)
+![](/img/mister-ao486-mouse-cutemouse-driver-autoexec-bat-load.png)
 
 That's it – you're ready to play some games! Can I recommend Monkey Island?
 
-![](/img/posts/mister-ao486-mouse-cutemouse-monkey-island-lucasarts.png)
+![](/img/mister-ao486-mouse-cutemouse-monkey-island-lucasarts.png)
 
 
 ### Related Guides

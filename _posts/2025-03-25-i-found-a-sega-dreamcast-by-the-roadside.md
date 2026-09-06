@@ -13,4 +13,4 @@ image: roadside-dreamcast.jpg
 tags: [Retrogaming, Videogames, Tweets]
 ---
 
-![](/img/posts/roadside-dreamcast.jpg)
+![](/img/roadside-dreamcast.jpg)

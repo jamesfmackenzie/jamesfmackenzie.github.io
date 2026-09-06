@@ -25,7 +25,7 @@ However all is not lost. By installing the hidden "Xbox Game Streaming (Test App
 
 Game Streaming is a great option when the main TV is occupied. I've shared some more thoughts <a href="https://twitter.com/jamesfmackenzie/status/1353344939472654336?s=21" target="_blank">on Twitter</a>.
 
-![](/img/posts/xbox-series-s-x-game-streaming-windows-pc.jpg)
+![](/img/xbox-series-s-x-game-streaming-windows-pc.jpg)
 
 ### Watch on YouTube
 

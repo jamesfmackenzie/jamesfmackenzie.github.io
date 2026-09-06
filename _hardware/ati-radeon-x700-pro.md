@@ -14,15 +14,15 @@ From a practical retro-hardware perspective, the card is also refreshingly easy 
 
 My model is the 128MB Connect3D Radeon X700 Pro, manufactured by Connect3D using silicon from ATI.
 
-![Connect3D Radeon X700 Pro front](/img/hardware/connect3d-radeon-x700-pro-front.jpg)
+![Connect3D Radeon X700 Pro front](/img/connect3d-radeon-x700-pro-front.jpg)
 
-![Connect3D Radeon X700 Pro back](/img/hardware/connect3d-radeon-x700-pro-back.jpg)
+![Connect3D Radeon X700 Pro back](/img/connect3d-radeon-x700-pro-back.jpg)
 
 Unfortunately the years haven't been kind to my card. The fan bearings have worn, leaving an audible grating sound, and both text and graphics mode video is corrupted - indicating a VRAM issue.
 
 Some TLC required!
 
-![Connect3D Radeon X700 Pro graphics corruption](/img/hardware/connect3d-radeon-x700-corrupted-graphics.jpg)
+![Connect3D Radeon X700 Pro graphics corruption](/img/connect3d-radeon-x700-corrupted-graphics.jpg)
 
 ### Related on this site
 

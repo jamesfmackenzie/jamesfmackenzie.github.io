@@ -36,7 +36,7 @@ First download and run <a href="https://rufus.ie/en/" target="_blank">Rufus</a>.
 
 Use Rufus to prepare the drive, make sure to select the FreeDOS option:
 
-![](/img/posts/rufus-create-bootable-usb-stick-drive-with-freedos-dos.png)
+![](/img/rufus-create-bootable-usb-stick-drive-with-freedos-dos.png)
 
 When you're ready click START to create a bootable FreeDOS drive.
 
@@ -46,7 +46,7 @@ Download SBEMU from the <a href="https://github.com/crazii/SBEMU/releases" targe
 
 Extract and copy the files to your bootable USB stick:
 
-![](/img/posts/extra-copy-sbemu-files-to-bootable-freedos-usb-drive-stick.jpg)
+![](/img/extra-copy-sbemu-files-to-bootable-freedos-usb-drive-stick.jpg)
 
 ### Step 3 – Create CONFIG.SYS
 
@@ -75,19 +75,19 @@ sbemu
 
 Once saved, the full file should look like this:
 
-![](/img/posts/sbemu-autoexec-bat-file.png)
+![](/img/sbemu-autoexec-bat-file.png)
 
 ### Step 5 – Copy DOS Games
 
 Next, copy any software you want to the USB stick. These will be available when you start FreeDOS. I went with some shareware classics and demos:
 
-![](/img/posts/dos-classic-video-games-for-freedos-and-sbemu.png)
+![](/img/dos-classic-video-games-for-freedos-and-sbemu.png)
 
 ### Step 6 – Boot FreeDOS
 
 The USB stick is now ready! When you boot from it, you should see:
 
-![](/img/posts/freedos-sbemu-first-boot.png)
+![](/img/freedos-sbemu-first-boot.png)
 
 This indicates a succesful boot.
 
@@ -101,13 +101,13 @@ Make a note of the Sound Blaster settings. I have:
 
 Now we're ready to go! Configure some games and get ready to be Sound Blasted!
 
-![](/img/posts/duke-nukem-3d-running-on-sound-blaster-sbemu-1.jpg)
+![](/img/duke-nukem-3d-running-on-sound-blaster-sbemu-1.jpg)
 
-![](/img/posts/duke-nukem-3d-running-on-sound-blaster-sbemu-2.png)
+![](/img/duke-nukem-3d-running-on-sound-blaster-sbemu-2.png)
 
-![](/img/posts/duke-nukem-3d-running-on-sound-blaster-sbemu-3.jpg)
+![](/img/duke-nukem-3d-running-on-sound-blaster-sbemu-3.jpg)
 
-![](/img/posts/duke-nukem-3d-running-on-sound-blaster-sbemu-4.jpg)
+![](/img/duke-nukem-3d-running-on-sound-blaster-sbemu-4.jpg)
 
 ### Watch on YouTube
 

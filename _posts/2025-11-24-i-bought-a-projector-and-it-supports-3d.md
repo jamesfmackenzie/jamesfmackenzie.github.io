@@ -19,4 +19,4 @@ I also wrote this up as a blog post, which you can find [here]({% post_url 2025-
 
 Enjoy!
 
-![](/img/posts/benq-th575-projector.jpg)
+![](/img/benq-th575-projector.jpg)

@@ -7,7 +7,7 @@ image: emulationstation.jpg
 tags: [Emulation, How To, Raspberry Pi, Retrogaming, Videogames]
 ---
 
-![](/img/posts/retropie_logo.png)
+![](/img/retropie_logo.png)
 
 With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES, even PlayStation all run great and with a little extra work you can stream more taxing games from your home PC
 
@@ -34,7 +34,7 @@ Some fairly simple first steps. Follow the official instructions <a href="https:
  
 Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC, no keyboard required. Learn more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
 
-![](/img/posts/create_ssh_file_on_sd_card.png)
+![](/img/create_ssh_file_on_sd_card.png)
 
 With this feature enabled, you can use any <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> client (I like <a href="https://www.putty.org/" target="_blank">PuTTY</a>) to remotely connect to your Pi. The default connection details are:
 
@@ -52,13 +52,13 @@ If you have a Wireless Xbox 360 controller, you'll need to pair it with your Wir
 
 Switch on the power to your Raspberry Pi. After a minute or so, EmulationStation will launch and ask you to configure your controller:
 
-![](/img/posts/gamepad_detected.png)
+![](/img/gamepad_detected.png)
 
 Go ahead and configure your controller as per the diagram below
 
 <strong>An important note!</strong> EmulationStation follows the SNES button layout. So when configuring your Xbox 360 controller, you'll need to switch X with Y, and A with B. Yes, this is confusing - but don't worry there is a fix for this later 
 
-![](/img/posts/xbox_360_controller_layout.png)
+![](/img/xbox_360_controller_layout.png)
 
 #### Step 5. Make a note of the RetroPie hotkeys
 
@@ -116,20 +116,20 @@ I recommend <a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol" t
 
 The Site Manager should look like this:
 
-![](/img/posts/filezilla-site-settings.png)
+![](/img/filezilla-site-settings.png)
 
 Hit `Connect` and navigate to the following directory: `/home/pi/RetroPie/roms`
 
 You'll see lots of folders for each platform. Copy the ROMs into the corresponding folder for their platform. I recommend you copy zips (the file size adds up!) and to use the <a href="https://datomatic.no-intro.org/stuff/The%20Official%20No-Intro%20Convention%20(20071030).pdf" target="_blank">No Intro ROM naming convention</a> (if you use a naming convention, EmulationStation and any metadata scrapers can easily find and surface game metadata like descriptions, release dates, screenshots etc for your games)
 
-![](/img/posts/filezilla-retropie-roms-folder.png)
+![](/img/filezilla-retropie-roms-folder.png)
 
 
 #### Step 2. Restart EmulationStation to make ROMs appear
 
 How do you make the ROMs and emulators show up? Hit the Start Button on your controller and navigate to `Quit > Restart EmulationStation`. After a brief moment you should see the following:
 
-![](/img/posts/emulationstation.jpg)
+![](/img/emulationstation.jpg)
 
 Time to get playing!
 
@@ -160,7 +160,7 @@ Once the install completes, select `Scrape all systems`. Again, this will take s
 
 Once the scrape completes, select `Cancel`, `Back` multiple times and eventually `Perform Reboot`. When EmulationStation reloads, you should now see pretty metadata for your ROMs!
 
-![](/img/posts/emulationstation-scraped-data.png)
+![](/img/emulationstation-scraped-data.png)
 
 #### Step 3. Fix broken metadata
 

@@ -7,7 +7,7 @@ image: ati-radeon-x800-xl.jpg
 tags: [ATi Graphics, GPU, PC, Posts, Repairs, Retrocomputing]
 ---
 
-![A Radeon X800 XL with its stock ATI cooler](/img/posts/ati-radeon-x800-xl.jpg){: width="680"}
+![A Radeon X800 XL with its stock ATI cooler](/img/ati-radeon-x800-xl.jpg){: width="680"}
 
 I picked up a [Radeon X800 XL]({% link _hardware/ati-radeon-x800-xl.md %}) cheap and untested. The reason it was cheap became obvious the moment I powered it on: the fan bearing had seized, and it was screaming. The card wasn't usable until it was sorted.
 
@@ -19,9 +19,9 @@ The fan on this card is an **ADDA AD4512HB-E03** — a 45&nbsp;mm fan, and the "
 
 Because it's a ball-bearing fan, the bearings are a replaceable part. I ordered a pack of **MR52ZZ** bearings — 2&nbsp;mm bore, 5&nbsp;mm outer diameter, 2.5&nbsp;mm wide, double-shielded — prised the fan apart, and swapped them in.
 
-![Pack of replacement MR52ZZ fan bearings](/img/posts/radeon-x800-xl-replacement-fan-bearings.jpg){: width="680"}
+![Pack of replacement MR52ZZ fan bearings](/img/radeon-x800-xl-replacement-fan-bearings.jpg){: width="680"}
 
-![Fitting a new bearing to the X800 XL fan](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="680"}
+![Fitting a new bearing to the X800 XL fan](/img/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="680"}
 
 It worked — the grinding was gone and the fan spun freely again. But it wasn't perfect. There was still a faint whine, and rebuilding a tiny fan around fresh bearings by hand only gets you so far. I wasn't confident it would stay quiet.
 
@@ -37,7 +37,7 @@ For most people with this card, this is where the story should end. A matching r
 
 I went one further anyway, and fitted a generic **YOTA VGA cooler** — an aluminium radiator with its own fan, sold for a few pounds and supplied with thermal paste, spring-screws and insulating washers.
 
-![The generic YOTA VGA cooler](/img/posts/radeon-x800-xl-yota-vga-cooler.jpg){: width="680"}
+![The generic YOTA VGA cooler](/img/radeon-x800-xl-yota-vga-cooler.jpg){: width="680"}
 
 It bolts on through the same mounting holes, runs quieter than even a healthy stock fan, and keeps the R430 comfortably cool. It's less period-correct — the card no longer looks stock — but for a machine I actually use, near-silence won.
 

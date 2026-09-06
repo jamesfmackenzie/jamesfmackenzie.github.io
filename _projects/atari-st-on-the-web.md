@@ -24,7 +24,7 @@ The Web experience is slow and doesn't support SSL or CSS – which rules out a 
 
 I'll call this a success!
 
-![Pray before the head of Bob!](/img/projects/atari-st-on-the-web.jpg)
+![Pray before the head of Bob!](/img/atari-st-on-the-web.jpg)
 
 
 ### Project Updates

@@ -47,7 +47,7 @@ Once you're done, you should have:
 * <code>disk1.img, disk2.img, disk3.img</code> – DOS 6.22 install images
 * <code>disk1.img, disk2.img</code> – Doom install images
 
-![](/img/posts/mister-ao486-dos-622-doom-install-floppy-images.png)
+![](/img/mister-ao486-dos-622-doom-install-floppy-images.png)
 
 
 #### Step 2 – Copy Boot ROMs
@@ -58,7 +58,7 @@ Next you need to install the ao486 <a href="https://en.wikipedia.org/wiki/BIOS" 
 
 2. Download and [copy]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) boot0.rom and boot1.rom to <code>/media/fat/games/AO486</code> on your MiSTer:
 
-![](/img/posts/mister-ao486-bios-boot-roms.png)
+![](/img/mister-ao486-bios-boot-roms.png)
 
 
 #### Step 3 – Create a Hard Disk
@@ -71,7 +71,7 @@ Next you need to install the ao486 <a href="https://en.wikipedia.org/wiki/BIOS" 
 dd if=/dev/zero of=DOS.vhd bs=1M count=2048
 ````
 
-![](/img/posts/mister-ao486-dos-622-hard-disk-vhd.png)
+![](/img/mister-ao486-dos-622-hard-disk-vhd.png)
 
 
 #### Step 4 – Install Operating System
@@ -80,36 +80,36 @@ Time to install the Operating System. On the MiSTer:
 
 1. Press *F12* to bring up the MiSTer main menu. Browse to *Computer -> ao486* to start the ao486 core:
    
-![](/img/posts/mister-start-ao486-core.png)
+![](/img/mister-start-ao486-core.png)
 
 {:start="2"}
 2. Hit *Windows Key* + *F12* for ao486 core options. Set *Floppy A:* to the DOS 6.22 <code>disk1.img</code> and *IDE 0-0* to <code>DOS.vhd</code>:
 
-![](/img/posts/mister-ao486-core-settings.png)
+![](/img/mister-ao486-core-settings.png)
 
 {:start="3"}
 3. Hit *Reset and apply HDD*. ao486 will reboot into MS-DOS 6.22 Setup. Hit *Enter* and follow the prompts to install DOS:
 
-![](/img/posts/mister-ao486-dos-622-install-setup.png)
+![](/img/mister-ao486-dos-622-install-setup.png)
 
 {:start="4"}
 4. You'll be be asked to switch disk a few times. Hit *Windows Key* + *F12* for ao486 core options, set *Floppy A:* to <code>disk2.img</code> or <code>disk3.img</code> as prompted, then hit *Esc*:
 
-![](/img/posts/mister-ao486-dos-622-install-switch-disk.png)
+![](/img/mister-ao486-dos-622-install-switch-disk.png)
 
-![](/img/posts/mister-ao486-dos-622-install-switch-disk-2.png)
+![](/img/mister-ao486-dos-622-install-switch-disk-2.png)
 
 {:start="5"}
 5. At the final stage, you'll be asked to "Remove disks from all floppy disk drives". Follow the same disk switch steps as above, but this time hit *Backspace* to unmount the floppy:
 
-![](/img/posts/mister-ao486-dos-622-install-remove-disk.png)
+![](/img/mister-ao486-dos-622-install-remove-disk.png)
 
-![](/img/posts/mister-ao486-dos-622-install-remove-disk-2.png)
+![](/img/mister-ao486-dos-622-install-remove-disk-2.png)
 
 {:start="6"}
 6. Hit *Enter* to finalize the install. ao486 will restart and boot to DOS from your new hard disk:
 
-![](/img/posts/mister-ao486-boot-from-dos-622.png)
+![](/img/mister-ao486-boot-from-dos-622.png)
 
 
 #### Step 5 – Install Doom
@@ -120,12 +120,12 @@ Time to install Doom! From the DOS prompt:
 
 2. Navigate to the floppy drive by typing <code>A:</code>. Then type <code>INSTALL.BAT</code> to begin the Doom install:
 
-![](/img/posts/mister-ao486-install-doom-1.png)
+![](/img/mister-ao486-install-doom-1.png)
 
 {:start="3"}
 3. Follow the default install options. You'll be asked to switch disk a few times. Follow the same disk switch steps outlined above:
 
-![](/img/posts/mister-ao486-install-doom-2.png)
+![](/img/mister-ao486-install-doom-2.png)
 
 
 #### Step 6 – Doom Sound Setup
@@ -134,23 +134,23 @@ After the install completes, Doom Setup will automatically launch. You'll need t
 
 1. When prompted to select *Music Playback Device* or *Sound FX Device*, choose <code>Sound Blaster</code>:
 
-![](/img/posts/mister-ao486-doom-setup-1.png)
+![](/img/mister-ao486-doom-setup-1.png)
 
 {:start="2"}
 2. When prompted to select *PORTs*, *IRQs* or *DMA Channels*, take the pre-selected options (PORT = <code>220</code>, IRQ = <code>5</code>, DMA = <code>1</code>)
 
 3. Once done, hit *Save Settings & Run Doom*:
 
-![](/img/posts/mister-ao486-doom-setup-2.png)
+![](/img/mister-ao486-doom-setup-2.png)
 
 
 #### Step 7 – Play Doom!
 
 You're good to go! Doom runs relatively well but is pushing the performance limits of this ao486 core. Look for more deep dives in future!
 
-![](/img/posts/mister-ao486-doom-1.png)
+![](/img/mister-ao486-doom-1.png)
 
-![](/img/posts/mister-ao486-doom-2.png)
+![](/img/mister-ao486-doom-2.png)
 
 
 ### Next Guide

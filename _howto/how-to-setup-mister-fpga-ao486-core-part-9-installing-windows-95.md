@@ -22,7 +22,7 @@ Once you're done, you should have:
 * <code>disk01.img</code> – Windows 95 Boot disk
 * <code>win95_full_ar.osr2_en.iso</code> – Windows 95 Install CD
 
-![](/img/posts/mister-ao486-windows-95-install-media-cd-boot-floppy.png)
+![](/img/mister-ao486-windows-95-install-media-cd-boot-floppy.png)
 
 
 ### Step 2 – Copy Boot ROMs
@@ -33,7 +33,7 @@ Next you need to install the ao486 <a href="https://en.wikipedia.org/wiki/BIOS" 
 
 2. Download and [copy]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %}) boot0.rom and boot1.rom to <code>/media/fat/games/AO486</code> on your MiSTer:
 
-![](/img/posts/mister-ao486-file-copy-transfer-boot-roms.png)
+![](/img/mister-ao486-file-copy-transfer-boot-roms.png)
 
 
 ### Step 3 – Create Hard Disk
@@ -46,7 +46,7 @@ Next you need to install the ao486 <a href="https://en.wikipedia.org/wiki/BIOS" 
 dd if=/dev/zero of=Win95.vhd bs=1M count=2048
 ````
 
-![](/img/posts/mister-ao486-windows-95-hard-disk-image-vhd.png)
+![](/img/mister-ao486-windows-95-hard-disk-image-vhd.png)
 
 
 ### Step 4 – Partition Hard Disk
@@ -55,17 +55,17 @@ Next we need to partition the hard disk. On the MiSTer:
 
 1. Press *F12* to bring up the MiSTer main menu. Browse to *Computer -> ao486* to start the ao486 core:
    
-![](/img/posts/mister-start-ao486-core.png)
+![](/img/mister-start-ao486-core.png)
 
 {:start="2"}
 2. Hit *Windows Key* + *F12* for ao486 core options. Set *Floppy A:* to the Windows 95 <code>disk01.img</code>, *IDE 0-0* to <code>Win95.vhd</code> and *IDE 1-0* to <code>win95_full_ar.osr2_en.iso</code>:
 
-![](/img/posts/mister-ao486-windows-95-mount-floppy-vhd-install-cd-rom.png)
+![](/img/mister-ao486-windows-95-mount-floppy-vhd-install-cd-rom.png)
 
 {:start="3"}
 3. Hit *Reset and apply HDD*. ao486 will reboot into the Windows 95 Startup Menu. Select option 5 ("No CDROM support") and hit *Enter*:
 
-![](/img/posts/mister-ao486-windows-95-boot-disk-no-cd-rom-support.png)
+![](/img/mister-ao486-windows-95-boot-disk-no-cd-rom-support.png)
 
 {:start="4"}
 4. Run <code>A:\FDISK.EXE</code> to launch the <a href="https://en.wikipedia.org/wiki/Disk_partitioning" target="_blank">disk partitioner</a>. Choose the following (default) options to partition the disk:
@@ -79,7 +79,7 @@ Next we need to partition the hard disk. On the MiSTer:
 
 <blockquote>Now reboot AO486 (<i>Windows Key</i> + <i>F12</i>, <i>Reset and apply HDD</i>).</blockquote>
 
-![](/img/posts/mister-ao486-fdisk-partition-windows-95-hard-disk.png)
+![](/img/mister-ao486-fdisk-partition-windows-95-hard-disk.png)
 
 
 ### Step 5 – Format Hard Disk
@@ -88,12 +88,12 @@ Next we need to format the hard disk:
 
 1. ao486 will boot into the Windows 95 Startup Menu again. This time select option 1 ("Load NEC IDE CDROM driver"):
 
-![](/img/posts/mister-ao486-windows-95-boot-disk-nec-ide-cdrom-cd-rom-driver.png)
+![](/img/mister-ao486-windows-95-boot-disk-nec-ide-cdrom-cd-rom-driver.png)
 
 {:start="2"}
 2. Type <code>format c: /s</code> to format the hard disk, <code>Y</code> to *Proceed with Format*:
 
-![](/img/posts/mister-ao486-format-windows-95-hard-disk.png)
+![](/img/mister-ao486-format-windows-95-hard-disk.png)
 
 <blockquote>Enter a <i>Volume label</i> (your choice) to finalize the format process.</blockquote>
 
@@ -101,7 +101,7 @@ Next we need to format the hard disk:
 {:start="3"}
 3. Now we need to format the storage disk. This time type <code>format d:</code>, <code>Y</code> to *Proceed with Format*:
 
-![](/img/posts/mister-ao486-format-windows-95-hard-disk.png)
+![](/img/mister-ao486-format-windows-95-hard-disk.png)
 
 <blockquote>Again enter a <code>Volume label</code> of your choice.</blockquote>
 -->
@@ -111,13 +111,13 @@ Next we need to format the hard disk:
 
 Run <code>D:\SETUP.EXE</code> to launch Windows 95 setup. Follow all the defaults to install Windows 95:
 
-![](/img/posts/mister-ao486-windows-95-setup-exe.png)
+![](/img/mister-ao486-windows-95-setup-exe.png)
 
 As the Windows 95 install finalizes, you'll be prompted to remove the floppy disk. <strong>Don't do this!</strong>
 
 Instead, keep the disk in and reboot ao486 (*Windows Key* + *F12*, <code>Reset and apply HDD</code>).
 
-![](/img/posts/mister-ao486-windows-95-finishing-setup.png)
+![](/img/mister-ao486-windows-95-finishing-setup.png)
 
 
 ### Step 5 – Disable Hard Disk Driver
@@ -134,7 +134,7 @@ cd WINDOWS\SYSTEM\IOSUBSYS
 ren ESDI_506.PDR ESDI_506.BAK
 ````
 
-![](/img/posts/mister-ao486-windows-95-rename-esdi-506-pdr-hard-disk-driver.png)
+![](/img/mister-ao486-windows-95-rename-esdi-506-pdr-hard-disk-driver.png)
 
 {:start="3"}
 3. Unmount the floppy disk (*Windows Key* + *F12*, <code>Floppy A:</code>, *Enter*, *Backspace*)
@@ -148,7 +148,7 @@ Windows 95 will start for the first time. Follow the last few setup steps to set
 
 Once those are done, the Windows 95 desktop will load!
 
-![](/img/posts/mister-ao486-welcome-to-windows-95.png)
+![](/img/mister-ao486-welcome-to-windows-95.png)
 
 
 ### Step 7 – Re-enable Hard Disk Driver
@@ -160,12 +160,12 @@ To re-enable the Hard Disk Driver:
 * <code>Standard IDE/ESDI Hard Disk Controller</code>
 * <code>Standard IDE/ESDI Hard Disk Controller</code>
 
-![](/img/posts/mister-ao486-windows-95-control-panel-device-manager-remove-hard-disk-controller.png)
+![](/img/mister-ao486-windows-95-control-panel-device-manager-remove-hard-disk-controller.png)
 
 {:start="2"}
 2. Click *OK*, then navigate to <code>My Computer → C: → Windows → System → Iosubsys</code>. Rename <code>Esdi_506.bak</code> to <code>Esdi_506.pdr</code>:
 
-![](/img/posts/mister-ao486-windows-95-rename-esdi-506-pdr-hard-disk-driver-windows.png)
+![](/img/mister-ao486-windows-95-rename-esdi-506-pdr-hard-disk-driver-windows.png)
 
 {:start="3"}
 3. Reboot Windows 95 (<code>Start → Shut Down → Restart the computer</code>)

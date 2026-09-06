@@ -63,7 +63,7 @@ The ao486 core reserves memory segments between <code>CE00</code> and <code>CFFF
 
 When DOS starts again, you'll have a choice of memory configurations:
 
-![](/img/posts/mister-ao486-emm386-expanded-extended-conventional-memory-choice.png)
+![](/img/mister-ao486-emm386-expanded-extended-conventional-memory-choice.png)
 
 For most software and games, the default option 1 (<code>Extended memory</code>) will work. This is also a good choice for booting windows.
 

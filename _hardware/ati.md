@@ -59,8 +59,8 @@ Well past the point where calling it "ATi" makes literal sense — but it is the
 {% for post in site.posts %}
   {% if post.tags contains "ATi Graphics" %}
   <li>
-    {% if post.layout == "youtube" %}<img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
-    {% elsif post.layout == "tweet" %}<img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
+    {% if post.layout == "youtube" %}<img src="/img/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+    {% elsif post.layout == "tweet" %}<img src="/img/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
     {% endif %}<a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
   </li>
   {% endif %}

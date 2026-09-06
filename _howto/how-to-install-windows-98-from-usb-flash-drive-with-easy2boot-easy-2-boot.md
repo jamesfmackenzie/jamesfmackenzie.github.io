@@ -28,21 +28,21 @@ Easy2Boot likes to work with contigious (not fragmented) files - this is why we 
 
 When the install completes, the <code>Make_E2B</code> utility will launch. Just ignore and close this. Instead, open the install folder and find <code>MAKE_E2B_USB_DRIVE.cmd</code>. Run this batch script as Administrator:
 
-![](/img/posts/easy2boot-make_e2b_usb_drive.png)
+![](/img/easy2boot-make_e2b_usb_drive.png)
 
 ### Step 2 - Prepare USB install media
 
 In the command window, select your target USB drive (in my case this is <code>5</code> - ADATA USB Flash Drive). Then hit <code>Y</code> to format the drive and <code>0</code> to set the default partition options. You'll get one last warning. Hit <code>OK</code> to start the partition and format process.
 
-![](/img/posts/easy2boot-make-usb-drive-selection.png)
+![](/img/easy2boot-make-usb-drive-selection.png)
 
 Once the format is done, repeatedly hit Enter to accept the default options (we don't need to do anything special here). When the process is complete the command window will turn green. Just hit Enter to close:
 
-![](/img/posts/easy2boot-usb-preparation-complete.png)
+![](/img/easy2boot-usb-preparation-complete.png)
 
 With the USB stick prepared, you should have two partitions:
 
-![](/img/posts/easy2boot-usb-e2b-e2b_ptn2-partitions.png)
+![](/img/easy2boot-usb-e2b-e2b_ptn2-partitions.png)
 
 1. <code>E2B</code> aka "Easy2Boot" partition. Any ISOs or images you copy in here will be bootable via the Easy2Boot menu system
 2. <code>E2B_PTN2</code> aka "Easy2Boot data partition". Any files you copy here will be mounted on the host operating system when we launch via Easy2Boot
@@ -55,25 +55,25 @@ First, download the <a href="https://winworldpc.com/product/windows-98/98-second
 
 Copy the win98 folder over to the Easy2Boot data partition (<code>E2B_PTN2</code>):
 
-![](/img/posts/easy2boot-copy-windows98-install-iso-setup-files.png)
+![](/img/easy2boot-copy-windows98-install-iso-setup-files.png)
 
 Next we need boot media. Download the <a href="https://winworldpc.com/product/microsoft-windows-boot-disk/98-se" target="_blank">Windows 98 boot floppy</a> and copy it to the <code>\_ISO\WIN</code> folder on your Easy2Boot (<code>E2B</code>) partition:
 
-![](/img/posts/easy2boot-copy-windows98-boot-floppy-disk-image.png)
+![](/img/easy2boot-copy-windows98-boot-floppy-disk-image.png)
 
 Once the copy is done, we need to change the file extension. Rename the file, and change the extension to <code>imgfdhd01</code>. This tells Easy2Boot that this is a floppy image, and to mount the thin client internal drive as drive C - which is what we need for Windows 98 install:
 
-![](/img/posts/easy2boot-rename-windows98-boot-floppy-disk-image.png)
+![](/img/easy2boot-rename-windows98-boot-floppy-disk-image.png)
 
 ### Step 4 - Copy drivers and utilities
 
 Lastly, download and copy the <a href="https://mega.nz/file/LgYDhKDA#7upam9AIguSzKWAvV_ENg7_SnWvWNCpYYwAnF94eUpU" target="_blank">Windows 98 driver package</a> to the Easy2Boot data partition (<code>E2B_PTN2</code>). This contains the chipset, graphics and audio drivers for our thin client hardware:
 
-![](/img/posts/easy2boot-copy-drivers.png)
+![](/img/easy2boot-copy-drivers.png)
 
 You'll also need a zip utility to extract the drivers. I recommend <a href="https://www.7-zip.org/download.html" target="_blank">7-zip 9.20</a>. <a href="http://falconfly.3dfx.pl/directx.htm" target="_blank">DirectX 7.0a</a> and <a href="https://sourceforge.net/projects/winscp/files/WinSCP/4.3.9/" target="_blank">WinSCP 4.39</a> (an FTP client) are also useful. Copy them all to the Easy2Boot data partition:
 
-![](/img/posts/easy2boot-copy-utils-utilities.png)
+![](/img/easy2boot-copy-utils-utilities.png)
 
 That's our USB setup done. Remove the USB stick and switch over to the thin client.
 
@@ -83,11 +83,11 @@ Next we need to prepare the thin client internal hard drive for Windows 98 insta
 
 From the menu, select <code>Windows Boot</code> - this will load the Windows boot menu - and then select <code>Windows 98 Second Edition Boot</code>. This will boot from our Windows 98 floppy image:
 
-![](/img/posts/easy2boot-windows-boot-menu.png)
+![](/img/easy2boot-windows-boot-menu.png)
 
 On succesful boot, you should be at the DOS with the Windows 98 floppy image mounted as <code>A:</code>. Type <code>fdisk</code> to launch the Microsoft Fixed Disk Partition Tool:
 
-![](/img/posts/t5000-t5710-windows-98-install-fdisk.png)
+![](/img/t5000-t5710-windows-98-install-fdisk.png)
 
 This is not a guide on how to use FDISK (there are plenty of others out there). Also the steps required here will vary depending on your hardware and disk setup. For my build, I did the following:
 
@@ -100,19 +100,19 @@ This is not a guide on how to use FDISK (there are plenty of others out there). 
 
 Once you've made partition changes, restart the system and boot from the Windows 98 floppy again:
 
-![](/img/posts/t5000-t5710-windows-98-install-fdisk-restart.png)
+![](/img/t5000-t5710-windows-98-install-fdisk-restart.png)
 
 ### Step 6 - Format thin client internal hard disk
 
 Back at the DOS prompt. Before we install Windows 98, we need to format the internal hard disk. Type <code>format c:</code> and then <code>Y</code> to start the format process:
 
-![](/img/posts/t5000-t5710-windows-98-install-format-internal-hard-drive-disk.png)
+![](/img/t5000-t5710-windows-98-install-format-internal-hard-drive-disk.png)
 
 ### Step 7 - Copy Windows install files, drivers and utilities to hard disk
 
 With the format complete, it's time to copy the Windows 98 install files (from Step 3 above) and drivers/utilities (from Step 4) to the thin client internal hard disk. You'll find them mounted and available on drive <code>D:</code>:
 
-![](/img/posts/t5000-t5710-windows-98-install-show-easy2boot-mounted-file-system.png)
+![](/img/t5000-t5710-windows-98-install-show-easy2boot-mounted-file-system.png)
 
 Use the DOS <code>copy</code> command to bring them across to drive <code>C:</code>
 
@@ -127,7 +127,7 @@ md C:\UTILS
 copy D:\UTILS\*.* C:\UTILS
 ```
 
-![](/img/posts/t5000-t5710-windows-98-install-copy-windows-98-install-setup-files.png)
+![](/img/t5000-t5710-windows-98-install-copy-windows-98-install-setup-files.png)
 
 With everything safely on our internal hard disk, we're ready to start the Windows 98 install process.
 
@@ -135,19 +135,19 @@ With everything safely on our internal hard disk, we're ready to start the Windo
 
 Run <code>C:\WIN98\SETUP.EXE</code> to launch Windows 98 setup. Follow all the defaults to install Windows 98:
 
-![](/img/posts/t5000-t5710-windows-98-install-windows-98-install-1.png)
+![](/img/t5000-t5710-windows-98-install-windows-98-install-1.png)
 
-![](/img/posts/t5000-t5710-windows-98-install-windows-98-install-2.png)
+![](/img/t5000-t5710-windows-98-install-windows-98-install-2.png)
 
 ### Step 9 - Install 7-Zip
 
 When Windows 98 loads, first install 7-Zip. We need this to extract the drivers. Double click to install:
 
-![](/img/posts/t5000-t5710-windows-98-install-windows-98-install-7zip-7-zip.png)
+![](/img/t5000-t5710-windows-98-install-windows-98-install-7zip-7-zip.png)
 
 ### Step 10 - Install drivers
 
-![](/img/posts/t5000-t5710-windows-98-install-windows-98-install-drivers.png)
+![](/img/t5000-t5710-windows-98-install-windows-98-install-drivers.png)
 
 With 7-Zip installed, extract and then install drivers in the following order. The sequencing is important here. If you do this out of order, it won't work:
 

@@ -6,7 +6,7 @@ date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
-![Dell OptiPlex 760 tower](/img/posts/dell-optiplex-760.jpg){: width="500"}
+![Dell OptiPlex 760 tower](/img/dell-optiplex-760.jpg){: width="500"}
 
 The Dell OptiPlex 760 is the kind of machine I find hard to ignore: a cheap, slightly boring office PC that looks like it might have hidden retro potential. It has some — but less than it first appears.
 
@@ -22,7 +22,7 @@ If you want a clean, low-drama Windows 98 build, reach for something earlier —
 
 My own machine is a modest one: a Pentium Dual-Core `E5200`, 2GB of DDR2, BIOS `A02`, on a board dated `2009-03-17` — the sort of ordinary office box you'd actually end up with rather than a maxed-out example.
 
-![](/img/posts/dell-optiplex-760-bios.jpg){: width="640"}
+![](/img/dell-optiplex-760-bios.jpg){: width="640"}
 
 ### Things worth knowing before you use one
 

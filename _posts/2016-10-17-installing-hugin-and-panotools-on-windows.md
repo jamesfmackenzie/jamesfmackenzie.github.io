@@ -16,25 +16,25 @@ Available either as .exe (guided install) or zipfile, you can always find the la
 
 Whichever format you choose, ensure both the <code>perl\bin</code> and <code>perl\site\bin</code> directories are in your <a href="https://en.wikipedia.org/wiki/PATH_(variable)" target="_blank">PATH</a> post-install:
  
-![Perl bin directories are in the Path](/img/posts/perl-env-vars.png)
+![Perl bin directories are in the Path](/img/perl-env-vars.png)
 
 ### Step 2. Test Perl is installed correctly
 
 Open a command prompt type <code>perl -v</code>. You should see something similar to the following:
 
-![A successful Perl test](/img/posts/perl-version-test.png)
+![A successful Perl test](/img/perl-version-test.png)
 
 ### Step 3. Install Panotools Script
 
 Back in the command prompt, type <code>ppm install Panotools::Script</code>. <a href="https://en.wikipedia.org/wiki/Perl_package_manager" target="_blank">Perl Package Manager</a> should download and Install Panotools Script:
 
-![Installing Panotools Script](/img/posts/install-panotools.png)
+![Installing Panotools Script](/img/install-panotools.png)
 
 ### Step 4. Test Panotools Script is installed correctly
 
 Still in the command prompt, type <code>panostart</code>. The following help text should be displayed:
 
-![Panotools Script is installed correctly](/img/posts/panotools-test.png)
+![Panotools Script is installed correctly](/img/panotools-test.png)
  
 ### Step 5. Install and configure Hugin
 
@@ -42,13 +42,13 @@ Hugin is available as an .msi. You can download the latest version <a href="http
 
 Once installation completes, add the Hugin bin directory to your PATH:
 
-![Hugin bin directory is in the Path](/img/posts/hugin-env-vars.png)
+![Hugin bin directory is in the Path](/img/hugin-env-vars.png)
 
 ### Step 6. Test Hugin command line is working correctly
 
 Open a command prompt and type <code>nona</code>. You should see the following help text:
 
-![Hugin bin directory is in the Path](/img/posts/nona-test.png)
+![Hugin bin directory is in the Path](/img/nona-test.png)
 
 That's it!
 

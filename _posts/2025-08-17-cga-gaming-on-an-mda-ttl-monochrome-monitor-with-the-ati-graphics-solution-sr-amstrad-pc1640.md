@@ -9,7 +9,7 @@ summary: |-
 tags: [Amstrad, ATi Graphics, How To, MS-DOS, PC]
 ---
 
-![Amstrad PC1640](/img/posts/amstrad-pc1640-2.jpg)
+![Amstrad PC1640](/img/amstrad-pc1640-2.jpg)
 
 One of the quirks of retro hardware is that what you see on paper doesn’t always line up with what you get in practice.
 
@@ -70,7 +70,7 @@ So far as I can tell, this is (almost!) a unique feature — the only other card
 
 As a next step, I’m trying to buy an EGA Wonder. This should achieve the same graphics emulation support as the Graphics Solution SR — but this time with **EGA** colour mode. Wish me luck!
 
-![ATI Graphics Solution SR](/img/posts/ati-graphics-solution-sr.png)
+![ATI Graphics Solution SR](/img/ati-graphics-solution-sr.png)
 
 
 ### Further Reading

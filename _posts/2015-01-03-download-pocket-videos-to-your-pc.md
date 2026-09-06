@@ -234,7 +234,7 @@ youtube-dl.exe --ignore-errors --batch-file ./video-downloader/urls.txt --contin
 
 **... downloads all the videos referenced in output.txt to the current directory**
 
-![](/img/posts/2015-01-03-00_36_48-Downloaded-Videos.png)
+![](/img/2015-01-03-00_36_48-Downloaded-Videos.png)
 
 To find out more about the youtube-dl configuration options, head over <a href="http://rg3.github.io/youtube-dl/documentation.html" target="_blank">here</a>. You should also read up on <a href="http://en.wikipedia.org/wiki/YouTube#Quality_and_formats" target="_blank">YouTube's Media and Encoding Options</a>.
 

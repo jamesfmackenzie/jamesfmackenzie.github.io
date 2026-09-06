@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Computers, Consoles, Emulation, MiSTer FPGA]
 ---
 
-![The MiSTer's DE10-Nano board with an SDRAM add-on fitted](/img/posts/mister-fpga-hardware.jpg){: width="680"}
+![The MiSTer's DE10-Nano board with an SDRAM add-on fitted](/img/mister-fpga-hardware.jpg){: width="680"}
 
 MiSTer is an open project that recreates classic computers, consoles and arcade machines on modern FPGA hardware. Instead of a program *interpreting* what old hardware did, an FPGA is wired up to *behave* like that hardware at the logic level — which, done well, gets you extremely close to the real thing on timing, video and audio.
 
@@ -49,7 +49,7 @@ A bare DE10-Nano boots MiSTer, but you will want at least the SDRAM board — mo
 {% for post in site.posts %}
   {% if post.tags contains "MiSTer FPGA" and post.layout == "youtube" %}
   <li>
-    <img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+    <img src="/img/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
     <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
   </li>
   {% endif %}

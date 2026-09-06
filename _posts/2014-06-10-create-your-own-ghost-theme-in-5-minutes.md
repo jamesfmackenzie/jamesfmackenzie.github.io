@@ -15,7 +15,7 @@ The folks over at Ghost are smart cookies, and they've made the theming process 
 
 Ghost themes take your blog content (the data) and format it for the web (the presentation). By separating these two, you're always free to change the look and feel of your blog without adjusting the content. At a high level, they work like this:
 
-![](/img/posts/g.png)
+![](/img/g.png)
 
 ### Handlebars expressions? What are they?
 

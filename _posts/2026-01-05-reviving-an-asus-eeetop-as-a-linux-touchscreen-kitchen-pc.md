@@ -7,7 +7,7 @@ summary: |-
 tags: [Computers, PC, Posts, Retrocomputing]
 ---
 
-![ASUS EeeTop ET2010PNT](/img/posts/asus-eeetop-et2010pnt.jpg)
+![ASUS EeeTop ET2010PNT](/img/asus-eeetop-et2010pnt.jpg)
 
 I turned an old ASUS ET2010PNT EeeTop touchscreen PC into a fast, reliable kitchen calendar and email display using Linux Mint XFCE.
 
@@ -68,7 +68,7 @@ Save and exit.
 
 ### Step 4: Booting the installer (network quirks)
 
-![Operating System Doesn't Finish Loading](/img/posts/linux-mint-xfce-live-dvd-cannot-load-on-asus-eeetop-et2010pnt.jpg)
+![Operating System Doesn't Finish Loading](/img/linux-mint-xfce-live-dvd-cannot-load-on-asus-eeetop-et2010pnt.jpg)
 
 On the first try, the Linux Mint installer may hang on a black screen with white squares.
 
@@ -110,7 +110,7 @@ You should end up with:
 
 ### Step 6: Install Linux Mint
 
-![Linux Mint Xfce Desktop](/img/posts/linux-mint-xfce-desktop.webp)
+![Linux Mint Xfce Desktop](/img/linux-mint-xfce-desktop.webp)
 
 From the Mint Xfce desktop, double click “Install Linux Mint” to start the installer process. When asked about installation type:
 
@@ -127,7 +127,7 @@ You may see a warning about **no EFI partition**. This is **normal and safe to i
 
 ### Step 7: Fixing GRUB
 
-![GRUB error during install](/img/posts/linux-mint-xfce-grub-install-error.jpg)
+![GRUB error during install](/img/linux-mint-xfce-grub-install-error.jpg)
 *A GRUB installation failure — common on legacy systems.*
 
 As the Linux installer finishes up, you’ll likely see a GRUB error like the above.
@@ -154,7 +154,7 @@ After this, the system should boot cleanly from disk.
 
 ### Step 8: Wi-Fi quirks
 
-![Built in Wi-Fi adapter is Hard blocked](/img/posts/asus-eeetop-et2010pnt-linux-mint-xcfe-wifi-not-working-hard-blocked.jpg)
+![Built in Wi-Fi adapter is Hard blocked](/img/asus-eeetop-et2010pnt-linux-mint-xcfe-wifi-not-working-hard-blocked.jpg)
 
 Unfortunately I was unable to get the built-in Atheros Wi-Fi working. It repeatedly asserted that it was “hard blocked” and could not be coaxed to life.
 

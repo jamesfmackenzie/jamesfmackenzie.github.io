@@ -50,7 +50,7 @@ Next we need to add spatial metadata so YouTube recognises the 360° video and e
 3. Click *Open* and select the video to inject metadata into
 4. Click *Inject metadata* and choose where to save your new 360° video 
 
-![](/img/posts/spatial_media_metadata_injector_2.png)
+![](/img/spatial_media_metadata_injector_2.png)
 
 ### 4. Upload to YouTube and enjoy!
 

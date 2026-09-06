@@ -7,11 +7,11 @@ summary: |-
 tags: [Consumer Tech, Home Media, How To]
 ---
 
-![BenQ TH575 1080p Projector](/img/posts/benq-th575-projector.jpg)
+![BenQ TH575 1080p Projector](/img/benq-th575-projector.jpg)
 
 I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see:
 
-![Projector menu showing 3D option](/img/posts/benq-th575-projector-supports-3d.jpg)
+![Projector menu showing 3D option](/img/benq-th575-projector-supports-3d.jpg)
 
 Wait… 3D?
 
@@ -40,7 +40,7 @@ The result? Each eye receives a slightly different image, creating the 3D effect
 
 Nice!
 
-![AWOL Vision 3D Glasses](/img/posts/awol-3d-vision-dlp-link-shutter-glasses.jpg)
+![AWOL Vision 3D Glasses](/img/awol-3d-vision-dlp-link-shutter-glasses.jpg)
 
 
 ### First Test: 3D Trailers
@@ -51,7 +51,7 @@ Using an Apple TV, I played a side-by-side (SBS) version of *Avatar: The Way of 
 
 It worked!
 
-![Avatar 3D side-by-side](/img/posts/avatar-way-of-water-3d-sbs-side-by-side-trailer.jpg)
+![Avatar 3D side-by-side](/img/avatar-way-of-water-3d-sbs-side-by-side-trailer.jpg)
 
 However… the image wasn’t very sharp. And that makes sense. With side-by-side video, we sacrifice half the horizontal resolution.
 
@@ -71,7 +71,7 @@ Top-Bottom and Side By Side are the worst. You literally lose half the vertical 
 
 Frame Sequential is better, but needs support for high refresh rates (since video is sent at double the target frame rate — all the left eye frames, all the right eye frames).
 
-![3D mode menu](/img/posts/supported-3d-modes-on-benq-th575-projector.jpg)
+![3D mode menu](/img/supported-3d-modes-on-benq-th575-projector.jpg)
 
 
 ### The Best Option: Frame Packing
@@ -82,7 +82,7 @@ Frame Packing stores both left-eye and right-eye images at full 1080p inside a s
 - Projector extracts each full-resolution eye image
 - Produces the highest-quality 3D possible
 
-![Frame Packing Diagram](/img/posts/1080p-3d-frame-packing-image-dimensions.jpg)
+![Frame Packing Diagram](/img/1080p-3d-frame-packing-image-dimensions.jpg)
 
 This is the format used on **Blu-ray 3D discs**.
 
@@ -93,7 +93,7 @@ Perfect! And luckily…
 
 I still had a dusty old copy of *The Hobbit: The Desolation of Smaug 3D*.
 
-![The Hobbit 3D Blu-ray](/img/posts/the-hobbit-the-desolation-of-smaug-3d-blu-ray.jpg)
+![The Hobbit 3D Blu-ray](/img/the-hobbit-the-desolation-of-smaug-3d-blu-ray.jpg)
 
 Time to fire up a proper 3D movie!
 
@@ -104,7 +104,7 @@ Except… no.
 
 Firing up the movie on Xbox, I got an ugly error message.
 
-![Blu-ray 3D error message](/img/posts/3d-blu-ray-error-on-xbox-series-x.jpg)
+![Blu-ray 3D error message](/img/3d-blu-ray-error-on-xbox-series-x.jpg)
 
 Turns out both the **PlayStation 5** and **Xbox** have silently dropped support for 3D Blu-ray discs.
 
@@ -115,7 +115,7 @@ Trying to play a 3D movie gives you a depressing message: “no 3D display detec
 
 Digging into the retro hardware vault, I unearthed the trusty old PS3.
 
-![PlayStation 3](/img/posts/sony-playstation-3.jpg)
+![PlayStation 3](/img/sony-playstation-3.jpg)
 
 Not only does it support Blu-ray 3D… it was *one of the first devices* to implement the standard.
 
@@ -124,7 +124,7 @@ Time for attempt number two.
 
 ### Success! Glorious Full-Resolution 3D
 
-![Frame Packing success](/img/posts/viewing-desolation-of-smaug-with-3d-frame-packing-video.jpg)
+![Frame Packing success](/img/viewing-desolation-of-smaug-with-3d-frame-packing-video.jpg)
 
 And it works!
 

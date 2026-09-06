@@ -7,7 +7,7 @@ image: dell-optiplex-760.jpg
 tags: [DOS, PC, Retrogaming, Windows 98, Windows XP]
 ---
 
-![Dell OptiPlex 760 tower](/img/posts/dell-optiplex-760.jpg){: width="500"}
+![Dell OptiPlex 760 tower](/img/dell-optiplex-760.jpg){: width="500"}
 
 The Dell OptiPlex 760 looked like it should be a strong all-round retro PC: cheap Core 2 hardware, PCI and PCIe expansion, decent CPU performance, and just enough legacy friendliness to make experimentation worthwhile.
 
@@ -36,7 +36,7 @@ My specific machine is not a maxed-out 760 either. It is a fairly ordinary offic
 
 That makes the results more interesting, because this is much closer to the kind of machine you might actually pick up cheaply rather than some fully upgraded ideal configuration.
 
-![The OptiPlex 760 BIOS, showing the Pentium Dual-Core E5200](/img/posts/dell-optiplex-760-bios.jpg){: width="620"}
+![The OptiPlex 760 BIOS, showing the Pentium Dual-Core E5200](/img/dell-optiplex-760-bios.jpg){: width="620"}
 
 ## Why I Thought It Might Work
 
@@ -117,7 +117,7 @@ DOS support is much better than expected. The motherboard has a serial header, a
 
 The serial / PS2 header arrangement is the same style I used on the OptiPlex 380:
 
-![The serial-header PS/2 bracket run out to the back of the case](/img/posts/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg){: width="405"}
+![The serial-header PS/2 bracket run out to the back of the case](/img/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg){: width="405"}
 
 That gives the machine an interesting split personality:
 

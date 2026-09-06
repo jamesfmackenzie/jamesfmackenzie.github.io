@@ -6,7 +6,7 @@ date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
-![ATI Graphics Solution SR](/img/posts/ati-graphics-solution-sr.png)
+![ATI Graphics Solution SR](/img/ati-graphics-solution-sr.png)
 
 I picked up an ATI Graphics Solution SR to solve a very specific problem on my [Amstrad PC1640]({% link _hardware/amstrad-pc1640.md %}): the built-in Paradise graphics chip can do CGA and EGA colour just fine, but the bundled PC-MD monitor is monochrome-only. This 1987 card's whole trick is emulating CGA output on that monochrome monitor, so I could keep the original monitor and still play colour games.
 

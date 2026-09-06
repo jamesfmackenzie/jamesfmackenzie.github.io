@@ -7,7 +7,7 @@ image: moonlight.png
 tags: [How To, Raspberry Pi, Retrogaming, Videogames]
 ---
 
-![](/img/posts/moonlight.png)
+![](/img/moonlight.png)
 
 You already have [RetroPie running nicely on your Raspberry Pi]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). It's the perfect retrogaming experience for your living room TV, but there's one thing missing. The Pi doesn't have the horsepower for more recent games. How can you play the latest PC releases? Or perhaps you fancy some PlayStation 2, Gamecube or Dreamcast emulation on the big screen?
 
@@ -28,7 +28,7 @@ Many of the steps in this guide involve tinkering with RetroPie settings at the 
  
 Create a file named `ssh` in the root directory of your SD Card. This way you can configure RetroPie from your networked PC, no keyboard required. Learn more [here]({% post_url 2017-01-02-raspberry-pi-headless-rasbian-install %})
 
-![](/img/posts/create_ssh_file_on_sd_card.png)
+![](/img/create_ssh_file_on_sd_card.png)
 
 With this feature enabled, you can use any <a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> client (I like <a href="https://www.putty.org/" target="_blank">PuTTY</a>) to remotely connect to your Pi. The default connection details:
 

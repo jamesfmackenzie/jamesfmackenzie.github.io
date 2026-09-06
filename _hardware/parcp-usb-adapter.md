@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Atari ST, Peripherals]
 ---
 
-![The PARCP-USB adapter dongle](/img/posts/parcp-usb_adapter_dongle.jpg){: width="680"}
+![The PARCP-USB adapter dongle](/img/parcp-usb_adapter_dongle.jpg){: width="680"}
 
 PARCP (short for **PAR**allel **C**o**P**y) has been used since 1996 to copy files between two computers over their parallel ports. Modern PCs no longer have parallel ports, so the author built the PARCP-USB adapter: a small dongle that converts the PARCP data stream between a parallel port on one side and USB on the other.
 

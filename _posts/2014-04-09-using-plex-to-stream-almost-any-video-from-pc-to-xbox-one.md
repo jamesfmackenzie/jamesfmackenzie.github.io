@@ -26,7 +26,7 @@ I won't go into great detail on this since it's already [documented on the Plex 
 3. [Set up a media library](https://plexapp.zendesk.com/hc/en-us/articles/200288926-Creating-Libraries), pointing it to the Videos folder on your PC.
 4. Turn on DLNA via <code>Settings -> Plex Media Server -> DLNA -> DLNA enabled</code>:
 
-![Turning on Plex DLNA](/img/posts/2014_03_17_21_01_27_Plex_Web.png)
+![Turning on Plex DLNA](/img/2014_03_17_21_01_27_Plex_Web.png)
 
 ### Create a Windows DLNA media profile
 
@@ -192,7 +192,7 @@ Create another new file called <code>Xbox One.xml</code> with the content below.
 
 After restarting Plex, you should see a "Plex Media Server" icon in Windows Explorer:
 
-![Plex Explorer icon](/img/posts/2014_03_17_20_24_56_This_PC.png)
+![Plex Explorer icon](/img/2014_03_17_20_24_56_This_PC.png)
 
 If you can't see it, you might need to:
 
@@ -200,13 +200,13 @@ If you can't see it, you might need to:
 2. Navigate to <code>Computer -> Access Media</code>.
 3. Click on <code>Connect to a media server</code>:
 
-![Connect to a media server](/img/posts/2014_03_17_22_19_41_This_PC-1.png)
+![Connect to a media server](/img/2014_03_17_22_19_41_This_PC-1.png)
 
 One the icon appears, find your content and stream it to your One:
 
-![playtomkv](/img/posts/2014_03_18_00_35_32_Wonders_of_the_Solar_System.png)
+![playtomkv](/img/2014_03_18_00_35_32_Wonders_of_the_Solar_System.png)
 
-![Xbox One Play To with mkv](/img/posts/tv.jpg)
+![Xbox One Play To with mkv](/img/tv.jpg)
 
 Easy!
 
@@ -217,7 +217,7 @@ Enabling subtitles is pretty easy. Whilst on the PC:
 1. Open the [Plex Media Manager](http://localhost:32400/web/index.html#!/dashboard).
 2. Find the show you want to enable subtitles for, hit the drop-down next to "SUBTITLES" and make a language selection:
 
-![Enabling subtitles](/img/posts/2014_03_19_19_16_36_Plex_Web.png)
+![Enabling subtitles](/img/2014_03_19_19_16_36_Plex_Web.png)
 
 That's it! The subtitles will be rendered next time you Play To.
 

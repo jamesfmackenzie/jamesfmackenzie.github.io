@@ -33,7 +33,7 @@ On real PCs, the Sound Blaster and other audio cards often include a MIDI interf
 
 4. This time, run `Scripts → Yes → soundfont_install`. This will download the <a href="https://en.wikipedia.org/wiki/SoundFont" target="_blank">SoundFonts</a> and ROMs necessary for MIDI playback.
 
-![](/img/posts/mister-ao486-midilink-updater.png)
+![](/img/mister-ao486-midilink-updater.png)
 
 For reference, the downloaded ROMs are stored in <code>/media/fat/linux</code> in the following file structure:
 
@@ -63,7 +63,7 @@ With MidiLink installed, we're almost ready to play! But first we need to enable
 
 4. Set <code>Connection</code> to <code>MIDI</code>. Now we're ready for some MIDI playback!
 
-![](/img/posts/mister-ao486-midilink-uart-mode-midi-connection.png)
+![](/img/mister-ao486-midilink-uart-mode-midi-connection.png)
 
 
 ### Step 3 – MidiLink Playback
@@ -95,7 +95,7 @@ Whichever option you pick, the MIDI port is always <code>330</code> (for use dur
 
 Configure MidiLink as follows. Then hit *Save*:
 
-![](/img/posts/mister-ao486-midilink-uart-mode-local-munt.png)
+![](/img/mister-ao486-midilink-uart-mode-local-munt.png)
 
 In this mode, MiSTer runs the <a href="https://sourceforge.net/projects/munt/" target="_blank">Munt</a> software synthesizer to emulate a real Roland MT-32. This is a super neat "ready to go" solution, with sound piped directly to your TV via the HDMI port. Give it a listen:
 
@@ -111,7 +111,7 @@ Unfortunately, MiSTer's onboard ARM CPU isn't *quite* powerful enough to run MUN
 
 Configure MidiLink as follows:
 
-![](/img/posts/mister-ao486-midilink-uart-mode-local-fsynth-fluidsynth.png)
+![](/img/mister-ao486-midilink-uart-mode-local-fsynth-fluidsynth.png)
 
 In this mode, MiSTer runs the <a href="https://www.fluidsynth.org/" target="_blank">FluidSynth</a> software synthesizer for <a href="https://en.wikipedia.org/wiki/General_MIDI" target="_blank">General MIDI</a> playback. By default, it uses <a href="https://en.wikipedia.org/wiki/Roland_SC-55" target="_blank">Roland SC-55</a> <a href="https://en.wikipedia.org/wiki/SoundFont" target="_blank">SoundFonts</a>, but any SoundFonts will work. FluidSynth is much lighter on the CPU vs Munt and playback is very authentic. Witness this awesome rendition of the Doom E1M1 theme:
 
@@ -127,14 +127,14 @@ If you're lucky enough to own real <a href="https://en.wikipedia.org/wiki/Roland
 
 You'll need an <a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture" target="_blank">ALSA</a>-supported USB MIDI adapter such as the <a href="https://www.roland.com/global/products/um-one_mk2/" target="_blank">Roland UM-ONE</a>. With an adapter connected, the <code>USB</code> menu option will appear. If you don't have a real synth, consider the <a href="https://github.com/dwhinham/mt32-pi" target="_blank">mt32-pi</a> project – a baremetal MIDI/MT-32 synthesizer for Raspberry Pi 3.
 
-![](/img/posts/roland-um-one_mk2_usb-midi-interface-adapter.jpg)
+![](/img/roland-um-one_mk2_usb-midi-interface-adapter.jpg)
 
 
 ### Network Playback over UDP
 
 Configure MidiLink as follows:
 
-![](/img/posts/mister-ao486-midilink-uart-mode-udp-udpmidi.png)
+![](/img/mister-ao486-midilink-uart-mode-udp-udpmidi.png)
 
 In this mode, MidiLink will transmit MIDI data onto the network as <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" target="_blank">UDP packets</a> – for playback on a networked MIDI device. To get this working:
 
@@ -146,19 +146,19 @@ In this mode, MidiLink will transmit MIDI data onto the network as <a href="http
 
 4. Edit <code>/media/fat/linux/MidiLink.INI</code> on your MiSTer. Set <code>UDP_SERVER</code> to the IP address of your home PC:
 
-![](/img/posts/mister-ao486-midilink-ini-udp-server.png)
+![](/img/mister-ao486-midilink-ini-udp-server.png)
 
 {:start="5"}
 5. When MIDI playback begins in ao486, UDPMIDI will start receiving packets and playback should start!
 
-![](/img/posts/mister-ao486-midilink-udp-udpmidi.png)
+![](/img/mister-ao486-midilink-udp-udpmidi.png)
 
 
 #### UDP Troubleshooting 
 
 If you have trouble receiving packets, check your personal firewall. I use <a href="https://en.wikipedia.org/wiki/Windows_Firewall" target="_blank">Windows Defender Firewall</a> and had to add an incoming rule to allow private network traffic on UDP port 1999:
 
-![](/img/posts/mister-ao486-midilink-udp-udpmidi-incoming-firewall-rule.png)
+![](/img/mister-ao486-midilink-udp-udpmidi-incoming-firewall-rule.png)
 
 As an alternative to UDPMIDI, it's also possible to build MidiLink <a href="https://github.com/bbond007/MiSTer_MidiLink" target="_blank">from source</a> and run in "listen" mode. The command line args are:
 

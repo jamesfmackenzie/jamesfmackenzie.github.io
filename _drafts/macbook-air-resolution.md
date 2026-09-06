@@ -10,7 +10,7 @@ I recently picked up a MacBook Air, and got thoroughy confused by the screen res
 
 Apple's marketing literature and system settings indicate a screen resolution of 2560x1664:
 
-![MacBook Air Resolution](/img/posts/macbook-air-resolution-system-info.png)
+![MacBook Air Resolution](/img/macbook-air-resolution-system-info.png)
 
 However other applications identify the resolution as 2940x1912 or even 1470x956. To understand why, why need to understand HiDPI.
 

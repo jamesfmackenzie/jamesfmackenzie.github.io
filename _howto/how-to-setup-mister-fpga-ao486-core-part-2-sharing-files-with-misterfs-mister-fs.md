@@ -19,17 +19,17 @@ To install MiSTerFS:
 
 2. Use a file transfer tool like FileZilla to copy the floppy image to <code>/media/fat/games/AO486</code> on your MiSTer (reminder on how to do that [here]({% post_url 2021-01-31-mister-fpga-network-access-and-copying-files %})). You should have a single file name <code>misterfs.img</code>:
 
-![](/img/posts/mister-ao486-misterfs-floppy-image.png)
+![](/img/mister-ao486-misterfs-floppy-image.png)
 
 {:start="3"}
 3. Still in FileZilla, create a new folder: <code>/media/fat/games/AO486/shared</code> (if it doesn't exist already). This is the "drop" folder you'll use to transfer files to ao486:
 
-![](/img/posts/mister-ao486-misterfs-create-shared-folder-using-filezilla.png)
+![](/img/mister-ao486-misterfs-create-shared-folder-using-filezilla.png)
 
 {:start="4"}
 4. Power up the ao486 core and mount the MiSTerFS floppy image (*Windows Key* + *F12* for ao486 core options, set *Floppy A:* to <code>misterfs.img</code>)
 
-![](/img/posts/mister-ao486-mount-misterfs-floppy-image-in-ao486.png)
+![](/img/mister-ao486-mount-misterfs-floppy-image-in-ao486.png)
 
 {:start="5"}
 5. Run the following commands to copy the MiSTerFS executable to your hard disk:
@@ -40,7 +40,7 @@ md c:\utils\misterfs
 copy a:\misterfs.exe c:\utils\misterfs
 ```
 
-![](/img/posts/mister-ao486-copy-misterfs-files-to-ao486-dos.png)
+![](/img/mister-ao486-copy-misterfs-files-to-ao486-dos.png)
 
 {:start="5"}
 6. Still on your MiSTer, type <code>edit c:\autoexec.bat</code>. An editor application will open. Add the following line:
@@ -73,12 +73,12 @@ File transfer between PC and ao486 works in both directions. To copy files from 
 
 3. Drag-and-drop files into the <code>shared</code> folder. Filenames must fit the <a href="https://en.wikipedia.org/wiki/8.3_filename" target="_blank">8.3 filename standard</a>
 
-![](/img/posts/mister-ao486-misterfs-copy-files-to-shared-folder-using-filezilla.png)
+![](/img/mister-ao486-misterfs-copy-files-to-shared-folder-using-filezilla.png)
 
 {:start="4"}
 4. In ao486, verify that the files appear under the <code>E:</code> drive:
 
-![](/img/posts/mister-ao486-misterfs-files-copied-to-dos-using-filezilla.png)
+![](/img/mister-ao486-misterfs-files-copied-to-dos-using-filezilla.png)
 
 To transfer files from ao486 to PC, simply do the reverse.
 

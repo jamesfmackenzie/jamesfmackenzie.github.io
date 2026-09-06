@@ -6,7 +6,7 @@ date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
 ---
 
-![ATI Small Wonder Graphics Solution](/img/posts/ati-small-wonder-graphics-solution-v1.png)
+![ATI Small Wonder Graphics Solution](/img/ati-small-wonder-graphics-solution-v1.png)
 
 The Small Wonder Graphics Solution does the same job as the [Graphics Solution SR]({% link _hardware/ati-graphics-solution-sr.md %}) — running colour CGA games on a monochrome monitor — but the reason I wanted one was really about owning a piece of history. The 1988 Small Wonder (also sold as the Graphics Solution **SC**, for "single chip") folds the SR's discrete multi-chip design onto the ATI 18700, ATI's first single-chip graphics IC. It arrived after my SR, and it's the slightly newer, more refined card of the two, with a near-identical capability set.
 

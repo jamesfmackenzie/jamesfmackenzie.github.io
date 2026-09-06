@@ -39,11 +39,11 @@ Flash the downloaded image onto your microSD card. Follow the BalenaEtcher instr
 
 Put the microSD card into the DE10-Nano and power on. After a few seconds the orange LED on the board should light up. If you have a TV or monitor connected, you should see the installation splash screen:
 
-![](/img/posts/mister-fpga-install.jpg)
+![](/img/mister-fpga-install.jpg)
 
 The installer will automatically re-partition and resize your SD card and copy all the necessary MiSTer files onto it. Once complete the DE10-Nano will reboot and you'll be greeted with an (empty) MiSTer menu:
 
-![](/img/posts/mister-fpga-install-2.jpg)
+![](/img/mister-fpga-install-2.jpg)
 
 
 #### Step 3. Run MiSTer update script
@@ -58,7 +58,7 @@ Connect a keyboard to your DE10-Nano and hit F12 to open the menu. Make sure you
 
 Once complete the DE10-Nano will reboot. When it loads again, you'll see a fully-populated menu with all cores. Good to go!
 
-![](/img/posts/mister-fpga-install-3.jpg)
+![](/img/mister-fpga-install-3.jpg)
 
 That completes the MiSTer setup. Next up: [Network Access and Copying Files]({% link _howto/how-to-setup-mister-fpga-network-access-and-copying-files.md %}).
 

@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [MIDI, PC, Peripherals, Sound]
 ---
 
-![PI-MIDI connected to a Raspberry Pi](/img/posts/pi-midi-connected.jpg){: width="680"}
+![PI-MIDI connected to a Raspberry Pi](/img/pi-midi-connected.jpg){: width="680"}
 
 The PI-MIDI is a MIDI HAT for the Raspberry Pi. It attaches to the Pi's GPIO pins and gives it a proper MIDI input, stereo RCA output, an audio input for mixing, and a dedicated port for connecting to MiSTer FPGA. Paired with the [mt32-pi](https://github.com/dwhinham/mt32-pi) software synth, it becomes a small, cheap, authentic-sounding stand-in for a Roland MT-32 or Sound Canvas.
 

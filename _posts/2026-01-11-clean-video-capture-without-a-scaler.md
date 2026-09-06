@@ -8,7 +8,7 @@ tags: [Posts, Video Capture]
 image: micomsoft-sc-512n1-l-dvi-capture-card.jpg
 ---
 
-![Micomsoft SC-512N1-L/DVI Capture Card](/img/posts/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
+![Micomsoft SC-512N1-L/DVI Capture Card](/img/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
 
 Good capture of a classic computer usually means an external scaler — a RetroTINK or a Framemeister sitting in the signal chain. Those are excellent devices. But for documenting Atari ST video I wanted something a scaler doesn't really give you: the *exact* original pixel grid, reconstructed deliberately, with every scaling step under my control.
 

@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [MIDI, PC, Peripherals, Sound]
 ---
 
-![DreamBlaster X2GS wavetable daughterboard](/img/posts/dreamblaster-x2-x2gs-wavetable-daughterboard-2.jpg){: width="680"}
+![DreamBlaster X2GS wavetable daughterboard](/img/dreamblaster-x2-x2gs-wavetable-daughterboard-2.jpg){: width="680"}
 
 The DreamBlaster X2GS is a modern wavetable daughterboard that plugs into the Wave Blaster header found on many DOS-era sound cards. It is one of the simplest ways to add high quality MIDI music to a retro PC without hunting down a 1990s Roland synth.
 

@@ -6,7 +6,7 @@ tags: [Programming, Projects, Retrogaming, Sony PlayStation, Videogames]
 status: in progress
 ---
 
-![Commander Keen](/img/posts/keen.png)
+![Commander Keen](/img/keen.png)
 
 I've wanted to explore <a href="https://en.wikipedia.org/wiki/Cross_compiler" target="_blank">cross-compilation</a> (i.e. building code on one platform for execution on another) for a while. I'm also passionate about bringing classic retro games to a new audience.
 

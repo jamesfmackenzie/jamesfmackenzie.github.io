@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Atari ST, Peripherals]
 ---
 
-![Connecting a NetUSBee to an Atari ST](/img/posts/atari_st_netusbee.jpg){: width="680"}
+![Connecting a NetUSBee to an Atari ST](/img/atari_st_netusbee.jpg){: width="680"}
 
 The NetUSBee is an expansion adapter that plugs into the Atari ST's cartridge port and adds an Ethernet port (and USB). It is, in my experience, the quickest and most convenient way to get files onto an ST — and with the right software it will also put the machine on the network properly.
 

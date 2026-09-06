@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Consoles, Sony PlayStation]
 ---
 
-![](/img/posts/sony_playstation_2_ps2_silver_console.jpg)
+![](/img/sony_playstation_2_ps2_silver_console.jpg)
 
 The PlayStation 2 is a console I lived with properly. Mine came with me to university and ended up at the centre of a lot of multiplayer nights — **Gran Turismo 3** and **Pro Evolution Soccer** especially — and over the years I accumulated far too many accessories, adapters, and VGA gadgets trying to make it fit whatever screen setup I had at the time.
 

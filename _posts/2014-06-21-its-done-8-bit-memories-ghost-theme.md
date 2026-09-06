@@ -7,6 +7,6 @@ image: 8-bit-Memories.png
 tags: [Posts, Programming]
 ---
 
-![](/img/posts/8-bit-Memories.png)
+![](/img/8-bit-Memories.png)
 
 My first free Ghost Theme "8-bit Memories" is complete. You can find it on GitHub <a href="https://github.com/jamesfmackenzie/8-bit-Memories" target="_blank">here</a>.

@@ -6,11 +6,11 @@ tags: [Consumer Tech, Home Media, Projects]
 status: in progress
 ---
 
-![BenQ TH575 1080p Projector](/img/posts/benq-th575-projector.jpg)
+![BenQ TH575 1080p Projector](/img/benq-th575-projector.jpg)
 
 I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see:
 
-![Projector menu showing 3D option](/img/posts/benq-th575-projector-supports-3d-thin.jpg)
+![Projector menu showing 3D option](/img/benq-th575-projector-supports-3d-thin.jpg)
 
 A 2025 projector with shutter-glasses 3D support wasn't something I expected to find. I wanted to know how well it actually worked, and how much extra hardware it would take to get there.
 
@@ -24,7 +24,7 @@ After <a href="https://esupportdownload.benq.com/esupport/PROJECTOR/UserManual/T
 1. The TH575 does indeed support stereoscopic 3D playback
 2. But only with glasses that use **DLP-Link** synchronisation
 
-I hastily purchased some <a href="/img/posts/awol-3d-vision-dlp-link-shutter-glasses.jpg" target="_blank">AWOL VISION 3D DLP-Link glasses</a>, and (after some trial and error), was able to conjure some <a href="/img/posts/viewing-desolation-of-smaug-with-3d-frame-packing-video.jpg" target="_blank">impressive Blu-ray 3D video</a>.
+I hastily purchased some <a href="/img/awol-3d-vision-dlp-link-shutter-glasses.jpg" target="_blank">AWOL VISION 3D DLP-Link glasses</a>, and (after some trial and error), was able to conjure some <a href="/img/viewing-desolation-of-smaug-with-3d-frame-packing-video.jpg" target="_blank">impressive Blu-ray 3D video</a>.
 
 Find the full write up here:
 

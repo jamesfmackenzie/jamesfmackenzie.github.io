@@ -34,7 +34,7 @@ Before you can sync videos to the phone you'll need to download them to your PC.
 
 Make a note of your Downloaded Videos folder location (in my case <code>D:\Videos\Downloaded Videos</code>). You'll need this later.
 
-![](/img/posts/2015-01-03-00_36_48-Downloaded-Videos.png)
+![](/img/2015-01-03-00_36_48-Downloaded-Videos.png)
 
 ### Step 2. Download and install Plex Media Server on your PC
 
@@ -44,21 +44,21 @@ Plex Media Server is available for Windows, OS X, Linux and even NAS. Full insta
 
 * In the Plex Media Manager, click "Add Library". Set the media type to "Home Videos":
 
-![](/img/posts/2015-02-01-21_51_24-Plex.png)
+![](/img/2015-02-01-21_51_24-Plex.png)
 
 * Give the library a name. I chose "Downloaded Videos":
 
-![](/img/posts/2015-02-01-21_51_49-Plex.png)
+![](/img/2015-02-01-21_51_49-Plex.png)
 
 * Add your Downloaded Videos folder to the library (you made a note of the location in Step 2):
 
-![](/img/posts/2015-02-01-21_52_35-Plex.png)
+![](/img/2015-02-01-21_52_35-Plex.png)
 
-![](/img/posts/2015-02-01-21_53_10-Plex.png)
+![](/img/2015-02-01-21_53_10-Plex.png)
 
 * Complete the library setup by clicking "Add Library":
 
-![](/img/posts/2015-02-01-21_53_37-Plex.png)
+![](/img/2015-02-01-21_53_37-Plex.png)
 
 ### Step 4. Download and install the Plex client on your phone/tablet
 
@@ -75,11 +75,11 @@ Last step. We need to configure Plex to sync our Downloaded Videos from PC to th
 
 * From the Download Videos library, hit the Plex Sync button (downward-facing arrow, top right)
 
-<img src="/img/posts/IMG_0174.PNG" style="width: 480px; display: block; margin: 0 auto 0 auto;" />
+<img src="/img/IMG_0174.PNG" style="width: 480px; display: block; margin: 0 auto 0 auto;" />
 
 * Choose your Plex Sync parameters. I went with 10 Unwatched Videos, meaning I'll always have 10 fresh items to watch.
 
-<img src="/img/posts/IMG_0175.PNG" style="width: 480px; display: block; margin: 0 auto 0 auto;" />
+<img src="/img/IMG_0175.PNG" style="width: 480px; display: block; margin: 0 auto 0 auto;" />
 
 Plex will now automatically sync your Downloaded Videos whenever you're on a Wi-Fi network. To save bandwidth, cellular sync is disabled by default, but you can force it. More information available <a href="https://support.plex.tv/hc/en-us/articles/201053678-Sync-Media-to-a-Device" target="_blank">here</a>.
 
@@ -87,4 +87,4 @@ Plex will now automatically sync your Downloaded Videos whenever you're on a Wi-
 
 That's it! Keep Pocket topped up and videos will trickle onto your mobile device, ready for consumption whenever you have a spare moment. Now back to that Airplane journey ...
 
-![](/img/posts/IMG_0177.PNG)
+![](/img/IMG_0177.PNG)

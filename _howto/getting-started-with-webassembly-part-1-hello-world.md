@@ -75,19 +75,19 @@ You'll see three new files once the build completes:
 * `hello.js` - the asm.js output
 * `hello.html` - a shell / wrapper file so you can launch your WebAssembly app in the browser
 
-![](/img/posts/emscripten_hello_world_build.png)
+![](/img/emscripten_hello_world_build.png)
 
 ### Run
 
 For a quick and simple test, run `hello.js` with Node JS. It should output "hello, world!":
 
-![](/img/posts/emscripten_node_js_test.png)
+![](/img/emscripten_node_js_test.png)
 
 Alternatively use lightweight Web Server software such as <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `hello.html` and open it in a Web Browser. It should output "hello, world!" to the Browser window and console:
 
-![](/img/posts/emscripten_browser_test.png)
+![](/img/emscripten_browser_test.png)
 
-![](/img/posts/emscripten_browser_test_console.png)
+![](/img/emscripten_browser_test_console.png)
 
 Congratulations! You're up and running with WebAssembly!
 

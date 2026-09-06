@@ -19,7 +19,7 @@ Here's how.
 
 #### Internal 3.5" floppy drive
 
-![](/img/posts/floppy2.png)
+![](/img/floppy2.png)
 
 You'll need a 3.5", 1.44MB PC floppy drive that uses the <a href="http://www.computerhope.com/jargon/f/flopcabl.htm" target="_blank">old 34-pin connector</a>. Unfortunately, for our purposes, a USB floppy drive won't do as:
 
@@ -32,7 +32,7 @@ A few notes to help with your search:
 * A lot of modern motherboards are missing the old 34-pin connector. You can add this support via something like the <a href="https://en.wikipedia.org/wiki/Individual_Computers_Catweasel" target="_blank">Catweasel</a>, but it's an expensive option
 * All things considered, it might be easier and cheaper to purchase an old PC from eBay with a built in floppy drive. **This is what I chose to do**:
 
-![](/img/posts/dell_laptop.jpg)
+![](/img/dell_laptop.jpg)
 
 #### Makedisk
 
@@ -64,7 +64,7 @@ Take your bootable DOS USB drive and copy the following onto it:
 1. The Makedisk program executable
 2. The disk image (.MSA or .ST file) you wish to play on your Atari ST
 
-![](/img/posts/copy_files.gif)
+![](/img/copy_files.gif)
 
 #### 2. Boot from your USB media
 
@@ -80,17 +80,17 @@ C:\>makedisk /write <disk image name> /auto
 {% endraw %}
 {% endhighlight %}
 
-![](/img/posts/makedisk_command_line.png)
+![](/img/makedisk_command_line.png)
 
 After a couple of prompts (for which the answers are suggested and you should always answer Yes), Makedisk will whirr away and prepare your disk image:
 
-![](/img/posts/makedisk.gif)
+![](/img/makedisk.gif)
 
 #### 4. Play the game
 
 That's it! You should now have a working game disk. Put it in your ST and play!
 
-![](/img/posts/rick_dangerous.png)
+![](/img/rick_dangerous.png)
 
 ### On YouTube
 

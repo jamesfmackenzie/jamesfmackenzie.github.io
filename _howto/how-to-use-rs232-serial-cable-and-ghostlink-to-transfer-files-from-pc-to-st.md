@@ -18,13 +18,13 @@ Here's how to get started!
 
 The Atari ST serial port uses a 25-pin D-SUB male connector. The serial ports traditionally found on PCs use a 9-pin D-SUB male connector (if there's one there at all). So to connect the two, you need a 25-pin D-SUB female to 9-pin D-SUB female cable. Or, in insider lingo, DB25F-DB9F.
 
-![](/img/posts/atari_st_rs232_serial_port_25pin_db25.jpg "Atari ST 25-pin serial/RS232 port")
+![](/img/atari_st_rs232_serial_port_25pin_db25.jpg "Atari ST 25-pin serial/RS232 port")
 
-![](/img/posts/atari_st_rs232_serial_cable_db25f-db9f.jpg "DB25F-DB9F serial/RS232 cable")
+![](/img/atari_st_rs232_serial_cable_db25f-db9f.jpg "DB25F-DB9F serial/RS232 cable")
 
 If your PC doesn't have a serial port at all (many modern PCs don't), you can get away with using a serial to USB adapter cable (DB25F-USB).
 
-![](/img/posts/atari_st_rs232_serial_to_usb_adapter.jpg "Serial/RS232 to USB adapter cable")
+![](/img/atari_st_rs232_serial_to_usb_adapter.jpg "Serial/RS232 to USB adapter cable")
 
 Get the right cable, then connect your PC and ST together.
 
@@ -45,7 +45,7 @@ To get our file transfer working, we need to properly configure the COM port and
 
 Head to the Windows Device Manager, expand "Ports (COM & LPT)" and identity what COM port you're running on. In my case it's COM3:
 
-![](/img/posts/device_manager_com_ports.png)
+![](/img/device_manager_com_ports.png)
 
 Once you've done this, use Windows Explorer to navigate to <code>%localappdata%\DOSBox</code>. Locate a file named <code>DOSBox.conf</code> (or similar). You may need to start DOSBox just the once to make this file appear. 
 
@@ -70,15 +70,15 @@ Before we can transfer any files down the serial cable, we need to copy the Ghos
 
 Switch your ST to medium resolution and launch <code>STMASTER.PRG</code>. When it loads up, select any/all of the preconfigured partitions and hit "Remove":
 
-![](/img/posts/configuring_ghostlink_1.png "Remove existing Ghostlink partitions")
+![](/img/configuring_ghostlink_1.png "Remove existing Ghostlink partitions")
 
 Once you've removed all the preconfigured partitions, hit "Add" and select the following:
 
-![](/img/posts/configuring_ghostlink_2.png "Configuring Ghostlink")
+![](/img/configuring_ghostlink_2.png "Configuring Ghostlink")
 
 This means "I want to map drive Z: on my Atari ST to drive C: on my PC". Once you're done with this, hit "OK" and then "Install":
 
-![](/img/posts/configuring_ghostlink_3.png "Installing Ghostlink")
+![](/img/configuring_ghostlink_3.png "Installing Ghostlink")
 
 Ghostlink appears to quit without doing anything useful - but don't worry, it's now memory resident and ready to talk to your PC.
 
@@ -89,7 +89,7 @@ Back on the PC, create a new directory and copy the following files into it:
 * <code>PCSLAVE.EXE</code> (this is part of the downloaded Ghostlink archive - see above)
 * Any files you want to transfer to the ST
 
-![](/img/posts/files_to_copy_st.png)
+![](/img/files_to_copy_st.png)
 
 ### 9. Launch DOSBox, mount file share
 
@@ -104,31 +104,31 @@ Or, for our example case:
 mount c: c:\temp\copy_files_via_ghostlink\files_for_pc
 {% endhighlight %}
 
-![](/img/posts/dosbox_mount_file_share.gif)
+![](/img/dosbox_mount_file_share.gif)
 
 ### 10. Launch PCSLAVE.EXE
 
 Still in DOSBox, navigate to the C: drive and launch <code>PCSLAVE.EXE</code>.
 
-![](/img/posts/launch_pc_slave.png)
+![](/img/launch_pc_slave.png)
 
 Once you've launched <code>PCSLAVE.EXE</code>, use the Function keys (F1-F10) to set the speed to 9600 Baud: 
 
-![](/img/posts/ghostlink_9600_baud.png)
+![](/img/ghostlink_9600_baud.png)
 
 ### 11. Map Ghostlink drive, start transferring files!
 
 Back on the Atari ST Desktop, use the Options menu to map your Z: drive:
 
-![](/img/posts/atari_st_map_drive.gif)
+![](/img/atari_st_map_drive.gif)
 
 You're ready to transfer files! Back on the Atari ST's GEM Desktop, open up your new Z: drive and start copying files across! 
 
-![](/img/posts/atari_st_transfer_files.gif)
+![](/img/atari_st_transfer_files.gif)
 
 If file transfer is working as expected, you'll see telemetry in the DOSBox window:
 
-![](/img/posts/ghostlink_pc_slave_telemetry.png)
+![](/img/ghostlink_pc_slave_telemetry.png)
 
 That's pretty much it! Happy file transferring!
 
@@ -143,15 +143,15 @@ Download <a href="https://sites.google.com/site/stessential/control-panel-replac
 
 Once you've loaded XControl, head to "Modem Settings" and increase your ST's Baud Rate to 19200:
 
-![](/img/posts/atari_st_xcontrol_19200_baud.png)
+![](/img/atari_st_xcontrol_19200_baud.png)
 
 On your PC, navigate to "Control Panel" -> "Device Manager" -> "Ports (COM & LPT)" -> "Serial Port" -> "Port Settings". Increase the bits per second to 19200 and press "OK":
 
-![](/img/posts/device_manager_com_port_settings.png)
+![](/img/device_manager_com_port_settings.png)
  
 Whilst running <code>PCSLAVE.EXE</code> in DOSBox, press F4 to set the Baud rate to 19200:
  
-![](/img/posts/ghostlink_19200_baud.png)
+![](/img/ghostlink_19200_baud.png)
 
 With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800 bits per second or higher, but 19200 was the fastest that worked reliably for me.
 

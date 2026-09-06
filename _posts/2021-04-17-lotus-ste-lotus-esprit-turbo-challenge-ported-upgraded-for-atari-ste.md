@@ -7,7 +7,7 @@ image: lotus-ste-atari-ste-comparison.jpg
 tags: [Atari ST, Posts, Retrocomputing, Retrogaming]
 ---
 
-![](/img/posts/lotus-ste-lotus-esprit-turbo-challenge-car-atari-st.png)
+![](/img/lotus-ste-lotus-esprit-turbo-challenge-car-atari-st.png)
 
 Some retro gaming news. Classic Atari ST racer <a href="https://en.wikipedia.org/wiki/Lotus_(video_game_series)" target="_blank">Lotus Esprit Turbo Challenge</a> has been upgraded to take full advantage of <a href="https://en.wikipedia.org/wiki/Atari_ST#STE_models" target="_blank">Atari STE hardware</a> – 31 *years* after the original release.
 

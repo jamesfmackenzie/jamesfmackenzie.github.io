@@ -18,9 +18,9 @@ For enthusiasts building a late-XP “ultimate DX9” machine, the ATI Radeon HD
 My model is the 512MB PowerColor Radeon HD 4670, manufactured by PowerColor using silicon from ATI.
 
 
-![PowerColor Radeon HD 4670 front](/img/hardware/powercolor-radeon-hd-4670-front.jpg)
+![PowerColor Radeon HD 4670 front](/img/powercolor-radeon-hd-4670-front.jpg)
 
-![PowerColor Radeon HD 4670 back](/img/hardware/powercolor-radeon-hd-4670-back.jpg)
+![PowerColor Radeon HD 4670 back](/img/powercolor-radeon-hd-4670-back.jpg)
 
 ### Related on this site
 

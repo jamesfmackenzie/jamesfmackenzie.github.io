@@ -6,7 +6,7 @@ tags: [Projects, VR Photography]
 status: completed
 ---
 
-![VR photo of the Louvre, Paris](/img/projects/shooting-and-sharing-vr-photos.jpg)
+![VR photo of the Louvre, Paris](/img/shooting-and-sharing-vr-photos.jpg)
 
 Ever seen one of <a href="https://flickr.com/photos/136386099@N02/21597873406/" target="_blank">these photos</a> where you can interactively zoom and pan around? They're known as <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">360° or VR photos</a>.
 
@@ -24,7 +24,7 @@ After a deep dive over several weekends, here's what I learned:
 
 * <a href="https://wiki.panotools.org/Equirectangular_Projection" target="_blank">Equirectangular Projection</a> is the most common VR image format. Another popular option is <a href="https://wiki.panotools.org/Cubic_Projection" target="_blank">Cubic Projection</a> and you can easily [convert between the two]({% post_url 2016-10-18-convert-equirectangular-projection-to-cube-faces %}).
 * The Google Street View mobile app (<a href="https://apps.apple.com/us/app/google-street-view/id904418768" target="_blank">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.google.android.street&hl=en_US" target="_blank">Android</a>) is a cheap and easy way to shoot Equirectangular projections.
-* Since Equirectangular images are <a href="http://www.jamesfmackenzie.com/img/posts/cube-faces-guide.jpg" target="_blank">heavily distorted</a>, you need a <a href="https://wiki.panotools.org/Panorama_Viewers" target="_blank">"viewer"</a> program to interact with them.
+* Since Equirectangular images are <a href="http://www.jamesfmackenzie.com/img/cube-faces-guide.jpg" target="_blank">heavily distorted</a>, you need a <a href="https://wiki.panotools.org/Panorama_Viewers" target="_blank">"viewer"</a> program to interact with them.
 * Windows has built-in support via the [.pano]({% post_url 2016-10-29-what-are-pano-files %}) file extension. It's relatively easy to [create your own]({% post_url 2016-10-30-convert-equirectangular-360-vr-panorama-to-pano-file %}).
 * Web viewers are also popular. Here's how to publish VR photos to [Photosyth]({% post_url 2016-10-28-publishing-equirectangular-360-vr-panorama-to-photosynth %}), [Facebook]({% post_url 2016-10-12-publishing-equirectangular-360-vr-panorama-to-facebook %}) and [YouTube]({% post_url  2019-09-08-publishing-360-photos-to-youtube %}).
 

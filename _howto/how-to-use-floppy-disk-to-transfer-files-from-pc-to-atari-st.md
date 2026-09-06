@@ -12,9 +12,9 @@ For the vast majority of cases, you'll want 3.5" Double-Sided, Double-Density ("
 
 If you can't find any DD disks, it is *possible* to repurpose modern 1.44MB High Density ("HD") disks - albeit at a cost to reliability. HD disks have an extra hole on the right side (across from the write-protect slider), and if you cover this over with some opaque sticky tape (front and back), it'll fool the detector into thinking the HD disk is an ST-compatible DD floppy:
 
-![](/img/posts/taped_corner_high_density_floppy_disk_front.jpg)
+![](/img/taped_corner_high_density_floppy_disk_front.jpg)
 
-![](/img/posts/taped_corner_high_density_floppy_disk_back.jpg)
+![](/img/taped_corner_high_density_floppy_disk_back.jpg)
 
 In very rare cases, your ST drive unit <a href="http://www.atari-wiki.com/index.php/Replace_internal_720k_DD_Floppy_Drive_with_1.44MB_HD_Floppy_Drive" target="_blank">may have been upgraded to support 3.5" HD disks natively</a>. If this is the case, congratulations! You can forget about DD disks and purchase higher capacity HD disks instead.
 
@@ -22,7 +22,7 @@ In very rare cases, your ST drive unit <a href="http://www.atari-wiki.com/index.
 
 Most modern PC's don't ship with a floppy drive, so you'll need to buy one. Your best bet is an internal "ATA" model as they have the greatest compatibility with the various Atari ST disk formats:
 
-![](/img/posts/floppy2.png)
+![](/img/floppy2.png)
 
 If you use a laptop or your PC motherboard doesn't have a floppy connector, you're stuck with a (less compatible) USB drive. Many don't support DD floppies, so be sure to pick one that specifically mentions "720KB" compatibility (like <a href="http://www.floppydisk.com/usb.htm" target="_blank">this one</a>).
 
@@ -34,7 +34,7 @@ You have disks and a drive - now it's time to prepare the floppy. You need use a
 format a: /T:80 /N:9
 {% endhighlight %}
 
-![](/img/posts/format_disk_720kb.png)
+![](/img/format_disk_720kb.png)
 
 This will create a formatted 720KB floppy, ready for transferring files.
 
@@ -54,13 +54,13 @@ Some very early STs (specifically older 520STF models) only feature a 3.5" *Sing
 
 Pop your formatted disk into the PC drive and use Windows Explorer (or Command prompt) to copy files. Easy peasy!
 
-![](/img/posts/copy_atari_st_files.gif)
+![](/img/copy_atari_st_files.gif)
 
 ### 5. Load files on ST
 
 Pop the disk into your ST, power on and browse to the files. You're all done!
 
-![](/img/posts/atari_st_open_a_drive.gif)
+![](/img/atari_st_open_a_drive.gif)
 
 ### Splitting large files
 

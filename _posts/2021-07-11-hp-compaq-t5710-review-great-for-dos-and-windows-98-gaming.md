@@ -8,7 +8,7 @@ tags: [MS-DOS, PC, Posts, Retrocomputing, Retrogaming]
 permalink: /hp-compaq-t5710/
 ---
 
-![](/img/posts/hp-compaq-t5710-back.jpg)
+![](/img/hp-compaq-t5710-back.jpg)
 
 In search of a DOS gaming PC (but short on apartment space), I recently purchased a HP Compaq t5710 thin client. Although it was built in 2004, the hardware is very well suited to DOS and Windows 98 gaming. Some hardware features:
 

@@ -25,7 +25,7 @@ With a successful TCP/IP ping in place, <a href="https://breakintochat.com/blog/
 
 The Web experience is slow and doesn't support CSS - which rules out a lot of content. However I was able to make <a href="https://twitter.com/jamesfmackenzie/status/1004495104885886978" target="_blank">older sites work</a>.
 
-![Pray before the head of Bob!](/img/projects/atari-st-on-the-web.jpg)
+![Pray before the head of Bob!](/img/atari-st-on-the-web.jpg)
 
 
 ### Future investigation

@@ -15,4 +15,4 @@ tags: [Retrogaming, Videogames, Tweets]
 
 If you want to learn more, you can find mausimus <a href="https://x.com/mausmoto" target="_blank">over on Twitter</a> and also <a href="https://www.youtube.com/@mausimus1" target="_blank">at his YouTube channel</a>.
 
-![](/img/posts/police-quest-sierra-graphics.jpg)
+![](/img/police-quest-sierra-graphics.jpg)

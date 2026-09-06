@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Apple Mac, Computers]
 ---
 
-![The Mac Pro 5,1 "cheese grater" tower](/img/hardware/mac-pro-5-1.jpg){: width="680"}
+![The Mac Pro 5,1 "cheese grater" tower](/img/mac-pro-5-1.jpg){: width="680"}
 
 I bought a 14-year-old Mac Pro 5,1 off eBay and tricked it out with modern graphics, SSD storage, and 48GB of RAM — full story in [I Supercharged This Old Mac for AAA Gaming]({% post_url 2024-05-04-i-supercharged-this-old-mac-for-aaa-gaming %}). It's Apple's 2010–2012 "cheese grater" tower workstation, and what makes it worth the effort is how modular it still is: CPUs, GPU, storage, and even the OS itself are all genuinely upgradeable, decades later.
 

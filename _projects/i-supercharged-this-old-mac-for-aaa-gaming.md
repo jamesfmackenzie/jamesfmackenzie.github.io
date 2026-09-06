@@ -6,7 +6,7 @@ tags: [Apple Mac, Projects, Retrocomputing]
 status: completed
 ---
 
-![The Mac Pro 5,1 "cheese grater" tower](/img/posts/mac-pro-5-1.jpg)
+![The Mac Pro 5,1 "cheese grater" tower](/img/mac-pro-5-1.jpg)
 
 I wanted to see how far a 14-year-old Apple workstation could actually be pushed — not as a curiosity, but as a genuinely usable machine for modern AAA gaming.
 

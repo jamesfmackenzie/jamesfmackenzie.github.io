@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Atari ST, Computers]
 ---
 
-![Atari 1040STFM](/img/hardware/atari-st-1040stfm-transparent-bg.png)
+![Atari 1040STFM](/img/atari-st-1040stfm-transparent-bg.png)
 
 I received my first Atari ST in **1989**; a surplus unit from my father's business. It was a luxury (at the time!) **1 MB model — the Atari 1040STFM**, complete with the Professional software pack.
 

@@ -28,7 +28,7 @@ Head on over to the <a href="https://www.microsoft.com/en-us/software-download/w
 
 To install Windows 10, you'll need to prepare a bootable USB stick. There's already a nice guide over <a href="http://www.intowindows.com/create-uefi-bootable-usb-of-windows-10/" target="_blank">here</a>. Make sure to create the UEFI bootable - it's the only method that'll work on the Tesco device.
 
-![](/img/posts/2015-01-24-12_22_20-Mail.png)
+![](/img/2015-01-24-12_22_20-Mail.png)
 
 ### Step 3. Copy network and touchscreen drivers onto the USB stick
 
@@ -46,29 +46,29 @@ Before you start, make sure both the USB memory stick and USB keyboard are conne
 
 From Windows 8.1 Desktop, swipe from the right to open the Charms Bar, then hit "Settings":
 
-![](/img/posts/2015-01-24-13_00_18-Greenshot.jpg)
+![](/img/2015-01-24-13_00_18-Greenshot.jpg)
 
 From the Settings panel, hit "Change PC settings":
 
-![](/img/posts/2015-01-24-13_00_51-Greenshot-2.jpg)
+![](/img/2015-01-24-13_00_51-Greenshot-2.jpg)
 
 Inside PC settings, click "Update and recovery":
 
-![](/img/posts/2015-01-24-13_01_03-Greenshot.png)
+![](/img/2015-01-24-13_01_03-Greenshot.png)
 
 Under "Advanced start-up" hit "Restart now":
 
-![](/img/posts/2015-01-24-13_01_29-Greenshot.png)
+![](/img/2015-01-24-13_01_29-Greenshot.png)
 
 ### Step 5. Start Windows 10 install
 
 Once inside the EFI Shell, select "Use a device":
 
-![](/img/posts/File-18-02-2015-21-04-40.jpeg)
+![](/img/File-18-02-2015-21-04-40.jpeg)
 
 Choose "UEFI: Removable Device". After a short delay, the Windows 10 installation will begin.
 
-![](/img/posts/File-18-02-2015-21-05-11.jpeg)
+![](/img/File-18-02-2015-21-05-11.jpeg)
 
 ### Step 6. Follow Windows 10 installation steps
 
@@ -76,7 +76,7 @@ From here on in, the touchscreen won't work. You'll need to use your attached ke
 
 On the first screen, set your Language and Keyboard Preferences. The values don't matter.
 
-![](/img/posts/File-18-02-2015-21-06-43.jpeg)
+![](/img/File-18-02-2015-21-06-43.jpeg)
 
 <strong>You're nearly at the point of no return! If you follow the next step, you won't be able to restore your original Windows 8.1 installation without performing an OS restore from installation media</strong>.
 
@@ -84,49 +84,49 @@ To continue, you'll need to delete all existing partitions. Select each partitio
 
 Once you're done deleting partitions, you'll have 29.1GB of unallocated space:
 
-![](/img/posts/File-18-02-2015-21-08-17.jpeg)
+![](/img/File-18-02-2015-21-08-17.jpeg)
 
 Highlight the unallocated space and hit "New". Assign all available space to the partition (29,823MB) and hit "Apply":
 
-![](/img/posts/File-18-02-2015-21-12-11.jpeg)
+![](/img/File-18-02-2015-21-12-11.jpeg)
 
 The Windows 10 installer will actually create *four* new partitions. Highlight the largest one (Partition 4) and hit "Next". The Windows 10 installation will begin.
 
-![](/img/posts/File-18-02-2015-21-13-24.jpeg)
+![](/img/File-18-02-2015-21-13-24.jpeg)
 
-![](/img/posts/File-18-02-2015-21-15-21.jpeg)
+![](/img/File-18-02-2015-21-15-21.jpeg)
 
 After 15 minutes or-so, you'll see the screen below. You can choose custom options if you like, but I chose to "Use express settings".
 
-![](/img/posts/File-18-02-2015-21-17-47.jpeg)
+![](/img/File-18-02-2015-21-17-47.jpeg)
 
 Not long after, the installer will deliver you to the Windows 10 Start screen. Nice!
 
-![](/img/posts/Untitled.png)
+![](/img/Untitled.png)
 
 ### Step 7. Install drivers
 
 You'll notice pretty quickly that sound, networking and the touchscreen don't work. To fix this, head inside the Control Panel. Find "System and Security" and click the "Device Manager" icon:
 
-![](/img/posts/Untitled2-2.png)
+![](/img/Untitled2-2.png)
 
 Where Windows doesn't have the right drivers, you'll find a bunch of erroring devices, indicated by exclamation points:
 
-![](/img/posts/Untitled4-2.png)
+![](/img/Untitled4-2.png)
 
 For each of these erroring devices, follow these same steps:
 
 * Right-click on the device, select "Properties" and then "Update Driver":
 
-![](/img/posts/Untitled3-1.png)
+![](/img/Untitled3-1.png)
 
 * When asked "How do you want to search for driver software?", select "Browse my computer for driver software":
 
-![](/img/posts/Untitled7-1.png)
+![](/img/Untitled7-1.png)
 
 * Choose "Search for driver software in this location" and specificy the backup driver location you created in Step 3 (hint: it'll be on your USB memory stick). Check "Include subfolders" and click "Next".
 
-![](/img/posts/Untitled8-1.png)
+![](/img/Untitled8-1.png)
 
 * Windows will whirr away for a while and install your missing driver.
 
@@ -134,4 +134,4 @@ Repeat the above process for all the erroring devices. Don't forget "System devi
 
 **That's it! You now have a fully working Windows 10 tablet! Enjoy!**
 
-![](/img/posts/Untitled.png)
+![](/img/Untitled.png)

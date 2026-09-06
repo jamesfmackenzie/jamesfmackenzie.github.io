@@ -7,7 +7,7 @@ image: namco-negcon-controller-for-playstation-ps1.jpg
 tags: [Posts, Sony PlayStation, Retrogaming, Videogames]
 ---
 
-![The Namco NeGcon — the split down the middle is the twist joint](/img/posts/namco-negcon-controller-for-playstation-ps1.jpg){: width="680"}
+![The Namco NeGcon — the split down the middle is the twist joint](/img/namco-negcon-controller-for-playstation-ps1.jpg){: width="680"}
 
 I recently acquired a Namco NeGcon (“neh-gee-con”) controller – something I've been seeking for a while. It's a unique controller that uses a twist mechanic to simulate driving – twist left for a left turn and right for a right turn.
 
@@ -27,7 +27,7 @@ The last racer I want to mention is The Need for Speed. The first game in the se
 
 ### The Controller
 
-![](/img/posts/negcon-ridge-racer-calibration-adjustment.jpg)
+![](/img/negcon-ridge-racer-calibration-adjustment.jpg)
 
 Some notes on the controller itself. You can't play *any* game – support has to be built-in by the developer. It's even missing buttons – L2, R2 and Select are missing entirely. When support *is* available, the controller is auto-detected and the UI updated to reference the specialized I, II, A and B buttons versus the traditional PlayStation Square, Triangle, Circle, Cross shapes.
 
@@ -35,13 +35,13 @@ The gameplay feel is different from game-to-game. By default, Wipeout uses the f
 
 ### Non-racers
 
-![](/img/posts/negcon-galaxian-3-screenshot.jpg)
+![](/img/negcon-galaxian-3-screenshot.jpg)
 
 Jumping back to games, there are a few non-racers in the pack. Namco shooters Galaxian^3 and Xevious 3D/G both feature support but neither of them make use of the NeGcon twist feature – just the d-pad. The Air/Ace Combat series fares a little better, using the twist mechanic to turn or roll the aircraft. It takes some getting used to but it works well – definitely an improvement over d-pad aiming.
 
 ### PlayStation 2 Support
 
-![](/img/posts/negcon-ridge-racer-v-playstation-2-ps2-screenshot.jpg)
+![](/img/negcon-ridge-racer-v-playstation-2-ps2-screenshot.jpg)
 
 Skipping forward in time to year 2000 and the launch of PlayStation 2, NeGcon was down but not out. A few games *did* ship with support – Ridge Racer V and Wipeout Fusion are two good examples. However the Dual Shock 2 and twin stick controller design was becoming dominant (and it still is today). Only four PlayStation 2 titles saw support, a last hurrah for the controller before fading away.
 

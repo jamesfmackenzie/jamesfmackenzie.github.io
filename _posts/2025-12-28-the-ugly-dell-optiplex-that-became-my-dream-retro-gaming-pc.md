@@ -8,7 +8,7 @@ image: dell-optiplex-380-small.png
 tags: [MS-DOS, PC, Posts, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 ---
 
-![Dell OptiPlex 380 desktop](/img/posts/dell-optiplex-380-small.png)
+![Dell OptiPlex 380 desktop](/img/dell-optiplex-380-small.png)
 
 *<center>Yes, it’s a Dell… but let’s not judge a book by its greige cover.</center>*
 
@@ -71,7 +71,7 @@ Not bad for twelve bucks!
 
 Unfortunately, the reason it was so cheap became obvious immediately — the fan was seized and made an awful grinding noise. After [sorting out the cooler]({% post_url 2026-09-03-fixing-fan-noise-on-a-radeon-x800-xl %}), the card behaved normally and the system posted fine.
 
-![Fixing the Radeon X800 XL fan bearing](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="620"}
+![Fixing the Radeon X800 XL fan bearing](/img/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="620"}
 
 ### Sound card: Yamaha YMF-724 (real OPL3)
 
@@ -93,7 +93,7 @@ Native DOS apps — and even the Windows 98 installer — can behave badly with 
 
 Luckily, the OptiPlex has a **serial header** on the motherboard. Using a Dell add-in bracket, I added proper **PS/2 keyboard and mouse** support, instantly fixing input issues.
 
-![The PS/2 bracket wired to the motherboard serial header, run out the back of the case](/img/posts/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg){: width="405"}
+![The PS/2 bracket wired to the motherboard serial header, run out the back of the case](/img/dell-optiplex-380-serial-ps2-ribbon-cable-header-extension.jpg){: width="405"}
 
 ### Installing Windows 98: the key BIOS trick
 

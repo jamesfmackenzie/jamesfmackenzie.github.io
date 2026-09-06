@@ -13,7 +13,7 @@ After a fruitless 10 minutes hunting around the Xbox One UI for a System Video P
 
 I did, however, find and enable a promising "Allow Play To streaming" option tucked away inside the Preferences menu.
 
-![Allow Play To streaming](/img/posts/allowplaytostreaming.jpg)
+![Allow Play To streaming](/img/allowplaytostreaming.jpg)
 
 So what is "Play To streaming"? Here's what Microsoft [has to say about it](http://support.xbox.com/en-GB/xbox-one/system/change-console-preferences):
 
@@ -25,7 +25,7 @@ Promising indeed! Time for a bit of background reading.
 
 So, it turns out both Windows 7 and Windows 8 allow you right click on media files and "Play To" another device on your home network.
 
-![Play To in action](/img/posts/2014_03_18_00_20_19_Sample_Video.png)
+![Play To in action](/img/2014_03_18_00_20_19_Sample_Video.png)
 
 In Microsoft's own words:
 
@@ -45,6 +45,6 @@ Second, the bad. Unfortunately there are a few more of these:
 * Subtitles (if present) aren't displayed on the One and there's no way to enable them.
 * The Play To context menu item doesn't appear for some file formats, notably <code>.mkv</code>.
 
-![Play To missing for .mkv files](/img/posts/2014_03_18_00_21_20_Sample_Video.png)
+![Play To missing for .mkv files](/img/2014_03_18_00_21_20_Sample_Video.png)
 
 I think some more reading on DLNA is required.

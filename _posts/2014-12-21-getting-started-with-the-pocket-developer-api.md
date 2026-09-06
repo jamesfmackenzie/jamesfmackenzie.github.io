@@ -22,9 +22,9 @@ Head over to the <a href="http://getpocket.com/developer/" target="_blank">Pocke
     * Retrieve - to retrieve items from Pocket
 * Make a note of the **Consumer Key** (see screenshot below)
 
-![](/img/posts/2014-12-20-19_05_12-Pocket_-Developer-API.png)
+![](/img/2014-12-20-19_05_12-Pocket_-Developer-API.png)
 
-![](/img/posts/2014-12-20-23_39_03-Pocket_-Developer-API.png)
+![](/img/2014-12-20-23_39_03-Pocket_-Developer-API.png)
 
 ### Step 2. Obtain a Request Token
 
@@ -89,7 +89,7 @@ https://getpocket.com/auth/authorize?request_token=dcba4321-dcba-4321-dcba-4321d
 
 You'll be prompted to login to Pocket (if you aren't already) and authorize your new App
 
-![](/img/posts/2014-12-21-00_23_49-Pocket_-Authorize-App.png)
+![](/img/2014-12-21-00_23_49-Pocket_-Authorize-App.png)
 
 Upon clicking Authorize, you'll be sent back to the redirect URL (in this case http://www.google.com) - authorization done.
 

@@ -6,7 +6,7 @@ date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
 ---
 
-![Dell Dimension E520 tower](/img/posts/dell-dimension-e520.jpg){: width="500"}
+![Dell Dimension E520 tower](/img/dell-dimension-e520.jpg){: width="500"}
 
 The Dell Dimension E520 is a no-frills mid-2000s home tower built around Intel's G965 platform — cheap, common, and visually unremarkable, the sort of ordinary Windows XP-era family PC that still turns up for very little. For retro use it sits right on a boundary: fast enough to brute-force a lot of late DOS and Win9x software, but new enough that those older operating systems have some quirks.
 
@@ -27,8 +27,8 @@ Configurations vary, but most E520 systems share:
 My own machine is a modest one: a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus, 2MB of L2 cache, 3GB of DDR2-667 running in dual interleaved mode, and Intel HD Audio with a Sigmatel codec.
 
 <div class="image-row">
-  <img src="/img/posts/dell-dimension-e520-bios-processor-info.jpg" alt="E520 BIOS screen showing the Core 2 Duo E4300">
-  <img src="/img/posts/dell-dimension-e520-bios-memory-info.jpg" alt="E520 BIOS screen showing 3GB of DDR2-667 in dual interleaved mode">
+  <img src="/img/dell-dimension-e520-bios-processor-info.jpg" alt="E520 BIOS screen showing the Core 2 Duo E4300">
+  <img src="/img/dell-dimension-e520-bios-memory-info.jpg" alt="E520 BIOS screen showing 3GB of DDR2-667 in dual interleaved mode">
 </div>
 
 ### Things worth knowing before you use one
@@ -37,7 +37,7 @@ My own machine is a modest one: a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus,
 - **No rear PS/2 or serial ports.** USB keyboards can be laggy or buffered in native DOS, and there's no easy legacy fallback. The motherboard appears to have solder pads for a serial or PS/2 header, but that's an untested path.
 - The **`ICH8` southbridge** is late enough that it was never designed with Windows 98 or DOS in mind. That's the main reason the machine feels far more natural under Windows XP than under either of them.
 
-![The E520 BIOS "OS Install" option, which caps RAM at 256MB](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg){: width="720"}
+![The E520 BIOS "OS Install" option, which caps RAM at 256MB](/img/dell-dimension-e520-bios-memory-limiting-option.jpg){: width="720"}
 
 ### Where it fits
 

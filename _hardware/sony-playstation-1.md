@@ -7,7 +7,7 @@ tags: [Consoles, Sony PlayStation]
 permalink: /hardware/sony-playstation
 ---
 
-![Sony PlayStation console](/img/posts/sony_playstation_1_psx_console.jpg)
+![Sony PlayStation console](/img/sony_playstation_1_psx_console.jpg)
 
 I unwrapped a PlayStation on Christmas Day 1995, and it felt like the future — proper textured 3D, CD audio, and game worlds far bigger than the cartridge machines it was up against. I've probably logged more hours on it than any console before or since.
 

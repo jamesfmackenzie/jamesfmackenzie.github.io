@@ -8,7 +8,7 @@ redirect_from:
   - /hardware/3dfx-voodoo/
 ---
 
-![3Dfx Original Logo](/img/hardware/3dfx-original-logo-design.png)
+![3Dfx Original Logo](/img/3dfx-original-logo-design.png)
 
 3Dfx Interactive built the graphics hardware that made 3D acceleration mainstream on the PC. The original **Voodoo Graphics** (1996) was a 3D-only add-on card, paired with your existing 2D card over a pass-through cable, and its **Glide API** — far simpler to target than Direct3D or OpenGL at the time — meant a generation of games were written to it directly. That is why Voodoo cards are still sought after: for a lot of late-90s titles, real 3Dfx hardware is the most authentic way to run them.
 
@@ -41,8 +41,8 @@ redirect_from:
 {% for page in site.posts %}
   {% if page.tags contains "3Dfx Voodoo" %}
   <li>
-    {% if page.layout == "youtube" %}<img src="/img/layout/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
-    {% elsif page.layout == "tweet" %}<img src="/img/layout/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
+    {% if page.layout == "youtube" %}<img src="/img/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
+    {% elsif page.layout == "tweet" %}<img src="/img/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
     {% endif %}<a href="{{ page.url }}">{{ page.title }}</a> - {{ page.date | date_to_string }}
   </li>
   {% endif %}

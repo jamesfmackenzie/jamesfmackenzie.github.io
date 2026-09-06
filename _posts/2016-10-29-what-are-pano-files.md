@@ -13,11 +13,11 @@ If you're on the Windows platform, .pano files are probably the most convenient 
 
 Built-in support for .pano files is available in Windows 8.1, Windows 10, Windows 10 Mobile and OneDrive. In Windows, simply double click to open the photo viewer, then tilt, pan and zoom your way around the VR image:
 
-![Pan, zoom and tilt in Microsoft Photos](/img/posts/pan-and-tilt-the-microsoft-photos-panorama-experience.jpg)
+![Pan, zoom and tilt in Microsoft Photos](/img/pan-and-tilt-the-microsoft-photos-panorama-experience.jpg)
 
 Upload .pano files to OneDrive for an in-browser panoramic experience, and for easy sharing with your friends:
 
-![The OneDrive pano experience](/img/posts/pan-and-tilt-the-onedrive-panorama-experience.jpg)
+![The OneDrive pano experience](/img/pan-and-tilt-the-onedrive-panorama-experience.jpg)
 
 ### Creating .pano files
 
@@ -123,7 +123,7 @@ In my example above, the tile size is 254. So I'd expect, for the <i>8</i> folde
  
 i.e. when these pieces are added together, they make up the full 256*256 cube face. Is this what I actually see? Well almost:
 
-![.pano tile dimensions - 256 pixels](/img/posts/pano-tile-dimensions.png)
+![.pano tile dimensions - 256 pixels](/img/pano-tile-dimensions.png)
 
 So it looks like each tile is padded by a few pixels, probably to avoid ugly seams in the final result. Extending this to the <i>9</i> folder, I expect to see:
 
@@ -134,13 +134,13 @@ So it looks like each tile is padded by a few pixels, probably to avoid ugly sea
 
 Is this what I see? Yep:
 
-![.pano tile dimensions - 512 pixels](/img/posts/pano-tile-dimensions-512.png)
+![.pano tile dimensions - 512 pixels](/img/pano-tile-dimensions-512.png)
 
 This pattern of 256*256 tiling continues right the way up to the full face size defined in <code>cubemap.json</code>:
 
-![.pano tile dimensions - 1024 pixels](/img/posts/pano-tile-dimensions-1024.png)
+![.pano tile dimensions - 1024 pixels](/img/pano-tile-dimensions-1024.png)
 
-![.pano tile dimensions - 2048 pixels](/img/posts/pano-tile-dimensions-2048.png)
+![.pano tile dimensions - 2048 pixels](/img/pano-tile-dimensions-2048.png)
 
 * <a name="cubezip"></a>You can easily adjust the tiles and zip them back up into a working .pano. *But be sure not accidentally add any compression*:
 
@@ -176,7 +176,7 @@ C:\Temp\pano_example>copy new_pano.zip new_pano.pano
         1 file(s) copied.
 {% endhighlight %}
 
-![Altered .pano file](/img/posts/altered-pano-file.jpg)
+![Altered .pano file](/img/altered-pano-file.jpg)
 
 That's it!
 

@@ -35,7 +35,7 @@ The whole project is <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki" 
 
 ### Hardware Overview
 
-![](/img/posts/mister-fpga-layout.jpg)
+![](/img/mister-fpga-layout.jpg)
 
 Taking a look at the hardware itself:
 

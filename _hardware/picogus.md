@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [PC, Sound, Sound Cards]
 ---
 
-![](/img/posts/picogus-2-official.jpg)
+![](/img/picogus-2-official.jpg)
 
 {% include image-credit.html
   source_url="https://picogus.com/"

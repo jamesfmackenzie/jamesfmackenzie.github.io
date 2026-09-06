@@ -22,13 +22,13 @@ If we connect the machines together via a serial or null modem cable, we'll be a
 
 The Atari ST serial port uses a 25-pin D-SUB male connector. The serial ports traditionally found on PCs use a 9-pin D-SUB male connector (if there's one there at all). So to connect the two, you need a 25-pin D-SUB female to 9-pin D-SUB female cable. Or, in insider lingo, DB25F-DB9F.
 
-![](/img/posts/atari_st_rs232_serial_port_25pin_db25.jpg "Atari ST 25-pin serial/RS232 port")
+![](/img/atari_st_rs232_serial_port_25pin_db25.jpg "Atari ST 25-pin serial/RS232 port")
 
-![](/img/posts/atari_st_rs232_serial_cable_db25f-db9f.jpg "DB25F-DB9F serial/RS232 cable")
+![](/img/atari_st_rs232_serial_cable_db25f-db9f.jpg "DB25F-DB9F serial/RS232 cable")
 
 If your PC doesn't have a serial port at all (many modern PCs don't), you can get away with using a serial to USB adapter cable (DB25F-USB).
 
-![](/img/posts/atari_st_rs232_serial_to_usb_adapter.jpg "Serial/RS232 to USB adapter cable")
+![](/img/atari_st_rs232_serial_to_usb_adapter.jpg "Serial/RS232 to USB adapter cable")
 
 Get the right cable, then connect your PC and ST together.
 
@@ -48,37 +48,37 @@ Before we can transfer any files down the serial cable, we need to copy XYZ acro
 
 Pop your newly-created floppy into the ST drive and launch <code>XYZ.TTP</code>. No parameters required, just press "OK" and let the application start:
 
-![](/img/posts/atari_st_launch_xyz_zmodem.gif "Launching X Y Z V2.02")
+![](/img/atari_st_launch_xyz_zmodem.gif "Launching X Y Z V2.02")
 
-![](/img/posts/atari_st_xyz_zmodem.png "X Y Z V2.02")
+![](/img/atari_st_xyz_zmodem.png "X Y Z V2.02")
 
 ### 6. Launch Teraterm, configure serial port
 
 Back on the PC, launch Teraterm. The application should auto-detect the null modem connection to your ST. Hit the "Serial" radio button and press "OK":
 
-![](/img/posts/teraterm_serial_port.png)
+![](/img/teraterm_serial_port.png)
 
 Next, browse to "Setup", "Serial port..." and verify the following settings before pressing "OK":
 
-![](/img/posts/teraterm_serial_port_config.png)
+![](/img/teraterm_serial_port_config.png)
 
 ### 7. Transfer files! 
 
 You're ready to transfer files! Still within Teraterm, head over to "File" -> "Transfer" -> "ZMODEM" -> "Send...":
 
-![](/img/posts/teraterm_zmodem_transfer.png)
+![](/img/teraterm_zmodem_transfer.png)
 
 Choose a file to transfer and click "Open". Teraterm will begin transferring the file across. You even get a progress bar:
 
-![](/img/posts/teraterm_file_transfer.png)
+![](/img/teraterm_file_transfer.png)
 
 All going well, the Atari ST will also report transfer progress:
 
-![](/img/posts/atari_st_xyz_file_transfer.png)
+![](/img/atari_st_xyz_file_transfer.png)
 
 Once the file transfer finishes, <code>XYZ.TTP</code> will automatically terminate. You should find your transferred file available on the ST file system. Job done!
 
-![](/img/posts/atari_st_zmodem_transferred_file.png "DEMO.PRG successfully transferred via ZMODEM")
+![](/img/atari_st_zmodem_transferred_file.png "DEMO.PRG successfully transferred via ZMODEM")
 
 ###Crank up the speed
 
@@ -91,15 +91,15 @@ Download <a href="https://sites.google.com/site/stessential/control-panel-replac
 
 Once you've loaded XControl, head to "Modem Settings" and increase your ST's Baud Rate to 19200:
 
-![](/img/posts/atari_st_xcontrol_19200_baud.png)
+![](/img/atari_st_xcontrol_19200_baud.png)
 
 On your PC, navigate to "Control Panel" -> "Device Manager" -> "Ports (COM & LPT)" -> "Serial Port" -> "Port Settings". Increase the bits per second to 19200 and press "OK":
 
-![](/img/posts/device_manager_com_port_settings.png)
+![](/img/device_manager_com_port_settings.png)
  
 In Teraterm, navigate to "Setup", "Serial port..." and increase the Baud rate to 19200:
  
-![](/img/posts/teraterm_serial_port_19200.png)
+![](/img/teraterm_serial_port_19200.png)
 
 With a bit of luck, you should now be able to push files down the serial cable twice as fast! If you're *really* lucky, you might be able to push the speeds to 28800bps, 38400bps or even higher! But 19200bps was the fastest that worked reliably for me.
 

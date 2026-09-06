@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Consoles, Nintendo]
 ---
 
-![Nintendo 64 console](/img/hardware/nintendo-64-n64.jpg){: width="680"}
+![Nintendo 64 console](/img/nintendo-64-n64.jpg){: width="680"}
 
 The Nintendo 64 is impossible to mistake for anything else. It pushed Nintendo into 3D in a very Nintendo way — cartridge-based, controller-led, multiplayer-heavy — and the result still has an immediately recognisable personality.
 
@@ -20,7 +20,7 @@ Nintendo's late-1990s home console, and one of the clearest cases where the hard
 
 The first time I saw **Super Mario 64** I was spellbound — those full 3D worlds felt like a huge leap over the wobblier 3D I associated with the PlayStation. The personality comes from the whole thing working together: instant cartridge loading, the controller, couch multiplayer, the Rumble Pak, and the way the video output changes with the display chain. It's hard to reduce that to emulator settings.
 
-![Nintendo 64 controller](/img/hardware/nintendo-64-n64-controller.jpg){: width="680"}
+![Nintendo 64 controller](/img/nintendo-64-n64-controller.jpg){: width="680"}
 
 ### Pros
 

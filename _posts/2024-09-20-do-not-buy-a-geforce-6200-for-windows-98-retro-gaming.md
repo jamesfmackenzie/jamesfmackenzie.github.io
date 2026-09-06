@@ -12,7 +12,7 @@ image: nvidia-geforce-6200-pci.jpg
 tags: [Nvidia Graphics, Posts]
 ---
 
-![nvidia GeForce 6200 PCI](/img/posts/nvidia-geforce-6200-pci.jpg)
+![nvidia GeForce 6200 PCI](/img/nvidia-geforce-6200-pci.jpg)
 
 I recently bought this GeForce 6200 PCI as a passively cooled GPU for Windows 98.
 

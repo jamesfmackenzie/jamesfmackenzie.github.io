@@ -12,7 +12,7 @@ The PI-MIDI is a MIDI hat for Raspberry Pi, granting your Pi extended MIDI capab
 
 ### Hardware Overview
 
-![](/img/posts/pi-midi-mt32-connectivity.jpg)
+![](/img/pi-midi-mt32-connectivity.jpg)
 
 The PI-MIDI attaches to the Raspberry Pi's GPIO pins and allows you to connect MIDI input devices, for sending MIDI data to the Pi.
 
@@ -32,7 +32,7 @@ Lastly we have a 1.3” OLED screen to display selection options and visualise p
 
 ### Enter mt32-pi
 
-![](/img/posts/mt32-pi-logo.jpg)
+![](/img/mt32-pi-logo.jpg)
 
 <a href="https://github.com/dwhinham/mt32-pi" target="_blank">mt32-pi</a> is a baremetal kernel that turns your Raspberry Pi 3 or later into a <a href="https://en.wikipedia.org/wiki/Roland_MT-32" target="_blank">Roland MT-32</a> emulator and <a href="https://en.wikipedia.org/wiki/SoundFont" target="_blank">SoundFont</a> synthesizer. Behind the scenes it uses Circle (a C++ baremetal environment for Pi) and Munt/FluidSynth for MIDI synthesis.
 
@@ -41,7 +41,7 @@ It natively supports GPIO MIDI interfaces like the PI-MIDI, together a perfect m
 
 ### MIDI Connectivity
 
-![](/img/posts/pi-midi-connected.jpg)
+![](/img/pi-midi-connected.jpg)
 
 To setup PI-MIDI for DOS gaming:
 

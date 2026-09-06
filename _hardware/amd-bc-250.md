@@ -6,7 +6,7 @@ date: '2026-09-06 00:00:00'
 tags: [Computers, PC]
 ---
 
-![AMD BC-250 board](/img/hardware/amd-bc-250.png)
+![AMD BC-250 board](/img/amd-bc-250.png)
 
 The AMD BC-250 looks like an oversized graphics card with a fan bolted to the end. It's actually close to a whole PC on a card — USB ports, Ethernet, an M.2 NVMe slot — and under the heatsink is the exact same silicon as a launch-model PlayStation 5. It's the cheapest way I know of to get a PS5-class APU onto a desk, and I wanted to see what it could actually do.
 

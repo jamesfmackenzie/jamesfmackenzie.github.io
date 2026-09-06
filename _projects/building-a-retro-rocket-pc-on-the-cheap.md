@@ -6,7 +6,7 @@ tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP
 status: completed
 ---
 
-![Dell OptiPlex 380 desktop](/img/posts/dell-optiplex-380-small.png)
+![Dell OptiPlex 380 desktop](/img/dell-optiplex-380-small.png)
 
 I wanted a retro PC that could do the full “greatest hits” tour of retro gaming: **native DOS**, **Windows 98**, and **Windows XP**. But without spending silly money, without hunting rare parts for months, and without ending up with something that’s allergic to modern conveniences like SATA.
 

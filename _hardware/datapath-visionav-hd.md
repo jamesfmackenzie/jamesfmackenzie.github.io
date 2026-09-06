@@ -6,7 +6,7 @@ date: '2026-09-06 00:00:00'
 tags: [PC, Video Capture]
 ---
 
-![Datapath VisionAV-HD capture card](/img/hardware/datapath-visionav-hd.png)
+![Datapath VisionAV-HD capture card](/img/datapath-visionav-hd.png)
 
 Most modern capture cards assume everything coming in is digital HDMI. That's a problem when the thing you want to capture is an SNES, a PS1, or a PS2 — genuine analog video, often in modes like 240p and 480i that budget capture hardware handles badly or not at all. Rather than buy an expensive dedicated scaler, I went looking at cards built for a completely different market.
 

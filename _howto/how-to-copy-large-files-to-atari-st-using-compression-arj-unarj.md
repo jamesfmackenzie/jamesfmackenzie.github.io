@@ -14,7 +14,7 @@ Once you have the software downloaded and extracted, use your PC split the large
 ARJ32 a -jm -r -v720 arc.arj largefile.jpg
 {% endhighlight %}
 
-![](/img/posts/arj_split_file_into_720kb_chunks.png)
+![](/img/arj_split_file_into_720kb_chunks.png)
 
 You'll get multiple files, starting with <code>arc.arj</code>, followed by <code>arc.a01</code>, <code>arc.a02</code> etc.
 
@@ -22,11 +22,11 @@ Use floppies to shuffle the files across to your ST one-by-one.
 
 Once you've moved all the files across, use UnARJ to extract the original large file. The easiest way is to drag <code>arc.arj</code> onto <code>unarj.ttp</code>, after which UnARJ will work its magic automatically:
 
-![](/img/posts/atari_st_unarj_file.gif)
+![](/img/atari_st_unarj_file.gif)
 
 In older versions of TOS, drag-and-drop won't work - you'll need to double click <code>unarj.ttp</code> and type in the archive source path:
 
-![](/img/posts/atari_st_unarj.png)
+![](/img/atari_st_unarj.png)
 
 That's all there is to it! Easy when you know how.
 

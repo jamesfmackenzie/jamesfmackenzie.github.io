@@ -22,14 +22,14 @@ You can fashion yourself a quick and dirty solution using Git and Dropbox.
 * Clone it via <code>git clone dropbox://[reponame]</code>
 * This will create a new, empty directory in your local with all the necessary .git gubbins
 
-![](/img/posts/git-dropbox-step-1.png)
+![](/img/git-dropbox-step-1.png)
 
 ### Step 2. Write Some Code!
 
 * Get busy, write some code! Save it to your new local repo.
 * Or if you're feeling lazy, just copy-paste the code from somewhere else.
 
-![](/img/posts/git-dropbox-step-2.png)
+![](/img/git-dropbox-step-2.png)
 
 ### Step 3. Add, Commit and Push
 
@@ -37,11 +37,11 @@ You can fashion yourself a quick and dirty solution using Git and Dropbox.
 * Commit to your local repository via <code>git commit</code>
 * Push to the Remote via <code>git push</code>
 
-![](/img/posts/git-dropbox-step-3.png)
+![](/img/git-dropbox-step-3.png)
 
 ### Step 4. Share and Collaborate
 
 * Want to collaborate with someone? Just use Dropbox's built in Share feature.
 * Anyone you add can clone, add, commit and push too. Easy as!
 
-![](/img/posts/git-dropbox-step-4.png)
+![](/img/git-dropbox-step-4.png)

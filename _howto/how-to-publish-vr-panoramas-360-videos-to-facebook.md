@@ -24,7 +24,7 @@ This works from both desktop browsers and Facebook mobile apps.
 
 Upload your single VR panorama to Facebook (this won't work as part of an image batch). Facebook will quickly recognise it as a "360 photo" and prompt you to select a starting view:
 
-![Facebook recognizes the uploaded image as 360 VR photo](/img/posts/360_pano_upload_facebook.png)
+![Facebook recognizes the uploaded image as 360 VR photo](/img/360_pano_upload_facebook.png)
 
 Pan around until you find the sweet spot and then hit "Post". 
 

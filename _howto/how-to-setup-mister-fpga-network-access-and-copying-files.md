@@ -22,7 +22,7 @@ The assigned IP address will vary from network to network, and you'll need to na
 
 3. If networking is setup correctly, you’ll see the IP address (in this case 192.168.100.45):
 
-![](/img/posts/mister_ip_address.jpg)
+![](/img/mister_ip_address.jpg)
 
 Make a note of this address. You'll need it below.
 
@@ -35,7 +35,7 @@ For advanced MiSTer configuration, you’ll need remote console access. We'll us
 
 2. Setup an SSH connection with the following details:
 
-![](/img/posts/mister_putty_connection_details.png)
+![](/img/mister_putty_connection_details.png)
 
 {:start="3"}
 3. Hit *Open*. When prompted for a username enter <code>root</code> and for the password enter <code>1</code>
@@ -59,7 +59,7 @@ You can use <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" targe
 
 2. Choose *File -> Site Manager*. Hit *New site* and setup a connection with the following details:
 
-![](/img/posts/mister_filezilla_connection_details.png)
+![](/img/mister_filezilla_connection_details.png)
 
 *As before, the username is <code>root</code> and the password is <code>1</code>*
 

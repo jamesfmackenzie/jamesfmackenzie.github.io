@@ -43,7 +43,7 @@ AdLib was the de facto synth standard in the DOS-gaming era. By comparison very 
 
 Settings are configured in the MiSTer *Audio & Video* menu, which you can access by hitting *Windows Key* + *F12*, then selecting *Audio & Video*:
 
-![](/img/posts/mister-ao486-audio-and-video-opl2-opl3-cms-synth.png)
+![](/img/mister-ao486-audio-and-video-opl2-opl3-cms-synth.png)
 
 For game setup:
 
