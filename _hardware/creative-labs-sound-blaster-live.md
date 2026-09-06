@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Creative Labs, PC, Sound, Sound Cards]
 ---
 
-![](/img/posts/creative-labs-sound-blaster-live-value-ct4670.jpg)
+![Creative Sound Blaster Live! Value (CT4670)](/img/posts/creative-labs-sound-blaster-live-value-ct4670.jpg){: width="600"}
 
 {% include image-credit.html
   source_url="https://commons.wikimedia.org/wiki/File:Creative_Labs_Sound_Blaster_Live!_Value_(CT4670).jpg"
