@@ -28,11 +28,11 @@ My own machine is a modest one: a Pentium Dual-Core `E5200`, 2GB of DDR2, BIOS `
 
 - **The motherboard serial header** is the 760's best retro feature. With a bracket it gives you proper PS/2 keyboard and mouse input — much nicer than fighting USB in DOS.
 - **No BIOS RAM-limiting mode.** Unlike the OptiPlex 380, there's no "OS Install" option to cap memory, so Windows 98 setup needs a real memory strategy rather than wishful thinking.
-- **`ICH10` and the HD Audio codec** are late enough that neither was designed with Windows 98 in mind — onboard audio under Win98 is still unresolved.
+- **`ICH10` and the HD Audio codec** are late enough that neither was designed with Windows 98 in mind — onboard audio under Win98 is still unresolved. The [WDMHDA](https://github.com/andrew-hoffman/WDMHDA) driver installs but doesn't yet support this `AD1984A` codec; there's a [Vogons thread](https://www.vogons.org/viewtopic.php?t=109373) tracking it.
 - Worth disabling multi-core support, SpeedStep, and C-states in the BIOS before any serious retro testing.
 
 ### Where it fits
 
 DOS is better than expected, Windows XP is the natural fit, and Windows 98 is possible but awkward — and a Voodoo 2 pushes the platform out of easy territory fast.
 
-For the full experiment — the Radeon X600 success, the Voodoo 2 crashes, the unresolved Win98 audio, and where it landed — see [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-29-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %}).
+For the full experiment — the Radeon X600 success, the Voodoo 2 crashes, the unresolved Win98 audio, and where it landed — see [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-29-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %}), with the [project notes]({% link _projects/turning-a-dell-optiplex-760-into-a-retro-gaming-pc.md %}) tracking the open threads.

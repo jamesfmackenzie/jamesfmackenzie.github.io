@@ -43,4 +43,4 @@ My own machine is a modest one: a Core 2 Duo `E4300 @ 1.80GHz` on an 800MHz bus,
 
 Windows XP is the natural home for this hardware generation. Windows 98 is possible but you'll be managing storage quirks and patches, and DOS is viable given the CPU headroom but wants input and sound workarounds.
 
-For the full experiment — the SATA patching, the PCIe Radeon trouble, the surprisingly good Voodoo 2 results, and where it all landed — see [I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %}).
+For the full experiment — the SATA patching, the PCIe Radeon trouble, the surprisingly good Voodoo 2 results, and where it all landed — see [I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %}), with the [project notes]({% link _projects/turning-a-dell-dimension-e520-into-a-retro-gaming-pc.md %}) tracking the open threads.

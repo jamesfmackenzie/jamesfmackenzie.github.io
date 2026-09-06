@@ -13,7 +13,7 @@ The Dell Dimension E520 looked like it should be a good retro sleeper build: che
 
 What I found was more complicated. The E520 can be pushed into some genuinely useful retro roles, but it is much less straightforward than an earlier beige-box Win98 build. In practice it feels more like a hybrid machine with partial Win98 support than a clean all-in-one answer.
 
-For the broader hardware overview, see the companion page for the **[Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %})**.
+For the broader hardware overview, see the companion page for the **[Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %})**; the running [project notes]({% link _projects/turning-a-dell-dimension-e520-into-a-retro-gaming-pc.md %}) track where the build is up to.
 
 ## Hardware Overview
 
@@ -75,7 +75,7 @@ Observed behaviour included:
 - repeated hangs during final setup
 - the machine eventually loading, suggesting timeout or controller trouble rather than a clean hard crash
 
-The key workaround was to **disable 32-bit disk access** in Windows 98.
+Disabling ACPI at setup (`setup /p i`) didn't help. The key workaround was to **disable 32-bit disk access** in Windows 98.
 
 That costs performance, but it made the system behave much better. More than anything else, that defines the E520 as a Windows 98 platform: possible, but only once you accept that storage behaviour is going to be part of the fight.
 
@@ -83,7 +83,7 @@ That costs performance, but it made the system behave much better. More than any
 
 The onboard graphics were never the point. The interesting part was how add-in cards behaved.
 
-Radeon **X600** and **X700** cards were unstable under Catalyst on this machine. **VBEMP** drivers gave a much more usable fallback, and Quake II in software mode already ran very well.
+Radeon **X600** and **X700** cards froze Windows outright on driver load — I tried Catalyst 6.2 and later 9.0c, with no difference. My best guess is a VRAM-aperture / memory-mapping conflict between this late chipset's AGP emulation and Windows 98's memory handling. **VBEMP** Miniport drivers gave a much more usable fallback — no Direct3D, but higher colour depth and DirectDraw, and Quake II in software mode already ran very well. `softgpu` is another route I haven't tried yet.
 
 That makes the E520 a useful reminder that a "supported" late Win98 GPU is not always a stable one once PCIe and newer Intel chipsets enter the picture.
 

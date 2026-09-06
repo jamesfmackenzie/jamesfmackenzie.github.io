@@ -32,4 +32,5 @@ It earns its keep through versatility. The obvious use is its own library, but i
 ### Related on this site
 
 - [I Accidentally Turned My Projector Into a 3D Cinema]({% post_url 2025-11-23-how-to-watch-3d-movies-on-a-benq-th575-projector %})
+- [Gran Turismo 5 on Multi Monitors]({% link _projects/gran-turismo-5-on-multi-monitors.md %}) — three networked PS3s driving one ultra-wide view
 - [The U9/ViewHD splitter will strip HDCP and allow capture from devices like PlayStation 3]({% post_url 2022-05-03-the-u9-viewhd-splitter-will-strip-hdcp-and-allow-capture-from-devices-like-playstation-3 %})

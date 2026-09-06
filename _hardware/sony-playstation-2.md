@@ -18,6 +18,8 @@ Sony's hugely successful sixth-generation console, with one of the deepest libra
 
 More than most consoles, the PS2 experience changes with the display chain. I've spent years trying it on CRTs, VGA adapters, scalers, and odd video paths, and the difference is large — the PS2 can look far better than people remember, but usually not by pushing it through a random modern flat panel. It's a machine where the right display choice really matters, and where controller feel, timing, and interlaced video are all part of why some PS2-era games make more sense on the real thing.
 
+The fat PS2 also has an i.LINK (FireWire) port, which a handful of games use to link consoles together — most memorably Gran Turismo 3 and 4, which can drive three screens as one wide view from three linked machines. That whole rabbit hole is written up in [Gran Turismo 3 on Multi Monitors]({% link _projects/gran-turismo-3-on-multi-monitors.md %}).
+
 ### Pros
 
 - an enormous library, plus original PlayStation backward compatibility

@@ -13,7 +13,7 @@ The Dell OptiPlex 760 looked like it should be a strong all-round retro PC: chea
 
 What I found was more mixed. The 760 can be coaxed into some very interesting places, but it is a much more awkward Windows 98 machine than it first appears. In the end, it feels far better suited to Windows XP and DOS than to a clean "one box does everything" Win98 dream build.
 
-For the broader hardware overview, see the companion page for the **[Dell OptiPlex 760]({% link _hardware/dell-optiplex-760.md %})**.
+For the broader hardware overview, see the companion page for the **[Dell OptiPlex 760]({% link _hardware/dell-optiplex-760.md %})**; the running [project notes]({% link _projects/turning-a-dell-optiplex-760-into-a-retro-gaming-pc.md %}) track where the build is up to.
 
 ## Hardware Overview
 
@@ -95,7 +95,7 @@ Whatever the exact root cause, the practical conclusion is the important part:
 
 The onboard Intel HD Audio is also awkward under Windows 98.
 
-The onboard Intel audio is not officially supported on Windows 98. The **WDMHDA** project gets part of the way there — the driver installs, but I got no actual audio output. Codec support for this Analog Devices chip just isn't there yet.
+The onboard Intel audio is not officially supported on Windows 98. The [**WDMHDA**](https://github.com/andrew-hoffman/WDMHDA) project gets part of the way there — the driver installs, but I got no actual audio output. Codec support for this Analog Devices `AD1984A` just isn't there yet; there's a [Vogons thread](https://www.vogons.org/viewtopic.php?t=109373) worth watching if you're tracking that project.
 
 So while the driver situation is interesting, it is not yet a solved path for this machine.
 
