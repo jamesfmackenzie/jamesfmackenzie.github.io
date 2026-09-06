@@ -1,56 +1,34 @@
 ---
 layout: post
 title: Sega Saturn
-summary: My take on the Sega Saturn as one of the most interesting 1990s consoles, with brilliant 2D games, arcade DNA, and a personality all its own.
+summary: My take on the Sega Saturn — awkward, complicated, overshadowed by the PlayStation, and one of the most distinctive consoles of the 1990s once you look past that.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Sega]
 ---
 
 ![Virtua Fighter for the Sega Saturn](/img/posts/virtua-fighter-for-sega-saturn.jpg){: width="680"}
 
-The Sega Saturn is one of those consoles I respect more the longer I spend around retro hardware.
-
-It has the reputation everyone knows: complicated hardware, awkward development, and a commercial story dominated by the PlayStation. But that reputation is incomplete. The Saturn is also one of the most distinctive major consoles of the era, and one of the easiest to admire once you stop judging it only by market share.
+The Saturn is a console I respect more the longer I spend around retro hardware. It has the reputation everyone knows — complicated hardware, awkward to develop for, commercially buried by the PlayStation — but that's only half the story. It's also one of the most distinctive major consoles of its generation.
 
 ### What it is
 
-The Saturn is Sega's 32-bit console from the mid-1990s. It sits in the same generation as the original PlayStation, but it feels like a very different machine: more arcade-driven, more eccentric, and much more defined by its own strengths.
+Sega's 32-bit console from the mid-1990s, in the same generation as the original PlayStation but a very different machine: more arcade-driven, more eccentric, and much more defined by its own strengths than by market share.
 
-### Why I keep it
+### Why I like it
 
-I keep the Saturn around because it offers things that still feel specific to the platform:
-
-- brilliant 2D game presentation
-- strong Sega arcade energy
-- a library that does not feel interchangeable with the PlayStation
-- hardware character that is obvious the moment you start using it
-
-It is not a console I think about in terms of "winning" its generation. I think about it as a machine with a very strong identity.
-
-### My take
-
-My take is that the Saturn is one of the most interesting original-hardware consoles of the 1990s.
-
-Its complexity is part of the appeal now. It helps explain why some games feel the way they do, why the platform ended up with the reputation it has, and why the best Saturn software still feels so tied to the real machine.
+The 2D presentation and sprite work are superb — this is where the Saturn genuinely beat its rivals — and the library carries a strong Sega arcade streak that doesn't feel interchangeable with anything else. The hardware complexity that hurt it commercially is part of what makes it interesting to poke at now: it explains why some games feel the way they do, and why the best Saturn software is so tied to the real machine.
 
 ### Pros
 
-- superb 2D games and sprite work
-- deep arcade heritage
-- a library with a strong identity
-- unusually rewarding if you care about original hardware
+- outstanding 2D games and sprite work
+- deep Sega arcade heritage, and a library with real identity
+- unusually rewarding if you care about how the hardware shaped the software
 
 ### Cons
 
-- more awkward and less approachable than the PlayStation for many people
-- hardware complexity is part of the story, but it also shaped the library's limitations
-- some people will bounce off it if they only want the broadest mainstream catalogue
-
-### Other useful things to know
-
-- This is a console where original hardware still has a strong case because timing, controller feel, and display setup all matter.
-- The Saturn rewards curiosity. The deeper you go, the more its personality becomes obvious.
-- For me, it is not just a nostalgia machine. It is one of the clearest examples of a platform whose strengths and weaknesses are both worth experiencing directly.
+- more awkward and less approachable than the PlayStation
+- the hardware complexity shaped the library's limitations as well as its strengths
+- not the console to reach for if you just want the broadest mainstream catalogue
 
 ### Related on this site
 
