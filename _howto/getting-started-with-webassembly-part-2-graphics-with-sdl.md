@@ -3,7 +3,7 @@ layout: post
 title: "WebAssembly Lesson 2: Graphics with SDL"
 date: '2019-12-01 19:18:00:00'
 summary: Learn how to use WebAssembly and Simple DirectMedia Layer (SDL) to render graphics to the Web Browser
-image: emscripten_sdl_1_2_sample.png
+image: emscripten_sdl_1_2_sample.jpg
 tags: [How To, Programming, WebAssembly]
 ---
 
@@ -103,7 +103,7 @@ You'll see three new files once the build completes:
 
 Use lightweight Web Server software like <a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a> to serve `sdl_1_2_sample.html` and open it in a Web Browser. You should see a "white noise" animation: 
 
-![](/img/emscripten_sdl_1_2_sample.png)
+![](/img/emscripten_sdl_1_2_sample.jpg)
 
 
 ### Upgrading to SDL 2.0
@@ -173,7 +173,7 @@ Similar to before, emcc will generate three files: `sdl_2_0_sample.wasm`, `sdl_2
 
 Serve `sdl_2_0_sample.html` and open it in a Web Browser. You'll see the same white noise animation, but this time powered by SDL 2.0:
 
-![](/img/emscripten_sdl_2_0_sample.png)
+![](/img/emscripten_sdl_2_0_sample.jpg)
 
 
 ### Cross-platform capability
@@ -237,7 +237,7 @@ Here we've used `#ifdef` statements to change compilation behaviour under native
 
 With these changes, we can compile the above code into WebAssembly with Emscripten/emcc **and** native executables with gcc. Here's what it looks like running as a Windows app:
 
-![](/img/emscripten_sdl_2_0_mingw_sample.png)
+![](/img/emscripten_sdl_2_0_mingw_sample.jpg)
 
 That's the end of Lesson 2! Next time we'll look at [Emscripten Loops]({% post_url 2019-12-03-webassembly-emscripten-loops %})
 
