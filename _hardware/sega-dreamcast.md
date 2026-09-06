@@ -6,11 +6,13 @@ date: '2024-08-29 11:33:00'
 tags: [Consoles, Sega]
 ---
 
-![My roadside Dreamcast, cleaned up and running](/img/posts/roadside-dreamcast-working.jpg){: width="680"}
+![Sega Dreamcast console](/img/hardware/sega-dreamcast.png){: width="520"}
 
 The Dreamcast still feels slightly unreal to me. Sega's final home console had a short commercial life, and yet the hardware is so good it feels like a machine with unfinished momentum behind it.
 
 Mine came from an unusually lucky find: it was sitting alongside some junk electronics on a Hong Kong roadside, and after some haggling I walked away with it for **$12** — the [full story is here]({% post_url 2025-03-25-i-found-a-sega-dreamcast-by-the-roadside %}).
+
+![My roadside Dreamcast, cleaned up and running its BIOS menu](/img/posts/roadside-dreamcast-working.jpg){: width="600"}
 
 ### What it is
 

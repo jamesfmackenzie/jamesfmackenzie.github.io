@@ -6,7 +6,7 @@ date: '2024-08-29 11:33:00'
 tags: [Consoles, Sega]
 ---
 
-![Virtua Fighter for the Sega Saturn](/img/posts/virtua-fighter-for-sega-saturn.jpg){: width="680"}
+![Sega Saturn console](/img/hardware/sega-saturn.png){: width="680"}
 
 The Saturn is a console I respect more the longer I spend around retro hardware. It has the reputation everyone knows — complicated hardware, awkward to develop for, commercially buried by the PlayStation — but that's only half the story. It's also one of the most distinctive major consoles of its generation.
 
