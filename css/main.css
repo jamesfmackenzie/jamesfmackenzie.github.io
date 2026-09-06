@@ -118,24 +118,19 @@ header img {
 
 header nav {
   margin-left: auto;
+  font-size: 0.92em;
 }
 
-header nav span {
-  margin-left: 0.5em;
+header nav a {
+  margin-left: 1em;
+}
+
+/* hamburger toggle: hidden on desktop, shown below the mobile breakpoint */
+.nav-toggle {
+  display: none;
 }
 
 /* end header styles */
-
-.navRow {
-  text-align: center;
-}
-
-.navRow a {
-  text-transform: none;
-  font-weight: unset;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: underline;
-}
 
 .bio span {
   font-size: 0.88em;
@@ -391,6 +386,28 @@ footer a:hover {
   color: #18bc9c;
 }
 
+/* footer section links — plain text, not the circular social buttons */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em 1.1em;
+  margin-bottom: 1.25em;
+}
+
+.footer-nav a {
+  font-size: 1em;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.footer-nav a:hover {
+  background-color: transparent;
+  color: #18bc9c;
+}
+
 /* end footer styles */
 
 /* optimize for small screens */
@@ -410,6 +427,58 @@ footer a:hover {
   }
   .bio span {
     font-size: 0.95em;
+  }
+
+  /* collapse the section nav behind a toggle */
+  .nav-header {
+    flex-wrap: wrap;
+  }
+  .nav-header h2 {
+    margin-right: auto;
+  }
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 0.6em 0 0.6em 0.8em;
+  }
+  .nav-toggle span,
+  .nav-toggle span::before,
+  .nav-toggle span::after {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1px;
+  }
+  .nav-toggle span {
+    position: relative;
+  }
+  .nav-toggle span::before,
+  .nav-toggle span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .nav-toggle span::before {
+    top: -8px;
+  }
+  .nav-toggle span::after {
+    top: 8px;
+  }
+  header nav {
+    flex-basis: 100%;
+    margin-left: 0;
+    font-size: 1em;
+    display: none;
+    flex-direction: column;
+    padding-top: 0.5em;
+  }
+  #nav-toggle:checked ~ nav {
+    display: flex;
+  }
+  header nav a {
+    margin-left: 0;
+    padding: 0.45em 0;
   }
 }
 

@@ -1,22 +1,12 @@
-<div class="row desktopOnly">
+<div class="row nav-header">
 	<h2><a href="/">{{ site.title }}</a></h2>
+	<input type="checkbox" id="nav-toggle" hidden>
+	<label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
 	<nav>
-		<!-- <span><a href="/">Home</a></span> -->
-		<span><a href="/hardware">Hardware</a></span>
-		<span><a href="/software">Software</a></span>
-		<span><a href="/projects">Projects</a></span>
-		<span><a href="/howto">Guides</a></span>
-		<span><a href="/sitemap">Sitemap</a></span>
+		<a href="/projects">Projects</a>
+		<a href="/hardware">Hardware</a>
+		<a href="/software">Software</a>
+		<a href="/howto">Guides</a>
+		<a href="/sitemap">Sitemap</a>
 	</nav>
-</div>
-<div class="row mobileOnly">
-	<h2><a href="/">{{ site.title }}</a></h2>
-</div>
-<div class="navRow mobileOnly">
-	<!--
-	<span><a href="/">Home</a> &nbsp; <a href="/about">About</a> &nbsp; <a href="/projects">Projects</a> &nbsp; <a href="/sitemap">Posts</a></span>
-	<br /><br />
-    -->
-	<span><a href="/projects">Projects</a> &nbsp; <a href="/howto">Guides</a> &nbsp; <a href="/sitemap">Sitemap</a></span>
-	<br /><br />
 </div>
