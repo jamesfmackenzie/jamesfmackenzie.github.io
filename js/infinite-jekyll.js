@@ -71,7 +71,7 @@ $(function () {
 	  var mediaFragment = "";
 	
 	  if (postToAppend.image && postToAppend.image != "") {
-		  mediaFragment = "<p><img src=\"/img/posts/" + postToAppend.image + "\" /></p>";
+		  mediaFragment = "<p><img src=\"/img/" + postToAppend.image + "\" /></p>";
 	  }
 	  else if (postToAppend.layout == "youtube") {
 		  mediaFragment = "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>"

@@ -58,7 +58,7 @@ layout: null
 	  {% endif %}
 			  <p>Read on Twitter <a href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}" target="_blank">here</a>.</p>
 			  {% if post.image %}
-				<img src="{{ site.url }}/img/posts/{{ post.image }}" alt="featured image" />
+				<img src="{{ site.url }}/img/{{ post.image }}" alt="featured image" />
 			  {% endif %}
 			]]>
 		  </content>
@@ -90,7 +90,7 @@ layout: null
 				<p>Read full article <a href="{{ post.url | prepend: site.url }}" target="_blank">here</a>.</p>  
 			  {% endif %}
 			  {% if post.image %}
-				<img src="{{ site.url }}/img/posts/{{ post.image }}" alt="featured image" />
+				<img src="{{ site.url }}/img/{{ post.image }}" alt="featured image" />
 			  {% endif %}
 			]]>
 		  </content>  
