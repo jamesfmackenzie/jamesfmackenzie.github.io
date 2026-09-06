@@ -25,53 +25,24 @@
 		<article class="post">
 			<div class="row">
 				{% if post.layout == "tweet" %}
-				{% if post.summary %}
-				<blockquote class="twitter-summary-quote">
-					<a href="{{ post.url }}">
-						{{ post.summary | markdownify }}
-					</a>
-				</blockquote>
-				{% endif %}
-				<blockquote class="twitter-title-quote">
-					<a target="_blank" href="https://twitter.com/jamesfmackenzie/status/{{ post.tweetId }}">
-						<p lang="en" dir="ltr">{{ post.title }}</p>
-						&mdash; {{ post.date | date: "%b %-d, %Y" }}
-					</a>
-				</blockquote>
-	
+					<p class="feed-meta">Tweet &nbsp;&middot;&nbsp; <time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
+					<blockquote class="twitter-title-quote"><a href="{{ post.url }}"><span lang="en" dir="ltr">{{ post.title }}</span></a></blockquote>
+					{% if post.summary %}<div class="post-summary"><a href="{{ post.url }}">{{ post.summary | markdownify }}</a></div>{% endif %}
+
 				{% elsif post.layout == "youtube" %}
-				<blockquote class="youtube-summary-quote">
-					<a href="{{ post.url }}">
-						{{ post.summary | markdownify }}
-					</a>
-				</blockquote>
-				<div class="youtube-container">
-					<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
-				</div> 
-				<p>
-					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
-				</p>
+					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+					{% if post.summary %}<div class="post-summary">{{ post.summary | markdownify }}</div>{% endif %}
+					<p class="feed-meta">Video &nbsp;&middot;&nbsp; <time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
+					<div class="youtube-container">
+						<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
+					</div>
 
 				{% else %}
-				<h2>
-					{% if post.overrideUrl %}
-					<a href="{{ post.overrideUrl }}">{{ post.title }}</a>
-					{% else %}
-					<a href="{{ post.url }}">{{ post.title }}</a>
-					{% endif %}
-				</h2>
-				<p class="post-summary">
-					{{ post.summary | markdownify }}
-				</p>
-				<p>
-					<time>{{ post.date | date: "%b %-d, %Y" }}</time>
-				</p>
-				{% endif %}	
-
-				{% if post.image %}
-				<p>
-					<img src="/img/{{ post.image }}" alt="{{ post.title }}" />
-				</p>
+					<h2><a href="{% if post.overrideUrl %}{{ post.overrideUrl }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
+					{% if post.summary %}<div class="post-summary">{{ post.summary | markdownify }}</div>{% endif %}
+					<p class="feed-meta"><time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
+					{% assign thumb = post.image | default: post.hero %}
+					{% if thumb %}<img class="feed-thumb" src="/img/{{ thumb }}" alt="{{ post.title }}" />{% endif %}
 				{% endif %}
 			</div>
 		</article>

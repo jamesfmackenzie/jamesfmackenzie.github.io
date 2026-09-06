@@ -67,42 +67,42 @@ $(function () {
 
   function fetchPostWithIndex(index, callback) {
     var postToAppend = postURLs[index];
-	
-	  var mediaFragment = "";
-	
-	  if (postToAppend.image && postToAppend.image != "") {
-		  mediaFragment = "<p><img src=\"/img/" + postToAppend.image + "\" /></p>";
-	  }
-	  else if (postToAppend.layout == "youtube") {
-		  mediaFragment = "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>"
-	  }
+
+    var summaryFragment = postToAppend.summary
+      ? "<div class=\"post-summary\">" + postToAppend.summary + "</div>"
+      : "";
 
     var htmlFragment = "";
 
-    if (postToAppend.layout == "tweet") {			
-		
-      if (postToAppend.summary) {
-        htmlFragment = "<div class=\"row\"><blockquote class=\"twitter-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></blockquote><blockquote class=\"twitter-title-quote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; " + postToAppend.date + "</a></blockquote>" + mediaFragment + "</div>";
-
-      }
-      else {
-        htmlFragment = "<div class=\"row\"><blockquote class=\"twitter-title-quote\"><a target=\"_blank\" href=\"https://twitter.com/jamesfmackenzie/status/" + postToAppend.tweetId + "\"><p lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</p>&mdash; " + postToAppend.date + "</a></blockquote>" + mediaFragment + "</div>";
-
-      }
-    } 
-    else if (postToAppend.layout == "youtube") {			
-		
-      htmlFragment = "<div class=\"row\"><blockquote class=\"youtube-summary-quote\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></blockquote>" + mediaFragment + "<p><time>" + postToAppend.date + "</time></p></div>";
-    } 
-	else {
-      
-    var hyperlink = "<a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a>";
-    
-	  if (postToAppend.overrideUrl && postToAppend.overrideUrl != "") {
-		  hyperlink = "<a href=\"" + postToAppend.overrideUrl + "\">" + postToAppend.title + "</a>";
+    if (postToAppend.layout == "tweet") {
+      htmlFragment =
+        "<div class=\"row\">" +
+        "<p class=\"feed-meta\">Tweet &nbsp;&middot;&nbsp; <time>" + postToAppend.date + "</time></p>" +
+        "<blockquote class=\"twitter-title-quote\"><a href=\"" + postToAppend.url + "\"><span lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</span></a></blockquote>" +
+        (postToAppend.summary ? "<div class=\"post-summary\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></div>" : "") +
+        "</div>";
     }
-
-	  htmlFragment = "<div class=\"row\"><h2>" + hyperlink + "</h2><p class=\"post-summary\">" + postToAppend.summary + "</p><p><time>" + postToAppend.date + "</time></p>" + mediaFragment + "</div>";
+    else if (postToAppend.layout == "youtube") {
+      htmlFragment =
+        "<div class=\"row\">" +
+        "<h2><a href=\"" + postToAppend.url + "\">" + postToAppend.title + "</a></h2>" +
+        summaryFragment +
+        "<p class=\"feed-meta\">Video &nbsp;&middot;&nbsp; <time>" + postToAppend.date + "</time></p>" +
+        "<div class=\"youtube-container\"><iframe src=\"https://www.youtube.com/embed/" + postToAppend.videoId + "?rel=0\" frameborder=\"0\" allowfullscreen class=\"youtube-video\"></iframe></div>" +
+        "</div>";
+    }
+    else {
+      var url = (postToAppend.overrideUrl && postToAppend.overrideUrl != "") ? postToAppend.overrideUrl : postToAppend.url;
+      var thumbFragment = (postToAppend.image && postToAppend.image != "")
+        ? "<img class=\"feed-thumb\" src=\"/img/" + postToAppend.image + "\" alt=\"" + postToAppend.title + "\" />"
+        : "";
+      htmlFragment =
+        "<div class=\"row\">" +
+        "<h2><a href=\"" + url + "\">" + postToAppend.title + "</a></h2>" +
+        summaryFragment +
+        "<p class=\"feed-meta\"><time>" + postToAppend.date + "</time></p>" +
+        thumbFragment +
+        "</div>";
     }
 
     $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");

@@ -12,15 +12,15 @@
 	<header>
 		{% include nav-header.md %}
 	</header>
-	<aside>
-		<div class="row">
-			<h1>{{ page.title }}</h1>
-			<p>{{ page.description }}</p>
-		</div>
-	</aside>
-	<main class="nocomments-page">
-		<article>
+	<main class="nocomments-page section-index">
+		<header class="intro">
 			<div class="row">
+				<h1>{{ page.title }}</h1>
+				{% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+			</div>
+		</header>
+		<article>
+			<div class="row body">
 				{{ content }}
 			</div>
 		</article>

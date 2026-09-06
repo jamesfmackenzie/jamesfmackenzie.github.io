@@ -4,9 +4,9 @@ title: Amstrad PC1640
 summary: Hardware overview and restoration notes for the Amstrad PC1640, a late-1980s IBM-compatible home and small-business PC.
 date: '2025-08-20 06:33:00'
 tags: [Computers, Amstrad, PC]
+hero: amstrad-pc1640-2.jpg
+hero_alt: Amstrad PC1640 with monitor and keyboard
 ---
-
-![Amstrad PC1640 PC.](/img/amstrad-pc1640-2.jpg)
 
 I grew up using an Amstrad PC1640, and it’s a machine I’ve always wanted to own again. I was recently lucky enough to (re)acquire one — decades after my original had been lost.
 

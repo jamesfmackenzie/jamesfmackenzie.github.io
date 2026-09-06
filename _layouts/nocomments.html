@@ -13,13 +13,9 @@
 		{% include nav-header.md %}
 	</header>
 	<main class="nocomments-page">
-		<header>
-			<div class="row">
-				<h1>{{ page.title }}</h1>
-			</div>
-		</header>
+		{% include post-intro.md %}
 		<article>
-			<div class="row">
+			<div class="row body">
 				{{ content }}
 			</div>
 		</article>

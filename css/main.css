@@ -170,7 +170,7 @@ body > header nav a:hover { color: #fff; }
 .nav-toggle { display: none; }
 
 /* ================================================================
-   aside — home bio + section-page intro (no more teal band)
+   aside — home page bio + social only
    ================================================================ */
 
 aside {
@@ -186,11 +186,61 @@ aside p {
   max-width: var(--measure);
 }
 
-/* section landing pages: <aside> holds h1 + description (the lede) */
-aside h1 { margin: 0 0 0.5rem; }
-aside h1 ~ p {
+/* ================================================================
+   page intro — kicker + title + meta / lede (post, section, sitemap)
+   ================================================================ */
+
+.intro { padding: 2.8rem 0 0; }
+.intro .row { max-width: var(--wrap); }
+.intro h1 {
+  margin: 0 0 0.55rem;
+  max-width: var(--measure);
+  color: var(--head);
+}
+.kicker {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.85rem;
+}
+.intro .meta {
+  margin: 0;
+  max-width: var(--measure);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.intro .meta a { color: var(--muted); text-decoration: underline; }
+.intro .meta a:hover { color: var(--accent); }
+.intro .lede {
+  margin: 0.6rem 0 0;
+  max-width: var(--measure);
   color: var(--muted);
   font-size: 1.1rem;
+}
+
+/* hero image — frameless, sits on the ground, runs wider than the text */
+.hero {
+  margin: 1.9rem 0 0;
+}
+.hero .row { max-width: var(--wide); }
+.hero img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.hero figcaption {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.55rem;
 }
 
 /* social links — mono pill chips */
@@ -229,18 +279,17 @@ main { margin-bottom: 3rem; }
 .post-list .row { max-width: var(--wrap); }
 
 .post-list article {
-  padding: 2.3rem 0;
+  padding: 2.4rem 0;
   border-top: 1px solid var(--rule);
-  border-bottom: 0;
 }
 .post-list > article:first-child {
   border-top: 0;
-  padding-top: 0.6rem;
+  padding-top: 0.4rem;
 }
 
 .post-list h2 {
-  font-size: 1.55rem;
-  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  margin: 0 0 0.45rem;
 }
 .post-list h2 a {
   color: var(--head);
@@ -248,60 +297,43 @@ main { margin-bottom: 3rem; }
 }
 .post-list h2 a:hover { color: var(--accent); }
 
-.post-list .post-summary,
-.post-list p {
+.post-list .post-summary {
   max-width: var(--measure);
-  line-height: 1.55;
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.6rem;
 }
+.post-list .post-summary p { margin: 0 0 0.5rem; }
+.post-list .post-summary a { color: inherit; text-decoration: none; }
 
-.post-list time { color: var(--muted); font-size: 0.92rem; }
+.feed-meta {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.feed-meta time { color: inherit; }
 
-.post-list article img {
+.feed-thumb {
   display: block;
   width: auto;
   max-width: min(var(--wide), 100%);
   max-height: 22rem;
-  margin: 1.1rem 0 0;
-  border: 1px solid var(--rule);
-  border-radius: 6px;
-  background: var(--card);
+  margin: 1.2rem 0 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
 }
 
 /* ================================================================
    article pages
    ================================================================ */
 
-/* the title block (currently still the .single-post <header> band) */
-.single-post > header,
-.nocomments-page > header {
-  background: none;
-  padding: 2.6rem 0 0;
-}
-.single-post > header .row,
-.nocomments-page > header .row {
-  display: block;
-  text-align: left;
-  max-width: var(--wrap);
-}
-.single-post > header h1,
-.nocomments-page > header h1 {
-  margin: 0 0 0.5rem;
-  max-width: var(--measure);
-  color: var(--head);
-}
-.single-post > header p,
-.nocomments-page > header p {
-  margin: 0.2rem 0 0;
-  max-width: var(--measure);
-  font-family: var(--sans);
-  font-size: 0.92rem;
-  color: var(--muted);
-}
-.single-post > header p a,
-.nocomments-page > header p a {
-  color: var(--muted);
-  text-decoration: underline;
+/* tweet / video pages: the "title" is a tweet body or a plain title —
+   keep it modest, the embed carries the weight */
+.tweet-page .intro h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: normal;
 }
 
 /* body */
@@ -364,23 +396,7 @@ article img {
 .single-post article img.cutout,
 .nocomments-page article img.cutout { padding: 0.9rem; }
 
-/* hero: frameless, wide (Phase 2 renders <figure class="hero">) */
-.hero { margin: 1.6rem 0 0; max-width: min(var(--wide), 100%); }
-.hero img {
-  border: 0;
-  border-radius: 0;
-  background: none;
-  padding: 0;
-  width: 100%;
-}
-.hero figcaption {
-  font-family: var(--sans);
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.5rem;
-}
-
-figure { margin: 2rem 0; max-width: min(var(--wide), 100%); }
+figure:not(.hero) { margin: 2rem 0; max-width: min(var(--wide), 100%); }
 figcaption {
   font-family: var(--sans);
   font-size: 0.85rem;
@@ -403,38 +419,59 @@ figcaption {
   margin: 0;
 }
 
-/* kicker (Phase 2 markup) */
-.kicker {
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 0.85rem;
-}
-
-/* "Related on this site" */
-.single-post article h2#related,
-.single-post article .related h2 { }
-
 /* ---------- syntax-highlight container ---------- */
 .highlight { background: none; }
 .highlight pre { margin: 1.8rem 0; }
+
+.nocomments-page article { border-bottom: 0; padding-bottom: 2.5rem; }
+
+/* ================================================================
+   section landing pages (/hardware, /projects, …)
+   ================================================================ */
+
+.section-index .body h3 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.4rem 0 0.7rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--rule);
+}
+.section-index .body h3:first-child { margin-top: 1.2rem; }
+.section-index .body ul { list-style: none; padding: 0; margin: 0 0 0.5rem; }
+.section-index .body li { margin: 0.4rem 0; }
+.section-index .body li a { text-decoration: none; }
+.section-index .body li a:hover { text-decoration: underline; }
 
 /* ================================================================
    sitemap
    ================================================================ */
 
 .sitemap .row { max-width: var(--wrap-wide); }
+.sitemap .intro .row { max-width: var(--wrap); }
+.sitemap h2,
+.sitemap h3 { font-family: var(--sans); }
+.sitemap h3 { font-size: 1rem; color: var(--muted); margin-top: 1.6rem; }
 .sitemap h2 a,
-.sitemap h3 a,
-.nocomments-page h3 a {
+.sitemap h3 a {
   text-decoration: none;
   color: var(--head);
 }
+.sitemap ul { margin: 0.4rem 0 1.2rem; }
+.sitemap li { margin: 0.15rem 0; }
+.sitemap img {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  margin: 0 0.4em 0 0;
+  vertical-align: -0.12em;
+  border: 0;
+  border-radius: 0;
+}
 .sitemap { margin-bottom: 0; }
-.nocomments-page article { border-bottom: 0; }
 
 /* ================================================================
    tables
@@ -506,41 +543,35 @@ footer .social-buttons a:hover {
    tweet + youtube embeds
    ================================================================ */
 
-.twitter-summary-quote,
-.youtube-summary-quote {
-  border-left: 3px solid var(--accent);
-  border-right: 0;
-  padding-left: 1rem;
-  margin: 0 0 1rem;
-  font-style: italic;
-}
-.youtube-summary-quote { border-left-color: #d0402c; }
-.twitter-summary-quote a,
-.youtube-summary-quote a {
-  text-decoration: none;
-  color: var(--text);
-}
-
 .twitter-title-quote {
-  padding: 0 1rem 1rem;
+  max-width: var(--measure);
+  padding: 1rem 1.15rem;
   border: 1px solid var(--rule);
-  border-radius: 12px;
-  margin: 0 0 1rem;
+  border-radius: 10px;
+  margin: 1.4rem 0;
+  background: var(--card);
 }
-.twitter-title-quote p { line-height: 1.3; }
 .twitter-title-quote a {
   text-decoration: none;
   color: var(--text);
 }
+.twitter-title-quote a:hover { color: var(--text); }
+.twitter-title-quote .cite {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
 
-article .youtube-container {
+.youtube-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   max-width: min(var(--wide), 100%);
   margin: 1.8rem 0;
 }
-article .youtube-container iframe {
+.youtube-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -550,7 +581,31 @@ article .youtube-container iframe {
   border-radius: 6px;
 }
 
-.latestposts { padding: 2rem 0; }
+/* "Other Posts" list at the foot of an article */
+.latestposts {
+  max-width: var(--measure);
+  margin: 2.5rem auto 0;
+  padding: 2.2rem 1.25rem 0;
+  border-top: 1px solid var(--rule);
+}
+.latestposts h2 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.8rem;
+}
+.latestposts ul { list-style: none; padding: 0; margin: 0; }
+.latestposts li { margin: 0.45rem 0; font-size: 1rem; line-height: 1.4; }
+.latestposts img {
+  display: inline-block;
+  width: auto;
+  height: 0.9em;
+  margin: 0 0.4em 0 0;
+  vertical-align: baseline;
+}
 
 /* ================================================================
    small screens
@@ -560,10 +615,10 @@ article .youtube-container iframe {
   .desktopOnly { display: none !important; }
 
   body { font-size: 1.14rem; }
-  h1 { font-size: 1.85rem; }
-  .single-post > header,
-  .nocomments-page > header { padding-top: 2rem; }
+  h1 { font-size: 1.8rem; }
+  .intro { padding-top: 2rem; }
   aside .row { padding-top: 2rem; }
+  .tweet-page .intro h1 { font-size: 1.2rem; }
 
   /* collapse the section nav behind a toggle */
   .nav-header {
