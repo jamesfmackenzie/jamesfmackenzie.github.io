@@ -7,6 +7,8 @@ summary: |-
 tags: [3Dfx Voodoo, PC, Posts, Retrocomputing, Retrogaming]
 ---
 
+![A 3dfx Voodoo 2 board](/img/hardware/3dfx-voodoo-2-board.jpg){: width="680"}
+
 Back in 2023 I set out to get a 3dfx Voodoo 2 — a 3D accelerator from 1998 — running inside a modern Windows 10 gaming PC. It worked, it turned into a couple of popular videos, and it kicked off a surprising amount of argument in the comments. This is the full write-up of how it was done.
 
 It started with [Robert Krause's write-up](https://robertkrau.se/blog/3dfx-voodoo-2-with-windows-10/) of getting a 3dfx Voodoo 2 working on his Windows 10 PC (an i7-4790K). He had one advantage I didn't: his motherboard still had a legacy PCI slot.
@@ -16,6 +18,8 @@ My Z97 board doesn't have a single one. Every slot is PCIe. So if I wanted to tr
 ### The plan: a PCIe-to-PCI adapter
 
 Enter a cheap PCI-to-PCIe adapter card. In theory, it lets a PCI card like the Voodoo 2 plug into a PCIe slot.
+
+![A cheap PCIe-to-PCI adapter card, with a Molex power lead and a bridge chip](/img/posts/pcie-to-pci-adapter-for-voodoo-2.jpg){: width="600"}
 
 In practice, there was an immediate physical problem: the Voodoo 2 is a **full-height card**, and mounted the normal way through the adapter it was simply too tall for the case.
 
@@ -47,6 +51,8 @@ More digging on 3dfxzone turned up [another fix](https://www.3dfxzone.it/enboard
 
 It worked. I genuinely wasn't expecting it to.
 
+![The 3dfx Donut tech demo rendering after the Windows XP map-mem fix](/img/posts/3dfx-voodoo-2-donut-demo.jpg){: width="516"}
+
 ### Native Glide, on a 2020s PC
 
 So — to be completely clear about what was now running: this is native Glide, executing on real 3dfx hardware, on Windows 10. 90s hardware, running on a 2020s PC.
@@ -74,6 +80,8 @@ The reaction to the first video was big enough to justify a dedicated follow-up,
 7. **Need for Speed 2** — a surprise request, but a good one: nice textures and shading, a great frame rate, and a more arcade-y feel than the original NFS.
 8. **Half-Life** — still holds up. Runs great, and the lighting/particle work looks good despite the low-poly character models.
 9. **Unreal** — by far the single most-requested game. Genuinely nostalgic: the crashed-prison-ship intro, the water effects, that first open vista. Still looks amazing today.
+
+![Unreal's opening area rendered on the Voodoo 2](/img/posts/unreal-on-3dfx-voodoo-2.jpg){: width="680"}
 
 ### Watch on YouTube
 
