@@ -1,58 +1,32 @@
 ---
 layout: post
 title: Nintendo Wii U
-summary: My take on the Wii U as an underrated Nintendo console with a better library than its reputation suggests, plus great backward compatibility and homebrew potential.
+summary: My take on the Nintendo Wii U — a commercial flop with a genuinely great library, strong backward compatibility, and a lot of homebrew potential.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Nintendo]
 ---
 
-The Wii U had a messy commercial story, but the machine itself ended up much better than its reputation.
-
-It sits in an awkward but useful place: part Wii successor, part strange dual-screen Nintendo experiment, and part platform that became much more appealing once people started using it for the things it actually does well instead of the role it was originally sold for.
-
-I was another late adopter. I picked up a 32GB refurbished black Wii U with the GamePad at GameStop in June 2020 for $129.99, and the highlight quickly became how many brilliant games landed on the system — *Breath of the Wild*, *Super Mario 3D World*, *Mario Kart 8*, *Super Mario Maker*, *Xenoblade Chronicles X*, and definitive remasters of *Wind Waker* and *Twilight Princess*. It feels like a prototype Switch in many ways, with the GamePad's portable second-screen capability working well (albeit within a short range near the base console).
+The Wii U had a messy commercial story, but the machine itself turned out much better than its reputation. I picked up a 32GB refurbished black Wii U with the GamePad from GameStop in June 2020 for **$129.99**, and the highlight was quickly how many genuinely great games landed on it — *Breath of the Wild*, *Super Mario 3D World*, *Mario Kart 8*, *Super Mario Maker*, *Xenoblade Chronicles X*, and the definitive remasters of *Wind Waker* and *Twilight Princess*. It feels like a prototype Switch: the GamePad's portable second screen works well, as long as you stay within range of the base console.
 
 ### What it is
 
-The Wii U is Nintendo's early-2010s console built around the GamePad and a mixed home-console-plus-second-screen identity. It also happens to be a very practical machine once you factor in Wii compatibility and homebrew.
+Nintendo's early-2010s console, built around the GamePad and a home-console-plus-second-screen identity it never quite sold people on. It's also a very practical machine once you factor in full Wii backward compatibility and a healthy homebrew scene.
 
-### Why I keep it
+### Why I like it
 
-I keep the Wii U around because it covers more ground than people give it credit for:
-
-- native Wii U software
-- full Wii backward compatibility
-- access to the original GamePad experience
-- a very useful homebrew platform
-- a library with some of Nintendo's best late-gen first-party work and remasters
-
-That combination gives it much more long-term value than a console with only one narrow use case.
-
-### My take
-
-My take is that the Wii U is one of Nintendo's more underrated hardware platforms.
-
-The commercial failure story is real, but it is also not the most interesting thing about the console anymore. Nintendo pulled out the stops with unequivocally great first-party games and remasters yet few people played them until Switch re-releases many years later. It still matters because the hardware is affordable, flexible, and capable of doing several genuinely useful things in one box.
+Nintendo pulled out the stops on first-party games and remasters here, and hardly anyone played them until the Switch re-releases years later. The hardware is now cheap, flexible, and covers a lot of ground in one box: native Wii U software, full Wii compatibility (including accessories), the original GamePad experience, and homebrew.
 
 ### Pros
 
-- strong backward compatibility with Wii software and accessories
-- distinctive GamePad experience
-- affordable and flexible hardware
-- very good homebrew potential
+- a genuinely strong late-gen Nintendo library and remaster catalogue
+- full backward compatibility with Wii software and accessories
+- affordable, and a very capable homebrew platform
 
 ### Cons
 
-- commercial baggage still colors how people think about it
-- the dual-screen concept was not always used brilliantly
-- some of the appeal depends on valuing flexibility more than prestige
-
-### Other useful things to know
-
-- The Wii U became more interesting after its official lifecycle slowed down, not less.
-- Original hardware still matters here because the GamePad experience is central to the platform.
-- The GamePad's second-screen portability works well, but you do need to stay close to the base console.
-- It is a very good example of a console whose practical value aged better than its public reputation.
+- the commercial-failure baggage still colours how people think about it
+- the dual-screen concept was rarely used to its full potential
+- the GamePad only works close to the base console
 
 ### Related on this site
 

@@ -1,56 +1,34 @@
 ---
 layout: post
 title: Sony PlayStation Vita
-summary: My take on the PlayStation Vita as one of Sony's best handhelds, with great controls, strong original hardware appeal, and a second life through homebrew.
+summary: My take on the PlayStation Vita — one of Sony's best pieces of hardware, a commercial failure, and the handheld I ported Commander Keen to.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Sony PlayStation]
 ---
 
-The PlayStation Vita is one of Sony's best bits of hardware, full stop.
-
-It was never a huge commercial success, but the machine itself is excellent: sharp screen, great controls, solid build quality, and a design that still feels deliberate rather than compromised. Over time it also became a far more interesting enthusiast device than Sony probably intended.
+The PlayStation Vita is one of Sony's best pieces of hardware, full stop. It was never a big commercial success, but the device itself is excellent — sharp screen, great controls, solid build — and it became a far more interesting enthusiast platform than Sony probably intended. I've spent enough time in its homebrew scene to have [ported Commander Keen to it]({% link _projects/porting-commander-keen-to-playstation-vita.md %}).
 
 ### What it is
 
-The Vita is Sony's late handheld successor to the PSP. It combines strong native controls, a good portable software library, and unusually rich homebrew potential in a device that still feels very good in the hand.
+Sony's late handheld, successor to the PSP. It pairs proper physical controls and a good portable library with unusually rich homebrew potential.
 
-### Why I keep it
+### Why I like it
 
-I keep the Vita around because it succeeds both as a handheld and as an enthusiast platform:
-
-- great controls and ergonomics
-- a library that suits portable play properly
-- strong indie and niche-game appeal
-- unusually good homebrew potential
-
-It is one of those devices that became more interesting over time rather than less.
-
-### My take
-
-My take is that the Vita still has a very strong original-hardware case.
-
-Portable play is central to the point of the machine. The controls, ergonomics, and general feel are a big part of why it works, which means the real device matters more than it would for a platform that can be comfortably abstracted away into software.
+Portable play is the whole point of the machine, and the controls and ergonomics are a big part of why it works — which means the real device matters more here than it would for a platform you can comfortably abstract into software. Homebrew gave it a second life well past its official one, and it's aged into something genuinely worth owning.
 
 ### Pros
 
-- excellent handheld design
-- strong controls and ergonomics
-- portable library makes sense on the real device
-- homebrew gave the platform a much longer life
+- excellent handheld design, controls, and screen
+- a portable-native library that suits the device
+- homebrew gave the platform a long and interesting tail
 
 ### Cons
 
-- commercial failure limited its mainstream reach
-- some of its best qualities were underused in its official life
-- part of the library's appeal depends on liking portable-native and niche games
-
-### Other useful things to know
-
-- The Vita is stronger on real hardware than many other devices of its era because portable play is the whole point.
-- Homebrew and enthusiast use changed the long-term story of the machine dramatically.
-- For me, this is a handheld that still feels thoughtful every time I pick it up.
+- the commercial failure limited its mainstream reach
+- some of its best ideas were underused during its official life
+- part of the appeal depends on liking portable-native and niche games
 
 ### Related on this site
 
 - [Porting Commander Keen to PlayStation Vita]({% link _projects/porting-commander-keen-to-playstation-vita.md %})
-- [Porting Commander Keen to PS Vita / PlayStation Vita]({% post_url 2025-04-06-porting-commander-keen-to-ps-vita-playstation-vita %})
+- [Porting Commander Keen to PS Vita]({% post_url 2025-04-06-porting-commander-keen-to-ps-vita-playstation-vita %})
