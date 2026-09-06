@@ -56,7 +56,6 @@ Underneath the device we have a microSD card slot. The microSD card contains the
 
 In terms of <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Addons_Overview" target="_blank">add-ons</a>, I have a <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/SDRAM-Board" target="_blank">32MB SDRAM board</a>. This is strongly recommended – the majority of computer and console cores require it. <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki/Addons_Overview" target="_blank">Other add-ons</a> are optional. 
 
-<hr />
 
 That's it for the hardware overview. Next up: [Install and Setup]({% post_url 2020-09-20-mister-fpga-install-and-setup %}).
 
