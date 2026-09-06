@@ -13,8 +13,6 @@ I turned an old ASUS ET2010PNT EeeTop touchscreen PC into a fast, reliable kitch
 
 The key challenges were legacy BIOS booting, GRUB installation, touchscreen drivers, and Wi-Fi quirks — all of which are solvable with some determination!
 
----
-
 ### Hardware overview
 
 Released back in 2010, my EeeTop ET2010PNT has:
@@ -27,9 +25,6 @@ Released back in 2010, my EeeTop ET2010PNT has:
 - Integrated NVIDIA ION graphics
 - Built-in NextWindow 1950 HID touchscreen
 - Internal Atheros AR9285 Wi-Fi
-
-—
-
 
 ### Step 1: Essential upgrades
 
@@ -45,9 +40,6 @@ I went for 2x2GB DDR2 SODIMMs (this device uses laptop memory) and a cheap 2.5�
 After removing the screws, some prying was needed to loosen and remove the back cover.
 
 Once inside, the hardware upgrades were easy to make — just plug and play.
-
-—
-
 
 ### Step 2: OS Installation Media
 
@@ -66,9 +58,6 @@ Unfortunately this *would not work*. The machine stubbornly refused to boot the 
 
 After too much time wasted, I gave up on USB and went old school — time to burn a bootable DVD!
 
-—
-
-
 ### Step 3: BIOS configuration (important)
 
 Enter the BIOS (hit `F2` during boot) and ensure that the DVD drive has the highest boot priority.
@@ -76,9 +65,6 @@ Enter the BIOS (hit `F2` during boot) and ensure that the DVD drive has the high
 Without this the Linux Mint installer won’t start.
 
 Save and exit.
-
-—
-
 
 ### Step 4: Booting the installer (network quirks)
 
@@ -90,9 +76,6 @@ If that happens, **unplug the Ethernet cable** during boot. Surprisingly, this c
 
 One additional tip: listen for the DVD drive. So long as it's still spinning, the OS will (eventually!) load.
 
-—
-
-
 ### Step 5: Correct disk partitioning (legacy BIOS!)
 
 Unfortunately the Eeetop doesn’t understand the modern UEFI boot partition created by the Linux Mint installer.
@@ -100,7 +83,6 @@ Unfortunately the Eeetop doesn’t understand the modern UEFI boot partition cre
 The BIOS is just too old — it only understands the old MS-DOS style Master Boot Record (MBR).
 
 So some special disk partitioning is needed.
-
 
 #### Open GParted *before* installing
 
@@ -126,8 +108,6 @@ You should end up with:
 /dev/sda1  ext4
 ```
 
-—
-
 ### Step 6: Install Linux Mint
 
 ![Linux Mint Xfce Desktop](/img/posts/linux-mint-xfce-desktop.webp)
@@ -145,8 +125,6 @@ Install bootloader to `/dev/sda`. Not `/dev/sda1`.
 
 You may see a warning about **no EFI partition**. This is **normal and safe to ignore** on legacy BIOS systems like our EeeTop.
 
-—
-
 ### Step 7: Fixing GRUB
 
 ![GRUB error during install](/img/posts/linux-mint-xfce-grub-install-error.jpg)
@@ -158,24 +136,21 @@ This is expected. We just need to mount the new Linux partition:
 
 ```
 sudo mount /dev/sda1 /mnt
-sudo mount —bind /dev /mnt/dev
-sudo mount —bind /proc /mnt/proc
-sudo mount —bind /sys /mnt/sys
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys
 sudo chroot /mnt
 ```
 
 And install legacy GRUB explicitly:
 
 ```
-grub-install —target=i386-pc /dev/sda
+grub-install --target=i386-pc /dev/sda
 update-grub
 ```
 
 Exit, unmount, and reboot.  
 After this, the system should boot cleanly from disk.
-
-—
-
 
 ### Step 8: Wi-Fi quirks
 
@@ -187,15 +162,12 @@ Even worse, this Wi-Fi kill switch disables all Wi-Fi globally — so even USB W
 
 To fix this, I needed to blacklist the Atheros driver:
 
-
 ```
-echo “blacklist ath9k” | sudo tee /etc/modprobe.d/blacklist-ath9k.conf
+echo "blacklist ath9k" | sudo tee /etc/modprobe.d/blacklist-ath9k.conf
 sudo update-initramfs -u
 ```
 
 After reboot, any USB Wi-Fi adapter works normally (phew!).
-
-—
 
 ### Step 9: Touchscreen support (NextWindow)
 
@@ -207,8 +179,6 @@ This install process is somewhat manual and required a compile from source.
 
 Find the instruction on GitHub <a href="https://github.com/glorang/nwfermi" target="_blank">here</a>.
 
-—
-
 ### Step 10: Software choices
 
 #### Browser
@@ -218,7 +188,7 @@ Find the instruction on GitHub <a href="https://github.com/glorang/nwfermi" targ
 - Keyring disabled using:
 
 ```
-—password-store=basic
+--password-store=basic
 ```
 
 #### Email & calendar
@@ -238,10 +208,7 @@ thunderbird -calendar
 - <a href="https://apps.gnome.org/Calendar/" target="_blank">GNOME Calendar</a>
 - <a href="https://docs.xfce.org/apps/orage/start" target="_blank">Orage</a> (another calendar option)
 
-
-—
-
-### Step 10: Kiosk behaviour
+### Step 11: Kiosk behaviour
 
 To make the system feel like an appliance:
 
@@ -251,31 +218,9 @@ To make the system feel like an appliance:
 - Increase font sizes for touch readability
 - Disable unnecessary desktop UI elements
 
-—
-
 ### The end result
 
-The finished system:
+It boots off the SSD in seconds, the touchscreen works, USB Wi-Fi is reliable, and it sits on the kitchen wall showing a big, readable family calendar with light email alongside. It feels like a purpose-built appliance rather than an old PC propped up in the corner — not bad for a machine that was a slow, dusty Windows box a week earlier.
 
-- Boots reliably from SSD
-- Supports touch input
-- Has wired and wireless networking
-- Displays a large, readable family calendar
-- Allows light email interaction
-- Feels purpose-built rather than “an old PC”
-
-Most importantly, it’s **pleasant to use**, which is the real success metric for a kitchen device like this.
-
-—
-
-### Final thoughts
-
-This project was a reminder that:
-
-- Legacy hardware is still very usable
-- Modern Linux defaults don’t always suit old machines
-- Touchscreens on Linux require patience
-- Reusing old hardware can be genuinely rewarding
-
-What started as a slow, obsolete Windows machine is now a **useful, always-on household appliance** — and that feels like a good outcome!
+The two things that ate the most time were the legacy BIOS refusing every USB boot stick (burn a DVD instead) and the Atheros Wi-Fi "hard block" that kills *all* wireless until you blacklist the driver. Everything else was more fiddly than hard.
 
