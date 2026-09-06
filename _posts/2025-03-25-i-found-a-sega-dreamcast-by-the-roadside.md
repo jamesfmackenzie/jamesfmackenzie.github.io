@@ -9,8 +9,7 @@ summary: |-
   
   No idea if it still works, but for this price it was hard to ignore!
 tweetId: 1904522511527846022
-image: roadside-dreamcast.jpg
 tags: [Retrogaming, Videogames, Tweets]
+hero: roadside-dreamcast.jpg
 ---
 
-![](/img/roadside-dreamcast.jpg)

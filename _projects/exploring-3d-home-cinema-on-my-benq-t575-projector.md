@@ -4,9 +4,9 @@ title: Exploring 3D Home Cinema
 date: '2025-11-23 12:00:00'
 tags: [Consumer Tech, Home Media, Projects]
 status: in progress
+hero: benq-th575-projector.jpg
+hero_alt: BenQ TH575 1080p Projector
 ---
-
-![BenQ TH575 1080p Projector](/img/benq-th575-projector.jpg)
 
 I recently bought a new projector — the **BenQ TH575** — mainly for movie nights and gaming. But while exploring the settings menu, I stumbled across something I didn’t expect to see:
 

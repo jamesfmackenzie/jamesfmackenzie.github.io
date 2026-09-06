@@ -4,9 +4,9 @@ title: 3Dfx Voodoo 2
 summary: Overview and reference notes for the 3Dfx Voodoo 2, one of the most iconic Glide accelerators of the late 1990s.
 date: '2024-08-29 11:33:00'
 tags: [3Dfx Voodoo, Graphics Cards, PC]
+hero: 3dfx-voodoo-2-board.jpg
+hero_alt: 3Dfx Voodoo2
 ---
-
-![3Dfx Voodoo2](/img/3dfx-voodoo-2-board.jpg)
 
 The legendary Voodoo2 is a PC 3D accelerator from 3Dfx. Released in February 1998 as a replacement for the original Voodoo Graphics accelerator, the card runs at a chipset clock rate of 90 MHz and uses 100 MHz EDO DRAM.
 

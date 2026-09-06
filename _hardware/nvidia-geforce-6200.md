@@ -4,9 +4,9 @@ title: Nvidia GeForce 6200
 summary: My notes on the GeForce 6200 PCI — a passively cooled card that looks ideal for a Windows 98 retro build on paper, but disappoints badly in practice because of poor Windows 9x drivers.
 date: '2024-08-29 11:33:00'
 tags: [Graphics Cards, Nvidia Graphics, PC]
+hero: nvidia-geforce-6200-pci-rear.jpg
+hero_alt: GeForce 6200 PCI, rear view showing the passive heatsink and DVI/VGA outputs
 ---
-
-![GeForce 6200 PCI, rear view showing the passive heatsink and DVI/VGA outputs](/img/nvidia-geforce-6200-pci-rear.jpg){: width="680"}
 
 The GeForce 6200 is a budget card from 2004. I bought the **PCI version** — one of the relatively rare non-AGP variants — specifically as a passively cooled GPU for a Windows 98 retro gaming PC. On paper it looks like a big step up from the usual period options. In practice it was a bad buy.
 

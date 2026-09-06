@@ -4,11 +4,10 @@ title: "The Three-Screen Ridge Racer Quest: Chasing a Cabinet Nobody Could Emula
 date: '2026-08-14 09:00:00:00'
 summary: |-
   Namco built an arcade cabinet that stitches three screens into one race. Nobody had properly emulated the chip that makes it possible. This is the full story — two other people's abandoned attempts, a ROM dump that can't be released, a canonical chip emulation built from scratch, and a discovery near the end that changed everything.
-image: ridge-racer-full-scale-arcade-cabinet.jpg
 tags: [Posts, Emulation, Programming, Retrogaming]
+hero: ridge-racer-full-scale-arcade-cabinet.jpg
+hero_alt: Ridge Racer Full Scale arcade cabinet, three-screen sit-down cabinet with a real Eunos Roadster body
 ---
-
-![Ridge Racer Full Scale arcade cabinet, three-screen sit-down cabinet with a real Eunos Roadster body](/img/ridge-racer-full-scale-arcade-cabinet.jpg)
 
 In 1993, Namco built an arcade cabinet that shouldn't have made sense as a business decision. Ridge Racer Full Scale wraps three screens around a real Eunos Roadster body — an actual convertible car shell, cut down to a cockpit, with three PCBs behind it working in concert to render your peripheral vision as well as the road ahead.
 

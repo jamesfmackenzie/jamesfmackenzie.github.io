@@ -3,11 +3,10 @@ layout: post
 title: Fixing Fan Noise on a Radeon X800 XL
 summary: "A cheap used Radeon X800 XL turned up with a seized, screaming fan. Quieting it took three goes — new bearings, then a new fan, then a whole aftermarket cooler."
 date: '2026-09-03 20:00:00'
-image: ati-radeon-x800-xl.jpg
 tags: [ATi Graphics, GPU, PC, Posts, Repairs, Retrocomputing]
+hero: ati-radeon-x800-xl.jpg
+hero_alt: A Radeon X800 XL with its stock ATI cooler
 ---
-
-![A Radeon X800 XL with its stock ATI cooler](/img/ati-radeon-x800-xl.jpg){: width="680"}
 
 I picked up a [Radeon X800 XL]({% link _hardware/ati-radeon-x800-xl.md %}) cheap and untested. The reason it was cheap became obvious the moment I powered it on: the fan bearing had seized, and it was screaming. The card wasn't usable until it was sorted.
 

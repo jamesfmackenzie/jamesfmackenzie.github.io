@@ -4,9 +4,9 @@ title: ITX Llama
 summary: My take on the ITX Llama, an open-source ITX motherboard built from scratch for real DOS and early Windows gaming — no emulation involved.
 date: '2024-08-29 11:33:00'
 tags: [Computers, PC]
+hero: itx-llama.jpg
+hero_alt: My ITX Llama, with the OPL3 module, a Raspberry Pi for MT-32, a D1 Mini Wi-Fi modem, and a Noctua fan fitted
 ---
-
-![My ITX Llama, with the OPL3 module, a Raspberry Pi for MT-32, a D1 Mini Wi-Fi modem, and a Noctua fan fitted](/img/itx-llama.jpg){: width="680"}
 
 The ITX Llama is not a repurposed old PC — it's a brand new motherboard, designed from scratch, purely to run real MS-DOS and early Windows (95/98) games on real x86 hardware. No emulation, no compromise. I picked one up through a community group buy and it's become one of my favourite pieces of retro hardware.
 

@@ -4,9 +4,9 @@ title: I Supercharged This Old Mac for AAA Gaming
 date: '2024-05-04 12:00:00'
 tags: [Apple Mac, Projects, Retrocomputing]
 status: completed
+hero: mac-pro-5-1.jpg
+hero_alt: The Mac Pro 5,1 "cheese grater" tower
 ---
-
-![The Mac Pro 5,1 "cheese grater" tower](/img/mac-pro-5-1.jpg)
 
 I wanted to see how far a 14-year-old Apple workstation could actually be pushed — not as a curiosity, but as a genuinely usable machine for modern AAA gaming.
 

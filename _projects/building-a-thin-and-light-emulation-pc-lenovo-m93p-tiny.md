@@ -4,9 +4,9 @@ title: Building a Thin and Light Emulation PC
 date: '2020-05-01 12:00:00'
 tags: [Emulation, PC, Projects, Retrogaming, Videogames]
 status: completed
+hero: lenovo-m93p.jpg
+hero_alt: Lenovo M93p Tiny
 ---
-
-![Lenovo M93p Tiny](/img/lenovo-m93p.jpg)
 
 For many years I've been on quest to find the perfect emulation station. Something small and quiet, hidden under the TV, with a wireless controller and enough horsepower for high quality retrogaming.
 

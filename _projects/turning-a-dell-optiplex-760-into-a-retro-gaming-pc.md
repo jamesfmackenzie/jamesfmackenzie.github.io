@@ -4,9 +4,9 @@ title: Turning a Dell OptiPlex 760 into a Retro Gaming PC
 date: '2026-03-29 09:00:00'
 tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 status: in progress
+hero: dell-optiplex-760.jpg
+hero_alt: Dell OptiPlex 760 tower
 ---
-
-![Dell OptiPlex 760 tower](/img/dell-optiplex-760.jpg)
 
 After the [OptiPlex 380]({% link _hardware/dell-optiplex-380.md %}) turned into such a strong multi-era retro PC, I wanted to see if the same trick would work on its newer sibling — the [OptiPlex 760]({% link _hardware/dell-optiplex-760.md %}). It didn't repeat quite as cleanly.
 

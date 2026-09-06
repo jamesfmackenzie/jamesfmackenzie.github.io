@@ -5,9 +5,8 @@ date: '2021-04-17 22:36:00:00'
 summary: 31 years after the original release, the Atari STE finally has the upgraded port it always deserved ...
 image: lotus-ste-atari-ste-comparison.jpg
 tags: [Atari ST, Posts, Retrocomputing, Retrogaming]
+hero: lotus-ste-lotus-esprit-turbo-challenge-car-atari-st.png
 ---
-
-![](/img/lotus-ste-lotus-esprit-turbo-challenge-car-atari-st.png)
 
 Some retro gaming news. Classic Atari ST racer <a href="https://en.wikipedia.org/wiki/Lotus_(video_game_series)" target="_blank">Lotus Esprit Turbo Challenge</a> has been upgraded to take full advantage of <a href="https://en.wikipedia.org/wiki/Atari_ST#STE_models" target="_blank">Atari STE hardware</a> – 31 *years* after the original release.
 

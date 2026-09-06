@@ -4,9 +4,9 @@ title: Datapath VisionAV-HD
 summary: A PCIe capture card built for video walls and broadcast, repurposed for the one job most modern capture cards can't do well — genuine legacy analog capture, from 240p up to 1080p.
 date: '2026-09-06 00:00:00'
 tags: [PC, Video Capture]
+hero: datapath-visionav-hd.jpg
+hero_alt: Datapath VisionAV-HD capture card
 ---
-
-![Datapath VisionAV-HD capture card](/img/datapath-visionav-hd.jpg)
 
 Most modern capture cards assume everything coming in is digital HDMI. That's a problem when the thing you want to capture is an SNES, a PS1, or a PS2 — genuine analog video, often in modes like 240p and 480i that budget capture hardware handles badly or not at all. Rather than buy an expensive dedicated scaler, I went looking at cards built for a completely different market.
 

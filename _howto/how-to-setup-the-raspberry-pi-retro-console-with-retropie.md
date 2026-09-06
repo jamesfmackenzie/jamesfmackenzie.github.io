@@ -5,9 +5,8 @@ date: '2018-10-08 11:54:00'
 summary: With RetroPie, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES, even PlayStation all run great and with a little extra work you can stream more taxing games from your home PC ...
 image: emulationstation.jpg
 tags: [Emulation, How To, Raspberry Pi, Retrogaming, Videogames]
+hero: retropie_logo.png
 ---
-
-![](/img/retropie_logo.png)
 
 With <a href="https://retropie.org.uk/" target="_blank">RetroPie</a>, your Raspberry Pi can become the ultimate retro-gaming machine. Mega Drive, SNES, even PlayStation all run great and with a little extra work you can stream more taxing games from your home PC
 

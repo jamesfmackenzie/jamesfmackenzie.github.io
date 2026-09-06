@@ -4,9 +4,9 @@ title: Dell Dimension E520
 summary: Hardware notes on the Dell Dimension E520 — a Core 2-era Dell tower, and what to know about it before using one for a retro build.
 date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
+hero: dell-dimension-e520.jpg
+hero_alt: Dell Dimension E520 tower
 ---
-
-![Dell Dimension E520 tower](/img/dell-dimension-e520.jpg){: width="500"}
 
 The Dell Dimension E520 is a no-frills mid-2000s home tower built around Intel's G965 platform — cheap, common, and visually unremarkable, the sort of ordinary Windows XP-era family PC that still turns up for very little. For retro use it sits right on a boundary: fast enough to brute-force a lot of late DOS and Win9x software, but new enough that those older operating systems have some quirks.
 

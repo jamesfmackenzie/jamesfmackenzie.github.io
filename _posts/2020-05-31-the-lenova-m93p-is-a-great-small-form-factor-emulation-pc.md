@@ -3,11 +3,9 @@ layout: post
 title: Lenovo M93p Tiny Review – The Best Mini PC for Emulation?
 date: '2020-05-31 00:02:30:00'
 summary: Quick thoughts on the Lenovo M93p as a small form factor retrogaming machine
-image: lenovo-m93p.jpg
 tags: [Emulation, PC, Posts, Retrogaming, Videogames]
+hero: lenovo-m93p.jpg
 ---
-
-![](/img/lenovo-m93p.jpg)
 
 In search of a thin-and-light retrogaming device, I recently purchased a <a href="https://www.lenovo.com/us/en/desktops/thinkcentre/m-series-tiny/m93-m93p/" target="_blank">Lenovo ThinkCenter M93p Tiny Desktop</a> from eBay for ~$100. The form factor looks great under a TV and the spec handily beats most Single Board Computers out there:
 

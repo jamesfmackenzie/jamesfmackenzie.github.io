@@ -4,9 +4,9 @@ title: Micomsoft SC-512N1-L/DVI
 summary: My take on the Micomsoft SC-512N1-L/DVI — a PCIe capture card that samples analog RGB cleanly enough to rebuild native-resolution retro video in software, no scaler required.
 date: '2024-08-29 11:33:00'
 tags: [PC, Video Capture]
+hero: micomsoft-sc-512n1-l-dvi-capture-card.jpg
+hero_alt: Micomsoft SC-512N1-L/DVI Capture Card
 ---
-
-![Micomsoft SC-512N1-L/DVI Capture Card](/img/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
 
 The Micomsoft SC-512N1-L/DVI is a Japanese PCIe capture card that keeps coming up in retro-video circles for one reason: it samples low-resolution analog RGB without forcing its own scaling or filtering on the way in. That makes it a good starting point if you want to reconstruct a source's exact pixel grid in software rather than let a hardware scaler make those decisions for you.
 

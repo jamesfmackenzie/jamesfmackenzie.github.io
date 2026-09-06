@@ -4,9 +4,9 @@ title: Dell OptiPlex 760
 summary: Hardware notes on the Dell OptiPlex 760 — a cheap late-Core-2 Dell that's happier under XP and DOS than Windows 98.
 date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
+hero: dell-optiplex-760.jpg
+hero_alt: Dell OptiPlex 760 tower
 ---
-
-![Dell OptiPlex 760 tower](/img/dell-optiplex-760.jpg){: width="500"}
 
 The Dell OptiPlex 760 is the kind of machine I find hard to ignore: a cheap, slightly boring office PC that looks like it might have hidden retro potential. It has some — but less than it first appears.
 

@@ -4,9 +4,9 @@ title: Porting Commander Keen to WebAssembly
 date: '2019-11-01 12:00:00'
 tags: [Programming, Projects, Retrogaming, Videogames, WebAssembly]
 status: completed
+hero: keen.png
+hero_alt: Commander Keen
 ---
-
-![Commander Keen](/img/keen.png)
 
 Status | Completed November 2019
 Goal | Port <a href="https://en.wikipedia.org/wiki/Commander_Keen" target="_blank">Commander Keen</a> to <a href="https://en.wikipedia.org/wiki/WebAssembly" target="_blank">WebAssembly</a>, making it playable in the Browser

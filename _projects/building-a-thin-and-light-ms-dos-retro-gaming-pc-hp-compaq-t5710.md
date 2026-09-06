@@ -4,9 +4,9 @@ title: Building a Thin and Light MS-DOS PC
 date: '2021-02-01 12:00:00'
 tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming]
 status: completed
+hero: hp-compaq-t5710-back.jpg
+hero_alt: HP Compaq t5710 thin client
 ---
-
-![HP Compaq t5710 thin client](/img/hp-compaq-t5710-back.jpg)
 
 After [DOS gaming on MiSTer]({% link _projects/ms-dos-gaming-on-mister-fpga-with-the-ao486-core.md %}), I was left wanting for more. The MiSTer felt underpowered, I wanted something a little faster to play Half-Life, Unreal and other Windows 98 classics.
 

@@ -4,9 +4,9 @@ title: Nintendo 64
 summary: My take on the Nintendo 64 — a console impossible to mistake for anything else, from four-player F-Zero X to finally buying one in Tokyo in 2024.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Nintendo]
+hero: nintendo-64-n64.jpg
+hero_alt: Nintendo 64 console
 ---
-
-![Nintendo 64 console](/img/nintendo-64-n64.jpg){: width="680"}
 
 The Nintendo 64 is impossible to mistake for anything else. It pushed Nintendo into 3D in a very Nintendo way — cartridge-based, controller-led, multiplayer-heavy — and the result still has an immediately recognisable personality.
 

@@ -4,9 +4,9 @@ title: Building the ITX Llama - A Brand New DOS Gaming PC
 date: '2024-09-21 12:00:00'
 tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming]
 status: in progress
+hero: itx-llama.jpg
+hero_alt: My ITX Llama, with the OPL3 module, a Raspberry Pi, a D1 Mini Wi-Fi modem, and a Noctua fan fitted
 ---
-
-![My ITX Llama, with the OPL3 module, a Raspberry Pi, a D1 Mini Wi-Fi modem, and a Noctua fan fitted](/img/itx-llama.jpg)
 
 I wanted real MS-DOS and early Windows 98 compatibility — real Sound Blaster and AdLib support, correct timing, no emulator quirks — without hunting down and babysitting an actual 30-year-old PC. The [ITX Llama]({% link _hardware/itx-llama.md %}) solves that by being brand new: an open-source motherboard built from scratch around a Vortex86EX system-on-module, purpose-designed to be period-correct DOS hardware rather than a repurposed antique.
 

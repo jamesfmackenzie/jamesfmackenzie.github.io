@@ -4,9 +4,9 @@ title: Turning a Dell Dimension E520 into a Retro Gaming PC
 date: '2026-03-30 08:00:00'
 tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 status: in progress
+hero: dell-dimension-e520.jpg
+hero_alt: Dell Dimension E520 tower
 ---
-
-![Dell Dimension E520 tower](/img/dell-dimension-e520.jpg)
 
 The [Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %}) is the home-market cousin of [the OptiPlex 760]({% link _projects/turning-a-dell-optiplex-760-into-a-retro-gaming-pc.md %}) — same Core 2 / mid-2000s Dell generation, similar retro potential, and its own separate set of quirks to work through.
 

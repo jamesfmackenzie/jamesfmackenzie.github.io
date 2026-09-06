@@ -3,11 +3,9 @@ layout: post
 title: Stream PC Games to your Raspberry Pi with GameStream and Moonlight
 date: '2018-10-08 11:54:00'
 summary: RetroPie is the perfect retrogaming experience for your living room, but the Pi doesn't have the horsepower for more recent games. Use Moonlight to stream the latest PC releases, PlayStation 2, Gamecube or Dreamcast emulation to the big screen ...
-image: moonlight.png
 tags: [How To, Raspberry Pi, Retrogaming, Videogames]
+hero: moonlight.png
 ---
-
-![](/img/moonlight.png)
 
 You already have [RetroPie running nicely on your Raspberry Pi]({% post_url 2018-10-08-ultimate-retropie-setup-guide %}). It's the perfect retrogaming experience for your living room TV, but there's one thing missing. The Pi doesn't have the horsepower for more recent games. How can you play the latest PC releases? Or perhaps you fancy some PlayStation 2, Gamecube or Dreamcast emulation on the big screen?
 

@@ -4,9 +4,9 @@ title: Building a Raspberry Pi Retrogaming Console
 date: '2018-10-01 12:00:00'
 tags: [Emulation, Projects, Raspberry Pi, Retrogaming, Videogames]
 status: completed
+hero: retropie_logo.png
+hero_alt: Retropie logo
 ---
-
-![Retropie logo](/img/retropie_logo.png)
 
 I'm a big fan of retro games, with many fond memories of the <a href="https://en.wikipedia.org/wiki/Third_generation_of_video_game_consoles" target="_blank">8-bit</a> and <a href="https://en.wikipedia.org/wiki/Fourth_generation_of_video_game_consoles" target="_blank">16-bit</a> years.
 

@@ -3,11 +3,10 @@ layout: post
 title: Mac Pro 5,1 Upgrade Guide
 summary: "Choosing a macOS version, a GPU, and an upgrade path for the classic Mac Pro 5,1 — there's no single perfect configuration, just tradeoffs."
 date: '2026-09-05 07:00:00'
-image: mac-pro-5-1.jpg
 tags: [Apple Mac, Upgrades]
+hero: mac-pro-5-1.jpg
+hero_alt: The Mac Pro 5,1 "cheese grater" tower
 ---
-
-![The Mac Pro 5,1 "cheese grater" tower](/img/mac-pro-5-1.jpg){: width="680"}
 
 I upgraded my own Mac Pro 5,1 — see [I Supercharged This Old Mac for AAA Gaming]({% post_url 2024-05-04-i-supercharged-this-old-mac-for-aaa-gaming %}) — and learned a lot along the way about the tradeoffs involved in picking an OS, a GPU, and an upgrade path. This guide collects those lessons into a general reference for the platform.
 

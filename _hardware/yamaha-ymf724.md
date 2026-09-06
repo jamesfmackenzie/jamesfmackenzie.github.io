@@ -4,9 +4,9 @@ title: Yamaha YMF724
 summary: My take on the Yamaha YMF724 — the PCI sound card I trust most for DOS compatibility, with superb XG MIDI under Windows.
 date: '2024-08-29 11:33:00'
 tags: [PC, Sound, Sound Cards, Yamaha]
+hero: yamaha-ymf724.jpg
+hero_alt: The Yamaha YMF724 card I bought — listed on eBay only as a "DCS S81X-SF CARD"
 ---
-
-![The Yamaha YMF724 card I bought — listed on eBay only as a "DCS S81X-SF CARD"](/img/yamaha-ymf724.jpg){: width="600"}
 
 The Yamaha YMF724 is one of my favourite retro-PC bargains. I found mine on eBay for `$20` in February 2022, listed only as a "DCS S81X S817 S81X-SF CARD" — the seller clearly had no idea it was a sought-after Yamaha card. I could just make out the chips in the listing photo and took the risk. It paid off: proper eBay bargains still exist if you pay attention.
 

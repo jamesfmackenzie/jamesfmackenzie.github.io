@@ -4,9 +4,9 @@ title: Sony PlayStation Vita
 summary: My take on the PlayStation Vita — one of Sony's best pieces of hardware, a commercial failure, and the handheld I ported Commander Keen to.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Sony PlayStation]
+hero: commander-keen-ps-vita.jpg
+hero_alt: My PS Vita running Clone Keen — the Commander Keen port
 ---
-
-![My PS Vita running Clone Keen — the Commander Keen port](/img/commander-keen-ps-vita.jpg){: width="680"}
 
 The PlayStation Vita is one of Sony's best pieces of hardware, full stop. It was never a big commercial success, but the device itself is excellent — sharp screen, great controls, solid build — and it became a far more interesting enthusiast platform than Sony probably intended. I've spent enough time in its homebrew scene to have [ported Commander Keen to it]({% link _projects/porting-commander-keen-to-playstation-vita.md %}).
 

@@ -4,9 +4,9 @@ title: Porting Commander Keen to PlayStation Vita
 date: '2020-02-01 12:00:00'
 tags: [Programming, Projects, Retrogaming, Sony PlayStation, Videogames]
 status: in progress
+hero: keen.png
+hero_alt: Commander Keen
 ---
-
-![Commander Keen](/img/keen.png)
 
 I've wanted to explore <a href="https://en.wikipedia.org/wiki/Cross_compiler" target="_blank">cross-compilation</a> (i.e. building code on one platform for execution on another) for a while. I'm also passionate about bringing classic retro games to a new audience.
 

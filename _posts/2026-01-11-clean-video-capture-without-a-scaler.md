@@ -5,10 +5,9 @@ date: '2026-01-11 15:10:00:00'
 summary: |-
   You don't need a RetroTINK or Framemeister to get sharp, native-resolution capture of a classic computer — with a good capture card and deliberate post-processing, you can reconstruct the original pixel grid yourself.
 tags: [Posts, Video Capture]
-image: micomsoft-sc-512n1-l-dvi-capture-card.jpg
+hero: micomsoft-sc-512n1-l-dvi-capture-card.jpg
+hero_alt: Micomsoft SC-512N1-L/DVI Capture Card
 ---
-
-![Micomsoft SC-512N1-L/DVI Capture Card](/img/micomsoft-sc-512n1-l-dvi-capture-card.jpg)
 
 Good capture of a classic computer usually means an external scaler — a RetroTINK or a Framemeister sitting in the signal chain. Those are excellent devices. But for documenting Atari ST video I wanted something a scaler doesn't really give you: the *exact* original pixel grid, reconstructed deliberately, with every scaling step under my control.
 

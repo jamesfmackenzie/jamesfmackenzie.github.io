@@ -4,10 +4,10 @@ title: Sega Saturn
 summary: My take on the Sega Saturn — awkward, complicated, overshadowed by the PlayStation, and one of the most distinctive consoles of the 1990s once you look past that.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Sega]
+hero: sega-saturn.jpg
+hero_alt: My Sega Saturn
+hero_caption: My own Saturn — a boxed Model 2 I picked up in Tokyo.
 ---
-
-![My Sega Saturn](/img/sega-saturn.jpg){: width="680"}
-*My own Saturn — a boxed Model 2 I picked up in Tokyo.*
 
 The Saturn is a console I respect more the longer I spend around retro hardware. It has the reputation everyone knows — complicated hardware, awkward to develop for, commercially buried by the PlayStation — but that's only half the story. It's also one of the most distinctive major consoles of its generation.
 

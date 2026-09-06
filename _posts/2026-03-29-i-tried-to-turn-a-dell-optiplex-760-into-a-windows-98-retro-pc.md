@@ -3,11 +3,10 @@ layout: post
 title: I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC
 date: '2026-03-29 09:00:00'
 summary: A case study on why the Dell OptiPlex 760 looked promising for Windows 98, but turned out to be much happier as an XP and DOS machine.
-image: dell-optiplex-760.jpg
 tags: [DOS, PC, Retrogaming, Windows 98, Windows XP]
+hero: dell-optiplex-760.jpg
+hero_alt: Dell OptiPlex 760 tower
 ---
-
-![Dell OptiPlex 760 tower](/img/dell-optiplex-760.jpg){: width="500"}
 
 The Dell OptiPlex 760 looked like it should be a strong all-round retro PC: cheap Core 2 hardware, PCI and PCIe expansion, decent CPU performance, and just enough legacy friendliness to make experimentation worthwhile.
 

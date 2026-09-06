@@ -4,9 +4,9 @@ title: Shooting and Sharing VR Photos
 date: '2016-11-01 12:00:00'
 tags: [Projects, VR Photography]
 status: completed
+hero: shooting-and-sharing-vr-photos.jpg
+hero_alt: VR photo of the Louvre, Paris
 ---
-
-![VR photo of the Louvre, Paris](/img/shooting-and-sharing-vr-photos.jpg)
 
 Ever seen one of <a href="https://flickr.com/photos/136386099@N02/21597873406/" target="_blank">these photos</a> where you can interactively zoom and pan around? They're known as <a href="https://en.wikipedia.org/wiki/VR_photography" target="_blank">360° or VR photos</a>.
 

@@ -3,11 +3,10 @@ layout: post
 title: "Namco NeGcon Review – The Best Controller for Racers?"
 date: '2021-12-28 12:41:00:00'
 summary: I recently acquired the unique Namco NeGcon (“neh-gee-con”) controller ...
-image: namco-negcon-controller-for-playstation-ps1.jpg
 tags: [Posts, Sony PlayStation, Retrogaming, Videogames]
+hero: namco-negcon-controller-for-playstation-ps1.jpg
+hero_alt: The Namco NeGcon — the split down the middle is the twist joint
 ---
-
-![The Namco NeGcon — the split down the middle is the twist joint](/img/namco-negcon-controller-for-playstation-ps1.jpg){: width="680"}
 
 I recently acquired a Namco NeGcon (“neh-gee-con”) controller – something I've been seeking for a while. It's a unique controller that uses a twist mechanic to simulate driving – twist left for a left turn and right for a right turn.
 

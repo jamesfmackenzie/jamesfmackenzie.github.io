@@ -4,9 +4,9 @@ title: Tokyo Retro Gaming Pickups
 summary: "<strong>On a March 2024 trip to Tokyo, I found a handful of retro gaming bargains</strong>, including a cheap Nintendo 64 bundle, a boxed Sega Saturn, Wave Race, a PocketStation, and a PS2 DVD remote."
 date: '2024-03-26 10:33:00:00'
 tags: [Retrogaming, Nintendo, Sega, Sony PlayStation, Videogames]
+hero: nintendo-64-n64.jpg
+hero_alt: Nintendo 64 console
 ---
-
-![Nintendo 64 console](/img/nintendo-64-n64.jpg)
 
 I already posted a <a href="https://twitter.com/jamesfmackenzie/status/1772633001819590946" target="_blank">thread about these pickups</a>, but there was enough here for a proper blog post too.
 

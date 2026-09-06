@@ -4,9 +4,9 @@ title: Atari ST
 summary: Personal overview of the Atari ST family and why the platform still matters for retro computing and gaming.
 date: '2024-08-29 11:33:00'
 tags: [Atari ST, Computers]
+hero: atari-st-1040stfm-transparent-bg.png
+hero_alt: Atari 1040STFM
 ---
-
-![Atari 1040STFM](/img/atari-st-1040stfm-transparent-bg.png)
 
 I received my first Atari ST in **1989**; a surplus unit from my father's business. It was a luxury (at the time!) **1 MB model — the Atari 1040STFM**, complete with the Professional software pack.
 

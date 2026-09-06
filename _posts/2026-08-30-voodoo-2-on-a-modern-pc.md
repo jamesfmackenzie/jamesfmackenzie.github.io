@@ -4,11 +4,10 @@ title: "I made 3Dfx Voodoo2 work on a modern PC!"
 date: '2026-08-30 09:00:00'
 summary: |-
   I don't have PCI slots on my Z97 motherboard anymore — so I used a cheap PCIe-to-PCI adapter to bring a 3dfx Voodoo 2 back to life inside a modern Windows 10 PC. It took a full-height mounting workaround, an unsigned x64 driver from the 3dfxzone forums, disabling Windows 10 driver signing, and a very unlikely Windows XP fix for a "trying to map memory" error — but native Glide, on real 3dfx hardware, on a 2020s PC, is real.
-image: 3dfx-voodoo-2-board.jpg
 tags: [3Dfx Voodoo, PC, Posts, Retrocomputing, Retrogaming]
+hero: 3dfx-voodoo-2-board.jpg
+hero_alt: A 3dfx Voodoo 2 board
 ---
-
-![A 3dfx Voodoo 2 board](/img/3dfx-voodoo-2-board.jpg){: width="680"}
 
 Back in 2023 I set out to get a 3dfx Voodoo 2 — a 3D accelerator from 1998 — running inside a modern Windows 10 gaming PC. It worked, it turned into a couple of popular videos, and it kicked off a surprising amount of argument in the comments. This is the full write-up of how it was done.
 

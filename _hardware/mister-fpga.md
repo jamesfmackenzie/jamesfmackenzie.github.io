@@ -4,9 +4,9 @@ title: MiSTer FPGA
 summary: My overview of MiSTer FPGA — what it actually is, why FPGA recreation beats software emulation for accuracy and latency, and the add-on boards that turn a bare dev board into a real retro platform.
 date: '2024-08-29 11:33:00'
 tags: [Computers, Consoles, Emulation, MiSTer FPGA]
+hero: mister-fpga-hardware.jpg
+hero_alt: The MiSTer's DE10-Nano board with an SDRAM add-on fitted
 ---
-
-![The MiSTer's DE10-Nano board with an SDRAM add-on fitted](/img/mister-fpga-hardware.jpg){: width="680"}
 
 MiSTer is an open project that recreates classic computers, consoles and arcade machines on modern FPGA hardware. Instead of a program *interpreting* what old hardware did, an FPGA is wired up to *behave* like that hardware at the logic level — which, done well, gets you extremely close to the real thing on timing, video and audio.
 

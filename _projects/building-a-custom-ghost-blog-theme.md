@@ -4,9 +4,9 @@ title: Building a Custom Ghost Theme
 date: '2014-06-01 12:00:00'
 tags: [Programming, Projects]
 status: completed
+hero: 8-bit-Memories.png
+hero_alt: Custom Ghost blog theme
 ---
-
-![Custom Ghost blog theme](/img/8-bit-Memories.png)
 
 Before I switched to <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>, I used the <a href="https://ghost.org/" target="_blank">Ghost</a> platform for this very site. It's a crisp, clean, lightweight blogging platform.
 

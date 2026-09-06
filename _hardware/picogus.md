@@ -4,9 +4,8 @@ title: PicoGUS
 summary: My notes on PicoGUS — a modern Raspberry Pi Pico-based ISA card that gives old DOS PCs Gravis Ultrasound and Sound Blaster audio without vintage-hardware prices.
 date: '2024-08-29 11:33:00'
 tags: [PC, Sound, Sound Cards]
+hero: picogus-2-official.jpg
 ---
-
-![](/img/picogus-2-official.jpg)
 
 {% include image-credit.html
   source_url="https://picogus.com/"

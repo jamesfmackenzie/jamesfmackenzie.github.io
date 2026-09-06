@@ -4,9 +4,9 @@ title: Building a Retro Rocket PC on the Cheap
 date: '2025-12-28 12:00:00'
 tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 status: completed
+hero: dell-optiplex-380-small.png
+hero_alt: Dell OptiPlex 380 desktop
 ---
-
-![Dell OptiPlex 380 desktop](/img/dell-optiplex-380-small.png)
 
 I wanted a retro PC that could do the full “greatest hits” tour of retro gaming: **native DOS**, **Windows 98**, and **Windows XP**. But without spending silly money, without hunting rare parts for months, and without ending up with something that’s allergic to modern conveniences like SATA.
 

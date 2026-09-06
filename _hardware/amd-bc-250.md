@@ -4,9 +4,9 @@ title: AMD BC-250
 summary: A PlayStation 5 APU sold cheap on a crypto-mining blade — Zen 2 cores, an "RDNA 1.5" GPU, and 16GB of unified memory for a fraction of what any of that would normally cost.
 date: '2026-09-06 00:00:00'
 tags: [Computers, PC]
+hero: amd-bc-250.jpg
+hero_alt: AMD BC-250 board
 ---
-
-![AMD BC-250 board](/img/amd-bc-250.jpg)
 
 The AMD BC-250 looks like an oversized graphics card with a fan bolted to the end. It's actually close to a whole PC on a card — USB ports, Ethernet, an M.2 NVMe slot — and under the heatsink is the exact same silicon as a launch-model PlayStation 5. It's the cheapest way I know of to get a PS5-class APU onto a desk, and I wanted to see what it could actually do.
 

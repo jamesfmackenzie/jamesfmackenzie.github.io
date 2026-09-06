@@ -4,9 +4,9 @@ title: TPM Modules
 summary: What I learned buying and fitting a discrete TPM module to try to get Windows 11 onto an older PC — how the headers work, which module I needed, and why it still wasn't enough.
 date: '2024-08-29 11:33:00'
 tags: [PC, Peripherals]
+hero: supermicro-tpm-module.jpg
+hero_alt: A Supermicro discrete TPM module
 ---
-
-![A Supermicro discrete TPM module](/img/supermicro-tpm-module.jpg){: width="480"}
 
 A **Trusted Platform Module** is a small security chip that handles key storage and system-integrity checks. Windows 11 requires one, which sent a lot of people — me included — rushing to buy a discrete module for an older motherboard.
 
