@@ -7,6 +7,8 @@ image: fixing-a-radeon-x800-xl-fan-bearing.jpg
 tags: [ATi Graphics, GPU, PC, Posts, Repairs, Retrocomputing]
 ---
 
+![A Radeon X800 XL with its stock ATI cooler](/img/posts/ati-radeon-x800-xl.jpg){: width="680"}
+
 I picked up a [Radeon X800 XL]({% link _hardware/ati-radeon-x800-xl.md %}) cheap and untested. The reason it was cheap became obvious the moment I powered it on: the fan bearing had seized, and it was screaming. The card wasn't usable until it was sorted.
 
 What followed was three attempts at a fix, each better than the last.
