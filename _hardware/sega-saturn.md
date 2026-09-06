@@ -6,7 +6,8 @@ date: '2024-08-29 11:33:00'
 tags: [Consoles, Sega]
 ---
 
-![Sega Saturn console](/img/sega-saturn-console.jpg){: width="680"}
+![My Sega Saturn](/img/sega-saturn.jpg){: width="680"}
+*My own Saturn — a boxed Model 2 I picked up in Tokyo.*
 
 The Saturn is a console I respect more the longer I spend around retro hardware. It has the reputation everyone knows — complicated hardware, awkward to develop for, commercially buried by the PlayStation — but that's only half the story. It's also one of the most distinctive major consoles of its generation.
 
@@ -33,3 +34,4 @@ The 2D presentation and sprite work are superb — this is where the Saturn genu
 ### Related on this site
 
 - [Sega Dreamcast]({% link _hardware/sega-dreamcast.md %})
+- [Tokyo Retro Gaming Pickups]({% link _posts/2024-03-26-tokyo-retro-gaming-pickups.md %}) — where this Saturn came from
