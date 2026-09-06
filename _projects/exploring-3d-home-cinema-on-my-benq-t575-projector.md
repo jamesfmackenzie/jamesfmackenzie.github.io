@@ -12,16 +12,11 @@ I recently bought a new projector — the **BenQ TH575** — mainly for movie ni
 
 ![Projector menu showing 3D option](/img/posts/benq-th575-projector-supports-3d-thin.jpg)
 
-Wait… 3D?
-
-As in shutter-glasses 3D? On a 2025 projector?
-
-I had to learn more!
-
+A 2025 projector with shutter-glasses 3D support wasn't something I expected to find. I wanted to know how well it actually worked, and how much extra hardware it would take to get there.
 
 ### Project Notes
 
-Project Status | In-Progress
+Status | In progress
 Goal | Learn more about the 3D capabilities of my <a href="https://www.benq.com/en-us/projector/cinema/th575.html" target="_blank">BenQ projector</a>.
 
 After <a href="https://esupportdownload.benq.com/esupport/PROJECTOR/UserManual/TH575/TH575_UM_EN_220830165100.pdf" target="_blank">consulting the docs</a>, I discovered that:
@@ -35,7 +30,7 @@ Find the full write up here:
 
 - [I Accidentally Turned My Projector Into a 3D Cinema]({% post_url 2025-11-23-how-to-watch-3d-movies-on-a-benq-th575-projector %}) - Nov 23, 2025
 
-Next up, I plan to try <a href="https://en.wikipedia.org/wiki/Nvidia_3D_Vision" target="_blank">3D gaming<a/>.
+Next up, I plan to try <a href="https://en.wikipedia.org/wiki/Nvidia_3D_Vision" target="_blank">3D gaming</a>.
 
 The project continues!
 
