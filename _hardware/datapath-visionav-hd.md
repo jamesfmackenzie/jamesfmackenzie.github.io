@@ -35,6 +35,7 @@ Mine, like most on the secondhand market, arrived without its PCIe bracket — t
 
 ### Related on this site
 
+- "Finding the Best Capture Card for Analog Video" — my full writeup on choosing this card (drafted, not yet published — update this to a real link once it's out)
 - [Micomsoft SC-512N1-L/DVI]({% link _hardware/micomsoft-sc-512-n1-l-dvi-pci-e-capture-card.md %})
 - [Capturing Native-Resolution Video Without a Scaler]({% post_url 2026-01-11-clean-video-capture-without-a-scaler %})
 - [Gran Turismo 3 in ULTRA WIDESCREEN (3 PS2s, 3 Screens!)]({% post_url 2025-03-08-gran-turismo-in-ultra-widescreen-triple-screen %})

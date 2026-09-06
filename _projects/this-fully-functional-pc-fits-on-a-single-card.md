@@ -13,17 +13,18 @@ Industrial PCs work backwards from a normal desktop: instead of a motherboard wi
 Status | Completed
 Goal | Turn an industrial PICMG single-board computer into a working DOS/Windows 98 retro gaming PC.
 
-The board is a MiTAC MSC-373 — a 440BX-chipset, Socket 370 Pentium III single-board computer — paired with an MBP-PCI6R-ATX backplane (4 ISA slots, 3 PCI slots, two of them wired for the PICMG connector the SBC plugs into). With no documentation for the backplane to go on, getting it powered up at all took some jumper guesswork (ATX vs AT power selection) and finding the bare power-switch header to short by hand.
+The board is a [MiTAC MSC-373]({% link _hardware/mitac-msc-373.md %}) — a 440BX-chipset, Socket 370 Pentium III single-board computer, paired with a PICMG backplane that has no documentation of its own, so getting it powered up at all took some intuition. Full board and backplane details live on the hardware page.
 
-Once running, it turned out to be a genuinely capable little PC: DOS booted straight up with 64MB of RAM, Sound Blaster Pro-compatible audio from an ISA sound/modem combo card handled FM and PCM fine across Keen 4, Jazz Jackrabbit, and Tyrian, and DOSBench-measured Doom/Quake performance was strong enough to push into SVGA Duke Nukem 3D territory. Windows 98 installed cleanly too — the onboard Chips & Technologies B69000 graphics chip is predictably weak (no Direct3D acceleration at all), but adding a [3dfx Voodoo 3]({% link _hardware/3dfx-voodoo-3.md %}) fixed that completely, running 3DMark and Quake II under Direct3D/OpenGL, Unreal via Glide, and even a Glide-patched copy of Tomb Raider straight from DOS.
+Once running, it turned out to be a genuinely capable little PC — solid DOS performance and sound, a smooth Windows 98 install, and a [3dfx Voodoo 3]({% link _hardware/3dfx-voodoo-3.md %}) upgrade to fix the onboard graphics chip's complete lack of Direct3D acceleration. The full build, testing, and benchmark story is in the writeup below.
 
 Overall, a clean success — an industrial board with no gaming pedigree turned into a fully functional retro PC, with the added bonus that swapping the single-board "card" out is the whole upgrade path: the same backplane and peripherals could just as easily host a 386, 486, or a much faster Pentium 4-class SBC.
 
 More details:
 
+- [MiTAC MSC-373 hardware page]({% link _hardware/mitac-msc-373.md %})
 - [3dfx Voodoo 3 hardware page]({% link _hardware/3dfx-voodoo-3.md %})
+- "This Fully Functional PC Fits on a Single Card" — full writeup (drafted, not yet published — update this to a real link once it's out)
 - [MiTAC MSC-373 board reference (TheRetroWeb)](https://theretroweb.com/motherboards/s/mitac-trigon-msc-373)
-- [This Fully Functional PC Fits on a Single Card!]({% post_url 2024-10-05-this-fully-function-pc-fits-on-a-single-card-pentium-iii-sbc %})
 
 And also in video form below. Enjoy!
 
