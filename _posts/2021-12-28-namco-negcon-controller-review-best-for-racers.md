@@ -7,6 +7,8 @@ image: namco-negcon-controller-for-playstation-ps1.jpg
 tags: [Posts, Sony PlayStation, Retrogaming, Videogames]
 ---
 
+![The Namco NeGcon — the split down the middle is the twist joint](/img/posts/namco-negcon-controller-for-playstation-ps1.jpg){: width="680"}
+
 I recently acquired a Namco NeGcon (“neh-gee-con”) controller – something I've been seeking for a while. It's a unique controller that uses a twist mechanic to simulate driving – twist left for a left turn and right for a right turn.
 
 It also has analog buttons designed for fine control over accelerate or break, making it PlayStation's first analog gamepad. There are forty supported games – thirty-six on PlayStation 1 and four on PlayStation 2. Learn more below!
@@ -46,6 +48,8 @@ Skipping forward in time to year 2000 and the launch of PlayStation 2, NeGcon wa
 ### Conclusion
 
 Looking back I really like this controller – it harks back to an era when there was still experimentation with controller design. In some ways it's better than what we have today. If you can get one for cheap it's definitely worth picking up this one-of-a-kind controller.
+
+For the quick-reference version — the twist mechanic, the missing buttons, the supported-games situation — see the [Namco NeGcon]({% link _hardware/namco-negcon.md %}) hardware page.
 
 ### Watch on YouTube
 
