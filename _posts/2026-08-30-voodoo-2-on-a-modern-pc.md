@@ -7,8 +7,6 @@ summary: |-
 tags: [3Dfx Voodoo, PC, Posts, Retrocomputing, Retrogaming]
 ---
 
-<!-- TODO: hero image — grab a still from the main video, e.g. the Voodoo mounted horizontally in the case -->
-
 Back in 2023 I set out to get a 3dfx Voodoo 2 — a 3D accelerator from 1998 — running inside a modern Windows 10 gaming PC. It worked, it turned into a couple of popular videos, and it kicked off a surprising amount of argument in the comments. This is the full write-up of how it was done.
 
 It started with [Robert Krause's write-up](https://robertkrau.se/blog/3dfx-voodoo-2-with-windows-10/) of getting a 3dfx Voodoo 2 working on his Windows 10 PC (an i7-4790K). He had one advantage I didn't: his motherboard still had a legacy PCI slot.
@@ -22,8 +20,6 @@ Enter a cheap PCI-to-PCIe adapter card. In theory, it lets a PCI card like the V
 In practice, there was an immediate physical problem: the Voodoo 2 is a **full-height card**, and mounted the normal way through the adapter it was simply too tall for the case.
 
 The fix was to mount it **horizontally** instead, using a PCI Express extension/riser cable to get it into position. After some fiddling, the Voodoo ended up sitting in an extra expansion slot just above the PCIe slots — with just enough clearance left over to route a VGA cable through the gap to the card.
-
-<!-- TODO: photo of the horizontal mounting from the back of the case -->
 
 Since the Voodoo 2 needs a pass-through connection from a primary 2D card, and this system's actual primary GPU is a GeForce GTX, there was a choice to make about how the two cards would share the monitor — more on that below, since it turned out to be the single most contentious part of the whole project as far as viewers were concerned.
 
@@ -50,8 +46,6 @@ It failed immediately, with the error:
 More digging on 3dfxzone turned up [another fix](https://www.3dfxzone.it/enboard/index.php?topic=644) — this time intended for the map-mem error on **Windows 2000 and Windows XP**. Not exactly a promising lineage for a Windows 10 machine, but I downloaded the XP version anyway and applied it.
 
 It worked. I genuinely wasn't expecting it to.
-
-<!-- TODO: screenshot of the Donut demo actually running -->
 
 ### Native Glide, on a 2020s PC
 
@@ -80,8 +74,6 @@ The reaction to the first video was big enough to justify a dedicated follow-up,
 7. **Need for Speed 2** — a surprise request, but a good one: nice textures and shading, a great frame rate, and a more arcade-y feel than the original NFS.
 8. **Half-Life** — still holds up. Runs great, and the lighting/particle work looks good despite the low-poly character models.
 9. **Unreal** — by far the single most-requested game. Genuinely nostalgic: the crashed-prison-ship intro, the water effects, that first open vista. Still looks amazing today.
-
-<!-- TODO: pick a couple of the best in-game screenshots from the FAQ video for this section -->
 
 ### Watch on YouTube
 
