@@ -4,7 +4,7 @@ title: ATi Graphics Solution SR
 summary: My take on the ATI Graphics Solution SR, a 1987 graphics card with a neat trick — playing CGA games on a monochrome MDA monitor.
 date: '2025-08-19 18:47:00'
 tags: [ATi Graphics, Graphics Cards, PC]
-hero: ati-graphics-solution-sr.png
+hero: ati-graphics-solution-sr.jpg
 hero_alt: ATI Graphics Solution SR
 ---
 

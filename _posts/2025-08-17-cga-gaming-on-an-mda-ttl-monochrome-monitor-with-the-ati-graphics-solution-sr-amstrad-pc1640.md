@@ -70,7 +70,7 @@ So far as I can tell, this is (almost!) a unique feature — the only other card
 
 As a next step, I’m trying to buy an EGA Wonder. This should achieve the same graphics emulation support as the Graphics Solution SR — but this time with **EGA** colour mode. Wish me luck!
 
-![ATI Graphics Solution SR](/img/ati-graphics-solution-sr.png)
+![ATI Graphics Solution SR](/img/ati-graphics-solution-sr.jpg)
 
 
 ### Further Reading

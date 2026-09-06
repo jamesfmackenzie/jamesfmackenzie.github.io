@@ -4,7 +4,7 @@ title: Sega Dreamcast
 summary: My take on the Sega Dreamcast — Sega's brilliant last console, picked up for $12 from a Hong Kong roadside, and still one of the easiest classic systems to recommend.
 date: '2024-08-29 11:33:00'
 tags: [Consoles, Sega]
-hero: sega-dreamcast.png
+hero: sega-dreamcast.jpg
 hero_alt: Sega Dreamcast console
 ---
 

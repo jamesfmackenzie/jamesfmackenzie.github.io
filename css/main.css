@@ -222,7 +222,7 @@ aside p {
   font-size: 1.1rem;
 }
 
-/* hero image — frameless, sits on the ground, runs wider than the text */
+/* hero image — frameless, sits on the ground */
 .hero {
   margin: 1.9rem 0 0;
 }
@@ -230,7 +230,7 @@ aside p {
 .hero img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: min(40rem, 100%);   /* consistent presence; small source art isn't blown up past this */
   height: auto;
   border: 0;
   border-radius: 0;

@@ -4,7 +4,7 @@ title: Building a Retro Rocket PC on the Cheap
 date: '2025-12-28 12:00:00'
 tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 status: completed
-hero: dell-optiplex-380-small.png
+hero: dell-optiplex-380-small.jpg
 hero_alt: Dell OptiPlex 380 desktop
 ---
 

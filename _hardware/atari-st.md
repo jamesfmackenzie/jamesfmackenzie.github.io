@@ -4,7 +4,7 @@ title: Atari ST
 summary: Personal overview of the Atari ST family and why the platform still matters for retro computing and gaming.
 date: '2024-08-29 11:33:00'
 tags: [Atari ST, Computers]
-hero: atari-st-1040stfm-transparent-bg.png
+hero: atari-st-1040stfm-transparent-bg.jpg
 hero_alt: Atari 1040STFM
 ---
 

@@ -4,11 +4,11 @@ title: "The Ugly Dell That Became My Dream Retro Gaming PC"
 date: '2025-12-28 11:22:00:00'
 summary: |-
   I wanted a retro PC that could do the full “greatest hits” tour of retro gaming: **native DOS**, **Windows 98**, and **Windows XP** — without spending silly money, without hunting rare parts for months, and without ending up with something that’s allergic to modern conveniences like SATA.
-image: dell-optiplex-380-small.png
+image: dell-optiplex-380-small.jpg
 tags: [MS-DOS, PC, Posts, Retrocomputing, Retrogaming, Windows 98, Windows XP]
 ---
 
-![Dell OptiPlex 380 desktop](/img/dell-optiplex-380-small.png)
+![Dell OptiPlex 380 desktop](/img/dell-optiplex-380-small.jpg)
 
 *<center>Yes, it’s a Dell… but let’s not judge a book by its greige cover.</center>*
 

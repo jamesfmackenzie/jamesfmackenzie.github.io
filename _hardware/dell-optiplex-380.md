@@ -4,7 +4,7 @@ title: Dell OptiPlex 380
 summary: Hardware notes on the Dell OptiPlex 380 — a cheap Core 2-era Dell that covers DOS, Windows 98, and Windows XP unusually well.
 date: '2025-12-29 10:30:00'
 tags: [Computers, PC]
-hero: dell-optiplex-380-small.png
+hero: dell-optiplex-380-small.jpg
 ---
 
 The Dell OptiPlex 380 is an unassuming late-2000s business desktop, and it's become one of my favourite cheap retro PC bases. It's common, dirt cheap on the second-hand market, and just old enough to keep the legacy I/O that makes DOS and Windows 98 livable — while being fast enough to crush anything from that era.
