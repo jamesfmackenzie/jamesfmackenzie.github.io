@@ -277,6 +277,11 @@ article img {
   margin-top: 2em;
 }
 
+/* keep images that have no explicit width from filling the whole column */
+.single-post article img:not([width]) {
+  max-width: min(700px, 100%);
+}
+
 /* h2 was previously hidden; render it at h3 size for now */
 .single-post article h2 {
   font-size: 1.17em;
