@@ -217,6 +217,10 @@ body>header a:hover {
   line-height: 1.4em;
 }
 
+.post-list article img {
+  max-width: 600px;
+}
+
 /* end post-list styles */
 
 
