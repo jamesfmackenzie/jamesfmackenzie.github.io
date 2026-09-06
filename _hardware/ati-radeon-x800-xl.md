@@ -72,7 +72,7 @@ Many surviving examples are cheap because they arrive with:
 
 That is exactly what happened with my own card. It was inexpensive, but the fan was seized and making an awful grinding noise — sorting it out took [three attempts]({% post_url 2026-09-03-fixing-fan-noise-on-a-radeon-x800-xl %}), ending with an aftermarket cooler.
 
-![The seized stock fan, mid-repair](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg)
+![The seized stock fan, mid-repair](/img/posts/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="680"}
 
 That kind of age-related maintenance is now just part of owning hardware from this era.
 

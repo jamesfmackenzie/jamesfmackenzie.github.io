@@ -3,8 +3,11 @@ layout: post
 title: I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC
 date: '2026-03-30 08:00:00'
 summary: A case-study post on why the Dell Dimension E520 looked promising for Windows 98, but turned into a more mixed DOS, Win98, and XP experiment.
+image: dell-dimension-e520.jpg
 tags: [DOS, PC, Retrogaming, Windows 98, Windows XP]
 ---
+
+![Dell Dimension E520 tower](/img/posts/dell-dimension-e520.jpg){: width="500"}
 
 The Dell Dimension E520 looked like it should be a good retro sleeper build: cheap Core 2-era hardware, PCI and PCIe expansion, a BIOS RAM-limiting option for Windows 98 setup, and just enough weirdness to make it interesting.
 
@@ -29,9 +32,10 @@ My specific machine is based on:
 - **Memory:** 3GB DDR2 RAM
 - **Audio:** Intel HD Audio with a Sigmatel codec
 
-![](/img/posts/dell-dimension-e520-bios-processor-info.jpg)
-
-![](/img/posts/dell-dimension-e520-bios-memory-info.jpg)
+<div class="image-row">
+  <img src="/img/posts/dell-dimension-e520-bios-processor-info.jpg" alt="E520 BIOS screen showing the Core 2 Duo E4300">
+  <img src="/img/posts/dell-dimension-e520-bios-memory-info.jpg" alt="E520 BIOS screen showing 3GB of DDR2">
+</div>
 
 ## Why I Thought It Might Work
 
@@ -59,7 +63,7 @@ The pieces I needed were the **rloew SATA patch**, optionally **PATCHMEM**, and 
 
 That was enough to get Windows 98 onto the machine, but not enough to make it comfortable.
 
-![](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg)
+![The BIOS "OS Install" option, which caps RAM at 256MB](/img/posts/dell-dimension-e520-bios-memory-limiting-option.jpg){: width="620"}
 
 ## The Big Problem: Disk Access Was Unstable
 
@@ -83,7 +87,7 @@ Radeon **X600** and **X700** cards were unstable under Catalyst on this machine.
 
 That makes the E520 a useful reminder that a "supported" late Win98 GPU is not always a stable one once PCIe and newer Intel chipsets enter the picture.
 
-![](/img/posts/dell-dimension-e520-windows-98-using-the-vbe-driver-as-a-fallback.jpg)
+![Windows 98 running on the VBEMP display driver as a fallback](/img/posts/dell-dimension-e520-windows-98-using-the-vbe-driver-as-a-fallback.jpg){: width="620"}
 
 ## The Good News: Voodoo 2 Looked Much Better
 
@@ -93,7 +97,7 @@ That is a big point in the E520's favour. A hybrid setup with VBE for 2D and Voo
 
 I got a **3DMark 99 Max score of 4796** with the Voodoo 2 installed — a good sign the hybrid approach is more than just theoretically workable.
 
-![](/img/posts/dell-dimension-e520-windows-98-3dmark-99-max-score-with-voodoo-2.jpg)
+![3DMark 99 Max scoring 4796 with the Voodoo 2 installed](/img/posts/dell-dimension-e520-windows-98-3dmark-99-max-score-with-voodoo-2.jpg){: width="620"}
 
 ## DOS
 
@@ -110,7 +114,7 @@ Sound is also more of a workaround story than a clean period-correct one, but **
 
 Even without a lot of polishing, though, the machine already looked fast and interesting for software-rendered DOS games.
 
-![](/img/posts/dell-dimension-e520-doom-running-in-dos-mode.jpg)
+![Doom running in native DOS mode on the E520](/img/posts/dell-dimension-e520-doom-running-in-dos-mode.jpg){: width="620"}
 
 ## Windows XP
 
