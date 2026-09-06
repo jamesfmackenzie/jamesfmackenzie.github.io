@@ -37,5 +37,4 @@ The mt32-pi and MiSTer projects collaborated on a direct cabling solution: a sin
 
 - [PI-MIDI Review – Supercharge your mt32-pi]({% post_url 2022-06-04-pi-midi-review-supercharge-your-mt32-mt-32-pi %})
 - [Get the Best MS-DOS Audio With mt32-pi]({% link _howto/how-to-setup-mt32-pi.md %})
-- [Adding a Raspberry Pi to the ITX Llama for a Roland MT-32 supercharge]({% post_url 2024-09-21-adding-raspberry-pi-to-the-itx-llama-for-a-roland-mt32-sonic-supercharge %})
 - [DreamBlaster X2GS]({% link _hardware/dreamblaster-x2gs.md %})
