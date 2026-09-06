@@ -6,6 +6,8 @@ tags: [MS-DOS, PC, Projects, Retrocomputing, Retrogaming]
 status: in progress
 ---
 
+![My ITX Llama, with the OPL3 module, a Raspberry Pi, a D1 Mini Wi-Fi modem, and a Noctua fan fitted](/img/hardware/itx-llama.jpg)
+
 I wanted real MS-DOS and early Windows 98 compatibility — real Sound Blaster and AdLib support, correct timing, no emulator quirks — without hunting down and babysitting an actual 30-year-old PC. The [ITX Llama]({% link _hardware/itx-llama.md %}) solves that by being brand new: an open-source motherboard built from scratch around a Vortex86EX system-on-module, purpose-designed to be period-correct DOS hardware rather than a repurposed antique.
 
 ### Project Notes
@@ -17,7 +19,7 @@ Picked up a board through one of the project's community group buys (it isn't so
 
 Full board details — specs, audio options, the AGP slot's real electrical behaviour — live on the [ITX Llama hardware page]({% link _hardware/itx-llama.md %}).
 
-**Still to come**: Windows 98 gaming performance (GL Quake, Quake 3), and swapping in a [3Dfx Velocity 100]({% link _hardware/3dfx-voodoo-velocity-100.md %}) — the OEM Voodoo-3-in-disguise card — as a more period-appropriate GPU than the Radeon.
+**Still to come**: Windows 98 gaming performance (GL Quake, Quake 3), swapping in a [3Dfx Velocity 100]({% link _hardware/3dfx-voodoo-velocity-100.md %}) — the OEM Voodoo-3-in-disguise card — as a more period-appropriate GPU than the Radeon, and moving the build into a newly-bought SilverStone SG13B mini-ITX case.
 
 More details:
 
