@@ -46,11 +46,11 @@ I also tried a Japanese Super Mario World cartridge — this particular SNES has
 
 ![A Japanese Super Mario World cartridge running on the same setup](/img/retrotink-snes-super-mario-world-jp.jpg)
 
-### What I still don't know
+### No sync separator, no scaler
 
-I'm genuinely not sure yet whether this worked *because* I already had a sync separator somewhere in the chain, or whether the RL2455HM turns out to be more forgiving about combined sync than the documented setup assumes. That's worth pinning down properly before I call this a clean, repeatable result — I'll update this once I've confirmed exactly what was in the signal path.
+To be clear about exactly what's in the chain, because it's the whole surprise: **SNES → RetroTINK dongle → monitor**, direct. No SyncStrike, no sync separator, no scaler anywhere in between. The RL2455HM is just more forgiving about composite sync on its VGA input than the documented setup assumes — it doesn't need pin 14 driven at all.
 
-Either way: a $20-ish dongle, a monitor most people wouldn't think twice about, and a "we'll see" that actually paid off.
+A $20-ish dongle, a monitor most people wouldn't think twice about, and a "we'll see" that actually paid off.
 
 ### Related on this site
 
