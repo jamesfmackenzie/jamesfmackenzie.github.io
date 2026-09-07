@@ -567,9 +567,12 @@ footer .social-buttons a:hover {
 }
 
 .youtube-container {
+  /* aspect-ratio (not the old padding-bottom hack) so the ratio is based on
+     this element's own max-width-constrained size, not its wider parent's —
+     the padding-bottom trick resolves percentages against the containing
+     block and was rendering a too-tall, non-16:9 box once max-width narrowed it */
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  aspect-ratio: 16 / 9;
   max-width: min(var(--wide), 100%);
   margin: 1.8rem 0;
 }
