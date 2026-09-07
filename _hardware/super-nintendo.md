@@ -34,3 +34,4 @@ The library is the whole case: platformers, JRPGs, and Nintendo's own first-part
 ### Related on this site
 
 - [I Just Wanted to Power My PAL SNES in America…]({% post_url 2026-09-06-i-just-wanted-to-power-my-pal-snes-in-america %}) — a reverse-polarity power supply and a stealth region-free mod
+- [Plugging a SNES Directly Into a VGA Monitor Actually Works]({% post_url 2026-09-06-plugging-a-snes-directly-into-a-vga-monitor %})
