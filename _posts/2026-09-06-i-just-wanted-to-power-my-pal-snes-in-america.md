@@ -5,7 +5,7 @@ summary: |-
   A "PAL" SNES that wouldn't power on turned into a teardown revealing a Japanese Super Famicom motherboard hiding under a European shell, a reverse-polarity power supply, and a stealth region-free mod wired into the RESET button.
 date: '2026-09-06 23:00:00'
 image: pal-snes-exterior-top.jpg
-tags: [Nintendo, Repairs, Retrogaming]
+tags: [Nintendo, Retrogaming]
 ---
 
 Moving from the UK to the US creates a few predictable problems for someone who has accumulated old computers and consoles. Plugs are different. Mains voltage is different. Power supplies that sat unnoticed behind a television for years suddenly become objects requiring actual thought.
