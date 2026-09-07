@@ -3,7 +3,7 @@ layout: post
 title: Creative Labs Sound Blaster Live!
 summary: My take on the Sound Blaster Live! — a strong Windows card, a compromised DOS card, and a handy SBEMU target on machines too modern for real DOS audio.
 date: '2024-08-29 11:33:00'
-tags: [Creative Labs, PC, Sound, Sound Cards]
+tags: [PC, Sound, Sound Cards]
 hero: creative-labs-sound-blaster-live-value-ct4670.jpg
 hero_alt: Creative Sound Blaster Live! Value (CT4670)
 ---

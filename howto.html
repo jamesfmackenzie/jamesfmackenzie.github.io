@@ -4,7 +4,12 @@ title: Guides
 description: Paying it forward. I've written up my learnings as guides and tutorials. I try to keep them up-to-date — hope you find them useful!
 ---
 
-<h3>Atari ST</h3>
+<p class="jump-links">
+{% assign cats = "Atari ST,MiSTer FPGA,MIDI,MS-DOS,Programming,Raspberry Pi,Videogames,VR Photography,Windows 98,Windows XP" | split: "," %}
+{% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
+</p>
+
+<h3 id="{{ "Atari ST" | slugify }}">Atari ST</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -18,7 +23,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>MiSTer FPGA</h3>
+<h3 id="mister-fpga">MiSTer FPGA</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -32,7 +37,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>MIDI</h3>
+<h3 id="midi">MIDI</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -46,7 +51,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>MS-DOS</h3>
+<h3 id="ms-dos">MS-DOS</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -60,7 +65,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>Programming</h3>
+<h3 id="programming">Programming</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -74,7 +79,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>Raspberry Pi</h3>
+<h3 id="raspberry-pi">Raspberry Pi</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -88,7 +93,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>Videogames</h3>
+<h3 id="videogames">Videogames</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -102,7 +107,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>VR Photography</h3>
+<h3 id="vr-photography">VR Photography</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -116,7 +121,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>Windows 98</h3>
+<h3 id="windows-98">Windows 98</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}
@@ -130,7 +135,7 @@ description: Paying it forward. I've written up my learnings as guides and tutor
 </ul>
 
 
-<h3>Windows XP</h3>
+<h3 id="windows-xp">Windows XP</h3>
 
 <ul>
   {% assign list = site.howto | sort_natural: "title" %}

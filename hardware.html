@@ -4,7 +4,12 @@ title: Hardware
 description: All my favourite hardware in one place. I’ve been lucky enough to collect these magnificent machines and peripherals over many years — and I’ve condensed my thoughts, findings, and feelings into these pages. Enjoy!
 ---
 
-<h3>Computers</h3>
+<p class="jump-links">
+{% assign cats = "Computers,Consoles,Graphics Cards,MIDI,MiSTer FPGA,Monitors,Peripherals,Sound Cards,Storage Devices,Video Capture" | split: "," %}
+{% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
+</p>
+
+<h3 id="{{ "Computers" | slugify }}">Computers</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -17,7 +22,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>Consoles</h3>
+<h3 id="consoles">Consoles</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -31,7 +36,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
 </ul>
 
 
-<h3>Graphics Cards</h3>
+<h3 id="graphics-cards">Graphics Cards</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -44,7 +49,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>MIDI</h3>
+<h3 id="midi">MIDI</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -57,7 +62,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>MiSTer FPGA</h3>
+<h3 id="mister-fpga">MiSTer FPGA</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -70,7 +75,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>Monitors</h3>
+<h3 id="monitors">Monitors</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -99,7 +104,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
 -->
 
 
-<h3>Peripherals</h3>
+<h3 id="peripherals">Peripherals</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -112,7 +117,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>Sound Cards</h3>
+<h3 id="sound-cards">Sound Cards</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -125,7 +130,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>Storage Devices</h3>
+<h3 id="storage-devices">Storage Devices</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
@@ -138,7 +143,7 @@ description: All my favourite hardware in one place. I’ve been lucky enough to
   {% endfor %}
 </ul>
 
-<h3>Video Capture</h3>
+<h3 id="video-capture">Video Capture</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}

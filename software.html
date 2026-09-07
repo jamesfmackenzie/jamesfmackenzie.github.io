@@ -4,7 +4,12 @@ title: Software
 description: Games, utilities, applications — my go-to software for vintage consoles and computers. Browse the library and rediscover the software that defined the golden age of computing — along with some modern gems!
 ---
 
-<h3>3D Benchmarks</h3>
+<p class="jump-links">
+{% assign cats = "3D Benchmarks,MIDI Synthesizers,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
+{% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
+</p>
+
+<h3 id="{{ "3D Benchmarks" | slugify }}">3D Benchmarks</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
@@ -18,7 +23,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>MIDI Synthesizers</h3>
+<h3 id="midi-synthesizers">MIDI Synthesizers</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
@@ -32,7 +37,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>MiSTer FPGA Cores</h3>
+<h3 id="mister-fpga-cores">MiSTer FPGA Cores</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
@@ -46,7 +51,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>Operating Systems</h3>
+<h3 id="operating-systems">Operating Systems</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
@@ -60,7 +65,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>Programming</h3>
+<h3 id="programming">Programming</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
@@ -74,7 +79,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>Utilities</h3>
+<h3 id="utilities">Utilities</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
@@ -88,7 +93,7 @@ description: Games, utilities, applications — my go-to software for vintage co
 </ul>
 
 
-<h3>Videogames</h3>
+<h3 id="videogames">Videogames</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
