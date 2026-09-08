@@ -38,4 +38,5 @@ It's one of the few consoles from that era that can still look genuinely modern 
 ### Related on this site
 
 - [This roadside Dreamcast needed a home. Snagged it for $12!]({% post_url 2025-03-25-i-found-a-sega-dreamcast-by-the-roadside %})
+- [Fixing a Broken Dreamcast Controller]({% post_url 2026-09-08-fix-broken-dreamcast-controller %})
 - [Sega Saturn]({% link _hardware/sega-saturn.md %})
