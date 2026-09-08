@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Finding the Best Capture Card for Analog Video
+date: '2026-09-08 13:59:00'
 summary: Why I went looking for a capture card built for video walls and broadcast, rather than retro gaming — and ended up with a pair of Datapath VisionAV-HD cards.
 tags: [PC, Retrogaming, Video Capture]
 ---

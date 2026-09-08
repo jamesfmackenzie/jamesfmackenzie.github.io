@@ -24,6 +24,7 @@ I later did the same thing with Gran Turismo 5 on three PlayStation 3s — see [
 More details:
 
 - [Datapath VisionAV-HD hardware page]({% link _hardware/datapath-visionav-hd.md %})
+- [Finding the Best Capture Card for Analog Video]({% post_url 2026-09-08-finding-the-best-capture-card-for-analog-video %})
 - ["3 PlayStation 2s, 3 Screens" tweet]({% post_url 2025-03-08-three-playstation-2-three-copies-of-gran-turismo-3-one-awesome-experience %})
 
 And also in video form below. Enjoy!
