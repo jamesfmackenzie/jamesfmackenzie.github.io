@@ -4,9 +4,9 @@ title: Finding the Best Capture Card for Analog Video
 date: '2026-09-08 13:59:00'
 summary: Why I went looking for a capture card built for video walls and broadcast, rather than retro gaming — and ended up with a pair of Datapath VisionAV-HD cards.
 tags: [PC, Retrogaming, Video Capture]
+hero: datapath-visionav-hd.jpg
+hero_alt: Datapath VisionAV-HD capture card
 ---
-
-![Datapath VisionAV-HD capture card](/img/datapath-visionav-hd.jpg)
 
 I wanted a way to capture video from old analog consoles — SNES, PlayStation, PS2, that whole era — and from PCs too, without landing on either side of a bad tradeoff: an expensive dedicated scaler, or a cheap modern capture card that only understands digital HDMI. What I actually needed was the best of both eras in one device: real support for legacy analog modes (VGA, SVGA, 240p, 480i, 480p) alongside the more modern digital ones (720p, 1080i, 1080p).
 
