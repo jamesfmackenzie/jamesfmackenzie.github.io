@@ -37,3 +37,8 @@ Plugged it into a real GameCube, into the BenQ monitor, and loaded up Super Mari
 ![A wider shot showing accurate colour across the whole scene](/img/gamecube-vga-mario-sunshine-clean-colour.jpg)
 
 A snapped wire is about as boring a fault as electronics gets. But this is a cable I can't buy again — whatever it started life as, it isn't for sale anywhere — so it was worth the ugly repair to keep it working rather than let a two-inch length of copper end its life.
+
+### Related on this site
+
+- [Nintendo GameCube]({% link _hardware/nintendo-gamecube.md %})
+- [Installing a GC Loader Optical Drive Emulator in My GameCube]({% post_url 2026-09-13-installing-a-gc-loader-in-my-gamecube %})
