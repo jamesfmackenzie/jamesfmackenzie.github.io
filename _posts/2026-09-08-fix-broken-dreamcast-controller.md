@@ -13,7 +13,7 @@ My second Dreamcast controller stopped working. Comparing it against a known-goo
 
 While looking into it, I came across [a Dreamcast controller restoration video](https://youtu.be/6n1yZ5k4TV0) that pointed toward the fix — rather than trying to coax the damaged pins back into shape, or opening up the controller to re-terminate the wire, the whole cable is a cheap, easy swap. Replacement Dreamcast controller cords turn up for a few dollars on AliExpress, or a bit more on eBay.
 
-![A replacement Dreamcast controller cable](/img/dreamcast-controller-replacement-cable.jpg){: width="480"}
+![A replacement Dreamcast controller cable](/img/dreamcast-controller-replacement-cable.jpg){: width="480" .cutout}
 
 I picked one up, and the fix was as simple as it sounds: no soldering, no disassembly beyond opening the shell to swap the connector — just plug and play. Fixed.
 
