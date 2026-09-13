@@ -3,9 +3,9 @@ layout: post
 title: GC Loader
 summary: My notes on the GC Loader — an optical drive emulator that replaces a GameCube's disc drive entirely and boots games straight off an SD card.
 date: '2026-09-13 12:00:00'
-tags: [Nintendo, Consoles, Peripherals]
-hero: gc-loader-pnp-board.jpg
-hero_alt: GC Loader PnP optical drive emulator board
+tags: [Nintendo, Peripherals]
+hero: gc-loader-board-logo-side.jpg
+hero_alt: The GC Loader board, logo side up, showing its ribbon connector and mounting standoffs
 ---
 
 The GC Loader, designed by Daniel Kraak, is an optical drive emulator (ODE) for the Nintendo GameCube. Rather than reusing the original drive's shell like some slot-loading ODEs, it replaces the entire physical drive assembly — motor, laser sled and all — with a small board that boots ISOs directly from an SD card.
