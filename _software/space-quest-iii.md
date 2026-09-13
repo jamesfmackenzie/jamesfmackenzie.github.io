@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Space Quest III
-summary: 
-date: '2024-08-29 11:33:00'
-tags: [MS-DOS, PC, Videogames]
+summary: One of the handful of Atari ST games that goes beyond the machine's YM2149F chiptune sound and actually supports MIDI.
+date: '2025-11-26 23:35:00'
+tags: [Atari ST, MIDI, Videogames]
 ---
 
-Space Quest III: The Pirates of Pestulon is a 1989 graphic adventure game by Sierra On-Line, and the third game in the Space Quest series. Players assume the role of Roger Wilco, a lowly space janitor, who becomes involved in rescuing a pair of computer programmers from a sinister video game company. The game received positive reviews from critics, and contributed further to the series' commercial success for Sierra. A sequel, Space Quest IV, was released in 1991.
+Space Quest III: The Pirates of Pestulon is a 1989 Sierra graphic adventure, and on the [Atari ST]({% link _hardware/atari-st.md %}) it's notable for supporting MIDI output — most ST games of the era are limited to the machine's own YM2149F chiptune sound chip, so a title that reaches beyond that is worth knowing about if you've got real MIDI hardware attached.
+
+### Related on this site
+
+- [Space Quest III Soundtrack | Intro | Atari ST | YM2149F Audio]({% post_url 2022-03-26-space-quest-iii-soundtrack-atari-st-ym2149f-chiptune %})
+- [Atari ST]({% link _hardware/atari-st.md %})
