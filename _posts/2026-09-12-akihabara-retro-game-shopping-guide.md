@@ -72,7 +72,7 @@ There's modern kit for these machines too, not just the originals. This is a Lot
 
 ![An external Lotharek HxC floppy emulator for the PC-9801 at BEEP, priced at ¥16,800](/img/akihabara-beep-pc-9801-hxc-floppy-emulator.jpg){: width="480"}
 
-Boxed peripherals turn up as well, like this NEC data recorder for the PC-6000 series:
+Boxed peripherals turn up as well, like this NEC data recorder for the PC-6000 series, at ¥9,800 (about $64):
 
 ![A boxed NEC DR-320 data recorder for the PC-6000 series at BEEP](/img/akihabara-beep-nec-pc-6000-data-recorder.jpg){: width="480"}
 
