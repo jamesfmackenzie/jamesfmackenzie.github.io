@@ -3,7 +3,7 @@ layout: post
 title: 3DMark
 summary: The benchmark I've been running since the Voodoo 2 era — a staple of PC gaming for over two decades, and still the thing I reach for whenever I want a real number on a retro build.
 date: '2025-11-26 23:35:00'
-tags: [3D Benchmarks, PC]
+tags: [3D Graphics, PC]
 ---
 
 3DMark is the benchmark software originally made by MadOnion.com, later Futuremark, and it's been a staple of PC gaming for over two decades. Each version pushed the limits of what 3D graphics hardware could do at the time it launched, which makes older releases — [3DMark 2001 SE](https://en.wikipedia.org/wiki/3DMark#3DMark2001), [3DMark05](https://en.wikipedia.org/wiki/3DMark#3DMark05), [3DMark06](https://en.wikipedia.org/wiki/3DMark#3DMark06), [3DMark11](https://en.wikipedia.org/wiki/3DMark#3DMark_11) — genuinely useful markers of where the hardware of a given era actually sat.

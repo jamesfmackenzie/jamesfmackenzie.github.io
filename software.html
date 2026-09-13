@@ -5,16 +5,16 @@ description: The software I actually reach for — benchmarks, MIDI synths, emul
 ---
 
 <p class="jump-links">
-{% assign cats = "3D Benchmarks,3Dfx Voodoo,MIDI Synthesizers,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
+{% assign cats = "3D Graphics,3Dfx Voodoo,MIDI Synthesizers,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
 {% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
 </p>
 
-<h3 id="{{ "3D Benchmarks" | slugify }}">3D Benchmarks</h3>
+<h3 id="{{ "3D Graphics" | slugify }}">3D Graphics</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
-  {% if page.tags contains "3D Benchmarks" %}
+  {% if page.tags contains "3D Graphics" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>

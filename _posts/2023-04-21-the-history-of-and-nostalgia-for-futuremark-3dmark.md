@@ -4,7 +4,7 @@ title: "The History of (and Nostalgia for) 3DMark"
 date: '2023-04-21 23:21:00:00'
 summary: Exploring the evolution of the iconic 3DMark benchmark software and its role in pushing the limits of graphics tech.
 image: futuremark-3dmark-vantage-teaser-image.jpg
-tags: [3D Benchmarks, Posts, Retrogaming, Windows 98, Windows XP]
+tags: [3D Graphics, Posts, Retrogaming, Windows 98, Windows XP]
 ---
 
 As a old-school PC gamer, I can't help but feel nostalgic about 3DMark – the iconic benchmark software, and a staple in PC gaming for over two decades. Each iteration has pushed the limits of 3D graphics, giving a tantilizing glimpse at future gaming tech.

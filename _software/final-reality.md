@@ -3,7 +3,7 @@ layout: post
 title: Final Reality
 summary: The 1997 benchmark that started the whole 3DMark lineage — I have real memories of running it on a 3D Rage Pro, an Intel i740, and a 3dfx Voodoo 2.
 date: '2025-11-26 23:35:00'
-tags: [3D Benchmarks, PC]
+tags: [3D Graphics, PC]
 ---
 
 Final Reality is the benchmark Remedy Entertainment released in May 1997, in cooperation with VNU Labs — and it's the direct ancestor of [3DMark]({% link _software/3dmark.md %}), which took over the same role for every generation of 3D hardware after it.
