@@ -3,7 +3,7 @@ layout: post
 title: Easy2Boot
 summary: My answer to "how do you install Windows XP on a machine with no CD drive" — a USB multiboot toolkit for exactly that gap.
 date: '2025-11-26 23:35:00'
-tags: [PC, Utilities, Windows 98, Windows XP]
+tags: [PC, Utilities]
 ---
 
 Easy2Boot builds a multiboot USB drive that can hold and launch multiple ISO images, without needing to reformat the drive for each new OS install. It's the tool I reach for whenever a retro PC has no working CD drive and needs a period OS install — [Windows XP]({% link _software/windows-xp.md %}) and [Windows 98]({% link _software/windows-98.md %}) both, in practice.

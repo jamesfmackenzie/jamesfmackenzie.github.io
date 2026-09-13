@@ -3,7 +3,7 @@ layout: post
 title: SDL
 summary: The cross-platform graphics library that got pixels on screen for my Commander Keen WebAssembly port — the same library a lot of emulators and classic game source ports lean on.
 date: '2025-11-26 23:35:00'
-tags: [Programming, WebAssembly]
+tags: [Programming]
 ---
 
 SDL (Simple DirectMedia Layer) is a cross-platform, open-source C library that gives low-level access to graphics, input, and audio hardware. It's used by a huge range of video playback software, emulators, and classic game source ports — including [Chocolate Keen]({% link _software/commander-keen.md %}), the source port I used for my WebAssembly [Commander Keen]({% link _software/commander-keen.md %}) port.
