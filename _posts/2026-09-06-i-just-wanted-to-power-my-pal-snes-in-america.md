@@ -65,7 +65,7 @@ Turning the console over produced an even better reveal. The lower label did not
 
 So the machine in front of me combined a PAL-marked upper shell, a Japanese Super Famicom lower identity, and an SNS-CPU-GPM-02 motherboard.
 
-I do not know who assembled this combination or when. It would be tempting to declare that someone converted a Super Famicom into a PAL-looking SNES, but the evidence does not establish the console's history that neatly. What I can say is what is physically present: a PAL upper shell, an SHVC-001 lower section, a GPM-02 board, and—as I would shortly discover—some significant modifications.
+I don't know who assembled this combination or when. It looks someone converted a Super Famicom into a PAL-looking SNES – a console with an interesting story – albeit one lost to time. What I can say is what we have: a PAL upper shell, an SHVC-001 lower section, a GPM-02 board, and (as I would shortly discover) some significant modifications.
 
 ![The motherboard removed from the chassis](/img/pal-snes-motherboard-removed.jpg)
 
@@ -77,7 +77,7 @@ The PAL Mega Drive Model 1 supply I had used in Britain produced roughly 10V DC 
 
 That was a very plausible explanation, but I did not want to diagnose the console from model numbers and memories alone. This particular machine had already demonstrated that labels and assumptions could be misleading. The correct thing to do was measure its actual wiring.
 
-With the motherboard unpowered and removed from the chassis, the middle `G` leg of U12—the KA7805 regulator—provided an unambiguous ground reference. I traced continuity from that ground point to the DC socket and then to the contacts of a barrel plug.
+With the motherboard unpowered and removed from the chassis, the middle `G` leg of U12 — the KA7805 regulator — provided an unambiguous ground reference. I traced continuity from that ground point to the DC socket and then to the contacts of a barrel plug.
 
 ![Continuity testing from the regulator's ground leg to the barrel connector](/img/pal-snes-continuity-test-ground.jpg)
 
@@ -93,7 +93,7 @@ Finding the cause was reassuring, but it introduced a less comfortable question:
 
 With all power disconnected, I measured resistance from the 5V output of U12 to ground. The meter briefly showed approximately 80Ω, then climbed rapidly to effectively infinite resistance. That behaviour is consistent with the meter charging capacitance on the 5V rail, rather than finding a persistent short.
 
-It did not prove that every component was healthy, but it was encouraging. There was no obvious dead short on the regulated rail.
+It didn't prove that every component was healthy, but it was encouraging. There was no obvious dead short on the regulated rail.
 
 ![Resistance check on the 5V rail](/img/pal-snes-resistance-check.jpg)
 
@@ -115,7 +115,7 @@ Turn the machine back over and there is no external clue that anything has chang
 
 ![The stock-looking RESET button from outside](/img/pal-snes-reset-button-exterior.jpg)
 
-I had opened the SNES because it would not power on and accidentally discovered that somebody had already given it one of the upgrades I might otherwise have wanted. The exact reset-button gestures still needed to be established once the console was running — more on that below.
+I had opened the SNES because it wouldn't power on and accidentally discovered that somebody had already given it one of the upgrades I might otherwise have wanted. The exact reset-button gestures still needed to be established once the console was running — more on that below.
 
 ### The proposed fix
 
@@ -153,15 +153,13 @@ For anyone who wants the signal chain confirmed rather than taken on faith: the 
 
 ![Monitor OSD confirming a 720x240 @ 60Hz input signal](/img/pal-snes-monitor-osd-720x240.jpg)
 
-The conclusion turns out to be satisfyingly simple. The SNES was never broken. The new power supply was never broken either. I had simply bought the correct modern power adapter for a European-looking PAL SNES that—despite what it said on the lid—was actually built around a Japanese Super Famicom motherboard, and needed power the Super Famicom way.
+The conclusion turns out to be satisfyingly simple. The SNES was never broken. The new power supply was never broken either. I had simply bought the correct modern power adapter for a European-looking PAL SNES that — despite what it said on the lid — was actually built around a Japanese Super Famicom motherboard, and needed power the Super Famicom way.
 
 ### The stealth mod, solved
 
 One thread was still loose: what exactly did that hidden RESET-button wiring do? Holding the button down changes the power LED's colour and switches the console between 50Hz and 60Hz — but I didn't want to guess the exact behaviour from the wiring alone.
 
 It turns out this is a well-documented, well-established combination in the SNES modding community, not a custom one-off: a **SuperCIC** (a PIC-based replacement for the console's CIC lockout chip) paired with **uIGR** ("µIGR" / In-Game-Reset) firmware. Holding RESET cycles through three modes via the LED colour — **50Hz (green)**, **60Hz (red)**, and **Auto-Region (yellow)** — repurposing what would normally just be a lockout-chip status LED into the entire user interface for the mod. No external switch, no drilled hole, because the switch was never physical to begin with.
-
-(Worth noting: the exact colour-to-mode mapping can vary slightly by individual installation, so it's worth confirming empirically on your own console — hold RESET, and watch which colour visibly gains or loses letterboxing on a given game — rather than trusting any single mapping blindly.)
 
 If you want to go deeper on the implementation, [sd2snes.de's SuperCIC](https://sd2snes.de/blog/cool-stuff/supercic) and [In Game Reset](https://sd2snes.de/blog/cool-stuff/in-game-reset) pages are about as close to canonical documentation as this mod has, and the [uIGR firmware source](https://github.com/borti4938/SNES_MultiRegion_with_DeJitter_QID/tree/master/fw/uIGR) is on GitHub.
 
