@@ -8,9 +8,9 @@ hero: akihabara-retro-game-camp-mario-64-carts.jpg
 hero_alt: Two bagged Super Mario 64 cartridges with SALE price tags
 ---
 
-I already wrote about the specific things I picked up on this trip in [Tokyo Retro Gaming Pickups]({% post_url 2024-03-26-tokyo-retro-gaming-pickups %}). This post is the other half of that trip: a guide to the stores themselves — what each one is actually good for, how the prices compare, and where to watch out for tourist pricing.
+Back in 2024, I wrote about a trip to Tokyo, and some [Retro Gaming Pickups]({% post_url 2024-03-26-tokyo-retro-gaming-pickups %}) I found along the way. This is second half of that trip: a guide to the stores themselves — what each one is actually good for, how the prices compare, and where to watch out for tourist pricing.
 
-Prices are as I found them in March 2024, converted at roughly ¥154 to the dollar — the rate at the time.
+The prices are as I found them back then, converted at roughly ¥154 to the dollar — the rate at the time.
 
 ## Akihabara
 
@@ -44,9 +44,9 @@ Hardware is less consistently a bargain. This boxed Saturn was ¥19,800 (about $
 
 ### BEEP
 
-A small basement store, but the best of the bunch for arcade gear and hardware. This is where I picked up my Nintendo 64 — ¥6,950 (about $45) for the console and a controller, plus ¥680 (about $4.50) for a second one.
+A small basement store, but the **best of the bunch** for arcade gear and hardware. This is where I picked up my Nintendo 64 — ¥6,950 (about $45) for the console and a controller, plus ¥680 (about $4.50) for a second one.
 
-BEEP is also the best place I've found anywhere for genuine Japanese retro computing — MSX, PC-88, PC-98, X68000, FM Towns, the machines that mostly never left Japan. This was easily my favourite part of the whole trip, so here's the lot of it.
+BEEP is also the best place I've found *anywhere* for genuine Japanese retro computing — MSX, PC-88, PC-98, X68000, FM Towns, the machines that mostly never left Japan. This was easily my favourite part of the whole adventure, so here's the lot of it.
 
 Everything is tagged with the store's own condition card, which states whether the item has been tested, whether it carries a warranty, and what's included. This Mitsubishi MULTI8 was ¥34,800 (about $226):
 
@@ -64,7 +64,7 @@ And the Sony HB-F1XDJ, also MSX2+, with 42 capacitors replaced and the internal 
 
 ![A Sony HB-F1XDJ MSX2+ at BEEP, priced at ¥49,800](/img/akihabara-beep-sony-hb-f1xdj.jpg)
 
-Not everything is restored to that standard, and the pricing reflects it. This NEC PC-8801 was tagged as junk — powers on, nothing else checked — for ¥3,480 (about $23):
+Not everything is restored to that standard, and the pricing reflects it. This NEC PC-8801 was tagged as junk — powers on, nothing else checked — for ¥3,480 (about $23). If I had the luggage space, I would have absolutely picked it up:
 
 ![An NEC PC-8801 at BEEP tagged as junk, priced at ¥3,480](/img/akihabara-beep-nec-pc-8801-junk.jpg){: width="620"}
 
@@ -76,15 +76,15 @@ Boxed peripherals turn up as well, like this NEC data recorder for the PC-6000 s
 
 ![A boxed NEC DR-320 data recorder for the PC-6000 series at BEEP](/img/akihabara-beep-nec-pc-6000-data-recorder.jpg){: width="480"}
 
-The Sharp X68000s were displayed alongside a promo card for the Exact Perfect Collection — a modern software bundle covering both the original X68000 and the X68000 Z:
+These Sharp X68000s were displayed alongside a promo card for the Exact Perfect Collection — a modern software bundle covering both the original X68000 and the X68000 Z:
 
 ![Sharp X68000 machines at BEEP beside an Exact Perfect Collection promo card](/img/akihabara-beep-sharp-x68000.jpg){: width="480"}
 
-And they don't just shelve this stuff — there was a Fujitsu FM Towns set up and running on its matching monitor, sitting on somebody's high-score table:
+And they don't just shelve this stuff — there was a Fujitsu FM Towns set up and running a demo-loop on its matching monitor:
 
 ![A Fujitsu FM Towns running on its matching monitor at BEEP](/img/akihabara-beep-fm-towns-running.jpg){: width="560"}
 
-**One important update:** BEEP is no longer in that basement. The building was demolished, the shop closed on 17 May 2026, and it reopened on 6 June 2026 in SEEKBASE AKI-OKA MANUFACTURE Building 3 — under the railway viaduct between Akihabara and Okachimachi stations. By all accounts it's now a larger, ground-level space, so the cramped basement I've described above is history. It's open 11:00–20:00 daily except Wednesdays.
+**One important update in 2026:** BEEP is no longer at this basement address. The building was demolished, and the shop reopened on 6 June 2026 at SEEKBASE AKI-OKA MANUFACTURE Building 3 — under the railway viaduct between Akihabara and Okachimachi stations. By all accounts it's now a larger, ground-level space, so the cramped basement I've described above is history. It's open 11:00–20:00 daily except Wednesdays.
 
 ### Surugaya (Akihabara branch)
 
@@ -113,7 +113,7 @@ Worth laying out side by side, because this is the entire argument for shopping 
 | Sega Saturn, boxed | Retro Game Camp | ¥19,800 ($129) |
 | Sega Saturn, boxed | Surugaya (Shinjuku) | **¥14,800 ($96)** |
 
-All within a few days of each other, and — for the Akihabara stores — within about a ten-minute walk.
+All on the same day, and — for the Akihabara stores — within about a ten-minute walk.
 
 ## One more stop: Tsukumo
 
