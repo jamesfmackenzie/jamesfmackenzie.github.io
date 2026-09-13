@@ -10,7 +10,7 @@ hero_alt: Sega Dreamcast console
 
 The Dreamcast still feels slightly unreal to me. Sega's final home console had a short commercial life, and yet the hardware is so good it feels like a machine with unfinished momentum behind it.
 
-Mine came from an unusually lucky find: it was sitting alongside some junk electronics on a Hong Kong roadside, and after some haggling I walked away with it for **$12** — the [full story is here]({% post_url 2025-03-25-i-found-a-sega-dreamcast-by-the-roadside %}).
+Mine came from an unusually lucky find: it was sitting alongside some junk electronics on a Hong Kong roadside, and after some haggling I walked away with it for **$12** — the [full story is here]({% post_url 2026-09-13-roadside-dreamcast-rescue %}).
 
 ![My roadside Dreamcast, cleaned up and running its BIOS menu](/img/roadside-dreamcast-working.jpg){: width="600"}
 
@@ -37,6 +37,6 @@ It's one of the few consoles from that era that can still look genuinely modern 
 
 ### Related on this site
 
-- [This roadside Dreamcast needed a home. Snagged it for $12!]({% post_url 2025-03-25-i-found-a-sega-dreamcast-by-the-roadside %})
+- [I Rescued a $12 Dreamcast Found on the Side of the Road]({% post_url 2026-09-13-roadside-dreamcast-rescue %})
 - [Fixing a Broken Dreamcast Controller]({% post_url 2026-09-08-fix-broken-dreamcast-controller %})
 - [Sega Saturn]({% link _hardware/sega-saturn.md %})

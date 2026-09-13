@@ -1,11 +1,12 @@
 ---
 layout: post
 title: I Rescued a $12 Dreamcast Found on the Side of the Road
+date: '2026-09-13 11:30:00'
 summary: A Hong Kong roadside electronics stall, some haggling, and a genuinely grubby Sega Dreamcast — cleaned up, brought back to life, and rescued from an early retirement.
-tags: [Sega, Dreamcast, Retrogaming, Repairs]
+tags: [Sega, Retrogaming]
+hero: roadside-dreamcast-find.jpg
+hero_alt: The roadside Dreamcast, as found
 ---
-
-![The roadside Dreamcast, as found.](/img/roadside-dreamcast-find.jpg)
 
 While out and about in Hong Kong, I stumbled across a roadside stall selling a pile of junk electronics — and sitting in the middle of it was a genuine Sega Dreamcast. A bit of haggling later, and it was mine for **$12**.
 
@@ -46,3 +47,8 @@ No replacement case needed after all.
 A $12 roadside find, a healthy set of capacitors, a quick isopropyl fix, and some elbow grease — sometimes that's all it takes. Not every "junk pile" find is going to be this lucky, but it's a good reminder that a grubby exterior doesn't always mean much about what's actually going on inside.
 
 *(This started life as a [Twitter thread](https://x.com/jamesfmackenzie/status/1904522511527846022?s=20) — this post pulls the whole story together in one place.)*
+
+### Related on this site
+
+- [Sega Dreamcast]({% link _hardware/sega-dreamcast.md %})
+- [Fixing a Broken Dreamcast Controller]({% post_url 2026-09-08-fix-broken-dreamcast-controller %})
