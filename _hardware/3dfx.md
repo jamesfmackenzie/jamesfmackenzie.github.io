@@ -3,7 +3,7 @@ layout: post
 title: 3Dfx
 summary: An overview of 3Dfx's graphics hardware and the pages on this site — the Voodoo line that made 3D acceleration mainstream, and the Glide API that still ties games to it.
 date: '2024-08-29 11:33:00'
-tags: [3Dfx Voodoo, Graphics Cards, PC]
+tags: [3D Graphics, 3Dfx Voodoo, PC]
 redirect_from:
   - /hardware/3dfx-voodoo/
 hero: 3dfx-original-logo-design.png

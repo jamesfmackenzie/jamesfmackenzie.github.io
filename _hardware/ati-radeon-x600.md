@@ -3,7 +3,7 @@ layout: post
 title: ATi Radeon X600
 summary: Hardware overview of the ATI Radeon X600, a surprisingly useful PCIe-era graphics card for late Windows 98 and Windows XP retro experiments.
 date: '2024-08-29 11:33:00'
-tags: [ATi Graphics, Graphics Cards, PC]
+tags: [3D Graphics, ATi, PC]
 ---
 
 The ATI Radeon X600 is an unusual card in retro PC terms. It comes from the early PCI Express era, which immediately makes it suspect for Windows 98 builders, but it is also close enough to ATI's better-supported Radeon generations that it can sometimes work far better than you might expect.

@@ -3,7 +3,7 @@ layout: post
 title: XTIDE Universal BIOS
 summary: My notes on XTIDE Universal BIOS — the open-source option-ROM that lets 8-bit ISA storage adapters boot modern CompactFlash and IDE storage on vintage PCs.
 date: '2024-08-29 11:33:00'
-tags: [MS-DOS, PC, Utilities, XTIDE]
+tags: [MS-DOS, PC, Utilities]
 ---
 
 XTIDE Universal BIOS is the open-source software that makes cards like the [Lo-tech XT-CF adapter]({% link _hardware/lo-tech-xt-cf.md %}) actually work. It's a BIOS extension — an option ROM, flashed onto the card itself — that teaches an 8-bit machine's BIOS how to see and boot from IDE and CompactFlash storage that didn't exist when the machine was designed.

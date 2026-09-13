@@ -3,7 +3,7 @@ layout: post
 title: 3Dfx Voodoo 3
 summary: Overview of the 3Dfx Voodoo 3, the 1999 card that finally combined 2D and 3D on one board — and the arcade-pulled example I picked up cheap.
 date: '2024-08-29 11:33:00'
-tags: [3Dfx Voodoo, Graphics Cards, PC]
+tags: [3D Graphics, 3Dfx Voodoo, PC]
 ---
 
 The 3Dfx Voodoo 3, launched in 1999, was the card where 3Dfx finally caught up with the rest of the industry: a single board doing both 2D and 3D, no pass-through cable, no second graphics card required. It uses the "Avenger" chip and came in 1000, 2000, 3000 and 3500 variants, differing mainly in clock speed and outputs.

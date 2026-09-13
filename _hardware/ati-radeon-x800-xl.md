@@ -3,7 +3,7 @@ layout: post
 title: ATi Radeon X800 XL
 summary: Hardware overview of the ATI Radeon X800 XL, a fast late-era PCIe graphics card that makes a lot of sense for Windows 98 and Windows XP retro PCs.
 date: '2024-08-29 11:33:00'
-tags: [ATi Graphics, Graphics Cards, PC]
+tags: [3D Graphics, ATi, PC]
 hero: ati-radeon-x800-xl.jpg
 hero_alt: The Radeon X800 XL with its stock ATI cooler
 ---

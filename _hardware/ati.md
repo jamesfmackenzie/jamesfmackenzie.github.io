@@ -3,7 +3,7 @@ layout: post
 title: ATi
 summary: An overview of ATi's graphics hardware and the pages on this site — from its mid-1980s multi-standard cards, through the Radeon era, to the AMD buyout and the modern Radeons that followed.
 date: '2024-08-29 11:33:00'
-tags: [ATi Graphics, Graphics Cards, PC]
+tags: [3D Graphics, ATi, PC]
 ---
 
 ATi (Array Technology Inc., founded in Toronto in 1985) spent its first decade building a reputation for graphics cards that were more flexible than IBM's reference designs — driving several display standards from a single board — before the Rage and then Radeon lines made it one of the two names that mattered in PC 3D graphics.
@@ -19,7 +19,7 @@ The mid-1980s cards are the interesting ones for a collector: multi-standard boa
 <ul>
 {% assign ati_cards = site.hardware | sort_natural: "title" %}
 {% for card in ati_cards %}
-  {% if card.tags contains "ATi Graphics" and card.url != "/hardware/ati/" %}
+  {% if card.tags contains "ATi" and card.url != "/hardware/ati/" %}
   {% unless card.title contains "Radeon" %}
   <li><a href="{{ card.url }}">{{ card.title }}</a></li>
   {% endunless %}
@@ -33,7 +33,7 @@ The Radeon line is where ATi cards start turning up in retro PC *building* rathe
 
 <ul>
 {% for card in ati_cards %}
-  {% if card.tags contains "ATi Graphics" and card.title contains "Radeon" %}
+  {% if card.tags contains "ATi" and card.title contains "Radeon" %}
   {% unless card.title contains "RX" %}
   <li><a href="{{ card.url }}">{{ card.title }}</a></li>
   {% endunless %}
@@ -47,7 +47,7 @@ Well past the point where calling it "ATi" makes literal sense — but it is the
 
 <ul>
 {% for card in ati_cards %}
-  {% if card.tags contains "ATi Graphics" and card.title contains "RX" %}
+  {% if card.tags contains "ATi" and card.title contains "RX" %}
   <li><a href="{{ card.url }}">{{ card.title }}</a></li>
   {% endif %}
 {% endfor %}
@@ -57,7 +57,7 @@ Well past the point where calling it "ATi" makes literal sense — but it is the
 
 <ul>
 {% for post in site.posts %}
-  {% if post.tags contains "ATi Graphics" %}
+  {% if post.tags contains "ATi" %}
   <li>
     {% if post.layout == "youtube" %}<img src="/img/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
     {% elsif post.layout == "tweet" %}<img src="/img/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />

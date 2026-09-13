@@ -3,7 +3,7 @@ layout: post
 title: ATi Radeon X700 Pro
 summary: Overview of the ATI Radeon X700 Pro as a practical PCIe graphics card for late Windows 98 and Windows XP retro builds.
 date: '2025-12-28 21:00:00'
-tags: [ATi Graphics, Graphics Cards, PC]
+tags: [3D Graphics, ATi, PC]
 ---
 
 The ATi Radeon X700 Pro is a mid-2000s PCI Express graphics card based on ATI’s RV410 GPU, produced during the transitional era between classic fixed-function GPUs and fully shader-driven designs. The X700 Pro typically features 8 pixel pipelines, a 128-bit memory interface, and 128MB or 256 MB of GDDR memory. At the time, it was positioned as a solid mainstream option—offering strong DirectX 9 performance without the heat, noise, or power demands of flagship cards like the X800 or GeForce 6800 series.

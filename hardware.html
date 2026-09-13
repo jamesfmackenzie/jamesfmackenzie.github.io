@@ -5,7 +5,7 @@ description: The hardware I've collected and actually use — old computers, con
 ---
 
 <p class="jump-links">
-{% assign cats = "Computers,Consoles,Graphics Cards,MIDI,MiSTer FPGA,Monitors,Peripherals,Sound Cards,Storage Devices,Video Capture" | split: "," %}
+{% assign cats = "Computers,Consoles,2D Graphics,3D Graphics,MIDI,MiSTer FPGA,Monitors,Peripherals,Sound Cards,Storage,Video Capture" | split: "," %}
 {% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
 </p>
 
@@ -36,12 +36,25 @@ description: The hardware I've collected and actually use — old computers, con
 </ul>
 
 
-<h3 id="graphics-cards">Graphics Cards</h3>
+<h3 id="{{ "2D Graphics" | slugify }}">2D Graphics</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
-  {% if page.tags contains "Graphics Cards" %}
+  {% if page.tags contains "2D Graphics" %}
+  <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<h3 id="{{ "3D Graphics" | slugify }}">3D Graphics</h3>
+
+<ul>
+  {% assign list = site.hardware | sort_natural: "title" %}
+  {% for page in list %}
+  {% if page.tags contains "3D Graphics" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
@@ -130,12 +143,12 @@ description: The hardware I've collected and actually use — old computers, con
   {% endfor %}
 </ul>
 
-<h3 id="storage-devices">Storage Devices</h3>
+<h3 id="storage">Storage</h3>
 
 <ul>
   {% assign list = site.hardware | sort_natural: "title" %}
   {% for page in list %}
-  {% if page.tags contains "Storage Devices" %}
+  {% if page.tags contains "Storage" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>

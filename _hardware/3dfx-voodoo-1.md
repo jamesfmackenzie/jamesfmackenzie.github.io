@@ -3,7 +3,7 @@ layout: post
 title: 3Dfx Voodoo Graphics
 summary: Hardware overview of the original 3Dfx Voodoo Graphics, the card that made Glide-era PC gaming feel revolutionary.
 date: '2024-08-29 11:33:00'
-tags: [3Dfx Voodoo, Graphics Cards, PC]
+tags: [3D Graphics, 3Dfx Voodoo, PC]
 permalink: /hardware/3dfx-voodoo-graphics
 ---
 

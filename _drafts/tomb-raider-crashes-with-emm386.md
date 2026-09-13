@@ -2,7 +2,7 @@
 layout: post
 title: Tomb Raider Crashes with EMM386
 summary: A draft troubleshooting post on why DOS Tomb Raider can crash under EMM386 and how to work around it.
-tags: [DOS, Troubleshooting, Videogames]
+tags: [MS-DOS, Troubleshooting, Videogames]
 ---
 
 Classic DOS Tomb Raider can be surprisingly temperamental, and one of the stranger issues is crashing when EMM386 is enabled.

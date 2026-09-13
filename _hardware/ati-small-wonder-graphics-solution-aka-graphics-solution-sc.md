@@ -3,7 +3,7 @@ layout: post
 title: ATi Small Wonder Graphics Solution
 summary: My take on the ATI Small Wonder Graphics Solution, a close relative of the Graphics Solution SR with the same CGA-on-a-monochrome-monitor trick.
 date: '2025-08-19 18:47:00'
-tags: [ATi Graphics, Graphics Cards, PC]
+tags: [2D Graphics, ATi, PC]
 hero: ati-small-wonder-graphics-solution-v1.jpg
 hero_alt: ATI Small Wonder Graphics Solution
 ---

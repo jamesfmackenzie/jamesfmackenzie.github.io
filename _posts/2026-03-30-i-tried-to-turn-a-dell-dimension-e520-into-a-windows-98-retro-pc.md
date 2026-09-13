@@ -3,7 +3,7 @@ layout: post
 title: I Tried to Turn a Dell Dimension E520 into a Windows 98 Retro PC
 date: '2026-03-30 08:00:00'
 summary: A case-study post on why the Dell Dimension E520 looked promising for Windows 98, but turned into a more mixed DOS, Win98, and XP experiment.
-tags: [DOS, PC, Retrogaming, Windows 98, Windows XP]
+tags: [MS-DOS, PC, Retrogaming, Windows 98, Windows XP]
 hero: dell-dimension-e520.jpg
 hero_alt: Dell Dimension E520 tower
 ---

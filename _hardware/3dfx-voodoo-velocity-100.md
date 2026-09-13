@@ -3,7 +3,7 @@ layout: post
 title: 3Dfx Velocity 100
 summary: Overview of the 3Dfx Velocity 100, a 1999 budget card that is essentially a Voodoo3 with one texture unit disabled in the drivers — plus the well-known tweak to turn it back on.
 date: '2024-08-29 11:33:00'
-tags: [3Dfx Voodoo, Graphics Cards, PC]
+tags: [3D Graphics, 3Dfx Voodoo, PC]
 ---
 
 The 3Dfx Velocity 100 is a budget AGP graphics card released in 1999, based directly on the [Voodoo3]({% link _hardware/3dfx-voodoo-3.md %}) architecture. It was aimed at the low end of the market and sold for around $50, largely through OEM channels. I made a whole video about it — [The Secret 3Dfx Graphics Card (You Never Knew Existed)]({% post_url 2024-11-30-the-secret-3dfx-graphics-card-velocity-100 %}).
