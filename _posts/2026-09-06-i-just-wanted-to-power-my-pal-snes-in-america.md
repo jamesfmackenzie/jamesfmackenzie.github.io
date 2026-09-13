@@ -65,7 +65,7 @@ Turning the console over produced an even better reveal. The lower label did not
 
 So the machine in front of me combined a PAL-marked upper shell, a Japanese Super Famicom lower identity, and an SNS-CPU-GPM-02 motherboard.
 
-I don't know who assembled this combination or when. It looks someone converted a Super Famicom into a PAL-looking SNES – a console with an interesting story – albeit one lost to time. What I can say is what we have: a PAL upper shell, an SHVC-001 lower section, a GPM-02 board, and (as I would shortly discover) some significant modifications.
+I don't know who assembled this combination or when. It looks like someone converted a Super Famicom into a PAL-looking SNES. So a console with an interesting story! Albeit one lost to time. What I can say is what we have: a PAL upper shell, an SHVC-001 lower section, a GPM-02 board, and (as I would shortly discover) some significant modifications.
 
 ![The motherboard removed from the chassis](/img/pal-snes-motherboard-removed.jpg)
 
@@ -73,9 +73,9 @@ I don't know who assembled this combination or when. It looks someone converted 
 
 Once I knew that the motherboard belonged to the Japanese/NTSC family, my memory of the old power supply stopped being a minor detail.
 
-The PAL Mega Drive Model 1 supply I had used in Britain produced roughly 10V DC and was **centre-negative**. That is a sensible supply for a Japanese Super Famicom-style input. The modern Triad WSU090-1300 I had just tried produced 9V DC at 1.3A through a 5.5×2.1mm barrel connector—but its normal output was **centre-positive**.
+The PAL Mega Drive Model 1 supply I’d used in the UK produced roughly 10V DC and was **centre-negative**. That’s a sensible supply for a Japanese Super Famicom-style input. The modern Triad WSU090-1300 I had just tried produced 9V DC at 1.3A through a 5.5×2.1mm barrel connector—but its normal output was **centre-positive**.
 
-That was a very plausible explanation, but I did not want to diagnose the console from model numbers and memories alone. This particular machine had already demonstrated that labels and assumptions could be misleading. The correct thing to do was measure its actual wiring.
+That was a very plausible explanation, but I didn’t want to diagnose the console from model numbers and memories alone. This particular machine had already demonstrated that labels and assumptions can be misleading. The correct thing to do was measure its actual wiring.
 
 With the motherboard unpowered and removed from the chassis, the middle `G` leg of U12 — the KA7805 regulator — provided an unambiguous ground reference. I traced continuity from that ground point to the DC socket and then to the contacts of a barrel plug.
 
@@ -85,7 +85,7 @@ The result was conclusive: the barrel connector's **centre pin was connected to 
 
 This console was centre-negative.
 
-That single continuity test explained the original −9V reading perfectly. The centre-positive supply was not failing to deliver power, and the SNES fuse was not blocking it. Voltage was simply being applied with the opposite polarity from the one this motherboard expected.
+That single continuity test explained the original −9V reading perfectly. The centre-positive supply was **not** failing to deliver power, and the SNES fuse wasn’t blocking it. Voltage was simply being applied with the opposite polarity from the one this motherboard expected.
 
 ### Had I damaged it?
 
@@ -93,7 +93,7 @@ Finding the cause was reassuring, but it introduced a less comfortable question:
 
 With all power disconnected, I measured resistance from the 5V output of U12 to ground. The meter briefly showed approximately 80Ω, then climbed rapidly to effectively infinite resistance. That behaviour is consistent with the meter charging capacitance on the 5V rail, rather than finding a persistent short.
 
-It didn't prove that every component was healthy, but it was encouraging. There was no obvious dead short on the regulated rail.
+It didn't prove that every component was healthy, but it *was* encouraging. There was no obvious dead short on the regulated rail.
 
 ![Resistance check on the 5V rail](/img/pal-snes-resistance-check.jpg)
 
@@ -105,17 +105,17 @@ The power-supply mystery was not the only unexpected discovery. The motherboard 
 
 ![A closer look at the mod wiring](/img/pal-snes-mod-wiring-2.jpg)
 
-This turned out to be a **region-free and selectable 50/60Hz modification**. That is a useful upgrade in its own right, allowing the console to accommodate software from different regions and switch video timing.
+This turned out to be a **region-free and selectable 50/60Hz modification**. That’s a useful upgrade in its own right, allowing the console to accommodate software from different regions and switch video timing.
 
-The nicest part of the installation was not obvious from above. There was no aftermarket toggle switch protruding from the case and no extra hole drilled into the plastic. The modification had been wired into the SNES's original RESET button.
+The nicest part of the installation was the lack of case cutting. There was no aftermarket toggle switch protruding from the case and no extra hole drilled into the plastic. The modification had been wired into the SNES's original RESET button.
 
 ![The wiring leading to the RESET button](/img/pal-snes-reset-wiring-closeup.jpg)
 
-Turn the machine back over and there is no external clue that anything has changed.
+Put the cover back on and there’s no external clue that anything has changed.
 
 ![The stock-looking RESET button from outside](/img/pal-snes-reset-button-exterior.jpg)
 
-I had opened the SNES because it wouldn't power on and accidentally discovered that somebody had already given it one of the upgrades I might otherwise have wanted. The exact reset-button gestures still needed to be established once the console was running — more on that below.
+I’d opened the SNES because it wouldn't power on and accidentally discovered that somebody had already given it one of the upgrades I might otherwise have wanted. The exact reset-button gestures still needed to be established once the console was running — more on that below.
 
 ### The proposed fix
 
