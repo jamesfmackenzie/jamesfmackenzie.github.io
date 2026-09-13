@@ -5,7 +5,7 @@ description: The software I actually reach for — benchmarks, MIDI synths, emul
 ---
 
 <p class="jump-links">
-{% assign cats = "3D Graphics,3Dfx Voodoo,MIDI Synthesizers,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
+{% assign cats = "3D Graphics,MIDI Synthesizers,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
 {% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
 </p>
 
@@ -15,20 +15,6 @@ description: The software I actually reach for — benchmarks, MIDI synths, emul
   {% assign list = site.software | sort_natural: "title" %}
   {% for page in list %}
   {% if page.tags contains "3D Graphics" %}
-  <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-
-<h3 id="{{ "3Dfx Voodoo" | slugify }}">3Dfx Voodoo</h3>
-
-<ul>
-  {% assign list = site.software | sort_natural: "title" %}
-  {% for page in list %}
-  {% if page.tags contains "3Dfx Voodoo" %}
   <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
