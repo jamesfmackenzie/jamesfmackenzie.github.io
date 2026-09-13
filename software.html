@@ -5,7 +5,7 @@ description: The software I actually reach for — benchmarks, MIDI synths, emul
 ---
 
 <p class="jump-links">
-{% assign cats = "3D Graphics,MIDI Synthesizers,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
+{% assign cats = "3D Graphics,MIDI,MiSTer FPGA Cores,Operating Systems,Programming,Utilities,Videogames" | split: "," %}
 {% for cat in cats %}<a href="#{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
 </p>
 
@@ -23,7 +23,7 @@ description: The software I actually reach for — benchmarks, MIDI synths, emul
 </ul>
 
 
-<h3 id="midi-synthesizers">MIDI Synthesizers</h3>
+<h3 id="midi">MIDI</h3>
 
 <ul>
   {% assign list = site.software | sort_natural: "title" %}
