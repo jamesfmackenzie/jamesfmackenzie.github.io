@@ -12,11 +12,12 @@ It is not a retro card. It earns a place here for a different reason.
 
 ### A modern GPU on a Raspberry Pi
 
-Thanks to work on the Linux **amdgpu** driver and the Pi 5's exposed PCIe lane, it is now possible to plug a card like the RX 580 (or an RX 6600 XT) into a Raspberry Pi and have it actually work — hardware-accelerated OpenGL and Vulkan, driving a real desktop and games at speed.
+Thanks to work on the Linux **amdgpu** driver and the Pi 5's exposed PCIe lane, it is now possible to plug a card like the RX 580 (or a [Radeon RX 6600 XT]({% link _hardware/ati-radeon-rx-6600-xt.md %})) into a Raspberry Pi and have it actually work — hardware-accelerated OpenGL and Vulkan, driving a real desktop and games at speed.
 
 The result is genuinely fast, far beyond what the Pi's own VideoCore GPU can do. It is one of those projects that is interesting less for its practicality than for the fact that it works at all: a cheap single-board computer and a used graphics card doing something neither was designed for.
 
 ### Related on this site
 
 - [I Installed a Modern GPU on Raspberry Pi (and it's AWESOME!)]({% post_url 2024-11-17-i-installed-a-modern-radeon-rx-580-rx-6600-xt-gpu-on-raspberry-pi %})
+- [Radeon RX 6600 XT]({% link _hardware/ati-radeon-rx-6600-xt.md %})
 - [ATi]({% link _hardware/ati.md %})
