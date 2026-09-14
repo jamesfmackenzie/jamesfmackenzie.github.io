@@ -33,4 +33,5 @@ It's a clean, no-compromise way to retire an aging, failure-prone optical drive 
 
 ### Related on this site
 
+- [Installing a GC Loader Optical Drive Emulator in My GameCube]({% post_url 2026-09-13-installing-a-gc-loader-in-my-gamecube %})
 - [Nintendo GameCube]({% link _hardware/nintendo-gamecube.md %})

@@ -35,5 +35,6 @@ The disc format means near-instant load times without cartridge storage limits, 
 
 ### Related on this site
 
+- [Installing a GC Loader Optical Drive Emulator in My GameCube]({% post_url 2026-09-13-installing-a-gc-loader-in-my-gamecube %})
 - [Fixing a Snapped Wire in a Rare GameCube VGA Cable]({% post_url 2026-09-08-fixing-a-snapped-wire-in-a-rare-gamecube-vga-cable %})
 - [GC Loader]({% link _hardware/gc-loader.md %})
