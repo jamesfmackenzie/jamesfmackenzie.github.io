@@ -18,6 +18,13 @@ Mine came from an unusually lucky find: it was sitting alongside some junk elect
 
 Sega's late-1990s console and its last attempt at the home market. It blends arcade energy, clean 3D visuals, distinctive accessories like the VMU, and a library that still feels bold rather than generic.
 
+### A regional quirk
+
+Comparing an NTSC-J (Japan) unit against an NTSC-U (North America) unit turned up a small hardware difference: the triangular badge set into the lid, just above the SEGA logo, is clear/translucent plastic on the Japanese unit, but solid opaque grey plastic (matching the nearby button trim) on the North American one. PAL units are believed to match the NTSC-U treatment, though that's not personally confirmed.
+
+![The translucent triangle badge on an NTSC-J Dreamcast lid](/img/dreamcast-ntsc-j-triangle-badge-translucent.jpg){: width="480"}
+![The opaque grey triangle badge on an NTSC-U Dreamcast lid](/img/dreamcast-ntsc-u-triangle-badge-opaque.jpg){: width="480"}
+
 ### Why I like it
 
 It's one of the few consoles from that era that can still look genuinely modern in motion. It's fast, it's distinctive, and it's comfortable to live with — the arcade conversions, the controller feel, and the direct video output are all part of why it works. Emulation is good, but the real thing still makes sense here.
