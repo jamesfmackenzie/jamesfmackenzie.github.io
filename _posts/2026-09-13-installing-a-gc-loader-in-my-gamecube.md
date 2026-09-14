@@ -8,11 +8,15 @@ hero_alt: A black Japanese GameCube before its GC Loader install
 tags: [Nintendo, Retrogaming]
 ---
 
-My GameCube is a Japanese import, and I've always liked that about it. It's a black **DOL-001(JPN)** with 日本国内専用 — "for domestic use in Japan only" — stamped right there on the underside, serial `DN11809198`.
+Every GameCube has one part that will eventually fail, and it isn't the silicon. It's the optical drive — a motor, a laser sled and a spinning disc, doing real mechanical work every time you load a game. Chips sitting still at room temperature will happily outlast all of us. A mechanism that spins up thousands of times has a service life, and sooner or later it reaches the end of it.
+
+Mine still works. I decided not to wait around for that to change.
+
+The console itself is a Japanese import: a black **DOL-001(JPN)** with 日本国内専用 — "for domestic use in Japan only" — stamped on the underside, serial `DN11809198`.
 
 ![The rear label: DOL-001, Japan domestic use only](/img/gamecube-rear-label-dol-001-jpn.jpg){: width="600"}
 
-The thing I don't like about it is the optical drive. It still works, but it's the one part of a twenty-odd-year-old console I actually expect to fail — a motor, a laser sled, and a spinning disc, all doing mechanical work every time you play something. So I picked up a [GC Loader]({% link _hardware/gc-loader.md %}) to take it out of the equation entirely.
+Going in its place is a [GC Loader]({% link _hardware/gc-loader.md %}) — an optical drive emulator that boots games straight off an SD card.
 
 ### What's actually on the board
 
