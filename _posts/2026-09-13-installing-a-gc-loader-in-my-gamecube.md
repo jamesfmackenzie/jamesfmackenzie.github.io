@@ -8,47 +8,61 @@ hero_alt: A black Japanese GameCube before its GC Loader install
 tags: [Nintendo, Retrogaming]
 ---
 
-My GameCube is a Japanese import — a black **DOL-001(JPN)** unit, "日本国内専用" (Japan-domestic-only) stamped right on the label, serial `DN11809198`. Rather than keep relying on a 20-odd-year-old optical drive, I picked up a [GC Loader]({% link _hardware/gc-loader.md %}) — the **GC Loader PnP HW2**, by Daniel Kraak — to replace it outright.
+My GameCube is a Japanese import, and I've always liked that about it. It's a black **DOL-001(JPN)** with 日本国内専用 — "for domestic use in Japan only" — stamped right there on the underside, serial `DN11809198`.
 
-![The console before teardown](/img/gamecube-ode-console-before-teardown.jpg){: width="600"}
+![The rear label: DOL-001, Japan domestic use only](/img/gamecube-rear-label-dol-001-jpn.jpg){: width="600"}
+
+The thing I don't like about it is the optical drive. It still works, but it's the one part of a twenty-odd-year-old console I actually expect to fail — a motor, a laser sled, and a spinning disc, all doing mechanical work every time you play something. So I picked up a [GC Loader]({% link _hardware/gc-loader.md %}) to take it out of the equation entirely.
 
 ### What's actually on the board
 
-The GC Loader PnP is built around an ESP32-WROOM-32E module and a Trion T20F256 FPGA, with a micro SD slot and a couple of header rows (LAN1, OPT1) for accessories. Unlike a slot-loading ODE that reuses the original drive's shell, this one replaces the entire physical drive assembly — motor, laser sled, and all.
+The version I bought is the **GC Loader PnP HW2**, designed by Daniel Kraak. It's a surprisingly small thing for what it does: an ESP32-WROOM-32E module, a Trion T20F256 FPGA, a micro SD slot, and a couple of spare header rows (LAN1, OPT1) for accessories.
 
-![The GC Loader board, unpackaged](/img/gc-loader-pnp-board.jpg){: width="600"}
+![The GC Loader board in close-up, on the drive-bay shield](/img/gc-loader-board-closeup.jpg){: width="600"}
 
-### Getting the drive out
+Worth being clear about what kind of ODE this is, because they're not all the same. Some reuse the original drive's shell and just replace the guts. This one doesn't — the entire physical drive assembly comes out and never goes back in.
 
-GameCube case screws aren't standard Phillips, so step one was a security-bit driver. From there:
+### Getting in
 
-1. Bottom shell and controller-port panel off, to get at the internals.
-2. The entire optical drive assembly comes out — this is a full physical drive, not just a lid or sled, with its own small power/eject control board (`DOL-PWR-01`) and ribbon connectors.
-3. Unplug the drive's power board and ribbon cables, then lift the whole mechanism free.
+First hurdle: GameCube case screws aren't Phillips. They're a security bit, so nothing in a normal screwdriver set will touch them. I picked up a cheap EMiEN driver for the job.
 
-That leaves the motherboard fully exposed, heatsink and ARAM-DOL chip visible, with an empty drive bay where the mechanism used to sit.
+![The security bit driver needed to open a GameCube](/img/gamecube-security-bit-driver.jpg){: width="600"}
+
+With the bottom shell and controller-port panel off, the drive is right there on top, taking up most of the console's volume.
+
+![The optical drive, exposed once the shell is off](/img/gamecube-optical-drive-exposed.jpg){: width="600"}
+
+Getting it out means unplugging its little power and eject control board (`DOL-PWR-01`) along with the ribbon cables, then lifting the whole mechanism free. Seeing it out on the desk is what sold me on the swap — that's a genuinely substantial piece of moving machinery to have sitting inside a console you want to keep working for another twenty years.
+
+![The complete optical drive mechanism, removed](/img/gamecube-drive-mechanism-removed.jpg){: width="600"}
+
+Underneath, the motherboard is fully exposed — heatsink, the ARAM-DOL chip, "SIDE-A" markings — with an empty bay where all that machinery used to live.
 
 ![The motherboard exposed after the drive is fully removed](/img/gamecube-motherboard-drive-removed.jpg){: width="600"}
 
 ### Mounting the loader
 
-The GC Loader bolts straight onto the drive bay's metal shield bracket — the same bracket that held the original drive — via the drive's original ribbon/data connector footprint. No motherboard modification, no rewiring: it's designed to be a drop-in replacement for that specific mechanical spot.
+This is the part that makes the GC Loader worth the money. It bolts straight onto the drive bay's metal shield bracket — the same bracket that held the original drive — and connects through the drive's own ribbon/data connector footprint. No soldering, no motherboard modification, no rewiring. It's built to drop into exactly that mechanical space.
 
 ![The GC Loader mounted onto the drive-bay bracket](/img/gc-loader-mounted-in-drive-bay.jpg){: width="600"}
 
+With the bracket lowered back into the chassis, it looks like it belongs there.
+
+![The GC Loader connected inside the console chassis](/img/gc-loader-in-chassis.jpg){: width="600"}
+
 ### Buttoning it back up
 
-With the case reassembled, the SD card slot ends up sitting exactly where a disc would normally go — visible and accessible through the disc-lid opening.
+Case reassembled, and the SD card slot ends up sitting exactly where a disc would go — you open the lid and there it is, accessible without taking anything apart again.
 
 ![The SD card slot, visible through the open disc lid](/img/gamecube-sd-slot-visible-through-lid.jpg){: width="600"}
 
-From the outside, the console looks completely stock — no visible sign anything changed.
+From the outside, though, there's no clue anything changed. Same console, same lid, no drilled holes or extra switches — just silent, and with nothing mechanical left to wear out.
 
 ![The reassembled console, looking stock from the front](/img/gamecube-reassembled-front.jpg){: width="600"}
 
 ### Next up
 
-The GC Loader can boot ISOs directly off the SD card on its own, but I'll be adding **Swiss** as a proper front-end next — it's not required, but it adds a real menu system and extras like forcing 480p on supported games. That's a separate step from here, once the SD card is loaded up.
+The GC Loader will boot ISOs straight off the SD card on its own, so it's usable as-is. But I'll be adding **Swiss** next — it isn't required, but it gives a proper menu system and useful extras like forcing 480p on games that support it. That's the next job, once I've got the SD card filled.
 
 ### Related on this site
 
