@@ -21,10 +21,11 @@ Either way, I was locked out. The only way back in was to reflash the BIOS chip 
 ## What you need
 
 - a **SOP8 test clip** (also called an SOIC-8 clip) that grips the flash chip's legs without desoldering
-- an EEPROM programmer — I used a **TL866 II Plus** (I'd also bought a cheap CH341A as a backup)
+- an EEPROM programmer — I used a **TL866 II Plus** (I'd also bought a cheap CH341A as a backup); the actual unit's case is branded "XGecu Pro" (XGecu being the manufacturer/brand behind the TL866 line)
 - the flash chip on the Llama is a **Macronix MX25U6435F**, a 64&nbsp;Mbit SPI part that runs at **1.8&nbsp;V** — worth knowing, because a 3.3&nbsp;V-only programmer or adapter can damage a 1.8&nbsp;V chip
 
-<!-- TODO: photos of the clip on the chip, the programmer, software (minipro / Xgpro) -->
+![The programmer with its SOP8 test clip attached](/img/xgecu-programmer-sop8-clip-top-down.jpg){: width="480"}
+![The SOP8 clip, ready to grip a flash chip's legs](/img/xgecu-programmer-sop8-clip-angle.jpg){: width="480"}
 
 ## The recovery
 
