@@ -189,11 +189,16 @@ These instructions are for building Half-Life 2, but you can also build other So
 
 ### On YouTube
 
-I covered this setup on YouTube. The response was great and more than 60,000 of you tuned in (Thanks!).
-
-Enjoy the video here:
+I covered the original Half-Life 2 build on YouTube first. The response was great and more than 60,000 of you tuned in (Thanks!):
 
 <div class="youtube-container">
 <iframe src="https://www.youtube.com/embed/-S_J-3CJsPU?rel=0" 
 allowfullscreen class="youtube-video"></iframe>
-</div> 
+</div>
+
+I later followed that up with a dedicated step-by-step how-to video — the one that actually walks through the commands on this page, and also covers building **Portal** the same way:
+
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/ipQ1trbWeX0?rel=0" 
+allowfullscreen class="youtube-video"></iframe>
+</div>
