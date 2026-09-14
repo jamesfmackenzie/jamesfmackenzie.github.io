@@ -14,7 +14,7 @@ Gran Turismo 3 hides a genuinely wild Easter egg: an **i.LINK Battle** mode that
 
 - **Three PlayStation 2 consoles — fat models only.** The slim PS2 dropped the i.LINK (FireWire) port; you need it.
 - **Three copies of Gran Turismo 3.**
-- **An i.LINK hub** to connect the three consoles.
+- **An i.LINK hub** to connect the three consoles — mine is a 5-port hub built around a Texas Instruments TSB41LV06A FireWire hub/repeater chip (board marked `FWH-6T4`), with its own DC power input rather than being bus-powered.
 - Three screens (or, later, one ultra-wide — see below).
 
 The same trick also works in **Gran Turismo 4**.
