@@ -4,6 +4,8 @@ title: MiTAC MSC-373
 summary: A Pentium III single-board computer built for the PICMG 1.0 industrial-PC standard — a full 440BX-chipset PC squeezed onto one card, running in a passive PCI/ISA backplane instead of a normal motherboard.
 date: '2026-09-06 00:00:00'
 tags: [Computers, PC]
+hero: mitac-msc-373-picmg-sbc.jpg
+hero_alt: MiTAC MSC-373 PICMG single-board computer
 ---
 
 The MiTAC MSC-373 is an industrial single-board computer (SBC) — instead of a motherboard with a chipset and a CPU socket, the whole PC (chipset, CPU, RAM, graphics) is squeezed onto one long card that plugs into a passive backplane. I picked one up out of curiosity to see if an industrial board with no gaming pedigree could still make a fun DOS/Windows 98 machine — see [This Fully Functional PC Fits on a Single Card!]({% post_url 2024-10-05-this-fully-function-pc-fits-on-a-single-card-pentium-iii-sbc %}).
