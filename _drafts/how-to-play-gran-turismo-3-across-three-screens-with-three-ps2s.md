@@ -6,7 +6,7 @@ tags: [Posts, Retrogaming, Sony PlayStation, Videogames]
 image: innovation-i-link-6-port-hub-stock.jpg
 ---
 
-<!-- DRAFT — skeleton from the project note; enrich from the video script (ZSN3Lo_Mv50) -->
+<!-- DRAFT — enriched from the actual video transcript (ZSN3Lo_Mv50) -->
 
 Gran Turismo 3 hides a genuinely wild Easter egg: an **i.LINK Battle** mode that, with the right hardware, links three consoles into one continuous ultra-wide view across three screens. Here's how to set it up.
 
@@ -19,29 +19,28 @@ Gran Turismo 3 hides a genuinely wild Easter egg: an **i.LINK Battle** mode that
 
 ![The Innovation i-Link 6 Port Hub, boxed](/img/innovation-i-link-6-port-hub-box.jpg){: width="480"}
 
-The same trick also works in **Gran Turismo 4**.
-
 ## Wiring and screen order
 
-This is the fiddly part. The screen order — which console shows the centre view and which show left and right — is **not** configurable in software. It's fixed by the physical order of the i.LINK cabling, and getting a clean 1‑2‑3 (left, centre, right) took a fair amount of swapping cables and consoles around.
-
-<!-- TODO: the exact working wiring order, a diagram, how to tell which console became "centre" -->
+This is the fiddly part. With everything connected and all three consoles in i.LINK Battle, the roles came out wrong: console 1 was meant to drive the centre screen, with 2 on the left and 3 on the right, but they landed in the wrong physical positions. There's no menu option to reassign which console takes which role — the only fix was to physically rewire, swapping which monitor's video cable plugged into which console, until the physical screen positions matched the roles the consoles had already taken. Expect some trial and error here; it took a second full pass of moving cables around to land on a clean 1‑2‑3 (left, centre, right).
 
 ## In-game setup
 
 1. On every console, go to **Arcade → i.LINK Battle**.
-2. One console becomes the **server** and drives the centre screen; the other two drop into a synced waiting state and pick up the left and right views.
-3. <!-- TODO: exact menu steps, resolution/field-of-view notes, any per-console settings -->
+2. If the screen order comes out wrong, rewire as above rather than looking for an in-game fix.
+3. Select **Broadcast** on all three consoles. The two outer consoles drop into a waiting state, and the centre console becomes the one you interact with.
+4. On the centre console, pick a track — Trial Mountain in the video — and start the race. The other two sync automatically.
 
 ## The result
 
-Full peripheral vision — the corners of the track sweeping past the side screens while you focus on the centre. It works exactly as well as it sounds.
+Full peripheral vision — the corners of the track sweeping past the side screens while focus stays on the centre. It works exactly as well as it sounds.
+
+It's also reportedly not limited to GT3 — Gran Turismo 4, 5, and 6 are said to support the same i.LINK Battle trick, though that's secondhand and not something I'd verified firsthand at the time of the original video.
 
 ## One screen instead of three
 
-The first version ran on three separate monitors, bezels and all. Later I picked up an ultra-wide monitor and two [Datapath VisionAV-HD]({% link _hardware/datapath-visionav-hd.md %}) capture cards to combine all three PS2 feeds into a single seamless picture.
+The first version ran on three separate monitors, bezels and all. Later I picked up an ultra-wide monitor and two [Datapath VisionAV-HD]({% link _hardware/datapath-visionav-hd.md %}) capture cards, one PC, and used them to capture all three PS2 video feeds and assemble them into a single continuous ultra-wide picture.
 
-<!-- TODO: how the three feeds are positioned/blended, capture-card config -->
+It stitched together far better than expected — only a handful of pixels out of alignment across the full width, and that was without any serious fine-tuning of the setup.
 
 ### Watch on YouTube
 
