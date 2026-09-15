@@ -18,6 +18,8 @@ Like the [Radeon RX 580]({% link _hardware/ati-radeon-rx-580.md %}), thanks to w
 
 ### Related on this site
 
-- [I Installed a Modern GPU on Raspberry Pi (and it's AWESOME!)]({% post_url 2024-11-17-i-installed-a-modern-radeon-rx-580-rx-6600-xt-gpu-on-raspberry-pi %})
+- [Radeon GPU on a Raspberry Pi 5]({% link _projects/radeon-gpu-on-a-raspberry-pi-5.md %}) — the project notes
+- [I Got a Modern Radeon GPU Running on a Raspberry Pi 5]({% post_url 2026-09-15-i-installed-a-modern-radeon-gpu-on-a-raspberry-pi-5 %})
+- [Raspberry Pi 5]({% link _hardware/raspberry-pi-5.md %})
 - [Radeon RX 580]({% link _hardware/ati-radeon-rx-580.md %})
 - [ATi]({% link _hardware/ati.md %})
