@@ -14,6 +14,12 @@ Most FireWire hubs are generic — six ports, works with anything speaking i.LIN
 
 A 6-port i-Link/FireWire hub — compatible with standard i-Link and 4-pin IEEE 1394 cables, so nothing about the wiring itself is PS2-specific. Inside, it's built around a Texas Instruments **TSB41LV06A** FireWire hub/repeater chip, on a board marked `FWH-6T4`. It takes its own DC power input rather than running bus-powered off the FireWire lines, which matters for keeping six linked PS2s stable rather than relying on whichever console happens to be pushing power down the chain.
 
+Opened mine up to confirm all of this rather than go on the box copy alone:
+
+![The board, showing the TI TSB41LV06A hub chip](/img/i-link-hub-board-top.jpg){: width="600"}
+![The underside of the board, marked FWH-6T4](/img/i-link-hub-board-bottom.jpg){: width="600"}
+![A closer look at the TSB41LV06A chip itself](/img/i-link-hub-chip-closeup.jpg){: width="480"}
+
 ### Why I'm keeping notes on it
 
 This is a genuinely obscure product — a PS2-era FireWire hub, explicitly branded for a single game's hidden multiplayer trick, with the actual chip inside it undocumented anywhere I could find. If you're trying to replicate [Gran Turismo 3's i.LINK Battle mode]({% link _projects/gran-turismo-3-on-multi-monitors.md %}) yourself and go looking for what's actually inside the box that makes it work, this is that information.
