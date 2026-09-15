@@ -23,6 +23,8 @@ I later did the same thing with Gran Turismo 5 on three PlayStation 3s — see [
 
 More details:
 
+- [How to Play Gran Turismo 3 Across Three Screens with Three PlayStation 2s]({% post_url 2026-09-14-how-to-play-gran-turismo-3-across-three-screens-with-three-ps2s %})
+- [Innovation i-Link 6 Port Hub]({% link _hardware/innovation-i-link-6-port-hub.md %})
 - [Datapath VisionAV-HD hardware page]({% link _hardware/datapath-visionav-hd.md %})
 - [Finding the Best Capture Card for Analog Video]({% post_url 2026-09-08-finding-the-best-capture-card-for-analog-video %})
 - ["3 PlayStation 2s, 3 Screens" tweet]({% post_url 2025-03-08-three-playstation-2-three-copies-of-gran-turismo-3-one-awesome-experience %})

@@ -35,5 +35,5 @@ The fat PS2 also has an i.LINK (FireWire) port, which a handful of games use to 
 
 - [Final Fantasy X: Why the PlayStation 2 Version is Best]({% post_url 2024-06-15-why-final-fantasy-x-ffx-ff10-is-best-on-ps2-playstation-2 %})
 - [PlayStation 2: Best on CRT?]({% post_url 2022-03-26-playstation-2-is-best-on-crt %})
-- [Gran Turismo 3 in ULTRA WIDESCREEN (3 PS2s, 3 Screens!)]({% post_url 2025-03-08-gran-turismo-in-ultra-widescreen-triple-screen %})
+- [How to Play Gran Turismo 3 Across Three Screens with Three PlayStation 2s]({% post_url 2026-09-14-how-to-play-gran-turismo-3-across-three-screens-with-three-ps2s %})
 - [Square Enix Still Sells New PS2 Games]({% post_url 2024-06-22-square-enix-still-sells-new-ps2-playstation-2-games-in-2024 %})
