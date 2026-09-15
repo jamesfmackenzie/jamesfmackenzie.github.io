@@ -22,9 +22,9 @@ Gran Turismo 3 hides a genuinely wild Easter egg: an **i.LINK Battle** mode that
 
 This is the fiddly part. With everything connected and all three consoles in i.LINK Battle, the roles came out wrong: console 1 was meant to drive the centre screen, with 2 on the left and 3 on the right, but they landed in the wrong physical positions. There's no menu option to reassign which console takes which role — the only fix was to physically rewire, swapping which monitor's video cable plugged into which console, until the physical screen positions matched the roles the consoles had already taken. Expect some trial and error here; it took a second full pass of moving cables around to land on a clean 1‑2‑3 (left, centre, right).
 
-Here's exactly what "wrong" looks like — all three consoles have loaded Gran Turismo 3, but they haven't found each other yet, so each is just showing its own random attract-mode footage:
+All three consoles booted into Gran Turismo 3 and ready to go — this is the setup moments before a race actually starts:
 
-![Three PS2s at the Gran Turismo 3 splash screen, not yet synced — the side screens show completely different scenes](/img/gt3-triple-screen-mismatched-splash.jpg){: width="600"}
+![All three PS2s booted into Gran Turismo 3, moments before a race](/img/gt3-triple-screen-splash-screen.jpg){: width="600"}
 
 ## In-game setup
 
