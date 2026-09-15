@@ -3,7 +3,7 @@ layout: post
 title: "How to Play Gran Turismo 3 Across Three Screens with Three PlayStation 2s"
 date: '2026-09-14 22:00:00'
 tags: [Posts, Retrogaming, Sony PlayStation, Videogames]
-image: innovation-i-link-6-port-hub-box.jpg
+image: gt3-ultrawide-grand-valley-speedway.jpg
 ---
 
 Gran Turismo 3 hides a genuinely wild Easter egg: an **i.LINK Battle** mode that, with the right hardware, links three consoles into one continuous ultra-wide view across three screens. Here's how to set it up.
@@ -21,6 +21,10 @@ Gran Turismo 3 hides a genuinely wild Easter egg: an **i.LINK Battle** mode that
 
 This is the fiddly part. With everything connected and all three consoles in i.LINK Battle, the roles came out wrong: console 1 was meant to drive the centre screen, with 2 on the left and 3 on the right, but they landed in the wrong physical positions. There's no menu option to reassign which console takes which role — the only fix was to physically rewire, swapping which monitor's video cable plugged into which console, until the physical screen positions matched the roles the consoles had already taken. Expect some trial and error here; it took a second full pass of moving cables around to land on a clean 1‑2‑3 (left, centre, right).
 
+Here's exactly what "wrong" looks like — all three consoles have loaded Gran Turismo 3, but they haven't found each other yet, so each is just showing its own random attract-mode footage:
+
+![Three PS2s at the Gran Turismo 3 splash screen, not yet synced — the side screens show completely different scenes](/img/gt3-triple-screen-mismatched-splash.jpg){: width="600"}
+
 ## In-game setup
 
 1. On every console, go to **Arcade → i.LINK Battle**.
@@ -28,9 +32,13 @@ This is the fiddly part. With everything connected and all three consoles in i.L
 3. Select **Broadcast** on all three consoles. The two outer consoles drop into a waiting state, and the centre console becomes the one you interact with.
 4. On the centre console, pick a track — Trial Mountain in the video — and start the race. The other two sync automatically.
 
+![Trial Mountain's checkered starting grid, correctly synced across all three screens — the NISMO ad boards line up on both sides](/img/gt3-triple-screen-trial-mountain-grid.jpg){: width="600"}
+
 ## The result
 
 Full peripheral vision — the corners of the track sweeping past the side screens while focus stays on the centre. It works exactly as well as it sounds.
+
+![A tunnel section, running near-seamlessly across all three screens](/img/gt3-triple-screen-tunnel-synced.jpg){: width="600"}
 
 It's also reportedly not limited to GT3 — Gran Turismo 4, 5, and 6 are said to support the same i.LINK Battle trick, though that's secondhand and not something I'd verified firsthand at the time of the original video.
 
@@ -38,7 +46,11 @@ It's also reportedly not limited to GT3 — Gran Turismo 4, 5, and 6 are said to
 
 The first version ran on three separate monitors, bezels and all. Later I picked up an ultra-wide monitor and two [Datapath VisionAV-HD]({% link _hardware/datapath-visionav-hd.md %}) capture cards, one PC, and used them to capture all three PS2 video feeds and assemble them into a single continuous ultra-wide picture.
 
-It stitched together far better than expected — only a handful of pixels out of alignment across the full width, and that was without any serious fine-tuning of the setup.
+![Grand Valley Speedway, composited from three PS2s onto one curved ultra-wide monitor](/img/gt3-ultrawide-grand-valley-speedway.jpg){: width="600"}
+
+It stitched together far better than expected — only a handful of pixels out of alignment across the full width, and that was without any serious fine-tuning of the setup. This is the raw capture at its actual 12:3 aspect ratio — three 4:3 feeds side by side, before it's ever displayed on anything:
+
+![The raw composited capture, at its native 12:3 aspect ratio](/img/gt3-raw-capture-12x3-aspect.jpg){: width="600"}
 
 ### Watch on YouTube
 
