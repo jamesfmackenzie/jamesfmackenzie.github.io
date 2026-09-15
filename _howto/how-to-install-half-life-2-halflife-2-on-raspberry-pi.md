@@ -202,3 +202,9 @@ I later followed that up with a dedicated step-by-step how-to video — the one 
 <iframe src="https://www.youtube.com/embed/ipQ1trbWeX0?rel=0" 
 allowfullscreen class="youtube-video"></iframe>
 </div>
+
+### Related on this site
+
+- [Half-Life 2 and Portal on Raspberry Pi]({% link _projects/half-life-2-and-portal-on-raspberry-pi.md %}) — the project notes
+- [I Made Half-Life 2 Run Natively on a Raspberry Pi 5]({% post_url 2026-09-14-i-made-half-life-2-run-natively-on-a-raspberry-pi-5 %})
+- [Raspberry Pi 5]({% link _hardware/raspberry-pi-5.md %})

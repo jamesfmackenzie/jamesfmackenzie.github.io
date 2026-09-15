@@ -23,6 +23,7 @@ For anything that needs genuine PCIe bandwidth — an external GPU, fast storage
 
 ### Related on this site
 
+- [Half-Life 2 and Portal on Raspberry Pi]({% link _projects/half-life-2-and-portal-on-raspberry-pi.md %}) — the project notes
 - [I Made Half-Life 2 Work on Raspberry Pi!]({% post_url 2024-10-19-i-made-halflife-2-half-life-2-work-on-raspberry-pi %})
 - [I Installed a Modern GPU on Raspberry Pi (and it's AWESOME!)]({% post_url 2024-11-17-i-installed-a-modern-radeon-rx-580-rx-6600-xt-gpu-on-raspberry-pi %})
 - [Radeon RX 580]({% link _hardware/ati-radeon-rx-580.md %})

@@ -64,6 +64,7 @@ If you want to build your own copy, the full step-by-step is written up separate
 
 ### Related on this site
 
-- [How To Install Half-Life 2 (and Portal!) on Raspberry Pi]({% post_url 2026-09-14-how-to-install-half-life-2-and-portal-video %}) — the follow-up how-to video
+- [Half-Life 2 and Portal on Raspberry Pi]({% link _projects/half-life-2-and-portal-on-raspberry-pi.md %}) — the project notes
+- [How To Install Half-Life 2 (and Portal!) on Raspberry Pi]({% post_url 2024-11-02-how-to-install-half-life-2-and-portal-video %}) — the follow-up how-to video
 - [How to Install Half-Life 2 on Raspberry Pi]({% link _howto/how-to-install-half-life-2-halflife-2-on-raspberry-pi.md %}) — the full written guide
 - [Raspberry Pi 5]({% link _hardware/raspberry-pi-5.md %})
