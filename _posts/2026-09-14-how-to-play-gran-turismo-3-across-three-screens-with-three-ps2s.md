@@ -2,6 +2,7 @@
 layout: post
 title: "How to Play Gran Turismo 3 Across Three Screens with Three PlayStation 2s"
 date: '2026-09-14 22:00:00'
+summary: An i.LINK Battle mode hidden inside Gran Turismo 3 links three PlayStation 2s into one continuous view across three screens — and, later, one genuine ultra-wide picture stitched from all three.
 tags: [Posts, Retrogaming, Sony PlayStation, Videogames]
 image: gt3-ultrawide-grand-valley-speedway.jpg
 ---
