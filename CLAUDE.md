@@ -43,10 +43,18 @@ Don't default to the heaviest option. Match the content to its actual shape.
    same result. A *post* narrates what I did and learned (dead ends, opinions); a
    *guide* is the distilled steps that work, in order, with the detours removed. Often
    spun out of a post once the process is nailed down. `layout: post`, tag `How To`.
-5. **`_hardware/`** — a canonical reference for a specific, reusable piece of hardware:
-   what it is, spec, verdict, where it fits. Stays generic — never a testing-session
-   narrative (that belongs in the post). Worth creating alongside the first post that
-   features the hardware, even with no concrete plan to reuse it.
+5. **`_hardware/`** — a canonical reference for a specific piece of hardware: what it
+   is, spec, verdict, where it fits. Stays generic — never a testing-session narrative
+   (that belongs in the post). Create one only when the item clears at least one of:
+   **reused** (genuinely linked from a second, independent piece of content, not just
+   back to its own origin post); **is the subject** (a post/guide is actually *about*
+   this item — a review, a "why I chose this," a comparison against alternatives — not
+   a supporting prop in someone else's story); **generalizable insight** (a fact or
+   gotcha about the item that's useful independent of the project that surfaced it);
+   or **novel/undocumented** (genuinely hard to find good information on elsewhere —
+   the page is worth writing precisely because nothing else does the job). Otherwise
+   it's a supporting prop — one appearance, nothing to say beyond what that piece
+   already says — and stays embedded: image + inline mention in the post, no page.
 6. **`_software/`** — same rule, for a tool / driver / patch / emulator / utility.
 7. **`_reference/`** — a maintained list or table (compatibility lists, "games with X").
    A living document updated over time, not a narrative.
