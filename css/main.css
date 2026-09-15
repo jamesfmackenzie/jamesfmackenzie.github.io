@@ -421,7 +421,12 @@ figcaption {
 }
 
 /* ---------- syntax-highlight container ---------- */
-.highlight { background: none; }
+/* kramdown/Rouge nests as <div class="highlight"><pre class="highlight"><code>…
+   — the pre carries the same class as its wrapper div, so an unscoped
+   `.highlight` rule would win over the plain `pre` background rule (class
+   beats element on specificity) and strip the dark background off every
+   fenced code block on the site. Scope to the div only. */
+div.highlight { background: none; }
 .highlight pre { margin: 1.8rem 0; }
 
 .nocomments-page article { border-bottom: 0; padding-bottom: 2.5rem; }

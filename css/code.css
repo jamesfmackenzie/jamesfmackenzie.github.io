@@ -1,6 +1,10 @@
 /* Dark syntax theme — tuned for --code-bg #1f262c / --code-fg #cdd6d1 */
 
-.highlight              { background: none; color: #cdd6d1; }
+/* scoped to the div, not the class generally — kramdown/Rouge puts this
+   same class on the wrapping div AND the pre itself, and an unscoped rule
+   here would strip the pre's own dark background (see main.css) */
+div.highlight           { background: none; }
+.highlight              { color: #cdd6d1; }
 
 .highlight .c,
 .highlight .cm,
