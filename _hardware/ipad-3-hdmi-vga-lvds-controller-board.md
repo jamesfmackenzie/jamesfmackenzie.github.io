@@ -4,6 +4,8 @@ title: iPad 3 HDMI and VGA Controller Board
 summary: Notes on driving a salvaged iPad 3 / iPad 4 Retina panel as a standalone monitor with a cheap LVDS controller board — a sharp, fast, 4:3 display for MiSTer FPGA and retro use.
 date: '2024-08-29 11:33:00'
 tags: [Monitors]
+hero: ipad-3-controller-board-top.jpg
+hero_alt: My iPad 3 / iPad 4 panel controller board, showing the HDMI and VGA inputs
 ---
 
 The 9.7" Retina panel from the iPad 3 and iPad 4 (an LG **LP097QX1**) is a genuinely nice display: **2048×1536**, 4:3, IPS, and a response time around **1ms**. Millions were made, so panels are cheap, and you can drive one as a standalone monitor with a small LVDS controller board.

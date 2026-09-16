@@ -4,6 +4,8 @@ title: Radeon RX 580
 summary: Notes on the Radeon RX 580 — a ubiquitous 2017 budget card, and the modern GPU I got running on a Raspberry Pi 5 over PCIe.
 date: '2024-08-29 11:33:00'
 tags: [3D Graphics, ATi, PC]
+hero: pi5-egpu-sapphire-rx580-card.jpg
+hero_alt: My Sapphire Radeon RX 580 graphics card
 ---
 
 The Radeon RX 580 is a mainstream graphics card from 2017, built on AMD's Polaris architecture. It sold in enormous numbers, held its value for years through the crypto-mining booms, and is still one of the most common used GPUs you can buy. By lineage it descends from the [ATi]({% link _hardware/ati.md %}) Radeon line — ATi was absorbed by AMD in 2006 and the brand retired in 2010, but "Radeon" carried on.

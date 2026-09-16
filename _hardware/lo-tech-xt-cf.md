@@ -4,8 +4,8 @@ title: Lo-tech XT-CF
 summary: My notes on the Lo-tech XT-CF adapter — the open-hardware 8-bit ISA card that lets a CompactFlash card stand in for a hard drive on an XT-class PC.
 date: '2024-08-29 11:33:00'
 tags: [PC, Storage]
-hero: lo-tech-xt-cf-texelec-isa-card.jpg
-hero_alt: The TexElec-manufactured Lo-tech XT-CF adapter
+hero: lo-tech-xt-cf-adapter-board-top.jpg
+hero_alt: My TexElec-manufactured Lo-tech XT-CF adapter
 ---
 
 The Lo-tech XT-CF adapter is an open-hardware 8-bit ISA card that lets a CompactFlash card stand in for a hard drive on an original IBM PC/XT or compatible. Mine is a **TexElec**-manufactured board built to the design — TexElec is one of a few vendors selling cards to this spec — with [XTIDE Universal BIOS]({% link _software/xt-ide.md %}) pre-flashed onto the onboard ROM.

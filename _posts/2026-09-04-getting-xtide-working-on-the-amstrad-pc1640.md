@@ -4,12 +4,15 @@ title: Getting XTIDE Working on the Amstrad PC1640
 summary: "Turning a CompactFlash card into hard drive storage for an Amstrad PC1640 — the failed attempts, the Serial Drive detour, and the recipe that finally worked."
 date: '2026-09-04 18:00:00'
 tags: [Amstrad, MS-DOS, PC, Retrocomputing]
-hero: lo-tech-xt-cf-texelec-isa-card.jpg
-hero_alt: The TexElec-manufactured Lo-tech XT-CF adapter
+hero: lo-tech-xt-cf-adapter-board-top.jpg
+hero_alt: My TexElec-manufactured Lo-tech XT-CF adapter
 ---
 
 Getting reliable, modern storage into an [Amstrad PC1640]({% link _hardware/amstrad-pc1640.md %}) means a [Lo-tech XT-CF adapter]({% link _hardware/lo-tech-xt-cf.md %}) running [XTIDE Universal BIOS]({% link _software/xt-ide.md %}) — it lets a CompactFlash card stand in for a hard drive. I bought the [TexElec](https://texelec.com/) version, which comes with the BIOS pre-installed, so the hardware side was the easy part. Getting it to actually boot was a different story.
 
+Card installed and screwed into the case, rear view confirming the Lo-Tech branding:
+
+![Lo-tech XT-CF adapter installed in the PC1640, rear view showing the Lo-Tech/TexElec branding](/img/amstrad-xt-ide-installed-rear-view-lo-tech-branding.jpg)
 
 ## What didn't work
 
@@ -38,6 +41,10 @@ Booted an MS-DOS 6.22 disk over serdrive and (in an attempt to fix the DOS 3.3 p
 9. Reboot and confirm everything comes up cleanly.
 
 That's it — the DOS 5 + serdrive + `fdisk /mbr`-first combination was the piece that made everything else fall into place, after DOS 3.3 and 6.22 both hit their own separate walls.
+
+The CF card slot, accessible from the front of the case once it was all buttoned up:
+
+![The CompactFlash card slot visible from the front of the Amstrad PC1640's case](/img/amstrad-xt-ide-cf-slot-visible-from-front.jpg)
 
 ## Other things worth knowing
 
