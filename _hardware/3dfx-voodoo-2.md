@@ -1,57 +1,61 @@
 ---
 layout: post
 title: 3Dfx Voodoo 2
-summary: Overview and reference notes for the 3Dfx Voodoo 2, one of the most iconic Glide accelerators of the late 1990s.
+summary: Notes on the 3Dfx Voodoo 2 — the 1998 Glide accelerator I've now chased across a thin client, two Dell office PCs, and a modern Windows 10 build.
 date: '2024-08-29 11:33:00'
 tags: [3D Graphics, 3Dfx Voodoo, PC]
 hero: 3dfx-voodoo-2-board.jpg
-hero_alt: 3Dfx Voodoo2
+hero_alt: My 3Dfx Voodoo 2 card
 ---
 
-The legendary Voodoo2 is a PC 3D accelerator from 3Dfx. Released in February 1998 as a replacement for the original Voodoo Graphics accelerator, the card runs at a chipset clock rate of 90 MHz and uses 100 MHz EDO DRAM.
+The Voodoo 2 is the 3dfx card people mean when they just say "a 3dfx card." No other card in the lineup gets chased on eBay, argued about in comment sections, or shoved into machines it was never meant for quite as often. I've now put one into a fanless thin client, two different Dell office PCs, and a modern Windows 10 build with no PCI slots at all — and every single one of those was its own separate fight.
 
-As with the original Voodoo, the Voodoo2 is a dedicated 3D accelerator, and has to be used in conjunction with a conventional 2D graphics card. It requires an external pass-through VGA cable connected from the 2D card to the Voodoo card's passthrough VGA port.
+### What it is
 
-The Voodoo2 comes in two models: one with 8 MB RAM and one with 12 MB RAM. The 4 MB framebuffer on both cards support a maximum screen resolution of 800 × 600, while the increased texture memory on the 12 MB card allows more detailed textures.
+Released in February 1998 as the follow-up to the original [Voodoo Graphics]({% link _hardware/3dfx-voodoo-1.md %}), the Voodoo 2 is a dedicated 3D-only accelerator — like its predecessor, it needs a separate 2D card and an external VGA pass-through cable, rather than doing 2D and 3D itself. It came in 8MB and 12MB versions: both have a 4MB framebuffer capping single-card resolution at 800×600, with the extra memory on the 12MB card going toward texture storage instead.
 
-The Voodoo2 also introduced Scan-Line Interleave (SLI) capability. In SLI mode, two Voodoo2 boards installed in a PC run in parallel, with each unit drawing half the lines of the display. Voodoo2 SLI not only doubles rendering throughput, it also increases the total framebuffer memory, increasing the maximum supported screen resolution to an impressive (for the time) 1024 × 768.
+Its standout feature was Scan-Line Interleave (SLI) — running two Voodoo 2 boards in parallel, each drawing half the screen's lines. SLI doubled rendering throughput and pooled the framebuffer memory, pushing the maximum resolution up to 1024×768, which was genuinely impressive for 1998. A Voodoo 2 SLI pair stayed competitive for years afterward, holding its own against cards like the Riva TNT2 and Matrox G400.
 
-3Dfx's Glide API played an essential role in the card's success, with many PC games tailored towards Glide versus other 3D APIs like Direct3D or OpenGL. Long after the chipset's obsolescence, 3Dfx cards still remain in high demand due to their unique ability to run Glide games.
+### Specifications
 
-The Voodoo2 enjoyed remarkably long usage in many computer systems, as a Voodoo2 SLI setup was competitive with newer cards like NVIDIA's RIVA TNT2, Matrox's Millennium G400, and even NVIDIA's GeForce 256.
+- **Released:** February 1998
+- **Chipset clock:** 90MHz
+- **Memory:** 8MB or 12MB EDO DRAM at 100MHz (4MB framebuffer, plus 4MB or 8MB texture memory)
+- **Max resolution:** 800×600 single card, 1024×768 in SLI
+- **API:** Glide (3dfx's proprietary API)
+- **Interface:** PCI, with an external VGA pass-through cable from a separate 2D card
 
-# Drivers
+### Why I like it
 
-Add drivers here.
+- one of the deepest Glide back catalogues of any 3dfx card
+- SLI is a genuinely interesting piece of 3D-accelerator history, not just a spec-sheet footnote
+- still common and affordable enough to actually experiment with
+- it turns any PC with a spare PCI slot — or even one without, with the right adapter — into a Glide machine
 
-# Videos
+### Where it fits
 
-<ul>
-{% for post in site.posts %}
-  {% if post.tags contains "Voodoo" %}
-    {% if post.layout == "youtube" %}
-<li>
-  <img src="/img/youtube-icon.png" style="display: inline-block; vertical-align:middle;" />
-  <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-</li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</ul>
+Every time I've installed one, it's become a project in its own right rather than a quick add-in. In an [HP Compaq t5710 thin client]({% link _hardware/hp-compaq-t5710.md %}) it meant fighting for the machine's one PCI slot. On a modern Z97 board with no PCI slots at all, it meant a PCIe-to-PCI adapter, mounting the card horizontally to fit, an unsigned 64-bit driver from the 3dfxzone forums, disabling Windows 10 driver signature enforcement, and — bizarrely — a Windows XP-era fix for a "trying to map memory" error before Glide finally ran. It's also the card that pushed a [Dell OptiPlex 760]({% link _hardware/dell-optiplex-760.md %}) out of easy Windows 98 territory and into crashes.
 
-# Tweets
+None of that makes it a difficult card to recommend — it makes it a card that rewards patience.
 
-<ul>
-{% for post in site.posts %}
-  {% if post.tags contains "Voodoo" %}
-    {% if post.layout == "tweet" %}
-<li>
-  <img src="/img/twitter-icon.png" style="display: inline-block; vertical-align:middle;" />
-  <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
-</li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</ul>
+### Pros
 
+- huge, well-loved Glide game library
+- SLI is a fascinating piece of 3D history
+- can be made to work on hardware it was never designed for, with enough persistence
 
+### Cons
+
+- needs a separate 2D card and a pass-through cable
+- period drivers don't officially support modern OSes — expect workarounds
+- SLI needs two matched cards and a motherboard with two PCI slots to bridge
+
+### Related on this site
+
+- [3Dfx]({% link _hardware/3dfx.md %})
+- [3Dfx Voodoo Graphics]({% link _hardware/3dfx-voodoo-1.md %}) — the original
+- [3Dfx Voodoo 3]({% link _hardware/3dfx-voodoo-3.md %})
+- [I Made 3Dfx Voodoo2 Work on a Modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %})
+- [Adding 3dfx Voodoo2 to a Thin Client PC]({% post_url 2022-02-15-adding-3dfx-voodoo2-to-a-thin-client-pc %})
+- [HP Compaq t5710]({% link _hardware/hp-compaq-t5710.md %})
+- [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})
