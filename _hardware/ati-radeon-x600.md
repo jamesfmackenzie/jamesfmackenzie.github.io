@@ -6,58 +6,52 @@ date: '2024-08-29 11:33:00'
 tags: [3D Graphics, ATi, PC]
 ---
 
-The ATI Radeon X600 is an unusual card in retro PC terms. It comes from the early PCI Express era, which immediately makes it suspect for Windows 98 builders, but it is also close enough to ATI's better-supported Radeon generations that it can sometimes work far better than you might expect.
+The Radeon X600 is an unusual card in retro PC terms. It comes from the early PCI Express era, which immediately makes it suspect for Windows 98 builders, but it's also close enough to ATi's better-supported Radeon generations that it can work far better than you'd expect — depending entirely on which machine it ends up in.
 
-That makes it exactly the sort of card I find interesting: not universally reliable, not universally loved, but potentially very useful in the right machine.
+### What it is
 
-### Why the Radeon X600 matters
+The X600 is an early PCI Express card built on ATi's RV370 GPU, sold widely through OEM channels like Dell in the mid-2000s. It's a modest card by later standards, but it landed close enough to the end of ATi's official Windows 98 driver support window that it's worth testing rather than dismissing outright.
 
-The X600 sits in a useful niche:
+### Specifications
 
-- early **PCI Express** graphics card
-- still close to ATI's late Windows 98 driver support window
-- fast enough for serious late Win98 and Windows XP gaming
-- often inexpensive because it was so common in OEM systems
+- **Released:** 2004
+- **GPU:** RV370
+- **Pixel pipelines:** 4
+- **Memory:** 128MB DDR, 128-bit bus
+- **Core clock:** around 400MHz
 
-For retro builds based on later Dell or office-class hardware, that combination can be very attractive.
+### Windows 98: it depends on the machine
 
-### Windows 98 potential
+This is the real story of the card — "supported GPU" and "stable GPU" are not the same thing, and the X600 makes that obvious.
 
-This is the main reason to care about the card.
+- On a [Dell OptiPlex 760]({% link _hardware/dell-optiplex-760.md %}), it installed quickly with Catalyst 6.2 and worked properly, hardware Direct3D acceleration included. See the [full write-up]({% post_url 2026-03-29-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %}).
+- On a [Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %}), the exact opposite happened — it froze Windows 98 outright as soon as the Catalyst driver loaded, with no difference between Catalyst 6.2 and 9.0c. The [Radeon X700 Pro]({% link _hardware/ati-radeon-x700-pro.md %}) failed identically on the same machine. See the [full write-up]({% post_url 2026-03-30-i-tried-to-turn-a-dell-dimension-e520-into-a-windows-98-retro-pc %}).
+- On a [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %}), X600-to-X850-era ATi cards are still some of the more interesting Win98 options to test.
 
-On paper, the X600 offers:
+Same driver, same GPU family, two very different outcomes depending on the chipset underneath it.
 
-- official-era ATI driver support
-- enough power for demanding late Win98 games
-- a practical path to Direct3D acceleration on PCIe hardware
+### Why I like it
 
-In practice, though, the result depends heavily on the host platform.
+- an early PCIe card that still sits inside ATi's Windows 98 driver support window
+- cheap and common, thanks to years of OEM use
+- when it works, it's a genuinely elegant bridge between classic Win98 gaming and newer hardware
+- when it doesn't, it's a useful, fast way to find out a platform's limits
 
-### Platform sensitivity
+### Pros
 
-The Radeon X600 is a good example of why "supported GPU" and "stable GPU" are not always the same thing.
+- fast enough for demanding late Windows 98 and Windows XP games
+- inexpensive and easy to find
+- official-era ATi driver support
 
-In my own notes:
+### Cons
 
-- it worked well in the **[Dell OptiPlex 760]({% link _hardware/dell-optiplex-760.md %})** with Catalyst 6.2 and proper Direct3D acceleration
-- similar X600-era PCIe cards were more awkward on the **[Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %})**, where vendor drivers were much less convincing
-- the **[Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})** still treats X600-to-X850-era ATI cards as some of the most interesting Win98 options
-
-That is really the story of this card. It is not a universal answer, but it is one of the better PCIe-era candidates to test when you are trying to push Win98 onto newer hardware.
-
-### Why I still like it
-
-What keeps the X600 interesting is that it can unlock builds that would otherwise look impossible:
-
-- cheap OEM Core 2 systems
-- PCIe-only graphics expansion
-- late Windows 98 experiments without going fully unofficial or exotic
-
-When it works, it feels like a very elegant bridge between classic Win98 gaming and later hardware.
+- platform-dependent to the point of being unpredictable — works perfectly on one machine, freezes another outright
+- early PCIe on a late-9x OS is inherently a bit of a gamble
 
 ### Related on this site
 
 - [ATi]({% link _hardware/ati.md %})
+- [ATi Radeon X700 Pro]({% link _hardware/ati-radeon-x700-pro.md %})
 - [I Tried to Turn a Dell OptiPlex 760 into a Windows 98 Retro PC]({% post_url 2026-03-29-i-tried-to-turn-a-dell-optiplex-760-into-a-windows-98-retro-pc %})
 - [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})
 - [Dell Dimension E520]({% link _hardware/dell-dimension-e520.md %})
