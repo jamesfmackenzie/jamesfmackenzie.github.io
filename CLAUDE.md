@@ -59,11 +59,16 @@ Don't default to the heaviest option. Match the content to its actual shape.
 7. **`_reference/`** — a maintained list or table (compatibility lists, "games with X").
    A living document updated over time, not a narrative.
 8. **`_projects/`** — the highest bar, and downstream of the others rather than a
-   substitute. Create one only when **2+ already-published separate pieces** exist about
-   the same work **and** no single one tells the whole story. If a post already links
-   out to its hardware page, that post *is* the sewn-together home — a project page on
-   top adds nothing. Earns its place for a genuine multi-part series over time.
-   `projects.html` lists these by `status:` (`in progress` / `completed`).
+   substitute. Create one only when there is **a specific, statable goal** ("get GT3
+   running across three screens", "get a modern Radeon GPU working on a Pi 5") **and**
+   **2+ already-published separate pieces** working toward that same goal, with no
+   single one telling the whole story. A hardware item that simply accumulates
+   mentions over time — a tweet when it arrived, an unrelated tutorial, a later
+   repair — is not a project by itself; that's reuse, not a shared goal, and belongs
+   on the hardware page's own Related links, not a project page. If a post already
+   links out to its hardware page, that post *is* the sewn-together home — a project
+   page on top adds nothing. `projects.html` lists these by `status:`
+   (`in progress` / `completed`).
 
 ## Repo mechanics
 
