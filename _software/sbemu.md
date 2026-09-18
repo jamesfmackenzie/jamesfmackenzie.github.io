@@ -1,39 +1,26 @@
 ---
 layout: post
 title: SBEMU
-summary: My take on SBEMU, a remarkable DOS utility that emulates Sound Blaster audio on modern PCs and gives awkward retro hardware a second chance.
+summary: Notes on SBEMU, the DOS utility that emulates Sound Blaster and AdLib audio on hardware with no real legacy sound path at all.
 date: '2024-08-29 11:33:00'
 tags: [MS-DOS, PC, Sound, Utilities]
 ---
 
-SBEMU is one of the most exciting DOS utilities I have come across in years.
+Most PCI-era and later motherboards dropped proper legacy DOS audio entirely — no ISA bus, no real Sound Blaster compatibility, just silence in old games. SBEMU (by GitHub user [crazii](https://github.com/crazii/SBEMU)) fixes that in software.
 
-The big idea is simple: even on PCs that are too modern for native DOS audio, `SBEMU` can emulate Sound Blaster sound and get a surprising number of DOS games working properly. That makes it a very big deal for anyone trying to run DOS on later motherboards, onboard audio, or other hardware that was never meant to behave like a classic Sound Blaster setup.
+### What it is
 
-### Why I keep it
+SBEMU is a DOS TSR that emulates a Sound Blaster card and AdLib FM synth, using whatever real audio hardware is actually present as the output path. It supports a specific set of chipsets: Intel ICH southbridge audio, VIA VT82C686/VT8233, nForce, Intel HD Audio, and PCI cards like the Sound Blaster Live! and Audigy. Point it at one of those, and DOS games get genuine Sound Blaster-compatible digital audio and AdLib-compatible FM music, with no real ISA Sound Blaster in the machine at all.
 
-I keep coming back to `SBEMU` because it changes the rules for modern DOS builds:
+### Why it matters
 
-- it makes sound possible on hardware that would otherwise be silent
-- it reduces the need for rare or expensive period-correct sound cards
-- it makes later retro-PC experiments much more practical
+I got it running on a Core i7 PC — hardware with no legacy DOS audio path whatsoever — and had Doom running with FM audio, and Duke Nukem 3D with full digital sound, natively in DOS. Not an emulator, not DOSBox: real DOS, real games, sound working on a machine that should have been completely silent.
 
-For me, that is the appeal. It is not just another utility. It opens doors.
+It also gives later PCI sound cards a second life. A [Sound Blaster Live!]({% link _hardware/creative-labs-sound-blaster-live.md %}) has a shaky story under native DOS on its own, but as an SBEMU output target it becomes genuinely useful there.
 
-### My take
+### Setting it up
 
-My take is that `SBEMU` is one of the most useful retro-PC software projects around.
-
-It does not replace every dedicated sound card in every situation, and it does not magically make all hardware identical. But it can make a "this should not work" DOS machine suddenly become a very usable one.
-
-That is especially valuable on more modern PCI-era systems, where native DOS audio support is often weak, awkward, or completely absent.
-
-### Useful things to know
-
-- `SBEMU` is most interesting on machines that are too modern for straightforward native DOS audio.
-- It can use different sound hardware as a target, including onboard audio in some systems and cards like the `Sound Blaster Live!`.
-- That gives certain later sound cards a second life, because they become useful DOS-audio targets even when their own native DOS story is limited.
-- I think of `SBEMU` less as an emulator curiosity and more as a practical compatibility tool for real hardware.
+Getting it onto a bootable USB stick and configured is straightforward but has a couple of specific steps — see [How To Install SBEMU on a Bootable USB Stick]({% link _howto/how-to-install-sbemu-on-a-bootable-usb-stick.md %}) for the full walkthrough.
 
 ### Related on this site
 
