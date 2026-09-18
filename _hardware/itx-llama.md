@@ -47,5 +47,6 @@ For DOS gaming specifically, this is about as close to "just works" as modern re
 
 - [ITX Llama: A Brand New PC for 1990s DOS Games!]({% post_url 2024-09-07-itx-llama-a-brand-new-pc-for-dos-retro-games %})
 - [ITX Llama Part 2: A Sonic Supercharge]({% post_url 2024-09-21-adding-raspberry-pi-to-the-itx-llama-for-a-roland-mt32-sonic-supercharge %})
+- [Recovering a Bricked BIOS with a SOP8 Clip]({% post_url 2024-10-06-recovering-a-bricked-bios-with-a-sop8-clip %})
 - [There is a New Group Buy for ITX Llama]({% post_url 2024-10-14-there-is-a-new-group-buy-for-itx-llama %})
 - [ATi Radeon 9200 SE]({% link _hardware/ati-radeon-9200-se.md %})

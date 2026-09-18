@@ -24,6 +24,7 @@ Full board details — specs, audio options, the AGP slot's real electrical beha
 More details:
 
 - [ITX Llama hardware page]({% link _hardware/itx-llama.md %})
+- [Recovering a Bricked BIOS with a SOP8 Clip]({% post_url 2024-10-06-recovering-a-bricked-bios-with-a-sop8-clip %})
 - [Public Service Announcement: a new group-buy for the ITX Llama]({% post_url 2024-10-14-there-is-a-new-group-buy-for-itx-llama %})
 
 ### Part 1: A Brand New PC for 1990s DOS Games

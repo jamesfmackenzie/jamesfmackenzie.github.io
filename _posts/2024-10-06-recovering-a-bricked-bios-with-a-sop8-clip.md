@@ -3,10 +3,9 @@ layout: post
 title: "Recovering a Bricked BIOS with a SOP8 Clip"
 date: '2024-10-06 12:00:00'
 tags: [PC, Posts, Repairs, Retrocomputing]
-image: TODO.jpg
+hero: xgecu-programmer-sop8-clip-top-down.jpg
+hero_alt: The XGecu Pro (TL866 II Plus) EEPROM programmer with its SOP8 test clip attached
 ---
-
-<!-- DRAFT — skeleton from the ITX Llama email exchange + the tweet (1842597901836681384) -->
 
 I bricked my [ITX Llama]({% link _hardware/itx-llama.md %}) trying to change its CPU clock speed. Here's how I got it back with a clip, a cheap programmer, and about twenty minutes.
 
@@ -24,7 +23,6 @@ Either way, I was locked out. The only way back in was to reflash the BIOS chip 
 - an EEPROM programmer — I used a **TL866 II Plus** (I'd also bought a cheap CH341A as a backup); the actual unit's case is branded "XGecu Pro" (XGecu being the manufacturer/brand behind the TL866 line)
 - the flash chip on the Llama is a **Macronix MX25U6435F**, a 64&nbsp;Mbit SPI part that runs at **1.8&nbsp;V** — worth knowing, because a 3.3&nbsp;V-only programmer or adapter can damage a 1.8&nbsp;V chip
 
-![The programmer with its SOP8 test clip attached](/img/xgecu-programmer-sop8-clip-top-down.jpg){: width="480"}
 ![The SOP8 clip, ready to grip a flash chip's legs](/img/xgecu-programmer-sop8-clip-angle.jpg){: width="480"}
 
 ## The recovery
@@ -34,17 +32,12 @@ Either way, I was locked out. The only way back in was to reflash the BIOS chip 
 3. Flash a known-good BIOS image. For the Llama, the current BIOS resets the CPU multiplier back to 300&nbsp;MHz as part of the ROM itself, so flashing it is guaranteed to bring the board back to a bootable state.
 4. Remove the clip, power on, done.
 
-<!-- TODO: exact minipro commands, verify step, first successful boot -->
-
 ## The actual fix for the overclock
 
 Once it was alive again: the 500&nbsp;MHz instability was down to the "silicon lottery" — my particular chip just doesn't like it, no matter the cooling. A later BIOS added a **466&nbsp;MHz** option, and that turned out to be the stable sweet spot for this board. (More on the cooling and overclocking in the [ITX Llama build writeup]({% link _hardware/itx-llama.md %}).)
 
-## Watch on YouTube
-
-<!-- TODO: is there a video? otherwise embed the tweet -->
-
 ### Related on this site
 
+- [Just used a SOP8 clip to unbrick my first BIOS]({% post_url 2024-10-05-i-used-a-sop-8-sop8-clip-to-flash-a-bricked-bios %}) — the original tweet
 - [ITX Llama]({% link _hardware/itx-llama.md %})
 - [Building the ITX Llama]({% link _projects/building-the-itx-llama-a-brand-new-dos-gaming-pc.md %}) — the project notes
