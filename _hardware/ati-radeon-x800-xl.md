@@ -1,86 +1,52 @@
 ---
 layout: post
 title: ATi Radeon X800 XL
-summary: Hardware overview of the ATI Radeon X800 XL, a fast late-era PCIe graphics card that makes a lot of sense for Windows 98 and Windows XP retro PCs.
+summary: Hardware overview of the ATI Radeon X800 XL, a fast late-era PCIe graphics card that makes a lot of sense for Windows 98 and Windows XP retro builds.
 date: '2024-08-29 11:33:00'
 tags: [3D Graphics, ATi, PC]
 hero: ati-radeon-x800-xl.jpg
 hero_alt: The Radeon X800 XL with its stock ATI cooler
 ---
 
-The ATI Radeon X800 XL is one of the most appealing graphics cards from the last really interesting stretch of Windows 98 and early Windows XP gaming. It is fast, relatively common, and old enough to feel period-correct for late DirectX 9 gaming, while still being new enough to make a powerful bridge card for mixed Win98 and XP builds.
+The Radeon X800 XL sits in a nice spot for retro PC building: fast and PCI Express, but old enough to still have official Windows 98 Catalyst drivers. Cards that manage both of those at once are rarer than you'd think.
 
-For retro PC builders, that combination is hard to ignore. The X800 XL is not just a strong card on paper. It also sits in a very useful practical niche: one of the fastest officially supported ATI cards for Windows 98, without drifting so far into the late PCIe era that compatibility becomes obviously hopeless.
+### What it is
 
-### Why the Radeon X800 XL matters
+The X800 XL is a 2005 PCI Express card built on ATi's R430 GPU — 16 pixel pipelines on a 256-bit memory bus, paired with 256MB of GDDR3. It's fast enough for real late-DirectX 9 gaming while landing just inside the window where ATi still shipped genuine Windows 98 drivers.
 
-The card stands out for a few reasons:
+### Specifications
 
-- one of the fastest officially supported ATI options for Windows 98
-- still very capable for Windows XP gaming
-- common PCI Express form factor for later OEM and Core 2-era retro builds
-- no need to jump to much newer GPUs just to get strong late-DX9 performance
+- **Released:** 2005
+- **GPU:** R430
+- **Pixel pipelines:** 16
+- **Memory:** 256MB GDDR3, 256-bit bus
+- **Core / memory clock:** 400MHz / 500MHz
 
-That makes it a particularly good fit for builders trying to make one PC cover a lot of ground from the late 1990s into the mid-2000s.
+### Why I like it
 
-### Windows 98
-
-This is where the X800 XL is most interesting.
-
-High-level take:
-
-- very fast for a late Win98 build
-- official-era Catalyst support
-- a strong choice when you want to prove that PCIe and Windows 98 can coexist
-
-The card sits in the sweet spot where Windows 98 support is still practical, but performance has moved well beyond the older AGP-era cards many people automatically reach for.
-
-### Windows XP
-
-The X800 XL also remains a very comfortable Windows XP graphics card.
-
-It has more than enough performance for:
-
-- late DirectX 8 and DirectX 9 titles
-- higher resolutions and anti-aliasing in older 3D games
-- mixed Win98 / XP builds where you do not want to swap GPUs just to move between operating systems
-
-That is part of why it works so well in practical retro builds rather than just in theory.
-
-### Why I like it in retro builds
-
-What I like most about the X800 XL is that it solves a very specific retro-builder problem.
-
-If you are building something like a Dell OptiPlex 380 or another cheap office-class PCIe machine, you want:
-
-- enough power for demanding Win98 games
-- real Windows 98 driver support
-- strong Windows XP performance
-- a card that still feels era-appropriate
-
-The X800 XL delivers that combination unusually well.
-
-### Known downside: cooler and fan wear
-
-The main weakness of old X800 XL cards now is not really performance. It is condition.
-
-Many surviving examples are cheap because they arrive with:
-
-- noisy fans
-- worn bearings
-- tired coolers
-
-That is exactly what happened with my own card. It was inexpensive, but the fan was seized and making an awful grinding noise — sorting it out took [three attempts]({% post_url 2026-09-03-fixing-fan-noise-on-a-radeon-x800-xl %}), ending with an aftermarket cooler.
-
-![The seized stock fan, mid-repair](/img/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="680"}
-
-That kind of age-related maintenance is now just part of owning hardware from this era.
+- one of the fastest cards with official-era Windows 98 Catalyst support
+- also a genuinely capable Windows XP card, so it doesn't need swapping out between OSes
+- common PCIe form factor, so it drops into later OEM and Core 2-era machines without hunting for AGP
+- lets one PC cover late-90s through mid-2000s gaming without changing GPUs
 
 ### My card
 
-My own X800 XL was used in the **retro rocket** OptiPlex 380 build, where it helped turn a very ordinary office PC into a machine that could handle DOS, Windows 98, and Windows XP gaming extremely well.
+Mine went into the [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %}) build — the **retro rocket** — where it turned a fairly ordinary office PC into something that handles DOS, Windows 98, and Windows XP gaming well. See [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %}) for the full build.
 
-That is a big part of why I rate the card so highly. It is not just historically interesting. It has already proved itself in a practical modern retro build.
+It arrived cheap for a reason: the fan was seized and grinding badly. Sorting that out took [three attempts]({% post_url 2026-09-03-fixing-fan-noise-on-a-radeon-x800-xl %}), ending with an aftermarket cooler.
+
+![The seized stock fan, mid-repair](/img/fixing-a-radeon-x800-xl-fan-bearing.jpg){: width="680"}
+
+### Pros
+
+- fast, official-era Windows 98 support — a genuine rarity for a PCIe card
+- comfortably capable under Windows XP too
+- common and generally affordable
+
+### Cons
+
+- surviving cards are old enough that fan/cooler wear is close to guaranteed
+- 256MB and a 2005-era GPU still cap how far it stretches into later DX9 titles
 
 ### Related on this site
 

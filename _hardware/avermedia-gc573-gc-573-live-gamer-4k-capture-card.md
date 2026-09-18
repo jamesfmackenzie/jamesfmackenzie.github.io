@@ -6,42 +6,33 @@ date: '2024-08-29 11:33:00'
 tags: [PC, Video Capture]
 ---
 
-The AVerMedia GC573 Live Gamer 4K is a modern PCIe capture card aimed at high-bandwidth video capture: 4K60, HDR, and high-frame-rate 1080p sources. That puts it in a very different category from cards like the Micomsoft SC-512N1-L/DVI, which I use for more specialist retro-video work.
+Most of my capture work is retro — analog signals, unusual sync, cards that need real troubleshooting to get right. The GC573 is the opposite of that: a modern HDMI capture card that's just supposed to work, and does.
 
-That difference is exactly why the GC573 is interesting. It is not a strange retro-video edge case. It is a dependable modern workhorse.
+### What it is
 
-### Why the GC573 matters
+The GC573 is an internal PCIe card for capturing HDMI sources: 4K60 with HDR10, and high-frame-rate modes up to 1440p144 or 1080p240. It connects over PCIe x4 rather than USB, and passes signal through with no added lag, so a display can stay connected downstream of it.
 
-The card makes sense because it offers:
+### Specifications
 
-- internal PCIe capture
-- reliable **4K60** support
-- high-frame-rate capture modes such as 1080p240
-- a much more mainstream modern workflow than older specialist capture cards
+- **Interface:** PCIe x4
+- **Capture:** up to 4K60 with HDR10
+- **Passthrough:** 2160p60 HDR / 1440p144 / 1080p240
+- **Recording bitrate:** 150–240 Mbps
 
-If your capture needs are mostly modern consoles, PCs, or HDMI-first setups, that is a very strong combination.
+### Where it fits
 
-### Where it fits in my setup
+This is the card I reach for when the source is modern — a current console, a PC, anything HDMI-first — rather than the [Micomsoft SC-512N1-L/DVI]({% link _hardware/micomsoft-sc-512-n1-l-dvi-pci-e-capture-card.md %}) I use for older analog and retro-console capture. The two do different jobs: the Micomsoft earns its keep on awkward analog and sync edge cases, and the GC573 is what I use when I just want a clean, dependable HDMI capture without a fight.
 
-I think of the GC573 as the straightforward capture card.
+### Pros
 
-Compared with more specialist retro options:
+- reliable 4K60 HDR capture with no added passthrough lag
+- handles high-frame-rate 1440p/1080p sources well
+- internal PCIe card — no USB bandwidth or driver quirks to fight
 
-- easier to use
-- better suited to modern HDMI sources
-- less dependent on unusual sync or analogue capture chains
+### Cons
 
-That does not replace a card like the Micomsoft for every use case, but it does make the GC573 a very practical default choice when you want reliable modern capture rather than experimental retro capture workflows.
-
-### Why I still value it
-
-Retro and modern capture often get mixed together in the same workspace. The GC573 is useful because it handles the modern side of that equation cleanly.
-
-That means:
-
-- fewer workflow headaches
-- dependable results
-- a good baseline card when I do not need to fight an awkward legacy video signal
+- HDMI-only — no help with analog or older retro sources
+- needs a free PCIe slot, unlike a USB capture box
 
 ### Related on this site
 
