@@ -98,6 +98,13 @@ Don't default to the heaviest option. Match the content to its actual shape.
 - **Home page is infinite scroll** (`js/infinite-jekyll.js` + `all-posts.json`). The
   feed markup exists twice — in `_layouts/index.html` (Liquid) and `infinite-jekyll.js`
   (JS-injected) — keep them in sync. The footer is unreachable on the home page.
+- **`hardware.html` and `howto.html` list by a fixed set of category tags**, not the
+  generic `How To` tag or any catch-all. A page whose tags don't match one of those
+  specific categories is invisible on that listing page even though it's live and
+  correctly tagged otherwise — check the category list in the file itself before
+  assuming a tag is "close enough." `sitemap.html`, by contrast, is fully dynamic: it
+  collects every tag used anywhere on the site and gives each one its own browsable
+  section, no fixed list to match.
 
 ## Voice & tone
 
@@ -144,6 +151,9 @@ Keep new CSS token-driven and in that file.
 - The page intro (kicker + `<h1>` + one-line meta + optional hero) is
   `_includes/post-intro.md`, used by post / nodate / nocomments; section + sitemap
   layouts render their own `.intro`.
+- **`Posts` tag is reserved for `_posts/`** — never add it to `_hardware`, `_software`,
+  `_howto`, or `_reference` pages. `Lists` is the equivalent for `_reference/` pages
+  that are a maintained list or table (as opposed to `Posts`' narrative shape).
 
 ### Images
 
