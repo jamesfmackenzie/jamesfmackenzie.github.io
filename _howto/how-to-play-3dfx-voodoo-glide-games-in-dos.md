@@ -151,3 +151,11 @@ Find more details <a href="https://www.vogons.org/viewtopic.php?t=46532" target=
 - <a href="http://www.vogonswiki.com/index.php/3dfx" target="_blank">Vogons Wiki 3dfx</a>
 - <a href="https://www.vogons.org/viewtopic.php?t=35721" target="_blank">Voodoo 2 DOS Glide compaibility matrix</a>
 
+
+### Related on this site
+
+- [DOS Glide Games]({% link _reference/dos-glide-games.md %}) — the maintained list of statically and dynamically linked games
+- [Glide]({% link _software/glide.md %})
+- [3Dfx Voodoo 2]({% link _hardware/3dfx-voodoo-2.md %})
+- [3Dfx Voodoo 3]({% link _hardware/3dfx-voodoo-3.md %})
+
