@@ -108,24 +108,7 @@ This is possible, and perhaps desirable to play both newer and older Glide games
 
 ### Supported games
 
-Statically linked games:
-
-* Actua Soccer '96
-* Battle Arena Toshinden
-* EF2000: Tactcom
-* Fatal Racing/Whiplash
-* Starfighter 3000
-
-Dynamically linked games:
-
-* Descent II
-* Tomb Raider
-* Screamer 2
-* XCar: Experimental Racing
-
-Note: there are some compatibility problems even for these dynamically linked games. One example is Archimedean Dynasty.
-
-Find more details <a href="https://www.vogons.org/viewtopic.php?t=886" target="_blank">here</a>.
+For which games are statically vs dynamically linked, see the maintained [DOS Glide Games]({% link _reference/dos-glide-games.md %}) list.
 
 
 ### Troubleshooting individual games

@@ -28,7 +28,7 @@ Full setup steps, environment variables, and troubleshooting: [How To Play 3Dfx 
 - Screamer 2
 - XCar: Experimental Racing
 
-Even some dynamically linked games have their own quirks — Archimedean Dynasty is a known example with compatibility problems despite using `glide2x.ovl`.
+Even some dynamically linked games have their own quirks — Archimedean Dynasty is a known example with compatibility problems despite using `glide2x.ovl`. More detail on individual game compatibility: <a href="https://www.vogons.org/viewtopic.php?t=886" target="_blank">Vogons</a>.
 
 ### Related on this site
 

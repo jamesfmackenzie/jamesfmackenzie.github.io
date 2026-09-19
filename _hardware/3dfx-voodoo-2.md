@@ -59,3 +59,4 @@ None of that makes it a difficult card to recommend — it makes it a card that 
 - [Adding 3dfx Voodoo2 to a Thin Client PC]({% post_url 2022-02-15-adding-3dfx-voodoo2-to-a-thin-client-pc %})
 - [HP Compaq t5710]({% link _hardware/hp-compaq-t5710.md %})
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})
+- [DOS Glide Games]({% link _reference/dos-glide-games.md %}) — the maintained list

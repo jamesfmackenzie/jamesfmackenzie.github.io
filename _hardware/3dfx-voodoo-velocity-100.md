@@ -33,4 +33,5 @@ For a period Windows 98 build it is a cheap way onto the Voodoo3 / Glide 2 platf
 - [3Dfx]({% link _hardware/3dfx.md %})
 - [3Dfx Voodoo 2]({% link _hardware/3dfx-voodoo-2.md %})
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})
+- [DOS Glide Games]({% link _reference/dos-glide-games.md %}) — the maintained list
 - [Does this Arcade Machine Voodoo 3 work on PC?]({% post_url 2024-02-16-the-cheapest-3dfx-voodoo3-voodoo-3 %})

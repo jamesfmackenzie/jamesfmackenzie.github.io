@@ -13,5 +13,6 @@ Running it on real hardware is genuinely worth it: on a [Voodoo 2]({% post_url 2
 ### Related on this site
 
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})
+- [DOS Glide Games]({% link _reference/dos-glide-games.md %}) — the maintained list
 - [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %})
 - [Glide]({% link _software/glide.md %})

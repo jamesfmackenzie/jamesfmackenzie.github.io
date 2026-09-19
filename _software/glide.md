@@ -16,4 +16,5 @@ I keep coming back to it through the [Voodoo 2]({% post_url 2026-08-30-voodoo-2-
 
 - [3Dfx]({% link _hardware/3dfx.md %})
 - [How To Play 3Dfx Glide Games in DOS]({% link _howto/how-to-play-3dfx-voodoo-glide-games-in-dos.md %})
+- [DOS Glide Games]({% link _reference/dos-glide-games.md %}) — the maintained list
 - [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %})

@@ -35,6 +35,16 @@ hero_alt: 3Dfx Original Logo
 {% endfor %}
 </ul>
 
+### 3Dfx reference
+
+<ul>
+{% for page in site.reference %}
+  {% if page.tags contains "3Dfx Voodoo" %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
 ### 3Dfx posts
 
 <ul>
