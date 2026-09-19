@@ -92,7 +92,7 @@ Follow the on-screen prompts to configure Windows. The default options are suita
 
 ![](/img/windows-xp-graphics-mode-setup-and-configuration.png)
 
-### Setup 9 - Boot Windows XP
+### Step 9 - Boot Windows XP
 
 After one last reboot, Windows XP will load for the first time. This is your opportunity to install any necessary drivers and start using Windows XP.
 

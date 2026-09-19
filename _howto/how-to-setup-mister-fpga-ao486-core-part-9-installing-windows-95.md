@@ -97,17 +97,8 @@ Next we need to format the hard disk:
 
 <blockquote>Enter a <i>Volume label</i> (your choice) to finalize the format process.</blockquote>
 
-<!--
-{:start="3"}
-3. Now we need to format the storage disk. This time type <code>format d:</code>, <code>Y</code> to *Proceed with Format*:
 
-![](/img/mister-ao486-format-windows-95-hard-disk.png)
-
-<blockquote>Again enter a <code>Volume label</code> of your choice.</blockquote>
--->
-
-
-### Step 5 – Install Windows 95
+### Step 6 – Install Windows 95
 
 Run <code>D:\SETUP.EXE</code> to launch Windows 95 setup. Follow all the defaults to install Windows 95:
 
@@ -120,7 +111,7 @@ Instead, keep the disk in and reboot ao486 (*Windows Key* + *F12*, <code>Reset a
 ![](/img/mister-ao486-windows-95-finishing-setup.png)
 
 
-### Step 5 – Disable Hard Disk Driver
+### Step 7 – Disable Hard Disk Driver
 
 Due to a compatibility issue between AO486 and the Windows 95 disk driver, we need to (temporarily) disable it. Here's how: 
 
@@ -142,7 +133,7 @@ ren ESDI_506.PDR ESDI_506.BAK
 4. Reboot ao486 (*Windows Key* + *F12*, <code>Reset and apply HDD</code>)
 
 
-### Step 6 – Start Windows 95
+### Step 8 – Start Windows 95
 
 Windows 95 will start for the first time. Follow the last few setup steps to set your username, password, timezone etc.
 
@@ -151,7 +142,7 @@ Once those are done, the Windows 95 desktop will load!
 ![](/img/mister-ao486-welcome-to-windows-95.png)
 
 
-### Step 7 – Re-enable Hard Disk Driver
+### Step 9 – Re-enable Hard Disk Driver
 
 To re-enable the Hard Disk Driver:
 

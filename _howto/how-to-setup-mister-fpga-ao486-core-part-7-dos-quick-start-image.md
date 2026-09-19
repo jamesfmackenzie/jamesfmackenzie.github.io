@@ -41,8 +41,6 @@ Setup takes ~10 minutes. Here's how to get started.
 
 ![](/img/mister-ao486-dos-quick-start-first-boot.png)
 
-<!-- TODO: add YouTube video and link here -->
-
 
 ### Mounting Floppy and CD-ROM Images
 

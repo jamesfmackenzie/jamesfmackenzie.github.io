@@ -3,7 +3,7 @@ layout: post
 title: How to Split and Copy Large Files to Your Atari ST in Chunks
 date: '2016-01-31 17:47:00'
 summary: If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software ...
-tags: [Atari ST, How To, Posts, Retrocomputing]
+tags: [Atari ST, How To, Retrocomputing]
 ---
 
 If you have a hard drive attached to your ST, you might want to transfer files bigger than what can fit on a single floppy. You can achieve this using ARJ compression software, available for PC <a href="http://www.arjsoftware.com/arj32.htm" target="_blank">here</a> and ST <a href="https://sites.google.com/site/stessential/archiver-tools" target="_blank">here</a>.

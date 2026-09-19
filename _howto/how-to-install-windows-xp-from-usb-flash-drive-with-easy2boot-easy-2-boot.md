@@ -82,7 +82,7 @@ Follow the on-screen prompts to configure Windows. The default options are suita
 
 ![](/img/windows-xp-graphics-mode-setup-and-configuration.png)
 
-### Setup 7 - Boot Windows XP
+### Step 7 - Boot Windows XP
 
 After one last reboot, Windows XP will load for the first time. Enjoy!
 

@@ -10,7 +10,7 @@ tags: [Atari ST, How To, Retrocomputing]
  
 ### What do you need?
  
-* An Atari ST Ethernet adapter. You can pick up the awesome NetUSBee <a href="http://www.lotharek.pl/product.php?pid=73" target="_blank">here</a> for EUR60.
+* An Atari ST Ethernet adapter. You can pick up the NetUSBee <a href="http://www.lotharek.pl/product.php?pid=73" target="_blank">here</a> for EUR60.
 * A <a href="https://en.wikipedia.org/wiki/Category_5_cable" target="_blank">Cat5</a> or <a href="https://en.wikipedia.org/wiki/Category_6_cable" target="_blank">Cat6</a> Ethernet cable
 * An [ST-compatible floppy disk]({% post_url 2016-01-30-use-floppy-disk-to-transfer-files-from-pc-to-st %})
 

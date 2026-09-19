@@ -2,7 +2,7 @@
 layout: post
 title: "How to Browse the Web on Atari ST"
 date: '2019-12-08 00:00:02:00'
-summary: 
+summary: Getting an Atari ST online and browsing the (old, CSS-free) web — a NetUSBee adapter for networking, an ET4000 card for resolution, and Crystal Atari Browser to actually browse.
 tags: [Atari ST, How To, Retrocomputing]
 ---
 

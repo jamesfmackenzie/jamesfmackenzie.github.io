@@ -7,11 +7,11 @@ image: duke-nukem-3d-running-on-sound-blaster-sbemu-4.jpg
 tags: [How To, MS-DOS, PC, Sound]
 ---
 
-SBEMU is an awesome new DOS program that emulates a Sound Blaster card.
+SBEMU is a DOS program that emulates a Sound Blaster card.
 
 It allows you to play DOS games, with sound effects and FM audio *natively on modern hardware* – no Sound Blaster required!
 
-It's a true breakthrough for DOS gaming. Here's how to get started.
+Here's how to get started.
 
 ### What you need
 
