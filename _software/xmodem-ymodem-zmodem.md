@@ -10,6 +10,10 @@ XModem, YModem, and ZModem are a lineage of serial file-transfer protocols — X
 
 Of the three, ZModem is the one I actually use — it's the fastest and least fiddly to get working. On the ST side that means `XYZ.TTP`, and on the PC side, TeraTerm's built-in ZModem support.
 
+### Sending files back to the PC
+
+Going the other way — ST to PC — just swaps the roles. In TeraTerm, choose *Receive a file* instead of *Send a file*, then on the ST side launch `XYZ.TTP` with the `-u` upload flag and the file to send, e.g. `XYZ.TTP -u C:\MYFILE.TXT`.
+
 ### Related on this site
 
 - [Using Serial Cable and ZMODEM to Transfer Files from PC to ST]({% post_url 2016-02-13-use-rs232-serial-cable-and-zmodem-to-transfer-files-from-pc-to-st %})
