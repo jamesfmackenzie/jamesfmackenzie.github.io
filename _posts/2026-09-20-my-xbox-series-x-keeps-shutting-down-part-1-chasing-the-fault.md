@@ -12,7 +12,7 @@ My Xbox Series X started powering itself off mid-game. Not crashing to the dashb
 
 The odd part was which games did it. The dashboard is completely stable. Braid runs forever over Xbox 360 backward compatibility. Forza Horizon 2, a substantial Xbox One 3D game, ran fine too. But Halo shut the console down within seconds of reaching its animated menu, and Minecraft died even faster, somewhere in its title-screen loading. Crysis Remastered lasted a few minutes before it went the same way.
 
-That killed off the easy explanations quickly. It isn't 2D versus 3D — Forza is real 3D and rock solid. It isn't backward-compatible versus native — Vampire Survivors is a native Series X|S title and runs indefinitely. It isn't the internal SSD — the stable native title and all three failing titles live on the same drive. And it isn't simple overheating: leaving the console switched off for ten minutes barely changed how fast Halo failed, which is backwards from what you'd expect if it just needed to cool down.
+That killed off the easy explanations quickly. It isn't 2D versus 3D — Forza is real 3D and rock solid. It isn't backward-compatible versus native — Vampire Survivors is a native Series X/S title and runs indefinitely. It isn't the internal SSD — the stable native title and all three failing titles live on the same drive. And it isn't simple overheating: leaving the console switched off for ten minutes barely changed how fast Halo failed, which is backwards from what you'd expect if it just needed to cool down.
 
 First things to rule out were outside the console entirely — a different wall outlet, a different power cable. Same result, Halo died just as fast. That pointed the problem inward.
 
