@@ -23,6 +23,8 @@ $.getJSON( "https://raw.githubusercontent.com/jamesfmackenzie/apple-arcade-games
 
 I love <a href="https://www.apple.com/apple-arcade/" target="_blank">Apple Arcade</a>. So many great games, only $5 per month. But touchscreen game controls? Not so much. For action games, platformers, racers – nothing beats a real gamepad.
 
+**Note:** since early 2020, Apple has required every Apple Arcade title to support wireless controllers as a condition of joining the service — so at this point this list is effectively just "the Apple Arcade catalog." It's no longer actively curated for that reason; what's below has been pruned back to titles confirmed still live on the App Store, but isn't being expanded further. For non-Arcade iOS games with controller support, see my [iOS Games with Controller Support]({% link _reference/ios-games-with-controller-support.md %}) list instead, which is still maintained.
+
 Here's a list of Apple Arcade games with <a href="https://support.apple.com/en-us/HT210414" target="_blank">wireless controller support</a>. The list is <a href="https://github.com/jamesfmackenzie/apple-arcade-games-with-controller-support" target="_blank">hosted on GitHub</a>. If you'd like to make an update, please <a href="https://guides.github.com/activities/hello-world/#pr" target="_blank">open a pull request</a>.
 
 ### Apple Arcade Games with Wireless Controller Support
