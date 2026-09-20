@@ -34,7 +34,9 @@ Microsoft's own repair guide is emphatic that you don't open the PSU casing — 
 
 ### A control test that lied
 
-Before ordering a replacement PSU, I put the console back together, untouched otherwise, and reran the fastest-failing test as a control. Halo played straight through the point that used to kill it in seconds, into actual gameplay.
+Before ordering a replacement PSU, I put the console back together, untouched otherwise, and reran the fastest-failing tests as a control. Halo played straight through the point that used to kill it in seconds, into actual gameplay — and Minecraft, the fastest-failing title of all, loaded all the way into a saved world.
+
+![Minecraft running well past its old title-screen failure point, during the same control test](/img/xbox-series-x-minecraft-control-test.jpg){: width="480"}
 
 For a moment that looked like the fix: both PSU connectors had been unplugged and replugged during the teardown, and a marginal, oxidised, or slightly-backed-out contact fits the whole picture surprisingly well. Contact resistance drops voltage in proportion to current, so it's invisible at idle and only bites under a heavy transient — which would explain the load-dependence, the lack of any thermal signature, and the normal shutdown chime (the system detecting an out-of-spec rail and shutting down deliberately, not losing power outright).
 
