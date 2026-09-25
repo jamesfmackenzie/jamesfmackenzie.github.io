@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Play Gran Turismo 5 Across Three Screens with Three PlayStation 3s"
-date: '2026-09-25 09:00:00'
+date: '2026-09-25 07:30:00'
 summary: Gran Turismo 5's Multi Monitor mode links three PlayStation 3s into one continuous view across three screens — no special hub, and it works in full GT career mode instead of just Arcade.
 tags: [Posts, Retrogaming, Sony PlayStation, Videogames]
 image: gt5-three-screens-tokyo-r246.jpg
