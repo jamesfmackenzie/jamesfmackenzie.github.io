@@ -11,7 +11,13 @@ layout: none
       "summary": "{{ post.summary | markdownify | strip_newlines | json }}",
       "layout": "{{ post.layout }}",
 	  {% if post.layout == "tweet" %}
-	  "tweetId": "{{ post.tweetId }}",	
+	  "tweetId": "{{ post.tweetId }}",
+	  "stats": {
+	    "replies": "{{ post.stats.replies | default: '' }}",
+	    "reposts": "{{ post.stats.reposts | default: '' }}",
+	    "likes": "{{ post.stats.likes | default: '' }}",
+	    "views": "{{ post.stats.views | default: '' }}"
+	  },
 	  {% elsif post.layout == "youtube" %}
 	  "videoId": "{{ post.videoId }}",
 	  {% endif %}

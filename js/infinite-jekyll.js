@@ -81,10 +81,28 @@ $(function () {
     var htmlFragment = "";
 
     if (postToAppend.layout == "tweet") {
+      var statsIcons = {
+        replies: "<svg class=\"tweet-stat-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3V22l4.1-2.3c.6.1 1.2.1 1.9.1 5.5 0 10-3.6 10-8S17.5 3 12 3z\"/></svg>",
+        reposts: "<svg class=\"tweet-stat-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 5h9a3 3 0 0 1 3 3v3M9 2 6 5l3 3M18 19H9a3 3 0 0 1-3-3v-3m9 6 3-3-3-3\"/></svg>",
+        likes: "<svg class=\"tweet-stat-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 20.5s-7-4.4-9.3-8.6C1 8.6 2.4 5 6 5c2 0 3.3 1 4 2 .7-1 2-2 4-2 3.6 0 5 3.6 3.3 6.9C19 16.1 12 20.5 12 20.5z\"/></svg>",
+        views: "<svg class=\"tweet-stat-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 20V10M9 20V4M15 20v-7M21 20V7\"/></svg>"
+      };
+      var statsTitles = { replies: "Replies", reposts: "Reposts", likes: "Likes", views: "Views" };
+      var statsFragment = "";
+      if (postToAppend.stats) {
+        var statsItems = ["replies", "reposts", "likes", "views"].filter(function (key) {
+          return postToAppend.stats[key];
+        }).map(function (key) {
+          return "<li title=\"" + statsTitles[key] + "\">" + statsIcons[key] + postToAppend.stats[key] + "</li>";
+        });
+        if (statsItems.length) {
+          statsFragment = "<ul class=\"tweet-stats\">" + statsItems.join("") + "</ul>";
+        }
+      }
       htmlFragment =
         "<div class=\"row\">" +
         "<p class=\"feed-meta\">Tweet &nbsp;&middot;&nbsp; <time>" + postToAppend.date + "</time></p>" +
-        "<blockquote class=\"twitter-title-quote\"><a href=\"" + postToAppend.url + "\"><span lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</span></a></blockquote>" +
+        "<blockquote class=\"twitter-title-quote\"><a href=\"" + postToAppend.url + "\"><span lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</span></a>" + statsFragment + "</blockquote>" +
         (postToAppend.summary ? "<div class=\"post-summary\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></div>" : "") +
         "</div>";
     }
