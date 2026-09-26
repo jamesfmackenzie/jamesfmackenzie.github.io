@@ -19,7 +19,17 @@
 				{% if page.summary and page.summary != page.title %}
 				<p>{{ page.summary | markdownify }}</p>
 				{% endif %}
-				<blockquote class="twitter-title-quote"><a target="_blank" rel="noopener" href="https://twitter.com/jamesfmackenzie/status/{{ page.tweetId }}"><span lang="en" dir="ltr">{{ page.title }}</span> <span class="cite">&mdash; {{ page.date | date: "%b %-d, %Y" }}</span></a></blockquote>
+				<blockquote class="twitter-title-quote">
+					<a target="_blank" rel="noopener" href="https://twitter.com/jamesfmackenzie/status/{{ page.tweetId }}"><span lang="en" dir="ltr">{{ page.title }}</span> <span class="cite">&mdash; {{ page.date | date: "%b %-d, %Y" }}</span></a>
+					{% if page.stats %}
+					<ul class="tweet-stats">
+						{% if page.stats.replies %}<li title="Replies"><svg class="tweet-stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3V22l4.1-2.3c.6.1 1.2.1 1.9.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>{{ page.stats.replies }}</li>{% endif %}
+						{% if page.stats.reposts %}<li title="Reposts"><svg class="tweet-stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h9a3 3 0 0 1 3 3v3M9 2 6 5l3 3M18 19H9a3 3 0 0 1-3-3v-3m9 6 3-3-3-3"/></svg>{{ page.stats.reposts }}</li>{% endif %}
+						{% if page.stats.likes %}<li title="Likes"><svg class="tweet-stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7-4.4-9.3-8.6C1 8.6 2.4 5 6 5c2 0 3.3 1 4 2 .7-1 2-2 4-2 3.6 0 5 3.6 3.3 6.9C19 16.1 12 20.5 12 20.5z"/></svg>{{ page.stats.likes }}</li>{% endif %}
+						{% if page.stats.views %}<li title="Views"><svg class="tweet-stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V10M9 20V4M15 20v-7M21 20V7"/></svg>{{ page.stats.views }}</li>{% endif %}
+					</ul>
+					{% endif %}
+				</blockquote>
 				{{ content }}
 			</div>
 		</article>

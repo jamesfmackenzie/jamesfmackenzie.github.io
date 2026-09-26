@@ -1,6 +1,6 @@
 ---
 layout: tweet
-title: "3 PlayStation 3s, 3 Screens. The best way to play Gran Turismo 5!"
+title: "3 PlayStation 3s, 3 Screens. The best way to play Gran Turismo 5! 😎"
 date: '2025-07-12 08:31:00'
 summary: |-
   Did you know?
@@ -9,6 +9,11 @@ summary: |-
 
   Video linked below.
 tweetId: 1944011357973631281
+stats:
+  replies: 24
+  reposts: 184
+  likes: 1.4K
+  views: 350K
 tags: [Retrogaming, Videogames, Tweets]
 ---
 

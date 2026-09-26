@@ -579,6 +579,33 @@ footer .social-buttons a:hover {
   font-size: 0.85rem;
   color: var(--muted);
 }
+.tweet-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0.7rem 0 0;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.tweet-stats li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.tweet-stat-icon {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
 
 .youtube-container {
   /* aspect-ratio (not the old padding-bottom hack) so the ratio is based on
