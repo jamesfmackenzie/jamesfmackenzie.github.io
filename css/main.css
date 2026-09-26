@@ -568,6 +568,7 @@ footer .social-buttons a:hover {
   background: var(--card);
 }
 .twitter-title-quote a {
+  display: block;
   text-decoration: none;
   color: var(--text);
 }
