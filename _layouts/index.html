@@ -7,7 +7,7 @@
 	{% include head-includes.md %}
 	<title>{{ site.title }}</title>
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title | xml_escape }}" href="{{ site.url }}/feed.xml" />
-	<script src="/js/infinite-jekyll.js"></script>
+	<script src="/js/infinite-jekyll.js?v={{ site.time | date: '%s' }}"></script>
 </head>
 
 <body>

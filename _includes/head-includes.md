@@ -1,9 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/favicon.ico?v=1" />
-<link rel="stylesheet" type="text/css" href="/css/main.css" />
-<link rel="stylesheet" type="text/css" href="/css/code.css" />
-<link rel="stylesheet" type="text/css" href="/css/spinner.css" />
+<link rel="stylesheet" type="text/css" href="/css/main.css?v={{ site.time | date: '%s' }}" />
+<link rel="stylesheet" type="text/css" href="/css/code.css?v={{ site.time | date: '%s' }}" />
+<link rel="stylesheet" type="text/css" href="/css/spinner.css?v={{ site.time | date: '%s' }}" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
