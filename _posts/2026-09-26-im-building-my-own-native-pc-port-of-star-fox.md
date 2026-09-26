@@ -9,6 +9,6 @@ tags: [Nintendo, Programming, Retrocomputing, Retrogaming, Tweets, Videogames]
 
 Work in progress: SNES Star Fox, ported natively to PC.
 
-<video controls style="max-width: 100%; border-radius: 8px;">
+<video controls poster="/img/starfox-pc-port-corneria-wip-poster.jpg" style="max-width: 100%; border-radius: 8px;">
   <source src="/img/starfox-pc-port-corneria-wip.mp4" type="video/mp4">
 </video>
