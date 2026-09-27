@@ -11,5 +11,7 @@ summary: |-
   
   Enjoy!
 videoId: -S_J-3CJsPU
+stats:
+  views: 73K
 tags: [Raspberry Pi, Retrogaming, Videogames, Videos]
 ---

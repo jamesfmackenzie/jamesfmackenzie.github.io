@@ -7,6 +7,8 @@ summary: |-
 
   I show how to run Gran Turismo 5 in stunning ultra-wide mode **across three screens, using three PlayStation 3 consoles**.
 videoId: 9uHon-35u7M
+stats:
+  views: 4.3K
 tags: [Retrogaming, Videogames, Videos]
 ---
 

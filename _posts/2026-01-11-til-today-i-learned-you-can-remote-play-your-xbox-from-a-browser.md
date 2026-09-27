@@ -15,5 +15,7 @@ summary: |-
 
   **I'll definitely use this when the TV is occupied!** Video capture below.
 videoId: flVbpfXFip8
+stats:
+  views: 40
 tags: [Videogames, Videos, Xbox]
 ---

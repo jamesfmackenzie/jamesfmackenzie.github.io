@@ -11,5 +11,7 @@ summary: |-
   
   Enjoy!
 videoId: ZSN3Lo_Mv50
+stats:
+  views: 94K
 tags: [Retrogaming, Videogames, Videos]
 ---

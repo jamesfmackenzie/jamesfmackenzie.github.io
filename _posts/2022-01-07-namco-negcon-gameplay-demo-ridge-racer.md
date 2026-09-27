@@ -4,6 +4,8 @@ title: "Namco NeGcon Gameplay Demo - Ridge Racer (PlayStation)"
 summary: Playing the PlayStation original Ridge Racer with the Namco NeGcon controller.
 date: '2022-01-07 12:00:00:00'
 videoId: "DuL4-5JJPw4"
+stats:
+  views: 532
 tags: [Sony PlayStation, Retrogaming, Videogames, Videos]
 ---
 

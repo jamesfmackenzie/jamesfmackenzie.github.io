@@ -9,5 +9,7 @@ summary: |-
 
   This time, I'll show you **exactly** how to do it yourself: step-by-step, plus a deep dive on graphics settings and how to boost performance. And this time, we build **Portal** too.
 videoId: ipQ1trbWeX0
+stats:
+  views: 4.3K
 tags: [Raspberry Pi, Retrogaming, Videogames, Videos]
 ---

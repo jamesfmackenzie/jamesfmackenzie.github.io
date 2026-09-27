@@ -7,6 +7,8 @@ summary: |-
   
   After some iteration, I was able to captures some *very* clean video. Who needs a video scaler!? 😂
 videoId: LBQ5VUifQSg
+stats:
+  views: 168
 tags: [Video Capture, Videos]
 ---
 

@@ -9,6 +9,8 @@ summary: |-
   
   Full video below.
 videoId: eGxguvyLegg
+stats:
+  views: 12K
 tags: [MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 

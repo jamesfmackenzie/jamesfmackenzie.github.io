@@ -9,6 +9,8 @@ summary: |-
   
   Enjoy!
 videoId: ZCnQOgArgMk
+stats:
+  views: 4.7K
 tags: [MIDI, MS-DOS, Retrocomputing, Retrogaming, Videogames, Videos]
 ---
 

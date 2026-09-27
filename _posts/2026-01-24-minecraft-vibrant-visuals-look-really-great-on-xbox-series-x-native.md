@@ -7,5 +7,7 @@ summary: |-
   
   It looks great!
 videoId: taJyW-amAAQ
+stats:
+  views: 434
 tags: [Videogames, Videos, Xbox]
 ---
