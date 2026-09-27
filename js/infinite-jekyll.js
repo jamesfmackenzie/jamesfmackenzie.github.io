@@ -93,7 +93,7 @@ $(function () {
         var statsItems = ["replies", "reposts", "likes", "views"].filter(function (key) {
           return postToAppend.stats[key];
         }).map(function (key) {
-          return "<li title=\"" + statsTitles[key] + "\">" + statsIcons[key] + postToAppend.stats[key] + "</li>";
+          return "<li title=\"" + statsTitles[key] + "\">" + statsIcons[key] + (postToAppend.stats[key] === "0" ? "" : postToAppend.stats[key]) + "</li>";
         });
         if (statsItems.length) {
           statsFragment = "<ul class=\"tweet-stats\">" + statsItems.join("") + "</ul>";
