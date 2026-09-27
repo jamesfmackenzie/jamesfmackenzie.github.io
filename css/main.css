@@ -231,13 +231,6 @@ aside p {
   width: 100%;
   height: auto;
 }
-.hero figcaption {
-  font-family: var(--sans);
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.55rem;
-}
-
 /* social links — mono pill chips */
 .social-buttons {
   list-style: none;
@@ -394,13 +387,16 @@ figcaption {
   font-size: 0.92rem;
 }
 
-.page-listing .body h3 {
-  font-family: var(--sans);
+/* small-caps label: listing-page categories and the "Other Posts" heading */
+.page-listing .body h3,
+.latestposts h2 {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
+}
+.page-listing .body h3 {
   margin: 2.4rem 0 0.7rem;
   padding-bottom: 0.45rem;
   border-bottom: 1px solid var(--rule);
@@ -422,11 +418,14 @@ figcaption {
 }
 .page-sitemap ul { margin: 0.4rem 0 1.2rem; }
 .page-sitemap li { margin: 0.15rem 0; }
-.page-sitemap img {
+
+/* tweet / video marker beside a post title (sitemap, Other Posts) */
+.post-type-icon {
   display: inline-block;
   width: auto;
   height: 1em;
   margin: 0 0.4em 0 0;
+  vertical-align: middle;
 }
 
 /* ================================================================
@@ -576,22 +575,11 @@ footer .social-buttons a:hover {
 }
 .latestposts h2 {
   max-width: var(--measure);
-  font-family: var(--sans);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
   margin: 0 0 0.8rem;
 }
 .latestposts ul { max-width: var(--measure); list-style: none; padding: 0; margin: 0; }
 .latestposts li { margin: 0.45rem 0; font-size: 1rem; line-height: 1.4; }
-.latestposts img {
-  display: inline-block;
-  width: auto;
-  height: 0.9em;
-  margin: 0 0.4em 0 0;
-}
+.latestposts .post-type-icon { height: 0.9em; }
 
 /* ================================================================
    small screens
