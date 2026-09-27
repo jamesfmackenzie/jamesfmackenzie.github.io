@@ -9,6 +9,11 @@ summary: |-
 
   Video linked below.
 tweetId: 1898440373455782112
+stats:
+  replies: 60
+  reposts: 738
+  likes: 5.5K
+  views: 578K
 tags: [Retrogaming, Videogames, Tweets]
 ---
 

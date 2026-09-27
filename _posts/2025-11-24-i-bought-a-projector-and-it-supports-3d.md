@@ -9,6 +9,11 @@ summary: |-
   
   Linked below.
 tweetId: 1992383395830317523
+stats:
+  replies: 1
+  reposts: 0
+  likes: 17
+  views: 683
 tags: [Consumer Tech, Home Media, Tweets]
 image: benq-th575-projector.jpg
 ---

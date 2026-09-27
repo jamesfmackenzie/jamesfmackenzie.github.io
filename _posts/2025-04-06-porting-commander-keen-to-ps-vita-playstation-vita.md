@@ -9,6 +9,11 @@ summary: |-
 
   Video linked below.
 tweetId: 1908974808463008240
+stats:
+  replies: 10
+  reposts: 7
+  likes: 92
+  views: 3.2K
 tags: [Programming, Retrogaming, Sony PlayStation, Videogames, Tweets]
 ---
 

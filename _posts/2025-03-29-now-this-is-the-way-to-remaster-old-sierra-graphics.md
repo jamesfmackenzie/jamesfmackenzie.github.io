@@ -9,6 +9,11 @@ summary: |-
 
   It's very impressive!
 tweetId: 1905997972607005028
+stats:
+  replies: 131
+  reposts: 496
+  likes: 4.2K
+  views: 207K
 image: police-quest-sierra-graphics.jpg
 tags: [Retrogaming, Videogames, Tweets]
 ---

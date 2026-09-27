@@ -9,6 +9,11 @@ summary: |-
   
   No idea if it still works, but for this price it was hard to ignore!
 tweetId: 1904522511527846022
+stats:
+  replies: 3
+  reposts: 0
+  likes: 58
+  views: 2.4K
 tags: [Retrogaming, Videogames, Tweets]
 hero: roadside-dreamcast.jpg
 ---
