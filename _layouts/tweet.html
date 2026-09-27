@@ -9,7 +9,7 @@ main_class: page-tweet
 	<a target="_blank" rel="noopener" href="https://twitter.com/jamesfmackenzie/status/{{ page.tweetId }}">
 		<span lang="en" dir="ltr">{{ page.title }}</span>
 		<span class="cite">&mdash; {{ page.date | date: "%b %-d, %Y" }}</span>
-		{% include tweet-stats.html stats=page.stats %}
+		{% include post-stats.html stats=page.stats %}
 	</a>
 </blockquote>
 {{ content }}

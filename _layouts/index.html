@@ -17,7 +17,7 @@ layout: default
 				<blockquote class="twitter-title-quote">
 					<a href="{{ post.url }}">
 						<span lang="en" dir="ltr">{{ post.title }}</span>
-						{% include tweet-stats.html stats=post.stats %}
+						{% include post-stats.html stats=post.stats %}
 					</a>
 				</blockquote>
 
@@ -28,6 +28,7 @@ layout: default
 				<div class="youtube-container">
 					<iframe src="https://www.youtube.com/embed/{{ post.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
 				</div>
+				{% include post-stats.html stats=post.stats %}
 
 			{% else %}
 				<h2><a href="{% if post.overrideUrl %}{{ post.overrideUrl }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>

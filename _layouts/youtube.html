@@ -5,6 +5,7 @@ main_class: page-video
 <div class="youtube-container">
 	<iframe src="https://www.youtube.com/embed/{{ page.videoId }}?rel=0" allowfullscreen class="youtube-video"></iframe>
 </div>
+{% include post-stats.html stats=page.stats %}
 {% if page.summary %}
 <p>{{ page.summary | markdownify }}</p>
 {% endif %}

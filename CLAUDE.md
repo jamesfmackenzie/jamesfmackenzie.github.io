@@ -39,6 +39,22 @@ Don't default to the heaviest option. Match the content to its actual shape.
    text still renders below the embed. Same bar as a post.
 3. **`_posts/` · `layout: tweet`** (`tweetId:`) — the lightest unit. Too small for a
    post: "just arrived", a single fact, a before/after. No build narrative.
+
+Tweets and videos can carry hard-coded engagement counts, rendered by
+`_includes/post-stats.html` (and mirrored in `infinite-jekyll.js`) under the tweet or
+player, on the page and in the feed. Only the counts given are shown:
+
+```yaml
+stats:          # tweets: any of these; videos: views
+  replies: 24
+  reposts: 184
+  likes: 1.4K
+  views: 350K
+```
+
+Tweet counts are entered by hand (X can't be read without login). Video views are
+snapshotted from YouTube with `python3 tools/youtube-views.py` (dry run) /
+`--write` — re-run it to refresh them.
 4. **`_howto/` (Guides)** — a reproducible procedure someone else follows to get the
    same result. A *post* narrates what I did and learned (dead ends, opinions); a
    *guide* is the distilled steps that work, in order, with the detours removed. Often
@@ -146,7 +162,7 @@ CSS conventions (learned the hard way — see the Sep 2026 tweet-stats alignment
   page-specific rules to these, not to layout-era names.
 - **Prose defaults that can collide with components are zero-specificity**
   (`:where(...)`) — lists and images inside article bodies. A component dropped
-  into a body (`.tweet-stats`, `.image-row`, …) then styles its own box and wins
+  into a body (`.post-stats`, `.image-row`, …) then styles its own box and wins
   without writing resets. If you find yourself writing `border: 0` / `margin: 0` to
   undo a prose rule, fix the prose rule's scope instead.
 - **Lowering specificity isn't enough on its own:** a component only wins if it

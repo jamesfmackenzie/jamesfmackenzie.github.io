@@ -344,7 +344,7 @@ article { padding: 2rem 0 3rem; }
 .page-article article :is(h2, h3) + p { margin-top: 0.5rem; }
 
 /* Prose defaults for lists and images are zero-specificity, so a component in
-   the body (.tweet-stats, .image-row, …) wins without needing to reset them. */
+   the body (.post-stats, .image-row, …) wins without needing to reset them. */
 :where(.page-article article) :where(ul, ol) { padding-left: 1.35rem; }
 :where(.page-article article) :where(li + li) { margin-top: 0.35rem; }
 :where(.page-article article) img {
@@ -528,25 +528,31 @@ footer .social-buttons a:hover {
   font-size: 0.85rem;
   color: var(--muted);
 }
-.tweet-stats {
+.post-stats {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1rem;
   list-style: none;
-  margin: 0.7rem 0 0;
-  padding: 0.7rem 0 0;
-  border-top: 1px solid var(--rule);
+  padding: 0;
   font-family: var(--sans);
   font-size: 0.85rem;
   color: var(--muted);
 }
-.tweet-stats li {
+.twitter-title-quote .post-stats {
+  margin: 0.7rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+}
+/* under a video: sits tight beneath the player */
+.youtube-container:has(+ .post-stats) { margin-bottom: 0.6rem; }
+.youtube-container + .post-stats { margin: 0 0 1.8rem; }
+.post-stats li {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   margin-top: 0;
 }
-.tweet-stat-icon {
+.post-stat-icon {
   width: 15px;
   height: 15px;
   fill: none;
