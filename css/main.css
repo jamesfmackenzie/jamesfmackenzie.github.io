@@ -366,9 +366,8 @@ article { padding: 2rem 0 3rem; }
 .single-post article h2 + p,
 .single-post article h3 + p { margin-top: 0.5rem; }
 
-.single-post article ul,
-.single-post article ol { padding-left: 1.35rem; }
-.single-post article :where(li + li) { margin-top: 0.35rem; }
+:where(.single-post article ul, .single-post article ol) { padding-left: 1.35rem; }
+:where(.single-post article li + li) { margin-top: 0.35rem; }
 
 blockquote {
   padding: 0.15rem 0 0.15rem 1.15rem;
