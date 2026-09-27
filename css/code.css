@@ -58,13 +58,3 @@ div.highlight           { background: none; }
 .highlight .gp          { color: #6f7d77; }
 .highlight .go          { color: #97a09b; }
 .highlight .w           { color: #3a4249; }
-
-/* line numbers unselectable */
-.highlight .lineno {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  color: #4b545c;
-}
-.lineno::selection { background-color: transparent; }
-.lineno::-moz-selection { background-color: transparent; }

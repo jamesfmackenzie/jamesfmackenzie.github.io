@@ -42,7 +42,8 @@ PROPS = ['display', 'position', 'float', 'box-sizing',
          'border-top-color', 'border-bottom-color', 'border-left-color', 'border-top-left-radius',
          'max-width', 'gap', 'align-items', 'justify-content', 'flex-wrap',
          'font-family', 'font-size', 'font-weight', 'font-style', 'line-height', 'letter-spacing',
-         'color', 'background-color', 'text-transform', 'text-decoration-line', 'text-align',
+         'color', 'background-color', 'text-transform', 'text-decoration-line', 'text-decoration-thickness',
+         'text-underline-offset', 'text-align',
          'vertical-align', 'list-style-type', 'white-space', 'opacity', 'fill', 'stroke', 'stroke-width']
 
 # Async script run in each page: freeze animations, wait for images, load exactly
@@ -51,13 +52,30 @@ PROPS = ['display', 'position', 'float', 'box-sizing',
 CAPTURE_JS = """
 var PROPS = arguments[0], done = arguments[arguments.length - 1];
 var freeze = document.createElement('style');
-freeze.textContent = '*,*::before,*::after{animation:none!important;transition:none!important}';
+// iframes hold third-party content (YouTube) that renders differently run to run
+freeze.textContent = '*,*::before,*::after{animation:none!important;transition:none!important} iframe{visibility:hidden!important}';
 document.head.appendChild(freeze);
-function images() { return Promise.all([].map.call(document.images, function (i) { return i.decode().catch(function () {}); })); }
+var failed = new Set();
+[].forEach.call(document.images, function (i) { i.addEventListener('error', function () { failed.add(i); }); });
+function unsized() { return [].filter.call(document.images, function (i) { return !failed.has(i) && !(i.complete && i.naturalWidth > 0); }); }
+// resolves once every image is decoded and has real dimensions (or failed); gives up after 20s
+function images() {
+  return Promise.all([].map.call(document.images, function (i) { return i.decode().catch(function () {}); })).then(function () {
+    return new Promise(function (ok) {
+      var t0 = Date.now(), retried = false;
+      waitFor(function () {
+        // a request to the local server occasionally stalls; re-request once
+        if (!retried && Date.now() - t0 > 5000) { retried = true; unsized().forEach(function (i) { i.src = i.src.split('#')[0] + '#retry'; }); }
+        return !unsized().length || Date.now() - t0 > 20000;
+      }, ok);
+    });
+  });
+}
 function path(el) { var p = []; while (el && el !== document.body) { var i = 1, s = el; while ((s = s.previousElementSibling)) if (s.tagName === el.tagName) i++; p.unshift(el.tagName.toLowerCase() + ':' + i); el = el.parentElement; } return p.join('>'); }
 function styles(cs) { var o = {}; PROPS.forEach(function (k) { o[k] = cs.getPropertyValue(k); }); return o; }
 function collect() {
-  var out = {height: document.documentElement.scrollHeight, els: {}};
+  var out = {height: document.documentElement.scrollHeight, els: {},
+             unsized: unsized().map(function (i) { return i.getAttribute('src'); })};
   document.querySelectorAll('body *').forEach(function (el) {
     if (/^(SCRIPT|STYLE|NOSCRIPT)$/.test(el.tagName)) return;
     var r = el.getBoundingClientRect();
@@ -120,9 +138,13 @@ def num(v):
     return float(v[:-2]) if v.endswith('px') and v[:-2].replace('.', '', 1).lstrip('-').isdigit() else None
 
 
+# computed values that differ as strings but render identically on this (LTR) site
+EQUIVALENT = [{'left', 'start'}, {'normal', 'flex-start'}]
+
+
 def compare_values(a, b):
     """'' if equal, 'minor' if every px value differs by <= 0.5, else 'major'."""
-    if a == b: return ''
+    if a == b or {a, b} in EQUIVALENT: return ''
     pa, pb = a.split(), b.split()
     if len(pa) == len(pb) and all(num(x) is not None and num(y) is not None for x, y in zip(pa, pb)):
         return 'minor' if all(abs(num(x) - num(y)) <= 0.5 for x, y in zip(pa, pb)) else 'major'
@@ -135,8 +157,11 @@ def compare(base_dir, cur_dir, limit):
     for wname in WIDTHS:
         for name in PAGES:
             key = f'{name}.{wname}'
-            a = json.load(open(os.path.join(base_dir, key + '.json')))['els']
-            b = json.load(open(os.path.join(cur_dir, key + '.json')))['els']
+            ja = json.load(open(os.path.join(base_dir, key + '.json')))
+            jb = json.load(open(os.path.join(cur_dir, key + '.json')))
+            a, b = ja['els'], jb['els']
+            for label, j in (('baseline', ja), ('current', jb)):
+                if j.get('unsized'): print(f'WARN {key}: {label} captured before these images loaded: {j["unsized"]}')
             major, minor = [], []
             moved = {}
             for p in sorted(set(a) | set(b)):
