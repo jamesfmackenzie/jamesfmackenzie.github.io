@@ -138,6 +138,30 @@ blocks. **Source Serif 4** body / **Space Grotesk** headings + UI (loaded in
 a centred column: ~928px chrome, ~752px media, ~656px running text, all left-aligned.
 Keep new CSS token-driven and in that file.
 
+CSS conventions (learned the hard way — see the Sep 2026 tweet-stats alignment bugs):
+
+- **Colours come from `:root` tokens.** No hex literals outside `:root`.
+- **Page context is the class on `<main>`:** `.page-home`, `.page-article` (+
+  `.page-tweet` / `.page-video`), `.page-listing`, `.page-sitemap`. Scope
+  page-specific rules to these, not to layout-era names.
+- **Prose defaults that can collide with components are zero-specificity**
+  (`:where(...)`) — lists and images inside article bodies. A component dropped
+  into a body (`.tweet-stats`, `.image-row`, …) then styles its own box and wins
+  without writing resets. If you find yourself writing `border: 0` / `margin: 0` to
+  undo a prose rule, fix the prose rule's scope instead.
+- **Lowering specificity isn't enough on its own:** a component only wins if it
+  actually declares the property. (The first tweet-stats fix `:where()`-ed the
+  `li + li` margin rule but `.tweet-stats li` never set `margin-top`, so it kept
+  losing.)
+- **Beware shorthands:** `text-decoration: underline` also resets underline
+  thickness; `border: 0` resets colour and style too.
+- **Check CSS or layout changes with the regression harness** before committing:
+  `python3 tools/css-regression.py baseline` on the unchanged code, make the change,
+  then `python3 tools/css-regression.py compare`. It diffs computed styles and
+  screenshots of 13 page types at desktop and mobile width, and exits 1 on real
+  differences. Needs `pip3 install selenium pillow`. Headless Chrome is Blink — for
+  anything WebKit-sensitive, also check real Safari.
+
 ## House styles
 
 - **Hardware page shape:** personal-hook intro → `### What it is` / `### Specifications`

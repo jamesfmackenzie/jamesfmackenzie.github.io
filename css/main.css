@@ -19,6 +19,7 @@
   --code-fg:      #cdd6d1;
   --inline-bg:    #ece6db;   /* inline code chip */
   --quote:        #3c454c;   /* blockquote text */
+  --spinner:      #333;      /* infinite-scroll loader */
 
   /* on the dark header + footer */
   --on-dark:        #fff;
@@ -221,8 +222,7 @@ aside p {
   font-size: 1.1rem;
 }
 
-/* hero image — frameless, sits on the ground, left-aligned with the title
-   (shares --wrap with .intro .row so its left/right edges line up exactly) */
+/* hero image: frameless on the ground; shares --wrap with .intro so the edges align */
 .hero {
   margin: 1.9rem 0 0;
 }
@@ -304,6 +304,20 @@ main { margin-bottom: 3rem; }
   max-width: min(var(--wide), 100%);
   max-height: 22rem;
   margin: 1.2rem 0 0;
+}
+
+/* infinite-scroll loader */
+.infinite-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 60px auto;
+  border-radius: 40px;
+  background-color: var(--spinner);
+  animation: scaleout 1s infinite ease-in-out;
+}
+@keyframes scaleout {
+  0%   { transform: scale(0); }
+  100% { transform: scale(1); opacity: 0; }
 }
 
 /* ---------- article body ---------- */
@@ -543,10 +557,7 @@ footer .social-buttons a:hover {
 }
 
 .youtube-container {
-  /* aspect-ratio (not the old padding-bottom hack) so the ratio is based on
-     this element's own max-width-constrained size, not its wider parent's —
-     the padding-bottom trick resolves percentages against the containing
-     block and was rendering a too-tall, non-16:9 box once max-width narrowed it */
+  /* aspect-ratio, not the padding-bottom hack: that resolves against the parent and breaks 16:9 under max-width */
   position: relative;
   aspect-ratio: 16 / 9;
   max-width: min(var(--wide), 100%);
@@ -562,11 +573,7 @@ footer .social-buttons a:hover {
   border-radius: 6px;
 }
 
-/* "Other Posts" list at the foot of an article — same two-level pattern as
-   .intro and the article body: a wide outer row (so it lines up with the
-   rest of the page) with the actual content left-aligned via max-width,
-   not margin:auto, which would centre it (that was the bug: it made the
-   list sit offset to the right of the article's left edge). */
+/* "Other Posts": content left-aligned via max-width — margin:auto would centre it off the article's edge */
 .latestposts {
   max-width: var(--wrap);
   margin: 2.5rem auto 0;
