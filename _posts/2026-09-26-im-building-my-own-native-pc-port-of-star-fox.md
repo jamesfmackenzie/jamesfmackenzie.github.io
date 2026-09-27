@@ -4,6 +4,11 @@ title: "I'm building my own native PC port of Star Fox. 🦊🚀 Pure C, no emul
 date: '2026-09-26 09:00:00'
 summary: No sound, sky, or ground yet. But it's going great so far!
 tweetId: 2103832962899087749
+stats:
+  replies: 29
+  reposts: 63
+  likes: 732
+  views: 27K
 tags: [Nintendo, Programming, Retrocomputing, Retrogaming, Tweets, Videogames]
 ---
 
