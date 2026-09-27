@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
-	<meta name="description" content="{{ page.summary | strip_html }}">
-    <meta property="og:description" content="{{ page.summary | strip_html }}"/>
+	{% if page.layout == "index" %}{% assign description = site.description %}{% else %}{% assign description = page.summary | strip_html %}{% endif %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}"/>
 	{% include head-includes.md %}
-	<title>{{ page.title }}</title>
+	<title>{{ page.title | default: site.title }}</title>
+	{% if page.layout == "index" %}
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title | xml_escape }}" href="{{ site.url }}/feed.xml" />
+	<script src="/js/infinite-jekyll.js?v={{ site.time | date: '%s' }}"></script>
+	{% endif %}
 </head>
 
 <body>
 	<header>
 		{% include nav-header.md %}
 	</header>
-	<main class="nocomments-page">
-		{% include post-intro.md %}
-		<article>
-			<div class="row body">
-				{{ content }}
-			</div>
-		</article>
-	</main>
+	{{ content }}
 	{% include site-footer.md %}
 	<!-- Google Analytics Tracking Code -->
 	<script>

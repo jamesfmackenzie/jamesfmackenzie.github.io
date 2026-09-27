@@ -1,5 +1,5 @@
 ---
-layout: nodate
+layout: post
 title: Atari ST
 summary: Overview of the Atari ST family — the 1985 16-bit computer line that brought a graphical desktop, and later a music-production career, to a mass audience.
 date: '2024-08-29 11:33:00'

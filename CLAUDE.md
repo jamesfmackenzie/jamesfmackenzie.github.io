@@ -78,9 +78,13 @@ Don't default to the heaviest option. Match the content to its actual shape.
 - **`future: false`** — a post dated after the build machine's clock is silently
   excluded, which breaks every `{% link %}` / `{% post_url %}` pointing at it. Check
   `date "+%F %T %Z"` before dating a post; never post-date.
-- **Layouts:** `post`, `youtube`, `tweet`, `section` (collection landing), `index`
-  (home), `sitemap`, `nodate`, `nocomments`, `missing` (404). `youtube` and `tweet`
-  both render `{{ content }}`, so body prose on them displays.
+- **Layouts** inherit from `default` (the shared shell: `<head>`, site header,
+  footer, analytics — change site-wide markup there, once). Children: `post`
+  (article), `tweet` and `youtube` (both inherit `post`, adding the quoted-tweet /
+  video block above `{{ content }}`, so body prose still displays), `section`
+  (listing pages: collection landings, `reference.html`, and the 404), `sitemap`,
+  `index` (home). Don't add a new layout for a one-off variation — use a child
+  layout's front matter (e.g. `main_class`) instead.
 - **`summary:`** feeds the `<meta description>`, the home-feed preview text, and the
   visible intro line on `youtube` / `tweet` layouts. It is **not** shown as a deck on
   regular post pages, and shouldn't be added as one without an editorial pass — many
@@ -149,8 +153,8 @@ Keep new CSS token-driven and in that file.
   `PROJECT`, `REFERENCE`, `VIDEO`, `TWEET`. Derived from the collection (or the
   `youtube` / `tweet` layout) in `_includes/post-intro.md`. Plain `_posts` get no kicker.
 - The page intro (kicker + `<h1>` + one-line meta + optional hero) is
-  `_includes/post-intro.md`, used by post / nodate / nocomments; section + sitemap
-  layouts render their own `.intro`.
+  `_includes/post-intro.md`, used by `post` (and so `tweet` / `youtube`); `section`
+  and `sitemap` render their own `.intro`.
 - **`Posts` tag is reserved for `_posts/`** — never add it to `_hardware`, `_software`,
   `_howto`, or `_reference` pages. `Lists` is the equivalent for `_reference/` pages
   that are a maintained list or table (as opposed to `Posts`' narrative shape).
