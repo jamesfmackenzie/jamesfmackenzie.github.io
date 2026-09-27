@@ -18,6 +18,16 @@
   --code-bg:      #1f262c;   /* code blocks */
   --code-fg:      #cdd6d1;
   --inline-bg:    #ece6db;   /* inline code chip */
+  --quote:        #3c454c;   /* blockquote text */
+
+  /* on the dark header + footer */
+  --on-dark:        #fff;
+  --on-dark-nav:    #ccd8d5;   /* header nav links */
+  --on-dark-text:   #c3c9cc;
+  --on-dark-muted:  #939a9e;
+  --on-dark-faint:  #8a939a;   /* footer social chips */
+  --on-dark-rule:   #333c42;
+  --on-dark-accent: #8ccdc1;   /* footer links + chip hover */
 
   /* type */
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -127,7 +137,7 @@ pre code {
 
 body > header {
   background-color: var(--ink);
-  color: #fff;
+  color: var(--on-dark);
 }
 
 .nav-header {
@@ -140,10 +150,10 @@ body > header {
 .nav-header h2 {
   margin: 0;
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--on-dark);
 }
 .nav-header h2 a {
-  color: #fff;
+  color: var(--on-dark);
   text-decoration: none;
 }
 
@@ -156,10 +166,10 @@ body > header nav {
   font-weight: 500;
 }
 body > header nav a {
-  color: #ccd8d5;
+  color: var(--on-dark-nav);
   text-decoration: none;
 }
-body > header nav a:hover { color: #fff; }
+body > header nav a:hover { color: var(--on-dark); }
 
 /* hamburger toggle — hidden on desktop */
 .nav-toggle { display: none; }
@@ -345,7 +355,7 @@ article { padding: 2rem 0 3rem; }
 blockquote {
   padding: 0.15rem 0 0.15rem 1.15rem;
   border-left: 3px solid var(--accent);
-  color: #3c454c;
+  color: var(--quote);
   font-style: italic;
 }
 
@@ -471,14 +481,14 @@ th {
 
 footer {
   background-color: var(--footer);
-  color: #c3c9cc;
+  color: var(--on-dark-text);
   padding: 2.4rem 0 2.8rem;
 }
 footer p {
   margin: 0 0 0.75rem;
   font-family: var(--sans);
   font-size: 0.9rem;
-  color: #939a9e;
+  color: var(--on-dark-muted);
 }
 
 .footer-nav {
@@ -490,18 +500,18 @@ footer p {
   margin-bottom: 2rem;
 }
 .footer-nav a {
-  color: #8ccdc1;
+  color: var(--on-dark-accent);
   text-decoration: none;
 }
-.footer-nav a:hover { color: #fff; }
+.footer-nav a:hover { color: var(--on-dark); }
 
 footer .social-buttons a {
-  color: #8a939a;
-  border-color: #333c42;
+  color: var(--on-dark-faint);
+  border-color: var(--on-dark-rule);
 }
 footer .social-buttons a:hover {
-  color: #8ccdc1;
-  border-color: #8ccdc1;
+  color: var(--on-dark-accent);
+  border-color: var(--on-dark-accent);
 }
 
 /* ================================================================
@@ -642,7 +652,7 @@ footer .social-buttons a:hover {
     display: block;
     width: 26px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--on-dark);
     border-radius: 1px;
   }
   .nav-toggle span { position: relative; }
