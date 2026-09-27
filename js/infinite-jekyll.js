@@ -102,8 +102,8 @@ $(function () {
       htmlFragment =
         "<div class=\"row\">" +
         "<p class=\"feed-meta\">Tweet &nbsp;&middot;&nbsp; <time>" + postToAppend.date + "</time></p>" +
-        "<blockquote class=\"twitter-title-quote\"><a href=\"" + postToAppend.url + "\"><span lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</span>" + statsFragment + "</a></blockquote>" +
         (postToAppend.summary ? "<div class=\"post-summary\"><a href=\"" + postToAppend.url + "\">" + postToAppend.summary + "</a></div>" : "") +
+        "<blockquote class=\"twitter-title-quote\"><a href=\"" + postToAppend.url + "\"><span lang=\"en\" dir=\"ltr\">" + postToAppend.title + "</span>" + statsFragment + "</a></blockquote>" +
         "</div>";
     }
     else if (postToAppend.layout == "youtube") {
