@@ -14,7 +14,7 @@ again, so the report points at the cause.
 Needs Google Chrome and `pip3 install selenium pillow`. Output lives in
 $TMPDIR/css-regression (override with --out).
 """
-import argparse, http.server, json, os, shutil, subprocess, sys, tempfile, threading
+import argparse, base64, http.server, json, os, shutil, subprocess, sys, tempfile, threading
 from functools import partial
 
 PAGES = {
@@ -74,7 +74,7 @@ function images() {
 function path(el) { var p = []; while (el && el !== document.body) { var i = 1, s = el; while ((s = s.previousElementSibling)) if (s.tagName === el.tagName) i++; p.unshift(el.tagName.toLowerCase() + ':' + i); el = el.parentElement; } return p.join('>'); }
 function styles(cs) { var o = {}; PROPS.forEach(function (k) { o[k] = cs.getPropertyValue(k); }); return o; }
 function collect() {
-  var out = {height: document.documentElement.scrollHeight, els: {},
+  var out = {height: document.documentElement.scrollHeight, viewport: document.documentElement.clientWidth, els: {},
              unsized: unsized().map(function (i) { return i.getAttribute('src'); })};
   document.querySelectorAll('body *').forEach(function (el) {
     if (/^(SCRIPT|STYLE|NOSCRIPT)$/.test(el.tagName)) return;
@@ -121,13 +121,17 @@ def capture(out_dir):
     driver.set_script_timeout(60)
     try:
         for wname, w in WIDTHS.items():
+            # device emulation sets the viewport exactly (a real window can't go below ~500px)
+            driver.execute_cdp_cmd('Emulation.setDeviceMetricsOverride',
+                                   {'width': w, 'height': 900, 'deviceScaleFactor': 1, 'mobile': wname == 'mobile'})
             for name, url in PAGES.items():
-                driver.set_window_size(w, 900)
                 driver.get(base + url)
                 data = driver.execute_async_script(CAPTURE_JS, PROPS)
+                if data['viewport'] != w: sys.exit(f'{name} {wname}: viewport is {data["viewport"]}px, expected {w}px')
                 json.dump(data, open(os.path.join(out_dir, f'{name}.{wname}.json'), 'w'))
-                driver.set_window_size(w, min(int(data['height']), 16000))
-                driver.save_screenshot(os.path.join(out_dir, f'{name}.{wname}.png'))
+                shot = driver.execute_cdp_cmd('Page.captureScreenshot', {'format': 'png', 'captureBeyondViewport': True,
+                    'clip': {'x': 0, 'y': 0, 'width': w, 'height': min(int(data['height']), 16000), 'scale': 1}})
+                open(os.path.join(out_dir, f'{name}.{wname}.png'), 'wb').write(base64.b64decode(shot['data']))
                 print(f'  captured {name:10} {wname}')
     finally:
         driver.quit(); srv.shutdown()
