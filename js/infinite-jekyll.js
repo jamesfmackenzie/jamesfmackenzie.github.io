@@ -3,7 +3,7 @@ $(function () {
   var postURLs,
     isFetchingPosts = false,
     shouldFetchPosts = true,
-    postsToLoad = $(".post-list").children().length,
+    postsToLoad = $(".page-home").children().length,
     loadNewPostsThreshold = 3000,
     postToAppend;
 
@@ -45,7 +45,7 @@ $(function () {
     // Load as many posts as there were present on the page when it loaded
     // After successfully loading a post, load the next one
     var loadedPosts = 0,
-      postCount = $(".post-list").children().length,
+      postCount = $(".page-home").children().length,
       callback = function () {
         loadedPosts++;
         var postIndex = postCount + loadedPosts;
@@ -129,7 +129,7 @@ $(function () {
         "</div>";
     }
 
-    $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".post-list");
+    $("<article class=\"post\">" + htmlFragment + "</article>").appendTo(".page-home");
 
     callback();
   }

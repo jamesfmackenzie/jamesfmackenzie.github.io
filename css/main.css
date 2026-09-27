@@ -263,34 +263,38 @@ aside p {
 }
 
 /* ================================================================
-   home feed (post-list)
+   page contexts — the class on <main>:
+   .page-home (feed) · .page-article (+ .page-tweet / .page-video)
+   .page-listing (collection landings, reference, 404) · .page-sitemap
    ================================================================ */
 
 main { margin-bottom: 3rem; }
 
-.post-list article {
+/* ---------- home feed ---------- */
+
+.page-home article {
   padding: 2.4rem 0;
   border-top: 1px solid var(--rule);
 }
-.post-list > article:first-child {
+.page-home > article:first-child {
   border-top: 0;
   padding-top: 0.4rem;
 }
 
-.post-list h2 { margin: 0 0 0.45rem; }
-.post-list h2 a {
+.page-home h2 { margin: 0 0 0.45rem; }
+.page-home h2 a {
   color: var(--head);
   text-decoration: none;
 }
-.post-list h2 a:hover { color: var(--accent); }
+.page-home h2 a:hover { color: var(--accent); }
 
-.post-list .post-summary {
+.page-home .post-summary {
   max-width: var(--measure);
   margin: 0 0 0.55rem;
 }
-.post-list .post-summary p { margin: 0; }
-.post-list .post-summary p + p { margin-top: 0.6rem; }
-.post-list .post-summary a { color: inherit; text-decoration: none; }
+.page-home .post-summary p { margin: 0; }
+.page-home .post-summary p + p { margin-top: 0.6rem; }
+.page-home .post-summary a { color: inherit; text-decoration: none; }
 
 .feed-meta {
   margin: 0;
@@ -309,59 +313,33 @@ main { margin-bottom: 3rem; }
   margin: 1.2rem 0 0;
 }
 
-/* ================================================================
-   article pages
-   ================================================================ */
+/* ---------- article body ---------- */
 
-/* tweet / video pages: the "title" is a tweet body or a plain title —
-   keep it modest, the embed carries the weight */
-.tweet-page .intro h1 {
+/* tweet pages: the title is the tweet itself, so keep it modest */
+.page-tweet .intro h1 {
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: normal;
 }
 
-/* body */
 article { padding: 2rem 0 3rem; }
+:is(.page-listing, .page-sitemap) article { padding-bottom: 2.5rem; }
 
 /* running text sits at the reading measure; media may run to --wrap */
-.single-post article .row > p,
-.single-post article .row > ul,
-.single-post article .row > ol,
-.single-post article .row > h2,
-.single-post article .row > h3,
-.single-post article .row > h4,
-.single-post article .row > blockquote,
-.single-post article .row > dl,
-.nocomments-page article .row > p,
-.nocomments-page article .row > ul,
-.nocomments-page article .row > ol,
-.nocomments-page article .row > h2,
-.nocomments-page article .row > h3,
-.nocomments-page article .row > blockquote {
+:is(.page-article, .page-listing, .page-sitemap) article .row > :is(p, ul, ol, h2, h3, h4, blockquote, dl) {
   max-width: var(--measure);
 }
 
-.single-post article h2,
-.nocomments-page article h2 { margin-top: 2.6rem; }
-.single-post article h3 { margin-top: 1.9rem; }
-.single-post article h2 + p,
-.single-post article h3 + p { margin-top: 0.5rem; }
+:is(.page-article, .page-sitemap) article h2 { margin-top: 2.6rem; }
+.page-article article h3 { margin-top: 1.9rem; }
+.page-article article :is(h2, h3) + p { margin-top: 0.5rem; }
 
-:where(.single-post article ul, .single-post article ol) { padding-left: 1.35rem; }
-:where(.single-post article li + li) { margin-top: 0.35rem; }
-
-blockquote {
-  padding: 0.15rem 0 0.15rem 1.15rem;
-  border-left: 3px solid var(--accent);
-  color: var(--quote);
-  font-style: italic;
-}
-
-/* ---------- images ---------- */
-
-article img {
+/* Prose defaults for lists and images are zero-specificity, so a component in
+   the body (.tweet-stats, .image-row, …) wins without needing to reset them. */
+:where(.page-article article) :where(ul, ol) { padding-left: 1.35rem; }
+:where(.page-article article) :where(li + li) { margin-top: 0.35rem; }
+:where(.page-article article) img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -369,15 +347,20 @@ article img {
 }
 
 /* body images: framed white card, natural size up to --wide */
-.single-post article img,
-.nocomments-page article img {
+.page-article article img {
   max-width: min(var(--wide), 100%);
   border: 1px solid var(--rule);
   border-radius: 6px;
   background: var(--card);
 }
-.single-post article img.cutout,
-.nocomments-page article img.cutout { padding: 0.9rem; }
+.page-article article img.cutout { padding: 0.9rem; }
+
+blockquote {
+  padding: 0.15rem 0 0.15rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  color: var(--quote);
+  font-style: italic;
+}
 
 figure:not(.hero) { margin: 2rem 0; max-width: min(var(--wide), 100%); }
 figcaption {
@@ -401,22 +384,17 @@ figcaption {
   margin: 0;
 }
 
-/* ---------- syntax-highlight container ---------- */
 .highlight pre { margin: 1.8rem 0; }
 
-.nocomments-page article { padding-bottom: 2.5rem; }
+/* ---------- listing pages ---------- */
 
-/* ================================================================
-   section landing pages (/hardware, /projects, …)
-   ================================================================ */
-
-.section-index .jump-links {
+.jump-links {
   margin: 0 0 2.8rem;
   font-family: var(--sans);
   font-size: 0.92rem;
 }
 
-.section-index .body h3 {
+.page-listing .body h3 {
   font-family: var(--sans);
   font-size: 0.95rem;
   font-weight: 600;
@@ -427,32 +405,29 @@ figcaption {
   padding-bottom: 0.45rem;
   border-bottom: 1px solid var(--rule);
 }
-.section-index .body h3:first-child,
-.section-index .body .jump-links + h3 { margin-top: 0; }
-.section-index .body ul { list-style: none; padding: 0; margin: 0 0 0.5rem; }
-.section-index .body li { margin: 0.28rem 0; }
-.section-index .body li a { text-decoration: none; }
-.section-index .body li a:hover { text-decoration: underline; }
+.page-listing .body h3:first-child,
+.page-listing .body .jump-links + h3 { margin-top: 0; }
+.page-listing .body ul { list-style: none; padding: 0; margin: 0 0 0.5rem; }
+.page-listing .body li { margin: 0.28rem 0; }
+.page-listing .body li a { text-decoration: none; }
+.page-listing .body li a:hover { text-decoration: underline; }
 
-/* ================================================================
-   sitemap
-   ================================================================ */
+/* ---------- sitemap ---------- */
 
-.sitemap h3 { font-size: 1rem; color: var(--muted); margin-top: 1.6rem; }
-.sitemap h2 a,
-.sitemap h3 a {
+.page-sitemap { margin-bottom: 0; }
+.page-sitemap h3 { font-size: 1rem; color: var(--muted); margin-top: 1.6rem; }
+.page-sitemap :is(h2, h3) a {
   text-decoration: none;
   color: var(--head);
 }
-.sitemap ul { margin: 0.4rem 0 1.2rem; }
-.sitemap li { margin: 0.15rem 0; }
-.sitemap img {
+.page-sitemap ul { margin: 0.4rem 0 1.2rem; }
+.page-sitemap li { margin: 0.15rem 0; }
+.page-sitemap img {
   display: inline-block;
   width: auto;
   height: 1em;
   margin: 0 0.4em 0 0;
 }
-.sitemap { margin-bottom: 0; }
 
 /* ================================================================
    tables
@@ -627,7 +602,7 @@ footer .social-buttons a:hover {
   h1 { font-size: 1.8rem; }
   .intro { padding-top: 2rem; }
   aside { padding-top: 2rem; }
-  .tweet-page .intro h1 { font-size: 1.2rem; }
+  .page-tweet .intro h1 { font-size: 1.2rem; }
 
   /* collapse the section nav behind a toggle */
   .nav-header {
