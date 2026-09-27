@@ -596,6 +596,7 @@ footer .social-buttons a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  margin-top: 0;
 }
 .tweet-stat-icon {
   width: 15px;
