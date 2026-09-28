@@ -10,7 +10,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-67R3FWDJVM');
 	</script>
-	{% if page.layout == "index" %}{% assign description = site.description %}{% else %}{% assign description = page.summary | strip_html %}{% endif %}
+	{% if page.layout == "index" %}{% assign description = site.description %}{% else %}{% assign description = page.summary | markdownify | strip_html | normalize_whitespace | strip %}{% endif %}
 	<meta name="description" content="{{ description }}">
 	<meta property="og:description" content="{{ description }}"/>
 	{% include head-includes.md %}
