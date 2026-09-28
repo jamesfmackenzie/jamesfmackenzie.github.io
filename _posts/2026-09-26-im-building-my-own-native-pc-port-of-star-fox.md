@@ -5,7 +5,7 @@ date: '2026-09-26 09:00:00'
 summary: |-
   Some programming news!
   
-  I'm working on a PC port of SNES classic **Star Fox**, using the asm code from the ultrastarfox project as a base.
+  I'm working on a PC port of SNES classic **Star Fox**, using the asm code from the [ultrastarfox](https://github.com/Sunlitspace542/ultrastarfox) project as a base.
   
   Progress is great so far — and I even have a video to prove it! See below.
 tweetId: 2103832962899087749
