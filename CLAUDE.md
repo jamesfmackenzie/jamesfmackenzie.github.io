@@ -92,8 +92,18 @@ snapshotted from YouTube with `python3 tools/youtube-views.py` (dry run) /
   (`projects`, `howto`, `hardware`, `software`, `reference`) use `/:collection/:path/`,
   slug from filename.
 - **`future: false`** — a post dated after the build machine's clock is silently
-  excluded, which breaks every `{% link %}` / `{% post_url %}` pointing at it. Check
-  `date "+%F %T %Z"` before dating a post; never post-date.
+  excluded until a build runs after that date. This is how scheduling works:
+  `.github/workflows/daily-pages-rebuild.yml` requests a Pages rebuild every day at
+  10:17 UTC, so a future-dated post appears on its date by itself. Rules:
+  - Post dates carry no timezone and GitHub's builders run in UTC, so `09:00`
+    means 09:00 UTC (05:00 US Eastern). Date scheduled posts **before 10:00** to
+    have them appear that morning.
+  - When publishing *now* rather than scheduling, check `date "+%F %T %Z"` and date
+    the post in the past — a time later today will silently hold it back.
+  - Never `{% link %}` / `{% post_url %}` *to* a post that isn't live yet: the
+    target is excluded, so the link fails and breaks the entire build. Add
+    backlinks after it has published.
+  - Preview a scheduled post with `bundle exec jekyll build --future`.
 - **Layouts** inherit from `default` (the shared shell: `<head>`, site header,
   footer, analytics — change site-wide markup there, once). Children: `post`
   (article), `tweet` and `youtube` (both inherit `post`, adding the quoted-tweet /

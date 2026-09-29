@@ -1,0 +1,22 @@
+# Future-dated posts are skipped (future: false) until the site builds after their
+# date, and Pages only builds on push — so request a rebuild every morning.
+# Post dates are read as UTC on GitHub's builders: date a post before 10:00 to
+# have it appear that day.
+name: Daily Pages rebuild
+
+on:
+  schedule:
+    - cron: '17 10 * * *'   # 10:17 UTC (06:17 US Eastern)
+  workflow_dispatch:
+
+permissions:
+  pages: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a GitHub Pages build
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
+        env:
+          GH_TOKEN: ${{ github.token }}
