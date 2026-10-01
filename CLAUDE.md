@@ -94,7 +94,9 @@ snapshotted from YouTube with `python3 tools/youtube-views.py` (dry run) /
 - **`future: false`** — a post dated after the build machine's clock is silently
   excluded until a build runs after that date. This is how scheduling works:
   `.github/workflows/daily-pages-rebuild.yml` requests a Pages rebuild every day at
-  10:17 UTC, so a future-dated post appears on its date by itself. Rules:
+  10:17 UTC, so a future-dated post appears on its date by itself. GitHub runs
+  scheduled workflows best-effort and can start them hours late (the first one,
+  2026-09-30, ran at 16:23 UTC) — promise "on its date", never a time. Rules:
   - Post dates carry no timezone and GitHub's builders run in UTC, so `09:00`
     means 09:00 UTC (05:00 US Eastern). Date scheduled posts **before 10:00** to
     have them appear that morning.

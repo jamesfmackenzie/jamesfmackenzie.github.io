@@ -59,3 +59,4 @@ If you're doing this yourself, the short version is: skip straight to the "what 
 - [Lo-tech XT-CF]({% link _hardware/lo-tech-xt-cf.md %})
 - [XTIDE Universal BIOS]({% link _software/xt-ide.md %})
 - [Amstrad PC1640]({% link _hardware/amstrad-pc1640.md %})
+- [Rescuing Files From a Dying Amstrad PC1640 Hard Drive]({% post_url 2026-09-30-rescuing-files-from-a-dying-amstrad-pc1640-hard-drive %})

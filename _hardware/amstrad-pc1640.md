@@ -55,6 +55,7 @@ The other addition is an [ATI Graphics Solution SR]({% link _hardware/ati-graphi
 ### Related on this site
 
 - [Getting XTIDE Working on the Amstrad PC1640]({% post_url 2026-09-04-getting-xtide-working-on-the-amstrad-pc1640 %})
+- [Rescuing Files From a Dying Amstrad PC1640 Hard Drive]({% post_url 2026-09-30-rescuing-files-from-a-dying-amstrad-pc1640-hard-drive %})
 - [CGA Gaming on an MDA Monochrome Monitor]({% post_url 2025-08-17-cga-gaming-on-an-mda-ttl-monochrome-monitor-with-the-ati-graphics-solution-sr-amstrad-pc1640 %})
 - [Lo-tech XT-CF]({% link _hardware/lo-tech-xt-cf.md %})
 - [ATI Graphics Solution SR]({% link _hardware/ati-graphics-solution-sr.md %})
