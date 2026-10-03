@@ -446,7 +446,11 @@ figcaption {
    tables
    ================================================================ */
 
+/* block + overflow: a table too wide for a phone scrolls inside its own box
+   instead of pushing the whole page sideways */
 table {
+  display: block;
+  overflow-x: auto;
   border-collapse: collapse;
   font-size: 0.95rem;
   max-width: min(var(--wide), 100%);
