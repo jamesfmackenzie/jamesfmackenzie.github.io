@@ -10,10 +10,10 @@ summary: |-
   Progress is great so far — and I even have a video to prove it! See below.
 tweetId: 2103832962899087749
 stats:
-  replies: 29
-  reposts: 63
-  likes: 732
-  views: 27K
+  replies: 37
+  reposts: 76
+  likes: 871
+  views: 35K
 tags: [Nintendo, Programming, Retrocomputing, Retrogaming, Tweets, Videogames]
 ---
 
