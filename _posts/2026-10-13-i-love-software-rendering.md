@@ -4,9 +4,9 @@ title: "I Love Software Rendering"
 date: '2026-10-13 01:00:00'
 summary: "Sharp pixels, gritty colour banding, and DOS games running at resolutions their own era couldn't manage. Why I still prefer the software renderer, and why it needs a fast PC."
 tags: [MS-DOS, PC, Posts, Retrogaming, Videogames]
-hero: software-rendering-quake-e1m5.png
-hero_alt: "Quake's E1M5 in the DOS software renderer: a dark stone gatehouse lit by two torches"
-hero_caption: "Quake's E1M5 in the DOS software renderer, at 800×600. All the screenshots in this post are my own captures."
+hero: software-rendering-quake-action-gib.png
+hero_alt: "An ogre caught by a rocket in a Quake corridor, square particles flying through the air"
+hero_caption: "Quake in its DOS software renderer, where even the particles are square. All the screenshots in this post are my own captures."
 ---
 
 I love software rendering. The best DOS experience I've had in a long while was Quake in its software renderer at 800×600, running at a locked 60fps on [my Dell OptiPlex 380]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %}). It's one of the best-looking things I've seen a DOS game do.
@@ -29,8 +29,7 @@ When 3D cards arrived, many games got accelerated versions. GLQuake came after Q
 
 ![Lava glowing through openings in a grimy stone wall in Quake](/img/software-rendering-quake-lava-window.png)
 
-![A rocket explosion in Quake, its particles drawn as square blocks of pixels](/img/software-rendering-quake-rocket-explosion.png)
-*Even the particles are square: the software renderer draws each one as a small block of pixels.*
+![An ogre with a chainsaw on a ledge above a lava pool in Quake](/img/software-rendering-quake-lava-ogre.png)
 
 **It's how the games were built.** Quake was released with its software renderer, and GLQuake followed. Doom and the Build engine games were designed around their software renderers from the start.
 
