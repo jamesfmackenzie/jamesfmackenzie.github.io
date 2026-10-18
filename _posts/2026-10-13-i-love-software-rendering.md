@@ -9,14 +9,14 @@ hero_alt: "An ogre caught by a rocket in a Quake corridor, square particles flyi
 hero_caption: "Quake in its DOS software renderer. Look at those square particles!"
 ---
 
-I love software rendering. The best DOS experience I’ve had in a long while was Quake in its software rendering mode at 800×600, running at a **locked** 60fps on [my Dell OptiPlex 380]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %}). It’s one of the best-looking things I've seen a DOS game do.
+I love software rendering. The best DOS experience I've had in a long while was Quake in its software rendering mode at 800×600, running at a **locked** 60fps on [my Dell OptiPlex 380]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %}). It's one of the best-looking things I've seen a DOS game do.
 
-But that’s not how most people remember these games looking. In the 90s you either ran them in software at a low resolution, or you bought a 3D card and played the accelerated version. Today there's a third option: run the software renderer on a machine fast enough to push it at resolutions that *nobody* could use back then.
+But that's not how most people remember these games looking. In the 90s you either ran them in software at a low resolution, or you bought a 3D card and played the accelerated version. Today there's a third option: run the software renderer on a machine fast enough to push it at resolutions that *nobody* could use back then.
 
 
 ### What software rendering is
 
-In a software-rendered game, the CPU draws every pixel. There’s no 3D card involved: the game works out each frame in its own code and writes it straight to video memory. Doom, Duke Nukem 3D, Blood and the original Quake all work this way.
+In a software-rendered game, the CPU draws every pixel. There's no 3D card involved: the game works out each frame in its own code and writes it straight to video memory. Doom, Duke Nukem 3D, Blood and the original Quake all work this way.
 
 When 3D cards arrived, many games got accelerated versions. GLQuake came after Quake, and Blood and Tomb Raider got 3dfx modes too. These versions hand the drawing off to the graphics card, and they look different.
 
@@ -44,7 +44,7 @@ It's not just nostalgia, either. Ion Fury, a Build engine game from 2019, still 
 
 Software rendering scales with the CPU. Every extra pixel is work for the processor, so the high VESA resolutions that many late DOS games offered were well beyond the hardware of the day.
 
-But modern hardware can power through most of it. On the OptiPlex 380, Quake at 800×600 holds a locked 60fps. But the heaviest games still push even very fast machines. In [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), Rasteri shows Build engine games needing far more power at high resolutions, to the point where even a 3.3GHz quad-core Xeon "isn't quite enough to run Shadow Warrior at full 1600 by 1200".
+Luckily for us, modern hardware can power through. On my OptiPlex 380, Quake at 800×600 holds a locked 60fps. However, the heaviest games push even very fast machines. In [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), Rasteri shows Build engine games needing far more power at high resolutions, to the point where even a 3.3GHz quad-core Xeon "isn't quite enough to run Shadow Warrior at full 1600 by 1200".
 
 So if you want to see these games at their best, you want the fastest machine you can get that still runs them.
 
