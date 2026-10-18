@@ -49,25 +49,35 @@ Luckily for us, modern hardware can power through. On my OptiPlex 380, Quake at 
 So if you want to see these games at their best, you want the fastest machine you can get that still runs them.
 
 
-### Why it needs native DOS
+### Why native DOS?
 
-There are other ways to get software rendering on a modern PC. Source ports of Doom and Quake run software renderers on Windows, and Ion Fury runs on Windows natively. They're great.
+Of course there are other ways to get software rendering on a modern PC. Source ports of Doom and Quake will happily run their software renderers on Windows. But that's not what I'm after. I want these games *as they were released*, running the original executables, at their *most authentic best*.
 
-What I'm after is the original DOS versions running as they were released, on real hardware. DOSBox is the obvious alternative, but some DOS titles struggle in DOSBox, while on real hardware they behave exactly as intended.
+On a modern machine, the most obvious way to do this is DOSBox — and for most DOS games it's brilliant. However, DOSBox emulates the CPU, and that hurts us in performance. Every extra pixel is more instructions to emulate, so the further you push the resolution, the harder the emulator has to work to keep up.
 
-That leaves one more problem: sound. A fast machine running native DOS needs a sound card the games can talk to, and modern PCs don't have one. That's a story of its own.
+On real hardware there's no emulation layer. A Core 2 runs Quake's own code directly, and at 800×600 my OptiPlex 380 doesn't even break a sweat.
+
+So the answer is a real, fast PC, running native DOS.
 
 
 ### Games worth trying
 
-- **Quake**, in software at 800×600 or higher
-- **Duke Nukem 3D** and **Blood**, the Build engine games, at high VESA resolutions
-- **Screamer**
+- **Quake**, in software at 800×600 or higher.
+- **Blood**, whose VESA software modes I actually prefer to its 3dfx mode.
+- **Duke Nukem 3D**, which also has high-resolution VESA modes.
+- **Screamer**, which looks great at 640×480.
 
 <div class="image-row">
   <img src="/img/software-rendering-duke3d-street.png" alt="A city street in Duke Nukem 3D's first level">
   <img src="/img/software-rendering-duke3d-pig-cop.png" alt="A Pig Cop in a store in Duke Nukem 3D">
 </div>
+
+
+### One final challenge: sound
+
+So this is easy, right? Just boot to FreeDOS and play those great DOS games.
+
+Not quite. These games need a sound card they can talk to directly, and modern PCs don't have one. But that's a story for another day.
 
 
 ### Related on this site
