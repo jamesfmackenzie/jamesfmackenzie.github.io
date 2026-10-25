@@ -1,17 +1,21 @@
 ---
 layout: post
 title: "Why Don't PCI Sound Cards Work in DOS on a Modern PC?"
-date: '2026-10-12 09:00:00'
-summary: "A real PCI sound card in a fast modern PC, running DOS games. Why it doesn't just work, what SBEMU and VSBHDA do instead, and how I'm going to test whether the real hardware is worth the trouble."
+date: '2026-10-25 09:00:00'
+summary: "What's the fastest PC that can still run a real 1990s sound card in DOS? Graphics turned out to be the easy part. Here's why sound is so hard, and what it takes to get a late-90s PCI card working in a modern machine."
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
 
 <!-- DRAFT: post 1 of the "Get PCI Sound Cards Working on a Modern PC" series. No results here by design; the comparison results arrive with the YMF724 and Solo-1 posts. -->
 <!-- TODO: hero photo (X10SAE with a PCI card in the slot) and the four-layers diagram -->
 
-I'd like to run DOS games on a fast modern PC with a real sound card doing the work. Not an emulated Sound Blaster, and not a PC from 2001. A late-1990s PCI card in a Haswell-era board.
+What's the fastest PC that can still run a real 1990s sound card in DOS?
 
-On paper that should be easy. The PCI sound cards of that time, like the Yamaha YMF724, the ESS Solo-1 and the Sound Blaster Live!, were sold with DOS compatibility, so they should be able to pretend to be a Sound Blaster. In practice, plug one into a modern machine and you get silence. This series is about getting from the silence to games with sound, and finding out whether the result is any better than the software workarounds.
+I want to play original DOS games stupidly fast, at resolutions nobody had in 1996. I've written about [why I love software rendering]({% post_url 2026-10-13-i-love-software-rendering %}), and why it needs a fast PC running native DOS. Graphics turned out to be the easy part. Sound is the real challenge. As Rasteri put it in [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), "the main reason that DOS games won't run on modern PCs is because of audio output."
+
+What I want is a real late-1990s PCI sound card, with its own FM chip and its own Sound Blaster processor, in the fastest machine that can host it. On paper that should be easy. The PCI sound cards of that time, like the Yamaha YMF724, the ESS Solo-1 and the Sound Blaster Live!, were sold with DOS compatibility, so they should be able to pretend to be a Sound Blaster. In practice, plug one into a modern machine and you get silence, or worse.
+
+Getting from that silence to games with sound turns out to be complicated. Here's why.
 
 ### What a DOS game expects
 
