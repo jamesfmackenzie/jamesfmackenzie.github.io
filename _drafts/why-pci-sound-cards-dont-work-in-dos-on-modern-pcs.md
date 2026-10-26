@@ -6,8 +6,8 @@ summary: "What's the fastest PC that can still run a real 1990s sound card in DO
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
 
-<!-- DRAFT: post 1 of the "Get PCI Sound Cards Working on a Modern PC" series. No results here by design; the comparison results arrive with the YMF724 and Solo-1 posts. -->
-<!-- TODO: hero photo (X10SAE with a PCI card in the slot) and the four-layers diagram -->
+<!-- DRAFT: post 1 of the "Get PCI Sound Cards Working on a Modern PC" series. No results here by design. The comparison method moves to the first results post (post 8). -->
+<!-- TODO: hero photo (X10SAE with a PCI card in the slot). Optional: the software-vs-hardware diagram (img/pci-sound-card-software-vs-hardware-diagram.svg) alongside or instead of the comparison table. -->
 
 What's the fastest PC that can still run a real 1990s sound card in DOS?
 
@@ -15,97 +15,81 @@ I want to play original DOS games stupidly fast, at resolutions nobody had in 19
 
 What I want is a real late-1990s sound card, with its own FM chip and its own Sound Blaster processor, in the fastest machine that can host it.
 
-Firstly, ISA cards are a non starter. The ISA bus was removed from PCs back in (… fill out the missing details here)
+### What are the options?
 
-Next up, we have PCI sound cards. On paper these should work. PCIe-to-PCI adapters, exist, and modern PCIe was designed to be software compatible with legacy PCI. In addition, PCI sound cards of the era actively advertised DOS and Sound Blaster compatibility.
+Firstly, ISA cards are out. ISA slots were phased out at the end of the 1990s (Microsoft and Intel's PC99 guidelines asked for none at all). Today only a few industrial boards still have them, and almost none of those support the DMA that DOS sound needs.
 
-In practice, plug one into a modern machine and you get silence — no sound.
+Next up, we have PCI sound cards. On paper these should work. PCIe-to-PCI adapters exist, and modern PCIe was designed to be software compatible with legacy PCI. In addition, PCI sound cards of the era actively advertised DOS and Sound Blaster compatibility.
 
-Getting from that silence to games with sound turns out to be complicated. Here's why.
+In practice, plug one into a modern machine and the game can't even find it.
 
 
 ### What a DOS game expects
 
-A DOS game doesn't ask an operating system for sound. It talks to the hardware directly. For a Sound Blaster, that means writing to I/O ports at fixed addresses (220h for the card, 388h for the FM chip) and claiming an IRQ and a DMA channel for sample transfers. When it plays a digitised sound, the game programs the PC's DMA controller to move the samples from memory to the card.
+A DOS game doesn't ask an operating system for sound. It talks to the hardware directly. For a Sound Blaster, that means writing to I/O ports at fixed addresses (220h for the card, 388h for the FM chip) and picking an IRQ and a DMA channel for sample transfers. When it plays a digitised sound, the game programs the PC's DMA controller to move the samples from memory to the card.
 
-Everything in the process above assumes an ISA slot. The card sat at a fixed address, had its own IRQ line, and had a DMA request wire running to the motherboard's 8237 DMA controller.
+All of this was designed around the ISA slot, where the card sat at a fixed address, with its own IRQ line and a wire running straight to the motherboard's 8237 DMA controller.
 
 
 ### What the PCI cards did about it
 
-ISA sound cards used fixed, hardcoded hardware channels. PCI cards, by contrast, are dynamic; the BIOS maps them to whatever memory address or resource pool is free during bootup. Because a DOS game bypasses the OS and expects to find a sound card sitting explicitly at I/O ports 220h and 388h, it would completely miss a native PCI card.
+PCI doesn't work that way. A PCI card gets its addresses and its interrupt from the BIOS at boot, wherever there's room. A DOS game still looks for a Sound Blaster at 220h and 388h, so it would never find a PCI card in its native mode.
 
 To fix this, the PCI sound cards added a legacy mode: a register that makes the card also answer at 220h and 388h, along with a once-per-boot DOS utility to configure the sound card and instruct the chipset to route traffic to the right place.
 
-In addition, chipset mechanisms existed to pass DMA writes the card (DDMA), or even a pair of extra request and grant wires to physically connect the card to the chipset (PC/PCI).
+In addition, chipset mechanisms existed to pass DMA writes to the card (Distributed DMA), or even a pair of extra request and grant wires to physically connect the card to the chipset (PC/PCI).
 
-Together, these mechanisms are a great facsimile of the old ISA setup. DOS games don’t know they’re talking to a PCI card — it just works(TM).
+Together, these mechanisms were a great facsimile of the old ISA setup. On a motherboard that supported them, DOS games didn't know they were talking to a PCI card. It just worked™.
 
-Unfortunately, on a modern PC, these mechanisms are gone. So we need to find alternatives.
+Unfortunately, on a modern PC, these mechanisms are gone. Distributed DMA never made it past Intel's PIIX4 chipsets, and PC/PCI ended with ICH5 in 2003. So we need to find alternatives.
 
 
 ### Four things that have to work
 
-The way I've come to think about it, we have four separate layers, and a card needs to get through all of them:
+The way I've come to think about it, we have four separate problems, and a card needs to get past all of them:
 
-1. **Address mapping.** Can the card be made to answer at 220h and 388h? This is the card's job, and the vendor setup tool usually handles it.
-2. **Bus-cycle delivery.** When the CPU writes to port 220h, does that cycle actually reach the card? Behind a PCIe-to-PCI bridge, it only does if the bridge and the chipset's root port are both set to forward cycles nobody else has claimed (subtractive decode).
-3. **Interrupts.** Does the card's IRQ reach the CPU, on the line the game expects?
-4. **DMA.** Can the samples get from memory to the card, when the game is writing to a DMA controller the card has no connection to?
+1. **Answering at the old addresses.** The game looks for the card at 220h and 388h, but a PCI card lives wherever the BIOS put it.
+2. **Getting there at all.** On a modern PC, the CPU's reads and writes to those addresses have to cross the chipset and a PCIe-to-PCI bridge to reach the card.
+3. **Interrupts.** The card's interrupt has to reach the game, on the line the game expects.
+4. **DMA.** The game programs a DMA controller to move its samples, and the card isn't connected to it.
 
-(Let’s shape the above to cover only “what do we need to solve”. The above digs too much into the solutions, and starts setting out responsibilities and how we will do it. It’s too early for that)
+If we can solve all four, we should have working sound.
 
 
-### How SBEMU and VSBHDA get around it
+### But what about Sound Blaster emulation?
 
-(Briefly explain that getting a PCI card working isn’t the only game in town. We can use emulation too. And then expand on what SBEMU and VSBHDA are and how they solve the above. We could even have a comparison table of the four layers, and how pci card solve them vs emulation. We already have a table in our vault note, so we could use that for inspiration)
+Getting a real PCI card working isn't the only option. You can emulate the card instead, and in pure DOS on modern hardware there are two well-known tools that do it.
 
-(I’ve left the original section wording below, but of course it needs to be rejigged to cover the above + explain how SBEMU and VSBHDA cover the four layers above). 
+[SBEMU]({% link _software/sbemu.md %}), by GitHub user crazii, is a resident program that pretends to be a Sound Blaster and an AdLib FM synth, and plays the result through the real audio hardware in the machine: Intel HD Audio on most modern boards, plus a range of older onboard chips and PCI cards. [VSBHDA](https://github.com/Baron-von-Riedesel/VSBHDA) is a fork of SBEMU by Baron von Riedesel, who maintains the HDPMI and Jemm tools both of them depend on. It's built to stay compatible with those tools, and it can also handle 16-bit protected-mode games.
 
-[SBEMU]({% link _software/sbemu.md %}) and VSBHDA take a different approach. They don't use the sound card's DOS mode at all. They load a protected-mode driver that traps the game's port writes, pretends to be a Sound Blaster, and plays the result through audio hardware that does work on a modern machine, usually the onboard HD Audio. The game thinks it's talking to a Sound Blaster. It's actually talking to software.
+Both work the same way: they catch the game's reads and writes to the Sound Blaster's ports and answer them in software. I got [Doom running with SBEMU on a Core i7 in native DOS]({% post_url 2023-03-07-you-can-run-doom-on-a-core-i7-pc-in-native-dos-with-sbemu %}) a few years ago, and it was a real step forward.
 
-I got [Doom running with SBEMU on a Core i7 in native DOS]({% post_url 2023-03-07-you-can-run-doom-on-a-core-i7-pc-in-native-dos-with-sbemu %}) a few years ago and it was a real step forward. But it has limits. The trapping relies on a DPMI host that the game's DOS extender is willing to use, so a game that insists on its own extender can slip past it. And an emulated card can't be any better than the emulation.
+They go through the same four problems, but they solve every one in software:
+
+| | Emulation (SBEMU / VSBHDA) | A real PCI card |
+|---|---|---|
+| Answering at 220h/388h | Software catches the game's accesses and answers | The card's own legacy mode answers |
+| Getting there | Not needed: the accesses never leave the CPU | They have to cross the chipset and a PCIe-to-PCI bridge |
+| Interrupts | A virtual interrupt, generated by software | The card's real interrupt |
+| DMA | A software DMA controller, with the CPU copying the samples | The card's own DMA engine, if the game's settings can reach it |
+| FM music | Usually a software OPL3 (SBEMU can borrow some cards' real chips) | The card's real FM chip |
 
 
 ### Why bother with the real hardware?
 
-(Let’s rejig the below to really nail our core principle: we want to do this all in hardware, not emulation. From experience, we know that the software solutions have some issues especially with protected mode (or real mode? Or some other cohort of games — use our research to article what the weak points are). Wild success here looks like an end-to-end hardware native solution to run PCI sound cards on a modern PC — and the hope/expectation that this will best emulation solutions in both reliability and authenticity)
+I want to do this in hardware, not emulation. The emulators work well for most games, but they have known weak spots. They depend on a DPMI host the game agrees to use, so a game that brings its own can slip past them. 16-bit protected-mode games need special handling, and people regularly report games that crash or freeze under them. And an emulated card can never be better than its emulation: VSBHDA's FM music, for example, is a software imitation of the chip.
 
-The case for the real card is that once it's set up, a game is just writing to real ports on real silicon. There's no DPMI host involved and no emulation layer to get wrong, so in principle it should work with anything that worked on the original card. The FM synthesis and the mixer are the card's own.
-
-I say "in principle" because I don't know yet. The real-card approach has its own fragile pieces. For the cards that need it, the DMA settings get to the card through one of the four routes above, all of them small pieces of software I'm in no position to call bulletproof. It could easily turn out that the emulators are the better bet. Finding out is the point.
+A real card has none of those problems. If the card itself does the work, every game should just see a Sound Blaster. Wild success would be a fully hardware-native setup that beats the emulators on both reliability and authenticity. That's the hope, anyway.
 
 
-### How I'll judge it
+### What's next
 
-(I don’t think we’re ready for any of this — we need to research and find a compatible board first. Let’s remove this section)
+First, research. I need to work out how each of these four problems might be solved on a modern machine, and, most importantly, find the fastest board that can run a PCI sound card in DOS at all.
 
-For every card I get working, I'll run the same games on the same machine with the real card and with the emulators, and compare:
-
-- the same PC, the same stick, the same game installs
-- `BLASTER=A220 I5 D1 T4` for every setup, so each game's sound settings are identical
-- emulators launched with no special switches
-- three runs per game for each setup, because some problems only show up now and then
-- a listening test, by ear, with notes on effects, music, hangs and glitches
-
-I'll report counts, like "one hang in three runs", instead of impressions.
-
-
-### The plan
-
-(Why are we talking about the future and what’s going to happen? We are getting way ahead of ourselves. The only thing we need to cover here is: we need do our research, figure out how we (think) we can solve the challenges above, and find the FASTEST COMPATIBLE BOARD TO USE AS A FOUNDATION FOR THIS PROJECT)
-
-The rest of the series follows the same path I did:
-
-- **The hardware.** What is the fastest board that can do this at all, and which boards turned out to be dead ends.
-- **The Yamaha YMF724.** The easy card, which ships with its own DMA workaround.
-- **The ESS Solo-1.** The harder one, where I had to work out the DMA part myself.
-- **Reading the DMA settings back.** The fourth route above: whether it works, what broke along the way, and which games it can and can't serve.
-- **Where it still breaks, and the scoreboard.** The games that fight back, and every card and setup compared.
-- Later: the other cards (a Sound Blaster Live! and a C-Media card), which other PCI cards could work, and a single tool that sets up whichever card is in the machine.
 
 ### Related on this site
 
+- [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %})
 - [SBEMU]({% link _software/sbemu.md %})
 - [Yamaha YMF724]({% link _hardware/yamaha-ymf724.md %})
 - [ESS Solo-1]({% link _hardware/ess-solo-1.md %})
