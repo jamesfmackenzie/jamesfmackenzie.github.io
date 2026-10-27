@@ -4,16 +4,10 @@ title: Creative Labs Sound Blaster Live!
 summary: My take on the Sound Blaster Live! — a strong Windows card, a compromised DOS card, and a handy SBEMU target on machines too modern for real DOS audio.
 date: '2024-08-29 11:33:00'
 tags: [PC, Sound, Sound Cards]
-hero: creative-labs-sound-blaster-live-value-ct4670.jpg
-hero_alt: Creative Sound Blaster Live! Value (CT4670)
+hero: sound-blaster-live-5-1-sb0100.jpg
+hero_alt: "Creative Sound Blaster Live! 5.1 (SB0100)"
+hero_caption: "My own Sound Blaster Live! 5.1 (SB0100). I also have an SB0060, which is the one I've tested in DOS."
 ---
-
-{% include image-credit.html
-  source_url="https://commons.wikimedia.org/wiki/File:Creative_Labs_Sound_Blaster_Live!_Value_(CT4670).jpg"
-  source_label="Kronach Fotos via Wikimedia Commons"
-  license_url="https://creativecommons.org/licenses/by-sa/4.0/"
-  license_label="CC BY-SA 4.0"
-%}
 
 The Sound Blaster Live! isn't the neatest answer to any one retro-audio problem, but it's hard to ignore. It was everywhere in late-90s and early-2000s Windows PCs, it still turns up for pocket change, and it keeps becoming relevant again whenever a later PCI system gets pushed into DOS territory.
 

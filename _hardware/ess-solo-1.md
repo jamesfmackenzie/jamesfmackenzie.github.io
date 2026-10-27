@@ -4,6 +4,9 @@ title: ESS Solo-1
 summary: Notes on the ESS Solo-1 (ES1938S) — a single-chip PCI sound card with real Sound Blaster Pro compatibility, which I run in my HP Compaq t5710 thin client.
 date: '2024-08-29 11:33:00'
 tags: [PC, Sound Cards]
+hero: ess-solo-1-card.jpg
+hero_alt: "An ESS Solo-1 PCI sound card: a TTSOLO1-N board with the ES1938S chip"
+hero_caption: "My own ESS Solo-1, a TTSOLO1-N board built around the ES1938S."
 ---
 
 The ESS Solo-1 is one of the PCI-era sound cards that actually bothered with DOS compatibility, rather than treating it as an afterthought. It's the card I run in my [HP Compaq t5710 thin client]({% link _hardware/hp-compaq-t5710.md %}), whose single PCI slot doesn't leave room for much else.
