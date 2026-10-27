@@ -18,7 +18,7 @@ Goal | Find the fastest PC that can run a late-1990s PCI sound card in native DO
 The project so far, in order:
 
 1. [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %}) — why I want a fast PC running native DOS in the first place
-2. [Why Don't PCI Sound Cards Work in DOS on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}) — the problem, and the four things that have to work
+2. [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}) — the problem, and the four things that have to work
 
 More details:
 

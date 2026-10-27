@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Don't PCI Sound Cards Work in DOS on a Modern PC?"
+title: "Why Don't PCI Sound Cards Work on a Modern PC?"
 date: '2026-10-26 23:00:00'
 summary: "What's the fastest PC that can still run a real 1990s sound card in DOS? Here's why sound is so hard, and what it takes to get a late-90s PCI card working in a modern machine."
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
@@ -9,11 +9,11 @@ hero_alt: "An ISA sound card and a PCI Sound Blaster Live! 5.1, side by side"
 hero_caption: "My own cards: an Aztech ISA sound and modem card from 1997 (left), and a PCI Sound Blaster Live! 5.1 (right)."
 ---
 
-What's the fastest PC that can still run a real 1990s sound card in DOS?
+I have a mission. I want to play original DOS games at super high resolutions and frame rates. I've already shared my [love for software rendering]({% post_url 2026-10-13-i-love-software-rendering %}), and why it needs a blazing fast DOS machine.
 
-I want to play original DOS games stupidly fast, at resolutions nobody had in 1996. I've written about [why I love software rendering]({% post_url 2026-10-13-i-love-software-rendering %}), and why it needs a fast PC running native DOS. Graphics turned out to be the easy part. Sound is the real challenge. As Rasteri put it in [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), "the main reason that DOS games won't run on modern PCs is because of audio output."
+After some investigation, it turns out graphics are the easy part. The real challenge is sound. As Rasteri put it in [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), "the main reason that DOS games won't run on modern PCs is because of audio output."
 
-What I want is a real late-1990s sound card, with its own FM chip and its own Sound Blaster processor, in the fastest machine that can host it.
+So what I want is a real late-1990s sound card, with its own FM chip and its own Sound Blaster processor, in the fastest machine that can host it.
 
 ### What are the options?
 
