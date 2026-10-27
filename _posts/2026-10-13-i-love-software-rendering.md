@@ -77,11 +77,13 @@ So the answer is a real, fast PC, running native DOS.
 
 So this is easy, right? Just boot to FreeDOS and play those great DOS games.
 
-Not quite. These games need a sound card they can talk to directly, and modern PCs don't have one. But that's a story for another day.
+Not quite. These games need a sound card they can talk to directly, and modern PCs don't have one. But that's [a story for another day]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}).
 
 
 ### Related on this site
 
+- [Get PCI Sound Cards Working on a Modern PC]({% link _projects/get-pci-sound-cards-working-on-a-modern-pc.md %}) — the project this post starts
+- [Why Don't PCI Sound Cards Work in DOS on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %})
 - [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})
 - [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %})
 - [Tomb Raider]({% link _software/tomb-raider.md %})

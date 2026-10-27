@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Why Don't PCI Sound Cards Work in DOS on a Modern PC?"
-date: '2026-10-25 09:00:00'
+date: '2026-10-26 23:00:00'
 summary: "What's the fastest PC that can still run a real 1990s sound card in DOS? Here's why sound is so hard, and what it takes to get a late-90s PCI card working in a modern machine."
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
+hero: isa-and-pci-sound-cards.jpg
+hero_alt: "An ISA sound card and a PCI Sound Blaster Live! 5.1, side by side"
+hero_caption: "My own cards: an Aztech ISA sound and modem card from 1997 (left), and a PCI Sound Blaster Live! 5.1 (right)."
 ---
-
-<!-- DRAFT: post 1 of the "Get PCI Sound Cards Working on a Modern PC" series. No results here by design. The comparison method moves to the first results post (post 8). -->
-<!-- TODO: hero photo (X10SAE with a PCI card in the slot). Optional: the software-vs-hardware diagram (img/pci-sound-card-software-vs-hardware-diagram.svg) alongside or instead of the comparison table. -->
 
 What's the fastest PC that can still run a real 1990s sound card in DOS?
 
@@ -21,12 +21,21 @@ Firstly, ISA cards are out. ISA slots were phased out at the end of the 1990s (M
 
 Next up, we have PCI sound cards. On paper these should work. PCIe-to-PCI adapters exist, and modern PCIe was designed to be software compatible with legacy PCI. In addition, PCI sound cards of the era actively advertised DOS and Sound Blaster compatibility.
 
+![A PCIe x1 to PCI adapter card with an ASMedia bridge chip](/img/pcie-to-pci-adapter-for-voodoo-2.jpg){: width="480"}
+*A PCIe-to-PCI adapter. Plug it into a modern PCIe slot and you get a PCI slot back.*
+
 In practice, plug one into a modern machine and the game can't even find it.
 
 
 ### What a DOS game expects
 
 A DOS game doesn't ask an operating system for sound. It talks to the hardware directly. For a Sound Blaster, that means writing to I/O ports at fixed addresses (220h for the card, 388h for the FM chip) and picking an IRQ and a DMA channel for sample transfers. When it plays a digitised sound, the game programs the PC's DMA controller to move the samples from memory to the card.
+
+<div class="image-row">
+  <img src="/img/doom-setup-select-irq.png" alt="Doom's setup program asking for the Sound Blaster's IRQ, with 5 selected">
+  <img src="/img/doom-setup-select-dma-channel.png" alt="Doom's setup program asking for the Sound Blaster's DMA channel, with 1 selected">
+</div>
+*Doom's setup program, asking which IRQ and DMA channel the Sound Blaster uses.*
 
 All of this was designed around the ISA slot, where the card sat at a fixed address, with its own IRQ line and a wire running straight to the motherboard's 8237 DMA controller.
 
@@ -91,6 +100,6 @@ First, research. I need to work out how each of these four problems might be sol
 
 - [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %})
 - [SBEMU]({% link _software/sbemu.md %})
-- [Yamaha YMF724]({% link _hardware/yamaha-ymf724.md %})
-- [ESS Solo-1]({% link _hardware/ess-solo-1.md %})
-- [Creative Labs Sound Blaster Live!]({% link _hardware/creative-labs-sound-blaster-live.md %})
+- [SBEMU Just Killed Your DOS Gaming PC]({% post_url 2023-03-12-sbemu-just-killed-your-dos-gaming-pc %})
+- [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %})
+- [The Ugly Dell That Became My Dream Retro Gaming PC]({% post_url 2025-12-28-the-ugly-dell-optiplex-that-became-my-dream-retro-gaming-pc %})
