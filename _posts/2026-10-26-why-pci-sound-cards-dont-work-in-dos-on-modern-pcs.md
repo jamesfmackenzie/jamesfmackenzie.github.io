@@ -2,7 +2,7 @@
 layout: post
 title: "Why Don't PCI Sound Cards Work on a Modern PC?"
 date: '2026-10-26 23:00:00'
-summary: "What's the fastest PC that can still run a real 1990s sound card in DOS? Here's why sound is so hard, and what it takes to get a late-90s PCI card working in a modern machine."
+summary: "I have a mission: play original DOS games at super high resolutions and frame rates. Graphics turned out to be easy. But sound is the real challenge. Here's why a late-90s PCI sound card won't just work in a modern PC."
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 hero: isa-and-pci-sound-cards.jpg
 hero_alt: "An ISA sound card and a PCI Sound Blaster Live! 5.1, side by side"
@@ -61,6 +61,9 @@ The way I've come to think about it, we have four separate problems, and a card 
 2. **Getting there at all.** On a modern PC, the CPU's reads and writes to those addresses have to cross the chipset and a PCIe-to-PCI bridge to reach the card.
 3. **Interrupts.** The card's interrupt has to reach the game, on the line the game expects.
 4. **DMA.** The game programs a DMA controller to move its samples, and the card isn't connected to it.
+
+![Then: a DOS game wired straight to an ISA sound card through its ports, its IRQ line and a DMA wire. Now: the same game and a PCI card in a PCIe-to-PCI adapter, with each of the four connections an open question.](/img/isa-then-pci-now-diagram.svg)
+*On ISA, everything was wired straight to the card. In a modern PC, each connection is an open question.*
 
 If we can solve all four, we should have working sound.
 

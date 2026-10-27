@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>Then and now: an ISA sound card's direct connections, and the four open questions for a PCI card in a modern PC</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a939a"/>
+    </marker>
+  </defs>
+  <rect width="760" height="300" fill="#ffffff"/>
+  <line x1="380" y1="20" x2="380" y2="280" stroke="#e5dfd4" stroke-width="1.5"/>
+
+  <!-- headings -->
+  <g font-size="15" font-weight="700" fill="#23282d">
+    <text x="20" y="38">Then: an ISA sound card</text>
+    <text x="400" y="38">Now: a PCI card in a modern PC</text>
+  </g>
+
+  <!-- boxes -->
+  <g stroke="#e5dfd4" stroke-width="1.5">
+    <rect x="20" y="62" width="100" height="200" rx="8" fill="#f8f5ef"/>
+    <rect x="250" y="62" width="110" height="200" rx="8" fill="#f8f5ef"/>
+    <rect x="400" y="62" width="100" height="200" rx="8" fill="#f8f5ef"/>
+    <rect x="630" y="62" width="110" height="200" rx="8" fill="#e3f1ee" stroke="#0f8576"/>
+  </g>
+  <g fill="#23282d" text-anchor="middle">
+    <text x="70" y="166" font-size="15" font-weight="700">DOS game</text>
+    <text x="305" y="160" font-size="15" font-weight="700">ISA sound</text>
+    <text x="305" y="178" font-size="15" font-weight="700">card</text>
+    <text x="450" y="166" font-size="15" font-weight="700">DOS game</text>
+    <text x="685" y="150" font-size="15" font-weight="700" fill="#0c6f62">PCI sound</text>
+    <text x="685" y="168" font-size="15" font-weight="700" fill="#0c6f62">card</text>
+    <text x="685" y="190" font-size="12" fill="#6a747e">in a PCIe-to-PCI</text>
+    <text x="685" y="205" font-size="12" fill="#6a747e">adapter</text>
+  </g>
+
+  <!-- then: three direct connections -->
+  <g fill="none" stroke="#8a939a" stroke-width="1.6">
+    <path d="M120 112 L 246 112" marker-end="url(#arrow)"/>
+    <path d="M250 162 L 124 162" marker-end="url(#arrow)"/>
+    <path d="M120 212 L 246 212" marker-end="url(#arrow)"/>
+  </g>
+  <g font-size="12.5" font-style="italic" fill="#0f8576" text-anchor="middle">
+    <text x="183" y="103">ports 220h, 388h</text>
+    <text x="183" y="153">its own IRQ line</text>
+    <text x="183" y="203">a DMA wire</text>
+  </g>
+
+  <!-- now: four open questions -->
+  <g fill="none" stroke="#8a939a" stroke-width="1.6" stroke-dasharray="5 4">
+    <path d="M500 100 L 626 100"/>
+    <path d="M500 140 L 626 140"/>
+    <path d="M500 180 L 626 180"/>
+    <path d="M500 220 L 626 220"/>
+  </g>
+  <g font-size="12.5" font-style="italic" fill="#0f8576" text-anchor="middle">
+    <text x="574" y="91">220h, 388h?</text>
+    <text x="574" y="131">reach the card?</text>
+    <text x="574" y="171">interrupts?</text>
+    <text x="574" y="211">DMA?</text>
+  </g>
+  <g font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <circle cx="514" cy="100" r="10" fill="#0f8576"/><text x="514" y="104">1</text>
+    <circle cx="514" cy="140" r="10" fill="#0f8576"/><text x="514" y="144">2</text>
+    <circle cx="514" cy="180" r="10" fill="#0f8576"/><text x="514" y="184">3</text>
+    <circle cx="514" cy="220" r="10" fill="#0f8576"/><text x="514" y="224">4</text>
+  </g>
+</svg>
