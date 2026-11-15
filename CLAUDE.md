@@ -144,6 +144,11 @@ Model page: `_hardware/dell-optiplex-760.md`.
 
 - First person, personal, understated. Ground everything concrete — the real price, the
   real date, the actual quirk, the actual dead end.
+- **Tell a post as a journey, not a report.** An experimental write-up runs: the goal →
+  what I thought → what I looked at or tried → what worked and what didn't → the
+  conclusion. Don't give the answer away early. The `summary:` poses the question, the
+  intro sets up the mission, and the finding lands where it happened in the story.
+  Aim for an engaging read, not flat documentation, while staying understated.
 - When writing from your own project notes, write in first person. Not "the notes
   suggest" — it's your work.
 
