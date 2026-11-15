@@ -13,13 +13,13 @@ I have a mission. I want to play original DOS games at super high resolutions an
 
 After some investigation, it turns out graphics are the easy part. The real challenge is sound. As Rasteri put it in [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), "the main reason that DOS games won't run on modern PCs is because of audio output."
 
-So what I want is a real late-1990s sound card, with its own FM chip and its own Sound Blaster processor, in the fastest machine that can host it.
+So what I want is a real late-1990s sound card, with its own [FM chip]({% link _reference/technical-glossary.md %}#fm-synthesis) and its own Sound Blaster processor, in the fastest machine that can host it.
 
 ### What are the options?
 
 Firstly, ISA cards are out. ISA slots were phased out at the end of the 1990s (Microsoft and Intel's PC99 guidelines asked for none at all). Today only a few industrial boards still have them, and almost none of those support the DMA that DOS sound needs.
 
-Next up, we have PCI sound cards. On paper these should work. PCIe-to-PCI adapters exist, and modern PCIe was designed to be software compatible with legacy PCI. In addition, PCI sound cards of the era actively advertised DOS and Sound Blaster compatibility.
+Next up, we have PCI sound cards. On paper these should work. [PCIe-to-PCI adapters]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge) exist, and modern PCIe was designed to be software compatible with legacy PCI. In addition, PCI sound cards of the era actively advertised DOS and Sound Blaster compatibility.
 
 ![A PCIe x1 to PCI adapter card with an ASMedia bridge chip](/img/pcie-to-pci-adapter-for-voodoo-2.jpg){: width="480"}
 *A PCIe-to-PCI adapter. Plug it into a modern PCIe slot and you get a PCI slot back.*
@@ -29,7 +29,7 @@ In practice, plug one into a modern machine and the game can't even find it.
 
 ### What a DOS game expects
 
-A DOS game doesn't ask an operating system for sound. It talks to the hardware directly. For a Sound Blaster, that means writing to I/O ports at fixed addresses (220h for the card, 388h for the FM chip) and picking an IRQ and a DMA channel for sample transfers. When it plays a digitised sound, the game programs the PC's DMA controller to move the samples from memory to the card.
+A DOS game doesn't ask an operating system for sound. It talks to the hardware directly. For a Sound Blaster, that means writing to [I/O ports]({% link _reference/technical-glossary.md %}#io-port) at fixed addresses (220h for the card, 388h for the FM chip) and picking an [IRQ]({% link _reference/technical-glossary.md %}#irq) and a DMA channel for sample transfers. When it plays a digitised sound, the game programs the PC's DMA controller to move the samples from memory to the card.
 
 <div class="image-row">
   <img src="/img/doom-setup-select-irq.png" alt="Doom's setup program asking for the Sound Blaster's IRQ, with 5 selected">
@@ -37,16 +37,16 @@ A DOS game doesn't ask an operating system for sound. It talks to the hardware d
 </div>
 *Doom's setup program, asking which IRQ and DMA channel the Sound Blaster uses.*
 
-All of this was designed around the ISA slot, where the card sat at a fixed address, with its own IRQ line and a wire running straight to the motherboard's 8237 DMA controller.
+All of this was designed around the ISA slot, where the card sat at a fixed address, with its own IRQ line and a wire running straight to the motherboard's [8237 DMA controller]({% link _reference/technical-glossary.md %}#dma-controller-8237).
 
 
 ### What the PCI cards did about it
 
 PCI doesn't work that way. A PCI card gets its addresses and its interrupt from the BIOS at boot, wherever there's room. A DOS game still looks for a Sound Blaster at 220h and 388h, so it would never find a PCI card in its native mode.
 
-To fix this, the PCI sound cards added a legacy mode: a register that makes the card also answer at 220h and 388h, along with a once-per-boot DOS utility to configure the sound card and instruct the chipset to route traffic to the right place.
+To fix this, the PCI sound cards added a [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode): a register that makes the card also answer at 220h and 388h, along with a once-per-boot DOS utility to configure the sound card and instruct the chipset to route traffic to the right place.
 
-In addition, chipset mechanisms existed to pass DMA writes to the card (Distributed DMA), or even a pair of extra request and grant wires to physically connect the card to the chipset (PC/PCI).
+In addition, chipset mechanisms existed to pass DMA writes to the card ([Distributed DMA]({% link _reference/technical-glossary.md %}#ddma)), or even a pair of extra request and grant wires to physically connect the card to the chipset ([PC/PCI]({% link _reference/technical-glossary.md %}#pc-pci)).
 
 Together, these mechanisms were a great facsimile of the old ISA setup. On a motherboard that supported them, DOS games didn't know they were talking to a PCI card. It just worked™.
 
@@ -55,12 +55,12 @@ Unfortunately, on a modern PC, these mechanisms are gone. Distributed DMA never 
 
 ### Four things that have to work
 
-The way I've come to think about it, we have four separate problems, and a card needs to get past all of them:
+For a DOS game to play sound through a PCI card, four things need to happen:
 
-1. **Answering at the old addresses.** The game looks for the card at 220h and 388h, but a PCI card lives wherever the BIOS put it.
-2. **Getting there at all.** On a modern PC, the CPU's reads and writes to those addresses have to cross the chipset and a PCIe-to-PCI bridge to reach the card.
-3. **Interrupts.** The card's interrupt has to reach the game, on the line the game expects.
-4. **DMA.** The game programs a DMA controller to move its samples, and the card isn't connected to it.
+1. **Answering at the right addresses.** DOS games look for a sound card at ports 220h and 388h, so the PCI card needs to be listening there.
+2. **Address routing.** The game's reads and writes to those ports have to make it across the chipset and the PCIe-to-PCI bridge to reach the card.
+3. **Interrupts.** When the card needs the game's attention, for example because it has finished playing a chunk of sound, it raises an interrupt. The game is waiting for a particular interrupt number (its IRQ), usually 5 or 7, so the card's interrupt has to arrive on that number.
+4. **DMA.** The game sets up the PC's DMA controller to stream its sound samples to the card, so those samples have to reach the card.
 
 ![Then: a DOS game wired straight to an ISA sound card through its ports, its IRQ line and a DMA wire. Now: the same game and a PCI card in a PCIe-to-PCI adapter, with each of the four connections an open question.](/img/isa-then-pci-now-diagram.svg)
 *On ISA, everything was wired straight to the card. In a modern PC, each connection is an open question.*
@@ -80,8 +80,8 @@ They go through the same four problems, but they solve every one in software:
 
 | | Emulation (SBEMU / VSBHDA) | A real PCI card |
 |---|---|---|
-| Answering at 220h/388h | Software catches the game's accesses and answers | The card's own legacy mode answers |
-| Getting there | Not needed: the accesses never leave the CPU | They have to cross the chipset and a PCIe-to-PCI bridge |
+| Answering at the right addresses | Software catches the game's accesses and answers | The card's own legacy mode answers |
+| Address routing | Not needed: the accesses never leave the CPU | They have to cross the chipset and a PCIe-to-PCI bridge |
 | Interrupts | A virtual interrupt, generated by software | The card's real interrupt |
 | DMA | A software DMA controller, with the CPU copying the samples | The card's own DMA engine, if the game's settings can reach it |
 | FM music | Usually a software OPL3 (SBEMU can borrow some cards' real chips) | The card's real FM chip |
@@ -102,6 +102,7 @@ First, research. I need to work out how each of these four problems might be sol
 ### Related on this site
 
 - [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %})
+- [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}) — the next post in the series
 - [SBEMU]({% link _software/sbemu.md %})
 - [SBEMU Just Killed Your DOS Gaming PC]({% post_url 2023-03-12-sbemu-just-killed-your-dos-gaming-pc %})
 - [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %})

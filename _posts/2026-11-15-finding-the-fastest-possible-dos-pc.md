@@ -14,12 +14,12 @@ As I explained in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-don
 
 ### Where does the limit come from?
 
-As a reminder, a PCI sound card needs four things in place to work properly:
+As a reminder, for a DOS game to play sound through a PCI card, four things need to happen:
 
-1. **Responding at the right addresses**. DOS games look for a sound card at ports 220h and 388h. The PCI card needs to be listening.
-2. **Address routing**. The CPU's reads and writes can cross the chipset and a PCIe-to-PCI bridge to reach the card.
-3. **Interrupts**. The card's interrupt requests can reach the game in a timely manner.
-4. **DMA**. The game programs a DMA controller to move its samples, and the card needs to respond.
+1. **Answering at the right addresses.** DOS games look for a sound card at ports 220h and 388h, so the PCI card needs to be listening there.
+2. **Address routing.** The game's reads and writes to those ports have to make it across the chipset and the PCIe-to-PCI bridge to reach the card.
+3. **Interrupts.** When the card needs the game's attention, for example because it has finished playing a chunk of sound, it raises an interrupt. The game is waiting for a particular interrupt number (its [IRQ]({% link _reference/technical-glossary.md %}#irq)), usually 5 or 7, so the card's interrupt has to arrive on that number.
+4. **DMA.** The game sets up the PC's DMA controller to stream its sound samples to the card, so those samples have to reach the card.
 
 Most of these are the concern of the sound card and how it's driven. But **address routing** is driven by the PC.
 

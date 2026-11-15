@@ -19,9 +19,12 @@ The project so far, in order:
 
 1. [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %}) — why I want a fast PC running native DOS in the first place
 2. [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}) — the problem, and the four things that have to work
+3. [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}) — which chipsets and CPUs can still host a PCI sound card in DOS
 
 More details:
 
+- [Supermicro X10SAE]({% link _hardware/supermicro-x10sae.md %}) — the board I'm using, with real PCI slots
+- [Technical Glossary]({% link _reference/technical-glossary.md %}) — the terms that come up along the way
 - [SBEMU]({% link _software/sbemu.md %}) — the emulation alternative
 - [SBEMU Just Killed Your DOS Gaming PC]({% post_url 2023-03-12-sbemu-just-killed-your-dos-gaming-pc %})
 - [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %}) — another PCI card on a modern board, through a PCIe-to-PCI adapter
