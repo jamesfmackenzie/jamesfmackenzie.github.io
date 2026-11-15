@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>The two hops between a DOS game and a PCI sound card: by default a write to 220h stops at the chipset; with subtractive decode on at both hops it reaches the card</title>
+  <defs>
+    <marker id="arrow-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a939a"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0f8576"/>
+    </marker>
+  </defs>
+  <rect width="760" height="300" fill="#ffffff"/>
+  <line x1="20" y1="155" x2="740" y2="155" stroke="#e5dfd4" stroke-width="1.5"/>
+
+  <!-- headings -->
+  <g font-size="15" font-weight="700" fill="#23282d">
+    <text x="20" y="34">By default: each hop forwards only the addresses the BIOS gave it</text>
+    <text x="20" y="184">With subtractive decode on at both hops</text>
+  </g>
+
+  <!-- boxes, both rows -->
+  <g stroke="#e5dfd4" stroke-width="1.5" fill="#f8f5ef">
+    <rect x="20" y="52" width="110" height="80" rx="8"/>
+    <rect x="223" y="52" width="110" height="80" rx="8"/>
+    <rect x="427" y="52" width="110" height="80" rx="8"/>
+    <rect x="630" y="52" width="110" height="80" rx="8"/>
+    <rect x="20" y="202" width="110" height="80" rx="8"/>
+    <rect x="223" y="202" width="110" height="80" rx="8"/>
+    <rect x="427" y="202" width="110" height="80" rx="8"/>
+    <rect x="630" y="202" width="110" height="80" rx="8" fill="#e3f1ee" stroke="#0f8576"/>
+  </g>
+  <g text-anchor="middle">
+    <g font-size="15" font-weight="700" fill="#23282d">
+      <text x="75" y="90">DOS game</text>
+      <text x="278" y="90">Chipset</text>
+      <text x="482" y="85">PCIe-to-PCI</text>
+      <text x="482" y="102">bridge</text>
+      <text x="685" y="85">PCI sound</text>
+      <text x="685" y="102">card</text>
+      <text x="75" y="240">DOS game</text>
+      <text x="278" y="240">Chipset</text>
+      <text x="482" y="235">PCIe-to-PCI</text>
+      <text x="482" y="252">bridge</text>
+      <text x="685" y="235" fill="#0c6f62">PCI sound</text>
+      <text x="685" y="252" fill="#0c6f62">card</text>
+    </g>
+    <g font-size="12" fill="#6a747e">
+      <text x="75" y="108">on the CPU</text>
+      <text x="278" y="108">PCIe root port</text>
+      <text x="482" y="120">board or adapter</text>
+      <text x="685" y="120">in legacy mode</text>
+      <text x="75" y="258">on the CPU</text>
+      <text x="278" y="258">PCIe root port</text>
+      <text x="482" y="270">board or adapter</text>
+      <text x="685" y="270" fill="#0c6f62">answers at 220h</text>
+    </g>
+  </g>
+
+  <!-- by default: the write reaches the chipset and stops -->
+  <path d="M130 92 L 219 92" fill="none" stroke="#8a939a" stroke-width="1.6" marker-end="url(#arrow-grey)"/>
+  <g fill="none" stroke="#c9c2b6" stroke-width="1.6" stroke-dasharray="5 4">
+    <path d="M333 92 L 427 92"/>
+    <path d="M537 92 L 630 92"/>
+  </g>
+  <circle cx="380" cy="92" r="11" fill="#ffffff" stroke="#8a939a" stroke-width="1.6"/>
+  <path d="M374 86 L 386 98 M386 86 L 374 98" stroke="#8a939a" stroke-width="1.8" stroke-linecap="round"/>
+  <g font-size="12.5" font-style="italic" text-anchor="middle">
+    <text x="176" y="83" fill="#0f8576">write to 220h</text>
+    <text x="380" y="122" fill="#6a747e">not forwarded</text>
+  </g>
+
+  <!-- subtractive decode: the write falls through to the card -->
+  <g fill="none" stroke="#0f8576" stroke-width="1.6">
+    <path d="M130 242 L 219 242" marker-end="url(#arrow-green)"/>
+    <path d="M333 242 L 423 242" marker-end="url(#arrow-green)"/>
+    <path d="M537 242 L 626 242" marker-end="url(#arrow-green)"/>
+  </g>
+  <g font-size="12.5" font-style="italic" fill="#0f8576" text-anchor="middle">
+    <text x="176" y="233">write to 220h</text>
+    <text x="380" y="233">unclaimed:</text>
+    <text x="380" y="262">forwarded</text>
+    <text x="583" y="233">unclaimed:</text>
+    <text x="583" y="262">forwarded</text>
+  </g>
+</svg>

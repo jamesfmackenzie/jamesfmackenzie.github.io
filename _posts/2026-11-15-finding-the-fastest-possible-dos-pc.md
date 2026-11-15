@@ -27,7 +27,8 @@ A DOS game looks for a Sound Blaster at fixed I/O addresses: 220h for the card a
 
 Address routing is where things get tricky. On a modern PC, the card sits behind two hops: the chipset's PCI Express port, then a PCIe-to-PCI bridge. By default, these only forward accesses to a narrow set of addresses (handed out by the BIOS at boot). 220h is *not* one of these. So when a game writes to 220h, neither the chipset nor the bridge claims it, and the access goes nowhere.
 
-<!-- TODO: diagram of the chipset and bridge hops (a small schematic) -->
+![Two rows. By default, a DOS game's write to 220h reaches the chipset's PCIe root port and is not forwarded to the PCIe-to-PCI bridge or the PCI sound card. With subtractive decode on at both hops, the unclaimed write is forwarded through the chipset and the bridge, and the card answers at 220h.](/img/chipset-and-bridge-hops-diagram.svg)
+*The two hops between the game and the card. By default, the write to 220h stops at the chipset.*
 
 The fix is an old idea called **[subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode)**. This inverts the behaviour of the bridge and chipset. Instead of only forwarding its own claimed addresses, a bridge forwards *anything nobody else claimed*. Turn that on at both hops and 220h *should* fall through to the card.
 
@@ -51,8 +52,6 @@ Before pulling anything apart, I did some research. I found [this long-running V
 
 Those are older boards, but as far as I can find, no later AMD chipset added anything to fix it. Not a great start. AMD is out, and my newest PC with it.
 
-<!-- TODO: fact check the AMD section. Other research suggests subtractive decode was only dropped in AM4. Still lower IPC than the Intel side, but may change the narrative a little. -->
-
 
 ### Intel's 8-series: a promising lead
 
@@ -66,7 +65,8 @@ I didn't have to. It has a whole section on exactly this, which starts by admitt
 
 It then describes exactly the trick above: both the chipset's PCIe port and the bridge behave like old subtractive PCI-to-PCI bridges, so legacy accesses fall through to the cards behind them. On the chipset side it's a single bit, "Subtractive Decode Enable", in each PCIe port's configuration registers. It's an ordinary writable setting, so in principle a small DOS program can switch it on at boot.
 
-<!-- TODO: cropped screenshot of the PCI Legacy Mode section from the datasheet -->
+![Section 5.2.2, PCI Legacy Mode, from Intel's 8-series PCH datasheet. It says PCI Legacy Mode lets both the PCI Express root port and the PCIe-to-PCI bridge look like subtractive PCI-to-PCI bridges, so the root port forwards legacy cycles to the bridge and the bridge forwards them to downstream PCI devices. Software must ensure only one PCH device is enabled for subtractive decode at a time.](/img/intel-8-series-datasheet-pci-legacy-mode.jpg)
+*Section 5.2.2 of Intel's 8-series PCH datasheet.*
 
 A great result! Intel didn't just leave the feature in; they documented our exact use case, and gave it a name — PCI Legacy Mode.
 
