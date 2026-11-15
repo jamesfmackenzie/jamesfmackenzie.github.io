@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Finding the Fastest Possible DOS PC"
-date: '2026-11-01 10:00:00'
+date: '2026-11-15 00:00:00'
 summary: "I want to play DOS games on the fastest PC possible, with sound from a real late-90s PCI sound card. But somewhere along the way, PCs stopped being able to talk to these cards. So how fast can a DOS PC with a real sound card actually go?"
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
