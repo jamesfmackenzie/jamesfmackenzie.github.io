@@ -7,6 +7,7 @@
 		<a href="/hardware">Hardware</a>
 		<a href="/software">Software</a>
 		<a href="/howto">Guides</a>
+		<a href="/reference/technical-glossary/">Glossary</a>
 		<a href="/sitemap">Sitemap</a>
 	</nav>
 </div>
