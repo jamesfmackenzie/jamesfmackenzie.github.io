@@ -98,6 +98,8 @@ A real card has none of those problems. If the card itself does the work, every 
 
 First, research. I need to work out how each of these four problems might be solved on a modern machine, and, most importantly, find the fastest board that can run a PCI sound card in DOS at all.
 
+That search continues in the next post: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}).
+
 
 ### Related on this site
 
