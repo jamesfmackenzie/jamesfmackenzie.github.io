@@ -24,7 +24,7 @@ Next up, we have PCI sound cards. On paper these should work. [PCIe-to-PCI adapt
 ![A PCIe x1 to PCI adapter card with an ASMedia bridge chip](/img/pcie-to-pci-adapter-for-voodoo-2.jpg){: width="480"}
 *A PCIe-to-PCI adapter. Plug it into a modern PCIe slot and you get a PCI slot back.*
 
-In practice, plug one into a modern machine and the game can't even find it.
+In practice, plug one into a modern machine and DOS games can't even find it.
 
 
 ### What a DOS game expects
