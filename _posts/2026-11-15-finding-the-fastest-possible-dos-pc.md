@@ -4,6 +4,9 @@ title: "Finding the Fastest Possible DOS PC"
 date: '2026-11-15 00:00:00'
 summary: "I want to play DOS games on the fastest PC possible, with sound from a real late-90s PCI sound card. But somewhere along the way, PCs stopped being able to talk to these cards. So how fast can a DOS PC with a real sound card actually go?"
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
+hero: x10sae-bench-with-solo-1-in-pcie-to-pci-adapter.jpg
+hero_alt: "A Supermicro X10SAE motherboard on an open bench frame, with an ESS Solo-1 sound card in a PCIe-to-PCI adapter beside it and a multimeter in the corner"
+hero_caption: "My Supermicro X10SAE on the bench, with an ESS Solo-1 in a PCIe-to-PCI adapter."
 ---
 
 As I explained in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), I'm on a mission to get real DOS audio working on the fastest PC possible. That led me to PCI sound cards, and today I'm hunting for the *fastest* chipset and CPU combo where everything still works. Let's find the limit!
