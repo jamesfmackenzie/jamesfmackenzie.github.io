@@ -6,25 +6,38 @@ summary: "I want to play DOS games on the fastest PC possible, with sound from a
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
 
-As I explained in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), I'm on a mission to get real DOS audio working on the fastest PC possible. That led me to PCI sound cards, and today I'm hunting for the fastest chipset and CPU combination that can still run one. Let's find that limit!
+As I explained in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), I'm on a mission to get real DOS audio working on the fastest PC possible. That led me to PCI sound cards, and today I'm hunting for the *fastest* chipset and CPU combo where everything still works. Let's find the limit!
 
 
 ### Where does the limit come from?
 
-The last post split the problem into four parts. Most of them are about the sound card and how it's driven. One of them is about the PC itself: **getting there at all**.
+As a reminder, a PCI sound card needs four things in place work properly:
+
+1. **Responding at the right addresses**. DOS games look for a sound card at port 220h and 388h. The PCI card needs to be listening.
+2. **Address routing**. The CPU’s reads and writes can cross the chipset and a PCIe-to-PCI bridge to reach the card.
+3. **Interrupts**. The card’s interrupt requests can reach the game in a timely manner.
+4. **DMA**. The game programs a DMA controller to move its samples, and the card needs to respond.
+
+Most of these are the concern of the sound card and how it’s driven. But **address routing** is driven by the PC.
 
 ![Then: a DOS game wired straight to an ISA sound card through its ports, its IRQ line and a DMA wire. Now: the same game and a PCI card in a PCIe-to-PCI adapter, with each of the four connections an open question.](/img/isa-then-pci-now-diagram.svg)
 *The four problems from the last post. Number 2 is the one that depends on the PC: can the game's accesses reach the card at all?*
 
-A DOS game looks for a Sound Blaster at fixed I/O addresses: 220h for the card and 388h for the FM chip. A PCI sound card in [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode) should answer there. The trouble is getting the game's accesses to the card in the first place.
+A DOS game looks for a Sound Blaster at fixed I/O addresses: 220h for the card and 388h for the FM chip. And a PCI sound card in [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode) should answer there.
 
-On a modern PC the card sits behind two hops: the chipset's PCI Express port, then a PCIe-to-PCI bridge (on the motherboard, or on an adapter card). By default, each of those only forwards accesses to the addresses the BIOS handed out at boot. 220h was never one of them. So the game writes to 220h, nothing along the way claims it, and the access goes nowhere.
+(This exploration was done in the last post, and we should reference that properly)
 
-The fix is an old idea called **[subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode)**. Instead of only forwarding its own addresses, a bridge forwards *anything nobody else claimed*. Turn that on at both hops and 220h falls through to the card.
+Address routing is where things get tricky. On a modern PC, the card sits behind two hops: the chipset's PCI Express port, then a PCIe-to-PCI bridge. By default, these only forward accesses to a narrow set of addresses (handed out by the BIOS at boot). 220h is *not* one of these. So when a game writes to 220h, neither the chipset nor the bridge claims it, and the access goes nowhere.
 
-The bridge half is mostly a matter of choosing the right chip. Subtractive decode is an optional feature, but the ASMedia and IDT bridges in my machines both have a switch for it. The chipset half is out of my hands: either the chipset can do it, or it can't.
+(Add a diagram of the chipset and bridge — I.e. a small schematic to show the hops)
 
-So my search turned into a simple question. Which chipsets can still do subtractive decode? Whichever is newest sets the speed limit.
+The fix is an old idea called **[subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode)**. This inverts the behaviour of the bridge and chipset. Instead of only forwarding its own claimed addresses, a bridge forwards *anything nobody else claimed*. Turn that on at both hops and 220h *should* fall through to the card.
+
+For a bridge, it’s mostly a matter of choosing a PCIe-to-PCI adapter with the right chip. Subtractive decode is an optional feature, but the most common ASMedia and IDT chips both support it.
+
+The chipset half is more challenging: either the chipset can do it, or it can't.
+
+So our hardware search turns into a simple question. Which is the **newest chipset that can still do subtractive decode**?
 
 
 ### Starting with my newest PC
@@ -34,11 +47,13 @@ The obvious first candidate was my newest machine, an AM5 PC with an ASUS ROG St
 ![A Voodoo 2 sitting in a PCIe-to-PCI riser card, the riser's blue LED lit](/img/am5-pcie-to-pci-riser-with-voodoo-2.jpg){: width="480"}
 *The PCIe-to-PCI riser from my AM5 Voodoo 2 experiments, Voodoo 2 still attached.*
 
-Before pulling anything apart, I looked for anyone who'd tried a PCI sound card in DOS on an AMD board. In [a long-running Vogons thread on PCI sound cards and chipsets](https://www.vogons.org/viewtopic.php?p=186881#p186881), one member had, and summed up ATI and AMD chipsets like this:
+Before pulling anything apart, I did some research. I found [this long-running Vogons thread on PCI sound cards and chipsets](https://www.vogons.org/viewtopic.php?p=186881#p186881). One member summed up AMD chipsets like this:
 
 > "These southbridges have virtually zero legacy capabilities available. I used some AMD 700-900 motherboards for some Phenom II CPUs and later on the FX ones. Legacy audio simply cannot be turned on. Games still report no Sound Blaster even after loading the TSRs."
 
 Those are older boards, but as far as I can find, no later AMD chipset added anything to fix it. Not a great start. AMD is out, and my newest PC with it.
+
+(Reminder to fact check the above. I found some other research that suggests subtractive decode was only dropped in AM4. Which is still lower IPC than the Intel side, but may change the above narrative a little).
 
 
 ### Intel's 8-series: a promising lead
@@ -53,14 +68,16 @@ I didn't have to. It has a whole section on exactly this, which starts by admitt
 
 It then describes exactly the trick above: both the chipset's PCIe port and the bridge behave like old subtractive PCI-to-PCI bridges, so legacy accesses fall through to the cards behind them. On the chipset side it's a single bit, "Subtractive Decode Enable", in each PCIe port's configuration registers. It's an ordinary writable setting, so in principle a small DOS program can switch it on at boot.
 
-That was a good day. Intel didn't just leave the feature in by accident; they documented it, and gave it a name.
+(Let’s include a cropped screenshot of the relevant section from the datasheet)
+
+A great result! Intel didn't just leave subtractive decode enabled; they documented our exact use case, and gave it a name — PCI Legacy Mode.
 
 
 ### Moving forward a generation at a time
 
-With a name and a register to look for, I could step forward through Intel's chipsets and see where it disappeared.
+With a name and a register to look for, I stepped forward through Intel's chipsets and see where it disappeared.
 
-**The 9-series** (Z97 and H97, 2014) still has the same register, and nothing in the datasheet says it's unsupported. There's no dedicated "PCI Legacy Mode" section like the 8-series has, though, so I'd call it a "probably" rather than a "yes".
+**The 9-series** (Z97 and H97, 2014) still has the same register, and nothing in the datasheet says it's unsupported. There's no dedicated "PCI Legacy Mode" section like the 8-series datasheet, but it seems likely the feature still works.
 
 **The 100-series** (Z170 and friends, 2015, Skylake) is where the trail ends. Intel says so plainly:
 
@@ -68,7 +85,7 @@ With a name and a register to look for, I could step forward through Intel's chi
 >
 > *[Intel 100 Series Chipset Family PCH datasheet, volume 1](https://www.intel.com/content/www/us/en/content-details/332690/intel-100-series-chipset-family-platform-controller-hub-pch-datasheet-volume-1.html)*
 
-A PCI sound card in legacy mode is exactly that kind of device. Oddly, the bit is still listed in the 100-series register reference (volume 2). I read that as leftover design, not a feature: volume 1 is where Intel says what's actually supported, and it says no.
+A PCI sound card in legacy mode is exactly this kind of device.
 
 **The 200-series** (Z270, 2017, Kaby Lake) uses the same wording.
 
@@ -76,19 +93,23 @@ Here's where that leaves things:
 
 | Chipset | Era | PCI Legacy Mode? | Evidence |
 |---|---|---|---|
-| 8-series (Z87, H87, Q87, C220) | 2013, Haswell | **Yes** | Its own datasheet section |
-| 9-series (Z97, H97) | 2014, Haswell Refresh and Broadwell | **Probably** | The register is there, with no note saying it's unsupported |
+| 8-series (Z87, H87, Q87, C220) | 2013, Haswell | **Yes** | Its own datasheet |
+| 9-series (Z97, H97) | 2014, Haswell Refresh and Broadwell | **Most likely** | The register is there, with no note saying it's unsupported |
 | 100-series (Z170 and friends) | 2015, Skylake | **No** | Intel says so in the datasheet |
 | 200-series (Z270) | 2017, Kaby Lake | **No** | Same wording as the 100-series |
 
-I haven't tested any of this on real hardware yet. On the evidence, I don't expect anything newer than the 9-series to work, but I can't say it's impossible: a BIOS or firmware trick could, in principle, forward the accesses some other way.
+I haven't tested any of this on real hardware yet. But from the evidence above, I don't expect anything newer than the 9-series to work.
 
 
 ### So how fast can we go?
 
 The limit is the 8-series and 9-series: the Haswell and Broadwell generation, on boards from 2013 and 2014.
 
-That just leaves the CPU. The king of the castle is the Core i7-4790K (Haswell Refresh, 4.0 GHz, 4.4 GHz with turbo). It's the highest-clocked chip of the generation, and it runs on both 8-series and 9-series boards (my Z87-PRO just needs a BIOS update). The Broadwell i7-5775C needs a 9-series board, and it's clocked lower. That makes the 4790K likely the fastest CPU there is for DOS gaming with a real PCI sound card.
+But what’s the fastest CPU?
+
+Well, the king of the castle is the Core i7-4790K (Haswell Refresh, 4.0 GHz, 4.4 GHz with turbo). It's the highest-clocked chip of the generation, and it runs on both 8-series and 9-series boards (my Z87-PRO just needs a BIOS update).
+
+Although newer Broadwell CPUs exist and work on 9-series chipset, even the fastest of those (the i7-5775C) is clocked lower. That makes the 4790K likely the fastest CPU there is for DOS gaming with a real PCI sound card.
 
 I don't own one. But I checked what I do have, and was pleasantly surprised:
 
@@ -100,7 +121,7 @@ I don't own one. But I checked what I do have, and was pleasantly surprised:
 
 They're all the same Haswell core, so the clocks compare directly: mine are within about 10 to 12% of the 4790K. In DOS terms they're very fast, far quicker than the Core 2 in my OptiPlex 380, which already runs [Quake at 800×600 at a locked 60fps]({% post_url 2026-10-13-i-love-software-rendering %}).
 
-So it turns out I was already sitting on pretty much the fastest hardware possible:
+So, luckily for me, I already have pretty much the fastest hardware possible:
 
 - an **ASUS Z87-PRO** (8-series) with a Core i7-4770K, and the ASMedia PCIe-to-PCI adapter card from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %})
 - a **Supermicro X10SAE** (C226, the workstation version of the 8-series) with a Xeon E3-1276 v3, and real PCI slots fed by an onboard PCIe-to-PCI bridge chip
@@ -108,9 +129,11 @@ So it turns out I was already sitting on pretty much the fastest hardware possib
 
 ### What's next
 
-That wraps up the first phase of the research. I know the fastest boards and CPUs that can do this, and I have them.
+This wraps up the first phase of the research. I know the fastest boards and CPUs that can do this, and I have them.
 
-The second phase is the bridge chips: the other half of the subtractive decode trick, and how to switch it on in each of them. None of this solves DMA, either. That's still a separate problem.
+The second phase is the bridge chips (i.e the other half of the subtractive decode trick), and how to activate end-to-end address routing on each of them.
+
+After that, we’ll move onto the other items in our four step plan — Interrupts and DMA. Stay tuned!
 
 
 ### Related on this site
