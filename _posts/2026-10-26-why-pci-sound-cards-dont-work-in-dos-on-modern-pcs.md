@@ -13,11 +13,11 @@ I have a mission. I want to play original DOS games at super high resolutions an
 
 After some investigation, it turns out graphics are the easy part. The real challenge is sound. As Rasteri put it in [his video on the Portwell RUBY-9719](https://www.youtube.com/watch?v=6eew0uRZ84E), "the main reason that DOS games won't run on modern PCs is because of audio output."
 
-So what I want is a real late-1990s sound card, with its own [FM chip]({% link _reference/technical-glossary.md %}#fm-synthesis) and its own Sound Blaster processor, in the fastest machine that can host it.
+So what I want is a real late-1990s sound card, with its own [FM chip]({% link _reference/technical-glossary.md %}#fm-synthesis) and its own [Sound Blaster]({% link _reference/technical-glossary.md %}#sound-blaster) processor, in the fastest machine that can host it.
 
 ### What are the options?
 
-Firstly, ISA cards are out. ISA slots were phased out at the end of the 1990s (Microsoft and Intel's PC99 guidelines asked for none at all). Today only a few industrial boards still have them, and almost none of those support the DMA that DOS sound needs.
+Firstly, [ISA]({% link _reference/technical-glossary.md %}#isa) cards are out. ISA slots were phased out at the end of the 1990s (Microsoft and Intel's PC99 guidelines asked for none at all). Today only a few industrial boards still have them, and almost none of those support the features that DOS sound cards need.
 
 Next up, we have PCI sound cards. On paper these should work. [PCIe-to-PCI adapters]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge) exist, and modern PCIe was designed to be software compatible with legacy PCI. In addition, PCI sound cards of the era actively advertised DOS and Sound Blaster compatibility.
 
@@ -72,7 +72,7 @@ If we can solve all four, we should have working sound.
 
 Getting a real PCI card working isn't the only option. You can emulate the card instead, and in pure DOS on modern hardware there are two well-known tools that do it.
 
-[SBEMU]({% link _software/sbemu.md %}), by GitHub user crazii, is a resident program that pretends to be a Sound Blaster and an AdLib FM synth, and plays the result through the real audio hardware in the machine: Intel HD Audio on most modern boards, plus a range of older onboard chips and PCI cards. [VSBHDA](https://github.com/Baron-von-Riedesel/VSBHDA) is a fork of SBEMU by Baron von Riedesel, who maintains the HDPMI and Jemm tools both of them depend on. It's built to stay compatible with those tools, and it can also handle 16-bit protected-mode games.
+[SBEMU]({% link _software/sbemu.md %}), by GitHub user crazii, is a [resident program]({% link _reference/technical-glossary.md %}#tsr) that pretends to be a Sound Blaster and an AdLib FM synth, and plays the result through the real audio hardware in the machine: Intel HD Audio on most modern boards, plus a range of older onboard chips and PCI cards. [VSBHDA](https://github.com/Baron-von-Riedesel/VSBHDA) is a fork of SBEMU by Baron von Riedesel, who maintains the HDPMI and Jemm tools both of them depend on. It's built to stay compatible with those tools, and it can also handle 16-bit protected-mode games.
 
 Both work the same way: they catch the game's reads and writes to the Sound Blaster's ports and answer them in software. I got [Doom running with SBEMU on a Core i7 in native DOS]({% post_url 2023-03-07-you-can-run-doom-on-a-core-i7-pc-in-native-dos-with-sbemu %}) a few years ago, and it was a real step forward.
 
@@ -89,7 +89,7 @@ They go through the same four problems, but they solve every one in software:
 
 ### Why bother with the real hardware?
 
-I want to do this in hardware, not emulation. The emulators work well for most games, but they have known weak spots. They depend on a DPMI host the game agrees to use, so a game that brings its own can slip past them. 16-bit protected-mode games need special handling, and people regularly report games that crash or freeze under them. And an emulated card can never be better than its emulation: VSBHDA's FM music, for example, is a software imitation of the chip.
+I want to do this in hardware, not emulation. The emulators work well for most games, but they have known weak spots. They depend on a [DPMI host]({% link _reference/technical-glossary.md %}#dpmi-host) the game agrees to use, so a game that brings its own can slip past them. 16-bit protected-mode games need special handling, and people regularly report games that crash or freeze under them. And an emulated card can never be better than its emulation: VSBHDA's FM music, for example, is a software imitation of the chip.
 
 A real card has none of those problems. If the card itself does the work, every game should just see a Sound Blaster. Wild success would be a fully hardware-native setup that beats the emulators on both reliability and authenticity. That's the hope, anyway.
 

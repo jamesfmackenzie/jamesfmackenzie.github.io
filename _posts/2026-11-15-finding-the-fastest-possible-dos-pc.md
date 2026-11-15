@@ -26,7 +26,7 @@ Most of these are the concern of the sound card and how it's driven. But **addre
 ![Then: a DOS game wired straight to an ISA sound card through its ports, its IRQ line and a DMA wire. Now: the same game and a PCI card in a PCIe-to-PCI adapter, with each of the four connections an open question.](/img/isa-then-pci-now-diagram.svg)
 *The four problems from the last post. Number 2 is the one that depends on the PC: can the game's accesses reach the card at all?*
 
-A DOS game looks for a Sound Blaster at fixed I/O addresses: 220h for the card and 388h for the FM chip. As I covered in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}#what-the-pci-cards-did-about-it), a PCI sound card in [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode) should answer there.
+A DOS game looks for a [Sound Blaster]({% link _reference/technical-glossary.md %}#sound-blaster) at fixed I/O addresses: 220h for the card and 388h for the FM chip. As I covered in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}#what-the-pci-cards-did-about-it), a PCI sound card in [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode) should answer there.
 
 Address routing is where things get tricky. On a modern PC, the card sits behind two hops: the chipset's PCI Express port, then a PCIe-to-PCI bridge. By default, these only forward accesses to a narrow set of addresses (handed out by the BIOS at boot). 220h is *not* one of these. So when a game writes to 220h, neither the chipset nor the bridge claims it, and the access goes nowhere.
 
