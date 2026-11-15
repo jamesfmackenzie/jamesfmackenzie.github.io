@@ -11,29 +11,27 @@ As I explained in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-don
 
 ### Where does the limit come from?
 
-As a reminder, a PCI sound card needs four things in place work properly:
+As a reminder, a PCI sound card needs four things in place to work properly:
 
-1. **Responding at the right addresses**. DOS games look for a sound card at port 220h and 388h. The PCI card needs to be listening.
-2. **Address routing**. The CPU’s reads and writes can cross the chipset and a PCIe-to-PCI bridge to reach the card.
-3. **Interrupts**. The card’s interrupt requests can reach the game in a timely manner.
+1. **Responding at the right addresses**. DOS games look for a sound card at ports 220h and 388h. The PCI card needs to be listening.
+2. **Address routing**. The CPU's reads and writes can cross the chipset and a PCIe-to-PCI bridge to reach the card.
+3. **Interrupts**. The card's interrupt requests can reach the game in a timely manner.
 4. **DMA**. The game programs a DMA controller to move its samples, and the card needs to respond.
 
-Most of these are the concern of the sound card and how it’s driven. But **address routing** is driven by the PC.
+Most of these are the concern of the sound card and how it's driven. But **address routing** is driven by the PC.
 
 ![Then: a DOS game wired straight to an ISA sound card through its ports, its IRQ line and a DMA wire. Now: the same game and a PCI card in a PCIe-to-PCI adapter, with each of the four connections an open question.](/img/isa-then-pci-now-diagram.svg)
 *The four problems from the last post. Number 2 is the one that depends on the PC: can the game's accesses reach the card at all?*
 
-A DOS game looks for a Sound Blaster at fixed I/O addresses: 220h for the card and 388h for the FM chip. And a PCI sound card in [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode) should answer there.
-
-(This exploration was done in the last post, and we should reference that properly)
+A DOS game looks for a Sound Blaster at fixed I/O addresses: 220h for the card and 388h for the FM chip. As I covered in [the last post]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}#what-the-pci-cards-did-about-it), a PCI sound card in [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode) should answer there.
 
 Address routing is where things get tricky. On a modern PC, the card sits behind two hops: the chipset's PCI Express port, then a PCIe-to-PCI bridge. By default, these only forward accesses to a narrow set of addresses (handed out by the BIOS at boot). 220h is *not* one of these. So when a game writes to 220h, neither the chipset nor the bridge claims it, and the access goes nowhere.
 
-(Add a diagram of the chipset and bridge — I.e. a small schematic to show the hops)
+<!-- TODO: diagram of the chipset and bridge hops (a small schematic) -->
 
 The fix is an old idea called **[subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode)**. This inverts the behaviour of the bridge and chipset. Instead of only forwarding its own claimed addresses, a bridge forwards *anything nobody else claimed*. Turn that on at both hops and 220h *should* fall through to the card.
 
-For a bridge, it’s mostly a matter of choosing a PCIe-to-PCI adapter with the right chip. Subtractive decode is an optional feature, but the most common ASMedia and IDT chips both support it.
+For a bridge, it's mostly a matter of choosing a PCIe-to-PCI adapter with the right chip. Subtractive decode is an optional feature, but the most common ASMedia and IDT chips both support it.
 
 The chipset half is more challenging: either the chipset can do it, or it can't.
 
@@ -53,7 +51,7 @@ Before pulling anything apart, I did some research. I found [this long-running V
 
 Those are older boards, but as far as I can find, no later AMD chipset added anything to fix it. Not a great start. AMD is out, and my newest PC with it.
 
-(Reminder to fact check the above. I found some other research that suggests subtractive decode was only dropped in AM4. Which is still lower IPC than the Intel side, but may change the above narrative a little).
+<!-- TODO: fact check the AMD section. Other research suggests subtractive decode was only dropped in AM4. Still lower IPC than the Intel side, but may change the narrative a little. -->
 
 
 ### Intel's 8-series: a promising lead
@@ -68,14 +66,14 @@ I didn't have to. It has a whole section on exactly this, which starts by admitt
 
 It then describes exactly the trick above: both the chipset's PCIe port and the bridge behave like old subtractive PCI-to-PCI bridges, so legacy accesses fall through to the cards behind them. On the chipset side it's a single bit, "Subtractive Decode Enable", in each PCIe port's configuration registers. It's an ordinary writable setting, so in principle a small DOS program can switch it on at boot.
 
-(Let’s include a cropped screenshot of the relevant section from the datasheet)
+<!-- TODO: cropped screenshot of the PCI Legacy Mode section from the datasheet -->
 
-A great result! Intel didn't just leave subtractive decode enabled; they documented our exact use case, and gave it a name — PCI Legacy Mode.
+A great result! Intel didn't just leave the feature in; they documented our exact use case, and gave it a name — PCI Legacy Mode.
 
 
 ### Moving forward a generation at a time
 
-With a name and a register to look for, I stepped forward through Intel's chipsets and see where it disappeared.
+With a name and a register to look for, I stepped forward through Intel's chipsets to see where it disappeared.
 
 **The 9-series** (Z97 and H97, 2014) still has the same register, and nothing in the datasheet says it's unsupported. There's no dedicated "PCI Legacy Mode" section like the 8-series datasheet, but it seems likely the feature still works.
 
@@ -93,7 +91,7 @@ Here's where that leaves things:
 
 | Chipset | Era | PCI Legacy Mode? | Evidence |
 |---|---|---|---|
-| 8-series (Z87, H87, Q87, C220) | 2013, Haswell | **Yes** | Its own datasheet |
+| 8-series (Z87, H87, Q87, C220) | 2013, Haswell | **Yes** | Intel 8-series datasheet |
 | 9-series (Z97, H97) | 2014, Haswell Refresh and Broadwell | **Most likely** | The register is there, with no note saying it's unsupported |
 | 100-series (Z170 and friends) | 2015, Skylake | **No** | Intel says so in the datasheet |
 | 200-series (Z270) | 2017, Kaby Lake | **No** | Same wording as the 100-series |
@@ -105,11 +103,11 @@ I haven't tested any of this on real hardware yet. But from the evidence above, 
 
 The limit is the 8-series and 9-series: the Haswell and Broadwell generation, on boards from 2013 and 2014.
 
-But what’s the fastest CPU?
+But what's the fastest CPU?
 
 Well, the king of the castle is the Core i7-4790K (Haswell Refresh, 4.0 GHz, 4.4 GHz with turbo). It's the highest-clocked chip of the generation, and it runs on both 8-series and 9-series boards (my Z87-PRO just needs a BIOS update).
 
-Although newer Broadwell CPUs exist and work on 9-series chipset, even the fastest of those (the i7-5775C) is clocked lower. That makes the 4790K likely the fastest CPU there is for DOS gaming with a real PCI sound card.
+Although newer Broadwell CPUs exist and work on 9-series chipsets, none of them clock as high. That makes the 4790K likely the fastest CPU there is for DOS gaming with a real PCI sound card.
 
 I don't own one. But I checked what I do have, and was pleasantly surprised:
 
@@ -131,9 +129,9 @@ So, luckily for me, I already have pretty much the fastest hardware possible:
 
 This wraps up the first phase of the research. I know the fastest boards and CPUs that can do this, and I have them.
 
-The second phase is the bridge chips (i.e the other half of the subtractive decode trick), and how to activate end-to-end address routing on each of them.
+The second phase is the bridge chips (i.e. the other half of the subtractive decode trick), and how to activate end-to-end address routing on each of them.
 
-After that, we’ll move onto the other items in our four step plan — Interrupts and DMA. Stay tuned!
+After that, we'll move onto the other items in our four problems — interrupts and DMA. Stay tuned!
 
 
 ### Related on this site
