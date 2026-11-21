@@ -70,24 +70,45 @@ For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.m
 
 The Z87-PRO has no PCI slots, so the card goes in a PCIe-to-PCI adapter: the same one from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %}), with an ASM1083 bridge chip.
 
-The bridge came first. The first time, I did it by hand at the `DEBUG` prompt: assemble just two instructions, `INT 1A` to call the PCI BIOS and `INT 3` to stop afterwards, then use `R` to load the registers for each call and `G` to run it. It worked, after a couple of mistakes. But I'd have to redo it on every boot, so I saved the steps as a script, `BRIDGEFX.TXT`. Here's the important part, with comments added (the real file has none):
+The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. I did it by hand at the `DEBUG` prompt, one step at a time.
+
+**Step 1: a tiny program.** With `A 100`, I typed in just two instructions. `INT 1A` calls the PCI BIOS, and `INT 3` hands control back to `DEBUG` afterwards, which then prints all the CPU's registers so I can see the result. Each BIOS call after that works the same way: set the registers with `R`, then run the program with `G=100`.
+
+**Step 2: find the bridge.** I set `AX` to B102h (the PCI BIOS's "find a device" call), `CX` to 1080h (the ASM1083's device ID) `DX` to 1B21h (ASMedia's vendor ID) and `SI` to 0 (the first one found), then ran it. The BIOS came back with `BX=0900`: the bridge is on bus 09h. And `NC` (no carry) at the end of the second line means the call worked.
+
+**Step 3: read register 40h.** `AX` to B108h ("read a byte") and `DI` to 40h (the register), then run.
+
+![A DEBUG session on the Z87-PRO, photographed from the monitor. A find-device call for 1B21:1080 returns BX=0900, then reading register 40h returns CX=1020.](/img/z87-pro-debug-find-asm1083-read-40h.jpg)
+*Finding the ASM1083 (`BX=0900`), then reading its register 40h (`CX=1020`).*
+
+The byte read lands in `CL`, the right-hand half of `CX`: 20h. Bit 6 (40h) is off.
+
+**Step 4: turn bit 6 on.** The new value is 20h + 40h = 60h. My first try was `R CL`, which `DEBUG` rejected: it only lets you edit whole 16-bit registers. So I set `CX` to 0060 instead.
+
+**Step 5: write it back.** `AX` to B10Bh ("write a byte"), and run.
+
+![A DEBUG session on the Z87-PRO, photographed from the monitor. After two R CL errors, CX is set to 0060 and AX to B10B, and the write call returns with NC.](/img/z87-pro-debug-write-asm1083-40h.jpg)
+*Two `R CL` errors, then `CX=0060` and the write. `NC`: the BIOS accepted it.*
+
+`NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done.
+
+Typing all that in on every boot would get old fast, so I saved the same steps as a script, `BRIDGEFX.TXT`. Here are those steps from it, with comments added (the real file has none):
 
 ```nasm
 A 100              ; start assembling at address 100h
-MOV AX,B102        ; PCI BIOS: find a device...
+MOV AX,B102        ; step 2: find the device...
 MOV CX,1080        ;   ...with device ID 1080h (the ASM1083)
 MOV DX,1B21        ;   ...from vendor 1B21h (ASMedia)
 XOR SI,SI          ;   ...the first one found
 INT 1A             ; the BIOS returns where it found it in BX
-MOV AX,B108        ; PCI BIOS: read a byte of configuration space...
-MOV DI,0040        ;   ...register 40h, into CL
+MOV AX,B108        ; step 3: read register 40h...
+MOV DI,0040        ;   ...into CL
 INT 1A
-OR CL,40           ; turn on bit 6 (40h), leaving the others alone
-MOV AX,B10B        ; PCI BIOS: write CL back to register 40h
+OR CL,40           ; step 4: turn on bit 6 (40h), leaving the others alone
+MOV AX,B10B        ; step 5: write CL back to register 40h
 INT 1A
+INT 3              ; stop, and show the registers
 ```
-
-The rest of the file does the same for one more bit, which lets the card's interrupts back up through the bridge (more on interrupts in a later post), then stops with `INT 3`. At that point, `DEBUG` prints the CPU's registers, so I can check the result: `NC` (no carry) means the last BIOS call worked, and `CL` holds the byte that was written.
 
 Next, the card. `SETUPDS` found the YMF724 straight away, and its native sound test played fine. But neither of those uses the old I/O ports. `SETUPDS` finds the card through its configuration space, which, as we've just seen, needs no help from subtractive decode. And the native test uses the card's modern addresses.
 
@@ -95,7 +116,7 @@ The real test was whether anything could find a Sound Blaster at 220h. With the 
 
 <!-- TODO: image. Vault: PCI Sound Cards 23 (SETUPDS still fails). -->
 
-That was expected. One hop done, one to go.
+That was expected. The chipset's hop was still closed.
 
 Unlike the bridge, the chipset's root ports don't need finding: they're always at the same place, bus 0, device 28, functions 0 to 7. The PCI BIOS packs that into `BX`, so they're `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the BIOS had put the adapter's bridge on bus 09h. So I wrote a small script for each function, `FINDF0.TXT` to `FINDF7.TXT`, to read that register:
 
