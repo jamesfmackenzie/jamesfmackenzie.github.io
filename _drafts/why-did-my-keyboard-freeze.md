@@ -70,45 +70,56 @@ For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.m
 
 The Z87-PRO has no PCI slots, so the card goes in a PCIe-to-PCI adapter: the same one from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %}), with an ASM1083 bridge chip.
 
-The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. I did it by hand at the `DEBUG` prompt, one step at a time.
+The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. That takes three calls to the PCI BIOS: find the bridge, read the register, then write it back with bit 6 on. Each call is a few lines of assembly language that load the CPU's registers with what the BIOS needs, then `INT 1A` to make the call.
 
-**Step 1: a tiny program.** With `A 100`, I typed in just two instructions. `INT 1A` calls the PCI BIOS, and `INT 3` hands control back to `DEBUG` afterwards, which then prints all the CPU's registers so I can see the result. Each BIOS call after that works the same way: set the registers with `R`, then run the program with `G=100`.
+I typed these in by hand at the `DEBUG` prompt first. Once they worked, I saved them in a text file, `BRIDGEFX.TXT`. `DEBUG` reads its commands one line at a time, so `DEBUG < BRIDGEFX.TXT` replays the file as if I'd typed it. Here it is a piece at a time, with comments added (the real file has none).
 
-**Step 2: find the bridge.** I set `AX` to B102h (the PCI BIOS's "find a device" call), `CX` to 1080h (the ASM1083's device ID), `DX` to 1B21h (ASMedia's vendor ID) and `SI` to 0 (the first one found), then ran it. The BIOS came back with `BX=0900`: the bridge is on bus 09h. And `NC` (no carry) at the end of the second line means the call worked.
+**First, find the bridge:**
 
-**Step 3: read register 40h.** `AX` to B108h ("read a byte") and `DI` to 40h (the register), then run.
+```nasm
+A 100              ; start assembling at address 100h
+MOV AX,B102        ; PCI BIOS call B102h: find a device...
+MOV CX,1080        ;   ...with device ID 1080h (the ASM1083)
+MOV DX,1B21        ;   ...from vendor 1B21h (ASMedia)
+XOR SI,SI          ;   ...the first one found
+INT 1A             ; call the BIOS. It puts the bridge's location in BX
+```
+
+The BIOS came back with `BX=0900`: the bridge is on bus 09h. And `NC` (no carry) in `DEBUG`'s register dump means the call worked.
+
+**Next, read register 40h:**
+
+```nasm
+MOV AX,B108        ; PCI BIOS call B108h: read a byte...
+MOV DI,0040        ;   ...from register 40h (BX still says where the bridge is)
+INT 1A             ; call the BIOS. The byte lands in CL
+```
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. A find-device call for 1B21:1080 returns BX=0900, then reading register 40h returns CX=1020.](/img/z87-pro-debug-find-asm1083-read-40h.jpg)
 *Finding the ASM1083 (`BX=0900`), then reading its register 40h (`CX=1020`).*
 
-The byte read lands in `CL`, the right-hand half of `CX`: 20h. Bit 6 (40h) is off.
+`CL` is the right-hand half of `CX`, so the byte is 20h. Bit 6 (40h) is off.
 
-**Step 4: turn bit 6 on.** The new value is 20h + 40h = 60h. My first try was `R CL`, which `DEBUG` rejected: it only lets you edit whole 16-bit registers. So I set `CX` to 0060 instead.
+**Then turn bit 6 on:**
 
-**Step 5: write it back.** `AX` to B10Bh ("write a byte"), and run.
+```nasm
+OR CL,40           ; turn on bit 6 (40h), leaving the other bits alone
+```
+
+20h plus 40h makes 60h. Doing this by hand is where I tripped up: `DEBUG` won't let you edit `CL` on its own, only the whole of `CX`, so I set `CX` to 0060.
+
+**Finally, write it back:**
+
+```nasm
+MOV AX,B10B        ; PCI BIOS call B10Bh: write CL back...
+INT 1A             ;   ...to the same register, 40h
+INT 3              ; stop, and show the CPU's registers
+```
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. After two R CL errors, CX is set to 0060 and AX to B10B, and the write call returns with NC.](/img/z87-pro-debug-write-asm1083-40h.jpg)
 *Two `R CL` errors, then `CX=0060` and the write. `NC`: the BIOS accepted it.*
 
 `NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done.
-
-Typing all that in on every boot would get old fast, so I saved the same steps in a text file, `BRIDGEFX.TXT`. `DEBUG` reads its commands one line at a time, so `DEBUG < BRIDGEFX.TXT` replays the file as if I'd typed it. Here are those steps from it, with comments added (the real file has none):
-
-```nasm
-A 100              ; start assembling at address 100h
-MOV AX,B102        ; step 2: find the device...
-MOV CX,1080        ;   ...with device ID 1080h (the ASM1083)
-MOV DX,1B21        ;   ...from vendor 1B21h (ASMedia)
-XOR SI,SI          ;   ...the first one found
-INT 1A             ; the BIOS returns where it found it in BX
-MOV AX,B108        ; step 3: read register 40h...
-MOV DI,0040        ;   ...into CL
-INT 1A
-OR CL,40           ; step 4: turn on bit 6 (40h), leaving the others alone
-MOV AX,B10B        ; step 5: write CL back to register 40h
-INT 1A
-INT 3              ; stop, and show the registers
-```
 
 Next, the card. `SETUPDS` found the YMF724 straight away, and its native sound test played fine. But neither of those uses the old I/O ports. `SETUPDS` finds the card through its configuration space, which, as we've just seen, needs no help from subtractive decode. And the native test uses the card's modern addresses.
 
@@ -118,14 +129,14 @@ The real test was whether anything could find a Sound Blaster at 220h. With the 
 
 That was expected. The chipset's hop was still closed.
 
-Now for the chipset's hop. The goal is to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter.
+Now for the chipset's hop. The goal is to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter. Same pattern as the bridge.
 
-**Step 1: find the right root port.** Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7. The BIOS's shorthand for those in `BX` is `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the adapter's bridge was on bus 09h (the `09` in `BX=0900` from earlier). So I read register 19h on each root port in turn. I saved each check as a script too, `FINDF0.TXT` to `FINDF7.TXT`. Here's the one for function 3:
+**First, find the right root port.** Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7, which the BIOS writes as `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I read register 19h on each root port in turn, and saved each check as a script, `FINDF0.TXT` to `FINDF7.TXT`. Here's the one for function 3:
 
 ```nasm
 A 100
-MOV AX,B108        ; read a byte of configuration space...
-MOV BX,00E3        ;   ...from bus 0, device 28, function 3
+MOV AX,B108        ; read a byte...
+MOV BX,00E3        ;   ...from the root port at bus 0, device 28, function 3
 MOV DI,0019        ;   ...register 19h: the bus behind this port
 INT 1A
 INT 3
@@ -142,11 +153,27 @@ Working through them:
 
 Function 3 it is.
 
-**Step 2: read register ECh.** The same port (`BX=00E3`), with `DI` set to ECh. `CL` came back 00: SDE is off.
+**Next, read register ECh:**
 
-**Step 3: turn bit 0 on.** Bit 0 is worth 01h, so the new value is 01h. I set `CX` to 0001.
+```nasm
+MOV AX,B108        ; read a byte...
+MOV BX,00E3        ;   ...from root port function 3
+MOV DI,00EC        ;   ...register ECh
+INT 1A             ; the byte lands in CL
+```
 
-**Step 4: write it back.** `AX` to B10Bh, and run. `NC`: the BIOS accepted the write.
+`CL` came back 00. SDE is off.
+
+**Then turn bit 0 on, and write it back:**
+
+```nasm
+OR CL,01           ; turn on bit 0 (01h): Subtractive Decode Enable
+MOV AX,B10B        ; write CL back to register ECh
+INT 1A
+INT 3              ; stop, and show the CPU's registers
+```
+
+`NC`: the BIOS accepted the write.
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. Reading register 19h of the root port at BX=00E3 returns CX=0009, reading register ECh returns CX=0000, and writing CX=0001 back succeeds.](/img/z87-pro-debug-root-port-sde-write.jpg)
 *Setting SDE on the Z87-PRO by hand. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the BIOS accepts the write of 1.*
