@@ -70,7 +70,7 @@ For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.m
 
 The Z87-PRO has no PCI slots, so the card goes in a PCIe-to-PCI adapter: the same one from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %}), with an ASM1083 bridge chip.
 
-The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. That takes three calls to the PCI BIOS: 
+The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. That takes three calls to the PCI BIOS:
 
 1. Find the bridge
 2. Read the register
@@ -102,7 +102,7 @@ INT 1A             ; call the BIOS. The byte lands in CL
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. A find-device call for 1B21:1080 returns BX=0900, then reading register 40h returns CX=1020.](/img/z87-pro-debug-find-asm1083-read-40h.jpg)
 *Finding the ASM1083 (`BX=0900`), then reading its register 40h (`CX=1020`).*
 
-Here we can see the result. `CL` is the right-hand half of `CX`, so the byte is 20h. Bit 6 (40h) is off. And `NC` (no carry) in `DEBUG`’s register dump means the call worked.
+Here we can see the result. `CL` is the right-hand half of `CX`, so the byte is 20h. Bit 6 (40h) is off. And `NC` (no carry) in `DEBUG`'s register dump means the call worked.
 
 **Then turn bit 6 on:**
 
@@ -110,9 +110,7 @@ Here we can see the result. `CL` is the right-hand half of `CX`, so the byte is 
 OR CL,40           ; turn on bit 6 (40h), leaving the other bits alone
 ```
 
-20h plus 40h makes 60h. Doing this by hand is where I tripped up: `DEBUG` won't let you edit `CL` on its own, only the whole of `CX`, so I set `CX` to 0060.
-
-(NOTE TO SELF. IF WE NEED TO WRITE THE WHOLE OF CX, WHY DOES THE ABOVE SAY CL?)
+20h plus 40h makes 60h.
 
 **Finally, write it back:**
 
@@ -122,8 +120,8 @@ INT 1A             ;   ...to the same register, 40h
 INT 3              ; stop, and show the CPU's registers
 ```
 
-![A DEBUG session on the Z87-PRO, photographed from the monitor. After two R CL errors, CX is set to 0060 and AX to B10B, and the write call returns with NC.](/img/z87-pro-debug-write-asm1083-40h.jpg)
-*Two `R CL` errors, then `CX=0060` and the write. `NC`: the BIOS accepted it.*
+![A DEBUG session on the Z87-PRO, photographed from the monitor. CX is set to 0060 and AX to B10B, and the write call returns with NC.](/img/z87-pro-debug-write-asm1083-40h.jpg)
+*The write. `NC`: the BIOS accepted it.*
 
 `NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done.
 
@@ -137,7 +135,7 @@ That was expected. The chipset's hop was still closed.
 
 Now for the chipset's hop. The goal is to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter. Same pattern as the bridge.
 
-**First, find the right root port.** Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7, which the BIOS writes as `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I read register 19h on each root port in turn, and saved each check as a script, `FINDF0.TXT` to `FINDF7.TXT`. Here's the one for function 3:
+**First, find the right root port.** Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7, which the BIOS writes as `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I read register 19h on each root port in turn. Here's the check for function 3:
 
 ```nasm
 A 100
@@ -182,7 +180,7 @@ INT 3              ; stop, and show the CPU's registers
 `NC`: the BIOS accepted the write.
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. Reading register 19h of the root port at BX=00E3 returns CX=0009, reading register ECh returns CX=0000, and writing CX=0001 back succeeds.](/img/z87-pro-debug-root-port-sde-write.jpg)
-*Setting SDE on the Z87-PRO by hand. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the BIOS accepts the write of 1.*
+*Setting SDE on the Z87-PRO. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the BIOS accepts the write of 1.*
 
 Then the keyboard froze solid.
 
@@ -190,7 +188,7 @@ Then the keyboard froze solid.
 
 Nothing I typed reached the screen, and the Num Lock light was stuck on. I power-cycled and tried again with a PS/2 keyboard instead of USB, in case the BIOS's USB keyboard support was the problem. It froze in exactly the same way.
 
-The third time, I took away everything I could. Real MS-DOS instead of FreeDOS, booted from a floppy disk instead of a USB stick, with the BIOS's Fast Boot off and its USB 3 controller disabled. By now the write was a script too, `ROOTPORT.TXT`. Same freeze, the moment SDE went on.
+The third time, I took away everything I could. Real MS-DOS instead of FreeDOS, booted from a floppy disk instead of a USB stick, with the BIOS's Fast Boot off and its USB 3 controller disabled. Same freeze, the moment SDE went on.
 
 Luckily, it did no lasting harm. Configuration space is cleared at power-off, so a power-cycle brought everything back each time.
 
@@ -207,7 +205,7 @@ The X10SAE has real PCI slots, fed by the IDT 89HPEB383 bridge on the board.
 
 Before going near DOS, I went through the BIOS. There was no setting for subtractive decode, but in the USB settings I found something I hadn't seen on the ASUS: "Port 60/64 Emulation", enabled. Ports 60h and 64h belong to the keyboard controller, and the help text explains that this setting fakes them so a USB keyboard works in "non-USB aware OSes". In other words, DOS. Something sitting between the keyboard and the chipset seemed worth getting out of the way, so I made a note to turn it off before trying SDE.
 
-In DOS, I found the IDT bridge by hand with `DEBUG` (vendor 10E3h, device 8113h), then read its register 48h.
+In DOS, I found the IDT bridge with `DEBUG` (vendor 10E3h, device 8113h), then read its register 48h.
 
 ![A DEBUG session on the X10SAE, photographed from the monitor. A find-device call for 10E3:8113 returns BX=0300, then reading register 48h returns CX=8180.](/img/x10sae-debug-idt-bridge-legacy-bit-already-set.jpg)
 *Reading the IDT bridge's register 48h on the X10SAE. The byte read lands in `CL`, the right-hand half of `CX=8180`: 80h, so bit 7 was already on.*
@@ -216,10 +214,10 @@ Bit 7 was already set! Supermicro's BIOS turns on the bridge's legacy mode by it
 
 Even so, Yamaha's test program still failed, and `SETUPDS` still couldn't find a Sound Blaster. One hop left.
 
-The `FINDFn` scripts found the bridge's bus, 03h, behind root port function 5. `SDE.TXT` is the same script as `ROOTPORT.TXT`, with `MOV BX,00E5` for function 5. This time, I prepared first: a PS/2 keyboard, and Port 60/64 Emulation turned off. Then I ran it.
+On this board, the bridge's bus, 03h, was behind root port function 5, so I ran the same steps on that one. But first, I prepared: a PS/2 keyboard, and Port 60/64 Emulation turned off.
 
-![Running DEBUG < SDE.TXT on the X10SAE, photographed from the monitor. The script reads register ECh of BX=00E5, sets bit 0 and writes it back; the register dump afterwards shows CX=0001 and NC.](/img/x10sae-debug-sde-script-no-freeze.jpg)
-*`SDE.TXT` on the X10SAE: the script, then the result. `CX=0001` is the value written, and `NC` means the BIOS accepted it.*
+![Setting SDE on the X10SAE, photographed from the monitor. The code reads register ECh of BX=00E5, sets bit 0 and writes it back; the register dump afterwards shows CX=0001 and NC.](/img/x10sae-debug-sde-script-no-freeze.jpg)
+*The same steps on the X10SAE, and the result. `CX=0001` is the value written, and `NC` means the BIOS accepted it.*
 
 The keyboard kept working.
 
