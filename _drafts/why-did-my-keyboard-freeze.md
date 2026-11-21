@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Why Did My Keyboard Freeze?"
-summary: "I found the fastest motherboard and CPU that (in theory!) can still play MS-DOS games on an old school Sound Blaster card. Now, time to make it all work. But on my first attempt, the keyboard froze solid. What gives!?”
+summary: "I found the fastest motherboard and CPU that (in theory!) can still play MS-DOS games on an old-school, Sound Blaster compatible card. Now, time to make it all work. But on my first attempt, the keyboard froze solid. What gives!?"
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
 <!-- DRAFT -->
 <!-- TODO: hero. Candidates: the X10SAE FM video still, or one of the DEBUG screen photos below. -->
 
-In [the last post]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), I found the newest chipsets that can still route a DOS game's sound to a PCI card, and it turned out I already owned two boards that fit: an ASUS Z87-PRO and a Supermicro X10SAE.
+In [the last post]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), I went hunting for the fastest motherboard and CPU that can (in theory!) still play DOS games on a Sound Blaster compatible PCI card. Luckily, I already owned two boards that fit: an ASUS Z87-PRO and a Supermicro X10SAE.
 
 Finding them was the paperwork. Now for the real test: can I get a DOS game's reads and writes all the way through to a real PCI sound card?
 
@@ -21,7 +21,7 @@ I don't expect to plug a PCI sound card in and have DOS games find it. As I cove
 
 The plan is to turn on [subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode) at both hops, so that addresses nobody else claims, like 220h, fall through to the card. That's the theory, anyway. I'm hoping it routes them correctly, but I won't know until I try.
 
-Neither hop has it on by default, and nothing in a normal boot turns it on. To turn it on, I need to change a setting inside each chip: a single bit in one of its PCI configuration registers.
+Nothing in a normal boot turns it on, so I'll have to do it myself, by changing a setting inside each chip: a single bit in one of its PCI configuration registers.
 
 
 ### A quick detour: registers and PCI configuration space
@@ -58,7 +58,7 @@ That makes it handy for much more than finding bugs. You can type a few lines of
 
 ### The Z87-PRO
 
-For the sound card, I picked a Yamaha YMF724. Yamaha's DOS driver package is easy to find, and it comes with a setup tool, `SETUPDS`, that turns on the card's own legacy mode, plus a test program that plays FM music.
+For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.md %}). It's a late-90s PCI card, built to be [Sound Blaster]({% link _reference/technical-glossary.md %}#sound-blaster) compatible in DOS, with Yamaha's own FM synthesis on board. Its DOS driver package is easy to find, and comes with a setup tool, `SETUPDS`, that turns on the card's [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode), plus a test program that plays FM music.
 
 The Z87-PRO has no PCI slots, so the card goes in a PCIe-to-PCI adapter: the same one from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %}), with an ASM1083 bridge chip.
 
@@ -83,7 +83,7 @@ The rest of the file does the same for one more bit, which lets the card's inter
 
 Next, the card. `SETUPDS` found the YMF724 straight away, and its native sound test played fine. But neither of those uses the old I/O ports. `SETUPDS` finds the card through its configuration space, which, as we've just seen, needs no help from subtractive decode. And the native test uses the card's modern addresses.
 
-The real test was whether anything could find a [Sound Blaster]({% link _reference/technical-glossary.md %}#sound-blaster) at 220h. With the bridge fixed and the [`BLASTER` variable]({% link _reference/technical-glossary.md %}#blaster-variable) set, `SETUPDS` couldn't. Neither could Creative's own `SBTEST`, which shares no code with Yamaha's tools.
+The real test was whether anything could find a Sound Blaster at 220h. With the bridge fixed and the [`BLASTER` variable]({% link _reference/technical-glossary.md %}#blaster-variable) set, `SETUPDS` couldn't. Neither could Creative's own `SBTEST`, which shares no code with Yamaha's tools.
 
 <!-- TODO: image. Vault: PCI Sound Cards 23 (SETUPDS still fails). -->
 
@@ -114,7 +114,7 @@ Function 3. I read its register ECh, and SDE was 0. I set `CX` to 1 and wrote it
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. Reading register 19h of the root port at BX=00E3 returns CX=0009, reading register ECh returns CX=0000, and writing CX=0001 back succeeds.](/img/z87-pro-debug-root-port-sde-write.jpg)
 *Finding and setting SDE on the Z87-PRO by hand. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the write of 1 succeeds.*
 
-Then the keyboard stopped working.
+Then the keyboard froze solid.
 
 <!-- TODO (James): a line on your reaction here, at the first freeze or the second. -->
 
