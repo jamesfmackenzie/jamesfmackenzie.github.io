@@ -1,40 +1,46 @@
 ---
 layout: post
 title: "Why Did My Keyboard Freeze?"
-summary: "I found the fastest motherboard and CPU that (in theory!) can still play MS-DOS games on an old-school, Sound Blaster compatible card. Now, time to make it all work. But on my first attempt, the keyboard froze solid. What gives!?"
+summary: "I found the fastest motherboard and CPU that can (in theory!) still play MS-DOS games on an old-school, Sound Blaster compatible card. But on my first attempt, the keyboard froze solid. What gives?"
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
 <!-- DRAFT -->
 <!-- TODO: hero. Candidates: the X10SAE FM video still, or one of the DEBUG screen photos below. -->
 
-In [the last post]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), I went hunting for the fastest motherboard and CPU that can (in theory!) still play DOS games on a Sound Blaster compatible PCI card. Luckily, I already owned two boards that fit: an ASUS Z87-PRO and a Supermicro X10SAE.
+In [the last post]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), I went hunting for the fastest motherboard and CPU that can (in theory!) still play DOS games on an old-school, Sound Blaster compatible card. Luckily, I already owned two boards that fit the bill: an ASUS Z87-PRO and a Supermicro X10SAE.
 
-Finding them was the paperwork. Now for the real test: can I get a DOS game's reads and writes all the way through to a real PCI sound card?
+Now for the real test: can I get it all working?
 
 
 ### Why it won't just work
 
-I don't expect to plug a PCI sound card in and have DOS games find it. As I covered last time, a game's write to 220h has two hops to make before it reaches the card: the chipset's PCIe [root port]({% link _reference/technical-glossary.md %}#root-port), then the [PCIe-to-PCI bridge]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge). By default, neither one passes it on.
+I don't expect to plug a PCI sound card in and have DOS games find it. As I covered last time, a game's write to standard Sound Blaster address (220h) has two hops to make before it reaches the card:
+
+1. The chipset's PCIe [root port]({% link _reference/technical-glossary.md %}#root-port)
+2. The [PCIe-to-PCI bridge]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge).
+
+By default, neither one will route writes to the sound card.
 
 ![Two rows. By default, a DOS game's write to 220h reaches the chipset's PCIe root port and is not forwarded to the PCIe-to-PCI bridge or the PCI sound card. With subtractive decode on at both hops, the unclaimed write is forwarded through the chipset and the bridge, and the card answers at 220h.](/img/chipset-and-bridge-hops-diagram.svg)
 *The two hops again. Both need subtractive decode turned on.*
 
-The plan is to turn on [subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode) at both hops, so that addresses nobody else claims, like 220h, fall through to the card. That's the theory, anyway. I'm hoping it routes them correctly, but I won't know until I try.
+The plan is to turn on [subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode) at both hops. This means addresses nobody else claims, like 220h, will fall through to the card. That's the theory, anyway. I'm hoping it routes them correctly, but I won't know until I try.
 
-Nothing in a normal boot turns it on, so I'll have to do it myself, by changing a setting inside each chip: a single bit in one of its PCI configuration registers.
+By default, subtractive decode is disabled at boot. So we’ll need to enable it ourselves, by changing the **PCI configuration registers**.
 
 
 ### A quick detour: registers and PCI configuration space
 
-A **[register]({% link _reference/technical-glossary.md %}#register)** is a small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software reads one to find out what the chip is doing, and writes one to tell it what to do. Often each bit is a separate on/off setting.
+A **[register]({% link _reference/technical-glossary.md %}#register)** is a small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software reads them to find out what the chip is doing, and writes one to tell it what to do.
 
-Every PCI device, including bridges and the chipset's root ports, has a block of these called its **[configuration space]({% link _reference/technical-glossary.md %}#pci-configuration-space)**: 256 bytes in the original PCI design, numbered from 00h. The first part is the same on every device: who made it, what it is, and which addresses and interrupt the BIOS gave it. The rest is up to the chip's maker, and that's where features like subtractive decode live. The only way to find out what's there is the chip's datasheet.
+Every PCI device, including bridges and the chipset's root ports, has a block of these called its **[configuration space]({% link _reference/technical-glossary.md %}#pci-configuration-space)**. The first part tells the PC what the device is, who made it etc. But the rest is up to the chip's maker, and that's where features like subtractive decode live.
 
-The BIOS fills most of it in at boot, but software can read and write it at any time while the PC is running. In DOS, the easiest way is to ask the PCI BIOS: a call to interrupt 1Ah can find a device by its maker and model number, then read or write any byte of its configuration space. Nothing written there survives a power-off. Every boot starts from the BIOS's defaults.
+The BIOS fills most of the configuration space at boot, but software can read and write it at any time while the PC is running. In DOS, we can poke at the registers directly: first to find our device by maker and model number, and then to read or write any byte of its configuration space. Nothing written there survives a power-off. Every boot resets back to the BIOS's defaults.
 
-The bits in each byte are numbered 0 to 7, from the right. Written in hex, each bit has its own value: bit 0 is 01h, bit 5 is 20h, bit 6 is 40h and bit 7 is 80h. So turning on bit 6 of a byte that reads 00h means making it `0100 0000` in binary, which is 40h. The other bits usually control other things, so the safe way to change one bit is to read the byte, turn on just that bit (an OR, in assembly language), and write the byte back.
 
-The datasheets told me which bits I needed:
+### But which bits?
+
+After consulting the chipset and bridge datasheets, I found the registers and bits I need:
 
 | Hop | Chip | Register | Bit |
 |---|---|---|---|
@@ -42,9 +48,9 @@ The datasheets told me which bits I needed:
 | Bridge (built into the X10SAE) | IDT 89HPEB383 | 48h | Bit 7, `LEGACY` |
 | Chipset | Intel 8-series root port | ECh | Bit 0, "Subtractive Decode Enable" (SDE) |
 
-There's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first I'd need to find the root port that leads to the sound card.
+There's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port that leads to the sound card.
 
-To read and write these registers, I didn't need to write a program. DOS already comes with a tool that can do it.
+(we should add root port to our glossary and link it)
 
 
 ### A quick detour: what DEBUG is
