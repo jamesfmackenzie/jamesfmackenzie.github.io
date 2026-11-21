@@ -34,6 +34,13 @@ See also: [PC/PCI](#pc-pci), [8237 DMA controller](#dma-controller-8237)
 Comes up in: [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Dell OptiPlex 380]({% link _hardware/dell-optiplex-380.md %})
 
 
+### DEBUG {#debug}
+
+A small debugger that came with MS-DOS from its first version (FreeDOS has its own). Rather than stepping through source code, it works on the machine directly: it can show and change memory and the CPU's registers, read and write I/O ports, and assemble and run a few lines of assembly language. That makes it a handy way to poke at hardware without writing a program. It reads commands one line at a time, so `DEBUG < SCRIPT.TXT` replays a saved set of commands.
+
+See also: [PCI configuration space](#pci-configuration-space), [Register](#register)
+
+
 ### DPMI host {#dpmi-host}
 
 DOS Protected Mode Interface: a standard way for a DOS program to run in protected mode, with access to all of the PC's memory rather than just DOS's first megabyte, while still calling DOS. The DPMI host is the program that provides it. Many protected-mode games come with a DOS extender, such as DOS/4GW, which uses a DPMI host if one is loaded and otherwise brings its own. Sound Blaster emulators like SBEMU work through a particular host, so a game that brings its own can slip past them.
@@ -106,6 +113,13 @@ See also: [Root port](#root-port), [PCI Legacy Mode](#pci-legacy-mode)
 Comes up in: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %})
 
 
+### PCI configuration space {#pci-configuration-space}
+
+A block of registers every PCI device has, 256 bytes in the original PCI design, used to identify and set up the device. The first part is standard: the maker and model, and the addresses and interrupt the BIOS assigned. The rest is specific to the chip, and its datasheet says what each register does. Software can read and write it while the PC runs, in DOS usually through the PCI BIOS (interrupt 1Ah). Nothing written there survives a power-off.
+
+See also: [Register](#register), [DEBUG](#debug), [Subtractive decode](#subtractive-decode)
+
+
 ### PCI Legacy Mode {#pci-legacy-mode}
 
 Intel's name for a PCH feature that lets old PCI cards work behind a PCIe-to-PCI bridge. Both the chipset's root port and the bridge act as subtractive PCI-to-PCI bridges, so legacy accesses fall through to the cards behind them. On the chipset side it's a single bit, "Subtractive Decode Enable", in each root port. Intel documents it in the [8-series datasheet](https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/8-series-chipset-pch-datasheet.pdf) (section 5.2.2), and the [100-series datasheet](https://www.intel.com/content/www/us/en/content-details/332690/intel-100-series-chipset-family-platform-controller-hub-pch-datasheet-volume-1.html) says it's no longer supported.
@@ -131,6 +145,13 @@ The normal way a device or bridge decides which accesses are its own: it claims 
 See also: [Subtractive decode](#subtractive-decode), [I/O port](#io-port)
 
 Comes up in: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %})
+
+
+### Register {#register}
+
+A small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software reads a register to find out what the chip is doing, and writes one to tell it what to do; often each bit is a separate on/off setting. A CPU has its own registers too, which is what `DEBUG` shows after running code.
+
+See also: [PCI configuration space](#pci-configuration-space), [DEBUG](#debug)
 
 
 ### Root port {#root-port}
