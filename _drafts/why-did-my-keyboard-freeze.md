@@ -14,10 +14,10 @@ Now for the real test: can I get it all working?
 
 ### Why it won't just work
 
-I don't expect to plug a PCI sound card in and have DOS games find it. As I covered last time, a game's write to standard Sound Blaster address (220h) has two hops to make before it reaches the card:
+I don't expect to plug a PCI sound card in and have DOS games find it. As I covered last time, a game's write to the standard Sound Blaster address (220h) has two hops to make before it reaches the card:
 
 1. The chipset's PCIe [root port]({% link _reference/technical-glossary.md %}#root-port)
-2. The [PCIe-to-PCI bridge]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge).
+2. The [PCIe-to-PCI bridge]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge)
 
 By default, neither one will route writes to the sound card.
 
@@ -26,12 +26,12 @@ By default, neither one will route writes to the sound card.
 
 The plan is to turn on [subtractive decode]({% link _reference/technical-glossary.md %}#subtractive-decode) at both hops. This means addresses nobody else claims, like 220h, will fall through to the card. That's the theory, anyway. I'm hoping it routes them correctly, but I won't know until I try.
 
-By default, subtractive decode is disabled at boot. So we’ll need to enable it ourselves, by changing the **PCI configuration registers**.
+Subtractive decode starts out disabled, so we'll need to enable it ourselves, by changing the **PCI configuration registers**.
 
 
 ### A quick detour: registers and PCI configuration space
 
-A **[register]({% link _reference/technical-glossary.md %}#register)** is a small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software reads them to find out what the chip is doing, and writes one to tell it what to do.
+A **[register]({% link _reference/technical-glossary.md %}#register)** is a small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software reads them to find out what the chip is doing, and writes them to tell it what to do.
 
 Every PCI device, including bridges and the chipset's root ports, has a block of these called its **[configuration space]({% link _reference/technical-glossary.md %}#pci-configuration-space)**. The first part tells the PC what the device is, who made it etc. But the rest is up to the chip's maker, and that's where features like subtractive decode live.
 
@@ -48,7 +48,7 @@ After consulting the chipset and bridge datasheets, I found the registers and bi
 | Bridge (built into the X10SAE) | IDT 89HPEB383 | 48h | Bit 7, `LEGACY` |
 | Chipset | Intel 8-series root port | ECh | Bit 0, "Subtractive Decode Enable" (SDE) |
 
-There's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port that leads to the sound card.
+There's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port leads to the sound card.
 
 (we should add root port to our glossary and link it)
 
