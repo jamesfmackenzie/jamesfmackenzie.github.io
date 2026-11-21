@@ -48,23 +48,25 @@ After consulting the chipset and bridge datasheets, I found the registers and bi
 | Bridge (built into the X10SAE) | IDT 89HPEB383 | 48h | Bit 7, `LEGACY` |
 | Chipset | Intel 8-series root port | ECh | Bit 0, "Subtractive Decode Enable" (SDE) |
 
-There's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port leads to the sound card.
+But there's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port leads to the sound card.
 
-(we should add root port to our glossary and link it)
+(IMPROVEMENT NOTE: we should add a definition for root ports to our glossary link it)
 
 
 ### A quick detour: what DEBUG is
 
-Today, debugging usually means stepping through your own code in an IDE to find out why it isn't working. **[`DEBUG`]({% link _reference/technical-glossary.md %}#debug)** is a debugger in that sense too, but a much lower-level one. It's a small program that came with MS-DOS from the very first version (FreeDOS has its own), and it works directly on the machine: memory, the CPU's registers, and I/O ports.
+Today, debugging usually means stepping through your code in an IDE. Back in the 1980s we had **[`DEBUG`]({% link _reference/technical-glossary.md %}#debug)**.
 
-That makes it handy for much more than finding bugs. You can type a few lines of assembly language with its `A` (assemble) command, set the CPU's registers with `R`, run the code with `G` (go), and see what the registers hold afterwards. In other words, it's a tiny assembler and a way to poke the hardware directly, built into DOS.
+It's a small program that came with MS-DOS from the very first version (FreeDOS has its own), and it allows you to debug raw machine state: memory, registers, and I/O ports.
 
-`DEBUG` also reads its commands one line at a time, so you can type them into a text file instead and run `DEBUG < SCRIPT.TXT`. It replays the file as if you'd typed it.
+That makes it handy for much more than finding bugs. You can type a few lines of assembly language with its `A` (assemble) command, set the CPU’s registers with `R`, run the code with `G` (go), and see what the registers hold afterwards. In other words, it’s a great way to poke at the hardware directly, built into DOS.
+
+Time to get started!
 
 
 ### The Z87-PRO
 
-For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.md %}). It's a late-90s PCI card, built to be [Sound Blaster]({% link _reference/technical-glossary.md %}#sound-blaster) compatible in DOS, with Yamaha's own FM synthesis on board. Its DOS driver package is easy to find, and comes with a setup tool, `SETUPDS`, that turns on the card's [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode), plus a test program that plays FM music.
+For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.md %}). It's a late-90s PCI card, built to be [Sound Blaster]({% link _reference/technical-glossary.md %}#sound-blaster) compatible in DOS, with Yamaha's own FM synth on board. Its DOS driver package comes with a setup tool, `SETUPDS`, that turns on the card's [legacy mode]({% link _reference/technical-glossary.md %}#legacy-mode), plus a test program that plays FM music.
 
 The Z87-PRO has no PCI slots, so the card goes in a PCIe-to-PCI adapter: the same one from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %}), with an ASM1083 bridge chip.
 
