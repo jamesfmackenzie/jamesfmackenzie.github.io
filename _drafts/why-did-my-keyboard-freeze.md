@@ -70,9 +70,13 @@ For the sound card, I picked a [Yamaha YMF724]({% link _hardware/yamaha-ymf724.m
 
 The Z87-PRO has no PCI slots, so the card goes in a PCIe-to-PCI adapter: the same one from [my Voodoo 2 experiments]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %}), with an ASM1083 bridge chip.
 
-The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. That takes three calls to the PCI BIOS: find the bridge, read the register, then write it back with bit 6 on. Each call is a few lines of assembly language that load the CPU's registers with what the BIOS needs, then `INT 1A` to make the call.
+The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's register 40h. That takes three calls to the PCI BIOS: 
 
-I typed these in by hand at the `DEBUG` prompt first. Once they worked, I saved them in a text file, `BRIDGEFX.TXT`. `DEBUG` reads its commands one line at a time, so `DEBUG < BRIDGEFX.TXT` replays the file as if I'd typed it. Here it is a piece at a time, with comments added (the real file has none).
+1. Find the bridge
+2. Read the register
+3. Write it back with bit 6 on
+
+Each call is a few lines of assembly language that load the CPU's registers with what the BIOS needs, then `INT 1A` to make the call.
 
 **First, find the bridge:**
 
@@ -85,7 +89,7 @@ XOR SI,SI          ;   ...the first one found
 INT 1A             ; call the BIOS. It puts the bridge's location in BX
 ```
 
-The BIOS came back with `BX=0900`: the bridge is on bus 09h. And `NC` (no carry) in `DEBUG`'s register dump means the call worked.
+The BIOS came back with `BX=0900`: i.e. the bridge is on bus 09h.
 
 **Next, read register 40h:**
 
@@ -98,7 +102,7 @@ INT 1A             ; call the BIOS. The byte lands in CL
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. A find-device call for 1B21:1080 returns BX=0900, then reading register 40h returns CX=1020.](/img/z87-pro-debug-find-asm1083-read-40h.jpg)
 *Finding the ASM1083 (`BX=0900`), then reading its register 40h (`CX=1020`).*
 
-`CL` is the right-hand half of `CX`, so the byte is 20h. Bit 6 (40h) is off.
+Here we can see the result. `CL` is the right-hand half of `CX`, so the byte is 20h. Bit 6 (40h) is off. And `NC` (no carry) in `DEBUG`’s register dump means the call worked.
 
 **Then turn bit 6 on:**
 
@@ -107,6 +111,8 @@ OR CL,40           ; turn on bit 6 (40h), leaving the other bits alone
 ```
 
 20h plus 40h makes 60h. Doing this by hand is where I tripped up: `DEBUG` won't let you edit `CL` on its own, only the whole of `CX`, so I set `CX` to 0060.
+
+(NOTE TO SELF. IF WE NEED TO WRITE THE WHOLE OF CX, WHY DOES THE ABOVE SAY CL?)
 
 **Finally, write it back:**
 
