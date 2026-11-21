@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Did My Keyboard Freeze?"
-summary: "I've found the fastest PCs that should be able to get a DOS game's sound through to a PCI card. Now to make it work on real hardware. But on my first board, the moment I tried, the keyboard froze. Why, and can I get a real PCI sound card to make a sound at all?"
+summary: "I found the fastest motherboard and CPU that (in theory!) can still play MS-DOS games on an old school Sound Blaster card. Now, time to make it all work. But on my first attempt, the keyboard froze solid. What gives!?”
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
 ---
 <!-- DRAFT -->
