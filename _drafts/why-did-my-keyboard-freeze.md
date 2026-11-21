@@ -89,7 +89,7 @@ XOR SI,SI          ;   ...the first one found
 INT 1A             ; call the BIOS. It puts the bridge's location in BX
 ```
 
-The BIOS came back with `BX=0900`: i.e. the bridge is on bus 09h.
+The BIOS came back with `BX=0900`: the bridge is on bus 09h.
 
 **Next, read register 40h:**
 
@@ -123,19 +123,30 @@ INT 3              ; stop, and show the CPU's registers
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. CX is set to 0060 and AX to B10B, and the write call returns with NC.](/img/z87-pro-debug-write-asm1083-40h.jpg)
 *The write. `NC`: the BIOS accepted it.*
 
-`NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done.
+`NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done!
 
-Next, the card. `SETUPDS` found the YMF724 straight away, and its native sound test played fine. But neither of those uses the old I/O ports. `SETUPDS` finds the card through its configuration space, which, as we've just seen, needs no help from subtractive decode. And the native test uses the card's modern addresses.
 
-The real test was whether anything could find a Sound Blaster at 220h. With the bridge fixed and the [`BLASTER` variable]({% link _reference/technical-glossary.md %}#blaster-variable) set, `SETUPDS` couldn't. Neither could Creative's own `SBTEST`, which shares no code with Yamaha's tools.
+
+### Testing the card
+
+OK, time to test the card!
+
+`SETUPDS` found the YMF724 straight away, and its native sound test played fine. But neither of those uses the old I/O ports. The real test was whether anything could find a Sound Blaster at 220h.
+
+With the bridge fixed and the [`BLASTER` variable]({% link _reference/technical-glossary.md %}#blaster-variable) set, `SETUPDS` couldn't. Neither could Creative's own `SBTEST`.
 
 <!-- TODO: image. Vault: PCI Sound Cards 23 (SETUPDS still fails). -->
 
-That was expected. The chipset's hop was still closed.
 
-Now for the chipset's hop. The goal is to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter. Same pattern as the bridge.
+### Fixing the chipset
 
-**First, find the right root port.** Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7, which the BIOS writes as `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I read register 19h on each root port in turn. Here's the check for function 3:
+But was expected. The chipset's hop was still closed. For that, we need to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter. Same pattern as the bridge.
+
+**First, find the right root port:**
+
+Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7, which the BIOS writes as `00E0` to `00E7`.
+
+Each root port records the number of the bus behind it in register 19h, and (from our exploration earlier) the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I need read register 19h on each root port in turn. Here's the check for function 3:
 
 ```nasm
 A 100
