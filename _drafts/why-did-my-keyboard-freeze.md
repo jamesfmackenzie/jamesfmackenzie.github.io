@@ -48,9 +48,9 @@ After consulting the chipset and bridge datasheets, I found the registers and bi
 | Bridge (built into the X10SAE) | IDT 89HPEB383 | 48h | Bit 7, `LEGACY` |
 | Chipset | Intel 8-series root port | ECh | Bit 0, "Subtractive Decode Enable" (SDE) |
 
-But there's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port leads to the sound card.
+Bits are numbered 0 to 7 from the right, and in hex each one has its own value: bit 0 is 01h, bit 6 is 40h and bit 7 is 80h.
 
-(IMPROVEMENT NOTE: we should add a definition for root ports to our glossary link it)
+But there's one catch on the chipset side. The 8-series chipset has several root ports, each with its own SDE bit, and its datasheet says only one can be on at a time. So first we need to find out which root port leads to the sound card.
 
 
 ### A quick detour: what DEBUG is
@@ -59,7 +59,7 @@ Today, debugging usually means stepping through your code in an IDE. Back in the
 
 It's a small program that came with MS-DOS from the very first version (FreeDOS has its own), and it allows you to debug raw machine state: memory, registers, and I/O ports.
 
-That makes it handy for much more than finding bugs. You can type a few lines of assembly language with its `A` (assemble) command, set the CPU’s registers with `R`, run the code with `G` (go), and see what the registers hold afterwards. In other words, it’s a great way to poke at the hardware directly, built into DOS.
+That makes it handy for much more than finding bugs. You can type a few lines of assembly language with its `A` (assemble) command, set the CPU's registers with `R`, run the code with `G` (go), and see what the registers hold afterwards. In other words, it's a great way to poke at the hardware directly, built into DOS.
 
 Time to get started!
 
@@ -74,7 +74,7 @@ The bridge came first. The goal is to turn on one bit: bit 6 of the ASM1083's re
 
 **Step 1: a tiny program.** With `A 100`, I typed in just two instructions. `INT 1A` calls the PCI BIOS, and `INT 3` hands control back to `DEBUG` afterwards, which then prints all the CPU's registers so I can see the result. Each BIOS call after that works the same way: set the registers with `R`, then run the program with `G=100`.
 
-**Step 2: find the bridge.** I set `AX` to B102h (the PCI BIOS's "find a device" call), `CX` to 1080h (the ASM1083's device ID) `DX` to 1B21h (ASMedia's vendor ID) and `SI` to 0 (the first one found), then ran it. The BIOS came back with `BX=0900`: the bridge is on bus 09h. And `NC` (no carry) at the end of the second line means the call worked.
+**Step 2: find the bridge.** I set `AX` to B102h (the PCI BIOS's "find a device" call), `CX` to 1080h (the ASM1083's device ID), `DX` to 1B21h (ASMedia's vendor ID) and `SI` to 0 (the first one found), then ran it. The BIOS came back with `BX=0900`: the bridge is on bus 09h. And `NC` (no carry) at the end of the second line means the call worked.
 
 **Step 3: read register 40h.** `AX` to B108h ("read a byte") and `DI` to 40h (the register), then run.
 
@@ -92,7 +92,7 @@ The byte read lands in `CL`, the right-hand half of `CX`: 20h. Bit 6 (40h) is of
 
 `NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done.
 
-Typing all that in on every boot would get old fast, so I saved the same steps as a script, `BRIDGEFX.TXT`. Here are those steps from it, with comments added (the real file has none):
+Typing all that in on every boot would get old fast, so I saved the same steps in a text file, `BRIDGEFX.TXT`. `DEBUG` reads its commands one line at a time, so `DEBUG < BRIDGEFX.TXT` replays the file as if I'd typed it. Here are those steps from it, with comments added (the real file has none):
 
 ```nasm
 A 100              ; start assembling at address 100h
@@ -118,7 +118,9 @@ The real test was whether anything could find a Sound Blaster at 220h. With the 
 
 That was expected. The chipset's hop was still closed.
 
-Unlike the bridge, the chipset's root ports don't need finding: they're always at the same place, bus 0, device 28, functions 0 to 7. The PCI BIOS packs that into `BX`, so they're `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the BIOS had put the adapter's bridge on bus 09h. So I wrote a small script for each function, `FINDF0.TXT` to `FINDF7.TXT`, to read that register:
+Now for the chipset's hop. The goal is to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter.
+
+**Step 1: find the right root port.** Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7. The BIOS's shorthand for those in `BX` is `00E0` to `00E7`. Each root port records the number of the bus behind it in register 19h, and the adapter's bridge was on bus 09h (the `09` in `BX=0900` from earlier). So I read register 19h on each root port in turn. I saved each check as a script too, `FINDF0.TXT` to `FINDF7.TXT`. Here's the one for function 3:
 
 ```nasm
 A 100
@@ -129,7 +131,7 @@ INT 1A
 INT 3
 ```
 
-Then I worked through them:
+Working through them:
 
 | Root port function | Bus behind it |
 |---|---|
@@ -138,10 +140,16 @@ Then I worked through them:
 | 2 | none |
 | **3** | **09h** |
 
-Function 3. I read its register ECh, and SDE was 0. I set `CX` to 1 and wrote it back.
+Function 3 it is.
+
+**Step 2: read register ECh.** The same port (`BX=00E3`), with `DI` set to ECh. `CL` came back 00: SDE is off.
+
+**Step 3: turn bit 0 on.** Bit 0 is worth 01h, so the new value is 01h. I set `CX` to 0001.
+
+**Step 4: write it back.** `AX` to B10Bh, and run. `NC`: the BIOS accepted the write.
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. Reading register 19h of the root port at BX=00E3 returns CX=0009, reading register ECh returns CX=0000, and writing CX=0001 back succeeds.](/img/z87-pro-debug-root-port-sde-write.jpg)
-*Finding and setting SDE on the Z87-PRO by hand. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the write of 1 succeeds.*
+*Setting SDE on the Z87-PRO by hand. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the BIOS accepts the write of 1.*
 
 Then the keyboard froze solid.
 
@@ -178,7 +186,7 @@ Even so, Yamaha's test program still failed, and `SETUPDS` still couldn't find a
 The `FINDFn` scripts found the bridge's bus, 03h, behind root port function 5. `SDE.TXT` is the same script as `ROOTPORT.TXT`, with `MOV BX,00E5` for function 5. This time, I prepared first: a PS/2 keyboard, and Port 60/64 Emulation turned off. Then I ran it.
 
 ![Running DEBUG < SDE.TXT on the X10SAE, photographed from the monitor. The script reads register ECh of BX=00E5, sets bit 0 and writes it back; the register dump afterwards shows CX=0001 and NC.](/img/x10sae-debug-sde-script-no-freeze.jpg)
-*`SDE.TXT` on the X10SAE: the script, then the result. `CX=0001` means SDE is on, and `NC` means the BIOS call worked.*
+*`SDE.TXT` on the X10SAE: the script, then the result. `CX=0001` is the value written, and `NC` means the BIOS accepted it.*
 
 The keyboard kept working.
 
@@ -189,7 +197,7 @@ I ran Yamaha's FM test program again. This time, it played music.
 
 <!-- TODO: video. Vault: PCI Sound Cards 47 (X10SAE FM audio working, .MOV), needs uploading to YouTube. -->
 
-That's FM music from a PCI sound card, in DOS, on a Haswell Xeon. The writes to 388h now make it through both hops to the card.
+That's FM music from a PCI sound card, in DOS, on a Haswell Xeon. The writes to 388h (the FM chip's address) now make it through both hops to the card.
 
 So why did my keyboard freeze on the Z87-PRO? I still don't know. It could be the Port 60/64 Emulation setting, the different Super I/O chip (a Nuvoton NCT6776D, against the ASUS's NCT6791D), or something about that particular root port. I haven't been back to find out yet. For now, the [X10SAE]({% link _hardware/supermicro-x10sae.md %}) is the board.
 
