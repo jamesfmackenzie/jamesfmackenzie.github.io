@@ -15,7 +15,7 @@ Now for the real test: can I get it all working?
 
 ### Why it won't just work
 
-I don't expect to plug a PCI sound card in and have DOS games find it. As I covered last time, a game's write to the standard Sound Blaster address (220h) has two hops to make before it reaches the card:
+I don't expect to just plug a PCI sound card in and have DOS games find it. As I covered last time, a game's write to the standard Sound Blaster address (220h) has two hops to make before it reaches the card:
 
 1. The chipset's PCIe [root port]({% link _reference/technical-glossary.md %}#root-port)
 2. The [PCIe-to-PCI bridge]({% link _reference/technical-glossary.md %}#pcie-to-pci-bridge)
@@ -156,7 +156,7 @@ INT 1A
 INT 3
 ```
 
-Then the same again for root ports 1, 2 and 3, changing the last digit of `BX` each time:
+We'll run this for root ports 1, 2 and 3, etc, changing the last digit of `BX` each time:
 
 | Root port | Bus behind it |
 |---|---|
@@ -165,7 +165,7 @@ Then the same again for root ports 1, 2 and 3, changing the last digit of `BX` e
 | 2 | none |
 | **3** | **09h** |
 
-Root port 3 it is: `BX=00E3`.
+That's it! The adapter is on root port 3 (`BX=00E3`).
 
 **Next, read register ECh:**
 
@@ -176,7 +176,7 @@ MOV DI,00EC        ;   ...register ECh
 INT 1A             ; the byte lands in CL
 ```
 
-`CL` came back 00. SDE is off.
+`CL` came back 00. Which means SDE is off.
 
 **Then turn bit 0 on, and write it back:**
 
@@ -187,7 +187,7 @@ INT 1A
 INT 3              ; stop, and show the CPU's registers
 ```
 
-`NC`: the BIOS accepted the write.
+After running this we got `NC`: the BIOS accepted the write, which means the SDE bit *should* be activated.
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. Reading register 19h of the root port at BX=00E3 returns CX=0009, reading register ECh returns CX=0000, and writing CX=0001 back succeeds.](/img/z87-pro-debug-root-port-sde-write.jpg)
 *Setting SDE on the Z87-PRO. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the BIOS accepts the write of 1.*
@@ -209,9 +209,9 @@ Three identical freezes, and no fix from anyone else. I set the Z87-PRO aside an
 
 The X10SAE has real PCI slots, fed by the IDT 89HPEB383 bridge on the board.
 
-Before going near DOS, I went through the BIOS. There was no setting for subtractive decode, but in the USB settings I found something I hadn't seen on the ASUS: "Port 60/64 Emulation", enabled. Ports 60h and 64h belong to the keyboard controller, and the help text explains that this setting fakes them so a USB keyboard works in "non-USB aware OSes". In other words, DOS. Something sitting between the keyboard and the chipset seemed worth getting out of the way, so I made a note to turn it off before trying SDE.
+Before going near DOS, I checked through the BIOS settings. There was no setting for subtractive decode, but in the USB settings I found something I hadn't seen on the ASUS: "Port 60/64 Emulation", enabled. Ports 60h and 64h belong to the keyboard controller, and the help text explains that this setting fakes them so a USB keyboard works in "non-USB aware OSes". In other words, DOS. Something sitting between the keyboard and the chipset seemed worth getting out of the way, so I made a note to turn it off before trying SDE.
 
-In DOS, I found the IDT bridge with `DEBUG` (vendor 10E3h, device 8113h), then read its register 48h.
+In DOS, I found the IDT bridge with `DEBUG` (vendor 10E3h, device 8113h), then read its register 48h:
 
 ![A DEBUG session on the X10SAE, photographed from the monitor. A find-device call for 10E3:8113 returns BX=0300, then reading register 48h returns CX=8180.](/img/x10sae-debug-idt-bridge-legacy-bit-already-set.jpg)
 *Reading the IDT bridge's register 48h on the X10SAE. The byte read lands in `CL`, the right-hand half of `CX=8180`: 80h, so bit 7 was already on.*
@@ -225,23 +225,23 @@ On this board, the bridge's bus, 03h, was behind root port 5, so I ran the same 
 ![Setting SDE on the X10SAE, photographed from the monitor. The code reads register ECh of BX=00E5, sets bit 0 and writes it back; the register dump afterwards shows CX=0001 and NC.](/img/x10sae-debug-sde-script-no-freeze.jpg)
 *The same steps on the X10SAE, and the result. `CX=0001` is the value written, and `NC` means the BIOS accepted it.*
 
-The keyboard kept working.
+This time, the keyboard kept working.
 
 
 ### First sound
 
-I ran Yamaha's FM test program again. This time, it played music.
+With a usable keyboard, I ran Yamaha's FM test program once again. This time, *success*! It played music.
 
 That's FM music from a PCI sound card, in DOS, on a Haswell Xeon. The writes to 388h (the FM chip's address) now make it through both hops to the card.
 
-So why did my keyboard freeze on the Z87-PRO? I still don't know. It could be the Port 60/64 Emulation setting, the different Super I/O chip (a Nuvoton NCT6776D, against the ASUS's NCT6791D), or something about that particular root port. I haven't been back to find out yet. For now, the [X10SAE]({% link _hardware/supermicro-x10sae.md %}) is the board.
+So why did my keyboard freeze on the Z87-PRO? I still don't know. It could be the Port 60/64 Emulation setting, the different Super I/O chip (a Nuvoton NCT6776D, against the ASUS's NCT6791D), or something about that particular root port. I haven't been back to find out yet. For now, the [X10SAE]({% link _hardware/supermicro-x10sae.md %}) is the board I'll move ahead with.
 
 
 ### What's next
 
-That's address routing working: the card answers at the right addresses, and the game's accesses reach it.
+So we have address routing working! The card answers at the right addresses, and the game's accesses reach it.
 
-FM music only needs those writes. Digitised sound, the explosions and speech in most games, also needs the other two requirements: interrupts and DMA. That's the next post.
+And FM music work great. But digitised sound (the explosions and speech in most games) also needs the other two requirements: interrupts and DMA. That's the next post.
 
 
 ### Related on this site
