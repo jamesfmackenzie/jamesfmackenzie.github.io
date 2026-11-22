@@ -132,7 +132,7 @@ So, luckily for me, I already have pretty much the fastest hardware possible:
 
 This wraps up the first phase of the research. I know the fastest boards and CPUs that can do this, and I have them.
 
-The second phase is the bridge chips (i.e. the other half of the subtractive decode trick), and how to activate end-to-end address routing on each of them.
+The second phase is the bridge chips (i.e. the other half of the subtractive decode trick), and how to activate end-to-end address routing on each of them. That's the next post: [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %}).
 
 After that, we'll move onto the other items in our four problems — interrupts and DMA. Stay tuned!
 
@@ -140,6 +140,7 @@ After that, we'll move onto the other items in our four problems — interrupts 
 ### Related on this site
 
 - [Get PCI Sound Cards Working on a Modern PC]({% link _projects/get-pci-sound-cards-working-on-a-modern-pc.md %}) — the project this post is part of
+- [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 - [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %})
 - [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %})
 - [3Dfx Voodoo 2 on a Modern PC!]({% post_url 2023-04-15-3dfx-voodoo2-voodoo-2-on-a-modern-pc-core-i7 %})

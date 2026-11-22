@@ -2,11 +2,12 @@
 layout: post
 title: "Why Did My Keyboard Freeze?"
 summary: "I found the fastest motherboard and CPU that can (in theory!) still play MS-DOS games on an old-school, Sound Blaster compatible card. But on my first attempt, the keyboard froze solid. What gives?"
+date: '2026-11-21 12:00:00'
 tags: [MS-DOS, PC, Posts, Retrocomputing, Sound Cards]
+hero: z87-pro-debug-root-port-sde-write.jpg
+hero_alt: "A DEBUG session on the Z87-PRO's monitor, setting the Subtractive Decode Enable bit on the chipset's root port"
+hero_caption: "The DEBUG session on my Z87-PRO that froze the keyboard."
 ---
-<!-- DRAFT -->
-<!-- TODO: hero. Candidates: the X10SAE FM video still, or one of the DEBUG screen photos below. -->
-
 In [the last post]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), I went hunting for the fastest motherboard and CPU that can (in theory!) still play DOS games on an old-school, Sound Blaster compatible card. Luckily, I already owned two boards that fit the bill: an ASUS Z87-PRO and a Supermicro X10SAE.
 
 Now for the real test: can I get it all working?
@@ -135,8 +136,6 @@ OK, time to test the card!
 
 With the bridge fixed and the [`BLASTER` variable]({% link _reference/technical-glossary.md %}#blaster-variable) set, `SETUPDS` couldn't. Neither could Creative's own `SBTEST`.
 
-<!-- TODO: image. Vault: PCI Sound Cards 23 (SETUPDS still fails). -->
-
 
 ### Fixing the chipset
 
@@ -195,8 +194,6 @@ INT 3              ; stop, and show the CPU's registers
 
 Then the keyboard froze solid.
 
-<!-- TODO (James): a line on your reaction here, at the first freeze or the second. -->
-
 Nothing I typed reached the screen, and the Num Lock light was stuck on. I power-cycled and tried again with a PS/2 keyboard instead of USB, in case the BIOS's USB keyboard support was the problem. It froze in exactly the same way.
 
 The third time, I took away everything I could. Real MS-DOS instead of FreeDOS, booted from a floppy disk instead of a USB stick, with the BIOS's Fast Boot off and its USB 3 controller disabled. Same freeze, the moment SDE went on.
@@ -211,8 +208,6 @@ Three identical freezes, and no fix from anyone else. I set the Z87-PRO aside an
 ### The X10SAE
 
 The X10SAE has real PCI slots, fed by the IDT 89HPEB383 bridge on the board.
-
-<!-- TODO: image. Vault: PCI Sound Cards 39 (Port 60/64 Emulation help text). -->
 
 Before going near DOS, I went through the BIOS. There was no setting for subtractive decode, but in the USB settings I found something I hadn't seen on the ASUS: "Port 60/64 Emulation", enabled. Ports 60h and 64h belong to the keyboard controller, and the help text explains that this setting fakes them so a USB keyboard works in "non-USB aware OSes". In other words, DOS. Something sitting between the keyboard and the chipset seemed worth getting out of the way, so I made a note to turn it off before trying SDE.
 
@@ -236,8 +231,6 @@ The keyboard kept working.
 ### First sound
 
 I ran Yamaha's FM test program again. This time, it played music.
-
-<!-- TODO: video. Vault: PCI Sound Cards 47 (X10SAE FM audio working, .MOV), needs uploading to YouTube. -->
 
 That's FM music from a PCI sound card, in DOS, on a Haswell Xeon. The writes to 388h (the FM chip's address) now make it through both hops to the card.
 

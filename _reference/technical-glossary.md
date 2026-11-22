@@ -24,6 +24,8 @@ A DOS environment variable that tells games and setup programs where to find a S
 
 See also: [I/O port](#io-port), [IRQ](#irq), [8237 DMA controller](#dma-controller-8237)
 
+Comes up in: [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
+
 
 ### Distributed DMA (DDMA) {#ddma}
 
@@ -39,6 +41,8 @@ Comes up in: [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-1
 A small debugger that came with MS-DOS from its first version (FreeDOS has its own). Rather than stepping through source code, it works on the machine directly: it can show and change memory and the CPU's registers, read and write I/O ports, and assemble and run a few lines of assembly language. That makes it a handy way to poke at hardware without writing a program. It reads commands one line at a time, so `DEBUG < SCRIPT.TXT` replays a saved set of commands.
 
 See also: [PCI configuration space](#pci-configuration-space), [Register](#register)
+
+Comes up in: [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 
 
 ### DPMI host {#dpmi-host}
@@ -92,7 +96,7 @@ A setting on late-1990s PCI sound cards that makes the card also answer at the o
 
 See also: [PCI Legacy Mode](#pci-legacy-mode), [I/O port](#io-port)
 
-Comes up in: [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %})
+Comes up in: [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 
 
 ### PC/PCI {#pc-pci}
@@ -119,6 +123,8 @@ A block of registers every PCI device has, 256 bytes in the original PCI design,
 
 See also: [Register](#register), [DEBUG](#debug), [Subtractive decode](#subtractive-decode)
 
+Comes up in: [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
+
 
 ### PCI Legacy Mode {#pci-legacy-mode}
 
@@ -135,7 +141,7 @@ A chip that turns a PCI Express link into a PCI bus, so old PCI cards can run in
 
 See also: [Subtractive decode](#subtractive-decode), [Root port](#root-port), [PCI Legacy Mode](#pci-legacy-mode)
 
-Comes up in: [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %}), [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), [Supermicro X10SAE]({% link _hardware/supermicro-x10sae.md %})
+Comes up in: [I made 3Dfx Voodoo2 work on a modern PC!]({% post_url 2026-08-30-voodoo-2-on-a-modern-pc %}), [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), [Supermicro X10SAE]({% link _hardware/supermicro-x10sae.md %}), [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 
 
 ### Positive decode {#positive-decode}
@@ -153,6 +159,8 @@ A small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software read
 
 See also: [PCI configuration space](#pci-configuration-space), [DEBUG](#debug)
 
+Comes up in: [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
+
 
 ### Root port {#root-port}
 
@@ -160,7 +168,7 @@ Where a PCI Express link starts: a port on the chipset (or the CPU) that a slot 
 
 See also: [PCI Legacy Mode](#pci-legacy-mode), [PCH](#pch), [PCIe-to-PCI bridge](#pcie-to-pci-bridge)
 
-Comes up in: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %})
+Comes up in: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 
 
 ### Sound Blaster {#sound-blaster}
@@ -169,7 +177,7 @@ Creative Labs' line of sound cards, first released in 1989, whose design became 
 
 See also: [BLASTER variable](#blaster-variable), [FM synthesis](#fm-synthesis), [Legacy mode (PCI sound cards)](#legacy-mode)
 
-Comes up in: [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %})
+Comes up in: [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}), [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 
 
 ### Subtractive decode {#subtractive-decode}
@@ -178,7 +186,7 @@ The opposite of positive decode: a bridge that decodes subtractively claims any 
 
 See also: [Positive decode](#positive-decode), [PCI Legacy Mode](#pci-legacy-mode), [PCIe-to-PCI bridge](#pcie-to-pci-bridge)
 
-Comes up in: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %})
+Comes up in: [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}), [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %})
 
 
 ### TSR {#tsr}

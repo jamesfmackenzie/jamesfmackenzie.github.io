@@ -20,6 +20,7 @@ The project so far, in order:
 1. [I Love Software Rendering]({% post_url 2026-10-13-i-love-software-rendering %}) — why I want a fast PC running native DOS in the first place
 2. [Why Don't PCI Sound Cards Work on a Modern PC?]({% post_url 2026-10-26-why-pci-sound-cards-dont-work-in-dos-on-modern-pcs %}) — the problem, and the four things that have to work
 3. [Finding the Fastest Possible DOS PC]({% post_url 2026-11-15-finding-the-fastest-possible-dos-pc %}) — which chipsets and CPUs can still host a PCI sound card in DOS
+4. [Why Did My Keyboard Freeze?]({% post_url 2026-11-21-why-did-my-keyboard-freeze %}) — switching on subtractive decode in the bridge and the chipset, a frozen keyboard, and first sound
 
 More details:
 
