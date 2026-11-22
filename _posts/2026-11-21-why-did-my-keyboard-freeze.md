@@ -34,7 +34,7 @@ Subtractive decode starts out disabled, so we'll need to enable it ourselves, by
 
 A **[register]({% link _reference/technical-glossary.md %}#register)** is a small storage slot inside a chip, usually 8, 16 or 32 bits wide. Software reads them to find out what the chip is doing, and writes them to tell it what to do.
 
-Every PCI device, including bridges and the chipset's root ports, has a block of these called its **[configuration space]({% link _reference/technical-glossary.md %}#pci-configuration-space)**. The first part tells the PC what the device is, who made it etc. But the rest is up to the chip's maker, and that's where features like subtractive decode live.
+Every PCI device, including bridges and the chipset's root ports, has a block of these called its **[configuration space]({% link _reference/technical-glossary.md %}#pci-configuration-space)**. The first part tells the PC what the device is, who made it, etc. But the rest is up to the chip's maker, and that's where features like subtractive decode live.
 
 The BIOS fills most of the configuration space at boot, but software can read and write it at any time while the PC is running. In DOS, we can poke at the registers directly: first to find our device by maker and model number, and then to read or write any byte of its configuration space. Nothing written there survives a power-off. Every boot resets back to the BIOS's defaults.
 
@@ -127,7 +127,6 @@ INT 3              ; stop, and show the CPU's registers
 `NC` again, so the BIOS accepted the write. That doesn't prove the card can hear anything yet, but it's one hop done!
 
 
-
 ### Testing the card
 
 OK, time to test the card!
@@ -156,7 +155,7 @@ INT 1A
 INT 3
 ```
 
-We'll run this for root ports 1, 2 and 3, etc, changing the last digit of `BX` each time:
+Then the same again for root ports 1, 2, 3 and so on, changing the last digit of `BX` each time, until bus 09h turns up:
 
 | Root port | Bus behind it |
 |---|---|
@@ -165,7 +164,7 @@ We'll run this for root ports 1, 2 and 3, etc, changing the last digit of `BX` e
 | 2 | none |
 | **3** | **09h** |
 
-That's it! The adapter is on root port 3 (`BX=00E3`).
+There it is! The adapter is on root port 3 (`BX=00E3`).
 
 **Next, read register ECh:**
 
@@ -187,7 +186,7 @@ INT 1A
 INT 3              ; stop, and show the CPU's registers
 ```
 
-After running this we got `NC`: the BIOS accepted the write, which means the SDE bit *should* be activated.
+After running this we got `NC`: the BIOS accepted the write, which means SDE *should* now be on.
 
 ![A DEBUG session on the Z87-PRO, photographed from the monitor. Reading register 19h of the root port at BX=00E3 returns CX=0009, reading register ECh returns CX=0000, and writing CX=0001 back succeeds.](/img/z87-pro-debug-root-port-sde-write.jpg)
 *Setting SDE on the Z87-PRO. Top: register 19h says bus 09h is behind this port (`CX=0009`). Middle: SDE reads 0. Bottom: the BIOS accepts the write of 1.*
@@ -209,7 +208,7 @@ Three identical freezes, and no fix from anyone else. I set the Z87-PRO aside an
 
 The X10SAE has real PCI slots, fed by the IDT 89HPEB383 bridge on the board.
 
-Before going near DOS, I checked through the BIOS settings. There was no setting for subtractive decode, but in the USB settings I found something I hadn't seen on the ASUS: "Port 60/64 Emulation", enabled. Ports 60h and 64h belong to the keyboard controller, and the help text explains that this setting fakes them so a USB keyboard works in "non-USB aware OSes". In other words, DOS. Something sitting between the keyboard and the chipset seemed worth getting out of the way, so I made a note to turn it off before trying SDE.
+Before going near DOS, I checked through the BIOS. There was no option for subtractive decode, but in the USB settings I found something I hadn't seen on the ASUS: "Port 60/64 Emulation", enabled. Ports 60h and 64h belong to the keyboard controller, and the help text explains that this setting fakes them so a USB keyboard works in "non-USB aware OSes". In other words, DOS. Something sitting between the keyboard and the chipset seemed worth getting out of the way, so I made a note to turn it off before trying SDE.
 
 In DOS, I found the IDT bridge with `DEBUG` (vendor 10E3h, device 8113h), then read its register 48h:
 
@@ -230,7 +229,7 @@ This time, the keyboard kept working.
 
 ### First sound
 
-With a usable keyboard, I ran Yamaha's FM test program once again. This time, *success*! It played music.
+With a usable keyboard, I ran Yamaha's FM test program once again. And *success*! It played music.
 
 That's FM music from a PCI sound card, in DOS, on a Haswell Xeon. The writes to 388h (the FM chip's address) now make it through both hops to the card.
 
@@ -241,7 +240,7 @@ So why did my keyboard freeze on the Z87-PRO? I still don't know. It could be th
 
 So we have address routing working! The card answers at the right addresses, and the game's accesses reach it.
 
-And FM music work great. But digitised sound (the explosions and speech in most games) also needs the other two requirements: interrupts and DMA. That's the next post.
+And FM music works great. But digitised sound (the explosions and speech in most games) also needs the other two requirements: interrupts and DMA. That's the next post.
 
 
 ### Related on this site
