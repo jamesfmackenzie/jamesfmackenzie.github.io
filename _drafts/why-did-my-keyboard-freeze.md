@@ -140,39 +140,39 @@ With the bridge fixed and the [`BLASTER` variable]({% link _reference/technical-
 
 ### Fixing the chipset
 
-But was expected. The chipset's hop was still closed. For that, we need to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter. Same pattern as the bridge.
+But that was expected. The chipset's hop was still closed. For that, we need to turn on bit 0 (SDE) of register ECh, on the one root port that leads to the adapter. Same pattern as the bridge.
 
 **First, find the right root port:**
 
-Unlike the bridge, the root ports don't need searching for: they're always at bus 0, device 28, functions 0 to 7, which the BIOS writes as `00E0` to `00E7`.
+Unlike the bridge, the root ports don't need searching for. There are eight of them, numbered 0 to 7, and they're always in the same place: in `BX`, they're `00E0` to `00E7`.
 
-Each root port records the number of the bus behind it in register 19h, and (from our exploration earlier) the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I need read register 19h on each root port in turn. Here's the check for function 3:
+Each root port records the number of the bus behind it in register 19h, and (from our exploration earlier) the adapter's bridge was on bus 09h (the `09` in `BX=0900`). So I need to read register 19h on each root port in turn, starting with root port 0:
 
 ```nasm
 A 100
 MOV AX,B108        ; read a byte...
-MOV BX,00E3        ;   ...from the root port at bus 0, device 28, function 3
+MOV BX,00E0        ;   ...from root port 0 (bus 0, device 28, function 0)
 MOV DI,0019        ;   ...register 19h: the bus behind this port
 INT 1A
 INT 3
 ```
 
-Working through them:
+Then the same again for root ports 1, 2 and 3, changing the last digit of `BX` each time:
 
-| Root port function | Bus behind it |
+| Root port | Bus behind it |
 |---|---|
 | 0 | 07h |
 | 1 | 08h |
 | 2 | none |
 | **3** | **09h** |
 
-Function 3 it is.
+Root port 3 it is: `BX=00E3`.
 
 **Next, read register ECh:**
 
 ```nasm
 MOV AX,B108        ; read a byte...
-MOV BX,00E3        ;   ...from root port function 3
+MOV BX,00E3        ;   ...from root port 3
 MOV DI,00EC        ;   ...register ECh
 INT 1A             ; the byte lands in CL
 ```
@@ -225,7 +225,7 @@ Bit 7 was already set! Supermicro's BIOS turns on the bridge's legacy mode by it
 
 Even so, Yamaha's test program still failed, and `SETUPDS` still couldn't find a Sound Blaster. One hop left.
 
-On this board, the bridge's bus, 03h, was behind root port function 5, so I ran the same steps on that one. But first, I prepared: a PS/2 keyboard, and Port 60/64 Emulation turned off.
+On this board, the bridge's bus, 03h, was behind root port 5, so I ran the same steps on that one. But first, I prepared: a PS/2 keyboard, and Port 60/64 Emulation turned off.
 
 ![Setting SDE on the X10SAE, photographed from the monitor. The code reads register ECh of BX=00E5, sets bit 0 and writes it back; the register dump afterwards shows CX=0001 and NC.](/img/x10sae-debug-sde-script-no-freeze.jpg)
 *The same steps on the X10SAE, and the result. `CX=0001` is the value written, and `NC` means the BIOS accepted it.*
